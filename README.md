@@ -1,3 +1,0 @@
-# ZEST
-react with sanity
-
