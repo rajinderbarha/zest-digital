@@ -1,0 +1,53 @@
+@media only screen and (min-width:769px) and (max-width:1066px) {
+    .banner_text {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .banner_text {
+        font-size: 30px;
+    }
+
+    .banner {
+        padding: 30px 20px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .marketing_agency_logo_1 {
+        display: block;
+    }
+
+    .marketing_agency_logo_2 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    .marketing_agency_logo_1 {
+        display: none;
+    }
+
+    .marketing_agency_logo_2 {
+        width: 200px;
+        /* border: 1px solid white; */
+        display: block;
+        position: absolute;
+        top: -30%;
+        right: -10%;
+        /* bottom: -180px;
+        right: -40px; */
+        z-index: 1;
+    }
+
+    .banner_video {
+        /* margin-top: 100px; */
+    }
+
+    .banner {
+        gap: 6rem;
+        overflow: hidden;
+    }
+}

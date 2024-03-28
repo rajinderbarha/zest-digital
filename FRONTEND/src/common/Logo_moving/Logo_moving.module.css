@@ -1,0 +1,8 @@
+.shadow_custom {
+    /* box-shadow: -3px 0px 10px black inset; */
+    box-shadow: inset -40px 0 5px -5px rgb(255, 255, 255), inset 40px 0 5px -5px rgba(255, 255, 255, 0.5);
+}
+
+.margin_top {
+    margin-top: 153px;
+}
