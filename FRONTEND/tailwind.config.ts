@@ -147,17 +147,25 @@ module.exports = {
         'color-3': '#E43FA8',
         'color-4': '#421F33',
         'color-5': '#00000029',
+        'color-6': '#989898',
+        'color-7': '#A2FF8F',
+        'color-8': '#7D7A78',
+        'color-9': '#E43FA8',
+
+
       },
       fontSize: {
         '55px': '55px',
         '45px': '45px',
         '40px': '40px',
         '35px': '35px',
+        '30px': '30px',
+        '25px': '25px',
       },
       boxShadow: {
         'msg': '0 3px 6px  #00000029',
         'compo': '6px 6px #1d2671',
-        'compo1': '-6px 6px #1d2671',
+        'compo1': '-6px 6px #e43fa8',
       },
       borderRadius: {
         '30px': '30px',
