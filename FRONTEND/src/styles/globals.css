@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.main_container {
+  max-width: 1720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main_container_x {
+  max-width: 1410px;
+  width: 100%;
+  margin: 0 auto;
+}

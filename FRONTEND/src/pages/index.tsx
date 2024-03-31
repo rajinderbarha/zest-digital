@@ -19,9 +19,9 @@ export default function Home() {
       <Logo_moving />
       <Services />
       <Climate_action />
-      <About />
+      {/* <About />
       <Result />
-      <Solution />
+      <Solution /> */}
     </Layout>
   );
 }

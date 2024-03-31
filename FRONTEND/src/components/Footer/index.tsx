@@ -10,6 +10,7 @@ import img5 from '../../assets/images/img5.png'
 import facebook from '../../assets/images/facebook.png'
 import linkedin from '../../assets/images/linkedin.png'
 import instagram from '../../assets/images/twitter.png'
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,75 +22,75 @@ const Footer = () => {
             <div className="">
               <Image src={logo} alt="" />
             </div>
-            <div className="border-5 max-w-[1171px] w-full ps-5 ">
+            <div className="border-5 max-w-[1171px] w-full ps-5 shadow-xl shadow-white">
               <hr className=" bg-green-500 border-0 h-[1px]" />
             </div>
           </div>
 
-          <div className="max-w-[1521px] mx-auto grid grid-cols-12 mt-10">
-            <div className="col-span-2 text-white text-center">
-              <h2 className='font-bold text-2xl mb-3'>Oxford</h2>
+          <div className={`${classes.detail_cont} max-w-[1521px] mx-auto grid grid-cols-2 sm:grid-cols-6 gap-5 lg:gap-0 lg:grid-cols-12 mt-10`}>
+            <div className={`${classes.footer_details}`}>
+              <h2 className='font-bold text-2xl mb-3 font-mono '>Oxford</h2>
               <address className="not-italic">
                 1–3 Kings Meadow<br />
                 Odney Mead<br />
                 Oxford<br />
                 OX2 0DP
               </address>
-              <p>📞 +44 (0) 1865 864 999</p>
+              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +44 (0) 1865 864 999</p>
             </div>
-            <div className="col-span-2 text-white text-center">
-              <h2 className='font-bold text-2xl mb-3'>Oxford</h2>
+            <div className={`${classes.footer_details}`}>
+              <h2 className='font-bold text-2xl mb-3 font-mono '>Birmingham</h2>
               <address className="not-italic">
-                1–3 Kings Meadow<br />
-                Odney Mead<br />
-                Oxford<br />
-                OX2 0DP
+                123-131 Bradford Street<br />
+                Digbeth<br />
+                Birmingham<br />
+                B12 0NS
               </address>
-              <p>📞 +44 (0) 1865 864 999</p>
+              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +44 (0) 1212 805 858</p>
             </div>
-            <div className="col-span-2 text-white text-center">
-              <h2 className='font-bold text-2xl mb-3'>Oxford</h2>
+            <div className={`${classes.footer_details}`}>
+              <h2 className='font-bold text-2xl mb-3 font-mono'>London</h2>
               <address className="not-italic">
-                1–3 Kings Meadow<br />
-                Odney Mead<br />
-                Oxford<br />
-                OX2 0DP
+                10 Fitzroy Square <br />
+                Fitzrovia <br />
+                London <br />
+                W1T 5HP
               </address>
-              <p>📞 +44 (0) 1865 864 999</p>
+              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +44 (0) 207 8560 434</p>
             </div>
-            <div className="col-span-2 text-white text-center">
-              <h2 className='font-bold text-2xl mb-3' >Oxford</h2>
+            <div className={`${classes.footer_details}`}>
+              <h2 className='font-bold text-2xl mb-3 font-mono' >Bristol</h2>
               <address className="not-italic">
-                1–3 Kings Meadow<br />
-                Odney Mead<br />
-                Oxford<br />
-                OX2 0DP
+                The Old Stock Exchange <br />
+                St. Nicholas Street <br />
+                Bristol <br />
+                BS1 1TG
               </address>
-              <p>📞 +44 (0) 1865 864 999</p>
+              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +44 (0) 117 463 3137</p>
             </div>
-            <div className="col-span-2 text-white text-center">
-              <h2 className='font-bold text-2xl mb-3'>Oxford</h2>
+            <div className={`${classes.footer_details}`}>
+              <h2 className='font-bold text-2xl mb-3 font-mono '>New York</h2>
               <address className="not-italic">
-                1–3 Kings Meadow<br />
-                Odney Mead<br />
-                Oxford<br />
-                OX2 0DP
+                115 Broadway Street <br />
+                5th Floor <br />
+                New York <br />
+                NY 10006
               </address>
-              <p>📞 +44 (0) 1865 864 999</p>
+              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +1 (718) 550-0804</p>
             </div>
-            <div className="col-span-2 text-white text-center">
-              <h2 className='font-bold text-2xl mb-3'>Oxford</h2>
+            <div className={`${classes.footer_details}`}>
+              <h2 className='font-bold text-2xl mb-3 font-mono '>Amsterdam</h2>
               <address className="not-italic">
-                1–3 Kings Meadow<br />
-                Odney Mead<br />
-                Oxford<br />
-                OX2 0DP
+                Spaces - Amsterdam  <br />
+                Barbara Strozzilaan 201  <br />
+                Amsterdam <br />
+                1083 HN
               </address>
-              <p>📞 +44 (0) 1865 864 999</p>
+              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +31 970 1025 7004</p>
             </div>
           </div>
 
-          <div className="max-w-[1379px] mx-auto flex items-end my-10">
+          <div className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end my-10`}>
             <div className="">
               <Image src={img1} alt="" />
             </div>
@@ -121,7 +122,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-color-1 py-[35px]">
-        <p className='text-white max-w-[970px] mx-auto'>Copyright 2023 © Zest Digital Limited | View our terms and conditions. Company No: 07288662 | VAT No: GB994 6614 67 </p>
+        <p className='text-white max-w-[970px] px-10 text-center mx-auto'>Copyright 2023 © Zest Digital Limited | View our terms and conditions. Company No: 07288662 | VAT No: GB994 6614 67 </p>
       </div>
     </>
   )

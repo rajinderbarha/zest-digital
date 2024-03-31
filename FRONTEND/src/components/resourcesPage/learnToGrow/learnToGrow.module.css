@@ -1,0 +1,21 @@
+.SingleIntro{
+    background-image: url('../../../assets/images/learn_how_to_grow_bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: black;
+    margin-top: 200px;
+  
+}
+.single_container{
+    /* margin-top: -100px; */
+}
+.grow_img{
+    right: 0;
+    top:-150px;
+}
+@media only screen and (max-width:767px){
+    .grow_img{
+        top:-100px;
+    }
+}

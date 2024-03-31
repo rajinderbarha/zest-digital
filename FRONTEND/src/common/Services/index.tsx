@@ -4,31 +4,40 @@ import Image from 'next/image'
 import image1 from '../../assets/images/Optimisation_icon.png'
 import image2 from '../../assets/images/Code_icon.png'
 import image3 from '../../assets/images/target_icon_v2.png'
+import { GoArrowRight } from "react-icons/go";
 // import image2 from '../../assets/images/'
 // import image3 from '../../assets/images/image3.png'
 const Services = () => {
     return (
         <>
             {/* <div className={`${classes.bg_image} mx-auto max-w-[1720px] w-full px-5 my-10 font-mono rounded-30px`}> */}
-            <div className="mx-auto max-w-[1720px] w-full px-5 my-10 mt-36">
-                <div className={`${classes.bg_image} bg-black rounded-30px font-mono pt-[88px]  flex`}>
-                    <div className=" text-white p-10 pb-[218px] ">
-                        <h2 className='text-5xl font-semibold mb-5'>Our Services</h2>
-                        <div className="text-lg flex gap-5 flex-col">
-                            <a href="" className="underline text-lg">SEO Services</a>
-                            <a href="" className="underline text-lg">PPC Services</a>
-                            <a href="" className="underline text-lg">PPC Services</a>
-                            <a href="" className="underline text-lg">Web Services</a>
-                            <a href="" className="underline text-lg">Growth Marketing</a>
+            <div className="mx-auto max-w-[1720px] w-full px-5 my-10 md:mt-36 mt-20">
+                <div className={`${classes.bg_image} bg-black rounded-30px lg:pt-[50px] font-mono flex md:flex-row flex-col `}>
+                    <div className="p-10 lg:px-20 2xl:px-100px md:px-11 px-8 max-768:px-10 max-1350:px-16 lg:pb-[100px] xl:pb-[218px] md:w-[654px] w-max  pb-16">
+                        <h2 className=' text-2xl md:text-3xl lg:text-[45px] text-white font-semibold mb-6'>Our Services</h2>
+                        <div className="  flex gap-5 flex-col text-color-6">
+                            <ul>
+                                <li > <a href="" className="border-b border-color-6 mb-7  w-max text-md lg:text-lg flex items-center gap-1">SEO Services <GoArrowRight /></a></li>
+                                <li>  <a href="" className="border-b border-color-6 mb-7   text-md w-max lg:text-lg flex items-center gap-1">PPC Services <GoArrowRight /></a></li>
+                                <li> <a href="" className="border-b border-color-6 mb-7   text-md w-max lg:text-lg flex items-center gap-1">PPC Services <GoArrowRight /></a></li>
+                                <li>  <a href="" className="border-b border-color-6  mb-7  text-md w-max lg:text-lg flex items-center gap-1">Web Services <GoArrowRight /></a></li>
+                                <li><a href="" className="border-b border-color-6 mb-7  text-md w-max lg:text-lg flex items-center gap-1">Growth Marketing <GoArrowRight /></a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div className="flex  -mt-48">
-                        {/* <div className=""> */}
+                    <div className="flex  xl:-mt-36 lg:-mt-20 -mt-10">
+                        <div className="  h-max self-end">
 
-                        <Image src={image1} alt="" className=' h-max self-end' />
+                            <Image src={image1} alt="" className=' ' />
+                        </div>
+                        <div className="   h-max self-center">
 
-                        <Image src={image2} alt="" className='  h-max self-center' />
-                        <Image src={image3} alt="" className='  h-max ' />
+                            <Image src={image2} alt="" className=' ' />
+                        </div>
+                        <div className="    h-max">
+                            <Image src={image3} alt="" className='  ' />
+
+                        </div>
                     </div>
                 </div>
             </div>

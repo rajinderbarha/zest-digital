@@ -1,0 +1,9 @@
+.Resourcesbanner {
+    padding: 96px 16px 0 16px;
+}
+
+@media only screen and (max-width:767px) {
+    .Resourcesbanner {
+        padding: 60px 16px 0 16px;
+    }
+}

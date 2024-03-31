@@ -1,0 +1,88 @@
+.About_banner {
+    padding: 143px 16px 141px 16px;
+}
+
+.Team_img_box {
+    max-width: 421px;
+    width: 100%;
+    bottom: 5px;
+}
+
+.About_team {
+    padding: 0px 16px 141px 16px;
+}
+
+.Team_img {
+    max-width: 435px;
+    width: 100%;
+}
+
+.values_bg {
+    background-image: url(../..//assets/images/Gradient_values.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    padding: 85px 16px 260px 16px;
+    border-radius: 30px;
+}
+
+.Our_values_main_p {
+    max-width: 724px;
+}
+
+.Our_values_main_2 {
+    margin: -140px 0;
+}
+
+.Zest_for_life {
+    padding: 150px 16px;
+}
+
+.Escape {
+    background-image: url(../../assets/images/Escape.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    padding: 129px 16px 140px 16px;
+    border-radius: 30px;
+
+}
+
+.Escape_p {
+    max-width: 1200px;
+}
+
+.gri {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    background-image: linear-gradient(90deg, #000000, transparent 27%, transparent, #000000);
+}
+
+@media screen and (max-width:1040px) {
+    .Our_values_main_2 {
+        margin: 0px 0 !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .About_banner,
+    .values_bg,
+    .Zest_for_life {
+        padding: 80px 16px 50px 16px;
+    }
+
+    .About_team {
+        padding: 0px 16px 50px 16px;
+    }
+
+    .Escape {
+        padding: 60px 16px 60px 16px;
+    }
+}

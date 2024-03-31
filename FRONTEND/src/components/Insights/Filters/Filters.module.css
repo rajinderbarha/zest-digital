@@ -1,0 +1,23 @@
+.Filters {
+    /* background-color: #000; */
+    padding: 74px 64px 140px 64px;
+    border-radius: 30px;
+}
+
+.Filters_img {
+    object-fit: none;
+    left: 0;
+    right: 0;
+}
+
+.Filters_btn {
+    padding: 7px 20px;
+    margin: 0;
+    font-size: 14px;
+}
+
+@media screen and (max-width:768px) {
+    .Filters {
+        padding: 0px 16px 0px 16px;
+    }
+}

@@ -1,0 +1,15 @@
+.objective_inner{
+    padding: 70px 52px;
+}
+@media only screen and (max-width:767px){
+    .objective_inner{
+
+        padding: 30px 35px;
+    }
+}
+@media only screen and (max-width:639px){
+    .objective{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
