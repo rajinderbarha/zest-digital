@@ -8,12 +8,16 @@ import Growth from '@/components/Growth';
 import Logo_moving from '@/common/Logo_moving';
 import Services from '@/common/Services';
 import Climate_action from '@/common/Climate_action';
+import client from '../../sanity.client';
+import { groq } from 'next-sanity';
 
 
 
-export default function Home() {
+export default  function Home({data}:any) {
+
+console.log("Header",data)
   return (
-    <Layout>
+    <Layout data={data}>
       <HeroSection />
       <Growth />
       <Logo_moving />
@@ -24,4 +28,18 @@ export default function Home() {
       <Solution /> */}
     </Layout>
   );
+}
+
+export async function getStaticProps(context:any) {
+  // It's important to default the slug so that it doesn't return "undefined"
+  // const { slug = "" } = context.params
+  const data = await client.fetch(
+    groq`*[_type == "header"]`
+  )
+  
+  return {
+    props: {
+      data
+    }
+  }
 }
