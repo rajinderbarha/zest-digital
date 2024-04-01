@@ -36,7 +36,6 @@ function LearnToGrow() {
                 </div>
             </div>
             <Logo_moving />
-            <Climate_action />
         </>
     )
 }

@@ -2,13 +2,13 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React from 'react'
 
-const Layout = ({children,data}:{children:React.ReactNode,data?:any}) => {
+const Layout = ({children,headerdata, footerdata}:{children:React.ReactNode,headerdata?:any, footerdata?:any}) => {
   // console.log("data",data)
   return (
     <div>
-        <Header data={data}/>
+        <Header data={headerdata}/>
         {children}
-        <Footer/>
+        <Footer data={footerdata}/>
     </div>
   )
 }

@@ -7,14 +7,10 @@ import Services from '@/common/Services';
 import Climate_action from '@/common/Climate_action';
 import client from '../../sanity.client';
 import { HeaderType } from '@/components/Header';
-// export interface HeaderType {
-//   logo: any,
-//   navItem: { buttonName: string, buttonLink: string }[],
-//   button: { navName: string, navLink: string }
-// }
+
 
 export async function getHeaderData() {
-  const query = `
+  const headerquery = `
     *[_type == 'header'] {
       logo,
       navItem[] {
@@ -27,143 +23,45 @@ export async function getHeaderData() {
       }
     }
   `;
-  const data = await client.fetch(query);
+  const data = await client.fetch(headerquery);
   return data;
 }
 
-export default function Home({ data }: { data: HeaderType[] }) {
+
+export default function Home({ headerdata }: { headerdata: HeaderType[] }) {
   return (
-    <Layout data={data}>
+    <Layout headerdata={headerdata}  >
       <HeroSection />
       <Growth />
       <Logo_moving />
       <Services />
-      <Climate_action />
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const data = await getHeaderData();
+  const headerdata = await getHeaderData();
   return {
-    props: {
-      data
+    props: {    
+      headerdata
     }
   };
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useEffect, useState } from 'react';
+// import React from 'react';
 // import Layout from "@/layout";
 // import HeroSection from '@/components/HeroSection';
-// // import About from '@/components/About';
-// // import Result from '@/components/Result';
-// // import Solution from '@/components/Solution';
 // import Growth from '@/components/Growth';
 // import Logo_moving from '@/common/Logo_moving';
 // import Services from '@/common/Services';
 // import Climate_action from '@/common/Climate_action';
 // import client from '../../sanity.client';
-// import { groq } from 'next-sanity';
+// import { HeaderType } from '@/components/Header';
+// import { FooterType } from '@/components/Footer';
 
-// export default function Home({ data }: any) {
-//   const [queryData, setQueryData] = useState(null);
 
-//   useEffect(() => {
-//     async function fetchData() {
-//       try {
-//         const queryData = await getData();
-//         setQueryData(queryData);
-//       } catch (error) {
-//         console.error('Error fetching data:', error);
-//       }
-//     }
-
-//     fetchData();
-//   }, []);
-
-//   console.log("Query Data:", queryData);
-//   console.log("Header Data:", data);
-
-//   return (
-//     <Layout data={data}>
-//       <HeroSection />
-//       <Growth />
-//       <Logo_moving />
-//       <Services />
-//       <Climate_action />
-//       {/* <About />
-//       <Result />
-//       <Solution /> */}
-//     </Layout>
-//   );
-// }
-
-// async function getData() {
-//   const query = `
+// export async function getHeaderData() {
+//   const headerquery = `
 //     *[_type == 'header'] {
 //       logo,
 //       navItem[] {
@@ -176,27 +74,54 @@ export async function getStaticProps() {
 //       }
 //     }
 //   `;
-
-//   const data = await client.fetch(query);
+//   const data = await client.fetch(headerquery);
+//   return data;
+// }
+// export async function getFooterData() {
+//   const footerquery = `
+// *[_type == "footer"] {
+//   logo,
+//     footerItem[] {
+//       heading,
+//       list[] {
+//         name,
+//         link,
+//         icon
+//       },
+//       brands[] {
+//           brandImage
+//       },
+//     social[] {
+//       socialImage,
+//       socialLink
+//     },
+//     copyRightText
+//     }
+// }
+//   `;
+//   const data = await client.fetch(footerquery);
 //   return data;
 // }
 
-// export async function getStaticProps(context: any) {
-//   const data = await client.fetch(groq`*[_type == 'header'] {
-//     logo,
-//     navItem[] {
-//       buttonName,
-//       buttonLink
-//     },
-//     button {
-//       navName,
-//       navLink
-//     }
-//   }`);
+// export default function Home({ headerdata }: { headerdata: HeaderType[] }, { footerdata }: { footerdata: FooterType[] }) {
+//   return (
+//     <Layout headerdata={headerdata} footerdata={footerdata} >
+//       <HeroSection />
+//       <Growth />
+//       <Logo_moving />
+//       <Services />
+//     </Layout>
+//   );
+// }
 
+// export async function getStaticProps() {
+//   const headerdata = await getHeaderData();
+//   const footerdata = await getFooterData();
 //   return {
-//     props: {
-//       data
+//     props: {    
+//       headerdata,
+//       footerdata
 //     }
 //   };
 // }
+

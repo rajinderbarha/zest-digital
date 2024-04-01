@@ -20,7 +20,6 @@ const About_page = ({ data }: { data: HeaderType[] }) => {
                 <Our_values />
                 <Zest_for_life />
                 <Escape />
-                <Climate_action />
             </Layout>
         </div>
     )

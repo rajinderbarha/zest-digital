@@ -9,9 +9,9 @@ import { getHeaderData } from '.'
 const Insights = ({ data }: { data: HeaderType[] }) => {
     return (
         <div>
-            <Layout data={data}>
+          
+            <Layout headerdata={data}>
                 <Filters />
-                <Climate_action />
             </Layout>
 
         </div>

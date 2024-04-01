@@ -29,7 +29,6 @@ function Casestudy({ data }: { data: HeaderType[] }) {
                 <Conversions />
                 <Gross_profit />
                 <Timeline />
-                <Climate_action />
             </Layout>
         </div>
     )
