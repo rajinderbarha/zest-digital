@@ -11,14 +11,14 @@ import { HeaderType } from '@/components/Header';
 
 export default function Home() {
   return (
-   
+
     <>
       <HeroSection />
       <Growth />
       <Logo_moving />
       <Services />
-      </>
-   
+    </>
+
   );
 }
 

@@ -5,11 +5,8 @@ import React from 'react'
 const filters = () => {
     return (
         <div>
-            
-                <Filters />
-                <Climate_action />
-           
-
+            <Filters />
+            <Climate_action />
         </div>
     )
 }

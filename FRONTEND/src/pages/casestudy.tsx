@@ -13,7 +13,6 @@ import React from 'react'
 function Casestudy() {
   return (
     <div>
-
       <Casestudyintro />
       <Gross_profit />
       <Instrumental />
@@ -27,7 +26,6 @@ function Casestudy() {
       <Conversions />
       <Gross_profit />
       <Timeline />
-
     </div>
   )
 }

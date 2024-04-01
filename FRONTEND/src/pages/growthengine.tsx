@@ -4,11 +4,9 @@ import React from 'react'
 
 function growthengine() {
   return (
-   <>
-    <Layout>
-        <GrowthEnginePage />
-    </Layout>
-   </>
+    <>
+      <GrowthEnginePage />
+    </>
   )
 }
 
