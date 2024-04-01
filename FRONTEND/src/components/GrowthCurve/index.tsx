@@ -7,6 +7,7 @@ import Climate_action from '@/common/Climate_action'
 import Growthcurve_img from '../../assets/images/how_to_grow.png'
 
 function GrowthCurve() {
+
     return (
         <>
             <GrowthEnginePage_Banner title="Growth Curve" desc="On-demand, pay-as-you-go growth marketing support for total scalability" />
