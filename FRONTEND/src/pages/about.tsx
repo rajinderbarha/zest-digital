@@ -6,13 +6,15 @@ import Escape from '@/components/About_page/Escape'
 import Our_values from '@/components/About_page/Our_values'
 import Zest_for_life from '@/components/About_page/Zest_for_life'
 import Layout from '@/layout'
+import { getHeaderData } from '.'
 
 import React from 'react'
+import { HeaderType } from '@/components/Header'
 
-const About_page = () => {
+const About_page = ({ data }: { data: HeaderType[] }) => {
     return (
         <div>
-            <Layout>
+            <Layout data={data}>
                 <About_banner />
                 <About_team />
                 <Our_values />
@@ -25,3 +27,15 @@ const About_page = () => {
 }
 
 export default About_page
+
+
+
+export async function getStaticProps() {
+    const data = await getHeaderData();
+    return {
+      props: {
+        data
+      }
+    };
+  }
+  

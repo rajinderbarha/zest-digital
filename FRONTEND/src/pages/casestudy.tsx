@@ -1,4 +1,5 @@
 import Climate_action from '@/common/Climate_action'
+import { HeaderType } from '@/components/Header'
 import Casestudyintro from '@/components/caseStudy/CaseStudyIntro'
 import Gross_profit from '@/components/caseStudy/gross_profit'
 import Conversions from '@/components/caseStudy/instrumental/conversions'
@@ -9,11 +10,12 @@ import Timeline from '@/components/caseStudy/instrumental/timeline'
 import Visibility from '@/components/caseStudy/instrumental/visibility'
 import Layout from '@/layout'
 import React from 'react'
+import { getHeaderData } from '.'
 
-function Casestudy() {
+function Casestudy({ data }: { data: HeaderType[] }) {
     return (
         <div>
-            <Layout>
+            <Layout data={data}>
                 <Casestudyintro />
                 <Gross_profit />
                 <Instrumental />
@@ -34,3 +36,14 @@ function Casestudy() {
 }
 
 export default Casestudy
+
+
+export async function getStaticProps() {
+    const data = await getHeaderData();
+    return {
+      props: {
+        data
+      }
+    };
+  }
+  
