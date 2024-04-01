@@ -5,9 +5,7 @@ import React from 'react'
 function growthcurve() {
   return (
    <>
-   <Layout>
     <GrowthCurve />
-   </Layout>
    </>
   )
 }
