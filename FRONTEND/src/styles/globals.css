@@ -43,3 +43,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+@media only screen and (max-width:460px) {
+  .banner_title {
+    font-size: 18px;
+  }
+}

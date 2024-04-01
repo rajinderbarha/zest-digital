@@ -1,0 +1,22 @@
+.SingleIntro {
+    background-image: url('../../../assets/images/Escape.png');
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: black;
+    /* margin-top: 200px; */
+
+}
+
+.single_container {
+    /* margin-top: -100px; */
+}
+
+@media only screen and (max-width:767px) {
+    .SingleIntro {
+
+        /* margin-top: 80px; */
+
+    }
+}
