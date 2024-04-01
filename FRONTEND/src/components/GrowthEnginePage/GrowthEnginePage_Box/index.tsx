@@ -3,6 +3,7 @@ import classes from './GrowthEnginePage_Box.module.css'
 import { GoArrowRight } from "react-icons/go";
 import Box_Title from '../Box_Title';
 import Image from 'next/image';
+import Growthcurve_img from '../../../assets/images/how_to_grow.png'
 
 interface GrowthEnginePage_Banner_Props {
     title1: string;
@@ -72,7 +73,7 @@ const GrowthEnginePage_Box: React.FC<GrowthEnginePage_Banner_Props> = (props) =>
 
 
                                 <div className={imageClass}>
-                                    <Image src={props.img_url} alt="" className='w-full' />
+                                    <Image src={Growthcurve_img} alt="" className='w-full' />
                                 </div>
                             </div>
                         </div>
