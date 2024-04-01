@@ -151,6 +151,7 @@ module.exports = {
         'color-7': '#A2FF8F',
         'color-8': '#7D7A78',
         'color-9': '#E43FA8',
+        'color-10': '#bebdbd',
 
 
       },

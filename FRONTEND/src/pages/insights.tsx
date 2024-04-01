@@ -1,16 +1,17 @@
-// import BlogPage from '@/components/Blog'
+import Climate_action from '@/common/Climate_action'
 import Filters from '@/components/Insights/Filters'
 import React from 'react'
 
-const Insights = () => {
-  return (
-    <div>
-      <Filters />
-    </div>
-  )
+const filters = () => {
+    return (
+        <div>
+            
+                <Filters />
+                <Climate_action />
+           
+
+        </div>
+    )
 }
 
-export default Insights
-
-
-
+export default filters
