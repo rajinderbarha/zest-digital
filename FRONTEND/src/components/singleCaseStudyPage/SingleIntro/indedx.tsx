@@ -60,7 +60,6 @@ function SingleIntro() {
                 <Action />
                 <Result />
             </div>
-            <Climate_action />
         </>
     )
 }

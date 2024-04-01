@@ -1,4 +1,5 @@
 import Climate_action from '@/common/Climate_action'
+import { HeaderType } from '@/components/Header'
 import Casestudyintro from '@/components/caseStudy/CaseStudyIntro'
 import Gross_profit from '@/components/caseStudy/gross_profit'
 import Conversions from '@/components/caseStudy/instrumental/conversions'
@@ -7,30 +8,28 @@ import Interests from '@/components/caseStudy/instrumental/interests'
 import Partnership from '@/components/caseStudy/instrumental/partnership'
 import Timeline from '@/components/caseStudy/instrumental/timeline'
 import Visibility from '@/components/caseStudy/instrumental/visibility'
-import Layout from '@/layout'
 import React from 'react'
 
 function Casestudy() {
-    return (
-        <div>
-            <Layout>
-                <Casestudyintro />
-                <Gross_profit />
-                <Instrumental />
-                <Gross_profit />
-                <Visibility />
-                <Gross_profit />
-                <Interests />
-                <Gross_profit />
-                <Partnership />
-                <Gross_profit />
-                <Conversions />
-                <Gross_profit />
-                <Timeline />
-                <Climate_action />
-            </Layout>
-        </div>
-    )
+  return (
+    <div>
+
+      <Casestudyintro />
+      <Gross_profit />
+      <Instrumental />
+      <Gross_profit />
+      <Visibility />
+      <Gross_profit />
+      <Interests />
+      <Gross_profit />
+      <Partnership />
+      <Gross_profit />
+      <Conversions />
+      <Gross_profit />
+      <Timeline />
+
+    </div>
+  )
 }
 
 export default Casestudy

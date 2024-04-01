@@ -11,10 +11,22 @@ import facebook from '../../assets/images/facebook.png'
 import linkedin from '../../assets/images/linkedin.png'
 import instagram from '../../assets/images/twitter.png'
 import { FaPhoneAlt } from "react-icons/fa";
+import Climate_action from '@/common/Climate_action'
 
+
+// export interface FooterType {
+//   logo: any;
+//   footerItem: { heading: string; list: object[] }[];
+//   brands: { brandImage: any;  }[];
+//   social: {socialImage:any ; socialLink: any }[];
+//   copyRightText: string
+// }
+
+// const Footer = ({ data }: { data: FooterType[] }) => {
 const Footer = () => {
   return (
     <>
+    <Climate_action/>
       <div className={`${classes.bg_image} bg-black rounded-t-[30px]  `} >
         <div className="max-w-[1720px] mx-auto px-5 pt-[48px] pb-10">
 
