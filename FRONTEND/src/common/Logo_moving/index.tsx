@@ -2,11 +2,11 @@ import React from 'react'
 import Marquee from "react-fast-marquee";
 import Image from 'next/image';
 import classes from './Logo_moving.module.css'
-import logo_1 from '../../assets/images/logo_1.png'
-import logo_2 from '../../assets/images/logo_2.png'
-import logo_3 from '../../assets/images/logo_3.png'
-import logo_4 from '../../assets/images/logo_4.png'
-import logo_5 from '../../assets/images/logo_5.png';
+import maxipos_logo from '../../assets/images/maxipos_logo.png'
+import polythene_logo from '../../assets/images/polythene_logo.png'
+import hanson_logo from '../../assets/images/hanson_logo.png'
+import tpa_logo from '../../assets/images/tpa_logo.png'
+import adlens_logo from '../../assets/images/adlens_logo.png';
 
 import Line_border from '../../assets/images/Gradients_box_companies.png'
 
@@ -21,16 +21,16 @@ const Logo_moving = () => {
                     {/* <Image src={Line_border} alt="" /> */}
                     <Marquee className={`gap-16 `} >
                         <div className="flex  max-w-auto gap-16 me-5">
-                            <Image src={logo_1} alt='' />
-                            <Image src={logo_2} alt='' />
-                            <Image src={logo_3} alt='' />
-                            <Image src={logo_4} alt='' />
-                            <Image src={logo_5} alt='' />
-                            <Image src={logo_1} alt='' />
-                            <Image src={logo_2} alt='' />
-                            <Image src={logo_3} alt='' />
-                            <Image src={logo_4} alt='' />
-                            <Image src={logo_5} alt='' />
+                            <Image src={maxipos_logo} alt='' />
+                            <Image src={polythene_logo} alt='' />
+                            <Image src={hanson_logo} alt='' />
+                            <Image src={tpa_logo} alt='' />
+                            <Image src={adlens_logo} alt='' />
+                            <Image src={maxipos_logo} alt='' />
+                            <Image src={polythene_logo} alt='' />
+                            <Image src={hanson_logo} alt='' />
+                            <Image src={tpa_logo} alt='' />
+                            <Image src={adlens_logo} alt='' />
                         </div>
                     </Marquee>
                 </div>

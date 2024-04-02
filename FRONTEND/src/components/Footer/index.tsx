@@ -2,11 +2,11 @@ import React from 'react'
 import classes from './footer.module.css'
 import Image from 'next/image'
 import logo from '../../assets/images/zest-logo-darkbg.png'
-import img1 from '../../assets/images/img1.png'
-import img2 from '../../assets/images/img2.png'
-import img3 from '../../assets/images/img3.png'
-import img4 from '../../assets/images/img4.png'
-import img5 from '../../assets/images/img5.png'
+import carbon_logo from '../../assets/images/carbon_logo.png'
+import hubspot_logo from '../../assets/images/hubspot_logo.png'
+import microsoft_partner_logo from '../../assets/images/microsoft_partner_logo.png'
+import google_partner_logo from '../../assets/images/google_partner_logo.png'
+import cyber_certification_logo from '../../assets/images/cyber_certification_logo.png'
 import facebook from '../../assets/images/facebook.png'
 import linkedin from '../../assets/images/linkedin.png'
 import instagram from '../../assets/images/twitter.png'
@@ -26,7 +26,7 @@ import Climate_action from '@/common/Climate_action'
 const Footer = () => {
   return (
     <>
-    <Climate_action/>
+      <Climate_action />
       <div className={`${classes.bg_image} bg-black rounded-t-[30px]  `} >
         <div className="max-w-[1720px] mx-auto px-5 pt-[48px] pb-10">
 
@@ -104,19 +104,19 @@ const Footer = () => {
 
           <div className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end my-10`}>
             <div className="">
-              <Image src={img1} alt="" />
+              <Image src={carbon_logo} alt="" />
             </div>
             <div className="">
-              <Image src={img2} alt="" />
+              <Image src={hubspot_logo} alt="" />
             </div>
             <div className="">
-              <Image src={img3} alt="" />
+              <Image src={microsoft_partner_logo} alt="" />
             </div>
             <div className="">
-              <Image src={img4} alt="" />
+              <Image src={google_partner_logo} alt="" />
             </div>
             <div className="">
-              <Image src={img5} alt="" />
+              <Image src={cyber_certification_logo} alt="" />
             </div>
           </div>
 

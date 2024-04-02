@@ -1,5 +1,5 @@
 import React from 'react'
-import Casestudyintro_Image from '../../../assets/images/Case_studies_circle.png'
+import Case_studies_circle from '../../../assets/images/Case_studies_circle.png'
 import Image from 'next/image'
 import classes from './CaseStudyIntro.module.css'
 
@@ -14,7 +14,7 @@ function Casestudyintro() {
                             <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white border border-color-1 ">Schedule a call</button>
                         </div>
                         <div className="md:col-span-4 ">
-                            <Image className='md:ms-auto mx-auto' src={Casestudyintro_Image} alt="" />
+                            <Image className='md:ms-auto mx-auto' src={Case_studies_circle} alt="" />
                         </div>
                     </div>
                 </div>
