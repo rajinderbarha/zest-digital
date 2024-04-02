@@ -5,7 +5,6 @@ import { getHeader } from '../../sanity.query'
 
 const Layout = ({children,headerdata, footerdata}:{children:React.ReactNode,headerdata?:any, footerdata?:any}) => {
   
-  
   return (
     <div>
         <Header data={headerdata}/>
