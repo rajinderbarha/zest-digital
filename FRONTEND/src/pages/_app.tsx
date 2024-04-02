@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps, headerdata, footerdata}: AppProps & { hea
 
   return (
     <Layout headerdata={headerdata} footerdata={footerdata}>
+
       <Component {...pageProps} />
     </Layout>
   );
@@ -21,3 +22,4 @@ MyApp.getInitialProps = async () => {
 
 
 export default MyApp;
+
