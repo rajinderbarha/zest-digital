@@ -1,6 +1,6 @@
 import React from 'react'
 // import arrow from '../../assets/images/component-3.svg'
-import grow from '../../assets/images/Growth_v2.png'
+import grow from '../../assets/images/grow.png'
 import classes from './growthEngine.module.css'
 import Image from 'next/image'
 import { GoArrowRight } from "react-icons/go";

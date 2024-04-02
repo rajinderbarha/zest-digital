@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import classes from '../About_banner.module.css'
 import users from '../Team_json/data.json';
-import Team_img from '../../../assets/images/team-ollieh-transparent.png'
-import Team_img_box from '../../../assets/images//circle bg.svg'
+import Team_img from '../../../assets/images/team-ollieh.png'
+import Team_img_circle from '../../../assets/images//Team_img_circle.svg'
 function About_team() {
     return (
         <div className={`${classes.About_team} `}>
@@ -13,7 +13,7 @@ function About_team() {
                     {users.users.map(user => (
                         <div className='About_team_box text-center' key={user.id}>
                             <div className='About_img_box relative md:mb-14 mb-8'>
-                                <Image className={`${classes.Team_img_box} absolute  bottom-0`} src={Team_img_box} alt="" />
+                                <Image className={`${classes.Team_img_circle} absolute  bottom-0`} src={Team_img_circle} alt="" />
                                 <Image src={Team_img} className={`${classes.Team_img} relative z-10 `} alt="" />
                             </div>
 

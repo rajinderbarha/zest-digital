@@ -1,5 +1,5 @@
 import React from 'react'
-import Zest_for_img from '../../../assets/images/earth.png'
+import earth from '../../../assets/images/earth.png'
 import Image from 'next/image'
 import classes from '../About_banner.module.css'
 
@@ -16,7 +16,7 @@ function Zest_for_life() {
                             {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
                         </div>
                         <div className="md:col-span-3">
-                            <Image className=' md:ms-auto mx-auto' src={Zest_for_img} alt="" />
+                            <Image className=' md:ms-auto mx-auto' src={earth} alt="" />
                         </div>
                     </div>
                     <div className="grid md:grid-cols-3 gap-14 mt-16">

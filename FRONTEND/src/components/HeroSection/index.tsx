@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import ZestRound from '../../assets/images/Zest_circle_text.png'
+import Zest_circle_text from '../../assets/images/Zest_circle_text.png'
 import closeIcon from '../../assets/images/Icon ionic-ios-close.png'
 import classes from './heroSection.module.css'
-import chatIcon from '../../assets/images/Chat window.png'
+import chatIcon from '../../assets/images/chatIcon.png'
 
 const HeroSection = () => {
   return (
@@ -21,12 +21,12 @@ const HeroSection = () => {
           </div>
           <div className={`${classes.marketing_agency_logo_1} self-end`}>
 
-            <Image src={ZestRound} alt="" />
+            <Image src={Zest_circle_text} alt="" />
           </div>
         </div>
         <div className={`${classes.banner_video} flex justify-end items-start relative`}>
           <div className={`${classes.marketing_agency_logo_2}`}>
-            <Image src={ZestRound} alt="" />
+            <Image src={Zest_circle_text} alt="" />
           </div>
           <video controls className='rounded-30px h-450px w-680px max-1810px:h-440px max-1810px:w-670px max-1700px:h-430px max-1700px:w-660px max-1570:h-400px max-1570:w-650px max-1350:h-380px max-1350:w-630px'>
             <source src="https://youtu.be/SFvcUsGuT2k?si=GNrj2dBAKU-uTlIs" type="video/mp4" />

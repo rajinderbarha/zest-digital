@@ -1,0 +1,12 @@
+@media only screen and (max-width:955px) {
+
+    .services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .services {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

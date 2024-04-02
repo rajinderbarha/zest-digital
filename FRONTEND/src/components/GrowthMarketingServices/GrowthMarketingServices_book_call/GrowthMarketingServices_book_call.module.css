@@ -1,0 +1,7 @@
+.container_bg {
+    background-image: url('../../../assets/images/Gradient_v7.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}

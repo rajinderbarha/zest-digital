@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from '../instrumental.module.css'
-import Visibility_img from '../../../../assets/images/Chart.png'
+import target_chart from '../../../../assets/images/target_chart.png'
 import Image from 'next/image'
 function Visibility() {
     return (
@@ -9,7 +9,7 @@ function Visibility() {
             <div className='main_container_x'>
                 <div className="grid md:grid-cols-12  gap-20  items-center">
                     <div className="md:col-span-4 ">
-                        <Image className='md:ms-auto mx-auto' src={Visibility_img} alt="" />
+                        <Image className='md:ms-auto mx-auto' src={target_chart} alt="" />
                         {/* <h3 className='font-mono font-semibold text-30px  w-max-[373px] text-center mx-auto mt-4'>Reduction in cost per conversion rate</h3> */}
 
                     </div>
