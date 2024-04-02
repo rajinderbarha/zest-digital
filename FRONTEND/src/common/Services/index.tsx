@@ -1,12 +1,10 @@
 import React from 'react'
 import classes from './Services.module.css'
 import Image from 'next/image'
-import image1 from '../../assets/images/Optimisation_icon.png'
-import image2 from '../../assets/images/Code_icon.png'
-import image3 from '../../assets/images/target_icon_v2.png'
+import vertical_bar from '../../assets/images/vertical_bar.png'
+import Code_icon from '../../assets/images/Code_icon.png'
+import target_icon from '../../assets/images/target_icon.png'
 import { GoArrowRight } from "react-icons/go";
-// import image2 from '../../assets/images/'
-// import image3 from '../../assets/images/image3.png'
 const Services = () => {
     return (
         <>
@@ -28,14 +26,14 @@ const Services = () => {
                     <div className="flex  xl:-mt-36 lg:-mt-20 -mt-10">
                         <div className="  h-max self-end">
 
-                            <Image src={image1} alt="" className=' ' />
+                            <Image src={vertical_bar} alt="" className=' ' />
                         </div>
                         <div className="   h-max self-center">
 
-                            <Image src={image2} alt="" className=' ' />
+                            <Image src={Code_icon} alt="" className=' ' />
                         </div>
                         <div className="    h-max">
-                            <Image src={image3} alt="" className='  ' />
+                            <Image src={target_icon} alt="" className='  ' />
 
                         </div>
                     </div>

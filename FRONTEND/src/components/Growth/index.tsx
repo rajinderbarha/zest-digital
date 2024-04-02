@@ -1,9 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import arrow from '../../assets/images/Component 2.svg'
+import arrow from '../../assets/images/arrow.svg'
 import Growth_engine from '@/common/Growth_engine'
 import classes from './growth.module.css'
-import grow from '../../assets/images/Growth_v2.png'
 
 const Growth = () => {
     return (
