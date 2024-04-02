@@ -3,7 +3,7 @@ import Image from 'next/image'
 import classes from './Filters.module.css'
 import Filters_image from '../../../assets/images/Filters.png'
 import { GoArrowRight } from 'react-icons/go'
-import Mind from '../../../assets/images/Brain_icon.png'
+import Brain_icon from '../../../assets/images/Brain_icon.png'
 function Filters() {
   return (
     <>
@@ -26,7 +26,7 @@ function Filters() {
                     </div>
                   </div>
                   <div className='col-span-3'>
-                    <Image className='w-[150px] ms-auto' src={Mind} alt="" />
+                    <Image className='w-[150px] ms-auto' src={Brain_icon} alt="" />
                   </div>
                 </div>
               </div>
@@ -40,7 +40,7 @@ function Filters() {
                     </div>
                   </div>
                   <div className='col-span-3'>
-                    <Image className='w-[150px] ms-auto' src={Mind} alt="" />
+                    <Image className='w-[150px] ms-auto' src={Brain_icon} alt="" />
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@ function Filters() {
                     </div>
                   </div>
                   <div className='col-span-3'>
-                    <Image className='w-[150px] ms-auto' src={Mind} alt="" />
+                    <Image className='w-[150px] ms-auto' src={Brain_icon} alt="" />
                   </div>
                 </div>
               </div>

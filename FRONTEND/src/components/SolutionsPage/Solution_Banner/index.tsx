@@ -1,5 +1,5 @@
 import React from 'react'
-import Solution_Banner_Image from '../../../assets/images/Zest_solutions_circle.png'
+import Zest_solutions_circle from '../../../assets/images/Zest_solutions_circle.png'
 import Image from 'next/image'
 import classes from './Solution_Banner.module.css'
 
@@ -15,7 +15,7 @@ function Solution_Banner() {
                             {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
                         </div>
                         <div className="md:col-span-5 ">
-                            <Image className='md:ms-auto ' src={Solution_Banner_Image} alt="" />
+                            <Image className='md:ms-auto ' src={Zest_solutions_circle} alt="" />
                         </div>
                     </div>
                 </div>

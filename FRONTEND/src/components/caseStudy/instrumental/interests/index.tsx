@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from '../instrumental.module.css'
 import Image from 'next/image'
-import Interests_img from '../../../../assets/images/search_Visit.png'
+import search_Visit from '../../../../assets/images/search_Visit.png'
 function Interests() {
   return (
     <>
@@ -15,7 +15,7 @@ function Interests() {
 
             </div>
             <div className={`${classes.Interests_img} ms-auto`}>
-              <Image className=' md:ms-auto mx-auto' src={Interests_img} alt="" />
+              <Image className=' md:ms-auto mx-auto' src={search_Visit} alt="" />
               {/* <h3 className='font-mono font-semibold text-30px  w-max-[373px] text-center mx-auto mt-4'>Reduction in cost per conversion rate</h3> */}
 
             </div>

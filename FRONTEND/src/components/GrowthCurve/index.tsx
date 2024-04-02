@@ -4,7 +4,7 @@ import GrowthEnginePage_Box from '../GrowthEnginePage/GrowthEnginePage_Box'
 import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
 import Growths from '../GrowthEnginePage/Growths'
 import Climate_action from '@/common/Climate_action'
-import Growthcurve_img from '../../assets/images/how_to_grow.png'
+import how_to_grow from '../../assets/images/how_to_grow.png'
 
 function GrowthCurve() {
 
@@ -12,7 +12,7 @@ function GrowthCurve() {
         <>
             <GrowthEnginePage_Banner title="Growth Curve" desc="On-demand, pay-as-you-go growth marketing support for total scalability" />
             <GrowthEnginePage_Box page_name="GrowthCurve"
-                has_buttons={true} btn_value="Make an enquiry" img_url={Growthcurve_img}
+                has_buttons={true} btn_value="Make an enquiry" img_url={how_to_grow}
                 box_title_top='“Within 4 short months, Zest have reduced our CPA by an average of 30%, leading to an increase in leads by 43%. To handle all of this new business, we’re looking to recruit!”' box_desc_top="Martha Mwaisoloka, at A&E Fire and Security"
                 box_title_down='“Growth Mapper helped us to think more deeply about the needs, wants, and conversion paths of our target customers. The tools learned will last a lifetime.”' box_desc_down="Michael Murdoch, Founder at The House London"
                 title1="Instant scalability" desc1="Growth Curve offers a scalable growth marketing solution to compliment in-house capacity, seasonality, product launches, and the ebbs and flows of business." has_note={false} note1=""

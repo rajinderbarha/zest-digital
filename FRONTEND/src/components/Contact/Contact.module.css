@@ -1,0 +1,23 @@
+@media only screen and (min-width:1024px) and (max-width:1272px),
+(max-width:774px) {
+    .names_div {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .names_div div {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:639px) {
+    .names_div {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    .text_div {
+        max-width: 636px;
+    }
+}

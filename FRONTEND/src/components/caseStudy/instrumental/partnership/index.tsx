@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from '../instrumental.module.css'
 import Image from 'next/image'
-import Partnership_img from '../../../../assets/images/Two_line_chart_Zest.png'
+import Partnership_line_3 from '../../../../assets/images/Partnership_line_3.png'
 function Partnership() {
     return (
         <>
@@ -15,7 +15,7 @@ function Partnership() {
 
                         </div>
                         <div className={`${classes.Interests_img} ms-auto`}>
-                            <Image className=' md:ms-auto mx-auto' src={Partnership_img} alt="" />
+                            <Image className=' md:ms-auto mx-auto' src={Partnership_line_3} alt="" />
                             {/* <h3 className='font-mono font-semibold text-30px  w-max-[373px] text-center mx-auto mt-4'>Reduction in cost per conversion rate</h3> */}
 
                         </div>

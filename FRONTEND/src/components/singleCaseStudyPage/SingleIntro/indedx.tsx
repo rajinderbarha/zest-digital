@@ -1,8 +1,8 @@
 import React from 'react'
 import classes from './SingleIntro.module.css'
-import img1 from '../../../assets/images/imag1.png'
-import img2 from '../../../assets/images/imag2.png'
-import img3 from '../../../assets/images/imag3.png'
+import Increase_icon from '../../../assets/images/Increase_icon.png'
+import Pound_icon from '../../../assets/images/Pound_icon.png'
+import Success_trophy_icon from '../../../assets/images/Success_trophy_icon.png'
 import Objective from '../singlebox/objective'
 import Strategy from '../singlebox/strategy';
 import Action from '../singlebox/action';
@@ -19,7 +19,7 @@ function SingleIntro() {
 
                         <div className="text-center   max-w-[389px]">
                             <div className="2xl:max-w-[250px] xl:max-w-[240px] lg:max-w-[200px]  max-w-[150px]    mx-auto">
-                                <Image src={img1} alt="" />
+                                <Image src={Increase_icon} alt="" />
                             </div>
                             <h2 className='2xl:text-45px xl:text-40px lg:text-35px  text-30px text-color-7 font-mono font-semibold'>+83%</h2>
                             <p className='2xl:text-30px xl:text-25px lg:text-[20px]  text-[18px] font-mono font-medium text-white xl:leading-9 lg:leading-8  leading-5 mx-auto 2xl:max-w-[319px] xl:max-w-[270px] lg:max-w-[215px]  max-w-[200px]  '>Increase in enquiry clicks</p>
@@ -27,7 +27,7 @@ function SingleIntro() {
 
                         <div className="text-center    max-w-[263px]">
                             <div className="2xl:max-w-[250px] xl:max-w-[240px] lg:max-w-[200px]  max-w-[150px]    mx-auto">
-                                <Image src={img2} alt="" />
+                                <Image src={Pound_icon} alt="" />
                             </div>
                             <h2 className='2xl:text-45px xl:text-40px lg:text-35px  text-30px text-color-7 font-mono font-semibold'>+772%</h2>
                             <p className='2xl:text-30px xl:text-25px  lg:text-[20px]  text-[18px] font-mono font-medium text-white xl:leading-9 lg:leading-8  leading-5 mx-auto 2xl:max-w-[389px] xl:max-w-[200px] lg:max-w-[180px]   max-w-[150px]  '>Increase in profit</p>
@@ -35,7 +35,7 @@ function SingleIntro() {
 
                         <div className="text-center    max-w-[300px]">
                             <div className="2xl:max-w-[250px] xl:max-w-[240px] lg:max-w-[200px]  max-w-[150px]   mx-auto">
-                                <Image src={img3} alt="" />
+                                <Image src={Success_trophy_icon} alt="" />
                             </div>
                             <h2 className='2xl:text-45px xl:text-40px lg:text-35px  text-30px text-color-7 font-mono font-semibold'>1x</h2>
                             <p className='2xl:text-30px xl:text-25px  lg:text-[20px]  text-[18px] font-mono font-medium text-white xl:leading-9 lg:leading-8  leading-5 mx-auto 2xl:max-w-[244px] xl:max-w-[150px] lg:max-w-[120px]   max-w-[100px]  '>Award nomination</p>
@@ -60,7 +60,6 @@ function SingleIntro() {
                 <Action />
                 <Result />
             </div>
-            <Climate_action />
         </>
     )
 }

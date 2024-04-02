@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from '../instrumental.module.css'
-import Instrumental_img from '../../../../assets/images/Pie_chart_Zest.png'
+import Pie_chart_70 from '../../../../assets/images/Pie_chart_70.png'
 import Image from 'next/image'
 
 function Instrumental() {
@@ -10,7 +10,7 @@ function Instrumental() {
             <div className='main_container_x'>
                 <div className="grid md:grid-cols-12   items-center">
                     <div className="md:col-span-4 ">
-                        <Image className='md:ms-auto mx-auto' src={Instrumental_img} alt="" />
+                        <Image className='md:ms-auto mx-auto' src={Pie_chart_70} alt="" />
                         <h3 className='font-mono font-semibold text-30px  w-max-[373px] text-center mx-auto mt-4'>Reduction in cost per conversion rate</h3>
 
                     </div>
