@@ -11,131 +11,143 @@ import facebook from '../../assets/images/facebook.png'
 import linkedin from '../../assets/images/linkedin.png'
 import instagram from '../../assets/images/twitter.png'
 import { FaPhoneAlt } from "react-icons/fa";
-import Climate_action from '@/common/Climate_action'
+import climate_action from '../../assets/images/climate_action.png'
+import earth from '../../assets/images/earth.png'
+import { urlFor } from '../../../sanity.client'
+import Link from 'next/link'
+
+export interface FooterType {
+  climate_actionImg: { _type: string; asset: { _type: string; /* other fields */ } };
+  earth_img: { _type: string; asset: { _type: string; /* other fields */ } };
+  smallDescription: string;
+  logo:   string ;
+  footerItem: {
+    heading: string;
+    list: { name: string; link: string; icon: { _type: string; asset: { _type: string; /* other fields */ } } }[];
+  }[];
+  brands: { brandImage: { _type: string; asset: { _type: string; /* other fields */ } } }[];
+  social: { socialImage: { _type: string; asset: { _type: string; /* other fields */ } }; socialLink: string }[];
+  copyRightText: string;
+}
 
 
-// export interface FooterType {
-//   logo: any;
-//   footerItem: { heading: string; list: object[] }[];
-//   brands: { brandImage: any;  }[];
-//   social: {socialImage:any ; socialLink: any }[];
-//   copyRightText: string
-// }
+
 
 // const Footer = ({ data }: { data: FooterType[] }) => {
-const Footer = () => {
+const Footer = ({ data }: { data: FooterType[] }) => {
+  console.log("-----------footer", data);
+
+
   return (
     <>
-      <Climate_action />
+    {data.map((item,index) => (
+
+    <div key={index}>
+   
+      <div className="mx-auto max-w-[1720px] w-full px-5 my-10 mt-[74px] mb-[110px]">
+                {/* {/ <div className={`  rounded-30px font-mono pt-[88px]  flex`}> /} */}
+                <div className={` mx-auto md:ps-14 px-10 md:pe-7  md:py-[70px] py-[60px] rounded-30px shadow-compo border border-black font-mono bg-white text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}>
+                    <div className={` col-span-4 flex items-center  mx-auto`}>
+                        <div className={`${classes.image1_w} w-[120px] sm:w-[250px]`}>
+                            <Image src={urlFor(item.climate_actionImg).url()} width={250} height={105} alt="" className='w-full' />
+                            {/* <Image src={climate_action} alt="" className='w-full' /> */}
+                        </div>
+                        <div className=" w-[80px] sm:w-[150px]">
+                            <Image src={urlFor(item.earth_img).url()} width={197} height={198} alt="" className='w-full' />
+                        </div>
+                    </div>
+                    <div className="col-span-8 md:ps-10 max-w-[919px]   items-center">
+                        <p className={`${classes.growth_engine_desc} text-3xl `}>{item.smallDescription}</p>
+                    </div>
+                </div>
+                {/* {/ </div> /} */}
+            </div>
+
+
+
       <div className={`${classes.bg_image} bg-black rounded-t-[30px]  `} >
         <div className="max-w-[1720px] mx-auto px-5 pt-[48px] pb-10">
 
           <div className="flex flex-row items-center">
             <div className="">
-              <Image src={logo} alt="" />
+              <Image src={urlFor(item.logo).url() }  width={197} height={76} alt="" />
             </div>
             <div className="border-5 max-w-[1171px] w-full ps-5 shadow-xl shadow-white">
               <hr className=" bg-green-500 border-0 h-[1px]" />
             </div>
           </div>
+<div className={`${classes.detail_cont} max-w-[1521px] mx-auto grid grid-cols-2 sm:grid-cols-6 gap-5 lg:gap-0 lg:grid-cols-12 mt-10`}>
+            {item.footerItem.map((footeItm, index) => (
+         
 
-          <div className={`${classes.detail_cont} max-w-[1521px] mx-auto grid grid-cols-2 sm:grid-cols-6 gap-5 lg:gap-0 lg:grid-cols-12 mt-10`}>
-            <div className={`${classes.footer_details}`}>
-              <h2 className='font-bold text-2xl mb-3 font-mono '>Oxford</h2>
-              <address className="not-italic">
+
+            <div className={`${classes.footer_details}`} key={index}>
+              <h2 className='font-bold text-2xl mb-3 font-mono '>{footeItm.heading}</h2>
+              {footeItm.list.map((list,index)=>(
+                <div> 
+                    
+                    <address className="not-italic">
+
+             <Link href={list.link}> {list.name}</Link> <br />
+               {/* <br /> */}
+                {/* Oxford<br />
+                OX2 0DP */}
+              </address>
+                    {/* <address className="not-italic">
                 1–3 Kings Meadow<br />
                 Odney Mead<br />
                 Oxford<br />
                 OX2 0DP
-              </address>
-              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +44 (0) 1865 864 999</p>
-            </div>
-            <div className={`${classes.footer_details}`}>
-              <h2 className='font-bold text-2xl mb-3 font-mono '>Birmingham</h2>
-              <address className="not-italic">
-                123-131 Bradford Street<br />
-                Digbeth<br />
-                Birmingham<br />
-                B12 0NS
-              </address>
-              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +44 (0) 1212 805 858</p>
-            </div>
-            <div className={`${classes.footer_details}`}>
-              <h2 className='font-bold text-2xl mb-3 font-mono'>London</h2>
-              <address className="not-italic">
-                10 Fitzroy Square <br />
-                Fitzrovia <br />
-                London <br />
-                W1T 5HP
-              </address>
-              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +44 (0) 207 8560 434</p>
-            </div>
-            <div className={`${classes.footer_details}`}>
-              <h2 className='font-bold text-2xl mb-3 font-mono' >Bristol</h2>
-              <address className="not-italic">
-                The Old Stock Exchange <br />
-                St. Nicholas Street <br />
-                Bristol <br />
-                BS1 1TG
-              </address>
-              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +44 (0) 117 463 3137</p>
-            </div>
-            <div className={`${classes.footer_details}`}>
-              <h2 className='font-bold text-2xl mb-3 font-mono '>New York</h2>
-              <address className="not-italic">
-                115 Broadway Street <br />
-                5th Floor <br />
-                New York <br />
-                NY 10006
-              </address>
-              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +1 (718) 550-0804</p>
-            </div>
-            <div className={`${classes.footer_details}`}>
-              <h2 className='font-bold text-2xl mb-3 font-mono '>Amsterdam</h2>
-              <address className="not-italic">
-                Spaces - Amsterdam  <br />
-                Barbara Strozzilaan 201  <br />
-                Amsterdam <br />
-                1083 HN
-              </address>
-              <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +31 970 1025 7004</p>
-            </div>
-          </div>
+              </address> */}
+              {/* <p className={`${classes.footer_details_telephone}`}><FaPhoneAlt className='text-white' /> +44 (0) 1865 864 999</p> */}
+              </div>
+              ))}
+              
 
-          <div className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end my-10`}>
-            <div className="">
-              <Image src={carbon_logo} alt="" />
-            </div>
-            <div className="">
-              <Image src={hubspot_logo} alt="" />
-            </div>
-            <div className="">
-              <Image src={microsoft_partner_logo} alt="" />
-            </div>
-            <div className="">
-              <Image src={google_partner_logo} alt="" />
-            </div>
-            <div className="">
-              <Image src={cyber_certification_logo} alt="" />
-            </div>
-          </div>
 
+
+
+
+
+
+
+
+
+          </div>
+              ))}
+</div>    
+<div className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end my-10`}>
+              {item.brands.map((brandsimg,index )=>(
+
+            
+        
+            <div key={index} className="foter_logos">
+              <Image src={urlFor(brandsimg.brandImage).url()} width={400} height={400} className='w-auto' alt="" />
+            </div>
+       
+          
+            ))}
+</div>
           <div className=" flex gap-5">
+            {item.social.map((socialImg,index)=>(
+
+          
             <div className="">
-              <Image src={facebook} alt="" />
+              <Link href={socialImg.socialLink}>
+              
+              <Image src={urlFor(socialImg.socialImage).url()} width={50} height={50} alt="" />
+              </Link>
             </div>
-            <div className="">
-              <Image src={linkedin} alt="" />
-            </div>
-            <div className="">
-              <Image src={instagram} alt="" />
-            </div>
+              ))}
+           
           </div>
         </div>
       </div>
       <div className="bg-color-1 py-[35px]">
-        <p className='text-white max-w-[970px] px-10 text-center mx-auto'>Copyright 2023 © Zest Digital Limited | View our terms and conditions. Company No: 07288662 | VAT No: GB994 6614 67 </p>
+        <p className='text-white max-w-[970px] px-10 text-center mx-auto'>{item.copyRightText} </p>
       </div>
+      </div>
+       ))}
     </>
   )
 }

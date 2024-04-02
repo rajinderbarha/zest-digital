@@ -4,8 +4,118 @@ import Escape from '@/components/About_page/Escape'
 import Our_values from '@/components/About_page/Our_values'
 import Zest_for_life from '@/components/About_page/Zest_for_life'
 import React from 'react'
+import client from '../../sanity.client';
+import { getAboutData } from '../../sanity.query'
 
-const About_page = () => {
+
+interface AboutType {
+  hero: {
+    title: string;
+    heading: string;
+    image: {
+      _type: string; // Ensure correct typing based on your schema
+      asset: {
+        _type: string; // Ensure correct typing based on your schema
+        url: string; // Ensure correct typing based on your schema
+        // Add any other fields if necessary
+      };
+      // Add any other fields if necessary
+    };
+  };
+  team: {
+    image: {
+      _type: string; // Ensure correct typing based on your schema
+      asset: {
+        _type: string; // Ensure correct typing based on your schema
+        url: string; // Ensure correct typing based on your schema
+        // Add any other fields if necessary
+      };
+      // Add any other fields if necessary
+    };
+    title: string;
+    description: string;
+  }[];
+  ourValue: {
+    heading: string;
+    ourValuesection: {
+      image: {
+        _type: string; // Ensure correct typing based on your schema
+        asset: {
+          _type: string; // Ensure correct typing based on your schema
+          url: string; // Ensure correct typing based on your schema
+          // Add any other fields if necessary
+        };
+        // Add any other fields if necessary
+      };
+      title: string;
+      description: string;
+    }[];
+  };
+  lifeSection: {
+    image: {
+      _type: string; // Ensure correct typing based on your schema
+      asset: {
+        _type: string; // Ensure correct typing based on your schema
+        url: string; // Ensure correct typing based on your schema
+        // Add any other fields if necessary
+      };
+      // Add any other fields if necessary
+    };
+    title: string;
+    description: string;
+  };
+  card: {
+    image: {
+      _type: string; // Ensure correct typing based on your schema
+      asset: {
+        _type: string; // Ensure correct typing based on your schema
+        url: string; // Ensure correct typing based on your schema
+        // Add any other fields if necessary
+      };
+      // Add any other fields if necessary
+    };
+    title: string;
+    description: string;
+  }[];
+  escape: {
+    heading: string;
+    description: string;
+    marquee: {
+      title: string;
+      description: string;
+    }[];
+  };
+  banner: {
+    image1: {
+      _type: string; // Ensure correct typing based on your schema
+      asset: {
+        _type: string; // Ensure correct typing based on your schema
+        url: string; // Ensure correct typing based on your schema
+        // Add any other fields if necessary
+      };
+      // Add any other fields if necessary
+    };
+    image2: {
+      _type: string; // Ensure correct typing based on your schema
+      asset: {
+        _type: string; // Ensure correct typing based on your schema
+        url: string; // Ensure correct typing based on your schema
+        // Add any other fields if necessary
+      };
+      // Add any other fields if necessary
+    };
+    description: string;
+  };
+}
+
+
+
+
+
+const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
+
+  console.log("aboutdata=====================",aboutdata)
+
   return (
     <div>
       <About_banner />
@@ -18,5 +128,16 @@ const About_page = () => {
 }
 
 export default About_page
+
+export async function getStaticProps() {
+  const aboutdata = await getAboutData();
+  return {
+    props: {    
+      aboutdata
+    }
+  };
+}
+
+
 
 

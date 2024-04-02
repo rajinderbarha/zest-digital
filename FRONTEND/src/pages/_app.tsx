@@ -1,11 +1,14 @@
+// _app.tsx
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "../layout/index";
-import { getHeader } from "../../sanity.query";
+import { getFooter, getHeader } from "../../sanity.query";
 
-function MyApp({ Component, pageProps, headerdata }: AppProps & { headerdata: any }) {
+function MyApp({ Component, pageProps, headerdata, footerdata}: AppProps & { headerdata: any, footerdata: any }) {
+
   return (
-    <Layout headerdata={headerdata}>
+    <Layout headerdata={headerdata} footerdata={footerdata}>
+
       <Component {...pageProps} />
     </Layout>
   );
@@ -13,7 +16,10 @@ function MyApp({ Component, pageProps, headerdata }: AppProps & { headerdata: an
 
 MyApp.getInitialProps = async () => {
   const headerdata = await getHeader();
-  return { headerdata };
+  const footerdata = await getFooter();
+  return { headerdata, footerdata };
 };
 
+
 export default MyApp;
+
