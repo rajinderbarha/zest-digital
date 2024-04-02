@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from '../instrumental.module.css'
-import Timeline_img from '../../../../assets/images/Project_timeline_Zest.png'
+import Project_timeline_window from '../../../../assets/images/Project_timeline_window.png'
 import Image from 'next/image'
 function Timeline() {
     return (
@@ -15,7 +15,7 @@ function Timeline() {
 
                         </div>
                         <div className="md:col-span-6 ">
-                            <Image className='md:ms-auto mx-auto' src={Timeline_img} alt="" />
+                            <Image className='md:ms-auto mx-auto' src={Project_timeline_window} alt="" />
                             <h3 className='font-mono font-semibold text-30px  w-max-[373px] text-center mx-auto mt-4'>Project timeline</h3>
 
                         </div>

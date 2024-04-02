@@ -1,7 +1,7 @@
 import React from 'react'
 
 import classes from '../instrumental.module.css'
-import Conversions_img from '../../../../assets/images/line_chart_02_Zest.png'
+import line_chart_02 from '../../../../assets/images/line_chart_02.png'
 import Image from 'next/image'
 function Conversions() {
     return (
@@ -10,7 +10,7 @@ function Conversions() {
                 <div className='main_container'>
                     <div className="grid md:grid-cols-12  gap-20  items-center">
                         <div className="md:col-span-6 ">
-                            <Image className='md:ms-auto mx-auto' src={Conversions_img} alt="" />
+                            <Image className='md:ms-auto mx-auto' src={line_chart_02} alt="" />
                             <h3 className='font-mono font-semibold text-30px  w-max-[373px] text-center mx-auto mt-4'>300% increase in conversions</h3>
 
                         </div>
