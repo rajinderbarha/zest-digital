@@ -6,12 +6,19 @@ export const Footer = defineType({
   type: 'document',
 
   fields: [
+    {name: 'ecology_img', title: 'Logo', type: 'image'},
+    {name: 'leaf_img', title: 'Logo', type: 'image'},
+    {
+      name: "smallDescription",           // name is just like id of the field 
+      type: "string",
+      title: "Small Description"
+  },
     {name: 'logo', title: 'Logo', type: 'image'},
     {
       name: 'footerItem',
       title: 'Footer Item',
       type: 'array',
-      of: [
+      of: [ 
         {
           type: 'object',
           fields: [
