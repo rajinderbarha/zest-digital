@@ -18,9 +18,7 @@ export function getHeader() {
   );
 }
 
-
-
-export function getFooter(){
+export function getFooter() {
   return client.fetch(
     groq`
     *[_type == "footer"] {
@@ -47,11 +45,8 @@ export function getFooter(){
     }
     
     `
-  )
+  );
 }
-
-
-
 
 export async function getAboutData() {
   const headerquery = `

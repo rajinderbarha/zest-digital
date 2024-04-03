@@ -1,29 +1,39 @@
 import React from 'react'
 import Image from 'next/image'
 import classes from '../About_banner.module.css'
-import users from '../Team_json/data.json';
-import Team_img from '../../../assets/images/team-ollieh.png'
-import Team_img_circle from '../../../assets/images//Team_img_circle.svg'
-function About_team() {
+import { AboutType } from '../../../../lib/interface';
+import { urlFor } from '../../../../lib/sanity.client';
+
+function About_team({ data }: { data: AboutType[] }) {
+
     return (
         <div className={`${classes.About_team} `}>
             <div className='main_container_x'>
-                <div className='grid md:grid-cols-3 gap-20'>
+                
 
-                    {users.users.map(user => (
-                        <div className='About_team_box text-center' key={user.id}>
+                    {data?.map((aboutdata,index) => (
+                        <div key={`${index}_About_team_1`} className=''>
+                        <div className='About_team_box text-center grid md:grid-cols-3 gap-20' key={`${aboutdata}_About_team`}>
+
+                            {aboutdata.team.map((teamData,index) => (
+                                <div key={`${index}_About_team_2`}>
+
                             <div className='About_img_box relative md:mb-14 mb-8'>
-                                <Image className={`${classes.Team_img_circle} absolute  bottom-0`} src={Team_img_circle} alt="" />
-                                <Image src={Team_img} className={`${classes.Team_img} relative z-10 `} alt="" />
+                                <div className={`${classes.Team_img_circle} absolute  bottom-0`}></div>
+                                {/* <Image className={`${classes.Team_img_circle} absolute  bottom-0`} src={Team_img_circle} alt="" /> */}
+                                <Image src={urlFor(teamData.image).url()} width={481} height={481} className={`${classes.Team_img} relative z-10 `} alt="" />
                             </div>
 
-                            <h3 className='text-35px font-semibold font-mono ' >{user.name}  </h3>
-                            <p className='text-lg font-normal font-mono'>{user.position}</p>
+                            <h3 className='text-35px font-semibold font-mono ' >{teamData.title}   </h3>
+                            <p className='text-lg font-normal font-mono'>{teamData.description}</p>
+                                    </div>
+                            ))}
+                        </div>
                         </div>
                     ))}
 
                 </div>
-            </div>
+        
         </div>
     )
 }

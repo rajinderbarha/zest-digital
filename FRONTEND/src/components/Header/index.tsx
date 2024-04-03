@@ -1,18 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import bars from '../../assets/images/bars-svgrepo-com.svg';
-import { urlFor } from '../../../sanity.client';
+import { urlFor } from '../../../lib/sanity.client';
 import Link from 'next/link';
+import { HeaderType } from '../../../lib/interface';
 
-export interface HeaderType {
-  logo: any;
-  navItem: { buttonName: string; buttonLink: string }[];
-  button: { navName: string; navLink: string };
-}
 
 
 const Header = ({ data }: { data: HeaderType[] }) => {
-  console.log("-----------", data);
 
   const navMenu = {
     menu: {
