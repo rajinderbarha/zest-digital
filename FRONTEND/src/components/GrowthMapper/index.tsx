@@ -4,7 +4,7 @@ import GrowthEnginePage_Box from '../GrowthEnginePage/GrowthEnginePage_Box'
 import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
 import Growths from '../GrowthEnginePage/Growths'
 import Climate_action from '@/common/Climate_action'
-import person_Img from '../../assets/images/flags.png'
+import person_Img from '../../assets/images/People_icon.png'
 
 function GrowthMapper() {
     return (

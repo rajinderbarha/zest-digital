@@ -8,21 +8,37 @@ import Web_design_icon from '../../../assets/images/Web_design_icon.png'
 import Hosting_security_icon from '../../../assets/images/Hosting_security_icon.png'
 import classes from './GrowthMarketingServices_services.module.css'
 
-function GrowthMarketingServices_services() {
+interface GrowthMarketingServices_Banner_Props {
+    image_1_title: string;
+    image_2_title: string;
+    image_3_title: string;
+    image_4_title: string;
+    image_5_title: string;
+    image_6_title: string;
+    image_1_desc: string;
+    image_2_desc: string;
+    image_3_desc: string;
+    image_4_desc: string;
+    image_5_desc: string;
+    image_6_desc: string;
+}
+const GrowthMarketingServices_services: React.FC<GrowthMarketingServices_Banner_Props> = (props) => {
+
+    // function GrowthMarketingServices_services() {
     return (
 
         <>
             <div className="GrowthMarketingServices_services px-10 mt-[170px]">
                 <div className="max-w-[1510px] mx-auto py-[80px] md:py-[114px] border border-color-1 rounded-30px">
                     <h2 className='lg:text-45px md:text-40px text-35px font-mono font-semibold max-w-[783px] mx-auto text-center text-color-1'>Our Growth Marketing Services</h2>
-                    <div className={`${classes.services} max-w-[1212px] mx-auto mt-[80px] md:mt-[123px] grid grid-cols-3 gap-10 gap-y-[114px] justify-items-center`}>
+                    <div className={`${classes.services} max-w-[1212px] mx-auto mt-[80px] md:mt-[123px] grid grid-cols-3 gap-10 gap-y-[50px] md:gap-y-[114px] justify-items-center`}>
                         <div className="max-w-[250px] ">
                             <div className="max-w-[250px] w-full">
                                 <Image src={how_to_grow} alt='' className='w-full' />
                             </div>
                             <div className="text-center">
-                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>Strategy</h2>
-                                <p className='font-lato text-lg font-normal text-color-1'>Our expert team will work with you to craft the optimal strategy for your business to achieve it’s growth targets</p>
+                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>{props.image_1_title}</h2>
+                                <p className='font-lato text-lg font-normal text-color-1'>{props.image_1_desc}</p>
                             </div>
                         </div>
                         <div className="max-w-[250px]">
@@ -30,8 +46,8 @@ function GrowthMarketingServices_services() {
                                 <Image src={growth_seo_icon} alt='' className='w-full' />
                             </div>
                             <div className="text-center">
-                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>SEO</h2>
-                                <p className='font-lato text-lg font-normal text-color-1'>Over 10 years experience dominating search with revenue generating SEO campaigns</p>
+                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>{props.image_2_title}</h2>
+                                <p className='font-lato text-lg font-normal text-color-1'>{props.image_2_desc}</p>
                             </div>
                         </div>
                         <div className="max-w-[250px]">
@@ -39,8 +55,8 @@ function GrowthMarketingServices_services() {
                                 <Image src={Paid_media_icon} alt='' className='w-full' />
                             </div>
                             <div className="text-center">
-                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>PPC</h2>
-                                <p className='font-lato text-lg font-normal text-color-1'>Commercially aware PPC campaigns to drive targeted traffic to content that converts</p>
+                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>{props.image_3_title}</h2>
+                                <p className='font-lato text-lg font-normal text-color-1'>{props.image_3_desc}</p>
                             </div>
                         </div>
                         <div className="max-w-[250px]">
@@ -48,8 +64,8 @@ function GrowthMarketingServices_services() {
                                 <Image src={Social_services_icon} alt='' className='w-full' />
                             </div>
                             <div className="text-center">
-                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>Paid social</h2>
-                                <p className='font-lato text-lg font-normal text-color-1'>Advanced targeting, creatives, and tracking make paid social the ideal channel to boost digital ROI</p>
+                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>{props.image_4_title}</h2>
+                                <p className='font-lato text-lg font-normal text-color-1'>{props.image_4_desc}</p>
                             </div>
                         </div>
                         <div className="max-w-[250px]">
@@ -57,8 +73,8 @@ function GrowthMarketingServices_services() {
                                 <Image src={Web_design_icon} alt='' className='w-full' />
                             </div>
                             <div className="text-center">
-                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>Web</h2>
-                                <p className='font-lato text-lg font-normal text-color-1'>Transforming dull, poor performing websites into slick sales engines to support your growths</p>
+                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>{props.image_5_title}</h2>
+                                <p className='font-lato text-lg font-normal text-color-1'>{props.image_5_desc}</p>
                             </div>
                         </div>
                         <div className="max-w-[250px]">
@@ -66,8 +82,8 @@ function GrowthMarketingServices_services() {
                                 <Image src={Hosting_security_icon} alt='' className='w-full' />
                             </div>
                             <div className="text-center">
-                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>Hosting</h2>
-                                <p className='font-lato text-lg font-normal text-color-1'>Market leading hosting services to enable your website to run optimally, never missing an opportunity</p>
+                                <h2 className='font-mono text-35px text-center text-color-1 mt-[10px] mb-[18px]'>{props.image_6_title}</h2>
+                                <p className='font-lato text-lg font-normal text-color-1'>{props.image_6_desc}</p>
                             </div>
                         </div>
                     </div>

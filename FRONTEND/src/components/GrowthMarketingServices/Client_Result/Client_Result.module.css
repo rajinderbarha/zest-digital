@@ -1,0 +1,32 @@
+.Client_Result {
+    background-image: url(../../../assets/images/\ gross\ profit.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 16px;
+    background-position: center;
+    background-color: #000;
+}
+
+.Client_Result_title {
+    margin-bottom: 145px;
+}
+
+.view_more_btn {
+    margin-top: 137px;
+}
+
+@media screen and (max-width:768px) {
+    .Client_Result {
+        padding: 80px 16px;
+    }
+
+    .Client_Result_title {
+        margin-bottom: 100px;
+    }
+
+    .view_more_btn {
+        margin-top: 90px;
+    }
+
+
+}

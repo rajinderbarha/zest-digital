@@ -12,7 +12,7 @@ function Gross_profit() {
                         <p className='text-30px text-color-7 mb-12'>gross profit</p>
                         <h3 className='text-30px text-white mb-4'>Hanson (UK)</h3>
                         <p className='font-lato text-lg font-normal  text-white mb-4'>Best SEO Campaign finalist at the UK Digital Growth Awards</p>
-                        <button className='font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-   2 items-center'>View case study <span className='p-1 text-white rounded-full bg-black me-1 text-lg'><GoArrowRight /></span></button>
+                        <button className='font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center'>View case study <span className='p-1 text-white rounded-full bg-black me-1 text-lg'><GoArrowRight /></span></button>
                     </div>
                     <div className='Gross_profit_box_start text-center border bg-black rounded-30px  font-semibold font-mono border-color-8 md:p-20 p-6'>
                         <h2 className='text-55px font-semibold text-color-7'>+772% </h2>
