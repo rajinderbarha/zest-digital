@@ -1,0 +1,16 @@
+.Careerbanner {
+    padding: 96px 16px 0 16px;
+}
+
+.box_bg_image {
+    background-image: url('../../assets/images/Gradient_v6.png');
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:767px) {
+    .Careerbanner {
+        padding: 60px 16px 0 16px;
+    }
+}

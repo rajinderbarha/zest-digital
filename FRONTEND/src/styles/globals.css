@@ -49,3 +49,7 @@ body {
     font-size: 18px;
   }
 }
+.popup_conatiner{
+
+  @apply max-w-[1510px] mx-auto border border-color-1 shadow-compo shadow-[#e43fa8] rounded-30px
+}

@@ -1,0 +1,10 @@
+@media only screen and (max-width:1070px) {
+    .form_inputs {
+        flex-direction: column;
+    }
+
+    .form_inputs div {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+}

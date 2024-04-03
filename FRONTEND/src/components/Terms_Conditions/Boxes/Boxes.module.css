@@ -1,0 +1,77 @@
+@media only screen and (max-width:1175px) {
+    .grow_image {
+        /* border: 1px solid black; */
+        width: 480px;
+        bottom: -100px;
+        right: -50px;
+    }
+
+    .grow_image img {
+        /* border: 1px solid black; */
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .growth_engine_title {
+        font-size: 33px;
+    }
+
+    .growth_engine_desc {
+        font-size: 23px;
+        margin: 12px auto;
+        line-height: 30px;
+    }
+
+    .growth_engine {
+        padding: 50px 23px 50px 40px;
+    }
+
+    .grow_image {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:865px) {
+    .grow_image {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .growth_engine_title {
+        font-size: 23px;
+    }
+
+    .growth_engine_desc {
+        font-size: 18px;
+        margin: 12px auto;
+        line-height: 28px;
+    }
+
+    .growth_engine {
+        padding: 30px 15px 30px 30px;
+    }
+
+    .growth_engine button {
+        font-size: 12px;
+        padding: 4px 0 4px 10px;
+    }
+
+    .growth_engine button img {
+        padding: 6px 4px 6px 4px;
+        width: 25px;
+        margin-right: 5px;
+    }
+
+    .grow_image {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width:530px) {
+    .grow_image {
+        width: 250px;
+    }
+}
