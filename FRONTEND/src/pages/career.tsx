@@ -6,10 +6,10 @@ import React from 'react'
 function career() {
     return (
         <>
-            <Layout>
+    
                 <Career />
-                <Climate_action />
-            </Layout>
+            
+            
         </>
     )
 }

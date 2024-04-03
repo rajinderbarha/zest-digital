@@ -4,12 +4,12 @@ import React from 'react'
 
 function digitalterms() {
     return (
-        <>
-            <Layout>
+       
+          
                 <DigitalTerms />
 
-            </Layout>
-        </>
+          
+        
     )
 }
 

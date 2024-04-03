@@ -112,5 +112,7 @@ export const About = defineType({
                 { name: 'description', type: 'string', title: 'Description' },
             ],
         },
+
+       
     ],
 })

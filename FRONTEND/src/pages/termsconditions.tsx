@@ -6,11 +6,9 @@ import React from 'react'
 function termsconditions() {
     return (
         <>
-            <Layout>
+        
                 <Terms_Conditions />
-                <Climate_action />
 
-            </Layout>
         </>
     )
 }
