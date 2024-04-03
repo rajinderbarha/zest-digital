@@ -3,15 +3,18 @@ import classes from "./footer.module.css";
 import Image from "next/image";
 import { urlFor } from "../../../lib/sanity.client";
 import Link from "next/link";
-import { FooterType } from "../../../lib/interface";
+import { ClimateAction, FooterType } from "../../../lib/interface";
+import Climate_action from "@/common/Climate_action";
 
-const Footer = ({ data }: { data: FooterType[] }) => {
-
+const Footer = ({ data }: { data: FooterType[]  }) => {
+      console.log("footerdata===============----------------=============", data)
   return (
     <>
       {data.map((item, index) => (
         <div key={index}>
-          <div className="mx-auto max-w-[1720px] w-full px-5 my-10 mt-[74px] mb-[110px]">
+
+          <Climate_action climate_actionImg={item.climate_actionImg}  earth_img={item.earth_img}  smallDescription={item.smallDescription} />
+          {/* <div className="mx-auto max-w-[1720px] w-full px-5 my-10 mt-[74px] mb-[110px]">
             <div
               className={` mx-auto md:ps-14 px-10 md:pe-7  md:py-[70px] py-[60px] rounded-30px shadow-compo border border-black font-mono bg-white text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}
             >
@@ -41,7 +44,9 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
+
+
 
           <div className={`${classes.bg_image} bg-black rounded-t-[30px]  `}>
             <div className="max-w-[1720px] mx-auto px-5 pt-[48px] pb-10">

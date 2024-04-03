@@ -17,6 +17,22 @@ export function getHeader() {
     }`
   );
 }
+export function getClimateActiondata() {
+  return client.fetch(
+    groq`
+      *[_type == 'header'] {
+        logo,
+        navItem[] {
+          buttonName,
+          buttonLink
+        },
+        button {
+          navName,
+          navLink
+        }
+    }`
+  );
+}
 
 export function getFooter() {
   return client.fetch(
@@ -98,3 +114,7 @@ export async function getAboutData() {
   const data = await client.fetch(headerquery);
   return data;
 }
+
+
+
+

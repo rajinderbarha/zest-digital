@@ -1,11 +1,16 @@
 export interface FooterType {
     id:any,
+
+
     climate_actionImg: {
       _type: string;
       asset: { _type: string /* other fields */ };
     };
     earth_img: { _type: string; asset: { _type: string /* other fields */ } };
     smallDescription: string;
+
+
+
     logo: string;
     footerItem: {
         id:any,
@@ -27,6 +32,16 @@ export interface FooterType {
       socialLink: string;
     }[];
     copyRightText: string;
+  }
+
+
+  export interface ClimateAction {
+    climate_actionImg: {
+      _type: string;
+      asset: { _type: string /* other fields */ };
+    };
+    earth_img: { _type: string; asset: { _type: string /* other fields */ } };
+    smallDescription: string;
   }
 
 

@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, headerdata, footerdata}: AppProps & { hea
       <Component {...pageProps} />
     </Layout>
   );
-}
+}     
 
 MyApp.getInitialProps = async () => {
   const headerdata = await getHeader();
