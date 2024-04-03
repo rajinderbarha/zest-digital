@@ -3,7 +3,6 @@ import GrowthEnginePage_Banner from './GrowthEnginePage_Banner'
 import GrowthEnginePage_Box from './GrowthEnginePage_Box'
 import Growth_Accordion from './Growth_Accordion'
 import Growths from './Growths'
-import Climate_action from '@/common/Climate_action'
 import flag_img from '../../assets/images/flags.png'
 
 function GrowthEnginePage() {
@@ -22,7 +21,6 @@ function GrowthEnginePage() {
 
             <Growth_Accordion />
             <Growths />
-            <Climate_action />
         </>
     )
 }

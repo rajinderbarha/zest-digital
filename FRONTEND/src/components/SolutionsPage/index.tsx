@@ -10,7 +10,7 @@ function solutionsPage() {
             <Solution_Banner />
             <Section_Main />
             <Logo_moving />
-            <Climate_action />
+            {/* <Climate_action /> */}
         </>
     )
 }

@@ -21,7 +21,7 @@ function GrowthCurve() {
             />
             <Growth_Accordion />
             <Growths />
-            <Climate_action />
+            {/* <Climate_action /> */}
         </>
     )
 }
