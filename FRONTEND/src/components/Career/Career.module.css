@@ -1,0 +1,34 @@
+.Careerbanner {
+    padding: 96px 16px 0 16px;
+}
+
+@media only screen and (max-width:767px) {
+    .Careerbanner {
+        padding: 60px 16px 0 16px;
+    }
+}
+
+.SingleIntro {
+    background-image: url('../../assets/images/Gradient_calendar.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: black;
+    margin-top: 80px;
+
+}
+
+.single_container {
+    /* margin-top: -100px; */
+}
+
+.grow_img {
+    right: 0;
+    top: -150px;
+}
+
+@media only screen and (max-width:1027px) {
+    .grow_img {
+        top: -120px;
+    }
+}

@@ -1,5 +1,6 @@
 .About_banner {
     padding: 143px 16px 141px 16px;
+    overflow: hidden;
 }
 
 .Team_img_box {
@@ -48,6 +49,14 @@
     padding: 129px 16px 140px 16px;
     border-radius: 30px;
 
+}
+.Team_img_circle{
+width: 95%;
+    height: 84%;
+    background: #1d2671;
+    border-radius: 100%;
+    left: 6px;
+    bottom: 4px;
 }
 
 .Escape_p {

@@ -1,5 +1,3 @@
-import Climate_action from '@/common/Climate_action'
-import { HeaderType } from '@/components/Header'
 import Casestudyintro from '@/components/caseStudy/CaseStudyIntro'
 import Gross_profit from '@/components/caseStudy/gross_profit'
 import Conversions from '@/components/caseStudy/instrumental/conversions'

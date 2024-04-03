@@ -1,4 +1,5 @@
 import {defineType} from 'sanity'
+import { ClimteAction } from './climateaction'
 
 export const Footer = defineType({
   title: 'Footer',
@@ -6,13 +7,7 @@ export const Footer = defineType({
   type: 'document',
 
   fields: [
-    {name: 'climate_actionImg', title: 'Climate_actionImg', type: 'image'},
-    {name: 'earth_img', title: 'Earth_img', type: 'image'},
-    {
-      name: "smallDescription",           // name is just like id of the field 
-      type: "string",
-      title: "Small Description"
-  },
+   
     {name: 'logo', title: 'Logo', type: 'image'},
     {
       name: 'footerItem',

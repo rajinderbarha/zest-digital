@@ -58,9 +58,9 @@ export const About = defineType({
             title: 'Life Section',
             type: 'object',
             fields: [
-                { name: 'image', type: 'image', title: 'Image' },
                 { name: 'title', type: 'string', title: 'Title' },
                 { name: 'description', type: 'string', title: 'Description' },
+                { name: 'image', type: 'image', title: 'Image' },
             ],
         },
         {
@@ -70,8 +70,8 @@ export const About = defineType({
                 {
                     type: 'object',
                     fields: [
-                        { name: 'image', type: 'image', title: 'Image' },
                         { name: 'title', type: 'string', title: 'Title' },
+                        { name: 'image', type: 'image', title: 'Image' },
                         { name: 'description', type: 'string', title: 'Description' },
                     ],
                 },
@@ -112,5 +112,7 @@ export const About = defineType({
                 { name: 'description', type: 'string', title: 'Description' },
             ],
         },
+
+       
     ],
 })

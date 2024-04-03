@@ -10,7 +10,6 @@ import Services from '@/common/Services';
 
 export default function Home() {
   return (
-
     <>
       <HeroSection />
       <Growth />

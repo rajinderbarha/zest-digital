@@ -1,0 +1,11 @@
+.list_title {
+    @apply lg:text-45px md:text-40px text-30px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[40px]
+}
+
+.list_sub_title {
+    @apply md:text-35px text-30px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[40px]
+}
+
+.list_sub_items{
+    @apply flex flex-col gap-6 font-lato text-lg ml-[60px]
+}
