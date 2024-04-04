@@ -5,7 +5,8 @@ import Growths from '../GrowthEnginePage/Growths'
 import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
 import flag_img from '../../assets/images/flags.png'
 import Sign_up from './Sign_up'
-function GrowthTracker() {
+import { GrowthTrackerType } from '../../../lib/interface'
+function GrowthTracker({ data }: { data: GrowthTrackerType[] }) {
     return (
         <>
             <GrowthEnginePage_Banner title="Growth Tracker" desc="Simple goal tracking software for accelerated and meaningful growth" />

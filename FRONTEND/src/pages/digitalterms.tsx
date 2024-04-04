@@ -1,12 +1,18 @@
 import DigitalTerms from '@/components/DigitalTerms'
 import Layout from '@/layout'
 import React from 'react'
+import { getDigitalTerms } from '../../lib/sanity.query'
+import { DigitalTermsOfServiceType } from '../../lib/interface'
 
-function digitalterms() {
+function digitalterms({ digitaltermsdata }: { digitaltermsdata: DigitalTermsOfServiceType[] }) {
+
+
+
+
     return (
        
           
-                <DigitalTerms />
+                <DigitalTerms data={digitaltermsdata}/>
 
           
         
@@ -14,3 +20,14 @@ function digitalterms() {
 }
 
 export default digitalterms
+
+export async function getStaticProps() {
+  const digitaltermsdata = await getDigitalTerms();
+  return {
+    props: {    
+        digitaltermsdata
+    }
+  };
+}
+
+

@@ -7,12 +7,10 @@ import { ClimateAction, FooterType } from "../../../lib/interface";
 import Climate_action from "@/common/Climate_action";
 
 const Footer = ({ data }: { data: FooterType[]  }) => {
-      console.log("footerdata===============----------------=============", data)
   return (
     <>
       {data.map((item, index) => (
         <div key={index}>
-
           <Climate_action climate_actionImg={item.climate_actionImg}  earth_img={item.earth_img}  smallDescription={item.smallDescription} />
           {/* <div className="mx-auto max-w-[1720px] w-full px-5 my-10 mt-[74px] mb-[110px]">
             <div
