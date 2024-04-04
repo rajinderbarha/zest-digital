@@ -10,11 +10,12 @@ import Client_Result from '../GrowthMarketingServices/Client_Result'
 import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
 import GrowthMarketingServices_Quotes from '../GrowthMarketingServices/GrowthMarketingServices_Quotes'
 import GrowthMarketingServices_Address from '../GrowthMarketingServices/GrowthMarketingServices_Address'
+import GrowthMarketingServices_Banner from '../GrowthMarketingServices/GrowthMarketingServices_Banner'
 
 function SeoService() {
   return (
     <>
-      <GrowthEnginePage_Banner title="SEO Services" desc="Rank in the top positions for the keywords your customers are searching for when they’re ready to buy. Learn how SEO can generate more enquiries, and sales from your website by speaking to our experts today.." />
+      <GrowthMarketingServices_Banner max_width="1033px" title="SEO Services" desc="Rank in the top positions for the keywords your customers are searching for when they’re ready to buy. Learn how SEO can generate more enquiries, and sales from your website by speaking to our experts today.." />
       <GrowthMarketingServices_Box image_1_title="Content Marketing" image_2_title="Technical SEO" image_3_title="Link-building" title="Oxford’s Leading SEO Agency that " title_change_color="delivers remarkable results" desc_1="SEO is constantly evolving, and over the last decade we’ve stayed ahead of the curve by developing the most cutting edge strategies to allow our clients to generate stronger ROI from search marketing. Our clients see consistent increases in their organic enquiries, and sales as a result." desc_2="Do you need to generate more SEO leads for your business?" />
       {/* <GrowthMarketingServices_details /> */}
       <GrowthMarketingServices_details_happy_customer title1="Join" title_changeColor="350+" title2="Happy Customers" desc1="For over 10 years our expert team have delivered remarkable results for our clients. Whether your business has a marketing team, or is earlier in the marketing journey, we have products to suit those who would just like to increase activity, and for those looking to hit specific growth targets." desc2="We’re incredibly proud to boast our client retention rate currently sits at 95%." />
@@ -30,6 +31,7 @@ function SeoService() {
         desc2="Don’t let it be your competitors making the gains." />
       <GrowthMarketingServices_book_call title='Need to overhaul your SEO strategy?' />
       <GrowthMarketingServices_services
+        box_title="Our SEO Services"
         image_1_title="Strategy"
         image_2_title="Content"
         image_3_title="Link-building"
@@ -43,10 +45,23 @@ function SeoService() {
         image_5_desc="Analysing the full range of SEO ranking factors, our expert team will make recommendations to improve your off-page content"
         image_6_desc="Our technical team can support the smooth-running of your website, and make recommendations to improve it’s technical health score"
       />
-      <Client_Result />
+      <Client_Result
+        card_1_percentage="+88%"
+        card_1_title="domain authority"
+        card_1_desc_1="Polythene UK"
+        card_1_desc_2="Increasing DA for industry leader"
+        card_2_percentage="+578%"
+        card_2_title="more sessions"
+        card_2_desc_1="TP Knotweed"
+        card_2_desc_2="Boosting traffic for knotweed specialist"
+        card_3_percentage="+130%"
+        card_3_title="more keywords"
+        card_3_desc_1="Hanson (UK)"
+        card_3_desc_2="Best SEO Campaign finalist at the UK Digital Growth Awards"
+      />
       <Growth_Accordion />
       <GrowthMarketingServices_Quotes />
-      <GrowthMarketingServices_Address />
+      <GrowthMarketingServices_Address title='SEO Agency' />
     </>
   )
 }

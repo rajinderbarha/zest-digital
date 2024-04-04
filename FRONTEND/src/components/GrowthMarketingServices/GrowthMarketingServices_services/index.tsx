@@ -21,6 +21,7 @@ interface GrowthMarketingServices_Banner_Props {
     image_4_desc: string;
     image_5_desc: string;
     image_6_desc: string;
+    box_title:string;
 }
 const GrowthMarketingServices_services: React.FC<GrowthMarketingServices_Banner_Props> = (props) => {
 
@@ -30,7 +31,7 @@ const GrowthMarketingServices_services: React.FC<GrowthMarketingServices_Banner_
         <>
             <div className="GrowthMarketingServices_services px-10 mt-[170px]">
                 <div className="max-w-[1510px] mx-auto py-[80px] md:py-[114px] border border-color-1 rounded-30px">
-                    <h2 className='lg:text-45px md:text-40px text-35px font-mono font-semibold max-w-[783px] mx-auto text-center text-color-1'>Our Growth Marketing Services</h2>
+                    <h2 className='lg:text-45px md:text-40px text-35px font-mono font-semibold max-w-[783px] mx-auto text-center text-color-1'>{props.box_title}</h2>
                     <div className={`${classes.services} max-w-[1212px] mx-auto mt-[80px] md:mt-[123px] grid grid-cols-3 gap-10 gap-y-[50px] md:gap-y-[114px] justify-items-center`}>
                         <div className="max-w-[250px] ">
                             <div className="max-w-[250px] w-full">
