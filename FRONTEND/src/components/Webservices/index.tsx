@@ -10,43 +10,61 @@ import Client_Result from '../GrowthMarketingServices/Client_Result'
 import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
 import GrowthMarketingServices_Quotes from '../GrowthMarketingServices/GrowthMarketingServices_Quotes'
 import GrowthMarketingServices_Address from '../GrowthMarketingServices/GrowthMarketingServices_Address'
+import GrowthMarketingServices_Banner from '../GrowthMarketingServices/GrowthMarketingServices_Banner'
 
 function Webservices() {
   return (
     <>
-      <GrowthEnginePage_Banner title="SEO Services" desc="Rank in the top positions for the keywords your customers are searching for when they’re ready to buy. Learn how SEO can generate more enquiries, and sales from your website by speaking to our experts today.." />
-      <GrowthMarketingServices_Box image_1_title="Content Marketing" image_2_title="Technical SEO" image_3_title="Link-building" title="Oxford’s Leading SEO Agency that " title_change_color="delivers remarkable results" desc_1="SEO is constantly evolving, and over the last decade we’ve stayed ahead of the curve by developing the most cutting edge strategies to allow our clients to generate stronger ROI from search marketing. Our clients see consistent increases in their organic enquiries, and sales as a result." desc_2="Do you need to generate more SEO leads for your business?" />
+      <GrowthMarketingServices_Banner max_width="1068px" title="Web Services" desc="Transform your website into an online sales engine. Learn how a new, or refreshed website could help your business generate more enquiries, and sales by speaking to our experts today." />
+      <GrowthMarketingServices_Box image_1_title="Design" image_2_title="Development" image_3_title="Hosting & Support" title="Oxford’s Leading Web Design Agency " title_change_color="building online sales engines" desc_1="We believe in creating incredible online experiences that produce outstanding results. A website should be so much more than an online brochure, or contact page. Our experts have decades of experience crafting beautiful websites that act as a sales engine for our clients, enabling all marketing activity to excel." desc_2="Does your website need a new lease of life?" />
       {/* <GrowthMarketingServices_details /> */}
+
       <GrowthMarketingServices_details_happy_customer title1="Join" title_changeColor="350+" title2="Happy Customers" desc1="For over 10 years our expert team have delivered remarkable results for our clients. Whether your business has a marketing team, or is earlier in the marketing journey, we have products to suit those who would just like to increase activity, and for those looking to hit specific growth targets." desc2="We’re incredibly proud to boast our client retention rate currently sits at 95%." />
-      <GrowthMarketingServices_details_proven_growth title1="Generate"
+
+      <GrowthMarketingServices_details_proven_growth title1="Gain useful insights from"
         title2=""
-        title_changeColor="Higher ROI "
-        desc1="Far too often we speak to business owners, and marketeers, who arent happy with the direction their marketing is going in, and don’t have a clear understanding of the return being generated. By following our proven frameworks, our expert team break down your growth goals into specific KPI’s that need to be achieved. "
-        desc2="A simple, data-driven strategy, and reporting process is what your business needs to increase ROI." />
-      <GrowthMarketingServices_details_increase_market title1="Increase"
+        title_changeColor="tracking & analytics "
+        desc1="Far too often we speak to business owners, and marketeers, who don’t have a clear understanding of the results being generated from their website. Our data specialists will aid you in setting up tracking for your website, and marketing channels to give you greater visibility over your performance, and allow you to re-invest in the areas generating the highest returns."
+        desc2="" />
+
+      <GrowthMarketingServices_details_increase_market title1="Ongoing"
         title2=""
-        title_changeColor="Market Share"
-        desc1="In todays world, in almost every industry, there are customers searching online looking to make enquiries, and purchases. The businesses that rank best for the keywords being searched to generate those sales, are in the best position to gain the market share available online. "
-        desc2="Don’t let it be your competitors making the gains." />
-      <GrowthMarketingServices_book_call title='Need to overhaul your SEO strategy?' />
+        title_changeColor="Hosting & Support"
+        desc1="Our leading Hosting & Support packages give clients peace of mind over their ongoing website health. Our expert team can manage, update, and implement fixes for your site following industry best practices, and our industry leading SLAs."
+        desc2="" />
+
+      <GrowthMarketingServices_book_call title='Need to refresh your online presence?' />
       <GrowthMarketingServices_services
-        image_1_title="Strategy"
-        image_2_title="Content"
-        image_3_title="Link-building"
-        image_4_title="On-page SEO"
-        image_5_title="Off-page SEO"
-        image_6_title="Technical"
-        image_1_desc="Our expert team will work with you to craft the optimal strategy for your business to achieve it’s growth targets using SEO"
-        image_2_desc="Our strategists, and expert copywriters can transform your website copy into high ranking content, built to convert"
-        image_3_desc="Improve your chances of ranking well by increasing your domain rating, online trust, and visibility by working with our link-building team"
-        image_4_desc="Reviewing your website content, our SEO experts will make recommendtions to optimise your content for your target keywords"
-        image_5_desc="Analysing the full range of SEO ranking factors, our expert team will make recommendations to improve your off-page content"
-        image_6_desc="Our technical team can support the smooth-running of your website, and make recommendations to improve it’s technical health score"
+        box_title="Our Web Services"
+        image_1_title="Design"
+        image_2_title="Development"
+        image_3_title="Content"
+        image_4_title="SEO"
+        image_5_title="Analytics"
+        image_6_title="Hosting"
+        image_1_desc="Our expert team will work with you to create cutting edge designs and concepts to enhance your online look and feel"
+        image_2_desc="Our in-house web development team have decades of experience building beautifully slick, and user friendly websites"
+        image_3_desc="Improve your content, and messaging online to resonate with your target audience, and improve the performance of your marketing"
+        image_4_desc="Ensure your website isn’t a dormant shop window. To generate a ROI, you need to ensure your site is optimised for search engines"
+        image_5_desc="Get accurate, valuable data from your website, set up by experts, to allow you to make informed decisions on your marketing"
+        image_6_desc="Utilise industry leading hosting services to ensure your website stays online, and performing optimally all of the time, or risk losing potential customers"
       />
-      <Client_Result />
+      <Client_Result
+        card_1_percentage="-71%"
+        card_1_title=" CPA reduction"
+        card_1_desc_1="Improve International"
+        card_1_desc_2="Reducing CPA for Veterinary Experts"
+        card_2_percentage="+57%"
+        card_2_title=" in enquiries"
+        card_2_desc_1="Friary Meadow"
+        card_2_desc_2="Boosting conversions for retirement village"
+        card_3_percentage="+145%"
+        card_3_title=" in ticket sales"
+        card_3_desc_1="National Trust"
+        card_3_desc_2="Growing ticket sales for historic venues" />
       <Growth_Accordion />
       <GrowthMarketingServices_Quotes />
-      <GrowthMarketingServices_Address />
+      <GrowthMarketingServices_Address title='Web Design Agency' />
     </>
   )
 }

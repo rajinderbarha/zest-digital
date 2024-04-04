@@ -6,9 +6,11 @@ function DigitalTerms({ data }: { data:  DigitalTermsOfServiceType[]  }) {
     return (
         <>
             <div className="DigitalTerms">
+
                 {data?.map((item,index)=>(
                
-                <div className="main_container">
+                <div className="main_container px-5">
+
                     <h2 className="lg:text-55px md:text-45px text-35px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[80px] md:mb-[124px]">Digital terms of service</h2>
                     <div className="details main_container_x">
                         <div className="definations">
