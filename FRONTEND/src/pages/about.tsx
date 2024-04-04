@@ -4,7 +4,7 @@ import Escape from '@/components/About_page/Escape'
 import Our_values from '@/components/About_page/Our_values'
 import Zest_for_life from '@/components/About_page/Zest_for_life'
 import React from 'react'
-import { getAboutData } from '../../lib/sanity.query'
+import { getAboutData} from '../../lib/sanity.query'
 import { AboutType } from '../../lib/interface'
 
 
@@ -12,6 +12,7 @@ import { AboutType } from '../../lib/interface'
 
 
 const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
+
 
   return (
     <div>
@@ -30,7 +31,7 @@ export async function getStaticProps() {
   const aboutdata = await getAboutData();
   return {
     props: {    
-      aboutdata
+      aboutdata,
     }
   };
 }
