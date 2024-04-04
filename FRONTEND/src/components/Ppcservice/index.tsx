@@ -10,43 +10,57 @@ import Client_Result from '../GrowthMarketingServices/Client_Result'
 import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
 import GrowthMarketingServices_Quotes from '../GrowthMarketingServices/GrowthMarketingServices_Quotes'
 import GrowthMarketingServices_Address from '../GrowthMarketingServices/GrowthMarketingServices_Address'
+import GrowthMarketingServices_Banner from '../GrowthMarketingServices/GrowthMarketingServices_Banner'
 
 function Ppcservice() {
     return (
         <>
-            <GrowthEnginePage_Banner title="PPC Services" desc="Target your ideal customers at the moment they’re searching for your service or products with PPC Marketing. Find out how PPC can deliver a consistent flow of enquiries and sales for your business by speaking to our experts today." />
+            <GrowthMarketingServices_Banner max_width="1068px" title="PPC Services" desc="Target your ideal customers at the moment they’re searching for your service or products with PPC Marketing. Find out how PPC can deliver a consistent flow of enquiries and sales for your business by speaking to our experts today." />
             <GrowthMarketingServices_Box image_1_title="Search Marketing" image_2_title="Display Advertising" image_3_title="Social Ads" title="Oxford’s Leading PPC Agency that  " title_change_color="delivers remarkable results" desc_1="Catapult your website to the top search positions with the power of PPC marketing. Our expert team have spent decades honing their skills for our clients. Our leading PPC strategies aim to deliver predictable revenue growth for your business, giving you the ability to scale at will." desc_2="Do you need to generate a higher ROI from your PPC marketing?" />
             {/* <GrowthMarketingServices_details /> */}
             <GrowthMarketingServices_details_happy_customer title1="Join" title_changeColor="350+" title2="Happy Customers" desc1="For over 10 years our expert team have delivered remarkable results for our clients. Whether your business has a marketing team, or is earlier in the marketing journey, we have products to suit those who would just like to increase activity, and for those looking to hit specific growth targets." desc2="We’re incredibly proud to boast our client retention rate currently sits at 95%." />
             <GrowthMarketingServices_details_proven_growth title1=""
                 title2="your Spend"
                 title_changeColor="Control"
-                desc1="Far too often we speak to business owners, and marketeers, who arent happy with the direction their marketing is going in, and don’t have a clear understanding of the return being generated. By following our proven frameworks, our expert team break down your growth goals into specific KPI’s that need to be achieved. "
-                desc2="A simple, data-driven strategy, and reporting process is what your business needs to increase ROI." />
-            <GrowthMarketingServices_details_increase_market title1="Increase"
-                title2=""
-                title_changeColor="Market Share"
-                desc1="In todays world, in almost every industry, there are customers searching online looking to make enquiries, and purchases. The businesses that rank best for the keywords being searched to generate those sales, are in the best position to gain the market share available online. "
-                desc2="Don’t let it be your competitors making the gains." />
-            <GrowthMarketingServices_book_call title='Need to overhaul your SEO strategy?' />
+                desc1="Regain control of your marketing spend by fixing budgets upfront, or work with our expert team to calculate what your business needs to spend to hit your targets. Work with our growth team to determine where your budget is best spent, and what return can be expected as a result. Using our growth frameworks, we will break down your growth targets, and budgets to define clear KPIs."
+                desc2="A simple, data-driven strategy gives you greater control over your budget, and business growth." />
+            <GrowthMarketingServices_details_increase_market title1=""
+                title2=" your ROI"
+                title_changeColor="Grow"
+                desc1="Far too often we speak to business owners, and marketeers, who aren’t happy with the direction their marketing is going in, and don’t have a clear understanding of the return being generated. By following our proven frameworks, our expert team can deliver predictable revenue growth for your business."
+                desc2="" />
+            <GrowthMarketingServices_book_call title='Need to re-launch your PPC strategy?' />
             <GrowthMarketingServices_services
-                image_1_title="Strategy"
-                image_2_title="Content"
-                image_3_title="Link-building"
-                image_4_title="On-page SEO"
-                image_5_title="Off-page SEO"
-                image_6_title="Technical"
-                image_1_desc="Our expert team will work with you to craft the optimal strategy for your business to achieve it’s growth targets using SEO"
-                image_2_desc="Our strategists, and expert copywriters can transform your website copy into high ranking content, built to convert"
-                image_3_desc="Improve your chances of ranking well by increasing your domain rating, online trust, and visibility by working with our link-building team"
-                image_4_desc="Reviewing your website content, our SEO experts will make recommendtions to optimise your content for your target keywords"
-                image_5_desc="Analysing the full range of SEO ranking factors, our expert team will make recommendations to improve your off-page content"
-                image_6_desc="Our technical team can support the smooth-running of your website, and make recommendations to improve it’s technical health score"
+                box_title="Our PPC Services"
+                image_1_title="PPC Strategy"
+                image_2_title="Paid Search"
+                image_3_title="Display Ads"
+                image_4_title="Remarkeketing"
+                image_5_title="Social Ads"
+                image_6_title="Landing Pages"
+                image_1_desc="Our expert team will work with you to craft the optimal strategy for your business to achieve it’s growth targets using PPC"
+                image_2_desc="Take the top search positions for the keywords your target audience are searching when they’re looking to buy"
+                image_3_desc="Target your potential customers in the places they spend their time online, and capture their attention before your competitors do"
+                image_4_desc="Re-engage your website visitors after they’ve visited your site. Give them a reason to convert"
+                image_5_desc="Use Social ads to target users by interests, and increase visibility of your website and services to new audiences"
+                image_6_desc="Our PPC and copywriting experts can craft high-performing landing pages for your campaigns, built to convert"
             />
-            <Client_Result />
+            <Client_Result
+                card_1_percentage="-71%"
+                card_1_title=" CPA reduction"
+                card_1_desc_1="Improve International"
+                card_1_desc_2="Reducing CPA for Veterinary Experts"
+                card_2_percentage="+57%"
+                card_2_title=" in enquiries"
+                card_2_desc_1="Friary Meadow"
+                card_2_desc_2="Boosting conversions for retirement village"
+                card_3_percentage="+145%"
+                card_3_title=" in ticket sales"
+                card_3_desc_1="National Trust"
+                card_3_desc_2="Growing ticket sales for historic venues" />
             <Growth_Accordion />
             <GrowthMarketingServices_Quotes />
-            <GrowthMarketingServices_Address />
+            <GrowthMarketingServices_Address title="PPC Agency" />
         </>
     )
 }
