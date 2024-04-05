@@ -136,99 +136,182 @@ export async function getAboutData() {
 
 
 
-//-------------------------------for dummy purpose--------------------------
-export async function getDemo2() {
+export async function getSharedEngineData() {   //   we are getting this data from growthShared schema 
   const headerquery = `
-  *[_type == 'Demo2'] {
-    shared {
-      // Include shared fields here
-      sharedField,
-      number
-      // Add other shared fields as needed
-    },
-    uniqueField,
-    // Include other fields specific to Demo2 document type
-  }
-  
-  
-  `;
-  const data = await client.fetch(headerquery);
-  return data;
-}
-
-export async function getDemo1() {
-  const headerquery = `
-  *[_type == "Demo1"] {
-    shared {
-      sharedField,
-      number
-    },
-    // Other fields specific to Demo1 document type
-  }
-  
-  
-  
-  `;
-  const data = await client.fetch(headerquery);
-  return data;
-}
-
-//-------------------------------for dummy purpose--------------------------
-
-
-
-
-
-
-export async function getGrowthTracker() {
-  const headerquery = `
-  *[_type == "growthTracker"] {
-    growthTracker {
-      heroSection {
-        upperTitle,
-        heading,
-        button {
-          buttonName,
-          buttonLink
-        }
-      },
-      growthSection {
-        headingUpper,
-        titleUpper,
-        growthContent[] {
-          title,
-          description,
-          buttonName,
-          buttonLink
+  *[_type == "growthEngine"] {
+    growthEngine {
+        heroSection {
+            upperTitle,
+            heading,
+            button {
+                buttonName,
+                buttonLink
+            }
         },
-        headingBelow,
-        titleBelow,
-        image
-      },
-      solution {
-        heading,
-        card[] {
-          title,
-          description,
-          buttonName,
-          buttonLink
+        growthSection {
+            headingUpper,
+            titleUpper,
+            growthContent[] {
+                title,
+                description,
+                buttonName,
+                buttonLink,
+                price {
+                    priceOutline
+                }
+            },
+            headingBelow,
+            titleBelow,
+            image
         },
-        image
-      },
-     "banner": banner-> {
-          climate_actionImg,
-          earth_img,
-          smallDescription
+        solution {
+            heading,
+            card[] {
+                title,
+                description,
+                buttonName,
+                buttonLink
+            },
+            image
+        },
+        "banner": banner-> {
+            climate_actionImg,
+            earth_img,
+            smallDescription
         }
     },
     signupform {
-      signupheading,
-      signupdescription,
-      firstnameLabel,
-      lastnameLabel,
-      emailLabel
+        signupheading,
+        signupdescription,
+        firstnameLabel,
+        lastnameLabel,
+        emailLabel
     }
-  }
+}
+
+    
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+
+
+
+
+export async function getSharedTrackerData() {
+  const headerquery = `
+  *[_type == "growthTracker"] {
+    growthTracker {
+        heroSection {
+            upperTitle,
+            heading,
+            button {
+                buttonName,
+                buttonLink
+            }
+        },
+        growthSection {
+            headingUpper,
+            titleUpper,
+            growthContent[] {
+                title,
+                description,
+                buttonName,
+                buttonLink,
+                
+            },
+            headingBelow,
+            titleBelow,
+            image
+        },
+        solution {
+            heading,
+            card[] {
+                title,
+                description,
+                buttonName,
+                buttonLink
+            },
+            image
+        },
+        "banner": banner-> {
+            climate_actionImg,
+            earth_img,
+            smallDescription
+        }
+    },
+    signupform {
+        signupheading,
+        signupdescription,
+        firstnameLabel,
+        lastnameLabel,
+        emailLabel,
+        buttonName,
+        buttonLink,
+        privacyDescription
+    }
+}
+
+    
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+
+
+export async function getSharedCurveData() {
+  const headerquery = `
+  *[_type == "growthCurve"] {
+    growthCurve {
+        heroSection {
+            upperTitle,
+            heading,
+            button {
+                buttonName,
+                buttonLink
+            }
+        },
+        growthSection {
+            headingUpper,
+            titleUpper,
+            growthContent[] {
+                title,
+                description,
+                buttonName,
+                buttonLink,
+                
+            },
+            headingBelow,
+            titleBelow,
+            image
+        },
+        solution {
+            heading,
+            card[] {
+                title,
+                description,
+                buttonName,
+                buttonLink
+            },
+            image
+        },
+        "banner": banner-> {
+            climate_actionImg,
+            earth_img,
+            smallDescription
+        }
+    },
+    signupform {
+        signupheading,
+        signupdescription,
+        firstnameLabel,
+        lastnameLabel,
+        emailLabel
+    }
+}
+
     
   `;
   const data = await client.fetch(headerquery);

@@ -4,6 +4,7 @@ import grow from '../../assets/images/grow.png'
 import classes from './growthEngine.module.css'
 import Image from 'next/image'
 import { GoArrowRight } from "react-icons/go";
+import { GrowthTrackerType } from '../../../lib/interface';
 
 interface GrowthEngineProps {
     title: string;
@@ -12,12 +13,12 @@ interface GrowthEngineProps {
     has_image: boolean;
     shadow_right: boolean;
 }
-const Growth_engine: React.FC<GrowthEngineProps> = (props) => {
+const Growth_engine = ( data :  GrowthEngineProps ) => {
 
     return (
         <>
 
-            {props.has_image ? (
+            {true ? (
                 <div className={`${classes.growth_engine} ${props.shadow_right ? ` shadow-compo1 ` : `shadow-compo`} grid sm:grid-cols-5 max-w-[1345px] mx-auto ps-14 pe-7 py-[70px] rounded-30px  border border-black  bg-white text-color-1 relative`}>
                     <div className="col-span-3">
 

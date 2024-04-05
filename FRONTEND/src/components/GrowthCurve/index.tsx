@@ -5,8 +5,9 @@ import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
 import Growths from '../GrowthEnginePage/Growths'
 import Climate_action from '@/common/Climate_action'
 import how_to_grow from '../../assets/images/how_to_grow.png'
+import { GrowthCurveType, GrowthTrackerType } from '../../../lib/interface'
 
-function GrowthCurve() {
+function GrowthCurve({ data }: { data: GrowthCurveType[] }) {
 
     return (
         <>

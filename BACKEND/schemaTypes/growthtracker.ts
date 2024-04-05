@@ -15,7 +15,11 @@ export const GrowthTracker = defineType({
     { name: 'firstnameLabel', title: 'Firstname Label', type: 'string' },
     { name: 'lastnameLabel', title: 'Lastname Label ', type: 'string' },
     { name: 'emailLabel', title: 'E-mail Label ', type: 'string' },
-    
+
+    { name: 'buttonName', title: 'Button Name ', type: 'string' },
+    { name: 'buttonLink', title: 'Button Link ', type: 'string' },
+    { name: 'privacyDescription', title: 'Privacy Description ', type: 'string' },
+      
 ]},
 
   ]

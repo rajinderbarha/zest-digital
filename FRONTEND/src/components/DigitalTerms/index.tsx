@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './DigitalTerms.module.css'
 import { DigitalTermsOfServiceType } from '../../../lib/interface'
 function DigitalTerms({ data }: { data:  DigitalTermsOfServiceType[]  }) {
-    console.log("data----------------------",data)
+
     return (
         <>
             <div className="DigitalTerms">

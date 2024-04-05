@@ -10,5 +10,6 @@ import { GrowthShared } from "./growthShared";
 import { GrowthCurve } from "./growthcurve";
 import { GrowthTracker } from "./growthtracker";
 import { SingleCaseStudy } from "./singleCaseStudy";
+import { GrowthEngine } from "./growthEngine";
 
-export const schemaTypes = [Header, Footer, About,Contact, ClimteAction,SocialMedia,DigitalTermsOfService,GrowthMapper, GrowthShared, GrowthCurve, GrowthTracker,SingleCaseStudy]
+export const schemaTypes = [Header, Footer, About,Contact, ClimteAction,SocialMedia,DigitalTermsOfService,GrowthMapper, GrowthShared, GrowthCurve, GrowthTracker, GrowthEngine, SingleCaseStudy]

@@ -228,8 +228,160 @@ export interface GrowthTrackerType {
     firstnameLabel: string;
     lastnameLabel: string;
     emailLabel: string;
+    buttonName: string
+    buttonLink: string,
+    privacyDescription:string
   };
 }
+
+export interface GrowthCurveType {
+  children:any;
+  growthCurve: {
+    heroSection: {
+      upperTitle: string;
+      heading: string;
+      button: {
+        buttonName: string;
+        buttonLink: string;
+      };
+    };
+    growthSection: {
+      headingUpper: string;
+      titleUpper: string;
+      growthContent: {
+        title: string;
+        description: string;
+        buttonName: string;
+        buttonLink: string;
+      }[];
+      headingBelow: string;
+      titleBelow: string;
+      image: {
+        _type: string;
+        asset: {
+          _type: string;
+          url: string;
+        };
+      };
+    };
+    solution: {
+      heading: string;
+      card: {
+        title: string;
+        description: string;
+        buttonName: string;
+        buttonLink: string;
+      }[];
+      image: {
+        _type: string;
+        asset: {
+          _type: string;
+          url: string;
+        };
+      };
+    };
+    banner: {
+      climate_actionImg: {
+        _type: string;
+        asset: {
+          _type: string;
+          url: string;
+        };
+      };
+      earth_img: {
+        _type: string;
+        asset: {
+          _type: string;
+          url: string;
+        };
+      };
+      smallDescription: string;
+    };
+  };
+  // signupform: {
+  //   signupheading: string;
+  //   signupdescription: string;
+  //   firstnameLabel: string;
+  //   lastnameLabel: string;
+  //   emailLabel: string;
+  // };
+}
+
+export interface GrowthEngineType {
+  growthEngine: {
+    heroSection: {
+      upperTitle: string;
+      heading: string;
+      button: {
+        buttonName: string;
+        buttonLink: string;
+      };
+    };
+    growthSection: {
+      headingUpper: string;
+      titleUpper: string;
+      growthContent: {
+        title: string;
+        description: string;
+        buttonName: string;
+        buttonLink: string;
+        price: {
+          priceOutline: string;
+        } | null; // Nullable type to handle null values
+      }[];
+      headingBelow: string;
+      titleBelow: string;
+      image: {
+        _type: string;
+        asset: {
+          _type: string;
+          url: string;
+        };
+      };
+    };
+    solution: {
+      heading: string;
+      card: {
+        title: string;
+        description: string;
+        buttonName: string;
+        buttonLink: string;
+      }[];
+      image: {
+        _type: string;
+        asset: {
+          _type: string;
+          url: string;
+        };
+      };
+    };
+    banner: {
+      climate_actionImg: {
+        _type: string;
+        asset: {
+          _type: string;
+          url: string;
+        };
+      };
+      earth_img: {
+        _type: string;
+        asset: {
+          _type: string;
+          url: string;
+        };
+      };
+      smallDescription: string;
+    };
+  };
+  // signupform: {
+  //   signupheading: string;
+  //   signupdescription: string;
+  //   firstnameLabel: string;
+  //   lastnameLabel: string;
+  //   emailLabel: string;
+  // };
+}
+
 
 
 
