@@ -1,3 +1,11 @@
+
+export interface SingalcasebannerProps {
+  data: {
+      title: string;
+      upperTitle: string;
+  }
+}
+
 export interface FooterType {
   id:any,
 

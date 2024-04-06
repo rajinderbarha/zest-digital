@@ -55,12 +55,12 @@ const Growth = () => {
                     </div>
                 </div>
                 <div className={`${classes.growth_engine_box} mx-auto max-w-[1720px] w-full px-20 my-10 font-mono grid gap-10 -mt-64 relative`}>
-                    <Growth_engine title="Growth Engine" has_image={false} shadow_right={false} btn_title="All inclusive growth marketing" desc="The fastest and most complete way to generate new leads and sales to grow your business. All-inclusive growth marketing covering; PPC, SEO, content, and more." />
+                    {/* <Growth_engine title="Growth Engine" has_image={false} shadow_right={false} btn_title="All inclusive growth marketing" desc="The fastest and most complete way to generate new leads and sales to grow your business. All-inclusive growth marketing covering; PPC, SEO, content, and more." /> */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
-                        <Growth_engine title="Growth Curve" has_image={false} shadow_right={true} btn_title="On-demand growth marketing" desc="Scalable on-demand growth marketing support across SEO, PPC, content, and more." />
-                        <Growth_engine title="Growth Mapper" has_image={false} shadow_right={false} btn_title="On-demand growth marketing" desc="Plan for your growth using our unique framework, available as a standalone online course or a facilitated expert workshop." />
+                        {/* <Growth_engine title="Growth Curve" has_image={false} shadow_right={true} btn_title="On-demand growth marketing" desc="Scalable on-demand growth marketing support across SEO, PPC, content, and more." /> */}
+                        {/* <Growth_engine title="Growth Mapper" has_image={false} shadow_right={false} btn_title="On-demand growth marketing" desc="Plan for your growth using our unique framework, available as a standalone online course or a facilitated expert workshop." /> */}
                     </div>
-                    <Growth_engine title="Growth Tracker" has_image={true} shadow_right={true} btn_title="Track my growth experiments" desc="The fastest and most complete way to generate new leads and sales to grow your business. All-inclusive growth marketing covering; PPC, SEO, content, and more." />
+                    {/* <Growth_engine title="Growth Tracker" has_image={true} shadow_right={true} btn_title="Track my growth experiments" desc="The fastest and most complete way to generate new leads and sales to grow your business. All-inclusive growth marketing covering; PPC, SEO, content, and more." /> */}
 
                     {/* <div className="absolute -bottom-40 right-0 w-max-[524px]">
                         <Image src={grow} alt="" />

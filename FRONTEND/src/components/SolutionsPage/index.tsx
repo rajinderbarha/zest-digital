@@ -7,10 +7,8 @@ import Climate_action from '@/common/Climate_action'
 function solutionsPage() {
     return (
         <>
-            <Solution_Banner />
-            <Section_Main />
-            <Logo_moving />
-            {/* <Climate_action /> */}
+            
+            
         </>
     )
 }

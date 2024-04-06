@@ -60,18 +60,26 @@ export const GrowthShared = defineType({
         ]},
         { name: 'solution', title: 'Solution', type: 'object', fields:[
             {name:'heading', title:'Heading', type:'string'},
-            {name:'card', title:'Card', type:'array',of:[
+            {name:'card', title:'Card', type:'array', validation: Rule => {
+                
+               return Rule.custom((items:any, document) => {
+                if (items.length > 3 && document.document?._type==="growthTracker") {
+                  return 'The items array must contain exactly 3 items.';
+                }
+                return true;
+              })}, of:[
 
                 {name:'growth', title:'Growth', type:'object',fields:[
-                    {name:'title', title:'Title', type:'string'},
+                {name:'title', title:'Title', type:'string'},
                 {name:'description', title:'Description', type:'string'},
                 {name:'buttonName', title:'Button Name', type:'string'},
-                {name:'buttonLink', title:'Button Link', type:'string'}
+                {name:'buttonLink', title:'Button Link', type:'string'},
+                {name:'image', title:'Image', type:'image'},
                 ]},
                
             ]},
          
-            {name:'image', title:'Image', type:'image'},
+            
 
         ]},
         {

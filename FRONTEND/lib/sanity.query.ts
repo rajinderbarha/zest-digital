@@ -132,11 +132,8 @@ export async function getAboutData() {
   return data;
 }
 
-
-
-
-
-export async function getSharedEngineData() {   //   we are getting this data from growthShared schema 
+export async function getSharedEngineData() {
+  //   we are getting this data from growthShared schema
   const headerquery = `
   *[_type == "growthEngine"] {
     growthEngine {
@@ -195,10 +192,6 @@ export async function getSharedEngineData() {   //   we are getting this data fr
   return data;
 }
 
-
-
-
-
 export async function getSharedTrackerData() {
   const headerquery = `
   *[_type == "growthTracker"] {
@@ -231,9 +224,9 @@ export async function getSharedTrackerData() {
                 title,
                 description,
                 buttonName,
-                buttonLink
-            },
-            image
+                buttonLink,
+                image
+            }
         },
         "banner": banner-> {
             climate_actionImg,
@@ -258,8 +251,6 @@ export async function getSharedTrackerData() {
   const data = await client.fetch(headerquery);
   return data;
 }
-
-
 
 export async function getSharedCurveData() {
   const headerquery = `
@@ -313,6 +304,121 @@ export async function getSharedCurveData() {
 }
 
     
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+export async function getSingleCasestudyData(slug: string) {
+  const headerquery = `
+
+*[_type == "singleCaseStudy" && slug.current == "${slug}"]{
+      "banner": banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      },
+      team{
+          heading,
+          profile[]{
+            image,
+            name,
+            description
+          }
+      },
+      upperTitle,
+      Title,
+      slug,
+      hero{
+          heading,
+          belowLine,
+          item[]{
+            icon,
+            count, 
+            description
+          }
+      },
+      card[]{
+          heading,
+          description,
+          image
+      }
+    }
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+export async function getCasestudyData() {
+  const headerquery = `
+
+*[_type == "caseStudy"]{
+      "banner": banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      },
+      
+      hero{
+        heading,
+
+        image,
+        buttonName,
+        buttonLink
+      },
+      collection[]->{
+        slug,
+        hero{
+        image,
+        heading,
+        belowLine,
+        item
+        }
+      }
+      
+    }
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+export async function getSolutionData() {
+  const headerquery = `
+
+*[_type == "solution"]{
+      "banner": banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      },
+      
+      hero{
+        heading,
+        image,
+        upperTitle
+      },
+      transform{
+        heading,
+        belowLine,
+        upperTitle{
+          title,
+          switcher[]
+        }
+      },
+      card[]{
+        heading,
+        description,
+        image,
+        buttonName,
+        buttonLink
+      },
+      brandList[]
+
+      
+      
+    }
+
   `;
   const data = await client.fetch(headerquery);
   return data;
