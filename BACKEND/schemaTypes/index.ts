@@ -18,6 +18,7 @@ import { SingleInsights } from './insights/singleInsights'
 import { Resources } from './resources'
 import { BrandList } from './brandList'
 import { Schedule_a_call } from './Schedule_a_call'
+import { Growth } from './growth'
 
 export const schemaTypes = [
   Header,
@@ -39,5 +40,6 @@ export const schemaTypes = [
   SingleInsights,
   Resources,
   BrandList,
-  Schedule_a_call
+  Schedule_a_call,
+  Growth
 ]

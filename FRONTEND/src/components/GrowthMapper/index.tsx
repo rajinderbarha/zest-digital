@@ -18,7 +18,7 @@ function GrowthMapper() {
                 title3="Life-long skills" desc3="Growth Mapper teaches you the skills to create a lasting impact, through the planning and creation of your own growth experiments."
             />
             <Growth_Accordion />
-            <Growths />
+            {/* <Growths /> */}
             
         </>
     )

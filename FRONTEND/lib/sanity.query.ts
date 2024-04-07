@@ -533,3 +533,58 @@ export async function getSchedule_a_callData() {
   const data = await client.fetch(headerquery);
   return data;
 }
+
+export async function getGrowthData(slug:string) {
+  //   we are getting this data from growthShared schema
+  const headerquery = `
+  *[_type == "growth" && slug.current == "${slug}"] {
+    
+        heroSection {
+            upperTitle,
+            heading,
+            slug,
+            button {
+                buttonName,
+                buttonLink
+            }
+        },
+        growthSection {
+            headingUpper,
+            titleUpper,
+            growthContent[] {
+                title,
+                description,
+                buttonName,
+                buttonLink,
+                price {
+                    priceOutline
+                }
+            },
+            headingBelow,
+            titleBelow,
+            image
+        },
+        solution {
+            heading,
+            card[] {
+                title,
+                description,
+                buttonName,
+                buttonLink
+            },
+            image
+        },
+        "banner": banner-> {
+            climate_actionImg,
+            earth_img,
+            smallDescription
+        }
+    }
+   
+
+
+    
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}

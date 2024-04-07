@@ -24,7 +24,7 @@ function GrowthTracker({ data }: { data: GrowthTrackerType[] }) {
             /> */}
             <Sign_up data={data} />
             <Growth_Accordion />
-            <Growths data={data}  />
+            {/* <Growths data={data}  /> */}
         
         </>
     )

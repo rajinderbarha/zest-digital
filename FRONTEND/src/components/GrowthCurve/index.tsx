@@ -21,7 +21,7 @@ function GrowthCurve({ data }: { data: GrowthCurveType[] }) {
                 title3="Transparency + control" desc3="Regain control of your marketing budget. Our approval process is quick, simple, with 100% transparency on how your budget is spent."
             />
             <Growth_Accordion />
-            <Growths />
+            {/* <Growths /> */}
             {/* <Climate_action /> */}
         </>
     )
