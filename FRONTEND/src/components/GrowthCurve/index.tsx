@@ -5,8 +5,9 @@ import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
 import Growths from '../GrowthEnginePage/Growths'
 import Climate_action from '@/common/Climate_action'
 import how_to_grow from '../../assets/images/how_to_grow.png'
+import { GrowthCurveType, GrowthTrackerType } from '../../../lib/interface'
 
-function GrowthCurve() {
+function GrowthCurve({ data }: { data: GrowthCurveType[] }) {
 
     return (
         <>
@@ -20,7 +21,7 @@ function GrowthCurve() {
                 title3="Transparency + control" desc3="Regain control of your marketing budget. Our approval process is quick, simple, with 100% transparency on how your budget is spent."
             />
             <Growth_Accordion />
-            <Growths />
+            {/* <Growths /> */}
             {/* <Climate_action /> */}
         </>
     )

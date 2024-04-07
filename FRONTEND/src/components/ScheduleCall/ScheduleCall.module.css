@@ -1,0 +1,7 @@
+.bg_image {
+    background-image: url('../../assets/images/Gradient_calendar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: black;
+}

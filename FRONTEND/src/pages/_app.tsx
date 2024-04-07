@@ -22,4 +22,3 @@ MyApp.getInitialProps = async () => {
 
 
 export default MyApp;
-
