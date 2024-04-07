@@ -1,47 +1,95 @@
-import React from 'react'
-// import arrow from '../../assets/images/component-3.svg'
-import grow from '../../assets/images/grow.png'
-import classes from './growthEngine.module.css'
-import Image from 'next/image'
+import React from "react";
+import classes from "./growthEngine.module.css";
+import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
+import Link from "next/link";
+import { urlFor } from "../../../lib/sanity.client";
 
 interface GrowthEngineProps {
+  props: {
     title: string;
-    desc: string;
-    btn_title: string;
-    has_image: boolean;
-    shadow_right: boolean;
+    description: string;
+    buttonName: string;
+    buttonLink: string;
+    image: any;
+  };
+  has_image: boolean;
+  shadow_right: boolean;
 }
-const Growth_engine: React.FC<GrowthEngineProps> = (props) => {
+const Growth_engine = ({
+  props,
+  shadow_right,
+  has_image,
+}: GrowthEngineProps) => {
+  const { title, description, buttonName, buttonLink, image } = props;
+  return (
+    <>
+      {has_image ? (
+        <div
+          className={`${classes.growth_engine} ${
+            shadow_right ? ` shadow-compo1 ` : `shadow-compo`
+          } grid sm:grid-cols-5 max-w-[1345px] mx-auto ps-14 pe-7 py-[70px] rounded-30px  border border-black  bg-white text-color-1 relative`}
+        >
+          <div className="col-span-3">
+            <h2
+              className={`${classes.growth_engine_title} text-40px font-semibold `}
+            >
+              {title}
+            </h2>
+            <p className={`${classes.growth_engine_desc} text-3xl my-5 `}>
+              {description}
+            </p>
+            <div className="">
+              <button className="bg-color-1 rounded-full text-white text-base py-[7px] ps-5 flex gap-2 items-center">
+                {buttonName}{" "}
+                <span className="p-1 bg-white rounded-full text-black me-2 text-lg">
+                  <GoArrowRight />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            className={`${classes.grow_image} absolute -bottom-40 right-0 sm:block hidden`}
+          >
+            {image && (
+              <Image
+                src={urlFor(image).url()}
+                alt="growth img"
+                width={500}
+                height={500}
+              />
+            )}
+          </div>
+        </div>
+      ) : (
+        <div
+          className={`${classes.growth_engine} ${
+            shadow_right ? ` shadow-compo1 ` : `shadow-compo`
+          } max-w-[1345px] mx-auto ps-14 pe-7 py-[70px] rounded-30px border border-black  bg-white text-color-1`}
+        >
+          <h2
+            className={`${classes.growth_engine_title} text-40px font-semibold `}
+          >
+            {title}
+          </h2>
+          <p className={`${classes.growth_engine_desc} text-3xl my-5 `}>
+            {description}
+          </p>
+          <Link href={`/${buttonLink}`}>
+            <button
+              className="bg-color-1 rounded-full text-white text-base py-[7px] ps-5 flex gap-2 items-center"
+              type="button"
+            >
+              {buttonName}{" "}
+              <span className="p-1 bg-white rounded-full text-black me-2 text-lg">
+                <GoArrowRight />
+              </span>
+            </button>
+          </Link>
+        </div>
+      )}
+    </>
+  );
+};
 
-    return (
-        <>
-
-            {props.has_image ? (
-                <div className={`${classes.growth_engine} ${props.shadow_right ? ` shadow-compo1 ` : `shadow-compo`} grid sm:grid-cols-5 max-w-[1345px] mx-auto ps-14 pe-7 py-[70px] rounded-30px  border border-black  bg-white text-color-1 relative`}>
-                    <div className="col-span-3">
-
-                        <h2 className={`${classes.growth_engine_title} text-40px font-semibold `}>{props.title}</h2>
-                        <p className={`${classes.growth_engine_desc} text-3xl my-5 `}>{props.desc}</p>
-                        <div className="">
-                            <button className='bg-color-1 rounded-full text-white text-base py-[7px] ps-5 flex gap-2 items-center'>{props.btn_title} <span className='p-1 bg-white rounded-full text-black me-2 text-lg'><GoArrowRight /></span></button>
-                        </div>
-                    </div>
-                    <div className={`${classes.grow_image} absolute -bottom-40 right-0 sm:block hidden`}>
-                        <Image src={grow} alt="" />
-                    </div>
-                </div>
-            ) :
-                <div className={`${classes.growth_engine} ${props.shadow_right ? ` shadow-compo1 ` : `shadow-compo`} max-w-[1345px] mx-auto ps-14 pe-7 py-[70px] rounded-30px border border-black  bg-white text-color-1`}>
-                    <h2 className={`${classes.growth_engine_title} text-40px font-semibold `}>{props.title}</h2>
-                    <p className={`${classes.growth_engine_desc} text-3xl my-5 `}>{props.desc}</p>
-                    <div className="">
-                        <button className='bg-color-1 rounded-full text-white text-base py-[7px] ps-5 flex gap-2 items-center'>{props.btn_title} <span className='p-1 bg-white rounded-full text-black me-2 text-lg'><GoArrowRight /></span></button>
-                    </div>
-                </div>
-            }
-        </>
-    )
-}
-
-export default Growth_engine
+export default Growth_engine;

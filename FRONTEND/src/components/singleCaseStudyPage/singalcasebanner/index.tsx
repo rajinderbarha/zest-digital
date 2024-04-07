@@ -1,22 +1,19 @@
 import React from 'react'
-import Casestudyintro_Image from '../../../assets/images/Case_studies_circle.png'
-import Image from 'next/image'
 import classes from './Singalcasebanner.module.css'
+import { SingalcasebannerProps } from '../../../../lib/interface'
 
-function Singalcasebanner() {
+
+function Singalcasebanner({ data }: SingalcasebannerProps) {
+    const { title, upperTitle } = data
     return (
         <>
             <div className={`${classes.Singalcasebanner}`}>
                 <div className='main_container'>
                     <div className="grid md:grid-cols-12 ">
                         <div className="md:col-span-6">
-                            <h2 className='md:text-45px text-30px font-mono bg-color-7 w-max px-2' >Hanson (UK)</h2>
-                            <h1 className='font-mono font-semibold md:text-55px text-35px mb-5 '>+772% Increase in profit for this leading supplier</h1>
-                            {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
+                            <h2 className='md:text-45px text-30px font-mono bg-color-7 w-max px-2' >{upperTitle}</h2>
+                            <h1 className='font-mono font-semibold md:text-55px text-35px mb-5 '>{title}</h1>
                         </div>
-                        {/* <div className="md:col-span-6 ">
-                            <Image className='md:ms-auto ' src={Casestudyintro_Image} alt="" />
-                        </div> */}
                     </div>
                 </div>
             </div>

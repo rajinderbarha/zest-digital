@@ -19,33 +19,36 @@ const Header = ({ data }: { data: HeaderType[] }) => {
     btn: 'screen-1-max:block mt-20 hidden mx-auto font-mono text-base px-21px h-10 bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white hover:border-white border border-color-1 sm-max:mx-2',
   };
 
-
   return (
     // <div className=' mx-auto flex justify-between items-center pt-25px pb-21px lg:px-20 2xl:px-100px md:px-11 sm-max:pt-4 sm-max:pb-3 px-8 relative'>
-  <>
-        {data?.map((item) => (
-  <div key={`header_${item.logo._id}`} className=' mx-auto flex justify-between items-center pt-25px pb-21px max-w-[1720px] w-full px-5 relative'>
-    <div className='flex items-center gap-68px '>
-      <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>
-        <Link href={"/"}>
-          <Image src={urlFor(item.logo).url()} alt="Site Logo"  width={112} height={51} />
-        </Link>
-      </div>
-      <div id="nav-menus" className={`${navMenu.menu.simple} + ${navMenu.menu.responsive1} + ${navMenu.menu.responsive2}`}>
-        {item.navItem.map((navItem, index) => (  
-          <Link href={navItem.buttonLink} key={`navItem_${index}`} className={navMenu.linkclass}>{navItem.buttonName}</Link>
-        ))}
-      </div>
-    </div>
-    <div className="">
-      <Link href={item.button.navLink} className='screen-1-max:hidden font-mono text-base px-21px h-10 bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1'>{item.button.navName}</Link>
-    {/* <FontAwesomeIcon icon={faBars} transform="grow-10" className='screen-1-max:block hidden' onClick={() => showMenu()} /> */}
-      <Image src={bars} alt="bars" className='screen-1-max:block hidden screen-1-max:w-[23px] screen-1-max:h-[23px]' />
-    </div>
-  </div>
-))}
+    <>
+      {data?.map((item) => {
+        console.log("header img", item.logo)
 
-  </>
+        return (
+          <div key={`header_${item.logo._id}`} className=' mx-auto flex justify-between items-center pt-25px pb-21px max-w-[1720px] w-full px-5 relative'>
+            <div className='flex items-center gap-68px '>
+              <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>
+                <Link href={"/"}>
+                  <Image src={urlFor(item.logo).url()} alt="Site Logo" width={112} height={51} />
+                </Link>
+              </div>
+              <div id="nav-menus" className={`${navMenu.menu.simple} + ${navMenu.menu.responsive1} + ${navMenu.menu.responsive2}`}>
+                {item.navItem.map((navItem, index) => (
+                  <Link href={navItem.buttonLink} key={`navItem_${index}`} className={navMenu.linkclass}>{navItem.buttonName}</Link>
+                ))}
+              </div>
+            </div>
+            <div className="">
+              <Link href={item.button.navLink} className='screen-1-max:hidden font-mono text-base px-21px h-10 bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1'>{item.button.navName}</Link>
+              {/* <FontAwesomeIcon icon={faBars} transform="grow-10" className='screen-1-max:block hidden' onClick={() => showMenu()} /> */}
+              <Image src={bars} alt="bars" className='screen-1-max:block hidden screen-1-max:w-[23px] screen-1-max:h-[23px]' />
+            </div>
+          </div>
+        )
+      })}
+
+    </>
   )
 };
 
