@@ -362,7 +362,6 @@ export async function getCasestudyData() {
       
       hero{
         heading,
-
         image,
         buttonName,
         buttonLink
@@ -417,6 +416,117 @@ export async function getSolutionData() {
 
       
       
+    }
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+export async function getInsightsData() {
+  const headerquery = `
+
+*[_type == "insights"]{
+      "banner": banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      },
+      heading,
+      linkSectionIcon,
+      collection[]->{
+        slug,
+       hero{
+        heading,
+        keywords[],
+        icon
+       }
+      }
+    }
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+export async function getSingleInsightsData(slug: string) {
+  const headerquery = `
+
+*[_type == "singleInsights" && slug.current == "${slug}"]{
+      "banner": banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      },
+      slug,
+    hero{
+      heading,
+      keywords[],
+      icon
+    },
+    content[],
+    linkSection{
+      icon,
+      linkName,
+      linkUrl
+    }
+     
+     
+    
+    }
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+export async function getResourcesData() {
+  const headerquery = `
+
+*[_type == "resources"]{
+      "banner": banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      },
+    heading,
+    hero{
+      title,
+      description,
+      image,
+      icon
+    },
+    tool[]{
+      heading,
+      description,
+      buttonName,
+      buttonLink,
+
+    },
+    brandList[]->{
+      icon
+    }
+     
+    
+    }
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+export async function getSchedule_a_callData() {
+  const headerquery = `
+
+*[_type == "Schedule_a_call"]{
+      "banner": banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      },
+    heading,
+   description
+    
     }
 
   `;

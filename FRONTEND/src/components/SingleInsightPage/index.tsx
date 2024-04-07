@@ -6,20 +6,27 @@ import single_insight_page from '../../assets/images/single_insight_page.png'
 import Zest_symbol_white from '../../assets/images/Zest_symbol_white.png'
 import Funnel_icon_V2 from '../../assets/images/Funnel_icon_V2.png'
 import { GoArrowRight } from "react-icons/go";
-function SingleInsightPage() {
+import { urlFor } from '../../../lib/sanity.client'; //@ts-ignore
+import BlockContent from "@sanity/block-content-to-react";
+
+function SingleInsightPage({data}:any) {
+    console.log("singleInsights", data)
     return (
         <>
             <div className="SingleInsightPage mt-[50px] md:mt-[100px]">
                 <div className="main_container px-5 ">
                     <div className={`${classes.bg_image} title-box px-[30px] md:px-[100px] pb-[100px] pt-[30px] md:pt-[63px] md:pb-[184px] rounded-30px`}>
-                        <p className="font-mono text-25px md:text-35px font-semibold text-color-7 ">Strategy & Planning</p>
-                        <h2 className="font-mono lg:text-55px md:text-45px text-35px text-white max-w-[798px] mt-[45px] mb-[20px]">Key Digital Marketing Trends in 2022</h2>
+                        <p className="font-mono text-25px md:text-35px font-semibold text-color-7 ">{data.hero.keywords[0]}</p>
+                        <h2 className="font-mono lg:text-55px md:text-45px text-35px text-white max-w-[798px] mt-[45px] mb-[20px]">{data.hero.heading}</h2>
                         <div className="md:max-w-max max-w-[35px]">
-                            <Image src={grow_down} alt='' />
+                            <Image src={urlFor(data.hero.icon).url()} alt='growth icon' width={70} height={70}/>
                         </div>
                     </div>
                     <div className="mt-[74px] max-w-[1420px] mx-auto grid gap-[40px] md:gap-[100px]">
-                        <div className="How_Did_We_Get_Here">
+
+                    <BlockContent blocks={data.content} projectId={"dexthfb7"} dataset={"production"}/>
+
+                        {/* <div className="How_Did_We_Get_Here">
 
                             <div className=" mb-[33px]">
                                 <h2 className={`${classes.sub_title}`}>How Did We Get Here?</h2>
@@ -189,14 +196,14 @@ function SingleInsightPage() {
                                     <p>‘Once you know what you need to achieve, we can help you to make it a reality. If you're ahead of the game, book a call in with our Growth Experts.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={`${classes.Footer_Img} bg-black rounded-30px mb-[243px] py-[46px] px-[20px] md:px-[55px] mt-[122px] relative flex items-center`}>
                         <div className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}>
-                            <Image src={Zest_symbol_white} alt='' className='mx-auto' />
+                            <Image src={urlFor(data.linkSection.icon).url()} alt='icon' className='mx-auto' width={50} height={50} />
                         </div>
                         <div className=" max-w-max ms-auto relative z-10">
-                            <a href="" className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"> Growth Mapping using Target Scenarios<GoArrowRight /> </a>
+                            <a href={data.linkSection.linkUrl} className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"> {data.linkSection.linkName}<GoArrowRight /> </a>
                         </div>
                     </div>
                 </div>
