@@ -5,7 +5,7 @@ import { getGrowthData, getSharedEngineData } from "../../lib/sanity.query";
 
 function growthengine({growth}:any) {
 
-  console.log("will",growth )
+  console.log("will--------------------",growth )
   return (
     <>
       <GrowthEnginePage data={growth[0]}/>

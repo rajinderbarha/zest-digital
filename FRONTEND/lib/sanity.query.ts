@@ -534,6 +534,78 @@ export async function getSchedule_a_callData() {
   return data;
 }
 
+export async function getTermsndConditionsData() {
+  const headerquery = `
+
+  *[_type == 'termsAndConditions'] {
+    heading,
+    card[]{
+     
+        title,
+        description,
+        buttonName,
+        buttonLink
+      
+    },
+    "banner": banner-> {
+      climate_actionImg,
+      earth_img,
+      smallDescription
+    }
+  }
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+
+export async function getCareersData() {
+  const headerquery = `
+
+  *[_type == 'Careers'] {
+    heading,
+    "card": card {
+      image,
+      title,
+      description
+    },
+    "banner": banner-> {
+      climate_actionImg,
+      earth_img,
+      smallDescription
+    }
+  }
+  
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+export async function getContactData() {
+  const headerquery = `
+  *[_type == 'contact'] {
+    description,
+    image,
+    social[] {
+      socialImage,
+      socialLink
+    },
+    card[] {
+      leftDescriptionList,
+      rightDescriptionList,
+      'latitude': location->latitude,
+      'longitude': location->longitude
+    }
+  }
+  
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
 export async function getGrowthData(slug:string) {
   //   we are getting this data from growthShared schema
   const headerquery = `

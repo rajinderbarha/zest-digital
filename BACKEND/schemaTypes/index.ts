@@ -19,12 +19,16 @@ import { Resources } from './resources'
 import { BrandList } from './brandList'
 import { Schedule_a_call } from './Schedule_a_call'
 import { Growth } from './growth'
+import { TermsAndConditions } from './termaAndConditions'
+import { Careers } from './careers'
+import { LocationObj } from './location'
 
 export const schemaTypes = [
   Header,
   Footer,
   About,
   Contact,
+  LocationObj,
   ClimteAction,
   SocialMedia,
   DigitalTermsOfService,
@@ -41,5 +45,7 @@ export const schemaTypes = [
   Resources,
   BrandList,
   Schedule_a_call,
-  Growth
+  Growth,
+  TermsAndConditions,
+  Careers
 ]

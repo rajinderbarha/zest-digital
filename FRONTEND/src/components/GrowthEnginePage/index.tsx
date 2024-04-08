@@ -1,12 +1,12 @@
 import React from "react";
 import GrowthEnginePage_Banner from "./GrowthEnginePage_Banner";
 import GrowthEnginePage_Box from "./GrowthEnginePage_Box";
-import Growth_Accordion from "./Growth_Accordion";
+import Growth_Accordion from "../../common/Growth_Accordion";
 import Growths from "./Growths";
 import flag_img from "../../assets/images/flags.png";
 
 function GrowthEnginePage({ data }: any) {
-
+      console.log("data---------------------------------------------GrowthEnginePage---------",data)
 
   return (
     <>

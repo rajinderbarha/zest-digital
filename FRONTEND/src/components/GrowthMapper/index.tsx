@@ -1,7 +1,7 @@
 import React from 'react'
 import GrowthEnginePage_Banner from '../GrowthEnginePage/GrowthEnginePage_Banner'
 import GrowthEnginePage_Box from '../GrowthEnginePage/GrowthEnginePage_Box'
-import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
+import Growth_Accordion from '../../common/Growth_Accordion'
 import Growths from '../GrowthEnginePage/Growths'
 import person_Img from '../../assets/images/People_icon.png'
 

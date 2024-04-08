@@ -6,7 +6,7 @@ import GrowthMarketingServices_book_call from './GrowthMarketingServices_book_ca
 import GrowthMarketingServices_services from './GrowthMarketingServices_services'
 import Client_Result from './Client_Result'
 import GrowthMarketingServices_Quotes from './GrowthMarketingServices_Quotes'
-import Growth_Accordion from '../GrowthEnginePage/Growth_Accordion'
+import Growth_Accordion from '../../common/Growth_Accordion'
 import GrowthMarketingServices_Address from './GrowthMarketingServices_Address'
 import GrowthMarketingServices_details_happy_customer from './GrowthMarketingServices_details/GrowthMarketingServices_details_happy_customer'
 import GrowthMarketingServices_details_proven_growth from './GrowthMarketingServices_details/GrowthMarketingServices_details_proven_growth'

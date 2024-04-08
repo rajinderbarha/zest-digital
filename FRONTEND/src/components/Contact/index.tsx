@@ -6,24 +6,37 @@ import linkedin from '../../assets/images/LinkedIn_Zest_icon_black.png'
 import hand_wave_img from '../../assets/images/Hand_wave_icon.png'
 import classes from './Contact.module.css'
 import MapLocations from './MapLocations'
+import { ContactType } from '../../../lib/interface'
+import Link from 'next/link'
+import { urlFor } from '../../../lib/sanity.client'
 
-function Contact() {
+function Contact({ data }: { data:  ContactType }) {
+        console.log(data)
     return (
         <>
             <div className="Contact mt-[140px] sm:px-[20px] px-3">
                 <div className="main_container ">
-                    <div className="grid lg:grid-cols-12 ">
+                    
+
+                        <div className="grid lg:grid-cols-12 ">
                         <div className={`${classes.text_div} lg:col-span-5   relative h-max lg:me-10`}>
                             <div className=" max-w-[636px] ">
-                                <h2 className="font-mono font-semibold md:text-35px text-25px pe-10">To contact our team, please use the form on the right or the post/phone details below.</h2>
+                                <h2 className="font-mono font-semibold md:text-35px text-25px pe-10">{data?.description}</h2>
+
+                              
                                 <div className="icons flex mt-10 gap-[18px]">
-                                    <Image src={facebook} alt="" />
-                                    <Image src={instagram} alt="" />
-                                    <Image src={linkedin} alt="" />
+                                {data?.social.map((socialmap,index)=>(
+
+                                  <Link href={socialmap.socialLink} key={`${index}_socialmap`}>
+                                  <Image src={urlFor(socialmap.socialImage).url()} height={45} width={45} alt="" />
+                                  </Link>
+                                   
+                                ))}
                                 </div>
                             </div>
                             <div className="sm:block hidden hand_img absolute right-0 md:-bottom-[60%] -bottom-[20%] md:max-w-max max-w-[150px]">
-                                <Image src={hand_wave_img} alt="" className='' />
+                                <Image src={urlFor(data?.image).url()} width={270} height={214} alt="" className='' />
+
                             </div>
                         </div>
                         <div className="lg:col-span-7 lg:mt-0 md:mt-[230px] mt-[150px]">
@@ -76,6 +89,9 @@ function Contact() {
                         <MapLocations />
                         <MapLocations />
                     </div>
+
+
+
                 </div>
             </div>
         </>

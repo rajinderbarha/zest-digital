@@ -22,7 +22,7 @@ const Logo_moving = ({ data }: any) => {
 
           <Marquee className={`gap-16 `}>
             <div className="flex  max-w-auto gap-16 me-5">
-              {data.map((item: any, index: number) => {
+              {data?.map((item: any, index: number) => {
                 return (
                   <Image
                     src={urlFor(item).url()}
