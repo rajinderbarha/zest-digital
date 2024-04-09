@@ -1,15 +1,13 @@
 import GrowthEnginePage from "@/components/GrowthEnginePage";
 import React from "react";
-import { GrowthEngineType } from "../../lib/interface";
-import { getGrowthData, getSharedEngineData } from "../../lib/sanity.query";
+import { getGrowthData } from "../../lib/sanity.query";
 
 function growthengine({growth}:any) {
 
-  console.log("will",growth )
   return (
-    <>
+  
       <GrowthEnginePage data={growth[0]}/>
-    </>
+    
   );
 }
 

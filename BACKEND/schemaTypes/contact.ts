@@ -24,10 +24,16 @@ export const Contact = defineType({
         {
             name: 'card', type: 'array', title: 'Card', of: [{
                 type: 'object', fields: [
-                    { name: 'image', type: 'image', title: 'Image' },
+                    {
+                        name: 'location',
+                        title: 'Location',
+                        type: 'reference',
+                        to: [{ type: 'location' }]
+            
+                    },
                     { name: 'leftDescriptionList', type: 'string', title: 'Cad Left Description List' },
                     { name: 'rightDescriptionList', type: 'string', title: 'Card Right Description List' },
-                    { name: 'icon', type: 'image', title: 'Icon' },
+                    // { name: 'icon', type: 'image', title: 'Icon' },
                 ],
             }]
 

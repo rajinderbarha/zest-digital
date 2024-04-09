@@ -55,8 +55,8 @@ const Growth_engine = ({
               <Image
                 src={urlFor(image).url()}
                 alt="growth img"
-                width={500}
-                height={500}
+                width={300}
+                height={300}
               />
             )}
           </div>

@@ -15,13 +15,24 @@ export const Growth = defineType({
       },
     },
     {
+      name: 'card',
+      title: 'Card',
+      type: 'object',
+      fields: [
+        {name: 'heading', title: 'Heading', type: 'string'},
+        {name: 'description', title: 'Description', type: 'string'},
+        {name: 'buttonName', title: 'Button Name', type: 'string'},
+        {name: 'image', title: 'Image', type: 'image'},
+      ],
+    },
+    {
       name: 'heroSection',
       title: 'Hero Section',
       type: 'object',
       fields: [
         {name: 'upperTitle', title: 'Upper Title', type: 'string'},
         {name: 'heading', title: 'Heading', type: 'string'},
-      
+       
         {
           name: 'button',
           title: 'Button',
