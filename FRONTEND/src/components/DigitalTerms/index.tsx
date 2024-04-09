@@ -1,17 +1,18 @@
 import React from 'react'
 import classes from './DigitalTerms.module.css'
 import { DigitalTermsOfServiceType } from '../../../lib/interface'
+import { PortableText } from 'next-sanity'
 function DigitalTerms({ data }: { data:  DigitalTermsOfServiceType[]  }) {
 
     return (
         <>
             <div className="DigitalTerms">
 
-                {data?.map((item,index)=>(
+                {data?.map((item:any,index)=>(
                
-                <div className="main_container px-5">
-
-                    <h2 className="lg:text-55px md:text-45px text-35px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[80px] md:mb-[124px]">Digital terms of service</h2>
+                <div className="main_container px-5" key={`${item}_DigitalTerms`}>
+                    <PortableText value={item.content}/>
+                    {/* <h2 className="lg:text-55px md:text-45px text-35px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[80px] md:mb-[124px]">Digital terms of service</h2>
                     <div className="details main_container_x">
                         <div className="definations">
                             <div className="">
@@ -147,8 +148,8 @@ function DigitalTerms({ data }: { data:  DigitalTermsOfServiceType[]  }) {
                             </div>
                         </div>
 
-                    </div>
-                </div>
+                    </div>*/}
+                </div> 
                  ))}
             </div >
         </>

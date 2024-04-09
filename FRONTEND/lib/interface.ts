@@ -63,11 +63,14 @@ export interface HeaderType {
 
 export interface TermsAndConditionsType {
   heading: string;
-  card: {
-      title: string;
-      description: string;
-      buttonName: string;
-      buttonLink: string;
+  cards: {
+    slug: string;
+    title: string;
+    smallDescription: string,
+    buttonName: string,
+    buttonLink:string,
+    content: string[];
+    banner: ClimateAction;
    
   }[];
   banner: ClimateAction

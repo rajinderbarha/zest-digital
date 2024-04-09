@@ -12,7 +12,7 @@ function GrowthEnginePage({ data }: any) {
     <>
       <GrowthEnginePage_Banner data={data.heroSection} />
       <GrowthEnginePage_Box data={data.growthSection} />
-      <Growth_Accordion />
+      {/* <Growth_Accordion /> */}
       <Growths data={data.solution.card} />
     </>
   );
