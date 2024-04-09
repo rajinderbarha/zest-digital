@@ -423,14 +423,20 @@ export async function getSolutionData() {
           switcher[]
         }
       },
-      card[]{
-        heading,
+     growth[]->{
+      slug,
+      card{
+
+        heading, 
         description,
-        image,
         buttonName,
-        buttonLink
+        image
       },
-      brandList[]
+   
+     },
+      brandList[]->{
+        icon
+      }
 
       
       

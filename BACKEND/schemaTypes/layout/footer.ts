@@ -1,5 +1,5 @@
 import {defineType} from 'sanity'
-import { ClimteAction } from './climateaction'
+import { ClimteAction } from '../common/climateaction'
 
 export const Footer = defineType({
   title: 'Footer',

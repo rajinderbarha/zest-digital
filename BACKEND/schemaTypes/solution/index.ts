@@ -46,35 +46,20 @@ export const Solution = defineType({
         {name: 'belowLine', type: 'string', title: 'Below Line'},
       ],
     },
+
     {
-      name: 'card',
-      title: 'Card',
-      type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            {name: 'heading', type: 'string', title: 'Heading'},
-            {name: 'description', type: 'string', title: 'Description'},
-            {name: 'image', type: 'image', title: 'Image'},
-            {name: 'buttonName', type: 'string', title: 'Button Name'},
-            {name: 'buttonLink', type: 'string', title: 'Button Link'},
-          ],
-        },
-      ],
-    },
+      name:'growth',
+      title:"Growth",
+      type:"array",
+      of:[{type:'reference',to:[{type:"growth"}]}]
+  },
+
     {
-      name: 'brandList',
-      type: 'array',
-      title: 'Brand List',
-      of: [
-        {
-          name: 'icon',
-          type: 'image',
-          title: 'Icon',
-        },
-      ],
-    },
+      name:'brandList',
+      title:"Brand List",
+      type:"array",
+      of:[{type:'reference',to:[{type:"brandList"}]}]
+  },
     {
       name: 'banner',
       title: 'Banner',

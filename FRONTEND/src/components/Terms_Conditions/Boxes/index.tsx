@@ -20,7 +20,7 @@ const Boxes: React.FC<BoxesProps> = (props) => {
                 <h2 className={`${classes.growth_engine_title} text-40px font-semibold `}>{title || ''}</h2>
                 <p className={`${classes.growth_engine_desc} text-3xl my-5 md:pe-[80px]`}>{smallDescription || ''}</p>
                 <div className="">
-                    <Link href={buttonLink} className='bg-color-1 rounded-full text-white text-base py-[7px] ps-5  flex gap-2 items-center'>{buttonName || ''} <span className='p-1 bg-white rounded-full text-black me-1 md:me-2 text-lg'><GoArrowRight /></span></Link>
+                    <Link href={`/terms-and-conditions/${buttonLink}`} className='bg-color-1 rounded-full text-white text-base py-[7px] ps-5  flex gap-2 items-center'>{buttonName || ''} <span className='p-1 bg-white rounded-full text-black me-1 md:me-2 text-lg'><GoArrowRight /></span></Link>
                 </div>
             </div>
         </div>

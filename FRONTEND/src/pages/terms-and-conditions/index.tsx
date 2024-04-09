@@ -8,9 +8,9 @@ import { TermsAndConditionsType } from '../../../lib/interface';
 function termsconditions({ termsAndConditionData }: { termsAndConditionData: TermsAndConditionsType[] }) {
     // console.log("termsAndConditionData-------------++++++++++++++",termsAndConditionData[0])
     return (
-        <>
+        
             <Terms_Conditions data={ termsAndConditionData[0]} />
-        </>
+        
     );
 }
 
