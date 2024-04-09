@@ -61,6 +61,36 @@ export interface HeaderType {
 }
 
 
+export interface TermsAndConditionsType {
+  heading: string;
+  cards: {
+    slug: string;
+    title: string;
+    smallDescription: string,
+    buttonName: string,
+    buttonLink:string,
+    content: string[];
+    banner: ClimateAction;
+   
+  }[];
+  banner: ClimateAction
+}
+
+
+
+export interface CareerCard {
+  image: string; // Assuming this is the URL of the image
+  title: string;
+  description: string;
+}
+
+export interface CareersType {
+  heading: string;
+  card: CareerCard;
+  banner: ClimateAction
+}
+
+
 
 
 export interface AboutType {
@@ -473,6 +503,35 @@ export interface DigitalTermsOfServiceType {
     };
     smallDescription: string;
   };
+}
+
+
+
+export interface ContactType {
+  description: string;
+  image: {
+    _type: string;
+    asset: {
+      _type: string;
+      url: string;
+    };
+  };
+  social: {
+    socialImage: {
+      _type: string;
+      asset: {
+        _type: string;
+        url: string;
+      };
+    };
+    socialLink: string;
+  }[];
+  card: {
+    leftDescriptionList: string;
+    rightDescriptionList: string;
+    latitude: number;
+    longitude: number;
+  }[];
 }
 
 

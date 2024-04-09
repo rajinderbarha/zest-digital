@@ -2,7 +2,18 @@ import React from 'react'
 import classes from './ScheduleCall.module.css'
 import Image from 'next/image'
 import calender_profile from '../../assets/images/calender_profile.png'
-function ScheduleCall({data}:any) {
+import { urlFor } from '../../../lib/sanity.client'
+
+
+interface schedule_a_call {
+    heading:string,
+    description:string,
+    image:any,
+    subheading:string,
+}
+
+function ScheduleCall({data}:{data:schedule_a_call}) {
+    console.log("schedulecall=======================",data)
     return (
         <>
             <div className="ScheduleCall ">
@@ -12,9 +23,9 @@ function ScheduleCall({data}:any) {
                     <div className={`${classes.bg_image} flex items-center flex-col md:flex-row rounded-30px px-[40px] md:px-[94px] py-[100px] md:py-[145px] mt-[44px] `}>
                         <div className={`profile max-w-[307px] text-center`}>
                             <div className="">
-                                <Image src={calender_profile} alt='' className=' mx-auto' />
+                                <Image src={urlFor(data.image).url()} width={160} height={160} alt='' className=' mx-auto' />
                             </div>
-                            <p className="font-mono text-25px mt-2 md:mt-0 md:text-30px text-color-7 font-semibold">Book a call with Louis!</p>
+                            <p className="font-mono text-25px mt-2 md:mt-0 md:text-30px text-color-7 font-semibold">{data.subheading}</p>
                         </div>
                         <div className={`calender w-full  max-h-[460px] max-w-[560px] bg-white mt-[100px] md:mt-0 md:ml-[179px]`}>
                             <div className="w-full h-[560px]">

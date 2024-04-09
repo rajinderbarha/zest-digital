@@ -64,19 +64,37 @@ export function getFooter() {
   );
 }
 
-export function getDigitalTerms() {
+// export function getDigitalTerms() {         // this will be deleted not needed below is same we rename it 
+//   return client.fetch(
+//     groq`
+//     *[_type == 'digitalTermsOfService'] {
+//       content,
+//       "banner": banner-> {
+//         climate_actionImg,
+//         earth_img,
+//         smallDescription
+//       }
+//     }
+    
+    
+//     `
+//   );
+// }
+export function getSingleTerms(slug:string) {
   return client.fetch(
     groq`
-    *[_type == 'digitalTermsOfService'] {
+    *[_type == 'singleTermsOfService' && slug.current == "${slug}"] {
+      slug,
+      title,
+      smallDescription,
+      buttonName,
       content,
-      "banner": banner-> {
+      'banner': banner-> {
         climate_actionImg,
         earth_img,
         smallDescription
       }
     }
-    
-    
     `
   );
 }
@@ -405,14 +423,20 @@ export async function getSolutionData() {
           switcher[]
         }
       },
-      card[]{
-        heading,
+     growth[]->{
+      slug,
+      card{
+
+        heading, 
         description,
-        image,
         buttonName,
-        buttonLink
+        image
       },
-      brandList[]
+   
+     },
+      brandList[]->{
+        icon
+      }
 
       
       
@@ -525,9 +549,118 @@ export async function getSchedule_a_callData() {
         smallDescription
       },
     heading,
-   description
+   description,
+   image,
+   subheading
     
     }
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+
+export async function getTermsndConditionsData() {
+  const headerquery = `
+
+  *[_type == 'termsAndConditions'] {
+    heading,
+    'cards': card[]-> {
+      slug,
+      title,
+      smallDescription,
+      buttonName,
+      content,
+      'banner': banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      }
+    },
+    'banner': banner-> {
+      climate_actionImg,
+      earth_img,
+      smallDescription
+    }
+  }
+  
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+// export async function getTermsndConditionsData() {
+//   const headerquery = `
+
+//   *[_type == 'termsAndConditions'] {
+//   heading,
+//   'cards': card[]{
+//     'singleTermsOfService': collection-> {
+//       slug,
+//       title,
+//       content,
+//       'banner': banner-> {
+//         climate_actionImg,
+//         earth_img,
+//         smallDescription
+//       }
+//     }
+//   },
+//   'banner': banner-> {
+//     climate_actionImg,
+//     earth_img,
+//     smallDescription
+//   }
+// }
+
+
+//   `;
+//   const data = await client.fetch(headerquery);
+//   return data;
+// }
+
+
+export async function getCareersData() {
+  const headerquery = `
+
+  *[_type == 'Careers'] {
+    heading,
+    "card": card {
+      image,
+      title,
+      description
+    },
+    "banner": banner-> {
+      climate_actionImg,
+      earth_img,
+      smallDescription
+    }
+  }
+  
+
+  `;
+  const data = await client.fetch(headerquery);
+  return data;
+}
+
+export async function getContactData() {
+  const headerquery = `
+  *[_type == 'contact'] {
+    description,
+    image,
+    social[] {
+      socialImage,
+      socialLink
+    },
+    card[] {
+      leftDescriptionList,
+      rightDescriptionList,
+      'latitude': location->latitude,
+      'longitude': location->longitude
+    }
+  }
+  
 
   `;
   const data = await client.fetch(headerquery);

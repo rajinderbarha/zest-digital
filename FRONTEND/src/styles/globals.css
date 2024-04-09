@@ -53,3 +53,103 @@ body {
 
   @apply max-w-[1510px] mx-auto border border-color-1 shadow-compo shadow-[#e43fa8] rounded-30px
 }
+.app-container {
+  padding: 15px;
+}
+
+.panel-style {
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.custom-header {
+  border: 1px solid black;
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 30px 55px;
+  margin: -12px -17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+
+}
+
+.panel-data {
+  margin: -19px -15px;
+  font-size: 30px;
+  /* padding-top: 80px;
+  padding-bottom: 80px; */
+  padding: 80px 0;
+  max-width: 1221px;
+  color: black;
+  border: none !important;
+}
+
+.arrow_img {
+  transform: rotate(90deg);
+}
+
+.custom-icon {
+  transition: transform 0.3s;
+  margin-right: 8px;
+}
+
+.ant-collapse-content {
+  /* margin-left: 55px;
+  margin-right: 55px; */
+  margin: 0 55px;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.panel-style {
+  border-bottom: 1px solid black !important;
+}
+
+.ant-collapse>.ant-collapse-item:last-child {
+  border-radius: 20px;
+}
+
+.ant-collapse {
+  border: none;
+}
+
+@media only screen and (max-width:950px) {
+  .panel-style {
+    font-size: 25px;
+  }
+
+  .panel-data {
+    font-size: 25px;
+    padding: 50px 0;
+    max-width: 1221px;
+    color: black;
+
+    border: none !important;
+  }
+
+  .arrow_img {
+    /*  border: 1px solid white;  */
+    width: 50px;
+  }
+
+  .custom-header {
+    padding: 22px 30px;
+  }
+
+  .ant-collapse-content {
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .panel-data {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+}

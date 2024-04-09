@@ -4,35 +4,9 @@ import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
 
 function Section_Main({ data, card }: any) {
- 
-  const props1 = {
-    title: card[0].heading,
-    description: card[0].description,
-    buttonName: card[0].buttonName,
-    buttonLink: card[0].buttonLink,
-    image: urlFor(card[0].image).url(),
-  };
-  const props2 = {
-    title: card[0].heading,
-    description: card[0].description,
-    buttonName: card[0].buttonName,
-    buttonLink: card[0].buttonLink,
-    image: urlFor(card[0].image).url(),
-  };
-  const props3 = {
-    title: card[0].heading,
-    description: card[0].description,
-    buttonName: card[0].buttonName,
-    buttonLink: card[0].buttonLink,
-    image: urlFor(card[0].image).url(),
-  };
-  const props4 = {
-    title: card[0].heading,
-    description: card[0].description,
-    buttonName: card[0].buttonName,
-    buttonLink: card[0].buttonLink,
-    image: urlFor(card[0].image).url(),
-  };
+
+
+console.log("card", card)
 
   return (
     <>
@@ -67,16 +41,64 @@ function Section_Main({ data, card }: any) {
       <div
         className={`max-w-[1345px] font-mono  mx-auto grid gap-10 -mt-64 px-10`}
       >
-        <Growth_engine has_image={false} shadow_right={true} props={props1} />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
-          <Growth_engine
-            has_image={false}
-            shadow_right={false}
-            props={props2}
-          />
-          <Growth_engine has_image={false} shadow_right={true} props={props3} />
-        </div>
-        <Growth_engine has_image={true} shadow_right={false} props={props4} />
+        {card.map((item: any, index: number) => {
+          if (index === 0) {
+            return (
+              <Growth_engine
+                has_image={false}
+                shadow_right={true}
+                props={{
+                  title: item.card.heading,
+                  description: item.card.description,
+                  buttonName: item.card.buttonName,
+                  buttonLink: item.slug.current,
+                  image: urlFor(item.card.image).url(),
+                }}
+              />
+            );
+          } else if (index <=2 ) {
+            return (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
+                <Growth_engine
+                  has_image={false}
+                  shadow_right={false}
+                  props={{
+                    title: item.card.heading,
+                    description: item.card.description,
+                    buttonName: item.card.buttonName,
+                    buttonLink: item.slug.current,
+                    image: urlFor(item.card.image).url(),
+                  }}
+                />
+               {<Growth_engine
+                  has_image={false}
+                  shadow_right={true}
+                  props={{
+                    title: item.card.heading,
+                    description: item.card.description,
+                    buttonName: item.card.buttonName,
+                    buttonLink: item.slug.current,
+                    image: urlFor(item.card.image).url(),
+                  }}
+                />}
+              </div>
+            );
+          } else if(index===3) {
+            return ( 
+              <Growth_engine
+              has_image={true}
+              shadow_right={false}
+              props={{
+                title: item.card.heading,
+                description: item.card.description,
+                buttonName: item.card.buttonName,
+                buttonLink: item.slug.current,
+                image: urlFor(item.card.image).url(),
+              }}
+            />
+            );
+          }
+        })}
       </div>
     </>
   );
