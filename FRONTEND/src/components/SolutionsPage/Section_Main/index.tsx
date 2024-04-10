@@ -4,9 +4,7 @@ import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
 
 function Section_Main({ data, card }: any) {
-
-
-console.log("card", card)
+  console.log("card", card);
 
   return (
     <>
@@ -46,7 +44,7 @@ console.log("card", card)
             return (
               <Growth_engine
                 has_image={false}
-                shadow_right={true}
+                shadow_right={false}
                 props={{
                   title: item.card.heading,
                   description: item.card.description,
@@ -56,46 +54,50 @@ console.log("card", card)
                 }}
               />
             );
-          } else if (index <=2 ) {
+          } else if (index > 0 && index <= 2) {
             return (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
-                <Growth_engine
-                  has_image={false}
-                  shadow_right={false}
-                  props={{
-                    title: item.card.heading,
-                    description: item.card.description,
-                    buttonName: item.card.buttonName,
-                    buttonLink: item.slug.current,
-                    image: urlFor(item.card.image).url(),
-                  }}
-                />
-               {<Growth_engine
-                  has_image={false}
-                  shadow_right={true}
-                  props={{
-                    title: item.card.heading,
-                    description: item.card.description,
-                    buttonName: item.card.buttonName,
-                    buttonLink: item.slug.current,
-                    image: urlFor(item.card.image).url(),
-                  }}
-                />}
+                {index === 1 && (
+                  <Growth_engine
+                    has_image={false}
+                    shadow_right={true}
+                    props={{
+                      title: item.card.heading,
+                      description: item.card.description,
+                      buttonName: item.card.buttonName,
+                      buttonLink: item.slug.current,
+                      image: urlFor(item.card.image).url(),
+                    }}
+                  />
+                )}
+                {index === 2 && (
+                  <Growth_engine
+                    has_image={false}
+                    shadow_right={false}
+                    props={{
+                      title: item.card.heading,
+                      description: item.card.description,
+                      buttonName: item.card.buttonName,
+                      buttonLink: item.slug.current,
+                      image: urlFor(item.card.image).url(),
+                    }}
+                  />
+                )}
               </div>
             );
-          } else if(index===3) {
-            return ( 
+          } else if (index === 3) {
+            return (
               <Growth_engine
-              has_image={true}
-              shadow_right={false}
-              props={{
-                title: item.card.heading,
-                description: item.card.description,
-                buttonName: item.card.buttonName,
-                buttonLink: item.slug.current,
-                image: urlFor(item.card.image).url(),
-              }}
-            />
+                has_image={true}
+                shadow_right={false}
+                props={{
+                  title: item.card.heading,
+                  description: item.card.description,
+                  buttonName: item.card.buttonName,
+                  buttonLink: item.slug.current,
+                  image: urlFor(item.card.image).url(),
+                }}
+              />
             );
           }
         })}

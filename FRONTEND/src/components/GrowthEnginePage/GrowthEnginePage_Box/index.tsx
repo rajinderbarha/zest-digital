@@ -17,8 +17,8 @@ const GrowthEnginePage_Box = ({ data }: any) => {
               <div>
                 <div className="mb-[172px]">
                   <Box_Title
-                    upper={data.headingUpper}
-                    below={data.titleUpper}
+                    upper={data.upperHeading}
+                    below={data.upperSmallLine}
                   />
                 </div>
                 <div className="Our_values_boxs ">
@@ -27,13 +27,14 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                       {index % 2 === 0 ? (
                         <div className="Our_values_main  md:max-w-[830px] md:pe-16">
                           <h3 className="font-semibold md:text-40px mb-5 font-mono text-30px text-color-7  md:w-max">
-                            {item.title}
+                            {item.heading}
                           </h3>
                           <p
                             className={`${classes.Our_values_main_p}  text-white font-medium  font-mono md:text-30px text:25px`}
                           >
                             {item.description}
                           </p>
+                          <p className="text-white font-small ">{item.belowLine}</p>
 
                           {item.buttonLink !== null &&
                             item.buttonName !== null && (
@@ -53,13 +54,14 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                           className={`${classes.Our_values_main_2} ms-auto text-end md:max-w-[830px] md:ps-16 my-11`}
                         >
                           <h3 className="font-semibold md:text-40px mb-5 ms-auto font-mono text-30px text-color-7  md:w-max">
-                            {item.title}
+                            {item.heading}
                           </h3>
                           <p
                             className={`${classes.Our_values_main_p} ms-auto  text-white font-medium  font-mono md:text-30px text:25px`}
                           >
                             {item.description}
                           </p>
+                          <p className="text-white font-small ">{item.belowLine}</p>
 
                           {item.buttonLink !== null &&
                             item.buttonName !== null && (
@@ -80,8 +82,8 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                 </div>
                 <div className="mt-[100px] md:mt-[185px] md:mb-[235px] mb-[140px] relative ">
                   <Box_Title
-                    upper={data.headingBelow}
-                    below={data.titleBelow}
+                    upper={data.belowHeading}
+                    below={data.belowSmallLine}
                   />
 
                   <div className="absolute right-0  md:max-w-[385px] w-full md:max-h-[385px] h-full max-w-[250px] lg:-bottom-[350px] md:-bottom-[250px]">
