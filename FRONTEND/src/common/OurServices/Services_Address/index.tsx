@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './GrowthMarketingServices_Address.module.css'
+import classes from './Services_Address.module.css'
 import { GoArrowRight } from "react-icons/go";
 import Image from 'next/image';
 import london from '../../../assets/images/london.webp'
@@ -7,7 +7,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 interface GrowthMarketingServices_Banner_Props {
     title: string;
 }
-const GrowthMarketingServices_Address: React.FC<GrowthMarketingServices_Banner_Props> = (props) => {
+const Services_Address: React.FC<GrowthMarketingServices_Banner_Props> = (props) => {
 // function GrowthMarketingServices_Address() {
     return (
         <>
@@ -50,4 +50,4 @@ const GrowthMarketingServices_Address: React.FC<GrowthMarketingServices_Banner_P
     )
 }
 
-export default GrowthMarketingServices_Address
+export default Services_Address

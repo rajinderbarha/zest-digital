@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import classes from './GrowthMarketingServices_Box.module.css'
+import classes from './Services_Box.module.css'
 import Paid_media_icon from '../../../assets/images/Paid_media_icon.png'
 import growth_seo_icon from '../../../assets/images/growth_seo_icon.png'
 import Social_services_icon from '../../../assets/images/Social_services_icon.png'
-interface GrowthMarketingServices_Box_Banner_Props {
+interface Services_Box_Banner_Props  {
     image_1_title:string;
     image_2_title:string;
     image_3_title:string;
@@ -13,11 +13,17 @@ interface GrowthMarketingServices_Box_Banner_Props {
     desc_1: string;
     desc_2: string;
 }
-const GrowthMarketingServices_Box: React.FC<GrowthMarketingServices_Box_Banner_Props> = (props) => {
-// function GrowthMarketingServices_Box() {
+const Services_Box: React.FC<Services_Box_Banner_Props> = (props) => {
+    // const lastIndex = props.title.lastIndexOf("delivers outstanding results");
+
+    // // Split the text into parts based on the last occurrence
+    // const beforeRemarkable = props.title.slice(0, lastIndex);
+    // const remarkable = props.title.slice(lastIndex, lastIndex + "delivers outstanding results".length);
+    // const afterRemarkable = props.title.slice(lastIndex + "delivers outstanding results".length);
     return (
         <>
             <div className={`${classes.SingleIntro}  main_container  md:mt-40 mt-20 h-100 rounded-30px`}>
+                
                 <div className={`${classes.single_container}`}>
 
                     <div className="hidden md:flex   2xl:px-[259px] xl:px-[210px] lg:px-[180px]  px-[120px] justify-between ">
@@ -50,8 +56,7 @@ const GrowthMarketingServices_Box: React.FC<GrowthMarketingServices_Box_Banner_P
                     </div>
                     <div className="max-w-[1428px] font-normal mx-auto mb-[80px] md:mb-[170px] md:px-12 px-4 md:text-30px text-25px font-mono text-white text-center">
                         <p className='mb-16'>{props.desc_1}</p>
-                        <p>{props.desc_2}
-                        </p>
+                        <p>{props.desc_2}</p>
                     </div>
                 </div>
 
@@ -60,4 +65,4 @@ const GrowthMarketingServices_Box: React.FC<GrowthMarketingServices_Box_Banner_P
     )
 }
 
-export default GrowthMarketingServices_Box
+export default Services_Box

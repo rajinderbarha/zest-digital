@@ -15,6 +15,25 @@ export const Growth = defineType({
       },
     },
     {
+      name: 'heroSection',
+      title: 'Hero Section',
+      type: 'object',
+      fields: [
+        {name: 'upperTitle', title: 'Upper Title', type: 'string'},
+        {name: 'heading', title: 'Heading', type: 'string'},
+        {name: 'circularImage', title: 'Heading', type: 'string'},
+        // {
+        //   name: 'button',
+        //   title: 'Button',
+        //   type: 'object',
+        //   fields: [
+        //     {name: 'buttonName', title: 'Button Name', type: 'string'},
+        //     {name: 'buttonLink', title: 'Button Link', type: 'string'},
+        //   ],
+        // },
+      ],
+    },
+    {
       name: 'card',
       title: 'Card',
       type: 'object',
@@ -23,25 +42,6 @@ export const Growth = defineType({
         {name: 'description', title: 'Description', type: 'string'},
         {name: 'buttonName', title: 'Button Name', type: 'string'},
         {name: 'image', title: 'Image', type: 'image'},
-      ],
-    },
-    {
-      name: 'heroSection',
-      title: 'Hero Section',
-      type: 'object',
-      fields: [
-        {name: 'upperTitle', title: 'Upper Title', type: 'string'},
-        {name: 'heading', title: 'Heading', type: 'string'},
-       
-        {
-          name: 'button',
-          title: 'Button',
-          type: 'object',
-          fields: [
-            {name: 'buttonName', title: 'Button Name', type: 'string'},
-            {name: 'buttonLink', title: 'Button Link', type: 'string'},
-          ],
-        },
       ],
     },
     {

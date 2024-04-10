@@ -8,17 +8,28 @@ import Services from '@/common/Services';
 
 
 
-export default function Home() {
+export default function Home({ ourServices }: { ourServices: TermsAndConditionsType[] }) {
   return (
     <>
       <HeroSection />
       <Growth />
       <Logo_moving />
-      <Services />
+      <Services  data={ ourServices[0]}/>
     </>
 
   );
 }
 
+
+
+
+export async function getStaticProps() {
+  const ourServicesData = await getTermsndConditionsData();
+  return {
+      props: {
+        ourServicesData
+      }
+  };
+}
 
 

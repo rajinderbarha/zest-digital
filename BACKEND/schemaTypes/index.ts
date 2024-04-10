@@ -4,13 +4,13 @@ import {About} from './about'
 import {Contact} from './contact'
 import {ClimteAction} from './common/climateaction'
 import { SingleTermsOfService} from './terms-and-conditions/singleTermofservice'
-import {GrowthMapper} from './growthMapper'
+// import {GrowthMapper} from './growthMapper'
 import {SocialMedia} from './common/socialMedia'
 import {GrowthShared} from './common/growthShared'
-import {GrowthCurve} from './growthcurve'
-import {GrowthTracker} from './growthtracker'
+// import {GrowthCurve} from './growthcurve'
+// import {GrowthTracker} from './growthtracker'
 import {SingleCaseStudy} from './caseStudy/singleCaseStudy'
-import {GrowthEngine} from './growthEngine'
+// import {GrowthEngine} from './growthEngine'
 import {CaseStudy} from './caseStudy'
 import { Solution } from './solution'
 import { Insights } from './insights'
@@ -22,6 +22,8 @@ import { Growth } from './solution/growth'
 import { TermsAndConditions } from './terms-and-conditions'
 import { Careers } from './careers'
 import { LocationObj } from './location'
+import { OurServicesSection } from './ourServicesSection'
+import { SingleService } from './ourServicesSection/singleservice'
 
 export const schemaTypes = [
   Header,
@@ -47,5 +49,7 @@ export const schemaTypes = [
   Schedule_a_call,
   Growth,
   TermsAndConditions,
-  Careers
+  Careers,
+  OurServicesSection,
+  SingleService
 ]
