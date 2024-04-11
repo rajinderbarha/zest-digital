@@ -4,7 +4,7 @@ import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
 
 function Section_Main({ data, card }: any) {
-  console.log("card", card);
+  
 
   return (
     <>
@@ -46,7 +46,7 @@ function Section_Main({ data, card }: any) {
             title: card[0].card.heading,
             description: card[0].card.description,
             buttonName: card[0].card.buttonName,
-            buttonLink: card[0].slug.current,
+            buttonLink: `/solutions/${card[0].slug.current}`,
             image: urlFor(card[0].card.image).url(),
           }}
         />
@@ -59,7 +59,7 @@ function Section_Main({ data, card }: any) {
               title: card[1].card.heading,
               description: card[1].card.description,
               buttonName: card[1].card.buttonName,
-              buttonLink: card[1].slug.current,
+              buttonLink: `/solutions/${card[1].slug.current}`,
               image: urlFor(card[1].card.image).url(),
             }}
           />
@@ -71,7 +71,7 @@ function Section_Main({ data, card }: any) {
               title: card[2].card.heading,
               description: card[2].card.description,
               buttonName: card[2].card.buttonName,
-              buttonLink: card[2].slug.current,
+              buttonLink: `/solutions/${card[2].slug.current}`,
               image: urlFor(card[2].card.image).url(),
             }}
           />
@@ -84,7 +84,7 @@ function Section_Main({ data, card }: any) {
             title: card[3].card.heading,
             description: card[3].card.description,
             buttonName: card[3].card.buttonName,
-            buttonLink: card[3].slug.current,
+            buttonLink: `/solutions/${card[3].slug.current}`,
             image: urlFor(card[3].card.image).url(),
           }}
         />
@@ -98,7 +98,7 @@ function Section_Main({ data, card }: any) {
                   title: item.card.heading,
                   description: item.card.description,
                   buttonName: item.card.buttonName,
-                  buttonLink: item.slug.current,
+                  buttonLink: `/solutions/${item.slug.current}`,
                   image: urlFor(item.card.image).url(),
                 }}
               />

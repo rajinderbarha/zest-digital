@@ -26,7 +26,7 @@ function Growths({ data }: { data: any }) {
                           title: item.card.heading,
                           description: item.card.description,
                           buttonName: item.card.buttonName,
-                          buttonLink: item.slug.current,
+                          buttonLink: `/solutions/${item.slug.current}`,
                           image: item.card.image,
                         }}
                         shadow_right={index % 2 === 0}
@@ -37,19 +37,22 @@ function Growths({ data }: { data: any }) {
                 })}
               </div>
 
-             {data.length>2&& <Growth_engine
-                props={
-                  {
-                    title: data[2]?.card.heading,
-                    description: data[2]?.card.description,
-                    buttonName: data[2]?.card.buttonName,
-                    buttonLink: data[2].slug.current,
-                    image: data[2]?.card.image,
-                  } as any
-                }
-                has_image={true}
-                shadow_right={true}
-              />}
+              {data.length > 2 &&
+                data.slice(2).map((item: any, index: number) => {
+                  return (
+                    <Growth_engine
+                      props={{
+                        title: item.card.heading,
+                        description: item.card.description,
+                        buttonName: item.card.buttonName,
+                        buttonLink: `/solutions/${item.slug.current}`,
+                        image: item.card.image,
+                      }}
+                      has_image={true}
+                      shadow_right={true}
+                    />
+                  );
+                })}
             </div>
           </div>
         </div>
