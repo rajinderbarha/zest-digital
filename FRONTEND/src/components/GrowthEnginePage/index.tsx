@@ -6,7 +6,7 @@ import Growths from "./Growths";
 import flag_img from "../../assets/images/flags.png";
 
 function GrowthEnginePage({ data , card}: any) {
-
+  console.log("GrowthEnginePage",data)
 
 
   return (

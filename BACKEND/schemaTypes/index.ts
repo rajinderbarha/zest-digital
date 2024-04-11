@@ -24,6 +24,8 @@ import { Careers } from './careers'
 import { LocationObj } from './location'
 import { OurServicesSection } from './ourServicesSection'
 import { SingleService } from './ourServicesSection/singleservice'
+import { Accordion } from './common/accordion'
+import { ServicesAgencyAddress } from './ourServicesSection/agencyAddress'
 
 export const schemaTypes = [
   Header,
@@ -51,5 +53,7 @@ export const schemaTypes = [
   TermsAndConditions,
   Careers,
   OurServicesSection,
-  SingleService
+  SingleService,
+  Accordion,
+  ServicesAgencyAddress
 ]

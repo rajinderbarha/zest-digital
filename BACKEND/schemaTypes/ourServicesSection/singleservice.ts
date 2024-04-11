@@ -31,8 +31,8 @@ export const SingleService = defineType({
           title: 'Button',
           type: 'object',
           fields: [
-            {name: 'callButton', type: 'string', title: 'Call Button'},
-            {name: 'resultsButton', type: 'string', title: 'Results button'},
+            {name: 'callButtonName', type: 'string', title: 'Call button name'},
+            {name: 'resultsButtonName', type: 'string', title: 'Results button name'},
           ],
       },
 
@@ -97,48 +97,101 @@ export const SingleService = defineType({
       fields: [
           { name: 'heading', type: 'string', title: 'Heading' },
           { name: 'buttonName', type: 'string', title: 'Button Name' },
-         
-      ],
+          
+        ],
   },
 
 
+  
+  {
+    name: 'ourSubServices',
+    title: 'Our Sub Services',
+    type: 'object',
+    fields: [
+        { name: 'heading', type: 'string', title: 'Heading' },
+        {
+          name: "services",
+            type: 'array',
+            title: 'Services',
+            of: [
+                {
+                    type: "object",
+                    fields: [
+                      { name: 'image', type: 'image', title: 'Image' },
+                      { name: 'title', type: 'string', title: 'Title' },
+                      { name: 'description', type: 'string', title: 'Description' },
+                    ],
+                },
+              ],
+            },
+    ],
+  },
 
   {
-    name: 'subServices',
-    title: 'Sub Services',
-    type: 'array',
+    name: 'clientResults',
+    title: 'Client Results',
+    type: 'object',
+    fields: [
+      { name: 'title', type: 'string', title: 'Title' },
+      { name: 'heading', type: 'string', title: 'Heading' },
+        {
+            name: "card",
+            type: 'array',
+            title: 'Card',
+            of: [
+              {
+                type: "object",
+                    fields: [
+                      { name: 'percentsge', type: 'string', title: 'Percentsge' },
+                      { name: 'title', type: 'string', title: 'Title' },
+                        { name: 'description_1', type: 'string', title: 'Description_1' },
+                        { name: 'description_2', type: 'string', title: 'Description_2' },
+                        { name: 'buttonName', type: 'string', title: 'Button Name' },
+                      ],
+                    },
+                  ],
+                },
+                { name: 'belowbuttonName', type: 'string', title: 'Below Button Name' },
+    ],
+},
 
 
-    of: [
-      {
-        type:"object", fields:[
-          { name: 'heading', type: 'string', title: 'Heading' },
-          {
-            name: "services",
-            type: 'object',
-            fields: [
-              { name: 'image', type: 'image', title: 'Image' },
-              { name: 'title', type: 'string', title: 'Heading' },
-              { name: 'description', type: 'string', title: 'Description' },
-            ],
-          },
-        ]
-        
-      }
-      ],
+{
+  name: 'globalaccordion',
+  title: 'Accordion',
+  type: 'reference',
+  to: [{ type: 'accordion' }]
 
 },
 
 
+{
+  name: 'Services_Quotes',
+  title: 'Services Quotes',
+  type: 'array',
 
 
+  of: [
+    { 
+      // name: "quote",
+      title:"Quote",
+        type: 'object',
+        fields: [
+          { name: 'description', type: 'string', title: 'Description' },
+          { name: 'name', type: 'string', title: 'Name' },
+        ],
+    },
+],
 
+},
 
+        {
+            name: 'agencyAddress',
+            title: 'Agency Address',
+            type: 'reference',
+            to: [{ type: 'serviceAgencyAddress' }]
 
-
-
-
-
+        },
 
 
 
