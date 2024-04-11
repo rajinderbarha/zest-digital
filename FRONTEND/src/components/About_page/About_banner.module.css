@@ -1,5 +1,5 @@
 .About_banner {
-    padding: 143px 16px 141px 16px;
+    padding: 143px 15px 141px 15px;
     overflow: hidden;
 }
 
@@ -10,12 +10,17 @@
 }
 
 .About_team {
-    padding: 0px 16px 141px 16px;
+    padding: 0px 15px 141px 15px;
 }
 
 .Team_img {
     max-width: 435px;
     width: 100%;
+    
+}
+.Our_values{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .values_bg {
@@ -23,7 +28,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #000;
+    background-color: #191615;
     padding: 85px 16px 260px 16px;
     border-radius: 30px;
 }
@@ -45,7 +50,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #000;
+    background-color: #191615;
     padding: 129px 16px 140px 16px;
     border-radius: 30px;
 
@@ -93,5 +98,8 @@ width: 95%;
 
     .Escape {
         padding: 60px 16px 60px 16px;
+    }
+    .Our_values_main_2{
+        margin: 20px 0!important;
     }
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-interface GrowthMarketingServices_Banner_Props {
+interface Services_Banner_Props {
     title: string;
     desc: string;
     max_width: string;
 }
-const GrowthMarketingServices_Banner: React.FC<GrowthMarketingServices_Banner_Props> = (props) => {
+const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
     // function GrowthMarketingServices_Banner() {
     console.log(props.max_width);
     const max_width_string = `max-w-[${props.max_width}] `;
@@ -30,4 +30,4 @@ const GrowthMarketingServices_Banner: React.FC<GrowthMarketingServices_Banner_Pr
     )
 }
 
-export default GrowthMarketingServices_Banner
+export default Services_Banner

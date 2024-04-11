@@ -6,7 +6,7 @@ import Paid_media_icon from '../../../assets/images/Paid_media_icon.png'
 import Social_services_icon from '../../../assets/images/Social_services_icon.png'
 import Web_design_icon from '../../../assets/images/Web_design_icon.png'
 import Hosting_security_icon from '../../../assets/images/Hosting_security_icon.png'
-import classes from './GrowthMarketingServices_services.module.css'
+import classes from './Services_SubServices.module.css'
 
 interface GrowthMarketingServices_Banner_Props {
     image_1_title: string;
@@ -23,7 +23,7 @@ interface GrowthMarketingServices_Banner_Props {
     image_6_desc: string;
     box_title:string;
 }
-const GrowthMarketingServices_services: React.FC<GrowthMarketingServices_Banner_Props> = (props) => {
+const Services_SubServices: React.FC<GrowthMarketingServices_Banner_Props> = (props) => {
 
     // function GrowthMarketingServices_services() {
     return (
@@ -95,4 +95,4 @@ const GrowthMarketingServices_services: React.FC<GrowthMarketingServices_Banner_
     )
 }
 
-export default GrowthMarketingServices_services
+export default Services_SubServices

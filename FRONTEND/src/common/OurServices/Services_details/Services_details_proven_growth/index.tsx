@@ -1,15 +1,15 @@
 import React from 'react'
-import classes from '../GrowthMarketingServices_details.module.css'
+import classes from '../Services_details.module.css'
 import Image from 'next/image'
 import growth_framework_img from '../../../../assets/images/growth_framework_img.png'
-interface GrowthMarketingServices_Banner_Props {
+interface Services_details_proven_growth_Banner_Props {
     title1: string;
     title2: string;
     title_changeColor: string;
     desc1: string;
     desc2: string;
 }
-const GrowthMarketingServices_details_proven_growth: React.FC<GrowthMarketingServices_Banner_Props> = (props) => {
+const Services_details_proven_growth: React.FC<Services_details_proven_growth_Banner_Props> = (props) => {
 // function GrowthMarketingServices_details_proven_growth() {
     return (
         <>
@@ -33,4 +33,4 @@ const GrowthMarketingServices_details_proven_growth: React.FC<GrowthMarketingSer
     )
 }
 
-export default GrowthMarketingServices_details_proven_growth
+export default Services_details_proven_growth

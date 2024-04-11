@@ -24,33 +24,33 @@ function Our_values({ data }: { data: AboutType[] }) {
                       <Image
                         className=" md:max-w-[300px] max-w-[200px]"
                         src={urlFor(valSection.image).url()}
-                        width={330}
-                        height={330}
+                        width={250}
+                        height={250}
                         alt=""
                       />
-                      <h3 className="font-semibold md:text-45px mb-5 font-mono text-30px text-color-7 border-b border-color-7 md:w-max">
+                      <h3 className="font-semibold md:text-45px mb-5 font-mono text-30px text-color-7 border-b border-color-7 sm:pr-[63px] w-fit md:w-max">
                         {valSection.title}
                       </h3>
                       <p
-                        className={`${classes.Our_values_main_p}  text-white font-medium  font-mono md:text-30px text:25px`}
+                        className={`${classes.Our_values_main_p}  text-white font-medium  font-mono md:text-30px text-[22px]`}
                       >
                         {valSection.description}
                       </p>
                     </div>
                   ) : (
-                    <div className={`${classes.Our_values_main_2}  text-end `} key={`${path}_path_right`}>
+                    <div className={`${classes.Our_values_main_2} text-end `} key={`${path}_path_right`}>
                       <Image
                         className=" md:max-w-[300px] ms-auto max-w-[200px]"
                         src={urlFor(valSection.image).url()}
-                        width={330}
-                        height={330}
+                        width={250}
+                        height={250}
                         alt=""
                       />
-                      <h3 className="font-semibold md:text-45px mb-5 ms-auto font-mono text-30px text-color-7 border-b border-color-7 md:w-max">
+                      <h3 className="font-semibold md:text-45px mb-5 ms-auto font-mono text-30px text-color-7 border-b border-color-7 sm:ps-[63px] w-fit md:w-max">
                         {valSection.title}
                       </h3>
                       <p
-                        className={`${classes.Our_values_main_p} ms-auto  text-white font-medium  font-mono md:text-30px text:25px`}
+                        className={`${classes.Our_values_main_p} ms-auto  text-white font-medium  font-mono md:text-30px text-[22px]`}
                       >
                         {valSection.description}
                       </p>

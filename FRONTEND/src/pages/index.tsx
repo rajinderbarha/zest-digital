@@ -3,22 +3,34 @@ import HeroSection from '@/components/HeroSection';
 import Growth from '@/components/Growth';
 import Logo_moving from '@/common/Logo_moving';
 import Services from '@/common/Services';
+import { getTermsndConditionsData } from '../../lib/sanity.query';
 
 
 
 
 
-export default function Home() {
+export default function Home({ ourServices }: { ourServices: any}) {
   return (
     <>
       <HeroSection />
       <Growth />
       <Logo_moving />
-      <Services />
+      {/* <Services  data={ ourServices[0]}/> */}
     </>
 
   );
 }
 
+
+
+
+export async function getStaticProps() {
+  const ourServicesData = await getTermsndConditionsData();
+  return {
+      props: {
+        ourServicesData
+      }
+  };
+}
 
 

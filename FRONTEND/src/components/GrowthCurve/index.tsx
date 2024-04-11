@@ -1,7 +1,7 @@
 import React from 'react'
 import GrowthEnginePage_Banner from '../GrowthEnginePage/GrowthEnginePage_Banner'
 import GrowthEnginePage_Box from '../GrowthEnginePage/GrowthEnginePage_Box'
-import Growth_Accordion from '../../common/Growth_Accordion'
+import Global_Accordion from '../../common/Global_Accordion'
 import Growths from '../GrowthEnginePage/Growths'
 import Climate_action from '@/common/Climate_action'
 import how_to_grow from '../../assets/images/how_to_grow.png'
@@ -20,7 +20,7 @@ function GrowthCurve({ data }: { data: GrowthCurveType[] }) {
                 title2="Strategic support" desc2="Your Growth Manager provides powerful analysis and data-driven recommendations to grow your revenue, with real-time Slack access for Q&A."
                 title3="Transparency + control" desc3="Regain control of your marketing budget. Our approval process is quick, simple, with 100% transparency on how your budget is spent."
             />
-            <Growth_Accordion />
+            <Global_Accordion />
             {/* <Growths /> */}
             {/* <Climate_action /> */}
         </>

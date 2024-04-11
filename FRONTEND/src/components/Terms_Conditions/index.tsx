@@ -4,6 +4,7 @@ import Boxes from "./Boxes";
 import { TermsAndConditionsType } from "../../../lib/interface";
 
 function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
+  console.log("0000000000000000000000000",data)
   return (
   
       <div>

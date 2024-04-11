@@ -1,36 +1,35 @@
 import React from 'react'
-import GrowthEnginePage_Banner from '../GrowthEnginePage/GrowthEnginePage_Banner'
-import GrowthMarketingServices_Box from '../GrowthMarketingServices/GrowthMarketingServices_Box'
-import GrowthMarketingServices_details_happy_customer from '../GrowthMarketingServices/GrowthMarketingServices_details/GrowthMarketingServices_details_happy_customer'
-import GrowthMarketingServices_details_proven_growth from '../GrowthMarketingServices/GrowthMarketingServices_details/GrowthMarketingServices_details_proven_growth'
-import GrowthMarketingServices_details_increase_market from '../GrowthMarketingServices/GrowthMarketingServices_details/GrowthMarketingServices_details_increase_market'
-import GrowthMarketingServices_book_call from '../GrowthMarketingServices/GrowthMarketingServices_book_call'
-import GrowthMarketingServices_services from '../GrowthMarketingServices/GrowthMarketingServices_services'
-import Client_Result from '../GrowthMarketingServices/Client_Result'
-import Growth_Accordion from '../../common/Growth_Accordion'
-import GrowthMarketingServices_Quotes from '../GrowthMarketingServices/GrowthMarketingServices_Quotes'
-import GrowthMarketingServices_Address from '../GrowthMarketingServices/GrowthMarketingServices_Address'
-import GrowthMarketingServices_Banner from '../GrowthMarketingServices/GrowthMarketingServices_Banner'
+import Services_Banner from '@/common/OurServices/Services_Banner'
+import Services_Box from '@/common/OurServices/Services_Box'
+import Services_book_call from '@/common/OurServices/Services_book_call'
+import Services_SubServices from '@/common/OurServices/Services_SubServices'
+import Client_Result from '@/common/OurServices/Client_Result'
+import Services_Quotes from '@/common/OurServices/Services_Quotes'
+import Global_Accordion from '../../common/Global_Accordion'
+import Services_Address from '@/common/OurServices/Services_Address'
+import Services_details_proven_growth from '@/common/OurServices/Services_details/Services_details_proven_growth'
+import Services_details_increase_market from '@/common/OurServices/Services_details/Services_details_increase_market'
+import Services_details_happy_customer from '@/common/OurServices/Services_details/Services_details_happy_customer'
 
 function Ppcservice() {
     return (
         <>
-            <GrowthMarketingServices_Banner max_width="1068px" title="PPC Services" desc="Target your ideal customers at the moment they’re searching for your service or products with PPC Marketing. Find out how PPC can deliver a consistent flow of enquiries and sales for your business by speaking to our experts today." />
-            <GrowthMarketingServices_Box image_1_title="Search Marketing" image_2_title="Display Advertising" image_3_title="Social Ads" title="Oxford’s Leading PPC Agency that  " title_change_color="delivers remarkable results" desc_1="Catapult your website to the top search positions with the power of PPC marketing. Our expert team have spent decades honing their skills for our clients. Our leading PPC strategies aim to deliver predictable revenue growth for your business, giving you the ability to scale at will." desc_2="Do you need to generate a higher ROI from your PPC marketing?" />
+            <Services_Banner max_width="1068px" title="PPC Services" desc="Target your ideal customers at the moment they’re searching for your service or products with PPC Marketing. Find out how PPC can deliver a consistent flow of enquiries and sales for your business by speaking to our experts today." />
+            <Services_Box image_1_title="Search Marketing" image_2_title="Display Advertising" image_3_title="Social Ads" title="Oxford’s Leading PPC Agency that  " title_change_color="delivers remarkable results" desc_1="Catapult your website to the top search positions with the power of PPC marketing. Our expert team have spent decades honing their skills for our clients. Our leading PPC strategies aim to deliver predictable revenue growth for your business, giving you the ability to scale at will." desc_2="Do you need to generate a higher ROI from your PPC marketing?" />
             {/* <GrowthMarketingServices_details /> */}
-            <GrowthMarketingServices_details_happy_customer title1="Join" title_changeColor="350+" title2="Happy Customers" desc1="For over 10 years our expert team have delivered remarkable results for our clients. Whether your business has a marketing team, or is earlier in the marketing journey, we have products to suit those who would just like to increase activity, and for those looking to hit specific growth targets." desc2="We’re incredibly proud to boast our client retention rate currently sits at 95%." />
-            <GrowthMarketingServices_details_proven_growth title1=""
+            <Services_details_happy_customer title1="Join" title_changeColor="350+" title2="Happy Customers" desc1="For over 10 years our expert team have delivered remarkable results for our clients. Whether your business has a marketing team, or is earlier in the marketing journey, we have products to suit those who would just like to increase activity, and for those looking to hit specific growth targets." desc2="We’re incredibly proud to boast our client retention rate currently sits at 95%." />
+            <Services_details_proven_growth title1=""
                 title2="your Spend"
                 title_changeColor="Control"
                 desc1="Regain control of your marketing spend by fixing budgets upfront, or work with our expert team to calculate what your business needs to spend to hit your targets. Work with our growth team to determine where your budget is best spent, and what return can be expected as a result. Using our growth frameworks, we will break down your growth targets, and budgets to define clear KPIs."
                 desc2="A simple, data-driven strategy gives you greater control over your budget, and business growth." />
-            <GrowthMarketingServices_details_increase_market title1=""
+            <Services_details_increase_market title1=""
                 title2=" your ROI"
                 title_changeColor="Grow"
                 desc1="Far too often we speak to business owners, and marketeers, who aren’t happy with the direction their marketing is going in, and don’t have a clear understanding of the return being generated. By following our proven frameworks, our expert team can deliver predictable revenue growth for your business."
                 desc2="" />
-            <GrowthMarketingServices_book_call title='Need to re-launch your PPC strategy?' />
-            <GrowthMarketingServices_services
+            <Services_book_call title='Need to re-launch your PPC strategy?' />
+            <Services_SubServices
                 box_title="Our PPC Services"
                 image_1_title="PPC Strategy"
                 image_2_title="Paid Search"
@@ -58,9 +57,9 @@ function Ppcservice() {
                 card_3_title=" in ticket sales"
                 card_3_desc_1="National Trust"
                 card_3_desc_2="Growing ticket sales for historic venues" />
-            <Growth_Accordion />
-            <GrowthMarketingServices_Quotes />
-            <GrowthMarketingServices_Address title="PPC Agency" />
+            <Global_Accordion />
+            <Services_Quotes />
+            <Services_Address title="PPC Agency" />
         </>
     )
 }

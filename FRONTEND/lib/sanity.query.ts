@@ -64,7 +64,7 @@ export function getFooter() {
   );
 }
 
-// export function getDigitalTerms() {         // this will be deleted not needed below is same we rename it 
+// export function getDigitalTerms() {         // this will be deleted not needed below is same we rename it
 //   return client.fetch(
 //     groq`
 //     *[_type == 'digitalTermsOfService'] {
@@ -75,12 +75,11 @@ export function getFooter() {
 //         smallDescription
 //       }
 //     }
-    
-    
+
 //     `
 //   );
 // }
-export function getSingleTerms(slug:string) {
+export function getSingleTerms(slug: string) {
   return client.fetch(
     groq`
     *[_type == 'singleTermsOfService' && slug.current == "${slug}"] {
@@ -560,7 +559,6 @@ export async function getSchedule_a_callData() {
   return data;
 }
 
-
 export async function getTermsndConditionsData() {
   const headerquery = `
 
@@ -614,12 +612,10 @@ export async function getTermsndConditionsData() {
 //   }
 // }
 
-
 //   `;
 //   const data = await client.fetch(headerquery);
 //   return data;
 // }
-
 
 export async function getCareersData() {
   const headerquery = `
@@ -667,45 +663,47 @@ export async function getContactData() {
   return data;
 }
 
-export async function getGrowthData(slug:string) {
+export async function getGrowthData(slug: string) {
   //   we are getting this data from growthShared schema
   const headerquery = `
   *[_type == "growth" && slug.current == "${slug}"] {
-    
-        heroSection {
-            upperTitle,
-            heading,
-            slug,
-            button {
-                buttonName,
-                buttonLink
-            }
-        },
-        growthSection {
-            headingUpper,
-            titleUpper,
+
+
+    slug,
+    heading,
+    description,
+    image,
+    buttonName,
+    buttonLink,
+    card{
+      heading,
+      description,
+      image,
+      buttonName,
+    },
+    growthSection {
+          upperHeading,
+          upperSmallLine,
             growthContent[] {
-                title,
+                heading,
                 description,
+                belowLine,
                 buttonName,
                 buttonLink,
-                price {
-                    priceOutline
-                }
+               
             },
-            headingBelow,
-            titleBelow,
+            belowHeading,
+            belowSmallLine,
             image
         },
-        solution {
+        "faq":faq->{
+          heading,
+          buttonName,
+          buttonLink,
+          accordian[]{
             heading,
-            card[] {
-                title,
-                description,
-                buttonName,
-                buttonLink
-            },
-            image
+            description
+          }
         },
         "banner": banner-> {
             climate_actionImg,
