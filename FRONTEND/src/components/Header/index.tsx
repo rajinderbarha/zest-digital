@@ -61,7 +61,8 @@ const MobileViewHeader: React.FC<DrawerAppBarProps> = (props) => {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box className='pt-[10px] pb-[10px] md:pt-25px md:pb-21px screen-1-min:hidden flex mx-auto  justify-between items-center px-5 max-w-[1720px] w-full relative'>
+    <div className="px-[15px]">
+    <Box className='pt-[10px] pb-[10px] md:pt-25px md:pb-21px screen-1-min:hidden  justify-between items-center main_container relative'>
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar>
@@ -103,6 +104,7 @@ const MobileViewHeader: React.FC<DrawerAppBarProps> = (props) => {
         </Drawer>
       </nav>
     </Box>
+    </div>
   );
 };
 
@@ -131,7 +133,8 @@ const Header = ({ data }: { data: HeaderType[] }) => {
         console.log("header img", item.logo)
 
         return (
-          <div key={`header_${item.logo._id}`} className='screen-1-max:hidden mx-auto flex justify-between items-center pt-25px pb-21px max-w-[1720px] w-full px-5 relative'>
+          <div className="px-[15px]">
+          <div key={`header_${item.logo._id}`} className='screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative'>
             <div className='flex items-center gap-68px '>
               <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>
                 <Link href={"/"}>
@@ -149,6 +152,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
               {/* <FontAwesomeIcon icon={faBars} transform="grow-10" className='screen-1-max:block hidden' onClick={() => showMenu()} /> */}
               <Image src={bars} alt="bars" className='screen-1-max:block hidden screen-1-max:w-[23px] screen-1-max:h-[23px]' />
             </div>
+          </div>
           </div>
         )
       })}
