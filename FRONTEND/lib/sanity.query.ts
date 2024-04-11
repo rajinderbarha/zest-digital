@@ -696,7 +696,15 @@ export async function getGrowthData(slug: string) {
             belowSmallLine,
             image
         },
-   
+        "faq":faq->{
+          heading,
+          buttonName,
+          buttonLink,
+          accordian[]{
+            heading,
+            description
+          }
+        },
         "banner": banner-> {
             climate_actionImg,
             earth_img,

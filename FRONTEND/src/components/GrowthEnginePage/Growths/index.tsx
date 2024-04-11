@@ -3,7 +3,6 @@ import React from "react";
 import { GrowthTrackerType } from "../../../../lib/interface";
 
 function Growths({ data }: { data: any }) {
-
   return (
     <>
       {data.length > 0 && (
@@ -27,10 +26,10 @@ function Growths({ data }: { data: any }) {
                           title: item.card.heading,
                           description: item.card.description,
                           buttonName: item.card.buttonName,
-                          buttonLink: item.card.buttonLink,
+                          buttonLink: item.slug.current,
                           image: item.card.image,
                         }}
-                        shadow_right={false}
+                        shadow_right={index % 2 === 0}
                         has_image={false}
                       />
                     </div>
@@ -44,7 +43,7 @@ function Growths({ data }: { data: any }) {
                     title: data[2]?.card.heading,
                     description: data[2]?.card.description,
                     buttonName: data[2]?.card.buttonName,
-                    buttonLink: data[2]?.card.buttonLink,
+                    buttonLink: data[2].slug.current,
                     image: data[2]?.card.image,
                   } as any
                 }

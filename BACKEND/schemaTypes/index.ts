@@ -26,6 +26,7 @@ import { OurServicesSection } from './ourServicesSection'
 import { SingleService } from './ourServicesSection/singleservice'
 import { Accordion } from './common/accordion'
 import { ServicesAgencyAddress } from './ourServicesSection/agencyAddress'
+import { FAQ } from './common/FAQ'
 
 export const schemaTypes = [
   Header,
@@ -36,11 +37,6 @@ export const schemaTypes = [
   ClimteAction,
   SocialMedia,
   SingleTermsOfService,
-  // GrowthMapper,
-  // GrowthShared,
-  // GrowthCurve,
-  // GrowthTracker,
-  // GrowthEngine,
   SingleCaseStudy,
   CaseStudy,
   Solution,
@@ -55,5 +51,6 @@ export const schemaTypes = [
   OurServicesSection,
   SingleService,
   Accordion,
-  ServicesAgencyAddress
+  ServicesAgencyAddress,
+  FAQ
 ]

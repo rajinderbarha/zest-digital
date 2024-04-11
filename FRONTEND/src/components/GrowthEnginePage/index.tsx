@@ -6,7 +6,7 @@ import Growths from "./Growths";
 import flag_img from "../../assets/images/flags.png";
 
 function GrowthEnginePage({ data , card}: any) {
-  console.log("GrowthEnginePage",data)
+  console.log("*************",data)
 
 
   return (
@@ -21,7 +21,7 @@ function GrowthEnginePage({ data , card}: any) {
         }}
       />
       <GrowthEnginePage_Box data={data.growthSection} />
-      <Global_Accordion />
+      <Global_Accordion data={data.faq}/>
       <Growths data={card} />
     </>
   );
