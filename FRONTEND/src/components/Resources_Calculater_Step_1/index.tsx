@@ -23,7 +23,7 @@ function Resources_Calculater_Step_1() {
                             <button className='bg-color-1 font-mono text-base px-[40px] py-[10px] text-white rounded-full'>Start</button>
                         </div>
                         <div className=" max-w-max mx-auto w-max ">
-                            <a href="" className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1"><GoArrowLeft /> Back to zestdigital.com</a>
+                            <a href="/resources" className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1"><GoArrowLeft /> Back to zestdigital.com</a>
                         </div>
                     </div>
                 </div>

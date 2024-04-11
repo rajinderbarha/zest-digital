@@ -6,7 +6,7 @@ import { urlFor } from "../../../lib/sanity.client";
 
 const Logo_moving = ({ data }: any) => {
   return (
-    <>
+    
       <div
         className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10  `}
       >
@@ -16,8 +16,9 @@ const Logo_moving = ({ data }: any) => {
           <Marquee className={`gap-16 `}>
             <div className="flex  max-w-auto gap-16 me-5">
               {data?.map((item: any, index: number) => {
-                console.log("solution", item);
+                console.log("solution", item.icon);
                 return (
+                
                   <Image
                     src={urlFor(item.icon).url()}
                     alt="brand img"
@@ -31,7 +32,7 @@ const Logo_moving = ({ data }: any) => {
           </Marquee>
         </div>
       </div>
-    </>
+    
   );
 };
 
