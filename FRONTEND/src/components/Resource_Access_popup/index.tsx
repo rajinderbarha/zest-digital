@@ -10,7 +10,10 @@ function Resource_Access_popup() {
 
                     <div className="Resource_Access_popup popup_conatiner pt-[88px]  relative">
                         <div className="absolute right-[25px] md:right-[45px] top-[20px] md:top-[40px] md:max-w-max max-w-[20px]">
+                            <a href='/resources'>
+
                             <Image src={popup_close_icon} alt='' className='' />
+                            </a>
 
                         </div>
                         <div className="detail text-center">
