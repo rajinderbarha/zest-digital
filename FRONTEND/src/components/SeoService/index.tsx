@@ -5,7 +5,7 @@ import Services_book_call from '@/common/OurServices/Services_book_call'
 import Services_SubServices from '@/common/OurServices/Services_SubServices'
 import Client_Result from '@/common/OurServices/Client_Result'
 import Services_Quotes from '@/common/OurServices/Services_Quotes'
-import Growth_Accordion from '../../common/Growth_Accordion'
+import Global_Accordion from '../../common/Global_Accordion'
 import Services_Address from '@/common/OurServices/Services_Address'
 // import Services_details_proven_growth from '@/common/OurServices/Services_details/Services_details_proven_growth'
 // import Services_details_increase_market from '@/common/OurServices/Services_details/Services_details_increase_market'
@@ -58,7 +58,7 @@ function SeoService() {
         card_3_desc_1="Hanson (UK)"
         card_3_desc_2="Best SEO Campaign finalist at the UK Digital Growth Awards"
       />
-      <Growth_Accordion />
+      <Global_Accordion />
       <Services_Quotes />
       <Services_Address title='SEO Agency' />
     </>

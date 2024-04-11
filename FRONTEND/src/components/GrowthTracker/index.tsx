@@ -2,7 +2,7 @@ import React from 'react'
 import GrowthEnginePage_Banner from '../GrowthEnginePage/GrowthEnginePage_Banner'
 import GrowthEnginePage_Box from '../GrowthEnginePage/GrowthEnginePage_Box'
 import Growths from '../GrowthEnginePage/Growths'
-import Growth_Accordion from '../../common/Growth_Accordion'
+import Global_Accordion from '../../common/Global_Accordion'
 import flag_img from '../../assets/images/flags.png'
 import Sign_up from './Sign_up'
 import { GrowthTrackerType } from '../../../lib/interface'
@@ -23,7 +23,7 @@ function GrowthTracker({ data }: { data: GrowthTrackerType[] }) {
                 title3="Smarter growth" desc3="Set clear revenue goals and growth experiments. Growth Tracker will even remind you to make progress updates. Beautifully simple. Just as goal tracking should be."
             /> */}
             <Sign_up data={data} />
-            <Growth_Accordion />
+            <Global_Accordion />
             {/* <Growths data={data}  /> */}
         
         </>
