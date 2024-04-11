@@ -1,6 +1,6 @@
 import GrowthEnginePage from "@/components/GrowthEnginePage";
 import React from "react";
-import { getGrowthData, getSolutionData } from "../../lib/sanity.query";
+import { getGrowthData, getSolutionData } from "../../../lib/sanity.query";
 
 function growthengine({ growth , card}: any) {
 

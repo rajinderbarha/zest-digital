@@ -1,7 +1,7 @@
 import React from 'react'
 import GrowthEnginePage_Banner from '../GrowthEnginePage/GrowthEnginePage_Banner'
 import GrowthEnginePage_Box from '../GrowthEnginePage/GrowthEnginePage_Box'
-import Growth_Accordion from '../../common/Growth_Accordion'
+import Global_Accordion from '../../common/Global_Accordion'
 import Growths from '../GrowthEnginePage/Growths'
 import person_Img from '../../assets/images/People_icon.png'
 
@@ -17,7 +17,7 @@ function GrowthMapper() {
                 title2="Your growth roadmap" desc2="Create a growth-minded marketing plan. Growth Mapper harnesses your natural instincts, then provides you with the focus you need to turn what you know about your business into what you need to do to grow."
                 title3="Life-long skills" desc3="Growth Mapper teaches you the skills to create a lasting impact, through the planning and creation of your own growth experiments."
             />
-            <Growth_Accordion />
+            <Global_Accordion />
             {/* <Growths /> */}
             
         </>

@@ -68,7 +68,12 @@ export const Growth = defineType({
         {name: 'image', title: 'Image', type: 'image'},
       ],
     },
-
+    {
+      name: 'faq',
+      title: 'FAQ',
+      type: 'reference',
+      to: [{type: 'faq'}],
+    },
     {
       name: 'banner',
       title: 'Banner',

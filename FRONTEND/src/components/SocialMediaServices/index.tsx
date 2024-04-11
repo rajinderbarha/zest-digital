@@ -5,7 +5,7 @@ import Services_book_call from '@/common/OurServices/Services_book_call'
 import Services_SubServices from '@/common/OurServices/Services_SubServices'
 import Client_Result from '@/common/OurServices/Client_Result'
 import Services_Quotes from '@/common/OurServices/Services_Quotes'
-import Growth_Accordion from '../../common/Growth_Accordion'
+import Global_Accordion from '../../common/Global_Accordion'
 import Services_Address from '@/common/OurServices/Services_Address'
 import Services_details_proven_growth from '@/common/OurServices/Services_details/Services_details_proven_growth'
 import Services_details_increase_market from '@/common/OurServices/Services_details/Services_details_increase_market'
@@ -57,7 +57,7 @@ function SocialMediaServices() {
         card_3_title="in ticket sales"
         card_3_desc_1="National Trust"
         card_3_desc_2="Growing ticket sales for historic venues" />
-      <Growth_Accordion />
+      <Global_Accordion />
       <Services_Quotes />
       <Services_Address title="Social Media Agency" />
     </>

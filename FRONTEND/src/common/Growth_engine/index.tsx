@@ -39,14 +39,14 @@ const Growth_engine = ({
             <p className={`${classes.growth_engine_desc} text-3xl my-5 `}>
               {description}
             </p>
-            <div className="">
+            <Link href={`/solutions/${buttonLink}`}>
               <button className="bg-color-1 rounded-full text-white text-base py-[7px] ps-5 flex gap-2 items-center">
                 {buttonName}{" "}
                 <span className="p-1 bg-white rounded-full text-black me-2 text-lg">
                   <GoArrowRight />
                 </span>
               </button>
-            </div>
+            </Link>
           </div>
           <div
             className={`${classes.grow_image} absolute -bottom-40 right-0 sm:block hidden`}
@@ -75,7 +75,7 @@ const Growth_engine = ({
           <p className={`${classes.growth_engine_desc} text-3xl my-5 `}>
             {description}
           </p>
-          <Link href={`/${buttonLink}`}>
+          <Link href={`/solutions/${buttonLink}`}>
             <button
               className="bg-color-1 rounded-full text-white text-base py-[7px] ps-5 flex gap-2 items-center"
               type="button"
