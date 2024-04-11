@@ -1,36 +1,35 @@
 import React from 'react'
-import GrowthEnginePage_Banner from '../GrowthEnginePage/GrowthEnginePage_Banner'
-import GrowthMarketingServices_Box from '../GrowthMarketingServices/GrowthMarketingServices_Box'
-import GrowthMarketingServices_details_happy_customer from '../GrowthMarketingServices/GrowthMarketingServices_details/GrowthMarketingServices_details_happy_customer'
-import GrowthMarketingServices_details_proven_growth from '../GrowthMarketingServices/GrowthMarketingServices_details/GrowthMarketingServices_details_proven_growth'
-import GrowthMarketingServices_details_increase_market from '../GrowthMarketingServices/GrowthMarketingServices_details/GrowthMarketingServices_details_increase_market'
-import GrowthMarketingServices_book_call from '../GrowthMarketingServices/GrowthMarketingServices_book_call'
-import GrowthMarketingServices_services from '../GrowthMarketingServices/GrowthMarketingServices_services'
-import Client_Result from '../GrowthMarketingServices/Client_Result'
+import Services_Banner from '@/common/OurServices/Services_Banner'
+import Services_Box from '@/common/OurServices/Services_Box'
+import Services_book_call from '@/common/OurServices/Services_book_call'
+import Services_SubServices from '@/common/OurServices/Services_SubServices'
+import Client_Result from '@/common/OurServices/Client_Result'
+import Services_Quotes from '@/common/OurServices/Services_Quotes'
 import Growth_Accordion from '../../common/Growth_Accordion'
-import GrowthMarketingServices_Quotes from '../GrowthMarketingServices/GrowthMarketingServices_Quotes'
-import GrowthMarketingServices_Address from '../GrowthMarketingServices/GrowthMarketingServices_Address'
-import GrowthMarketingServices_Banner from '../GrowthMarketingServices/GrowthMarketingServices_Banner'
+import Services_Address from '@/common/OurServices/Services_Address'
+import Services_details_proven_growth from '@/common/OurServices/Services_details/Services_details_proven_growth'
+import Services_details_increase_market from '@/common/OurServices/Services_details/Services_details_increase_market'
+import Services_details_happy_customer from '@/common/OurServices/Services_details/Services_details_happy_customer'
 
 function SocialMediaServices() {
   return (
     <>
-      <GrowthMarketingServices_Banner max_width="1093px" title="Social Media Services" desc="Harness the power of social media to turn online browsers, into enquiries and customers. Learn how a kick-ass social media strategy could help your business generate more leads, and sales online by speaking to our experts today." />
-      <GrowthMarketingServices_Box image_1_title="Paid Ads" image_2_title="Re-marketing" image_3_title="B2B Outreach" title="Oxford’s Leading Social Media Agency that  " title_change_color="delivers outstanding results" desc_1="Take control of your marketing results by ensuring your message is in front of your target audience by using social media ads. Target your ideal customer profile using advanced targeting options, and techniques to convert users when they’re spending time online." desc_2="Does your business need to get in front of more of your target audience?" />
+      <Services_Banner max_width="1093px" title="Social Media Services" desc="Harness the power of social media to turn online browsers, into enquiries and customers. Learn how a kick-ass social media strategy could help your business generate more leads, and sales online by speaking to our experts today." />
+      <Services_Box image_1_title="Paid Ads" image_2_title="Re-marketing" image_3_title="B2B Outreach" title="Oxford’s Leading Social Media Agency that  " title_change_color="delivers outstanding results" desc_1="Take control of your marketing results by ensuring your message is in front of your target audience by using social media ads. Target your ideal customer profile using advanced targeting options, and techniques to convert users when they’re spending time online." desc_2="Does your business need to get in front of more of your target audience?" />
       {/* <GrowthMarketingServices_details /> */}
-      <GrowthMarketingServices_details_happy_customer title1="Join" title_changeColor="350+" title2="Happy Customers" desc1="For over 10 years our expert team have delivered remarkable results for our clients. Whether your business has a marketing team, or is earlier in the marketing journey, we have products to suit those who would just like to increase activity, and for those looking to hit specific growth targets." desc2="We’re incredibly proud to boast our client retention rate currently sits at 95%." />
-      <GrowthMarketingServices_details_proven_growth title1="Grow "
+      <Services_details_happy_customer title1="Join" title_changeColor="350+" title2="Happy Customers" desc1="For over 10 years our expert team have delivered remarkable results for our clients. Whether your business has a marketing team, or is earlier in the marketing journey, we have products to suit those who would just like to increase activity, and for those looking to hit specific growth targets." desc2="We’re incredibly proud to boast our client retention rate currently sits at 95%." />
+      <Services_details_proven_growth title1="Grow "
         title2=""
         title_changeColor="Inbound Leads"
         desc1="In today’s world, in almost every industry, there are customers spending time online. Social media has seen some of the strongest online growth, with users, and time online growing yearly. Use social media ads to target users that are potential customers for your business, with a message that ignites action. "
         desc2="Start growing your inbound leads with paid social." />
-      <GrowthMarketingServices_details_increase_market title1="Grow"
+      <Services_details_increase_market title1="Grow"
         title2=""
         title_changeColor="your ROI"
         desc1="Far too often we speak to business owners, and marketeers, who aren’t happy with the direction their marketing is going in, and don’t have a clear understanding of the return being generated. By following our proven frameworks, our expert team can deliver predictable revenue growth for your business."
         desc2="Don’t let it be your competitors making the gains." />
-      <GrowthMarketingServices_book_call title='Need an overhaul of your social media strategy? ' />
-      <GrowthMarketingServices_services
+      <Services_book_call title='Need an overhaul of your social media strategy? ' />
+      <Services_SubServices
         box_title="Our Social Media Services"
         image_1_title="Strategy"
         image_2_title="Paid Ads"
@@ -59,8 +58,8 @@ function SocialMediaServices() {
         card_3_desc_1="National Trust"
         card_3_desc_2="Growing ticket sales for historic venues" />
       <Growth_Accordion />
-      <GrowthMarketingServices_Quotes />
-      <GrowthMarketingServices_Address title="Social Media Agency" />
+      <Services_Quotes />
+      <Services_Address title="Social Media Agency" />
     </>
   )
 }

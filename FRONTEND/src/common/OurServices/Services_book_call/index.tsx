@@ -1,10 +1,11 @@
 import React from 'react'
-import classes from './GrowthMarketingServices_book_call.module.css'
+import classes from './Services_book_call.module.css'
 
-interface GrowthMarketingServices_Banner_Props {
+interface Services_book_call_Banner_Props {
     title: string;
 }
-const GrowthMarketingServices_book_call: React.FC<GrowthMarketingServices_Banner_Props> = (props) => {
+
+const Services_book_call: React.FC<Services_book_call_Banner_Props> = (props) => {
 // function GrowthMarketingServices_book_call() {
     return (
         <>
@@ -24,4 +25,4 @@ const GrowthMarketingServices_book_call: React.FC<GrowthMarketingServices_Banner
     )
 }
 
-export default GrowthMarketingServices_book_call
+export default Services_book_call

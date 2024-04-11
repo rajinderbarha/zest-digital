@@ -1,6 +1,6 @@
 import React from 'react'
-import classes from './GrowthMarketingServices_Quotes.module.css'
-function GrowthMarketingServices_Quotes() {
+import classes from './Services_Quotes.module.css'
+function Services_Quotes() {
     return (
         <>
             <div className={`${classes.Instrumental} mt-[125px]`}>
@@ -25,4 +25,4 @@ function GrowthMarketingServices_Quotes() {
     )
 }
 
-export default GrowthMarketingServices_Quotes
+export default Services_Quotes

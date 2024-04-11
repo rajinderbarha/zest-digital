@@ -4,6 +4,7 @@ import Section_Main from "@/components/SolutionsPage/Section_Main";
 import Solution_Banner from "@/components/SolutionsPage/Solution_Banner";
 import { getSolutionData } from "../../../lib/sanity.query";
 function solutions({ solution }: any) {
+
   return (
     <>
       <Solution_Banner data={solution[0].hero} />
