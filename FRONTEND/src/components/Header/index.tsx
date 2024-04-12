@@ -129,11 +129,11 @@ const Header = ({ data }: { data: HeaderType[] }) => {
   return (
   <>
                                         {/* navbar for the desktop start */}
-      {data?.map((item) => {
+      {data?.map(((item,index)=>  {
         console.log("header img", item.logo)
 
         return (
-          <div className="px-[15px]">
+          <div className="px-[15px]" key={`${index}_Header`}>
           <div key={`header_${item.logo._id}`} className='screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative'>
             <div className='flex items-center gap-68px '>
               <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>
@@ -155,7 +155,8 @@ const Header = ({ data }: { data: HeaderType[] }) => {
           </div>
           </div>
         )
-      })}
+      })
+    )}
                                           {/* navbar for the desktop end */}
                                           
 

@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 
 export interface SingalcasebannerProps {
   data: {
@@ -422,6 +423,23 @@ export interface GrowthEngineType {
 
 
 
+export interface ServiceCard {
+  slug: string;
+  title: string;
+}
+
+export interface ServiceImages {
+  vertical_bar: string;
+  Code_icon: string;
+  target_icon: string;
+}
+
+export interface OurServicesSection {
+  heading: string;
+  cards: ServiceCard[];
+  images: ServiceImages;
+  banner: ClimateAction;
+}
 
 
 
@@ -429,7 +447,141 @@ export interface GrowthEngineType {
 
 
 
-export interface DigitalTermsOfServiceType {
+
+
+
+
+
+
+
+
+interface ourServiceCard {
+  percentsge: string;
+  title: string;
+  description_1: string;
+  description_2: string;
+  buttonName: string;
+}
+
+interface ServiceImageBox {
+  image: string;
+  imagetitle: string;
+}
+
+interface ServiceContentBox {
+
+  
+    heading: string;
+  coloredText: string;
+  description: string;
+  belowdesc: string;
+
+  
+}
+
+interface ServiceDetail {
+  heading: string;
+  description_1: string;
+  description_2: string;
+  image: string;
+}
+
+interface Service {
+  image: string;
+  title: string;
+  description: string;
+}
+
+interface ServiceQuote {
+  description: string;
+  name: string;
+}
+
+interface ServiceAddress {
+  title: string;
+  streetAddress: string;
+  hourstitle: string;
+  dayandtiming: string;
+}
+
+export interface SingleOurService {
+  buttonName: ReactNode;
+  heading: ReactNode;
+  imageBox: any;
+  slug: string;
+  title: string;
+  smallDescription: string;
+  max_width: string;
+  button: {
+    callButtonName: string;
+    resultsButtonName: string;
+  };
+  Services_Box: {
+    imageBox: ServiceImageBox[];
+    contentBox: ServiceContentBox;
+  };
+  Services_details: ServiceDetail[];
+  Services_book_call: {
+    heading_call: string;
+    buttonName: string;
+  };
+  ourSubServices: {
+    heading: string;
+    services: Service[];
+  };
+  clientResults: {
+    title: string;
+    heading: string;
+    card: ourServiceCard[];
+    belowbuttonName: string;
+  };
+  globalaccordion: {
+    accordiongroup: {
+      heading: string;
+      card: ourServiceCard[];
+      belowbuttonName: string;
+    };
+  };
+  Services_Quotes: ServiceQuote[];
+  agencyAddress: {
+    heading: string;
+    slotDescription: string;
+    buttonName: string;
+    address: ServiceAddress[];
+    card: {
+      location: {
+        latitude: string;
+        longitude: string;
+      };
+      contactno: string;
+    }[];
+  };
+  banner: ClimateAction
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export interface TermsOfServiceType {
   definitions: string;
   general: {
       customer: string;

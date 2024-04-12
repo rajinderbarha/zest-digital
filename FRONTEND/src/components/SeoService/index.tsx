@@ -10,25 +10,52 @@ import Services_Address from '@/common/OurServices/Services_Address'
 // import Services_details_proven_growth from '@/common/OurServices/Services_details/Services_details_proven_growth'
 // import Services_details_increase_market from '@/common/OurServices/Services_details/Services_details_increase_market'
 import Services_details_happy_customer from '@/common/OurServices/Services_details/Services_details_happy_customer'
+import { SingleOurService } from '../../../lib/interface'
 
-function SeoService() {
+function SeoService({data}: { data: SingleOurService;}) {
+
+  console.log("data------------------------",data)
+
+  const {title, smallDescription , button:{callButtonName,resultsButtonName}, Services_Box:{contentBox:{heading,description,belowdesc,coloredText},}} = data
+ 
+  const { Services_book_call:{heading_call,buttonName}} = data
+
+  const imageBox  =  data.Services_Box.imageBox.map((item,index)=>(
+     {image:item.image,imagetitle:item.imagetitle}
+));
+
+const button  = {
+  callButtonName,resultsButtonName
+}
+
+const serviceBox = {
+  contentBox:{
+    heading,description,belowdesc, coloredText
+  }
+}
+
+const serviceDetails = data.Services_details.map((item,index)=>(
+    {
+      heading:item.heading,
+      description_1:item.description_1,
+      description_2:item.description_2,
+      image:item.image
+    }
+))
+
+
+// const serviceBox = 
+
+
   return (
     <>
-      <Services_Banner max_width="1033px" title="SEO Services" desc="Rank in the top positions for the keywords your customers are searching for when they’re ready to buy. Learn how SEO can generate more enquiries, and sales from your website by speaking to our experts today.." />
-      <Services_Box image_1_title="Content Marketing" image_2_title="Technical SEO" image_3_title="Link-building" title="Oxford’s Leading SEO Agency that " title_change_color="delivers remarkable results" desc_1="SEO is constantly evolving, and over the last decade we’ve stayed ahead of the curve by developing the most cutting edge strategies to allow our clients to generate stronger ROI from search marketing. Our clients see consistent increases in their organic enquiries, and sales as a result." desc_2="Do you need to generate more SEO leads for your business?" />
-   
-      <Services_details_happy_customer title1="Join" title_changeColor="350+" title2="Happy Customers" desc1="For over 10 years our expert team have delivered remarkable results for our clients. Whether your business has a marketing team, or is earlier in the marketing journey, we have products to suit those who would just like to increase activity, and for those looking to hit specific growth targets." desc2="We’re incredibly proud to boast our client retention rate currently sits at 95%." />
-      {/* <Services_details_proven_growth title1="Generate"
-        title2=""
-        title_changeColor="Higher ROI "
-        desc1="Far too often we speak to business owners, and marketeers, who arent happy with the direction their marketing is going in, and don’t have a clear understanding of the return being generated. By following our proven frameworks, our expert team break down your growth goals into specific KPI’s that need to be achieved. "
-        desc2="A simple, data-driven strategy, and reporting process is what your business needs to increase ROI." />
-      <Services_details_increase_market title1="Increase"
-        title2=""
-        title_changeColor="Market Share"
-        desc1="In todays world, in almost every industry, there are customers searching online looking to make enquiries, and purchases. The businesses that rank best for the keywords being searched to generate those sales, are in the best position to gain the market share available online. "
-        desc2="Don’t let it be your competitors making the gains." /> */}
-      <Services_book_call title='Need to overhaul your SEO strategy?' />
+      <Services_Banner max_width="1033px" title={title} smallDescription={smallDescription} button={button} />
+      <Services_Box Services_Box={serviceBox} imageBox={imageBox} />
+
+      <Services_details_happy_customer  Services_details={serviceDetails}/>
+      
+      <Services_book_call  heading={heading_call} buttonName={buttonName} />
+
       <Services_SubServices
         box_title="Our SEO Services"
         image_1_title="Strategy"
@@ -58,7 +85,7 @@ function SeoService() {
         card_3_desc_1="Hanson (UK)"
         card_3_desc_2="Best SEO Campaign finalist at the UK Digital Growth Awards"
       />
-      <Global_Accordion />
+      {/* <Global_Accordion /> */}
       <Services_Quotes />
       <Services_Address title='SEO Agency' />
     </>

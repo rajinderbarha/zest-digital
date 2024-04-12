@@ -63,6 +63,7 @@ export const SingleService = defineType({
                 type: 'object',
                 fields: [
                     { name: 'heading', type: 'string', title: 'Heading' },
+                    { name: 'coloredText', type: 'string', title: 'Colored text' },
                     { name: 'description', type: 'string', title: 'Description' },
                     { name: 'belowdesc', type: 'string', title: 'Below Desc' },
                 ],
@@ -95,7 +96,7 @@ export const SingleService = defineType({
       title: 'Book a call',
       type: 'object',
       fields: [
-          { name: 'heading', type: 'string', title: 'Heading' },
+          { name: 'heading_call', type: 'string', title: 'Heading Call' },
           { name: 'buttonName', type: 'string', title: 'Button Name' },
           
         ],

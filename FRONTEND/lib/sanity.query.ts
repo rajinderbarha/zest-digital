@@ -79,24 +79,7 @@ export function getFooter() {
 //     `
 //   );
 // }
-export function getSingleTerms(slug: string) {
-  return client.fetch(
-    groq`
-    *[_type == 'singleTermsOfService' && slug.current == "${slug}"] {
-      slug,
-      title,
-      smallDescription,
-      buttonName,
-      content,
-      'banner': banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      }
-    }
-    `
-  );
-}
+
 
 export async function getAboutData() {
   const headerquery = `
@@ -588,6 +571,171 @@ export async function getTermsndConditionsData() {
   const data = await client.fetch(headerquery);
   return data;
 }
+
+
+export function getSingleTerms(slug: string) {
+  return client.fetch(
+    groq`
+    *[_type == 'singleTermsOfService' && slug.current == "${slug}"] {
+      slug,
+      title,
+      smallDescription,
+      buttonName,
+      content,
+      'banner': banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      }
+    }
+    `
+  );
+}
+
+
+
+
+
+
+export async function getOurServicesSectionData() {
+  const OurServicesSection = `
+  *[_type == "OurServicesSection"] {
+    heading, 
+      "cards": card[]-> {
+      "slug": slug.current,
+      "title": title,
+     
+    },
+    "images": images {
+      "vertical_bar": vertical_bar.asset->url,
+      "Code_icon": Code_icon.asset->url,
+      "target_icon": target_icon.asset->url
+    },
+    "banner": banner-> {
+      "climate_actionImg": climate_actionImg.asset->url,
+      "earth_img": earth_img.asset->url,
+      "smallDescription": smallDescription
+    }
+  }  
+  `;
+  const data = await client.fetch(OurServicesSection);
+  return data;
+}
+
+
+
+
+export async function getSingleOurServicesData(slug:string) {
+  const singleServicesSectionData = `
+  *[_type == "singleService"  && slug.current == "${slug}"] {
+  
+  
+    "slug": slug.current,
+    "title": title,
+    "smallDescription": smallDescription,
+    "button": {
+      "callButtonName": button.callButtonName,
+      "resultsButtonName": button.resultsButtonName
+    },
+    "Services_Box": Services_Box {
+      "imageBox": imageBox[] {
+        "image": image.asset->url,
+        "imagetitle": imagetitle
+      },
+      "contentBox": contentBox {
+        "heading": heading,
+        coloredText,
+        "description": description,
+        "belowdesc": belowdesc
+      }
+    },
+    "Services_details": Services_details[] {
+      "heading": heading,
+      "description_1": description_1,
+      "description_2": description_2,
+      "image": image.asset->url
+    },
+    "Services_book_call": Services_book_call {
+      "heading_call": heading_call,
+      "buttonName": buttonName
+    },
+    "ourSubServices": ourSubServices {
+      "heading": heading,
+      "services": services[] {
+        "image": image.asset->url,
+        "title": title,
+        "description": description
+      }
+    },
+    "clientResults": clientResults {
+      "title": title,
+      "heading": heading,
+      "card": card[] {
+        "percentsge": percentsge,
+        "title": title,
+        "description_1": description_1,
+        "description_2": description_2,
+        "buttonName": buttonName
+      },
+      "belowbuttonName": belowbuttonName
+    },
+    "globalaccordion": globalaccordion-> {
+      "accordiongroup": accordiongroup {
+        "heading": heading,
+        "card": card[] {
+          "question": question,
+          "answer": answer
+        },
+        "belowbuttonName": belowbuttonName
+      }
+    },
+    "Services_Quotes": Services_Quotes[] {
+      "description": description,
+      "name": name
+    },
+    "agencyAddress": agencyAddress-> {
+      "heading": heading,
+      "slotDescription": slotDescription,
+      "buttonName": buttonName,
+      "address": address[] {
+        "title": title,
+        "streetAddress": streetAddress,
+        "hourstitle": hourstitle,
+        "dayandtiming": dayandtiming
+      },
+       card []{
+         location ->{
+          
+            "latitude": latitude,
+            "longitude": longitude
+          
+        },
+        "contactno": contactno
+      
+    },
+
+  },
+  
+  "banner": banner-> {
+    "climate_actionImg": climate_actionImg.asset->url,
+    "earth_img": earth_img.asset->url,
+    "smallDescription": smallDescription
+  }
+}
+
+  `;
+  const data = await client.fetch(singleServicesSectionData);
+  return data;
+}
+
+
+
+
+
+
+
+
+
 // export async function getTermsndConditionsData() {
 //   const headerquery = `
 
