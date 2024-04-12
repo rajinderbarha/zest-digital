@@ -49,13 +49,16 @@ body {
     font-size: 18px;
   }
 }
+
 .popup_conatiner {
   @apply max-w-[1510px] mx-auto border border-color-1 shadow-compo shadow-[#e43fa8] rounded-30px;
 }
-                                            /* Accordion  Style start */
+
+/* Accordion  Style start */
 .app-container {
   padding: 15px;
 }
+
 .css-1086bdv-MuiPaper-root-MuiAccordion-root::before {
   content: "" !important;
   background-color: transparent !important;
@@ -136,6 +139,7 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
+
   .MuiTypography-root,
   .panel-data {
     font-size: 25px !important;
@@ -181,8 +185,8 @@ body {
   }
 }
 
-                                                /*  Accordion  Style end  */
-                                              /* Nav bar style start*/
+/*  Accordion  Style end  */
+/* Nav bar style start*/
 
 .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
   background-color: transparent !important;
@@ -217,10 +221,11 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
 .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
   border: none;
 }
+
 .bars-icon {
   width: 23px !important;
   height: 23px;
   right: 0 !important;
 }
 
-                                                /* Nav bar style end*/
+/* Nav bar style end*/

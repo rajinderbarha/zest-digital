@@ -7,11 +7,11 @@ function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
   console.log("0000000000000000000000000",data)
   return (
   
-      <div>
+      <div className="px-[15px]">
         <div className="main_container">
           <div className={`${classes.Careerbanner}`}>
             <div className="">
-              <h1 className="font-mono font-semibold md:text-55px text-35px mb-5 ">
+              <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-40px text-35px mb-5 xl:mt-[95px] lg:mt-[70px] md:mt-[55px] mt-[30px]">
                 {data.heading}
               </h1>
             </div>
@@ -19,10 +19,10 @@ function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
         </div>
         <div className="main_container">
           <div
-            className={`${classes.box_bg_image} mt-[66px] rounded-30px h-[500px] md:h-[680px] pt-[86px]`}
+            className={`${classes.box_bg_image} xl:mt-[66px] lg:mt-[55px] md:mt-[45px] mt-[30px] rounded-30px h-[500px] md:h-[680px] pt-[86px]`}
           ></div>
-          <div className="max-w-[1335px] mx-auto -mt-[400px] md:-mt-[650px]">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1355px] px-5 font-mono mx-auto mt-[80px]">
+          <div className="max-w-[1355px] mx-auto -mt-[482px] md:-mt-[650px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 md:px-5 font-mono mx-auto mt-[80px]">
               {data.cards.map((card:any, cardIndex:number) => (
                 <Boxes
                   key={cardIndex}

@@ -19,6 +19,7 @@
     .growth_engine_desc {
         font-size: 23px;
         margin: 12px auto;
+        margin-bottom: 30px;
         line-height: 30px;
     }
 
@@ -40,12 +41,13 @@
 
 @media only screen and (max-width:767px) {
     .growth_engine_title {
-        font-size: 23px;
+        font-size: 28px;
     }
 
     .growth_engine_desc {
         font-size: 18px;
         margin: 12px auto;
+        margin-bottom: 20px;
         line-height: 28px;
     }
 
