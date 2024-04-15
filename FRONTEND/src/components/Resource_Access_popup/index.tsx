@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './Resource_Access_popup.module.css'
 import popup_close_icon from '../../assets/images/popup_close_icon.png'
 import Image from 'next/image'
-function Resource_Access_popup() {
+function Resource_Access_popup({setStep}:any) {
     return (
         <>
             <div className="Resource_Access_popup">
@@ -34,7 +34,7 @@ function Resource_Access_popup() {
                             </div>
                         </div>
                         <div className="button mt-[40px] text-center mb-[108px]">
-                            <button className='bg-color-1 font-mono text-base px-[20px] py-[10px] text-white rounded-full'>Get access</button>
+                            <button className='bg-color-1 font-mono text-base px-[20px] py-[10px] text-white rounded-full' type='button' onClick={()=>setStep(1)}>Get access</button>
                         </div>
                         <div className="term_condition max-w-[857px] mt-[40px] mx-auto mb-[30px]">
                             <p className='font-lato text-base text-color-1 text-center'>*required fields</p>

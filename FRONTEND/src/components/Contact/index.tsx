@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useMemo } from 'react'
 import facebook from '../../assets/images/Facebook_Zest_icon_black.png'
 import instagram from '../../assets/images/Instagram_Zest_icon_black.png'
 import linkedin from '../../assets/images/LinkedIn_Zest_icon_black.png'
@@ -8,12 +8,27 @@ import classes from './Contact.module.css'
 import MapLocations from './MapLocations'
 import { ContactType } from '../../../lib/interface'
 import Link from 'next/link'
-import { urlFor } from '../../../lib/sanity.client'
+import { urlFor } from '../../../lib/sanity.client';
+import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
 function Contact({ data }: { data:  ContactType }) {
         console.log(data)
+        const { isLoaded } = useLoadScript({
+            googleMapsApiKey: "AIzaSyC3O15FKo8zBNNFrfmo4WfUMBrrS8cyMeo",
+          });
+        const center = useMemo(() => ({ lat: 18.52043, lng: 73.856743 }), []);
     return (
         <>
+
+{!isLoaded ? (
+        <h1>Loading...</h1>
+      ) : (
+        <GoogleMap
+          mapContainerClassName="map-container"
+          center={center}
+          zoom={10}
+        />
+      )}
             <div className="Contact mt-[140px] sm:px-[20px] px-3">
                 <div className="main_container ">
                     
@@ -81,7 +96,7 @@ function Contact({ data }: { data:  ContactType }) {
 
                     </div>
                     <div className="mt-[200px] flex justify-between gap-3 flex-wrap mb-[220px]">
-
+           
                         <MapLocations />
                         <MapLocations />
                         <MapLocations />
