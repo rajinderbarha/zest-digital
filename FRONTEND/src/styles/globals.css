@@ -26,6 +26,21 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+/* This will hide the default dropdown arrow */
+select {
+  -webkit-appearance: none; /* for Chrome, Safari */
+  -moz-appearance: none;    /* for Firefox */
+  appearance: none;         /* for modern browsers */
+  background-image: url('../assets/images/select_drop_down.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+select::-ms-expand {
+  display: none;
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -37,7 +52,10 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
+.main_padding{
+  padding-left: 15px!important;
+  padding-right: 15px!important;
+}
 .main_container_x {
   max-width: 1410px;
   width: 100%;

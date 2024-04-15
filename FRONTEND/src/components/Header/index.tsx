@@ -61,7 +61,7 @@ const MobileViewHeader: React.FC<DrawerAppBarProps> = (props) => {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <div className="px-[15px]">
+    <div className="main_padding">
     <Box className='pt-[10px] pb-[10px] md:pt-25px md:pb-21px screen-1-min:hidden  justify-between items-center main_container relative'>
       <CssBaseline />
       <AppBar component="nav">
@@ -133,7 +133,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
         console.log("header img", item.logo)
 
         return (
-          <div className="px-[15px]">
+          <div className="main_padding">
           <div key={`header_${item.logo._id}`} className='screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative'>
             <div className='flex items-center gap-68px '>
               <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>

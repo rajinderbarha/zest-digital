@@ -14,7 +14,7 @@ function SingleInsightPage({data}:any) {
     console.log("singleInsights", data)
     return (
         <>
-            <div className="SingleInsightPage mt-[50px] md:mt-[100px] px-[15px]">
+            <div className="SingleInsightPage mt-[50px] md:mt-[100px] main_padding">
                 <div className="main_container  ">
                     <div className={`${classes.bg_image} title-box xl:px-[100px] lg:px-[70px] md:px-[50px] px-[30px] xl:pb-[185px] lg:pb-[155px] md:pb-[130px] pb-[100px] xl:pt-[65px] lg:pt-[55px] md:pt-[45px] pt-[30px] rounded-30px`}>
                         <p className="font-mono lg:text-35px md:text-30px text-25px font-semibold text-color-7 ">{data.hero.keywords[0]}</p>

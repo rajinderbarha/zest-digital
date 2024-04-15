@@ -1,10 +1,11 @@
-.Careerbanner {
-    padding: 96px 16px 0 16px;
+.Careerbanner h1 {
+    @apply xl:mt-[95px] lg:mt-[70px] md:mt-[48px] mt-[25px]
+    /* padding: 96px 16px 0 16px; */
 }
 
 @media only screen and (max-width:767px) {
     .Careerbanner {
-        padding: 60px 16px 0 16px;
+        /* padding: 30px 16px 0 16px; */
     }
 }
 
@@ -30,5 +31,18 @@
 @media only screen and (max-width:1027px) {
     .grow_img {
         top: -120px;
+    }
+    .Careerbanner {
+        /* padding: 50px 16px 0 16px; */
+    }
+}
+@media only screen and (max-width:768px) {
+    .grow_img{
+        top: -100px;
+    }
+}
+@media only screen and (max-width:640px) {
+    .grow_img{
+        top: -70px;
     }
 }

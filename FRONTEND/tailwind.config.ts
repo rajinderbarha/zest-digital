@@ -157,6 +157,7 @@ module.exports = {
       },
       fontSize: {
         '55px': '55px',
+        '50px': '50px',
         '45px': '45px',
         '40px': '40px',
         '35px': '35px',
@@ -167,6 +168,10 @@ module.exports = {
         'msg': '0 3px 6px  #00000029',
         'compo': '6px 6px #1d2671',
         'compo1': '-6px 6px #e43fa8',
+        'blue-left': '-6px 6px #1d2671',
+        'dark-pink-left': '-6px 6px #e43fa8',
+        'blue-right': '6px 6px #1d2671',
+        'dark-pink-right': '6px 6px #e43fa8',
       },
       borderRadius: {
         '30px': '30px',

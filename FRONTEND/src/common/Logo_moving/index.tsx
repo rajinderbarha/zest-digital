@@ -10,7 +10,7 @@ const Logo_moving = ({ data }: any) => {
       <div
         className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10  `}
       >
-        <div className="relative py-16 border-t border-b border-color-3">
+        <div className={`${classes.gradient_border} relative py-16 `}>
           <div className={`${classes.shadow_custom} `}></div>
 
           <Marquee className={`gap-16 `}>
@@ -23,7 +23,8 @@ const Logo_moving = ({ data }: any) => {
                     src={urlFor(item.icon).url()}
                     alt="brand img"
                     width={100}
-                    height={50}
+                    height={100}
+                    className="w-auto"
                     key={index}
                   />
                 );

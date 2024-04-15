@@ -1,3 +1,20 @@
+.input_fields{
+ @apply   w-full border font-lato border-color-9 md:rounded-[10px] rounded-[5px] md:px-[25px]  md:py-[11px] py-[8px] px-[12px] text-[15px] md:text-lg md:h-[50px]
+}
+.select_field{
+    @apply  w-full font-lato border border-color-9 md:rounded-[10px] rounded-[5px] md:px-[25px]  md:py-[11px] py-[8px] px-[12px] text-[15px] md:text-lg text-color-1 mt-[11px]
+}
+.text_area_field{
+    @apply w-full border font-lato border-color-9 rounded-[10px] md:px-[25px] px-[12px] md:py-[14px] py-[10px] text-[15px] md:text-lg h-[100px] md:h-[172px]
+}
+
+@media only screen and (max-width:767px) {
+    .select_field{
+        background-position: right 5px center;
+    }
+}
+
+
 @media only screen and (min-width:1024px) and (max-width:1272px),
 (max-width:774px) {
     .names_div {

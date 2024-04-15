@@ -6,7 +6,7 @@ function Escape({ data }: { data: AboutType[] }) {
   console.log(data);
 
   return (
-    <div className="Escape_main px-[15px]">
+    <div className="Escape_main main_padding">
       {data?.map((Escapedata, index) => (
         <div className="main_container" key={`${index}_Escape`}>
           <div className={`${classes.Escape}`}>

@@ -4,6 +4,28 @@
     background-size: cover;
     background-position: center;
 }
+.horizontal_line{
+    position: relative;
+    padding: 1px 0px; /* Space above and below the text */
+    background-color: transparent; /* Adjust based on your background color */
+}
+.horizontal_line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px; /* Thickness of the glowing line */
+    background: linear-gradient(to right, #A2FF8F, transparent); /* The color of the glow */
+  }
+  .horizontal_line::after {
+    bottom: 0; /* Aligns the line with the bottom of the text */
+  }
+
+.address:last-child a {
+    color: #A2FF8F;
+}
+
+
 
 @media only screen and (max-width:640px) {
     .certificate_icon {
@@ -23,7 +45,7 @@
 }
 
 .footer_details {
-    @apply sm:col-span-2 text-white text-center;
+    @apply sm:col-span-2 text-white text-center font-lato;
 }
 .footer_details_telephone {
     @apply text-[#a2ff8f] flex items-center justify-center gap-2;

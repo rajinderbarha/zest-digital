@@ -7,7 +7,7 @@ function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
   console.log("0000000000000000000000000",data)
   return (
   
-      <div className="px-[15px]">
+      <div className="main_padding">
         <div className="main_container">
           <div className={`${classes.Careerbanner}`}>
             <div className="">

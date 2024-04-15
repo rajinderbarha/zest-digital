@@ -8,7 +8,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 function Filters({ data }: any) {
   return (
     <>
-    <div className="px-[15px]">
+    <div className="main_padding">
       <div className="main_container">
         <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] md:my-[60px] my-[30px] xl:text-55px lg:text-50px md:text-40px text-35px">
           {data.heading}
@@ -29,7 +29,7 @@ function Filters({ data }: any) {
                   <div className="my-10" key={index}>
                     <div
                       className={`grid sm:grid-cols-12 items-end ${
-                        index % 2 === 0 ? "shadow-compo1" : "shadow-compo"
+                        index % 2 === 0 ? "shadow-dark-pink-left" : "shadow-blue-left"
                       } max-w-[1345px] mx-auto xl:ps-[50px] lg:ps-[45px] md:ps-[35px] ps-[20px] lg:pe-7 md:pe-[20px] pe-[20px] xl:py-[70px] lg:py-[60px] md:py-[50px] py-[30px] rounded-30px border border-black  bg-white text-color-1`}
                     >
                       <div className="sm:col-span-9">

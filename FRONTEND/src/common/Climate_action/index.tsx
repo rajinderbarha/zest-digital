@@ -8,7 +8,7 @@ import { urlFor } from '../../../lib/sanity.client'
 function Climate_action({ climate_actionImg, earth_img, smallDescription }: ClimateAction) {
   return (
     <>
-    <div className="px-[15px] mt-[74px] mb-[110px]">
+    <div className="main_padding mt-[74px] mb-[110px]">
 
       <div className="main_container ">
         <div
