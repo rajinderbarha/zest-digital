@@ -660,24 +660,25 @@ export async function getSingleOurServicesData(slug:string) {
       "buttonName": buttonName
     },
     "ourSubServices": ourSubServices {
-      "heading": heading,
+      "heading_sub": heading_sub,
       "services": services[] {
         "image": image.asset->url,
-        "title": title,
-        "description": description
+        "title_sub": title_sub,
+        "desc_sub": desc_sub
       }
     },
     "clientResults": clientResults {
-      "title": title,
-      "heading": heading,
+      "title_CR": title_CR,
+      "heading_CR": heading_CR,
       "card": card[] {
-        "percentsge": percentsge,
-        "title": title,
-        "description_1": description_1,
-        "description_2": description_2,
-        "buttonName": buttonName
+        "percentage_CR": percentage_CR,
+        "mapped_title": mapped_title,
+        "description_1_CR": description_1_CR,
+        "description_2_CR": description_2_CR,
+        "percentage_CR": percentage_CR,
+        "buttonName_CR": buttonName_CR
       },
-      "belowbuttonName": belowbuttonName
+      "belowbuttonName_CR": belowbuttonName_CR
     },
     "globalaccordion": globalaccordion-> {
       "accordiongroup": accordiongroup {
@@ -690,18 +691,18 @@ export async function getSingleOurServicesData(slug:string) {
       }
     },
     "Services_Quotes": Services_Quotes[] {
-      "description": description,
-      "name": name
+      "desc_quote": desc_quote,
+      "name_quote": name_quote
     },
     "agencyAddress": agencyAddress-> {
-      "heading": heading,
-      "slotDescription": slotDescription,
-      "buttonName": buttonName,
+      "heading_add": heading_add,
+      "slotDescription_add": slotDescription_add,
+      "buttonName_add": buttonName_add,
       "address": address[] {
-        "title": title,
-        "streetAddress": streetAddress,
-        "hourstitle": hourstitle,
-        "dayandtiming": dayandtiming
+        "title_add": title_add,
+        "streetAddress_add": streetAddress_add,
+        "hourstitle_add": hourstitle_add,
+        "dayandtiming_add": dayandtiming_add
       },
        card []{
          location ->{

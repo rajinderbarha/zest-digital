@@ -1,12 +1,12 @@
 import React from 'react'
 import classes from './Services_book_call.module.css'
-import { SingleOurService } from '../../../../lib/interface';
+import { Services_book_cal, SingleOurService } from '../../../../lib/interface';
 
 interface Services_book_call_Banner_Props {
     heading: string;
 }
 
-const Services_book_call: React.FC<SingleOurService> = (props) => {
+const Services_book_call: React.FC<Services_book_cal> = (props) => {
 // function GrowthMarketingServices_book_call() {
     const {heading,buttonName} = props
     return (

@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import classes from './Services_Box.module.css'
-import Paid_media_icon from '../../../assets/images/Paid_media_icon.png'
-import growth_seo_icon from '../../../assets/images/growth_seo_icon.png'
-import Social_services_icon from '../../../assets/images/Social_services_icon.png'
-import { SingleOurService } from '../../../../lib/interface'
+// import Paid_media_icon from '../../../assets/images/Paid_media_icon.png'
+// import growth_seo_icon from '../../../assets/images/growth_seo_icon.png'
+// import Social_services_icon from '../../../assets/images/Social_services_icon.png'
+import {  SingleOurService } from '../../../../lib/interface'
 import { urlFor } from '../../../../lib/sanity.client'
 
 const Services_Box: React.FC<SingleOurService> = (props) => {

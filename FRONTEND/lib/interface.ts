@@ -456,11 +456,11 @@ export interface OurServicesSection {
 
 
 interface ourServiceCard {
-  percentsge: string;
-  title: string;
-  description_1: string;
-  description_2: string;
-  buttonName: string;
+  percentage_CR: string;
+  mapped_title: string;
+  description_1_CR: string;
+  description_2_CR: string;
+  buttonName_CR: string;
 }
 
 interface ServiceImageBox {
@@ -479,30 +479,74 @@ interface ServiceContentBox {
   
 }
 
-interface ServiceDetail {
-  heading: string;
-  description_1: string;
-  description_2: string;
-  image: string;
+export interface Services_book_cal {
+  [x: string]: any;
+  heading:string,
+  buttonName:string
 }
 
-interface Service {
-  image: string;
-  title: string;
-  description: string;
+
+export interface ServiceDetail {
+  [x: string]: any;
+  Services_details:{
+
+    heading: string;
+    description_1: string;
+    description_2: string;
+    image: string;
+  }[]
 }
 
-interface ServiceQuote {
-  description: string;
-  name: string;
+export interface SubServices {
+  heading_sub:string
+  services:{
+
+    image: string;
+    title_sub: string;
+    desc_sub: string;
+  }[]
 }
 
-interface ServiceAddress {
-  title: string;
-  streetAddress: string;
-  hourstitle: string;
-  dayandtiming: string;
+export interface ServiceQuote {
+  desc_quote: string;
+  name_quote: string;
 }
+
+export interface ServiceAddress {
+  title_add: string;
+  streetAddress_add: string;
+  hourstitle_add: string;
+  dayandtiming_add: string;
+}
+
+export interface clientResults  {
+  title_CR: string;
+  heading_CR: string;
+  belowbuttonName_CR: string;
+  card: ourServiceCard[];
+//   clientResult: { 
+  
+// }
+};
+
+
+export type AgencyAddress = {
+  
+  heading_add: string;
+  slotDescription_add: string;
+  buttonName_add: string;
+    address: ServiceAddress[];
+    card: {
+      location: {
+        latitude: string;
+        longitude: string;
+      };
+      contactno: string;
+    }[];
+  
+}
+
+
 
 export interface SingleOurService {
   buttonName: ReactNode;
@@ -520,21 +564,11 @@ export interface SingleOurService {
     imageBox: ServiceImageBox[];
     contentBox: ServiceContentBox;
   };
+  
   Services_details: ServiceDetail[];
-  Services_book_call: {
-    heading_call: string;
-    buttonName: string;
-  };
-  ourSubServices: {
-    heading: string;
-    services: Service[];
-  };
-  clientResults: {
-    title: string;
-    heading: string;
-    card: ourServiceCard[];
-    belowbuttonName: string;
-  };
+  Services_book_call:Services_book_cal;
+  ourSubServices: SubServices
+  clientResults: clientResults
   globalaccordion: {
     accordiongroup: {
       heading: string;
@@ -543,19 +577,7 @@ export interface SingleOurService {
     };
   };
   Services_Quotes: ServiceQuote[];
-  agencyAddress: {
-    heading: string;
-    slotDescription: string;
-    buttonName: string;
-    address: ServiceAddress[];
-    card: {
-      location: {
-        latitude: string;
-        longitude: string;
-      };
-      contactno: string;
-    }[];
-  };
+  agencyAddress: AgencyAddress,
   banner: ClimateAction
 }
 
