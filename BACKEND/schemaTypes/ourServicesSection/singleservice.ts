@@ -12,7 +12,7 @@ export const SingleService = defineType({
             type: 'slug',
             options: {
               source: 'title',
-              maxLength: 15
+              // maxLength: 15
             }
           },
           {
@@ -63,6 +63,7 @@ export const SingleService = defineType({
                 type: 'object',
                 fields: [
                     { name: 'heading', type: 'string', title: 'Heading' },
+                    { name: 'coloredText', type: 'string', title: 'Colored text' },
                     { name: 'description', type: 'string', title: 'Description' },
                     { name: 'belowdesc', type: 'string', title: 'Below Desc' },
                 ],
@@ -95,7 +96,7 @@ export const SingleService = defineType({
       title: 'Book a call',
       type: 'object',
       fields: [
-          { name: 'heading', type: 'string', title: 'Heading' },
+          { name: 'heading_call', type: 'string', title: 'Heading Call' },
           { name: 'buttonName', type: 'string', title: 'Button Name' },
           
         ],
@@ -108,7 +109,7 @@ export const SingleService = defineType({
     title: 'Our Sub Services',
     type: 'object',
     fields: [
-        { name: 'heading', type: 'string', title: 'Heading' },
+        { name: 'heading_sub', type: 'string', title: 'Heading' },
         {
           name: "services",
             type: 'array',
@@ -118,8 +119,8 @@ export const SingleService = defineType({
                     type: "object",
                     fields: [
                       { name: 'image', type: 'image', title: 'Image' },
-                      { name: 'title', type: 'string', title: 'Title' },
-                      { name: 'description', type: 'string', title: 'Description' },
+                      { name: 'title_sub', type: 'string', title: 'Title' },
+                      { name: 'desc_sub', type: 'string', title: 'Description' },
                     ],
                 },
               ],
@@ -132,8 +133,8 @@ export const SingleService = defineType({
     title: 'Client Results',
     type: 'object',
     fields: [
-      { name: 'title', type: 'string', title: 'Title' },
-      { name: 'heading', type: 'string', title: 'Heading' },
+      { name: 'title_CR', type: 'string', title: 'Title' },
+      { name: 'heading_CR', type: 'string', title: 'Heading' },
         {
             name: "card",
             type: 'array',
@@ -142,16 +143,16 @@ export const SingleService = defineType({
               {
                 type: "object",
                     fields: [
-                      { name: 'percentsge', type: 'string', title: 'Percentsge' },
-                      { name: 'title', type: 'string', title: 'Title' },
-                        { name: 'description_1', type: 'string', title: 'Description_1' },
-                        { name: 'description_2', type: 'string', title: 'Description_2' },
-                        { name: 'buttonName', type: 'string', title: 'Button Name' },
+                      { name: 'percentage_CR', type: 'string', title: 'Percentage' },
+                      { name: 'mapped_title', type: 'string', title: 'Title' },
+                        { name: 'description_1_CR', type: 'string', title: 'Description_1' },
+                        { name: 'description_2_CR', type: 'string', title: 'Description_2' },
+                        { name: 'buttonName_CR', type: 'string', title: 'Button Name' },
                       ],
                     },
                   ],
                 },
-                { name: 'belowbuttonName', type: 'string', title: 'Below Button Name' },
+                { name: 'belowbuttonName_CR', type: 'string', title: 'Below Button Name' },
     ],
 },
 
@@ -177,8 +178,8 @@ export const SingleService = defineType({
       title:"Quote",
         type: 'object',
         fields: [
-          { name: 'description', type: 'string', title: 'Description' },
-          { name: 'name', type: 'string', title: 'Name' },
+          { name: 'desc_quote', type: 'string', title: 'Description' },
+          { name: 'name_quote', type: 'string', title: 'Name' },
         ],
     },
 ],

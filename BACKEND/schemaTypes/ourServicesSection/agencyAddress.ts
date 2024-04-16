@@ -5,9 +5,9 @@ export const ServicesAgencyAddress = defineType({
     name: 'serviceAgencyAddress',
     type: 'document',
     fields: [
-        { name: 'heading', title: 'Heading', type: 'string' },
-        { name: 'slotDescription', title: 'Slot Description', type: 'string' },
-        { name: 'buttonName', title: 'Button name', type: 'string' },
+        { name: 'heading_add', title: 'Heading', type: 'string' },
+        { name: 'slotDescription_add', title: 'Slot Description', type: 'string' },
+        { name: 'buttonName_add', title: 'Button name', type: 'string' },
         {
             name: 'address',
             title: 'Address',
@@ -16,10 +16,10 @@ export const ServicesAgencyAddress = defineType({
                 {
                     type: 'object',
                     fields: [
-                        { name: 'title', type: 'string', title: 'Title' },
-                        { name: 'streetAddress', type: 'string', title: 'Street Address' },
-                        { name: 'hourstitle', type: 'string', title: 'Hours Title' },
-                        { name: 'dayandtiming', type: 'string', title: 'Day and timing' },
+                        { name: 'title_add', type: 'string', title: 'Title' },
+                        { name: 'streetAddress_add', type: 'string', title: 'Street Address' },
+                        { name: 'hourstitle_add', type: 'string', title: 'Hours Title' },
+                        { name: 'dayandtiming_add', type: 'string', title: 'Day and timing' },
 
                     ],
                 },

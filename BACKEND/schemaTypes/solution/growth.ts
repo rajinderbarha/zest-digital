@@ -20,17 +20,38 @@ export const Growth = defineType({
     {name: 'buttonName', title: 'Button Name', type: 'string'},
     {name: 'buttonLink', title: 'Button Link', type: 'string'},
 
+
+
+
+
     {
-      name: 'card',
-      title: 'Card',
-      type: 'object',
-      fields: [
-        {name: 'heading', title: 'Heading', type: 'string'},
-        {name: 'description', title: 'Description', type: 'string'},
-        {name: 'buttonName', title: 'Button Name', type: 'string'},
-        {name: 'image', title: 'Image', type: 'image'},
-      ],
+      name: 'growthcard',
+      title: 'GrowthCard',
+      type: 'reference',
+      to: [{type: 'card'}],
     },
+
+
+
+
+
+
+
+
+
+    // {
+    //   name: 'card',
+    //   title: 'Card',
+    //   type: 'object',
+    //   fields: [
+    //     {name: 'heading', title: 'Heading', type: 'string'},
+    //     {name: 'description', title: 'Description', type: 'string'},
+    //     {name: 'buttonName', title: 'Button Name', type: 'string'},
+    //     {name: 'image', title: 'Image', type: 'image'},
+    //   ],
+    // },
+
+
     {
       name: 'growthSection',
       title: 'Growth Section',

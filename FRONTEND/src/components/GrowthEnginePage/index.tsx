@@ -20,7 +20,7 @@ function GrowthEnginePage({ data , card}: any) {
         }}
       />
       <GrowthEnginePage_Box data={data.growthSection} />
-      <Global_Accordion data={data.faq}/>
+      <Global_Accordion />
       <Growths data={card} />
     </>
   );

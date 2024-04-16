@@ -5,112 +5,112 @@ import { urlFor } from '../../../lib/sanity.client';
 import Link from 'next/link';
 import { HeaderType } from '../../../lib/interface';
 import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+// import AppBar from '@mui/material/AppBar';
+// import Box from '@mui/material/Box';
+// import CssBaseline from '@mui/material/CssBaseline';
+// import Divider from '@mui/material/Divider';
+// import Drawer from '@mui/material/Drawer';
+// import IconButton from '@mui/material/IconButton';
+// import List from '@mui/material/List';
+// import ListItem from '@mui/material/ListItem';
+// import ListItemButton from '@mui/material/ListItemButton';
+// import ListItemText from '@mui/material/ListItemText';
+// import Toolbar from '@mui/material/Toolbar';
+// import Typography from '@mui/material/Typography';
+// import Button from '@mui/material/Button';
 import barsIcon from '../../assets/images/bars-svgrepo-com.svg';
 import logo from '../../assets/images/zest-logo_vector.png';
 
 
 
-                                                    {/* navbar for the mobile start */}
-interface DrawerAppBarProps {
-  window?: () => Window;
+//                                                     {/* navbar for the mobile start */}
+// interface DrawerAppBarProps {
+//   window?: () => Window;
   
-}
+// }
 
-const drawerWidth = 240;
+// const drawerWidth = 240;
 
-const MobileViewHeader: React.FC<DrawerAppBarProps> = (props) => {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+// const MobileViewHeader: React.FC<DrawerAppBarProps> = (props) => {
+//   const { window } = props;
+//   const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
+//   const handleDrawerToggle = () => {
+//     setMobileOpen((prevState) => !prevState);
+//   };
 
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        <div className='screen-1-max:w-24 lg:w-28 xl:w-auto text-center  mx-auto'>
-          <Image src={logo} alt="Site Logo" width={112} height={51} />
-        </div>
-      </Typography>
-      <Divider />
-      <List>
-        <li className='custom-menu-items-class '>About</li>
-        <li className='custom-menu-items-class '>Solutions</li>
-        <li className='custom-menu-items-class '>Result</li>
-        <li className='custom-menu-items-class '>Insights</li>
-        <li className='custom-menu-items-class '>Resource</li>
-        <a href="javascript:void(0)" className='inline-block mt-[5px] md:mt-[10px] max-w-max nav-button font-mono text-base px-21px py-[5px] bg-black text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1'>schedule a call</a>
-      </List>
-    </Box>
-  );
+//   const drawer = (
+//     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+//       <Typography variant="h6" sx={{ my: 2 }}>
+//         <div className='screen-1-max:w-24 lg:w-28 xl:w-auto text-center  mx-auto'>
+//           <Image src={logo} alt="Site Logo" width={112} height={51} />
+//         </div>
+//       </Typography>
+//       <Divider />
+//       <List>
+//         <li className='custom-menu-items-class '>About</li>
+//         <li className='custom-menu-items-class '>Solutions</li>
+//         <li className='custom-menu-items-class '>Result</li>
+//         <li className='custom-menu-items-class '>Insights</li>
+//         <li className='custom-menu-items-class '>Resource</li>
+//         <a href="javascript:void(0)" className='inline-block mt-[5px] md:mt-[10px] max-w-max nav-button font-mono text-base px-21px py-[5px] bg-black text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1'>schedule a call</a>
+//       </List>
+//     </Box>
+//   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+//   const container = window !== undefined ? () => window().document.body : undefined;
 
-  return (
-    <div className="px-[15px]">
-    <Box className='pt-[10px] pb-[10px] md:pt-25px md:pb-21px screen-1-min:hidden  justify-between items-center main_container relative'>
-      <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { sm: 'block' } }}
-          >
-            <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>
-              <Image src={logo} alt="Site Logo" width={112} height={51} />
-            </div>
-          </Typography>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: {} }}
-          >
-            <Image src={barsIcon} alt="menu" className="bars-icon" />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block'},
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-    </Box>
-    </div>
-  );
-};
+//   return (
+//     <div className="px-[15px]">
+//     <Box className='pt-[10px] pb-[10px] md:pt-25px md:pb-21px screen-1-min:hidden  justify-between items-center main_container relative'>
+//       <CssBaseline />
+//       <AppBar component="nav">
+//         <Toolbar>
+//           <Typography
+//             variant="h6"
+//             component="div"
+//             sx={{ flexGrow: 1, display: { sm: 'block' } }}
+//           >
+//             <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>
+//               <Image src={logo} alt="Site Logo" width={112} height={51} />
+//             </div>
+//           </Typography>
+//           <IconButton
+//             color="inherit"
+//             aria-label="open drawer"
+//             edge="end"
+//             onClick={handleDrawerToggle}
+//             sx={{ mr: 2, display: {} }}
+//           >
+//             <Image src={barsIcon} alt="menu" className="bars-icon" />
+//           </IconButton>
+//         </Toolbar>
+//       </AppBar>
+//       <nav>
+//         <Drawer
+//           container={container}
+//           variant="temporary"
+//           open={mobileOpen}
+//           onClose={handleDrawerToggle}
+//           ModalProps={{
+//             keepMounted: true, // Better open performance on mobile.
+//           }}
+//           sx={{
+//             display: { xs: 'block'},
+//             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+//           }}
+//         >
+//           {drawer}
+//         </Drawer>
+//       </nav>
+//     </Box>
+//     </div>
+//   );
+// };
 
-MobileViewHeader.propTypes = {
-  window: PropTypes.func,
-};
+// MobileViewHeader.propTypes = {
+//   window: PropTypes.func,
+// };
                                                 {/* navbar for the mobile end */}
 
 
@@ -129,11 +129,11 @@ const Header = ({ data }: { data: HeaderType[] }) => {
   return (
   <>
                                         {/* navbar for the desktop start */}
-      {data?.map((item) => {
-        console.log("header img", item.logo)
+      {data?.map(((item,index)=>  {
+        // console.log("header img", item.logo)
 
         return (
-          <div className="px-[15px]">
+          <div className="px-[15px]" key={`${index}_Header`}>
           <div key={`header_${item.logo._id}`} className='screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative'>
             <div className='flex items-center gap-68px '>
               <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>
@@ -155,11 +155,12 @@ const Header = ({ data }: { data: HeaderType[] }) => {
           </div>
           </div>
         )
-      })}
+      })
+    )}
                                           {/* navbar for the desktop end */}
                                           
 
-      <MobileViewHeader />   {/* calling the responsive navbar */}
+      {/* <MobileViewHeader />   calling the responsive navbar */}
 
     </>
   )

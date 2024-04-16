@@ -5,6 +5,8 @@ import classes from "./Logo_moving.module.css";
 import { urlFor } from "../../../lib/sanity.client";
 
 const Logo_moving = ({ data }: any) => {
+
+  // console.log("brandslist==============",data)
   return (
     
       <div

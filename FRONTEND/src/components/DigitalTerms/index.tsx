@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./DigitalTerms.module.css";
-import { DigitalTermsOfServiceType } from "../../../lib/interface";
+import { TermsOfServiceType } from "../../../lib/interface";
 import { PortableText } from "next-sanity";
 function DigitalTerms({ data }: { data: any }) {
   return (
