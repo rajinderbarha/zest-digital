@@ -20,6 +20,7 @@ import PropTypes from 'prop-types';
 // import Button from '@mui/material/Button';
 import barsIcon from '../../assets/images/bars-svgrepo-com.svg';
 import logo from '../../assets/images/zest-logo_vector.png';
+import { AppBar, Box, CssBaseline, Divider, Drawer, IconButton, List, Toolbar, Typography } from '@mui/material';
 
 
 
@@ -27,11 +28,11 @@ import logo from '../../assets/images/zest-logo_vector.png';
 // interface DrawerAppBarProps {
 //   window?: () => Window;
   
-}
+// }
 
 const drawerWidth = 240;
 
-const MobileViewHeader: React.FC<DrawerAppBarProps> = (props) => {
+const MobileViewHeader = (props:any) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
