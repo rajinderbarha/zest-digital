@@ -9,36 +9,83 @@ import Resources_Calculater_Step_2 from "@/components/Resources_Calculater_Step_
 import Resources_Calculater_Step_3 from "@/components/Resources_Calculater_Step_3";
 import Resources_Calculater_Step_4 from "@/components/Resources_Calculater_Step_4";
 import Resources_Calculater_Step_5 from "@/components/Resources_Calculater_Step_5";
-import PopupWrapper from "@/common/PopupWrapper";
+import StepPopup from "@/common/PopupWrapper/stepPopup";
 import { usePopup } from "@/context";
+import { useForm } from "react-hook-form";
 function resources({ resources }: any) {
   const searchParams = useSearchParams();
-  const { isOpen, openPopup, closePopup } = usePopup() as any;
   const search = searchParams.get("popup");
-  const[step, setStep] = useState<number>(0)
+  const [step, setStep] = useState<number>(0);
+  const [formData, setFormData] = useState({});
 
-  console.log("search", search === "/calculator");
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
+  console.log("formData", formData);
   return (
     <>
-      <button type="button" onClick={() => openPopup()}>
-        Click me
-      </button>
-      {(search === "/calculator") || (search === "/workbook") ? (
+      <StepPopup
+        onClose={() => setStep(0)}
+        open={search === "/calculator" || search === "/workbook"}
+      >
         <>
-          <PopupWrapper>
-            {step===0 && <Resource_Access_popup setStep={setStep}/>}
-            {step===1 && <Resources_Calculater_Step_1 setStep={setStep} />}
-            {step===2 && <Resources_Calculater_Step_2 setStep={setStep}/>}
-            {step===3 && <Resources_Calculater_Step_3 setStep={setStep}/>}
-            {step===4 && <Resources_Calculater_Step_4 setStep={setStep}/>}
-            {step===5 && <Resources_Calculater_Step_5 setStep={setStep}/>}
-          </PopupWrapper>
-          
+          {step === 0 && (
+            <Resource_Access_popup
+              setStep={setStep}
+              register={register}
+              handleSubmit={handleSubmit}
+              setFormData={setFormData}
+            />
+          )}
+          {step === 1 && (
+            <Resources_Calculater_Step_1
+              setStep={setStep}
+              register={register}
+              handleSubmit={handleSubmit}
+              setFormData={setFormData}
+            />
+          )}
+          {step === 2 && (
+            <Resources_Calculater_Step_2
+              setStep={setStep}
+              register={register}
+              handleSubmit={handleSubmit}
+              setFormData={setFormData}
+            />
+          )}
+          {step === 3 && (
+            <Resources_Calculater_Step_3
+              setStep={setStep}
+              register={register}
+              handleSubmit={handleSubmit}
+              setFormData={setFormData}
+            />
+          )}
+          {step === 4 && (
+            <Resources_Calculater_Step_4
+              setStep={setStep}
+              register={register}
+              handleSubmit={handleSubmit}
+              setFormData={setFormData}
+            />
+          )}
+          {step === 5 && (
+            <Resources_Calculater_Step_5
+              setStep={setStep}
+              register={register}
+              handleSubmit={handleSubmit}
+              setFormData={setFormData}
+            />
+          )}
         </>
-      ) : ( <>
-        <Resourcesbanner data={resources[0]} />
-        <LearnToGrow data={resources[0]} />
-      </>)}
+      </StepPopup>
+
+      <Resourcesbanner data={resources[0]} />
+      <LearnToGrow data={resources[0]} />
     </>
   );
 }

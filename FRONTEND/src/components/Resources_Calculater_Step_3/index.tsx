@@ -6,7 +6,7 @@ function Resources_Calculater_Step_3({setStep}:any) {
         <>
             <div className="Resources_Calculater_Step_3">
                 <div className="sm:px-10 px-5">
-                    <div className="Resources_Calculater_Step_3 popup_conatiner pt-[10px] pb-[10px]  relative">
+                    <div className="Resources_Calculater_Step_3 popup_conatiner pt-[10px] pb-[10px]  relative bg-white">
                         <div className="progrees_bar mb-[10px] md:mb-[20px]">
 
                         </div>

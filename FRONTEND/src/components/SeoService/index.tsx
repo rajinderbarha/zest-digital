@@ -87,7 +87,7 @@ const agencyAddress  =  address.map(({dayandtiming_add,hourstitle_add,streetAddr
   return (
     <>
       <Services_Banner max_width="1033px" title={title} smallDescription={smallDescription} button={button} />
-      <Services_Box Services_Box={serviceBox} imageBox={imageBox} />
+      {/* <Services_Box Services_Box={serviceBox} imageBox={imageBox} /> */}
 
       <Services_details_happy_customer Services_details={serviceDetails} />
 
