@@ -1,4 +1,4 @@
-.SingleIntro {
+.SingleBox {
     background-image: url('../../../assets/images/Gradient_v4.png');
     background-repeat: no-repeat;
     background-position: top center;
@@ -9,15 +9,22 @@
     border: 1px solid transparent;
 }
 
-.single_container {
+.singleBox_container {
     margin-top: -100px;
     border: 1px solid transparent;
 }
 
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .SingleBox{
+        margin-top: 180px;
+    }
+}
 @media only screen and (max-width:767px) {
-    .SingleIntro {
-
-        margin-top: 80px;
+    .singleBox_container {
+        margin-top: 0;
+    }
+    .SingleBox {
+        margin-top: 50px;
 
     }
 }

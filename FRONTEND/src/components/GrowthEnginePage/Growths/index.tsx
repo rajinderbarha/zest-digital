@@ -7,7 +7,7 @@ function Growths({ data }: { data: any }) {
     <>
       {data.length > 0 && (
         <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] overflow-hidden">
-          <div className="2xl:mb-[300px] lg:mb-[200px] mb-[100px]">
+          <div className="2xl:mb-[235px] xl:mb-[200px] lg:mb-[175px] md:mb-[120px] sm:mb-[100px] mb-[50px]">
             {data.map((item: any, index: number) => (
               <h2
                 key={`${index}_Growths`}
@@ -20,7 +20,7 @@ function Growths({ data }: { data: any }) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto">
                 {data.slice(0, 2).map((item: any, index: number) => {
                   return (
-                    <div key={index}>
+                    <div key={index} className="grid">
                       <Growth_engine
                         props={{
                           title: item.card.heading,
