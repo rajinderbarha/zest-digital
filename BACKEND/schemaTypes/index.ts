@@ -27,6 +27,8 @@ import { SingleService } from './ourServicesSection/singleservice'
 import { Accordion } from './common/accordion'
 import { ServicesAgencyAddress } from './ourServicesSection/agencyAddress'
 import { FAQ } from './common/FAQ'
+import { HomePage } from './Homepage'
+import { GrowthCard } from './common/growthCard'
 
 export const schemaTypes = [
   Header,
@@ -52,5 +54,7 @@ export const schemaTypes = [
   SingleService,
   Accordion,
   ServicesAgencyAddress,
-  FAQ
+  FAQ,
+  HomePage,
+  GrowthCard
 ]

@@ -12,7 +12,7 @@ export const SingleService = defineType({
             type: 'slug',
             options: {
               source: 'title',
-              maxLength: 15
+              // maxLength: 15
             }
           },
           {

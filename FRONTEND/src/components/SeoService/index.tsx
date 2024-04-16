@@ -14,7 +14,7 @@ import { SingleOurService } from '../../../lib/interface'
 
 function SeoService({ data }: { data: SingleOurService; }) {
 
-  console.log("data------------------------", data)
+  // console.log("data------------------------", data)
 
   const { title, smallDescription, button: { callButtonName, resultsButtonName }, Services_Box: { contentBox: { heading, description, belowdesc, coloredText }, }, clientResults: { title_CR, heading_CR, belowbuttonName_CR ,card}, agencyAddress:{buttonName_add,heading_add,slotDescription_add,address}  } = data
      const { Services_book_call: { heading_call, buttonName } } = data
