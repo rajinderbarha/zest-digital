@@ -5,27 +5,27 @@ import { urlFor } from '../../../lib/sanity.client';
 import Link from 'next/link';
 import { HeaderType } from '../../../lib/interface';
 import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+// import AppBar from '@mui/material/AppBar';
+// import Box from '@mui/material/Box';
+// import CssBaseline from '@mui/material/CssBaseline';
+// import Divider from '@mui/material/Divider';
+// import Drawer from '@mui/material/Drawer';
+// import IconButton from '@mui/material/IconButton';
+// import List from '@mui/material/List';
+// import ListItem from '@mui/material/ListItem';
+// import ListItemButton from '@mui/material/ListItemButton';
+// import ListItemText from '@mui/material/ListItemText';
+// import Toolbar from '@mui/material/Toolbar';
+// import Typography from '@mui/material/Typography';
+// import Button from '@mui/material/Button';
 import barsIcon from '../../assets/images/bars-svgrepo-com.svg';
 import logo from '../../assets/images/zest-logo_vector.png';
 
 
 
-                                                    {/* navbar for the mobile start */}
-interface DrawerAppBarProps {
-  window?: () => Window;
+//                                                     {/* navbar for the mobile start */}
+// interface DrawerAppBarProps {
+//   window?: () => Window;
   
 }
 
@@ -111,6 +111,7 @@ const MobileViewHeader: React.FC<DrawerAppBarProps> = (props) => {
 MobileViewHeader.propTypes = {
   window: PropTypes.func,
 };
+
                                                 {/* navbar for the mobile end */}
 
 
@@ -129,11 +130,13 @@ const Header = ({ data }: { data: HeaderType[] }) => {
   return (
   <>
                                         {/* navbar for the desktop start */}
-      {data?.map((item) => {
-        console.log("header img", item.logo)
+      {data?.map(((item,index)=>  {
+        // console.log("header img", item.logo)
 
         return (
+
           <div className="main_padding">
+
           <div key={`header_${item.logo._id}`} className='screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative'>
             <div className='flex items-center gap-68px '>
               <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>
@@ -155,11 +158,12 @@ const Header = ({ data }: { data: HeaderType[] }) => {
           </div>
           </div>
         )
-      })}
+      })
+    )}
                                           {/* navbar for the desktop end */}
                                           
 
-      <MobileViewHeader />   {/* calling the responsive navbar */}
+      {/* <MobileViewHeader />   calling the responsive navbar */}
 
     </>
   )

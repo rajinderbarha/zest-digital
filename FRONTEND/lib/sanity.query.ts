@@ -79,24 +79,7 @@ export function getFooter() {
 //     `
 //   );
 // }
-export function getSingleTerms(slug: string) {
-  return client.fetch(
-    groq`
-    *[_type == 'singleTermsOfService' && slug.current == "${slug}"] {
-      slug,
-      title,
-      smallDescription,
-      buttonName,
-      content,
-      'banner': banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      }
-    }
-    `
-  );
-}
+
 
 export async function getAboutData() {
   const headerquery = `
@@ -149,182 +132,182 @@ export async function getAboutData() {
   return data;
 }
 
-export async function getSharedEngineData() {
-  //   we are getting this data from growthShared schema
-  const headerquery = `
-  *[_type == "growthEngine"] {
-    growthEngine {
-        heroSection {
-            upperTitle,
-            heading,
-            button {
-                buttonName,
-                buttonLink
-            }
-        },
-        growthSection {
-            headingUpper,
-            titleUpper,
-            growthContent[] {
-                title,
-                description,
-                buttonName,
-                buttonLink,
-                price {
-                    priceOutline
-                }
-            },
-            headingBelow,
-            titleBelow,
-            image
-        },
-        solution {
-            heading,
-            card[] {
-                title,
-                description,
-                buttonName,
-                buttonLink
-            },
-            image
-        },
-        "banner": banner-> {
-            climate_actionImg,
-            earth_img,
-            smallDescription
-        }
-    },
-    signupform {
-        signupheading,
-        signupdescription,
-        firstnameLabel,
-        lastnameLabel,
-        emailLabel
-    }
-}
+// export async function getSharedEngineData() {
+//   //   we are getting this data from growthShared schema
+//   const headerquery = `
+//   *[_type == "growthEngine"] {
+//     growthEngine {
+//         heroSection {
+//             upperTitle,
+//             heading,
+//             button {
+//                 buttonName,
+//                 buttonLink
+//             }
+//         },
+//         growthSection {
+//             headingUpper,
+//             titleUpper,
+//             growthContent[] {
+//                 title,
+//                 description,
+//                 buttonName,
+//                 buttonLink,
+//                 price {
+//                     priceOutline
+//                 }
+//             },
+//             headingBelow,
+//             titleBelow,
+//             image
+//         },
+//         solution {
+//             heading,
+//             card[] {
+//                 title,
+//                 description,
+//                 buttonName,
+//                 buttonLink
+//             },
+//             image
+//         },
+//         "banner": banner-> {
+//             climate_actionImg,
+//             earth_img,
+//             smallDescription
+//         }
+//     },
+//     signupform {
+//         signupheading,
+//         signupdescription,
+//         firstnameLabel,
+//         lastnameLabel,
+//         emailLabel
+//     }
+// }
 
     
-  `;
-  const data = await client.fetch(headerquery);
-  return data;
-}
+//   `;
+//   const data = await client.fetch(headerquery);
+//   return data;
+// }
 
-export async function getSharedTrackerData() {
-  const headerquery = `
-  *[_type == "growthTracker"] {
-    growthTracker {
-        heroSection {
-            upperTitle,
-            heading,
-            button {
-                buttonName,
-                buttonLink
-            }
-        },
-        growthSection {
-            headingUpper,
-            titleUpper,
-            growthContent[] {
-                title,
-                description,
-                buttonName,
-                buttonLink,
+// export async function getSharedTrackerData() {
+//   const headerquery = `
+//   *[_type == "growthTracker"] {
+//     growthTracker {
+//         heroSection {
+//             upperTitle,
+//             heading,
+//             button {
+//                 buttonName,
+//                 buttonLink
+//             }
+//         },
+//         growthSection {
+//             headingUpper,
+//             titleUpper,
+//             growthContent[] {
+//                 title,
+//                 description,
+//                 buttonName,
+//                 buttonLink,
                 
-            },
-            headingBelow,
-            titleBelow,
-            image
-        },
-        solution {
-            heading,
-            card[] {
-                title,
-                description,
-                buttonName,
-                buttonLink,
-                image
-            }
-        },
-        "banner": banner-> {
-            climate_actionImg,
-            earth_img,
-            smallDescription
-        }
-    },
-    signupform {
-        signupheading,
-        signupdescription,
-        firstnameLabel,
-        lastnameLabel,
-        emailLabel,
-        buttonName,
-        buttonLink,
-        privacyDescription
-    }
-}
+//             },
+//             headingBelow,
+//             titleBelow,
+//             image
+//         },
+//         solution {
+//             heading,
+//             card[] {
+//                 title,
+//                 description,
+//                 buttonName,
+//                 buttonLink,
+//                 image
+//             }
+//         },
+//         "banner": banner-> {
+//             climate_actionImg,
+//             earth_img,
+//             smallDescription
+//         }
+//     },
+//     signupform {
+//         signupheading,
+//         signupdescription,
+//         firstnameLabel,
+//         lastnameLabel,
+//         emailLabel,
+//         buttonName,
+//         buttonLink,
+//         privacyDescription
+//     }
+// }
 
     
-  `;
-  const data = await client.fetch(headerquery);
-  return data;
-}
+//   `;
+//   const data = await client.fetch(headerquery);
+//   return data;
+// }
 
-export async function getSharedCurveData() {
-  const headerquery = `
-  *[_type == "growthCurve"] {
-    growthCurve {
-        heroSection {
-            upperTitle,
-            heading,
-            button {
-                buttonName,
-                buttonLink
-            }
-        },
-        growthSection {
-            headingUpper,
-            titleUpper,
-            growthContent[] {
-                title,
-                description,
-                buttonName,
-                buttonLink,
+// export async function getSharedCurveData() {
+//   const headerquery = `
+//   *[_type == "growthCurve"] {
+//     growthCurve {
+//         heroSection {
+//             upperTitle,
+//             heading,
+//             button {
+//                 buttonName,
+//                 buttonLink
+//             }
+//         },
+//         growthSection {
+//             headingUpper,
+//             titleUpper,
+//             growthContent[] {
+//                 title,
+//                 description,
+//                 buttonName,
+//                 buttonLink,
                 
-            },
-            headingBelow,
-            titleBelow,
-            image
-        },
-        solution {
-            heading,
-            card[] {
-                title,
-                description,
-                buttonName,
-                buttonLink
-            },
-            image
-        },
-        "banner": banner-> {
-            climate_actionImg,
-            earth_img,
-            smallDescription
-        }
-    },
-    signupform {
-        signupheading,
-        signupdescription,
-        firstnameLabel,
-        lastnameLabel,
-        emailLabel
-    }
-}
+//             },
+//             headingBelow,
+//             titleBelow,
+//             image
+//         },
+//         solution {
+//             heading,
+//             card[] {
+//                 title,
+//                 description,
+//                 buttonName,
+//                 buttonLink
+//             },
+//             image
+//         },
+//         "banner": banner-> {
+//             climate_actionImg,
+//             earth_img,
+//             smallDescription
+//         }
+//     },
+//     signupform {
+//         signupheading,
+//         signupdescription,
+//         firstnameLabel,
+//         lastnameLabel,
+//         emailLabel
+//     }
+// }
 
     
-  `;
-  const data = await client.fetch(headerquery);
-  return data;
-}
+//   `;
+//   const data = await client.fetch(headerquery);
+//   return data;
+// }
 
 export async function getSingleCasestudyData(slug: string) {
   const headerquery = `
@@ -424,13 +407,15 @@ export async function getSolutionData() {
       },
      growth[]->{
       slug,
-      card{
-
-        heading, 
-        description,
-        buttonName,
-        image
-      },
+      "growthcard": growthcard-> {
+        mainheading,
+        card{
+       heading,
+       description,
+       image,
+       buttonName,
+        }
+   },
    
      },
       brandList[]->{
@@ -588,6 +573,172 @@ export async function getTermsndConditionsData() {
   const data = await client.fetch(headerquery);
   return data;
 }
+
+
+export function getSingleTerms(slug: string) {
+  return client.fetch(
+    groq`
+    *[_type == 'singleTermsOfService' && slug.current == "${slug}"] {
+      slug,
+      title,
+      smallDescription,
+      buttonName,
+      content,
+      'banner': banner-> {
+        climate_actionImg,
+        earth_img,
+        smallDescription
+      }
+    }
+    `
+  );
+}
+
+
+
+
+
+
+export async function getOurServicesSectionData() {
+  const OurServicesSection = `
+  *[_type == "OurServicesSection"] {
+    heading, 
+      "cards": card[]-> {
+      "slug": slug.current,
+      "title": title,
+     
+    },
+    "images": images {
+      "vertical_bar": vertical_bar.asset->url,
+      "Code_icon": Code_icon.asset->url,
+      "target_icon": target_icon.asset->url
+    },
+    "banner": banner-> {
+      "climate_actionImg": climate_actionImg.asset->url,
+      "earth_img": earth_img.asset->url,
+      "smallDescription": smallDescription
+    }
+  }  
+  `;
+  const data = await client.fetch(OurServicesSection);
+  return data;
+}
+
+
+
+
+export async function getSingleOurServicesData(slug:string) {
+  const singleServicesSectionData = `
+  *[_type == "singleService"  && slug.current == "${slug}"] {
+  
+  
+    "slug": slug.current,
+    "title": title,
+    "smallDescription": smallDescription,
+    "button": {
+      "callButtonName": button.callButtonName,
+      "resultsButtonName": button.resultsButtonName
+    },
+    "Services_Box": Services_Box {
+      "imageBox": imageBox[] {
+        "image": image.asset->url,
+        "imagetitle": imagetitle
+      },
+      "contentBox": contentBox {
+        "heading": heading,
+        coloredText,
+        "description": description,
+        "belowdesc": belowdesc
+      }
+    },
+    "Services_details": Services_details[] {
+      "heading": heading,
+      "description_1": description_1,
+      "description_2": description_2,
+      "image": image.asset->url
+    },
+    "Services_book_call": Services_book_call {
+      "heading_call": heading_call,
+      "buttonName": buttonName
+    },
+    "ourSubServices": ourSubServices {
+      "heading_sub": heading_sub,
+      "services": services[] {
+        "image": image.asset->url,
+        "title_sub": title_sub,
+        "desc_sub": desc_sub
+      }
+    },
+    "clientResults": clientResults {
+      "title_CR": title_CR,
+      "heading_CR": heading_CR,
+      "card": card[] {
+        "percentage_CR": percentage_CR,
+        "mapped_title": mapped_title,
+        "description_1_CR": description_1_CR,
+        "description_2_CR": description_2_CR,
+        "percentage_CR": percentage_CR,
+        "buttonName_CR": buttonName_CR
+      },
+      "belowbuttonName_CR": belowbuttonName_CR
+    },
+    "globalaccordion": globalaccordion-> {
+      "accordiongroup": accordiongroup {
+        "heading": heading,
+        "card": card[] {
+          "question": question,
+          "answer": answer
+        },
+        "belowbuttonName": belowbuttonName
+      }
+    },
+    "Services_Quotes": Services_Quotes[] {
+      "desc_quote": desc_quote,
+      "name_quote": name_quote
+    },
+    "agencyAddress": agencyAddress-> {
+      "heading_add": heading_add,
+      "slotDescription_add": slotDescription_add,
+      "buttonName_add": buttonName_add,
+      "address": address[] {
+        "title_add": title_add,
+        "streetAddress_add": streetAddress_add,
+        "hourstitle_add": hourstitle_add,
+        "dayandtiming_add": dayandtiming_add
+      },
+       card []{
+         location ->{
+          
+            "latitude": latitude,
+            "longitude": longitude
+          
+        },
+        "contactno": contactno
+      
+    },
+
+  },
+  
+  "banner": banner-> {
+    "climate_actionImg": climate_actionImg.asset->url,
+    "earth_img": earth_img.asset->url,
+    "smallDescription": smallDescription
+  }
+}
+
+  `;
+  const data = await client.fetch(singleServicesSectionData);
+  return data;
+}
+
+
+
+
+
+
+
+
+
 // export async function getTermsndConditionsData() {
 //   const headerquery = `
 
@@ -675,12 +826,16 @@ export async function getGrowthData(slug: string) {
     image,
     buttonName,
     buttonLink,
-    card{
-      heading,
-      description,
-      image,
-      buttonName,
-    },
+    "growthcard": growthcard-> {
+      "slug":slug.current,
+      mainheading,
+      card{
+     heading,
+     description,
+     image,
+     buttonName,
+      }
+ },
     growthSection {
           upperHeading,
           upperSmallLine,
@@ -717,5 +872,43 @@ export async function getGrowthData(slug: string) {
     
   `;
   const data = await client.fetch(headerquery);
+  return data;
+}
+export async function getHomepageData() {
+  //   we are getting this data from growthShared schema
+  const homepagequery = `
+  *[_type == "homepage"] {
+    growRevenue,
+    TransformResults {
+        heading,
+        switcher[],
+        horizontalbars[] {
+            numHeading,
+            title,
+            desc,
+        },
+        growthcard[]-> {
+          "slug":slug.current,
+           mainheading,
+          card{
+            heading,
+            description,
+            buttonName,
+            "image": image.asset->url,
+          }
+        },
+        brandList[]-> {
+            "icon": icon.asset->url,
+        },
+         "banner": banner-> {
+            climate_actionImg,
+            earth_img,
+            smallDescription
+        }
+    },
+}
+
+  `;
+  const data = await client.fetch(homepagequery);
   return data;
 }

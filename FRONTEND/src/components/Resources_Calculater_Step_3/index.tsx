@@ -1,13 +1,13 @@
 import React from 'react'
 import { GoArrowLeft } from "react-icons/go";
 
-function Resources_Calculater_Step_3() {
+function Resources_Calculater_Step_3({setStep}:any) {
     return (
         <>
             <div className="Resources_Calculater_Step_3">
                 <div className="sm:px-10 px-5">
-                    <div className="Resources_Calculater_Step_3 popup_conatiner pt-[29px] pb-[66px]  relative">
-                        <div className="progrees_bar mb-[100px] md:mb-[189px]">
+                    <div className="Resources_Calculater_Step_3 popup_conatiner pt-[10px] pb-[10px]  relative bg-white">
+                        <div className="progrees_bar mb-[10px] md:mb-[20px]">
 
                         </div>
                         <div className="max-w-[670px] mx-auto mb-[53px] px-10">
@@ -25,10 +25,10 @@ function Resources_Calculater_Step_3() {
                         <p className="font-mono text-20px font-bold text-red-900 mx-auto invisible  mb-[57px] text-center">Please select an industry to proceed!</p>
 
                         <div className="button text-center mb-[27px]">
-                            <button className='bg-color-1 font-mono text-base px-[40px] py-[10px] text-white rounded-full'>Next</button>
+                            <button className='bg-color-1 font-mono text-base px-[40px] py-[10px] text-white rounded-full' type="button" onClick={()=>setStep(4)}>Next</button>
                         </div>
                         <div className=" max-w-max mx-auto w-max ">
-                            <a href="" className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1"><GoArrowLeft /> Back </a>
+                            <button className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1" type='button' onClick={()=>setStep(2)}><GoArrowLeft /> Back </button>
                         </div>
                     </div>
                 </div>

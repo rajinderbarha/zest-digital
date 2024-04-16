@@ -12,6 +12,7 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
 
   return (
     <>
+    
       {data.map((item, index) => (
         <div key={index}>
 

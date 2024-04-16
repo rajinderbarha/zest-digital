@@ -5,7 +5,7 @@ import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../lib/sanity.client";
 
-interface GrowthEngineProps {
+export interface GrowthEngineProps {
   props: {
     title: string;
     description: string;
