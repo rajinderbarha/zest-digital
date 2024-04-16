@@ -9,7 +9,7 @@ interface Services_Quotes{
 
 
 const Services_Quotes : React.FC<Services_Quotes> = ({ Services_Quotes }) => {
-console.log(Services_Quotes);
+// console.log(Services_Quotes);
 
 
     return (

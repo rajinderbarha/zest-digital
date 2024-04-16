@@ -8,6 +8,9 @@ import flag_img from "../../assets/images/flags.png";
 function GrowthEnginePage({ data , card}: any) {
 
 
+  // console.log("card",card)
+  console.log("data",data)
+
   return (
     <>
       <GrowthEnginePage_Banner
@@ -20,7 +23,7 @@ function GrowthEnginePage({ data , card}: any) {
         }}
       />
       <GrowthEnginePage_Box data={data.growthSection} />
-      <Global_Accordion />
+      {/* <Global_Accordion /> */}
       <Growths data={card} />
     </>
   );

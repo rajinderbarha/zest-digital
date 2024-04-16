@@ -17,11 +17,11 @@ function Section_Main({ data, card }: any) {
                 {data.upperTitle.title}
               </h2>
               <div className=" ">
-                
+                {/* { <h2 className='min-1350:text-40px md:text-3xl text-color-4'>mapper</h2> } */}
                 <h2 className="min-1350:text-45px md:text-4xl md:max-970:text-[29px] sm:text-2xl text-xl text-color-7 font-mono">
                   {data.upperTitle.switcher[0]}
                 </h2>
-               
+                {/* { <h2 className='min-1350:text-40px md:text-3xl text-color-4'>tracker</h2> } */}
               </div>
             </div>
             <div className=" mx-auto max-w-[1027px] md:mt-[215px] mt-[100px]">
