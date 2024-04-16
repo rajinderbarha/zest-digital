@@ -8,21 +8,22 @@ import Funnel_icon_V2 from '../../assets/images/Funnel_icon_V2.png'
 import { GoArrowRight } from "react-icons/go";
 import { urlFor } from '../../../lib/sanity.client'; //@ts-ignore
 import BlockContent from "@sanity/block-content-to-react";
+import Link from 'next/link'
 
 function SingleInsightPage({data}:any) {
     console.log("singleInsights", data)
     return (
         <>
-            <div className="SingleInsightPage mt-[50px] md:mt-[100px]">
-                <div className="main_container px-5 ">
-                    <div className={`${classes.bg_image} title-box px-[30px] md:px-[100px] pb-[100px] pt-[30px] md:pt-[63px] md:pb-[184px] rounded-30px`}>
-                        <p className="font-mono text-25px md:text-35px font-semibold text-color-7 ">{data.hero.keywords[0]}</p>
-                        <h2 className="font-mono lg:text-55px md:text-45px text-35px text-white max-w-[798px] mt-[45px] mb-[20px]">{data.hero.heading}</h2>
+            <div className="SingleInsightPage mt-[50px] md:mt-[100px] main_padding">
+                <div className="main_container  ">
+                    <div className={`${classes.bg_image} title-box xl:px-[100px] lg:px-[70px] md:px-[50px] px-[30px] xl:pb-[185px] lg:pb-[155px] md:pb-[130px] pb-[100px] xl:pt-[65px] lg:pt-[55px] md:pt-[45px] pt-[30px] rounded-30px`}>
+                        <p className="font-mono lg:text-35px md:text-30px text-25px font-semibold text-color-7 ">{data.hero.keywords[0]}</p>
+                        <h2 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-40px text-35px text-white max-w-[798px] xl:mt-[45px] lg:mt-[30px] md:mt-[25px] mt-[20px] mb-[20px]">{data.hero.heading}</h2>
                         <div className="md:max-w-max max-w-[35px]">
                             <Image src={urlFor(data.hero.icon).url()} alt='growth icon' width={70} height={70}/>
                         </div>
                     </div>
-                    <div className="mt-[74px] max-w-[1420px] mx-auto grid gap-[40px] md:gap-[100px]">
+                    <div className={`${classes.Block_Content} mt-[74px] max-w-[1420px] mx-auto grid gap-[40px] md:gap-[100px] px-[5px]`}>
 
                     <BlockContent blocks={data.content} projectId={"dexthfb7"} dataset={"production"}/>
 
@@ -198,12 +199,12 @@ function SingleInsightPage({data}:any) {
                             </div>
                         </div> */}
                     </div>
-                    <div className={`${classes.Footer_Img} bg-black rounded-30px mb-[243px] py-[46px] px-[20px] md:px-[55px] mt-[122px] relative flex items-center`}>
+                    <div className={`${classes.Footer_Img} bg-black rounded-30px xl:mb-[245px] lg:mb-[200px] md:mb-[150px] mb-[100px] py-[46px] px-[20px] md:px-[55px] xl:mt-[120px] lg:mt-[95px] md:mt-[70px] mt-[50px] relative flex items-center`}>
                         <div className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}>
                             <Image src={urlFor(data.linkSection.icon).url()} alt='icon' className='mx-auto' width={50} height={50} />
                         </div>
-                        <div className=" max-w-max ms-auto relative z-10">
-                            <a href={data.linkSection.linkUrl} className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"> {data.linkSection.linkName}<GoArrowRight /> </a>
+                        <div className={`${classes.Footer_Link} max-w-max ms-auto relative  z-10`}>
+                            <Link href={data.linkSection.linkUrl} className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"> {data.linkSection.linkName}<GoArrowRight /> </Link>
                         </div>
                     </div>
                 </div>

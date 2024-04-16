@@ -6,7 +6,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 
 function Our_values({ data }: { data: AboutType[] }) {
   return (
-    <div className={`${classes.Our_values}`}>
+    <div className={`${classes.Our_values} main_padding`}>
       <div className="main_container">
         <div className={`${classes.values_bg}`}>
           {data?.map((ourvalue, index) => (

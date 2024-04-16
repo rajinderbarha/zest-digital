@@ -1,9 +1,10 @@
 .Singalcasebanner {
-    padding: 123px 16px 0 16px;
+    /* padding: 123px 16px 0 16px; */
+    @apply xl:mt-[123px] lg:mt-[95px] md:mt-[65px] sm:mt-[45px] mt-[35px]
 }
 
 @media only screen and (max-width:767px) {
     .Singalcasebanner {
-        padding: 60px 16px 0 16px;
+        /* padding: 60px 16px 0 16px; */
     }
 }

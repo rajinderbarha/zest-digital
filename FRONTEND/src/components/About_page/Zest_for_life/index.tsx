@@ -9,7 +9,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
     
     return (
         <>
-            <div className={`${classes.Zest_for_life}`}>
+            <div className={`${classes.Zest_for_life} main_padding`}>
                 <div className='main_container_x'>
                     {data?.map((item,index)=>(
 
@@ -32,7 +32,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
                             return (
                             <div className='Zest_for_life_box text-center' key={`${path}__Zest_for_life_path_0`}>
                             <h2 className='font-mono font-semibold lg:text-45px md:text-35px xl:mb-[70px] lg:mb-[50px] md:mb-[30px] mb-6 text-30px text-color-1'>{cardItem.title}</h2>
-                            <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-compo border border-black rounded-30px mx-auto' alt="" />
+                            <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black rounded-30px mx-auto' alt="" />
                             <p className='text-base font-mono  font-normal lg:mt-8 md:mt-6 mt-4 md:px-8 max-w-[440px] mx-auto text-color-1'>{cardItem.description}</p>
                         </div>
                         )}
@@ -41,7 +41,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
 
                                 <div className='Zest_for_life_box md:mt-20 text-center' key={`${path}__Zest_for_life_path_1`}>
                             <h2 className='font-mono font-semibold lg:text-45px md:text-35px xl:mb-[70px] lg:mb-[50px] md:mb-[30px] mb-6 text-30px text-color-1'>{cardItem.title}</h2>
-                            <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-compo border border-black rounded-30px mx-auto' alt="" />
+                            <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black rounded-30px mx-auto' alt="" />
                             <p className='text-base font-mono  font-normal lg:mt-8 md:mt-6 mt-4 md:px-8 max-w-[440px] mx-auto text-color-1' >{cardItem.description}</p>
                         </div>
                                 )
@@ -51,7 +51,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
 
                                 <div className='Zest_for_life_box text-center md:mt-40' key={`${path}__Zest_for_life_path`}>
                             <h2 className='font-mono font-semibold lg:text-45px md:text-35px xl:mb-[70px] lg:mb-[50px] md:mb-[30px] mb-6 text-30px text-color-1'>{cardItem.title}</h2>
-                            <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-compo border border-black rounded-30px mx-auto' alt="" />
+                            <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black rounded-30px mx-auto' alt="" />
                             <p className='text-base font-mono  font-normal lg:mt-8 md:mt-6 mt-4 md:px-8 max-w-[440px] mx-auto text-color-1'>{cardItem.description}</p>
                         </div>
                                 )
@@ -62,13 +62,13 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
 
                         {/* <div className='Zest_for_life_box md:mt-20 text-center'>
                             <h2 className='font-mono font-semibold md:text-45px md:mb-20 mb-6 text-30px '>Planet</h2>
-                            <Image src={People} className='shadow-compo rounded-30px' alt="" />
+                            <Image src={People} className='shadow-blue rounded-30px' alt="" />
                             <p className='text-base font-mono  font-normal md:mt-10 mt-4 md:px-8'>Determined to leave our planet having given back more than we took.</p>
                         </div>
 
                         <div className='Zest_for_life_box text-center md:mt-40'>
                             <h2 className='font-mono font-semibold md:text-45px md:mb-20 mb-6 text-30px '>Philanthropy</h2>
-                            <Image src={People} className='shadow-compo rounded-30px' alt="" />
+                            <Image src={People} className='shadow-blue rounded-30px' alt="" />
                             <p className='text-base font-mono  font-normal md:mt-10 mt-4 md:px-8'>Proud to support causes that improve the lives of those less fortunate.</p>
                         </div> */}
                     </div>

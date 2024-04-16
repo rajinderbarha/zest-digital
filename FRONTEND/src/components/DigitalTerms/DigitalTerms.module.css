@@ -9,3 +9,34 @@
 .list_sub_items{
     @apply flex flex-col gap-6 font-lato text-lg ml-[60px]
 }
+
+
+
+.Portable_text h2{
+    @apply lg:text-45px md:text-40px text-30px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[40px]
+}
+.Portable_text p{
+    @apply flex flex-col gap-6 font-lato text-lg mb-[24px]
+}
+.Portable_text h3{
+    @apply md:text-35px text-30px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[40px] 
+}
+.Portable_text h3 ~ p{
+    @apply md:ml-[60px] ml-[8px]
+}
+.Portable_text ul{
+    @apply list-disc list-inside md:ml-[100px] ml-[15px]
+}
+.Portable_text a{
+    word-wrap: break-word;
+}
+.Portable_text h2:not(:first-child) + p{
+    @apply ml-[0]
+}
+.Portable_text p:has(a){
+    display: inline;
+}
+.Portable_text a{
+    color: #8383f1;
+    text-decoration: underline;
+}

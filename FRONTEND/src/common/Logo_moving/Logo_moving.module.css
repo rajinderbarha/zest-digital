@@ -6,18 +6,38 @@
     right: 0;
     background-image: linear-gradient(90deg, #fff, transparent 27%, transparent, #fff);
     z-index: 6;
+
+}
+.gradient_border{
+    position: relative;
+    background-color: transparent; /* Adjust based on your background color */
+}
+.gradient_border::before,
+.gradient_border::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px; /* Thickness of the glowing line */
+  background: linear-gradient(to left, transparent , #BD378B, transparent); /* The color of the glow */
+}
+
+.gradient_border::before {
+  top: 0; /* Aligns the line with the top of the text */
+}
+
+.gradient_border::after {
+  bottom: 0; /* Aligns the line with the bottom of the text */
 }
 
 .margin_top {
-    margin-top: 274px;
-    margin-bottom: 184px;
     padding-left: 25px;
     padding-right: 25px;
 }
 
 @media only screen and (max-width:1280px) {
     .margin_top {
-        margin-top: 22vw;
+        /* margin-top: 22vw; */
         margin-bottom: 0;
     }
 

@@ -1,7 +1,15 @@
+.growth_engine{
+    width: -webkit-fill-available;
+}
+.grow_image {
+
+    /* border: 1px solid black; */
+}
+
 @media only screen and (max-width:1175px) {
     .grow_image {
         /* border: 1px solid black; */
-        width: 480px;
+        width: 450px;
         bottom: -100px;
         right: -50px;
     }
@@ -13,11 +21,11 @@
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
     .growth_engine_title {
-        font-size: 33px;
+        font-size: 35px;
     }
 
     .growth_engine_desc {
-        font-size: 23px;
+        font-size: 25px;
         margin: 12px auto;
         line-height: 30px;
     }
@@ -40,11 +48,11 @@
 
 @media only screen and (max-width:767px) {
     .growth_engine_title {
-        font-size: 23px;
+        font-size: 30px;
     }
 
     .growth_engine_desc {
-        font-size: 18px;
+        font-size: 20px;
         margin: 12px auto;
         line-height: 28px;
     }
@@ -54,14 +62,14 @@
     }
 
     .growth_engine button {
-        font-size: 12px;
-        padding: 4px 0 4px 10px;
+        /* font-size: 12px; */
+        /* padding: 4px 0 4px 10px; */
     }
 
     .growth_engine button img {
         padding: 6px 4px 6px 4px;
         width: 25px;
-        margin-right: 5px;
+        /* margin-right: 5px; */
     }
 
     .grow_image {

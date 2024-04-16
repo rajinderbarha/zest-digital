@@ -5,12 +5,38 @@
     background-color: black;
 }
 
+.Block_Content h2{
+/* border: 1px solid black; */
+@apply md:text-45px text-30px font-semibold font-mono bg-color-7 w-fit md:mb-[33px] mb-[13px] md:mt-[120px] mt-[50px]
+}
+
+.Block_Content h3{
+    @apply font-mono text-25px md:text-35px font-semibold  md:mb-[38px] mb-[13px]
+}
+.Block_Content p{
+    @apply font-lato text-lg mb-[24px]
+}
+.Block_Content h3:not(:first-child) ~  p{
+    @apply md:ml-[40px] ml-[10px]
+}
+.Block_Content figure{
+    @apply lg:max-w-max md:max-w-[600px] mx-auto max-w-[300px] mt-[66px]
+}
+.Block_Content h2:not(:first-child) ~ h3{
+    @apply md:mt-[100px] mt-[50px]
+}
+
+.Block_Content h2:not(:first-child) + h3{
+    @apply border-yellow-500 mt-0
+}
+
 .sub_title {
     @apply font-mono text-25px md:text-35px font-semibold
 }
 
 .list_sub_items {
     @apply flex flex-col gap-6 font-lato text-lg md:ml-[40px] ml-[10px]
+    
 }
 
 @media only screen and (max-width:991px) {
@@ -38,5 +64,17 @@
 
     .Zest_symbol_white img {
         margin: 0 auto;
+    }
+}
+@media only screen and (max-width:385px){
+    .Footer_Link {
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .Footer_Img{
+        padding: 20px 10px;
+    }
+    .Zest_symbol_white {
+        width: 40px;
     }
 }

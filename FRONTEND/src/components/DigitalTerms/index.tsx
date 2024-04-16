@@ -5,12 +5,13 @@ import { PortableText } from "next-sanity";
 function DigitalTerms({ data }: { data: any }) {
   return (
     <>
-      <div className="DigitalTerms">
-        <h2 className="lg:text-55px md:text-45px text-35px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[80px] md:mb-[124px]">
+      <div className="DigitalTerms main_padding">
+        <div className="main_container">
+        <h2 className="xl:text-55px lg:text-50px md:text-40px text-35px font-mono font-semibold xl:mt-[95px] lg:mt-[75px] mb:mt-[55px] mt-[35px] xl:mb-[120px] lg:mb-[100px] md:mb-[80px] mb-[50px]" >
           {data[0].title}
         </h2>
         {data?.map((item: any, index: number) => (
-          <div className="main_container px-5" key={`${item}_DigitalTerms`}>
+          <div className={`${classes.Portable_text} max-w-[1520px] mx-auto`} key={`${item}_DigitalTerms`}>
             <PortableText value={item.content} />
             {/* 
                     <div className="details main_container_x">
@@ -151,6 +152,7 @@ function DigitalTerms({ data }: { data: any }) {
                     </div>*/}
           </div>
         ))}
+      </div>
       </div>
     </>
   );

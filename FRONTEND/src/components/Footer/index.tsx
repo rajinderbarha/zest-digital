@@ -63,8 +63,8 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
                     alt=""
                   />
                 </div>
-                <div className="border-5 max-w-[1171px] w-full ps-5 shadow-xl shadow-white">
-                  <hr className=" bg-green-500 border-0 h-[1px]" />
+                <div className=" max-w-[1171px] w-full ml-[20px] ">
+                  <hr className={`${classes.horizontal_line} h-0 border-none`} />
                 </div>
               </div>
               <div
@@ -76,7 +76,7 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
                       {footerItm.heading}
                     </h2>
                     {footerItm.list.map((list, index) => (
-                      <div key={`${index}_list`}>
+                      <div key={`${index}_list`} className={`${classes.address}`}>
                         <address className="not-italic">
                           <Link href={list.link}> {list.name}</Link> <br />
                         </address>

@@ -68,6 +68,28 @@ width: 95%;
     max-width: 1200px;
 }
 
+.Marquee_border{
+    position: relative;
+    background-color: transparent;
+}
+.Marquee_border::before,
+.Marquee_border::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(transparent 40%, #BD378B 82%, transparent 40%); /* The glow effect */
+}
+
+.Marquee_border::before {
+    top: 0; /* Aligns the line with the top of the text */
+  }
+  
+  .Marquee_border::after {
+    bottom: 0; /* Aligns the line with the bottom of the text */
+  }
+
 .gri {
     position: absolute;
     top: 0;
@@ -75,7 +97,7 @@ width: 95%;
     left: 0;
     right: 0;
     z-index: 6;
-    background-image: linear-gradient(90deg, #000000, transparent 27%, transparent, #000000);
+    background-image: linear-gradient(90deg, #191516, transparent 27%, transparent, #191516);
 }
 
 @media screen and (max-width:1040px) {

@@ -1,15 +1,40 @@
 .objective_inner{
     padding: 70px 52px;
+
+    @apply rounded-[20px] md:rounded-30px bg-white border border-color-1 md:gap-10 gap-[10px]
+}
+.box_tittle{
+    @apply xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px text-color-1 font-semibold font-mono 
+}
+.box_detail{
+    @apply font-lato text-[15px] sm:text-base lg:text-lg mt-[10px] sm:mt-[20px] md:mt-[25px] lg:mt-[30px] xl:mt-[48px] 
+}
+
+.box_detail div p:not(:first-child){
+    @apply mt-1 md:mt-3 lg:mt-5
+}
+
+@media only screen and (min-width:1023px) and (max-width:1280px){
+    .objective_inner{
+        padding: 60px 48px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .objective_inner{
+        padding: 50px 45px;
+    }
 }
 @media only screen and (max-width:767px){
     .objective_inner{
-
         padding: 30px 35px;
     }
 }
 @media only screen and (max-width:639px){
+    .objective_inner{
+        padding: 20px 25px;
+    }
     .objective{
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

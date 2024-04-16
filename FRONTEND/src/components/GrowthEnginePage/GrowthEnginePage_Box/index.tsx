@@ -10,12 +10,12 @@ import { urlFor } from "../../../../lib/sanity.client";
 const GrowthEnginePage_Box = ({ data }: any) => {
   return (
     <>
-      <div className={`${classes.Our_values} mt-[66px] mb-36`}>
+      <div className={` mt-[66px] mb-36 main_padding`}>
         <div className="main_container ">
-          <div className={`${classes.values_bg}`}>
-            <div className="main_container_x  px-5 relative">
+          <div className={`${classes.growth_box} md:rounded-30px rounded-[20px]  xl:pt-[85px] lg:pt-[80px] md:pt-[65px] sm:pt-[50px] pt-[30px] pb-[1px]`}>
+            <div className="max-w-[1520px] mx-auto  px-5 relative">
               <div>
-                <div className="mb-[172px]">
+                <div className="md:mb-[172px] mb-[100px]">
                   <Box_Title
                     upper={data.upperHeading}
                     below={data.upperSmallLine}
@@ -26,21 +26,21 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                     <div key={`${index}_GrowthEnginePage_Box_nested_1`}>
                       {index % 2 === 0 ? (
                         <div className="Our_values_main  md:max-w-[830px] md:pe-16">
-                          <h3 className="font-semibold md:text-40px mb-5 font-mono text-30px text-color-7  md:w-max">
+                          <h3 className="font-semibold xl:text-40px lg:text-[36px] md:text-[32px] text-[28px] lg:mb-[30px] md:mb-[15px] mb-[8px] font-mono text-color-7  md:w-max">
                             {item.heading}
                           </h3>
                           <p
-                            className={`${classes.Our_values_main_p}  text-white font-medium  font-mono md:text-30px text:25px`}
+                            className={`${classes.Our_values_main_p}  text-white font-medium  font-mono lg:text-30px md:text-25px text-[20px]`}
                           >
                             {item.description}
                           </p>
-                          <p className="text-white font-small ">{item.belowLine}</p>
+                          <p className="text-[#d3d3d3] md:text-base text-sm md:mt-[16px] mt-[10px]">{item.belowLine}</p>
 
                           {item.buttonLink !== null &&
                             item.buttonName !== null && (
                               <Link
                                 href={item.buttonLink}
-                                className="font-mono font-normal text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center mt-7"
+                                className="font-mono font-normal text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center md:mt-[25px] mt-[18px] w-max"
                               >
                                 {item.buttonName}{" "}
                                 <span className="p-1 text-white rounded-full bg-black me-1 text-lg">
@@ -53,21 +53,21 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                         <div
                           className={`${classes.Our_values_main_2} ms-auto text-end md:max-w-[830px] md:ps-16 my-11`}
                         >
-                          <h3 className="font-semibold md:text-40px mb-5 ms-auto font-mono text-30px text-color-7  md:w-max">
+                          <h3 className="font-semibold ms-auto font-mono  xl:text-40px lg:text-[36px] md:text-[32px] text-[28px] lg:mb-[30px] md:mb-[15px] mb-[8px] text-color-7  md:w-max">
                             {item.heading}
                           </h3>
                           <p
-                            className={`${classes.Our_values_main_p} ms-auto  text-white font-medium  font-mono md:text-30px text:25px`}
+                            className={`${classes.Our_values_main_p} ms-auto  text-white font-medium  font-mono lg:text-30px md:text-25px text-[20px]`}
                           >
                             {item.description}
                           </p>
-                          <p className="text-white font-small ">{item.belowLine}</p>
+                          <p className="text-[#d3d3d3] md:text-base text-sm md:mt-[16px] mt-[10px]">{item.belowLine}</p>
 
                           {item.buttonLink !== null &&
                             item.buttonName !== null && (
                               <Link
                                 href={item.buttonLink}
-                                className="font-mono font-normal ms-auto text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center mt-7"
+                                className="font-mono font-normal ms-auto text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center md:mt-[25px] mt-[18px] w-max"
                               >
                                 {item.buttonName}{" "}
                                 <span className="p-1 text-white rounded-full bg-black me-1 text-lg">
@@ -80,19 +80,19 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                     </div>
                   ))}
                 </div>
-                <div className="mt-[100px] md:mt-[185px] md:mb-[235px] mb-[140px] relative ">
+                <div className=" mt-[100px] md:mt-[185px] lg:mb-[320px] md:mb-[280px] mb-[215px] relative ">
                   <Box_Title
                     upper={data.belowHeading}
                     below={data.belowSmallLine}
                   />
 
-                  <div className="absolute right-0  md:max-w-[385px] w-full md:max-h-[385px] h-full max-w-[250px] lg:-bottom-[350px] md:-bottom-[250px]">
+                  <div className="absolute  flex h-max right-0  lg:max-w-[385px] md:max-w-[325px] max-w-[250px]  w-full  mt-[38px]">
                     <Image
                       src={urlFor(data.image).url()}
                       width={330}
                       height={330}
                       alt="img"
-                      className="w-full"
+                      className="w-full "
                     />
                   </div>
                 </div>

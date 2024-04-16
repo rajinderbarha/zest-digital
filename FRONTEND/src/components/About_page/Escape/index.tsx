@@ -6,7 +6,7 @@ function Escape({ data }: { data: AboutType[] }) {
   console.log(data);
 
   return (
-    <div className="Escape_main px-[15px]">
+    <div className="Escape_main main_padding">
       {data?.map((Escapedata, index) => (
         <div className="main_container" key={`${index}_Escape`}>
           <div className={`${classes.Escape}`}>
@@ -18,7 +18,7 @@ function Escape({ data }: { data: AboutType[] }) {
             >
               {Escapedata.escape.description}
             </p>
-            <div className={`border-y border-color-3 md:py-16 py-[40px] -mx-[16px] relative `}>
+            <div className={`${classes.Marquee_border}  border-color-3 md:py-16 py-[40px] -mx-[16px] relative `}>
               <div className={`${classes.gri}`}></div>
               <Marquee className={` gap-16 `}>
                 <div className="flex text-white   max-w-auto gap-16 me-5">
