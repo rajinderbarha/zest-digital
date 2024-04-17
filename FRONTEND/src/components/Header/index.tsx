@@ -136,7 +136,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
 
         return (
 
-          <div className="main_padding">
+          <div className="main_padding" key={index}>
 
           <div key={`header_${item.logo._id}`} className='screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative'>
             <div className='flex items-center gap-68px '>

@@ -19,9 +19,9 @@ import { Careers } from './careers'
 import { LocationObj } from './location'
 import { OurServicesSection } from './ourServicesSection'
 import { SingleService } from './ourServicesSection/singleservice'
-import { Accordion } from './common/accordion'
-import { ServicesAgencyAddress } from './ourServicesSection/agencyAddress'
 import { FAQ } from './common/FAQ'
+import { ServicesAgencyAddress } from './ourServicesSection/agencyAddress'
+// import { FAQ } from './common/FAQ_S'
 import { HomePage } from './Homepage'
 import { GrowthCard } from './common/growthCard'
 
@@ -47,7 +47,7 @@ export const schemaTypes = [
   Careers,
   OurServicesSection,
   SingleService,
-  Accordion,
+  // Accordion,
   ServicesAgencyAddress,
   FAQ,
   HomePage,

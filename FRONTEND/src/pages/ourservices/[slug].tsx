@@ -3,12 +3,12 @@ import Layout from "@/layout";
 import React from "react";
 import { getSingleOurServicesData, getSingleTerms } from "../../../lib/sanity.query";
 import { SingleOurService, TermsOfServiceType } from "../../../lib/interface";
-import SeoService from "@/components/SeoService";
+import Services from "@/components/Services";
 
 function SingleService({singleservicedata,}: { singleservicedata: SingleOurService[];}) {
   // console.log("singleservicedata------------",singleservicedata)
 
-  return  <SeoService data={singleservicedata[0]} />;
+  return  <Services data={singleservicedata[0]} />;
 }
 
 export default SingleService;

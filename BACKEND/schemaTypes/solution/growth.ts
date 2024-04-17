@@ -90,8 +90,8 @@ export const Growth = defineType({
       ],
     },
     {
-      name: 'faq',
-      title: 'FAQ',
+      name: 'globalaccordion',
+      title: 'Accordion',
       type: 'reference',
       to: [{type: 'faq'}],
     },
