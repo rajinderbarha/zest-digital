@@ -21,15 +21,15 @@ const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
 
     return (
         <>
-            <div className={`GrowthMarketingServices_Banner mt-[91px]`}>
-                <div className='main_container px-5'>
+            <div className={`GrowthMarketingServices_Banner xl:mt-[91px] lg:mt-[70px] md:mt-[50px] sm:mt-[30px] mt-[20px] main_padding`}>
+                <div className='main_container'>
                     <div className={`${max_width_string} `} >
                         <div className="md:pe-20 ">
-                            <h2 className='lg:text-55px md:text-40px text-25px font-semibold font-mono pe-20 mb-5 md:mb-7'>{title}</h2>
-                            <p className='font-mono lg:text-30px md:text-25px text-xl mb-5 md:leading-9'>{smallDescription}</p>
+                            <h2 className='xl:text-55px lg:text-50px md:text-40px sm:text-35px text-30px font-semibold font-mono pe-20 xl:mb-[28px] lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[5px]'>{title}</h2>
+                            <p className='font-mono lg:text-30px md:text-25px text-[20px] mb-5 md:leading-9'>{smallDescription}</p>
                             <div className="flex flex-wrap gap-4">
 
-                                <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">{callButtonName}</button>
+                                <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white  border border-color-1 ">{callButtonName}</button>
                                 <button className="font-mono text-base px-21px h-10 bg-white text-color-1 rounded-full  hover:bg-color-1 hover:text-white hover:border-black border border-color-1 ">{resultsButtonName}</button>
                             </div>
                         </div>

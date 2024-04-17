@@ -2,25 +2,26 @@ import Image from 'next/image'
 import React from 'react'
 import Traffic_conversion_icon from '../../assets/images/Traffic_conversion_icon.png'
 import { GoArrowLeft } from "react-icons/go";
+import ProgressBar from '@/common/ProgressBar';
 
 function Resources_Calculater_Step_1({setStep}:any) {
     return (
         <>
-            <div className="Resources_Calculater_Step_1">
-                <div className="sm:px-10 px-3">
-                    <div className="Resources_Calculater_Step_1 popup_conatiner pt-[29px] pb-[66px] relative bg-white">
-                        <div className="progrees_bar mb-[10px]">
-
+            <div className="Resources_Calculater_Step_1 mt-[0px]">
+                <div className="">
+                    <div className="Resources_Calculater_Step_1 popup_conatiner md:pt-[29px] pt-[20px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
+                        <div className="progrees_bar xl:mb-[80px] lg:mb-[60px] md:mb-[40px] sm:mb-[30px] mb-[20px] ">
+                        <ProgressBar value={20} />
                         </div>
                         <div className="trafic_image ">
-                            <Image src={Traffic_conversion_icon} alt='' className='mx-auto' />
+                            <Image src={Traffic_conversion_icon} alt='' className='mx-auto md:max-w-[206px] sm:max-w-[150px] max-w-[100px]' />
                         </div>
-                        <div className=" text-center my-[10px] max-w-[1280px] mx-auto">
-                            <h2 className='font-mono text-30px md:text-40px lg:text-45px font-semibold'>Set Your Traffic & Conversion Goals</h2>
-                            <p className="font-mono text-30px font-normal text-center px-10 my-[5px]">Use our Growth Calculator to forecast how many visitors and what conversion rate you need to achieve, to hit your revenue goals.</p>
+                        <div className=" text-center xl:mt-[38px] lg:mt-[28px] md:mt-[18px] sm:mt-[15px] mt-[8px] max-w-[1280px] mx-auto">
+                            <h2 className='font-mono xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px font-semibold'>Set Your Traffic & Conversion Goals</h2>
+                            <p className="font-mono lg:text-30px md:text-25px text-[20px] font-normal text-center px-10 xl:my-[53px] lg:my-[45px] md:my-[35px] sm:my-[20px] my-[15px]">Use our Growth Calculator to forecast how many visitors and what conversion rate you need to achieve, to hit your revenue goals.</p>
                         </div>
-                        <div className="button text-center mb-[2px]">
-                            <button className='bg-color-1 font-mono text-base px-[40px] py-[10px] text-white rounded-full' type="button" onClick={()=>setStep(2)}>Start</button>
+                        <div className="button text-center xl:mb-[27px] lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[5px]">
+                            <button className='bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] border border-color-1 text-white rounded-full hover:bg-white hover:text-color-1' type="button" onClick={()=>setStep(2)}>Start</button>
                         </div>
                         <div className=" max-w-max mx-auto w-max ">
                             <button className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1" type="button" onClick={()=>setStep(0)}><GoArrowLeft /> Back to zestdigital.com</button>
