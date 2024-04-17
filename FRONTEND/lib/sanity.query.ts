@@ -684,12 +684,13 @@ export async function getSingleOurServicesData(slug:string) {
     },
     "globalaccordion": globalaccordion-> {
       "accordiongroup": accordiongroup {
-        "heading": heading,
-        "card": card[] {
+        "heading_acc": heading_acc,
+        "card_acc": card_acc[] {
           "question": question,
-          "answer": answer
+          content,
         },
-        "belowbuttonName": belowbuttonName
+        "belowbtnName_acc": belowbtnName_acc,
+        "belowbtnLink_acc": belowbtnLink_acc
       }
     },
     "Services_Quotes": Services_Quotes[] {
@@ -851,13 +852,15 @@ export async function getGrowthData(slug: string) {
             belowSmallLine,
             image
         },
-        "faq":faq->{
-          heading,
-          buttonName,
-          buttonLink,
-          accordian[]{
-            heading,
-            description
+        "globalaccordion": globalaccordion-> {
+          "accordiongroup": accordiongroup {
+            "heading_acc": heading_acc,
+            "card_acc": card_acc[] {
+              "question": question,
+              content,
+            },
+            "belowbtnName_acc": belowbtnName_acc,
+            "belowbtnLink_acc": belowbtnLink_acc
           }
         },
         "banner": banner-> {

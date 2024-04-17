@@ -16,7 +16,7 @@ const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
 
     const {button:{callButtonName,resultsButtonName}} = props
 
-    console.log(props.max_width);
+    // console.log(props.max_width);
     const max_width_string = `max-w-[${max_width}] `;
 
     return (

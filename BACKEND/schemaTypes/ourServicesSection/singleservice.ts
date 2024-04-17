@@ -161,7 +161,7 @@ export const SingleService = defineType({
   name: 'globalaccordion',
   title: 'Accordion',
   type: 'reference',
-  to: [{ type: 'accordion' }]
+  to: [{ type: 'faq' }]
 
 },
 
