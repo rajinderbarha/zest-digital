@@ -12,6 +12,7 @@
   }
   .accordion_item {
     border: 1px solid #000;
+    /* border-radius: 30px; */
   }
   
   .accordion_title {
@@ -23,6 +24,7 @@
     align-items: center;
     transition: background-color 0.3s ease;
     width: 100%;
+    /* border-radius: 30px; */
     border: none;
     @apply md:rounded-[28px] rounded-[18px]
   }
@@ -64,31 +66,39 @@ margin-bottom: 10px;
     transition: max-height 0.3s ease;
     background-color: transparent;
     width:inherit;
+    /* border-radius: 30px; */
   }
   
   .content_inner {
   }
   
+  /* Clear the last item's bottom border */
   .accordion_item:last-child {
+    /* border-bottom: none; */
   }
   
   .arrow_img {
+    /* border: 1px solid white; */
     width: 60px;
   }
   
   @media only screen and (max-width: 950px) {
 
     .arrow_img {
+        /* border: 1px solid white; */
         width: 50px;
       }
   }  
   @media only screen and (max-width: 767px) {
     .arrow_img {
+      /* border: 1px solid white; */
       width: 42px;
+      /* height: 50px!important; */
     }
   }
   @media only screen and (max-width: 639px) {
     .arrow_img {
+        /* border: 1px solid white; */
         width: 37px;
       }
   }

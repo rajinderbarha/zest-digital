@@ -14,24 +14,25 @@ const Services = ({ data }: { data: OurServicesSection[]}) => {
     return (
         <>
             {/* <div className={`${classes.bg_image} mx-auto max-w-[1720px] w-full px-5 my-10 font-mono rounded-30px`}> */}
-            <div className="mx-auto max-w-[1720px] w-full px-5 my-10 md:mt-36 mt-20">
+            <div className="main_padding">
+            <div className="main_container ">
                 {data?.map((item,index)=> (
                     
-                    <div key={`${index}_servicesSection`} className={`${classes.bg_image} bg-black rounded-30px lg:pt-[50px] font-mono flex md:flex-row flex-col `}>
+                    <div key={`${index}_servicesSection`} className={`${classes.bg_image}  xl:pt-[88px] lg:pt-[65px] md:pt-[45px] sm:pt-[30px] pt-[25px] xl:px-[100px] lg:px-[80px] md:px-[60px] sm:px-[40px] px-[30px] xl:pb-[81px] lg:pb-[60px] md:pb-[40px] sm:pb-[25px] pb-[20px] bg-black rounded-[20px] md:rounded-30px font-mono flex md:flex-row flex-col `}>
                    
-                    <div className="p-10 lg:px-20 2xl:px-100px md:px-11 px-8 max-768:px-10 max-1350:px-16 lg:pb-[100px] xl:pb-[218px] md:w-[654px] w-max  pb-16">
-                        <h2 className=' text-2xl md:text-3xl lg:text-[45px] text-white font-semibold mb-6'>{item.heading}</h2>
-                        <div className="  flex gap-5 flex-col text-color-6">
+                    <div className="md:w-[654px] w-max  xl:pb-[218px] lg:pb-[160px] md:pb-[130px] pb-[50px]">
+                        <h2 className=' xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[28px] text-white font-semibold xl:mb-[25px] lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[8px]'>{item.heading}</h2>
+                        <div className="  flex xl:gap-[30px] lg:gap-[20px] md:gap-[15px] sm:gap-[10px] gap-[5px] flex-col text-color-6">
                             {item.cards.map((cardItem,index)=>(
 
                            
-                            <ul key={`${index}_servicesList`}>
-                                <li > <Link href={`/ourservices/${cardItem.slug}`} className="border-b border-color-6 mb-7  w-max text-md lg:text-lg flex items-center gap-1">{cardItem.title}<GoArrowRight /></Link></li>
+                            <ul key={`${index}_servicesList`} >
+                                <li > <Link href={`/ourservices/${cardItem.slug}`} className="border-b border-color-6  w-max text-md lg:text-lg flex items-center gap-1">{cardItem.title}<GoArrowRight /></Link></li>
                             </ul>
                              ))}
                         </div>
                     </div>
-                    <div className="flex  xl:-mt-36 lg:-mt-20 -mt-10">
+                    <div className="md:flex hidden xl:-mt-[165px] lg:-mt-[119px] -mt-[85px]">
                         <div className="  h-max self-end">
 
                             <Image src={urlFor(item.images.vertical_bar).url()} width={342} height={342} alt="" className=' ' />
@@ -48,7 +49,7 @@ const Services = ({ data }: { data: OurServicesSection[]}) => {
                 </div>
                  ))}
             </div>
-
+            </div>
         </>
     )
 }

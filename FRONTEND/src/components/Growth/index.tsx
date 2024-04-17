@@ -4,56 +4,58 @@ import arrow from '../../assets/images/arrow.svg'
 import Growth_engine from '@/common/Growth_engine'
 import classes from './growth.module.css'
 import { urlFor } from '../../../lib/sanity.client'
-const Growth = ({card}:any) => {
-    const{heading,horizontalbars} = card;
-// console.log("TransformResults===============",card)
+const Growth = ({ card }: any) => {
+  const { heading, horizontalbars } = card;
+  // console.log("TransformResults===============",card)
 
-let outerSpan: string ;
-let innerSpan: string;
-    return (
-        <>
-            <div className="text-white mx-auto max-w-[1720px] w-full px-5 my-10">
-                <div className={`${classes.growth_result} bg-black rounded-30px font-mono pt-[88px] pb-96`}>
+  let outerSpan: string;
+  let innerSpan: string;
+  return (
+    <>
+      <div className="main_padding lg:my-[47px] md:my-[35px] sm:my-[25px] my-[15px] ">
+        <div className="text-white main_container ">
+          <div className={`${classes.growth_result} bg-black rounded-30px font-mono xl:pt-[88px] lg:pt-[68px] md:pt-[48px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}>
 
-                    <div className="flex gap-4 items-center mx-auto md:w-max w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row">
-                        <h2 className='min-1350:text-45px md:text-4xl md:max-970:text-[29px] sm:text-2xl text-xl'>{heading}</h2>
-                        <div className=" ">
-                            {/* <h2 className='min-1350:text-40px md:text-3xl text-color-4'>mapper</h2> */}
-                            {card.switcher.map((item:any,index:any)=>(
-                                    
-                            <h2 key={index} className='min-1350:text-45px md:text-4xl md:max-970:text-[29px] sm:text-2xl text-xl text-color-3'>{item}</h2>
-                            ))}
-                            {/* <h2 className='min-1350:text-40px md:text-3xl text-color-4'>tracker</h2> */}
-                        </div>
-                    </div>
+            <div className="flex gap-4 items-center mx-auto md:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[114px] lg:pb-[95px] md:pb-[70px] sm:pb-[50px] pb-[35px]">
+              <h2 className='xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px'>{heading}</h2>
+              <div className=" ">
+                {/* <h2 className='min-1350:text-40px md:text-3xl text-color-4'>mapper</h2> */}
+                {card.switcher.map((item: any, index: any) => (
 
+                  <h2 key={index} className='xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px  text-color-3'>{item}</h2>
+                ))}
+                {/* <h2 className='min-1350:text-40px md:text-3xl text-color-4'>tracker</h2> */}
+              </div>
+            </div>
 
-                        {horizontalbars.map(({numHeading,desc,title}:any,index:any)=>{
-                                if(index == 0 ){
-                                    outerSpan = "md:col-span-6 ";
-                                    innerSpan = "md:col-span-6"
-                                }
-                                else if(index == 1){
-                                    outerSpan = "md:col-span-7 ";
-                                    innerSpan = "md:col-span-5"  
-                                }
-                                else if(index == 2){
-                                    outerSpan = "md:col-span-8 ";
-                                    innerSpan = "md:col-span-4"  
-                                }
-                         return(  <div key={index} className="grid gap-10 pe-5 py-28">
-                        <div className="grid md:grid-cols-12 gap-6">
-                            <div className={`${outerSpan} p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 md:pe-6 rounded-r-[30px] max-970:rounded-r-[20px]`}>
-                                <div className="font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px md:text-[25px] max-970:text-[18px] md:max-800:text-[17px]">{numHeading}</div>
-                                <div className="min-1350:w-auto md:w-10 max-970:w-9"><Image src={arrow} alt="" /></div>
-                            </div>
-                            <div className={`${innerSpan} md:max-w-[442px] self-center md:self-center md:justify-self-start sm:justify-self-end sm:max-w-[550px] md:text-start text-end`}>
-                                <h3 className='text-[30px] md:max-970:text-[23px] sm:text-[35px]'>{title}</h3>
-                                <p className='text-base sm:text-lg md:max-970:text-[14px] md:max-970:leading-4 leading-5'>{desc}</p>
-                            </div>
-                        </div>
+<div className={`${classes.growth_grid}`}>
+            {horizontalbars.map(({ numHeading, desc, title }: any, index: any) => {
+              if (index == 0) {
+                outerSpan = "md:col-span-6 ";
+                innerSpan = "md:col-span-6"
+              }
+              else if (index == 1) {
+                outerSpan = "md:col-span-7 ";
+                innerSpan = "md:col-span-5"
+              }
+              else if (index == 2) {
+                outerSpan = "md:col-span-8 ";
+                innerSpan = "md:col-span-4"
+              }
+              return (
+              <div key={index} className="grid gap-10 pe-5">
+                <div className="grid md:grid-cols-12 gap-[5px] md:gap-6 ">
+                  <div className={`${outerSpan} ${classes.box_size} p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 md:p-[35px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}>
+                    <div className="font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px md:text-[25px] md:max-970:text-[18px] md:max-800:text-[17px] sm:text-25px text-[20px]">{numHeading}</div>
+                    <div className="min-1350:w-auto md:w-10 max-970:w-9"><Image src={arrow} alt="" /></div>
+                  </div>
+                  <div className={`${innerSpan} ps-[20px] md:ps-0 md:max-w-[442px] self-center md:self-center md:justify-self-start  sm:max-w-[550px] md:text-start  justify-self-start`}>
+                    <h3 className='text-[30px] md:max-970:text-[23px] '>{title}</h3>
+                    <p className='text-base  md:max-970:text-[14px] md:max-970:leading-4 leading-5'>{desc}</p>
+                  </div>
+                </div>
 
-                        {/* <div className="grid md:grid-cols-12 gap-6">
+                {/* <div className="grid md:grid-cols-12 gap-6">
                             <div className="md:col-span-7 p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 md:pe-6 rounded-r-[30px] max-970:rounded-r-[20px]">
                                 <div className="font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px md:text-[25px] max-970:text-[18px] md:max-800:text-[17px]">+ £20m new revenue</div>
                                 <div className="min-1350:w-auto md:w-10 max-970:w-9"><Image src={arrow} alt="" /></div>
@@ -74,13 +76,14 @@ let innerSpan: string;
                                 <p className='text-base sm:text-lg md:max-970:text-[14px] md:max-970:leading-4 leading-5'>Best SEO Campaign finalist at the UK Digital Growth Awards, for this large supplier</p>
                             </div>
                         </div>    */}
-                    </div>
-                    )
-})}
-                    
-                </div>
+              </div>
+              )
+            })}
 
-{/* 
+          </div>
+          </div>
+
+          {/* 
                 <div className={`${classes.growth_engine_box} mx-auto max-w-[1720px] w-full px-20 my-10 font-mono grid gap-10 -mt-64 relative`}>
                      <Growth_engine title="Growth Engine" has_image={false} shadow_right={false} btn_title="All inclusive growth marketing" desc="The fastest and most complete way to generate new leads and sales to grow your business. All-inclusive growth marketing covering; PPC, SEO, content, and more." /> 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
@@ -97,90 +100,92 @@ let innerSpan: string;
 
 
 
-
-<div
-        className={`max-w-[1345px] font-mono  mx-auto grid gap-10 -mt-64 px-10`}
-      >
-        <Growth_engine
-          has_image={false}
-          shadow_right={false}
-          props={{
-            title: card.growthcard[0].card.heading,
-            description: card.growthcard[0].card.description,
-            buttonName:card.growthcard[0].card.buttonName,
-            // buttonLink: `/solutions/${card[0].slug.current}`,
-            buttonLink: `/solutions/${card.growthcard[0].slug}`,
-            image: urlFor(card.growthcard[0].card.image).url(),
-          }}
-        />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
-          <Growth_engine
-            has_image={false}
-            shadow_right={true}
-            props={{
-                title: card.growthcard[1].card.heading,
-                description: card.growthcard[1].card.description,
-                buttonName:card.growthcard[1].card.buttonName,
+<div className="md:px-10 sm:px-[35px] px-[15px]">
+          <div
+            className={`max-w-[1345px] font-mono  mx-auto grid gap-10 lg:-mt-64 md:-mt-[200px] -mt-[150px] `}
+          >
+            <Growth_engine
+              has_image={false}
+              shadow_right={false}
+              props={{
+                title: card.growthcard[0].card.heading,
+                description: card.growthcard[0].card.description,
+                buttonName: card.growthcard[0].card.buttonName,
                 // buttonLink: `/solutions/${card[0].slug.current}`,
-                buttonLink: `/solutions/${card.growthcard[1].slug}`,
-                image: urlFor(card.growthcard[1].card.image).url(),
+                buttonLink: `/solutions/${card.growthcard[0].slug}`,
+                image: urlFor(card.growthcard[0].card.image).url(),
               }}
-          />
+            />
 
-          <Growth_engine
-            has_image={false}
-            shadow_right={false}
-            props={{
-                title: card.growthcard[2].card.heading,
-                description: card.growthcard[2].card.description,
-                buttonName:card.growthcard[2].card.buttonName,
-                // buttonLink: `/solutions/${card[0].slug.current}`,
-                buttonLink: `/solutions/${card.growthcard[2].slug}`,
-                image: urlFor(card.growthcard[2].card.image).url(),
-              }}
-          />
-        </div>
-
-        <Growth_engine
-          has_image={true}
-          shadow_right={false}
-          props={{
-            title: card.growthcard[3].card.heading,
-            description: card.growthcard[3].card.description,
-            buttonName:card.growthcard[3].card.buttonName,
-            // buttonLink: `/solutions/${card[0].slug.current}`,
-            buttonLink: `/solutions/${card.growthcard[3].slug}`,
-            image: urlFor(card.growthcard[3].card.image).url(),
-          }}
-        />
-        {card.length > 4 && card.slice(3).map((item: any, index: number) => {
-          return (
-            <div key={index}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
               <Growth_engine
-                has_image={true}
+                has_image={false}
+                shadow_right={true}
+                props={{
+                  title: card.growthcard[1].card.heading,
+                  description: card.growthcard[1].card.description,
+                  buttonName: card.growthcard[1].card.buttonName,
+                  // buttonLink: `/solutions/${card[0].slug.current}`,
+                  buttonLink: `/solutions/${card.growthcard[1].slug}`,
+                  image: urlFor(card.growthcard[1].card.image).url(),
+                }}
+              />
+
+              <Growth_engine
+                has_image={false}
                 shadow_right={false}
                 props={{
-                  title: item.card.heading,
-                  description: item.card.description,
-                  buttonName: item.card.buttonName,
-                  buttonLink: `/solutions/${item.slug.current}`,
-                // buttonLink: `/solutions/${card.growthcard[0].slug}`,         // added by ss
-                  image: urlFor(item.card.image).url(),
+                  title: card.growthcard[2].card.heading,
+                  description: card.growthcard[2].card.description,
+                  buttonName: card.growthcard[2].card.buttonName,
+                  // buttonLink: `/solutions/${card[0].slug.current}`,
+                  buttonLink: `/solutions/${card.growthcard[2].slug}`,
+                  image: urlFor(card.growthcard[2].card.image).url(),
                 }}
               />
             </div>
-          );
-        })}
+
+            <Growth_engine
+              has_image={true}
+              shadow_right={false}
+              props={{
+                title: card.growthcard[3].card.heading,
+                description: card.growthcard[3].card.description,
+                buttonName: card.growthcard[3].card.buttonName,
+                // buttonLink: `/solutions/${card[0].slug.current}`,
+                buttonLink: `/solutions/${card.growthcard[3].slug}`,
+                image: urlFor(card.growthcard[3].card.image).url(),
+              }}
+            />
+            {card.length > 4 && card.slice(3).map((item: any, index: number) => {
+              return (
+                <div key={index}>
+                  <Growth_engine
+                    has_image={true}
+                    shadow_right={false}
+                    props={{
+                      title: item.card.heading,
+                      description: item.card.description,
+                      buttonName: item.card.buttonName,
+                      buttonLink: `/solutions/${item.slug.current}`,
+                      // buttonLink: `/solutions/${card.growthcard[0].slug}`,         // added by ss
+                      image: urlFor(item.card.image).url(),
+                    }}
+                  />
+                </div>
+              );
+            })}
+          </div>
+          </div>
+
+
+
+
+
+        </div>
       </div>
-
-
-
-
-                
-            </div>
-        </>
-    )
+    </>
+  )
 }
 
 

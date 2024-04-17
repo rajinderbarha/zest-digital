@@ -7,6 +7,6 @@
 
 @media only screen and (max-width:640px) {
     .bg_image {
-        padding: 0px;
+        /* padding: 0px; */
     }
 }

@@ -4,20 +4,35 @@
     background-position: top center;
     background-size: cover;
     background-color: black;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 
     border: 1px solid transparent;
 }
 
 .single_container {
-    margin-top: -100px;
+    margin-top: -110px;
     border: 1px solid transparent;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1024px) {
+    .single_container {
+        margin-top: -80px;
+    }
     .SingleIntro {
 
-        margin-top: 80px;
+        /* margin-top: 150px; */
+
+    }
+}
+@media only screen and (max-width:767px) {
+    .single_container {
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width:639px) {
+    .SingleIntro {
+
+        margin-top: 40px;
 
     }
 }

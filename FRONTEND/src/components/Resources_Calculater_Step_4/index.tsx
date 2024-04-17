@@ -5,26 +5,27 @@ import popup_question_mark from '../../assets/images/popup_question_mark.svg'
 import popup_percantage from '../../assets/images/popup_percantage.svg'
 import popup_euro from '../../assets/images/popup_euro.svg'
 import { GoArrowLeft } from "react-icons/go";
+import ProgressBar from '@/common/ProgressBar'
 function Resources_Calculater_Step_4({setStep}:any) {
     return (
         <>
             <div className="Resources_Calculater_Step_3">
-                <div className="sm:px-10 px-5">
-                    <div className="Resources_Calculater_Step_3 popup_conatiner pt-[10px] pb-[10px]  relative bg-white">
-                        <div className="progrees_bar mb-[10px] md:mb-[20px]">
-
+                <div className="">
+                <div className="Resources_Calculater_Step_5 popup_conatiner md:pt-[29px] pt-[20px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
+                        <div className="progrees_bar xl:mb-[140px] lg:mb-[110px] md:mb-[80px] sm:mb-[70px] mb-[60px] ">
+                        <ProgressBar value={80} />
                         </div>
-                        <h2 className="text-center font-mono text-30px md:text-40px lg:text-45px font-semibold mb-[10px]">Input your data (use the ‘?’ for help)</h2>
-                        <div className="form_details  max-w-[640px] md:px-10 border mx-auto grid gap-5 md:pb-[10px] pb-[10px]">
+                        <h2 className="text-center font-mono xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[25px] font-semibold md:mb-[30px] sm:mb-[20px] mb-[10px]">Input your data (use the ‘?’ for help)</h2>
+                        <div className="form_details  max-w-[640px] md:px-10  mx-auto grid gap-5 md:pb-[97px] sm:pb-[60px] pb-[30px]">
                             <div className="flex relative text-center  mx-auto   justify-items-end  max-w-max">
-                                <div className="md:flex md:flex-row border max-w-max  items-center gap-x-[10px]">
+                                <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
                                     <label htmlFor="monthly_sessions" className='font-mono font-semibold text-[18px] text-color-1'>Average monthly sessions:</label>
                                     <div className="flex items-center gap-2">
 
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='1000' className='py-[14px] px-[22px] rounded-[10px] md:w-[300px] border border-color-1' />
 
                                         <div className="max-w-[30px] w-full">
-                                            <Image src={popup_person} alt='' className='max-w-[30px]] w-full' />
+                                            <Image src={popup_person} alt='' className='max-w-[30px] w-full' />
                                         </div>
                                     </div>
                                 </div>
@@ -34,14 +35,14 @@ function Resources_Calculater_Step_4({setStep}:any) {
 
                             </div>
                             <div className="flex  relative text-center mx-auto max-w-max">
-                                <div className="md:flex md:flex-row border max-w-max  items-center gap-x-[10px]">
+                                <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
                                     <label htmlFor="monthly_sessions" className='font-mono font-semibold text-[18px] text-color-1'>Average conversion rate:</label>
                                     <div className="flex items-center gap-2">
 
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='3' className='py-[14px] px-[22px] rounded-[10px] md:w-[300px] border border-color-1' />
 
                                         <div className="max-w-[30px] w-full">
-                                            <Image src={popup_person} alt='' className='max-w-[30px]] w-full' />
+                                            <Image src={popup_person} alt='' className='max-w-[30px] w-full' />
                                         </div>
                                     </div>
                                 </div>
@@ -51,14 +52,14 @@ function Resources_Calculater_Step_4({setStep}:any) {
 
                             </div>
                             <div className="flex  relative text-center mx-auto max-w-max">
-                                <div className="md:flex md:flex-row border max-w-max  items-center gap-x-[10px]">
+                                <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
                                     <label htmlFor="monthly_sessions" className='font-mono font-semibold text-[18px] text-color-1'>Average order value:</label>
                                     <div className="flex items-center gap-2">
 
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='5000' className='py-[14px] px-[22px] rounded-[10px] md:w-[300px] border border-color-1' />
 
                                         <div className="max-w-[30px] w-full">
-                                            <Image src={popup_person} alt='' className='max-w-[30px]] w-full' />
+                                            <Image src={popup_person} alt='' className='max-w-[30px] w-full' />
                                         </div>
                                     </div>
                                 </div>
@@ -68,14 +69,14 @@ function Resources_Calculater_Step_4({setStep}:any) {
 
                             </div>
                             <div className="flex  relative text-center mx-auto max-w-max">
-                                <div className="md:flex md:flex-row border max-w-max  items-center gap-x-[10px]">
+                                <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
                                     <label htmlFor="monthly_sessions" className='font-mono font-semibold text-[18px] text-color-1'>Average order value:</label>
                                     <div className="flex items-center gap-2">
 
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='40' className='py-[14px] px-[22px] rounded-[10px] md:w-[300px] border border-color-1' />
 
                                         <div className="max-w-[30px] w-full">
-                                            <Image src={popup_person} alt='' className='max-w-[30px]] w-full' />
+                                            <Image src={popup_person} alt='' className='max-w-[30px] w-full' />
                                         </div>
                                     </div>
                                 </div>
