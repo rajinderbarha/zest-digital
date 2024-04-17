@@ -8,7 +8,9 @@ import { urlFor } from '../../../lib/sanity.client'
 function Climate_action({ climate_actionImg, earth_img, smallDescription }: ClimateAction) {
   return (
     <>
-      <div className="mx-auto max-w-[1720px] w-full px-5 my-10 mt-[74px] mb-[110px]">
+    <div className="main_padding mt-[74px] mb-[110px]">
+
+      <div className="main_container ">
         <div
           className={` mx-auto md:ps-14 px-10 md:pe-7  md:py-[70px] py-[60px] rounded-30px shadow-compo border border-black font-mono bg-white text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}
         >
@@ -20,7 +22,7 @@ function Climate_action({ climate_actionImg, earth_img, smallDescription }: Clim
                 height={105}
                 alt=""
                 className="w-full"
-              />
+                />
             </div>
             <div className=" w-[80px] sm:w-[150px]">
               <Image
@@ -39,6 +41,7 @@ function Climate_action({ climate_actionImg, earth_img, smallDescription }: Clim
           </div>
         </div>
       </div>
+                </div>
     </>
   )
 }

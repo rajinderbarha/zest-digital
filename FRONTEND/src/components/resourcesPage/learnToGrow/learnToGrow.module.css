@@ -4,7 +4,7 @@
     background-position: top center;
     background-size: cover;
     background-color: black;
-    margin-top: 200px;
+    margin-top: 70px;
   
 }
 .single_container{
@@ -14,7 +14,18 @@
     right: 0;
     top:-150px;
 }
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .grow_img{
+        top:-120px;
+    }
+    .SingleIntro{
+        margin-top: 90px;
+    }
+}
 @media only screen and (max-width:767px){
+    .SingleIntro{
+        margin-top: 80px;
+    }
     .grow_img{
         top:-100px;
     }

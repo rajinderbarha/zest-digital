@@ -5,7 +5,7 @@ import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../lib/sanity.client";
 
-interface GrowthEngineProps {
+export interface GrowthEngineProps {
   props: {
     title: string;
     description: string;
@@ -26,9 +26,9 @@ const Growth_engine = ({
     <>
       {has_image ? (
         <div
-          className={`${classes.growth_engine} ${
-            shadow_right ? ` shadow-compo1 ` : `shadow-compo`
-          } grid sm:grid-cols-5 max-w-[1345px] mx-auto ps-14 pe-7 py-[70px] rounded-30px  border border-black  bg-white text-color-1 relative`}
+          className={`${classes.growth_engine}  ${
+            shadow_right ? ` shadow-blue-right ` : ` shadow-dark-pink-left`
+          } grid sm:grid-cols-5 max-w-[1345px] mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] md:rounded-30px rounded-[20px] border border-black  bg-white text-color-1 relative`}
         >
           <div className="col-span-3">
             <h2
@@ -40,9 +40,9 @@ const Growth_engine = ({
               {description}
             </p>
             <Link href={buttonLink}>
-              <button className="bg-color-1 rounded-full text-white text-base py-[7px] ps-5 flex gap-2 items-center">
+              <button className="bg-color-1 rounded-full text-white text-base  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[5px] md:pe-0 w-fit flex gap-2 items-center">
                 {buttonName}{" "}
-                <span className="p-1 bg-white rounded-full text-black me-2 text-lg">
+                <span className="md:p-1 p-[2px] bg-white rounded-full text-black me-0 md:me-[6px] text-lg">
                   <GoArrowRight />
                 </span>
               </button>
@@ -55,8 +55,8 @@ const Growth_engine = ({
               <Image
                 src={urlFor(image).url()}
                 alt="growth img"
-                width={300}
-                height={300}
+                width={524}
+                height={524}
               />
             )}
           </div>
@@ -64,24 +64,24 @@ const Growth_engine = ({
       ) : (
         <div
           className={`${classes.growth_engine} ${
-            shadow_right ? ` shadow-compo1 ` : `shadow-compo`
-          } max-w-[1345px] mx-auto ps-14 pe-7 py-[70px] rounded-30px border border-black  bg-white text-color-1`}
+            shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right`
+          } max-w-[1345px] mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] md:rounded-30px rounded-[20px]  border border-black  bg-white text-color-1`}
         >
           <h2
             className={`${classes.growth_engine_title} text-40px font-semibold `}
           >
-            {title}
+            {title} 
           </h2>
-          <p className={`${classes.growth_engine_desc} text-3xl my-5 `}>
+          <p className={`${classes.growth_engine_desc} text-3xl my-5 xl:mt-[50px] lg:mt-[40px] md:mt-[30px]`}>
             {description}
           </p>
           <Link href={buttonLink}>
             <button
-              className="bg-color-1 rounded-full text-white text-base py-[7px] ps-5 flex gap-2 items-center"
+              className="bg-color-1 rounded-full text-white text-base md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[5px] md:pe-0 w-fit flex gap-2 items-center"
               type="button"
             >
               {buttonName}{" "}
-              <span className="p-1 bg-white rounded-full text-black me-2 text-lg">
+              <span className="md:p-1 p-[2px] bg-white rounded-full text-black me-0 md:me-[6px] text-lg">
                 <GoArrowRight />
               </span>
             </button>

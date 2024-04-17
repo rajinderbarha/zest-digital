@@ -5,17 +5,17 @@ import popup_question_mark from '../../assets/images/popup_question_mark.svg'
 import popup_percantage from '../../assets/images/popup_percantage.svg'
 import popup_euro from '../../assets/images/popup_euro.svg'
 import { GoArrowLeft } from "react-icons/go";
-function Resources_Calculater_Step_4() {
+function Resources_Calculater_Step_4({setStep}:any) {
     return (
         <>
             <div className="Resources_Calculater_Step_3">
                 <div className="sm:px-10 px-5">
-                    <div className="Resources_Calculater_Step_3 popup_conatiner pt-[29px] pb-[66px]  relative">
-                        <div className="progrees_bar mb-[80px] md:mb-[140px]">
+                    <div className="Resources_Calculater_Step_3 popup_conatiner pt-[10px] pb-[10px]  relative bg-white">
+                        <div className="progrees_bar mb-[10px] md:mb-[20px]">
 
                         </div>
-                        <h2 className="text-center font-mono text-30px md:text-40px lg:text-45px font-semibold mb-[30px]">Input your data (use the ‘?’ for help)</h2>
-                        <div className="form_details  max-w-[640px] md:px-10 border mx-auto grid gap-5 md:pb-[97px] pb-[30px]">
+                        <h2 className="text-center font-mono text-30px md:text-40px lg:text-45px font-semibold mb-[10px]">Input your data (use the ‘?’ for help)</h2>
+                        <div className="form_details  max-w-[640px] md:px-10 border mx-auto grid gap-5 md:pb-[10px] pb-[10px]">
                             <div className="flex relative text-center  mx-auto   justify-items-end  max-w-max">
                                 <div className="md:flex md:flex-row border max-w-max  items-center gap-x-[10px]">
                                     <label htmlFor="monthly_sessions" className='font-mono font-semibold text-[18px] text-color-1'>Average monthly sessions:</label>
@@ -87,10 +87,10 @@ function Resources_Calculater_Step_4() {
 
                         </div>
                         <div className="button text-center mb-[27px]">
-                            <button className='bg-color-1 font-mono text-base px-[40px] py-[10px] text-white rounded-full'>Next</button>
+                            <button className='bg-color-1 font-mono text-base px-[40px] py-[10px] text-white rounded-full' type='button' onClick={()=>setStep(5)}>Next</button>
                         </div>
                         <div className=" max-w-max mx-auto w-max ">
-                            <a href="" className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1"><GoArrowLeft /> Back </a>
+                            <button className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1" type='button' onClick={()=>setStep(3)}><GoArrowLeft /> Back </button>
                         </div>
                     </div>
                 </div>

@@ -9,22 +9,22 @@ function objective({ card }: any) {
       {card.map((item: any, index: number) => {
         return (
           <div
-            className={`${classes.objective} max-w-[1545px] mx-auto px-12`}
+            className={`${classes.objective} max-w-[1545px] mx-auto lg:px-12 px-[20px]`}
             key={index}
           >
             {index % 2 === 0 ? (
               <div
-                className={`grid md:grid-cols-2 items-center rounded-30px bg-white ${classes.objective_inner} border border-color-1 shadow-compo shadow-compo gap-10`}
+                className={`grid md:grid-cols-2 rounded-[20px] md:rounded-30px bg-white ${classes.objective_inner} border border-color-1 shadow-blue-right md:gap-10 gap-[10px]`}
               >
                 <div className="col-span-1">
-                  <h2 className="text-30px md:text-35px lg:text-45px text-color-1 font-semibold font-mono ">
+                  <h2 className={`${classes.box_tittle}`}>
                     {item.heading}
                   </h2>
-                  <div className="font-lato md:text-md  lg:text-lg mt-[20px] md:mt-[25px] lg:mt-[48px] ">
+                  <div className={`${classes.box_detail}`}>
                     <BlockContent blocks={item.description} />
                   </div>
                 </div>
-                <div className="col-span-1">
+                <div className="col-span-1 self-center">
                   <Image
                     src={urlFor(item.image).url()}
                     alt="case study"
@@ -36,9 +36,9 @@ function objective({ card }: any) {
               </div>
             ) : (
               <div
-                className={`grid md:grid-cols-2 items-center rounded-30px bg-white ${classes.objective_inner} border border-color-1 shadow-compo1 gap-10`}
+                className={`grid md:grid-cols-2 ${classes.objective_inner} shadow-dark-pink-left `}
               >
-                <div className="col-span-1   ">
+                <div className="col-span-1 order-2 md:order-1 self-center">
                   <Image
                     src={urlFor(item.image).url()}
                     alt="case study"
@@ -47,11 +47,11 @@ function objective({ card }: any) {
                     className="ms-auto"
                   />
                 </div>
-                <div className="col-span-1 text-right">
-                  <h2 className="text-30px md:text-35px lg:text-45px text-color-1 font-semibold font-mono ">
+                <div className="col-span-1 md:text-right order-1 md:order-2">
+                  <h2 className={`${classes.box_tittle}`}>
                     {item.heading}
                   </h2>
-                  <div className="font-lato md:text-md  lg:text-lg mt-[20px] md:mt-[25px] lg:mt-[48px] ">
+                  <div className={`${classes.box_detail}`}>
                     <BlockContent blocks={item.description} />
                   </div>
                 </div>

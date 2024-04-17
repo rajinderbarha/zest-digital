@@ -1,11 +1,11 @@
-.values_bg {
+.growth_box {
     background-image: url(../../../assets/images/Big_gradient.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #000;
-    padding: 85px 16px 85px 16px;
-    border-radius: 30px;
+    /* padding: 85px 16px 85px 16px; */
+    /* border-radius: 30px; */
 }
 
 .Our_values_main_p {
@@ -25,7 +25,7 @@
 @media screen and (max-width:768px) {
 
 
-    .values_bg {
-        padding: 80px 16px 50px 16px;
+    .growth_box {
+        /* padding: 80px 16px 50px 16px; */
     }
 }
