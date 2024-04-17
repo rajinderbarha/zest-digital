@@ -20,6 +20,11 @@ export const HomePage = defineType({
                 
 
                 { name: 'videosrc', type: 'string', title: 'Video source' },
+                {
+                    title: 'Video file',
+                    name: 'video',
+                    type: 'mux.video',
+                  },
             ]
         },
 

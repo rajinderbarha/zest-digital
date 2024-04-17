@@ -1,7 +1,7 @@
 import { defineType } from 'sanity'
 
-export const SingleTermsOfService = defineType({
-    title: 'Single Terms Of Service',
+export const SingleTermsAndConditions = defineType({
+    title: 'Single Terms And Conditions',
     name: 'singleTermsOfService',
     type: 'document',
     

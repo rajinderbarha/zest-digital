@@ -1,7 +1,7 @@
 import {defineType} from 'sanity'
 
-export const Growth = defineType({
-  title: 'Growth',
+export const SingleSolution = defineType({
+  title: 'SingleSolution',
   name: 'growth',
   type: 'document',
   fields: [

@@ -7,7 +7,7 @@ import classes from './Services_Box.module.css'
 import { SingleOurService } from '../../../../lib/interface'
 import { urlFor } from '../../../../lib/sanity.client'
 
-const Services_Box: React.FC<SingleOurService> = (props) => {
+const Services_Box = (props:any) => {
 
 
     const { Services_Box: { contentBox: { heading, coloredText, description, belowdesc }, } } = props

@@ -61,7 +61,7 @@ function Services({ data }: { data: SingleOurService } ) {
       description,
       belowdesc,
       coloredText,
-      
+
     },
     
   };

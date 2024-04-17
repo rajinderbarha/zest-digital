@@ -20,7 +20,7 @@ function GrowthCurve({ data }: { data: GrowthCurveType[] }) {
                 title2="Strategic support" desc2="Your Growth Manager provides powerful analysis and data-driven recommendations to grow your revenue, with real-time Slack access for Q&A."
                 title3="Transparency + control" desc3="Regain control of your marketing budget. Our approval process is quick, simple, with 100% transparency on how your budget is spent."
             />
-            <Global_Accordion />
+            <Global_Accordion heading_acc={''} card_acc={[]} belowbtnName_acc={''} belowbtnLink_acc={''} />
             {/* <Growths /> */}
             {/* <Climate_action /> */}
         </>

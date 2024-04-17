@@ -8,8 +8,7 @@ import flag_img from "../../assets/images/flags.png";
 function GrowthEnginePage({ data , card}: any) {
 
 
-  // console.log("card",card)
-  console.log("data",data)
+ 
 
   return (
     <>
