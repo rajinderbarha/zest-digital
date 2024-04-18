@@ -1,104 +1,101 @@
-import { defineType } from 'sanity'
+import {defineType} from 'sanity'
 
 export const HomePage = defineType({
-    title: 'HomePage',
-    name: 'homepage',
-    type: 'document',
+  title: 'HomePage',
+  name: 'homepage',
+  type: 'document',
 
-    fields: [
-        
-        {
-            name: 'growRevenue', title: 'Grow revenues section', type: 'object', fields: [
-                {name:"heading",title:"Heading", type:"string"},
-
-                { name: 'viewSolBtnName', type: 'string', title: 'View Solutions Name' },
-                { name: 'viewSolBtnLink', type: 'string', title: 'View Solutions Link' },
-                { name: 'SeeOurResBtnName', type: 'string', title: 'See our results Name' },
-                { name: 'SeeOurResBtnLink', type: 'string', title: 'See our results Link' },
-
-                { name: 'image', type: 'image', title: 'Image' },
-                
-
-                { name: 'videosrc', type: 'string', title: 'Video source' },
-                {
-                    title: 'Video file',
-                    name: 'video',
-                    type: 'mux.video',
-                  },
-            ]
-        },
-
-
-        {
-            name: 'TransformResults',
-            title: 'Transform Results section',
-            type: 'object',
-            fields: [
-                { name: 'heading', type: 'string', title: 'Heading' },
-                {
-                    name: 'switcher', type: 'array', title: 'Switcher', of: [
-                        // {
-                        //     title:"Colored Text Item",
-                        //     type: 'object',
-                        //     fields: [
-                                { name: 'title', type: 'string', title: 'Title' },
-                                
-                        //     ],
-                        // },
-                    ],
-                },
-                {
-                    name: 'horizontalbars', type: 'array', title: 'Horizontal Bars', of: [
-                        {
-                            title:"Colored Text Item",
-                            type: 'object',
-                            fields: [
-                                { name: 'numHeading', type: 'string', title: 'Heading' },
-                                { name: 'title', type: 'string', title: 'Title' },
-                                { name: 'desc', type: 'string', title: 'Description' },
-                                
-                            ],
-                        },
-                    ],
-                },
-
-
-               
+  fields: [
     {
-        name: 'growthcard',
-        title: 'GrowthCard',
-        type:"array",
-      of:[{type:'reference',to:[{type:"card"}]}]
-        
-      },
-  
-  
+      name: 'growRevenue',
+      title: 'Grow revenues section',
+      type: 'object',
+      fields: [
+        {name: 'heading', title: 'Heading', type: 'string'},
 
+        {name: 'viewSolBtnName', type: 'string', title: 'View Solutions Name'},
+        {name: 'viewSolBtnLink', type: 'string', title: 'View Solutions Link'},
+        {name: 'SeeOurResBtnName', type: 'string', title: 'See our results Name'},
+        {name: 'SeeOurResBtnLink', type: 'string', title: 'See our results Link'},
 
-                {
-                    name:'brandList',
-                    title:"Brand List",
-                    type:"array",
-                    of:[{type:'reference',to:[{type:"brandList"}]}]
-                },
+        {name: 'image', type: 'image', title: 'Image'},
 
+        {name: 'videosrc', type: 'string', title: 'Video source'},
+        {
+          title: 'Video file',
+          name: 'video',
+          type: 'mux.video',
+        },
+      ],
+    },
 
-                {
-                    name: 'banner',
-                    title: 'Banner',
-                    type: 'reference',
-                    to: [{type: 'climteaction'}],
-                  },
-            ]
-
+    {
+      name: 'TransformResults',
+      title: 'Transform Results section',
+      type: 'object',
+      fields: [
+        {name: 'heading', type: 'string', title: 'Heading'},
+        {
+          name: 'switcher',
+          type: 'array',
+          title: 'Switcher',
+          of: [{name: 'title', type: 'string', title: 'Title'}],
+        },
+        {
+          name: 'horizontalbars',
+          type: 'array',
+          title: 'Horizontal Bars',
+          of: [
+            {
+              title: 'Colored Text Item',
+              type: 'object',
+              fields: [
+                {name: 'numHeading', type: 'string', title: 'Heading'},
+                {name: 'title', type: 'string', title: 'Title'},
+                {name: 'desc', type: 'string', title: 'Description'},
+              ],
+            },
+          ],
         },
 
+        {
+          name: 'growthcard',
+          title: 'GrowthCard',
+          type: 'array',
+          of: [{type: 'reference', to: [{type: 'growth'}]}],
+        },
+        {
+          name: 'serviceSection',
+          title: 'Service Section',
+          type: 'object',
+          fields: [
+            {name: 'title', title: 'Title', type: 'string'},
+            {name: 'image1', title: 'Image 1', type: 'image'},
+            {name: 'image2', title: 'Image 2', type: 'image'},
+            {name: 'image3', title: 'Image 3', type: 'image'},
+            {
+              name: 'services',
+              title: 'services',
+              type: 'array',
+              of: [{type: 'reference', to: [{type: 'singleService'}]}],
+            },
+          ],
+        },
 
+        {
+          name: 'brandList',
+          title: 'Brand List',
+          type: 'array',
+          of: [{type: 'reference', to: [{type: 'brandList'}]}],
+        },
 
-
-
-
-
-       
-    ],
+        {
+          name: 'banner',
+          title: 'Banner',
+          type: 'reference',
+          to: [{type: 'climteaction'}],
+        },
+      ],
+    },
+  ],
 })

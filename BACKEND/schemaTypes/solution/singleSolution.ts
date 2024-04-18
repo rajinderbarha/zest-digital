@@ -20,36 +20,17 @@ export const SingleSolution = defineType({
     {name: 'buttonName', title: 'Button Name', type: 'string'},
     {name: 'buttonLink', title: 'Button Link', type: 'string'},
 
-
-
-
-
     {
-      name: 'growthcard',
-      title: 'GrowthCard',
-      type: 'reference',
-      to: [{type: 'card'}],
+      name: 'card',
+      title: 'Card',
+      type: 'object',
+      fields: [
+        {name: 'heading', title: 'Heading', type: 'string'},
+        {name: 'description', title: 'Description', type: 'string'},
+        {name: 'buttonName', title: 'Button Name', type: 'string'},
+        {name: 'image', title: 'Image', type: 'image'},
+      ],
     },
-
-
-
-
-
-
-
-
-
-    // {
-    //   name: 'card',
-    //   title: 'Card',
-    //   type: 'object',
-    //   fields: [
-    //     {name: 'heading', title: 'Heading', type: 'string'},
-    //     {name: 'description', title: 'Description', type: 'string'},
-    //     {name: 'buttonName', title: 'Button Name', type: 'string'},
-    //     {name: 'image', title: 'Image', type: 'image'},
-    //   ],
-    // },
 
 
     {

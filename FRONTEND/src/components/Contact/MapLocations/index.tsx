@@ -1,25 +1,30 @@
 import Image from "next/image";
-import React from "react";
+import React, { useMemo } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import london_map from "../../../assets/images/london.webp";
 import classes from "./MapLocations.module.css";
 import { Map, Marker } from "pigeon-maps";
 
-function MapLocations() {
+function MapLocations({data}:any) {
+  console.log("--------map--''''''",data)
+
+
   return (
     <>
-      <div className={`${classes.MapLocations} max-w-max mb-[114px]`}>
+    {data.map(({longitude,latitude,leftDescriptionList,rightDescriptionList}:any,index:any)=> (
+
+      <div key={index} className={`${classes.MapLocations} max-w-max mb-[114px]`}>
         <div
           className={`${classes.location_div} rounded-[20px] md:rounded-30px `}
         >
           <Map
             height={300}
-            defaultCenter={[30.643820296846247, 76.39707990907564]}
+            defaultCenter={[latitude, longitude]}
             defaultZoom={11}
           >
             <Marker
               width={50}
-              anchor={[30.643820296846247, 76.39707990907564]}
+              anchor={[latitude, longitude]}
             />
           </Map>
           {/* <Image src={london_map} alt="" className='w-full h-full rounded-[20px] md:rounded-30px shadow-dark-pink-right border border-black' /> */}
@@ -27,7 +32,7 @@ function MapLocations() {
         <div className="contact flex justify-between gap-2 mt-[20px]">
           <div className="address ">
             <address className="text-[13px] md:text-base font-mono text-color-1 not-italic">
-              1-3 Kings Meadow <br /> Osney Mead <br /> Oxford <br /> OX2 0DP
+              {leftDescriptionList}
             </address>
           </div>
           <div className="tele  h-max">
@@ -35,12 +40,13 @@ function MapLocations() {
               <FaPhoneAlt className="text-black w-max" />
               <span className="text-[13px] md:text-base">
                 {" "}
-                +44 (0) 1865 684 999
+              {rightDescriptionList}
               </span>
             </div>
           </div>
         </div>
       </div>
+  ))}
     </>
   );
 }

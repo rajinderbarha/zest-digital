@@ -156,12 +156,8 @@ function Contact({ data }: { data: ContactType }) {
             </div>
           </div>
           <div className="mt-[200px] flex justify-between gap-3 flex-wrap mb-[220px]">
-            <MapLocations />
-            <MapLocations />
-            <MapLocations />
-            <MapLocations />
-            <MapLocations />
-            <MapLocations />
+            <MapLocations data={data.card} />
+           
           </div>
         </div>
       </div>
