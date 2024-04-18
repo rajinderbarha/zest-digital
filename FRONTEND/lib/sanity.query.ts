@@ -134,6 +134,7 @@ export async function getSingleCasestudyData(slug: string) {
       },
       upperTitle,
       Title,
+     
       slug,
       hero{
           heading,
@@ -141,6 +142,8 @@ export async function getSingleCasestudyData(slug: string) {
           item[]{
             icon,
             count, 
+            heading,
+            title,
             description
           }
       },
@@ -641,7 +644,19 @@ export async function getHomepageData() {
   //   we are getting this data from growthShared schema
   const homepagequery = `
   *[_type == "homepage"] {
-    growRevenue,
+    growRevenue{
+      video{
+        asset-> {
+       playbackId,
+       assetId,
+       filename,
+     }
+     },
+     image,
+     heading,
+     viewSolBtnName,
+     SeeOurResBtnName,
+    },
     TransformResults {
         heading,
         switcher[],

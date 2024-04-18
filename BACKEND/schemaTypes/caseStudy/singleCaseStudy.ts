@@ -16,7 +16,8 @@ export const SingleCaseStudy = defineType({
             }
           },
         { name: 'upperTitle', title: 'Upper Title', type: 'string' },
-        { name: 'Title', title: 'title', type: 'string' },
+       
+        { name: 'title', title: 'Title', type: 'string' },
         {
             name: 'hero',
             title: 'Hero',
@@ -37,6 +38,8 @@ export const SingleCaseStudy = defineType({
                         type: "object", fields: [
                             { type: "image", name: 'icon', title: 'Icon' },
                             { type: 'string', name: 'count', title: 'Count' },
+                            { name: 'heading', title: 'Heading', type: 'string' },
+                            {name:'title', title:'Title', type:'string'},
                             { type: 'string', name: 'description', title: 'Description' }
                         ]
                     }]

@@ -16,7 +16,7 @@ export default function Home({
   ourServicesData: OurServicesSection[];
   homepageData: any;
 }) {
-  console.log("homepadeData==============", homepageData);
+
   return (
     <>
       <HeroSection data={homepageData[0].growRevenue} />
