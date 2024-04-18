@@ -16,8 +16,8 @@ function Gross_profit({ data }: any) {
                 className="Gross_profit_box_start text-center border bg-black rounded-30px  font-semibold font-mono border-color-8 md:p-20 p-6"
               >
                 <h2 className="text-55px font-semibold text-color-7">{item.count} </h2>
-                {/* <p className="text-30px text-color-7 mb-12">gross profit</p> */}
-                {/* <h3 className="text-30px text-white mb-4">Hanson (UK)</h3> */}
+                <p className="text-30px text-color-7 mb-12">{item.heading}</p>
+                <h3 className="text-30px text-white mb-4">{item.title}</h3>
                 <p className="font-lato text-lg font-normal  text-white mb-4">
                   {item.description}
                 </p>
