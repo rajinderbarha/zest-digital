@@ -22,6 +22,12 @@
     .marketing_agency_logo_2 {
         display: none;
     }
+    .mux-player {
+        width: 100%;
+        max-width: 800px;
+        margin: 40px auto;
+      }
+      
 
 }
 
