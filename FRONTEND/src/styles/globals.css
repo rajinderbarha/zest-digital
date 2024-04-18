@@ -69,141 +69,9 @@ select::-ms-expand {
 }
 
 .popup_conatiner {
-  @apply max-w-[1510px] mx-auto border border-color-1 shadow-compo shadow-[#e43fa8] rounded-30px;
+  @apply max-w-[1510px] mx-auto border border-color-1 shadow-compo shadow-[#e43fa8] md:rounded-30px rounded-[20px];
 }
 
-/* Accordion  Style start */
-.app-container {
-  padding: 15px;
-}
-
-.css-1086bdv-MuiPaper-root-MuiAccordion-root::before {
-  content: "" !important;
-  background-color: transparent !important;
-}
-
-.Mui-expanded,
-.MuiAccordionSummary-contentGutters {
-  margin: 0px !important;
-}
-
-.css-1086bdv-MuiPaper-root-MuiAccordion-root::before {
-  content: "" !important;
-  background-color: transparent !important;
-}
-
-.Mui-expanded,
-.MuiAccordionSummary-contentGutters {
-  margin: 0px !important;
-}
-
-.MuiAccordion-gutters {
-  margin-bottom: 10px !important;
-}
-
-.css-eqpfi5-MuiAccordionSummary-content.Mui-expanded {
-  margin: 0px !important;
-}
-
-.arrow_img {
-  /* border: 1px solid white; */
-  width: 60px;
-}
-
-.custom-header {
-  /* border: 1px solid black!important; */
-  background-color: #000000 !important;
-  border-radius: 20px !important;
-  padding: 30px 55px !important;
-  /* margin: -12px -17px!important; */
-  color: white !important;
-  font-weight: 500 !important;
-}
-
-.MuiTypography-root,
-.panel-data {
-  font-size: 30px !important;
-}
-
-.MuiPaper-root {
-  border: 1px solid black;
-  border-radius: 21px !important;
-}
-
-.panel-data {
-  /* margin: -19px -15px; */
-  /* font-size: 30px!important; */
-  /* padding-top: 80px;
-  padding-bottom: 30px; */
-  padding: 70px 55px 30px 55px;
-  /* padding: 80px 0; */
-  max-width: 1221px;
-  color: black;
-  border: none !important;
-}
-
-.css-yw020d-MuiAccordionSummary-expandIconWrapper {
-  transform: rotate(90deg) !important;
-  transition: 0.3s !important;
-}
-
-.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
-  transform: rotate(0deg) !important;
-  transition: 0.3s;
-}
-
-.MuiAccordionDetails-root {
-  padding: 0 !important;
-}
-
-@media only screen and (max-width: 950px) {
-
-  .MuiTypography-root,
-  .panel-data {
-    font-size: 25px !important;
-  }
-
-  .panel-data {
-    /* font-size: 25px; */
-    padding: 50px 0;
-    max-width: 1221px;
-    color: black;
-
-    border: none !important;
-  }
-
-  .arrow_img {
-    /* border: 1px solid white; */
-    width: 50px;
-  }
-
-  .custom-header {
-    padding: 22px 30px !important;
-  }
-
-  .panel-data {
-    padding: 50px 30px 30px 30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .panel-data {
-    padding: 20px 30px !important;
-  }
-
-  .MuiTypography-root,
-  .panel-data {
-    font-size: 20px !important;
-  }
-
-  .arrow_img {
-    /* border: 1px solid white; */
-    width: 42px !important;
-    /* height: 50px!important; */
-  }
-}
-
-/*  Accordion  Style end  */
 /* Nav bar style start*/
 
 .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
@@ -247,3 +115,5 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
 }
 
 /* Nav bar style end*/
+
+

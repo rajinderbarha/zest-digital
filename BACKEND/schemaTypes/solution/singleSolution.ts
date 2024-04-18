@@ -1,7 +1,7 @@
 import {defineType} from 'sanity'
 
-export const Growth = defineType({
-  title: 'Growth',
+export const SingleSolution = defineType({
+  title: 'SingleSolution',
   name: 'growth',
   type: 'document',
   fields: [
@@ -90,8 +90,8 @@ export const Growth = defineType({
       ],
     },
     {
-      name: 'faq',
-      title: 'FAQ',
+      name: 'globalaccordion',
+      title: 'Accordion',
       type: 'reference',
       to: [{type: 'faq'}],
     },

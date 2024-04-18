@@ -44,6 +44,7 @@ function Growths({ data }: { data: any }) {
                 data.slice(2).map((item: any, index: number) => {
                   return (
                     <Growth_engine
+                    key={index}
                       props={{
                         title: item.growthcard.card.heading,
                         description: item.growthcard.card.description,

@@ -570,11 +570,7 @@ export interface SingleOurService {
   ourSubServices: SubServices
   clientResults: clientResults
   globalaccordion: {
-    accordiongroup: {
-      heading: string;
-      card: ourServiceCard[];
-      belowbuttonName: string;
-    };
+    accordiongroup: AccordianType
   };
   Services_Quotes: ServiceQuote[];
   agencyAddress: AgencyAddress,
@@ -585,6 +581,16 @@ export interface SingleOurService {
 
 
 
+
+export interface AccordianType {
+  heading_acc:string,
+  card_acc:{
+    question:string,
+    content:any,
+  }[];
+  belowbtnName_acc:string
+  belowbtnLink_acc:string
+}
 
 
 

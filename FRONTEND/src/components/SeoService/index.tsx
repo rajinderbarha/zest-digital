@@ -87,7 +87,7 @@ const agencyAddress  =  address.map(({dayandtiming_add,hourstitle_add,streetAddr
   return (
     <>
       <Services_Banner max_width="1033px" title={title} smallDescription={smallDescription} button={button} />
-      {/* <Services_Box Services_Box={serviceBox} imageBox={imageBox} /> */}
+      <Services_Box Services_Box={serviceBox} imageBox={imageBox} />
 
       <Services_details_happy_customer Services_details={serviceDetails} />
 
@@ -99,7 +99,7 @@ const agencyAddress  =  address.map(({dayandtiming_add,hourstitle_add,streetAddr
       />
      <Client_Result card={clientResultsMapData} belowbuttonName_CR={belowbuttonName_CR} title_CR={title_CR} heading_CR={heading_CR} />
 
-      {/* <Global_Accordion /> */}
+      <Global_Accordion heading_acc={''} card_acc={[]} belowbtnName_acc={''} belowbtnLink_acc={''} />
       <Services_Quotes Services_Quotes={serviceQuotes}/>
       <Services_Address heading_add={heading_add} slotDescription_add={slotDescription_add} buttonName_add={buttonName_add} address={agencyAddress} card={[]}/>           {/**here cardData is related to the google map */}
     </>

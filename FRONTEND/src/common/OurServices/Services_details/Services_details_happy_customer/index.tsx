@@ -52,17 +52,17 @@ import { urlFor } from "../../../../../lib/sanity.client";
 const Services_details_happy_customer: React.FC<ServiceDetail> = (props) => {
   // function GrowthMarketingServices_details_happy_customer() {
   return (
-    <>
+    <><div className="main_padding">
       <div className={`${classes.objective} main_container`}>
         {props.Services_details.map((item, index) =>
           index % 2 == 0 ? (
             <div
             key={`${item.heading}_${index}`}
-              className={`flex items-center flex-col md:flex-row  bg-white ${classes.objective_inner} gap-10 mt-[100px] md:mt-[175px] px-10`}
+              className={`flex items-center flex-col md:flex-row  bg-white ${classes.objective_inner} gap-10 mt-[100px] md:mt-[175px] `}
             >
               <div className=" md:max-w-[1057px] md:pe-[100px]">
                 {/* <h2 className='text-30px md:text-35px lg:text-45px text-color-1 font-semibold font-mono '>{props.title1} <span className='text-color-9'>{props.title_changeColor} </span>{props.title2}</h2> */}
-                <h2 className="text-30px md:text-35px lg:text-45px text-color-1 font-semibold font-mono ">
+                <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px text-color-1 font-semibold font-mono ">
                   {item.heading}
                 </h2>
                 <div className="font-mono md:text-25px  lg:text-30px mt-[20px] md:mt-[25px] lg:mt-[48px] ">
@@ -109,6 +109,7 @@ const Services_details_happy_customer: React.FC<ServiceDetail> = (props) => {
             </div>
           )
         )}
+      </div>
       </div>
     </>
   );

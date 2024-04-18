@@ -4,7 +4,7 @@ import { getGrowthData, getSolutionData } from "../../../lib/sanity.query";
 
 function growthengine({ growth , card}: any) {
 
-  console.log("card----------------",card)
+  // console.log("growth----------------",growth[0])
 
   return <GrowthEnginePage data={growth[0]} card={card}/>;
 }

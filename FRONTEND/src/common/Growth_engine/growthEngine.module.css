@@ -83,3 +83,8 @@
         width: 250px;
     }
 }
+@media only screen and (max-width:320px) {
+    .growth_engine {
+        padding: 20px 15px 20px 20px;
+    }
+}

@@ -64,23 +64,6 @@ export function getFooter() {
   );
 }
 
-// export function getDigitalTerms() {         // this will be deleted not needed below is same we rename it
-//   return client.fetch(
-//     groq`
-//     *[_type == 'digitalTermsOfService'] {
-//       content,
-//       "banner": banner-> {
-//         climate_actionImg,
-//         earth_img,
-//         smallDescription
-//       }
-//     }
-
-//     `
-//   );
-// }
-
-
 export async function getAboutData() {
   const headerquery = `
   *[_type == 'about'] {
@@ -131,183 +114,6 @@ export async function getAboutData() {
   const data = await client.fetch(headerquery);
   return data;
 }
-
-// export async function getSharedEngineData() {
-//   //   we are getting this data from growthShared schema
-//   const headerquery = `
-//   *[_type == "growthEngine"] {
-//     growthEngine {
-//         heroSection {
-//             upperTitle,
-//             heading,
-//             button {
-//                 buttonName,
-//                 buttonLink
-//             }
-//         },
-//         growthSection {
-//             headingUpper,
-//             titleUpper,
-//             growthContent[] {
-//                 title,
-//                 description,
-//                 buttonName,
-//                 buttonLink,
-//                 price {
-//                     priceOutline
-//                 }
-//             },
-//             headingBelow,
-//             titleBelow,
-//             image
-//         },
-//         solution {
-//             heading,
-//             card[] {
-//                 title,
-//                 description,
-//                 buttonName,
-//                 buttonLink
-//             },
-//             image
-//         },
-//         "banner": banner-> {
-//             climate_actionImg,
-//             earth_img,
-//             smallDescription
-//         }
-//     },
-//     signupform {
-//         signupheading,
-//         signupdescription,
-//         firstnameLabel,
-//         lastnameLabel,
-//         emailLabel
-//     }
-// }
-
-    
-//   `;
-//   const data = await client.fetch(headerquery);
-//   return data;
-// }
-
-// export async function getSharedTrackerData() {
-//   const headerquery = `
-//   *[_type == "growthTracker"] {
-//     growthTracker {
-//         heroSection {
-//             upperTitle,
-//             heading,
-//             button {
-//                 buttonName,
-//                 buttonLink
-//             }
-//         },
-//         growthSection {
-//             headingUpper,
-//             titleUpper,
-//             growthContent[] {
-//                 title,
-//                 description,
-//                 buttonName,
-//                 buttonLink,
-                
-//             },
-//             headingBelow,
-//             titleBelow,
-//             image
-//         },
-//         solution {
-//             heading,
-//             card[] {
-//                 title,
-//                 description,
-//                 buttonName,
-//                 buttonLink,
-//                 image
-//             }
-//         },
-//         "banner": banner-> {
-//             climate_actionImg,
-//             earth_img,
-//             smallDescription
-//         }
-//     },
-//     signupform {
-//         signupheading,
-//         signupdescription,
-//         firstnameLabel,
-//         lastnameLabel,
-//         emailLabel,
-//         buttonName,
-//         buttonLink,
-//         privacyDescription
-//     }
-// }
-
-    
-//   `;
-//   const data = await client.fetch(headerquery);
-//   return data;
-// }
-
-// export async function getSharedCurveData() {
-//   const headerquery = `
-//   *[_type == "growthCurve"] {
-//     growthCurve {
-//         heroSection {
-//             upperTitle,
-//             heading,
-//             button {
-//                 buttonName,
-//                 buttonLink
-//             }
-//         },
-//         growthSection {
-//             headingUpper,
-//             titleUpper,
-//             growthContent[] {
-//                 title,
-//                 description,
-//                 buttonName,
-//                 buttonLink,
-                
-//             },
-//             headingBelow,
-//             titleBelow,
-//             image
-//         },
-//         solution {
-//             heading,
-//             card[] {
-//                 title,
-//                 description,
-//                 buttonName,
-//                 buttonLink
-//             },
-//             image
-//         },
-//         "banner": banner-> {
-//             climate_actionImg,
-//             earth_img,
-//             smallDescription
-//         }
-//     },
-//     signupform {
-//         signupheading,
-//         signupdescription,
-//         firstnameLabel,
-//         lastnameLabel,
-//         emailLabel
-//     }
-// }
-
-    
-//   `;
-//   const data = await client.fetch(headerquery);
-//   return data;
-// }
 
 export async function getSingleCasestudyData(slug: string) {
   const headerquery = `
@@ -574,7 +380,6 @@ export async function getTermsndConditionsData() {
   return data;
 }
 
-
 export function getSingleTerms(slug: string) {
   return client.fetch(
     groq`
@@ -593,11 +398,6 @@ export function getSingleTerms(slug: string) {
     `
   );
 }
-
-
-
-
-
 
 export async function getOurServicesSectionData() {
   const OurServicesSection = `
@@ -624,10 +424,7 @@ export async function getOurServicesSectionData() {
   return data;
 }
 
-
-
-
-export async function getSingleOurServicesData(slug:string) {
+export async function getSingleOurServicesData(slug: string) {
   const singleServicesSectionData = `
   *[_type == "singleService"  && slug.current == "${slug}"] {
   
@@ -684,12 +481,13 @@ export async function getSingleOurServicesData(slug:string) {
     },
     "globalaccordion": globalaccordion-> {
       "accordiongroup": accordiongroup {
-        "heading": heading,
-        "card": card[] {
+        "heading_acc": heading_acc,
+        "card_acc": card_acc[] {
           "question": question,
-          "answer": answer
+          content,
         },
-        "belowbuttonName": belowbuttonName
+        "belowbtnName_acc": belowbtnName_acc,
+        "belowbtnLink_acc": belowbtnLink_acc
       }
     },
     "Services_Quotes": Services_Quotes[] {
@@ -732,41 +530,6 @@ export async function getSingleOurServicesData(slug:string) {
 }
 
 
-
-
-
-
-
-
-
-// export async function getTermsndConditionsData() {
-//   const headerquery = `
-
-//   *[_type == 'termsAndConditions'] {
-//   heading,
-//   'cards': card[]{
-//     'singleTermsOfService': collection-> {
-//       slug,
-//       title,
-//       content,
-//       'banner': banner-> {
-//         climate_actionImg,
-//         earth_img,
-//         smallDescription
-//       }
-//     }
-//   },
-//   'banner': banner-> {
-//     climate_actionImg,
-//     earth_img,
-//     smallDescription
-//   }
-// }
-
-//   `;
-//   const data = await client.fetch(headerquery);
-//   return data;
-// }
 
 export async function getCareersData() {
   const headerquery = `
@@ -851,13 +614,15 @@ export async function getGrowthData(slug: string) {
             belowSmallLine,
             image
         },
-        "faq":faq->{
-          heading,
-          buttonName,
-          buttonLink,
-          accordian[]{
-            heading,
-            description
+        "globalaccordion": globalaccordion-> {
+          "accordiongroup": accordiongroup {
+            "heading_acc": heading_acc,
+            "card_acc": card_acc[] {
+              "question": question,
+              content,
+            },
+            "belowbtnName_acc": belowbtnName_acc,
+            "belowbtnLink_acc": belowbtnLink_acc
           }
         },
         "banner": banner-> {

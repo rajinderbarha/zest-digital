@@ -17,7 +17,7 @@ function GrowthMapper() {
                 title2="Your growth roadmap" desc2="Create a growth-minded marketing plan. Growth Mapper harnesses your natural instincts, then provides you with the focus you need to turn what you know about your business into what you need to do to grow."
                 title3="Life-long skills" desc3="Growth Mapper teaches you the skills to create a lasting impact, through the planning and creation of your own growth experiments."
             />
-            <Global_Accordion />
+            <Global_Accordion heading_acc={''} card_acc={[]} belowbtnName_acc={''} belowbtnLink_acc={''} />
             {/* <Growths /> */}
             
         </>
