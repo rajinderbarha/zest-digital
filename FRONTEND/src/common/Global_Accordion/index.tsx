@@ -4,27 +4,10 @@ import classes from './Global_Accordion.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { AccordianType, SingleOurService } from '../../../lib/interface';
-import { group } from 'console';
+import { AccordianType } from '../../../lib/interface';
+// import { group } from 'console';
 import { PortableText } from 'next-sanity';
-type AccordionItem = {
-  id: number;
-  title: string;
-  content: string;
-};
-const accordionData: AccordionItem[] = [
-  {
-    id: 1,
-    title: 'What do we mean by Growth Marketing?',
-    content: 'Growth marketing focuses on generating commercial growth for businesses...',
-  },
-  {
-    id: 2,
-    title: 'How does Growth Marketing work?',
-    content: 'It involves a variety of tactics aimed at increasing user engagement and retention...',
-  },
 
-];
 
 
 // export interface AccordianType {
@@ -42,9 +25,9 @@ const Global_Accordion = ({heading_acc,card_acc,belowbtnName_acc,belowbtnLink_ac
 
   // const {heading,card,belowbuttonName} = data
 
-  console.log(heading_acc)
-  console.log(card_acc)
-  console.log(belowbtnName_acc)
+  // console.log(heading_acc)
+  // console.log(card_acc)
+  // console.log(belowbtnName_acc)
 
   const [openItemId, setOpenItemId] = useState<number | null>(null);
   const contentRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});

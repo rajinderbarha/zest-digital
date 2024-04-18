@@ -5,7 +5,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 
 function Section_Main({ data, card }: any) {
   
-// console.log("000000000000000000000000000",data)
+console.log("000000000000000000000000000", card[2].card?.image)
 // console.log("--------------------------",card.map(item =>( item)))
   return (
     <>
@@ -44,12 +44,11 @@ function Section_Main({ data, card }: any) {
           has_image={false}
           shadow_right={false}
           props={{
-            title: card[0].growthcard.card.heading,
-            description:card[0].growthcard.card.description,
-            buttonName: card[0].growthcard.card.buttonName,
+            title: card[0].card.heading,
+            description:card[0].card.description,
+            buttonName: card[0].card.buttonName,
             buttonLink: `/solutions/${card[0].slug.current}`,
-            image: urlFor(card[0].growthcard.card.image).url(),
-          }}
+            image: card[0].card?.image ? urlFor( card[0].card.image).url():"",          }}
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
@@ -57,23 +56,22 @@ function Section_Main({ data, card }: any) {
             has_image={false}
             shadow_right={true}
             props={{
-              title: card[1].growthcard.card.heading,
-              description:  card[1].growthcard.card.description,
-              buttonName:  card[1].growthcard.card.buttonName,
+              title: card[1].card.heading,
+              description:  card[1].card.description,
+              buttonName:  card[1].card.buttonName,
               buttonLink: `/solutions/${card[1].slug.current}`,
-              image: urlFor( card[1].growthcard.card.image).url(),
-            }}
+              image: card[1].card?.image ? urlFor( card[1].card.image).url():"",            }}
           />
 
           <Growth_engine
             has_image={false}
             shadow_right={false}
             props={{
-              title: card[2].growthcard.card.heading,
-              description:  card[2].growthcard.card.description,
-              buttonName:  card[2].growthcard.card.buttonName,
+              title: card[2].card.heading,
+              description:  card[2].card.description,
+              buttonName:  card[2].card.buttonName,
               buttonLink: `/solutions/${card[2].slug.current}`,
-              image: urlFor( card[2].growthcard.card.image).url(),
+              image: card[2].card?.image ? urlFor( card[2].card.image).url():"",
             }}
           />
         </div>
@@ -82,11 +80,11 @@ function Section_Main({ data, card }: any) {
           has_image={true}
           shadow_right={false}
           props={{
-            title:  card[3].growthcard.card.heading,
-            description: card[3].growthcard.card.description,
-            buttonName:  card[3].growthcard.card.buttonName,
+            title:  card[3].card.heading,
+            description: card[3].card.description,
+            buttonName:  card[3].card.buttonName,
             buttonLink: `/solutions/${card[3].slug.current}`,
-            image: urlFor( card[3].growthcard.card.image).url(),
+            image: urlFor( card[3].card.image).url(),
           }}
         />
         {card.length > 4 && card.slice(3).map((item: any, index: number) => {
@@ -100,8 +98,7 @@ function Section_Main({ data, card }: any) {
                   description: item.card.description,
                   buttonName: item.card.buttonName,
                   buttonLink: `/solutions/${item.slug.current}`,
-                  image: urlFor(item.card.image).url(),
-                }}
+                  image: item.card?.image ? urlFor( item.card.image).url():"",                }}
               />
             </div>
           );

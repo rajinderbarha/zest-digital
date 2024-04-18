@@ -1,13 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
-import Zest_circle_text from '../../assets/images/Zest_circle_text.png'
-import closeIcon from '../../assets/images/Icon ionic-ios-close.png'
+// import Zest_circle_text from '../../assets/images/Zest_circle_text.png'
+// import closeIcon from '../../assets/images/Icon ionic-ios-close.png'
 import classes from './heroSection.module.css'
-import chatIcon from '../../assets/images/chatIcon.png'
+// import chatIcon from '../../assets/images/chatIcon.png'
 import { urlFor } from '../../../lib/sanity.client'
 
+
+
 const HeroSection = ({data}:any) => {
-  const {heading,viewSolBtnName,viewSolBtnLink,SeeOurResBtnName,SeeOurResBtnLink,image,videosrc} = data
+  const {heading,viewSolBtnName,viewSolBtnLink,SeeOurResBtnName,SeeOurResBtnLink,image,video} = data
+  
+  console.log(video)
   return (
     <>
       {/* <div className="  text-white mx-auto lg:px-20 2xl:px-100px md:px-11 px-8"> */}
@@ -36,6 +40,7 @@ const HeroSection = ({data}:any) => {
             <source src="https://youtu.be/SFvcUsGuT2k?si=GNrj2dBAKU-uTlIs" type="video/mp4" className=''/>
             Your browser does not support the video tag.
           </video>
+         
         </div>
         {/* <div className=" flex flex-col items-end absolute bottom-26px right-47px">
                         <div className="bg-white text-lg px-63px py-23px text-color-1 text-center w-331px rounded-15px relative shadow-msg ">

@@ -7,8 +7,16 @@ import flag_img from "../../assets/images/flags.png";
 
 function GrowthEnginePage({ data , card}: any) {
 
+// console.log(data)
+  const { globalaccordion:{accordiongroup:{heading_acc,card_acc,belowbtnName_acc,belowbtnLink_acc}}
+  } = data;
 
- 
+
+  const card_Accordian = card_acc.map(({content,question}:any,)=>(
+    {
+      content,question
+    }
+  ))
 
   return (
     <>
@@ -22,7 +30,7 @@ function GrowthEnginePage({ data , card}: any) {
         }}
       />
       <GrowthEnginePage_Box data={data.growthSection} />
-      {/* <Global_Accordion /> */}
+      <Global_Accordion  heading_acc={heading_acc} belowbtnLink_acc={belowbtnLink_acc} belowbtnName_acc={belowbtnName_acc} card_acc={card_Accordian}/>
       <Growths data={card} />
     </>
   );

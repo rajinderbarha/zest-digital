@@ -47,12 +47,7 @@ export const Solution = defineType({
       ],
     },
 
-    {
-      name:'growth',
-      title:"Growth",
-      type:"array",
-      of:[{type:'reference',to:[{type:"growth"}]}]
-  },
+
 
     {
       name:'brandList',
