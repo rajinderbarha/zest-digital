@@ -1,7 +1,7 @@
 import { defineType } from 'sanity';
 
-export const OurServicesSection = defineType({
-  title: 'Our Services Section',
+export const Services = defineType({
+  title: 'Services',
   name: 'OurServicesSection',
   type: 'document',
 

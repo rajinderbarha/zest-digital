@@ -491,8 +491,9 @@ export interface ServiceDetail {
   Services_details:{
 
     heading: string;
-    description_1: string;
-    description_2: string;
+    content:any,
+    // description_1: string;
+    // description_2: string;
     image: string;
   }[]
 }

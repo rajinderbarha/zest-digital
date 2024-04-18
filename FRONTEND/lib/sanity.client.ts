@@ -16,7 +16,10 @@ export default client;
 const builder  =  imageUrlBuilder(client)
 
 export function urlFor(source: any){
+
     return builder.image(source)                // image is am method to get  the images from the sanity 
+  
+
 }
 
 

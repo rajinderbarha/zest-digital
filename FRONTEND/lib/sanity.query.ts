@@ -213,14 +213,14 @@ export async function getSolutionData() {
       },
      growth[]->{
       slug,
-      "growthcard": growthcard-> {
-        mainheading,
+     
+     
         card{
        heading,
        description,
        image,
        buttonName,
-        }
+        
    },
    
      },
@@ -450,8 +450,8 @@ export async function getSingleOurServicesData(slug: string) {
     },
     "Services_details": Services_details[] {
       "heading": heading,
-      "description_1": description_1,
-      "description_2": description_2,
+      content,
+      
       "image": image.asset->url
     },
     "Services_book_call": Services_book_call {
@@ -528,8 +528,6 @@ export async function getSingleOurServicesData(slug: string) {
   const data = await client.fetch(singleServicesSectionData);
   return data;
 }
-
-
 
 export async function getCareersData() {
   const headerquery = `
@@ -654,7 +652,6 @@ export async function getHomepageData() {
         },
         growthcard[]-> {
           "slug":slug.current,
-           mainheading,
           card{
             heading,
             description,
@@ -662,6 +659,20 @@ export async function getHomepageData() {
             "image": image.asset->url,
           }
         },
+        serviceSection{
+    
+          title,
+          image1,
+            image2,
+            image3,
+              services[]->{
+                 "slug":slug.current,
+                title
+            }
+          
+        },
+
+
         brandList[]-> {
             "icon": icon.asset->url,
         },

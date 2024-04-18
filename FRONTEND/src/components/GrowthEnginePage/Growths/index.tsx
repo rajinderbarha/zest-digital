@@ -16,7 +16,7 @@ function Growths({ data }: { data: any }) {
                 // key={`${index}_Growths`}
                 className="text-30px md:text-45px sm:text-35px font-mono font-semibold mx-auto text-center"
               >
-                {data[0].growthcard.mainheading}
+                "sdjdjkbskdbdbk"
               </h2>
             {/* ))} */}
             <div className={` font-mono  mx-auto grid gap-10 mt-10 md:mt-28 `}>
@@ -26,11 +26,11 @@ function Growths({ data }: { data: any }) {
                     <div key={index} className="grid">
                       <Growth_engine
                         props={{
-                          title: item.growthcard.card.heading,
-                          description: item.growthcard.card.description,
-                          buttonName: item.growthcard.card.buttonName,
+                          title: item.card.heading,
+                          description: item.card.description,
+                          buttonName: item.card.buttonName,
                           buttonLink: `/solutions/${item.slug.current}`,
-                          image: item.growthcard.card.image,
+                          image: item.card.image,
                         }}
                         shadow_right={index % 2 === 0}
                         has_image={false}
@@ -46,11 +46,11 @@ function Growths({ data }: { data: any }) {
                     <Growth_engine
                     key={index}
                       props={{
-                        title: item.growthcard.card.heading,
-                        description: item.growthcard.card.description,
-                        buttonName: item.growthcard.card.buttonName,
-                        buttonLink: `/solutions/${item.slug.current}`,
-                        image: item.growthcard.card.image,
+                        title: item.card.heading,
+                        description: item.card.description,
+                        buttonName: item.card.buttonName,
+                        buttonLink: `/solutions{item.slug.current}`,
+                        image: item.card.image,
                       }}
                       has_image={true}
                       shadow_right={true}

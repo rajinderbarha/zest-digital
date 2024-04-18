@@ -30,7 +30,7 @@ function Services({ data }: { data: SingleOurService } ) {
     },
     globalaccordion:{accordiongroup:{heading_acc,card_acc,belowbtnName_acc,belowbtnLink_acc}}
   } = data;
-  console.log("belowbtnLink_acc------------------------", belowbtnLink_acc)
+  // console.log("belowbtnLink_acc------------------------", belowbtnLink_acc)
   const {
     Services_book_call: { heading_call, buttonName },
   } = data;
@@ -92,8 +92,9 @@ function Services({ data }: { data: SingleOurService } ) {
 
   const serviceDetails = data.Services_details.map((item, index) => ({
     heading: item.heading,
-    description_1: item.description_1,
-    description_2: item.description_2,
+    content:item.content,
+    // description_1: item.description_1,
+    // description_2: item.description_2,
     image: item.image,
   }));
   const subServices = data.ourSubServices.services.map(
