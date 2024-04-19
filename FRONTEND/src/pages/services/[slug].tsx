@@ -1,8 +1,8 @@
-import DigitalTerms from "@/components/DigitalTerms";
-import Layout from "@/layout";
+// import DigitalTerms from "@/components/DigitalTerms";
+// import Layout from "@/layout";
 import React from "react";
-import { getSingleOurServicesData, getSingleTerms } from "../../../lib/sanity.query";
-import { SingleOurService, TermsOfServiceType } from "../../../lib/interface";
+import { getSingleOurServicesData, } from "../../../lib/sanity.query";
+import { SingleOurService, } from "../../../lib/interface";
 import Services from "@/components/Services";
 
 function SingleService({singleservicedata,}: { singleservicedata: SingleOurService[];}) {

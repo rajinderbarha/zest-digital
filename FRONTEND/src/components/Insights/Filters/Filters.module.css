@@ -15,7 +15,7 @@
     font-size: 14px;
 }
 .Filters_btn{
-    @apply text-color-1 hover:bg-color-7 hover:border-color-1 md:hover:border-color-7 hover:text-color-1 md:text-color-7 md:border-color-7 border border-color-1 rounded-full font-mono
+    @apply text-color-1 hover:bg-color-7 hover:border-color-1 md:hover:border-color-7  hover:text-color-1 md:text-color-7 md:border-color-7 border border-color-1 rounded-full font-mono
 }
 @media only screen and (min-width:768px) and (max-width:1100px){
     .Filters{
@@ -29,5 +29,45 @@
     }
     .Filters_btn {
         padding: 3px 8px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .Zest_symbol_white {
+        margin-left: 0;
+        position: static !important;
+    }
+
+    .Zest_symbol_white img {
+        margin: 0;
+    }
+
+    .Footer_Img {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .Footer_Img {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Zest_symbol_white img {
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:385px){
+    .Footer_Link {
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .Footer_Img{
+        padding: 20px 10px;
+    }
+    .Zest_symbol_white {
+        width: 40px;
     }
 }

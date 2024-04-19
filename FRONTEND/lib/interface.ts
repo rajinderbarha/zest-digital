@@ -434,12 +434,12 @@ export interface ServiceImages {
   target_icon: string;
 }
 
-export interface OurServicesSection {
-  heading: string;
-  cards: ServiceCard[];
-  images: ServiceImages;
-  banner: ClimateAction;
-}
+// export interface OurServicesSection {
+//   heading: string;
+//   cards: ServiceCard[];
+//   images: ServiceImages;
+//   banner: ClimateAction;
+// }
 
 
 

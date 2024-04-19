@@ -1,5 +1,5 @@
 import React from 'react'
-import Zest_solutions_circle from '../../../assets/images/Zest_solutions_circle.png'
+// import Zest_solutions_circle from '../../../assets/images/Zest_solutions_circle.png'
 import Image from 'next/image'
 import classes from './Solution_Banner.module.css'
 import { urlFor } from '../../../../lib/sanity.client'

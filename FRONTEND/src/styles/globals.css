@@ -72,6 +72,7 @@ select::-ms-expand {
   @apply max-w-[1510px] mx-auto border border-color-1 shadow-compo shadow-[#e43fa8] md:rounded-30px rounded-[20px];
 }
 
+
 /* Nav bar style start*/
 
 .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
@@ -113,7 +114,11 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
   height: 23px;
   right: 0 !important;
 }
-
+.bg_color_green{
+background-color: #a2ff8f;
+color:  #000 !important
+}
 /* Nav bar style end*/
+
 
 

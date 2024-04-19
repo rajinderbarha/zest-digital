@@ -11,8 +11,8 @@ export const SingleInsights = defineType({
       title: 'Slug',
       type: 'slug',
       options: {
-        source: 'heading',
-        maxLength: 10
+        source: 'hero.heading',
+        maxLength: 40
       }
     },
     {
