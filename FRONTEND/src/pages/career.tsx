@@ -15,7 +15,7 @@ function career({ careerData }: { careerData: CareersType[] }) {
 
 export default career;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const careerData = await getCareersData();
   return {
     props: {

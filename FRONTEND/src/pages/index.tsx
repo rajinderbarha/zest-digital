@@ -28,7 +28,7 @@ export default function Home({
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const homepageData = await getHomepageData();
   // const ourServicesData = await getOurServicesSectionData();
   return {

@@ -22,7 +22,7 @@ function singlecasestudy({ singleCasestudy }: any) {
 
 export default singlecasestudy;
 
-export async function getStaticProps({ params }: { params: { slug: string } }) {
+export async function getServerSideProps({ params }: { params: { slug: string } }) {
   const { slug } = params;
 
   const singleCasestudy = await getSingleCasestudyData(slug);

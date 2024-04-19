@@ -39,7 +39,7 @@ function Casestudy({ singleCasestudy }: any) {
 
 export default Casestudy;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const singleCasestudy = await getCasestudyData();
 
   return {
