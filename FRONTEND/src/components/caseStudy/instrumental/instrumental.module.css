@@ -1,5 +1,5 @@
 .Instrumental {
-    padding: 112px 16px;
+    /* padding: 112px 16px; */
 }
 
 .Instrumental h2 {
@@ -8,10 +8,11 @@
 
 .Instrumental p {
     max-width: 750px;
+    margin-right: 50px;
 }
 
 .Instrumental h3 {
-    max-width: 373px;
+    /* max-width: 373px; */
 }
 
 .Interests_img {
@@ -24,7 +25,7 @@
 
 @media screen and (max-width:768px) {
     .Instrumental {
-        padding: 80px 16px 50px 16px;
+        /* padding: 80px 16px 50px 16px; */
     }
 
 }

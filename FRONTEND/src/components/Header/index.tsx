@@ -1,107 +1,59 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import bars from '../../assets/images/bars-svgrepo-com.svg';
 import { urlFor } from '../../../lib/sanity.client';
 import Link from 'next/link';
 import { HeaderType } from '../../../lib/interface';
 import PropTypes from 'prop-types';
-
+import classes from './Header.module.css'
 import barsIcon from '../../assets/images/bars-svgrepo-com.svg';
 import logo from '../../assets/images/zest-logo_vector.png';
-import { AppBar, Box, CssBaseline, Divider, Drawer, IconButton, List, Toolbar, Typography } from '@mui/material';
 
 
 
-//                                                     {/* navbar for the mobile start */}
-// interface DrawerAppBarProps {
-//   window?: () => Window;
-  
-// }
+                                                      // navbar for the mobile start 
 
-const drawerWidth = 240;
 
-const MobileViewHeader = (props:any) => {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
+const MobileViewHeader = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    // Prevent or allow scroll based on the menu state
+    if (!isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        <div className='screen-1-max:w-24 lg:w-28 xl:w-auto text-center  mx-auto'>
-          <Image src={logo} alt="Site Logo" width={112} height={51} />
-        </div>
-      </Typography>
-      <Divider />
-      <List>
-        <li className='custom-menu-items-class '>About</li>
-        <li className='custom-menu-items-class '>Solutions</li>
-        <li className='custom-menu-items-class '>Result</li>
-        <li className='custom-menu-items-class '>Insights</li>
-        <li className='custom-menu-items-class '>Resource</li>
-        <a href="javascript:void(0)" className='inline-block mt-[5px] md:mt-[10px] max-w-max nav-button font-mono text-base px-21px py-[5px] bg-black text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1'>schedule a call</a>
-      </List>
-    </Box>
-  );
-
-  const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
     <div className="main_padding">
-    <Box className='pt-[10px] pb-[10px] md:pt-25px md:pb-21px screen-1-min:hidden  justify-between items-center main_container relative'>
-      <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { sm: 'block' } }}
-          >
-            <div className='screen-1-max:w-24 lg:w-28 xl:w-auto'>
-              <Image src={logo} alt="Site Logo" width={112} height={51} />
-            </div>
-          </Typography>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: {} }}
-          >
-            <Image src={barsIcon} alt="menu" className="bars-icon" />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block'},
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-    </Box>
+      <nav className={`${classes.navbar} flex pt-[10px] pb-[10px] md:pt-25px md:pb-21px screen-1-min:hidden  justify-between items-center main_container relative`}>
+      <div className={`${classes.logo} screen-1-max:w-24 lg:w-28 xl:w-auto `}>
+  
+        <Image src={logo} alt="Logo" width={112} height={51} />
+      </div>
+      <div className={classes.menuIcon} onClick={toggleMenu}>
+        <Image src={barsIcon} alt="Logo" />
+      </div>
+      <div
+        className={`${classes.menu} ${isMenuOpen ? classes.menuOpen : classes.menuOpen}`}
+        style={{ height: isMenuOpen ? '100vh' : 0 }}
+      >
+      
+        <a href="/link1"  className={`${classes.custom_menu_items_class}`}>About</a>
+        <a href="/link2" className={`${classes.custom_menu_items_class}`}>Solutions</a>
+        <a href="/link3" className={`${classes.custom_menu_items_class}`}>Result</a>
+        <a href="/link3" className={`${classes.custom_menu_items_class}`}>Insights</a>
+        <a href="/link3" className={`${classes.custom_menu_items_class}`}>Resource</a>
+        <a href="javascript:void(0)" className='inline-block mt-[5px] md:mt-[10px] max-w-max nav-button font-mono text-[14px] sm:text-base px-21px sm:py-[5px] py-[4px] bg-black text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1'>schedule a call</a>
+      </div>
+    </nav>
     </div>
   );
 };
 
-MobileViewHeader.propTypes = {
-  window: PropTypes.func,
-};
-
-                                                {/* navbar for the mobile end */}
+                                                //  navbar for the mobile end 
 
 
 const Header = ({ data }: { data: HeaderType[] }) => {
@@ -118,7 +70,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
 
   return (
   <>
-                                        {/* navbar for the desktop start */}
+                                         {/* navbar for the desktop start  */}
       {data?.map(((item,index)=>  {
         // console.log("header img", item.logo)
 
@@ -151,8 +103,8 @@ const Header = ({ data }: { data: HeaderType[] }) => {
     )}
                                           {/* navbar for the desktop end */}
                                           
-
-      {/* <MobileViewHeader />   calling the responsive navbar */}
+                                          {/* calling the responsive navbar */}
+      <MobileViewHeader />   
 
     </>
   )

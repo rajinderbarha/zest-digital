@@ -1,8 +1,11 @@
 .objective_inner {
     /* padding: 70px 52px; */
 }
+.objective_select:not(:first-child){
+@apply xl:mt-[350px] lg:mt-[280px] md:mt-[200px] sm:mt-[100px] mt-[50px] 
+}
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-iwdth:767px) {
     .objective_inner {
 
         /* padding: 30px 35px; */
