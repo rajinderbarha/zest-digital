@@ -410,11 +410,11 @@ export function getSingleTerms(slug: string) {
 // export async function getOurServicesSectionData() {
 //   const OurServicesSection = `
 //   *[_type == "OurServicesSection"] {
-//     heading, 
+//     heading,
 //       "cards": card[]-> {
 //       "slug": slug.current,
 //       "title": title,
-     
+
 //     },
 //     "images": images {
 //       "vertical_bar": vertical_bar.asset->url,
@@ -426,7 +426,7 @@ export function getSingleTerms(slug: string) {
 //       "earth_img": earth_img.asset->url,
 //       "smallDescription": smallDescription
 //     }
-//   }  
+//   }
 //   `;
 //   const data = await client.fetch(OurServicesSection);
 //   return data;
