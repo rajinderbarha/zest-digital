@@ -661,6 +661,8 @@ export async function getHomepageData() {
      heading,
      viewSolBtnName,
      SeeOurResBtnName,
+     viewSolBtnLink,
+    SeeOurResBtnLink,
     },
     TransformResults {
         heading,
