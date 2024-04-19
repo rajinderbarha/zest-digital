@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import Image from "next/image";
 import classes from "./Filters.module.css";
@@ -7,11 +5,13 @@ import Filters_image from "../../../assets/images/Filters.png";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../../lib/sanity.client";
-import logo from '../../../assets/images/Zest_symbol_white.png'
+import logo from "../../../assets/images/Zest_symbol_white.png";
 
 function Filters({ data }: any) {
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-
+  const [selectedCategories, setSelectedCategories] = useState<number>(0);
+  const [filteredProducts, setFilteredProducts] = useState<any[]>(
+    data.collection
+  );
   const arrayElements = data.collection.map((item: any) => item.hero.keywords);
   const combinedArray = arrayElements.reduce((acc: any, curr: any) => {
     const uniqueElements = new Set(acc);
@@ -19,24 +19,14 @@ function Filters({ data }: any) {
     return Array.from(uniqueElements);
   }, []);
 
-  const handleCategoryClick = (category: string) => {
-    
-    setSelectedCategories((prevCategories) => {
-      // Toggle the category: add it if not present, remove if already present
-      const updatedCategories = prevCategories.includes(category)
-        ? prevCategories.filter((prevCategory) => prevCategory !== category)
-        : [...prevCategories, category];
-      return updatedCategories;
-    });
+  const handleCategoryClick = (category: string,index:number) => {
+    setSelectedCategories(index)
+    setFilteredProducts(
+      data.collection.filter(
+        (a: any) => a.hero.keywords.includes(category) && a
+      )
+    );
   };
-
-  const filteredProducts = data.collection.filter((item: any) =>
-    selectedCategories.length === 0
-      ? true // Show all products if no category is selected
-      : selectedCategories.some((selectedCategory) =>
-          item.hero.keywords.includes(selectedCategory)
-        )
-  );
 
   return (
     <>
@@ -66,14 +56,16 @@ function Filters({ data }: any) {
                       } max-w-[1345px] mx-auto xl:ps-[50px] lg:ps-[45px] md:ps-[35px] ps-[20px] lg:pe-7 md:pe-[20px] pe-[20px] xl:py-[70px] lg:py-[60px] md:py-[50px] py-[30px] rounded-30px border border-black  bg-white text-color-1`}
                     >
                       <div className="sm:col-span-9">
-                        {item.hero.keywords.map((filterName: string, i: number) => (
-                          <h6
-                            key={i}
-                            className={`${classes.Insight_tag} bg-color-7 border border-color-7 rounded-full font-mono w-max`}
-                          >
-                            {filterName}
-                          </h6>
-                        ))}
+                        {item.hero.keywords.map(
+                          (filterName: string, i: number) => (
+                            <h6
+                              key={i}
+                              className={`${classes.Insight_tag} bg-color-7 border border-color-7 rounded-full font-mono w-max`}
+                            >
+                              {filterName}
+                            </h6>
+                          )
+                        )}
                         <h2
                           className={`lg:text-35px md:text-30px text-25px font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}
                         >
@@ -101,8 +93,6 @@ function Filters({ data }: any) {
                   </div>
                 ))}
               </div>
-              
-
 
               <div className="lg:col-span-1 lg:order-2"></div>
               <div className="lg:col-span-3  lg:order-3 order-1">
@@ -113,30 +103,47 @@ function Filters({ data }: any) {
                   {combinedArray.map((uniqueEl: any, index: any) => (
                     <h6
                       key={index}
-                      className={`${classes.Filters_btn} ${selectedCategories.includes(uniqueEl) ? "bg_color_green" : ''}`}
-                      onClick={() => handleCategoryClick(uniqueEl)}
+                      className={`${classes.Filters_btn} ${
+                        selectedCategories===index
+                          ? "bg_color_green"
+                          : ""
+                      }`}
+                      onClick={() => handleCategoryClick(uniqueEl,index)}
                     >
                       {uniqueEl}
                     </h6>
                   ))}
                 </div>
               </div>
-
-            
             </div>
           </div>
-          <div className={`${classes.Footer_Img} bg-black rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[55px] mb-[30px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}>
-                        <div className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}>
-                            {/* <Image src={logo} alt='icon' className='mx-auto' width={50} height={50} /> */}
-
-                           
-                            <Image src={urlFor(data.linkSectionIcon).url()} alt='icon' className='mx-auto' width={50} height={50} />
-                        </div>
-                        <div className={`${classes.Footer_Link} max-w-max ms-auto relative  z-10`}>
-                            {/* <Link href="#" className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"> Older posts<GoArrowRight /> </Link> */}
-                            <Link href={data.linkSection.linkUrl} className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"> {data.linkSection.linkName}<GoArrowRight /> </Link>
-                        </div>
-                    </div>
+          <div
+            className={`${classes.Footer_Img} bg-black rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[55px] mb-[30px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}
+          >
+            <div
+              className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}
+            >
+              <Image
+                src={urlFor(data.linkSectionIcon).url()}
+                alt="icon"
+                className="mx-auto"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div
+              className={`${classes.Footer_Link} max-w-max ms-auto relative  z-10`}
+            >
+              <Link
+                href={data.linkSection.linkUrl}
+                className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"
+              >
+                {" "}
+                {data.linkSection.linkName}
+                <GoArrowRight />{" "}
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </>
@@ -144,7 +151,3 @@ function Filters({ data }: any) {
 }
 
 export default Filters;
-
-
-
-
