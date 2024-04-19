@@ -29,8 +29,8 @@ const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
                             <p className='font-mono lg:text-30px md:text-25px text-[20px] mb-5 md:leading-9'>{smallDescription}</p>
                             <div className="flex flex-wrap gap-4">
 
-                                <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white  border border-color-1 ">{callButtonName}</button>
-                                <button className="font-mono text-base px-21px h-10 bg-white text-color-1 rounded-full  hover:bg-color-1 hover:text-white hover:border-black border border-color-1 ">{resultsButtonName}</button>
+                                <button className="font-mono text-[15px] sm:text-base md:px-21px sm:px-[18px] px-[15px] md:h-10 sm:h-[35px] h-[30px] text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white  border border-color-1 ">{callButtonName}</button>
+                                <button className="font-mono text-[15px] sm:text-base md:px-21px sm:px-[18px] px-[15px] md:h-10 sm:h-[35px] h-[30px] bg-white text-color-1 rounded-full  hover:bg-color-1 hover:text-white hover:border-black border border-color-1 ">{resultsButtonName}</button>
                             </div>
                         </div>
                     </div>

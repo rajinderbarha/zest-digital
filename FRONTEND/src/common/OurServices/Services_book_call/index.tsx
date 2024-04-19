@@ -11,13 +11,13 @@ const Services_book_call: React.FC<Services_book_cal> = (props) => {
     const {heading,buttonName} = props
     return (
         <>
-            <div className="GrowthMarketingServices_book_call mt-[170px]">
+            <div className="GrowthMarketingServices_book_call xl:mt-[170px] lg:mt-[150px] md:mt-[125px] sm:mt-[80px] mt-[68px] main_padding">
 
-                <div className={`${classes.container_bg} main_container rounded-30px`}>
-                    <div className="max-w-[1584px] mx-auto md:py-[80px] py-[50px] lg:py-[121px] px-[40px] md:px-[50px] lg:px-[70px] ">
-                        <h2 className='text-white text-center font-mono lg:text-45px md:text-40px text-30px font-semibold'>{heading}</h2>
-                        <div className=" mx-auto text-center mt-[30px]">
-                            <button className='bg-white text-base font-mono  text-color-1 rounded-full px-[26px] py-[8px]  text-center' > {buttonName}</button>
+                <div className={`${classes.container_bg} main_container rounded-[20px] md:rounded-30px`}>
+                    <div className="max-w-[1584px] mx-auto xl:py-[121px] lg:py-[100px] md:py-[75px] sm:py-[40px] py-[30px] px-[20px] sm:px-[30px] md:px-[50px] lg:px-[70px] ">
+                        <h2 className='text-white text-center font-mono lg:text-45px md:text-40px sm:text-30px text-25px font-semibold'>{heading}</h2>
+                        <div className=" mx-auto text-center xl:mt-[40px] lg:mt-[30px] md:mt-[25px] sm:mt-[20px] mt-[15px]">
+                            <button className='bg-white text-[15px] sm:text-base font-mono  text-color-1 rounded-full px-[26px] sm:py-[8px] py-[5px] text-center' > {buttonName}</button>
 
                         </div>
                     </div>

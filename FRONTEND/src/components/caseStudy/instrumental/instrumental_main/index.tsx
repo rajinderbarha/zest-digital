@@ -7,26 +7,26 @@ import { urlFor } from "../../../../../lib/sanity.client";
 function Instrumental({ data }: any) {
   console.log("data", data);
   return (
-    <div className={`${classes.Instrumental}`}>
-      <div className="main_container_x">
-        <div className="grid md:grid-cols-12   items-center">
-          <div className="md:col-span-4 ">
+    <div className={`${classes.Instrumental} main_padding xl:mt-[112px] lg:mt-[90px] md:mt-[60px] sm:mt-[40px] mt-[30px] `}>
+      <div className="max-w-[1520px] mx-auto w-full">
+        <div className="grid md:grid-cols-12  items-center">
+          <div className="md:col-span-4    ">
             <Image
-              className="md:ms-auto mx-auto"
+              className="md:ms-auto mx-auto xl:max-w-[350px] lg:max-w-[280px] md:max-w-[200px] sm:max-w-[150px] max-w-[100px] w-full"
               src={urlFor(data.hero.image).url()}
               alt="casestudy img"
-              width={300}
-              height={300}
+              width={350}
+              height={350}
             />
-            <h3 className="font-mono font-semibold text-30px  w-max-[373px] text-center mx-auto mt-4">
+            <h3 className="font-mono font-semibold lg:text-30px md:text-25px text-[20px] md:max-w-[373px] max-w-[221px] text-center mx-auto mt-4">
               Reduction in cost per conversion rate
             </h3>
           </div>
-          <div className="md:col-span-8 md:mt-0 mt-10">
-            <h2 className="font-mono font-semibold md:text-45px text-25px mb-5 w-max-[909px]">
+          <div className="md:col-span-8    md:mt-0 sm:mt-[30px] mt-[25px]">
+            <h2 className="font-mono font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-[28px] text-[20px] md:mb-[20px] sm:mb-[15px] mb-[10px] w-max-[909px]">
               {data.hero.heading}
             </h2>
-            <p className="text-color-9 pt-2 border-t border-color-9">
+            <p className="text-color-9 pt-2 border-t text-[15px] sm:text-base border-color-9">
               {data.hero.belowLine}
             </p>
           </div>
