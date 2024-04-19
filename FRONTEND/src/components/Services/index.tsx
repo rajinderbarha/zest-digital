@@ -133,7 +133,9 @@ function Services({ data }: { data: SingleOurService } ) {
         button={button}
       />
       <Services_Box Services_Box={serviceBox} imageBox={imageBox} />
-      <Services_details_happy_customer Services_details={serviceDetails} />
+ <div className="xl:mt-[175px] lg:mt-[150px] md:mt-[125px] sm:mt-[80px] mt-[68px]"></div>
+      <Services_details_happy_customer Services_details={serviceDetails} className=""/>
+     
       <Services_book_call heading={heading_call} buttonName={buttonName} />
       <Services_SubServices heading_sub={heading_sub} services={subServices} />
       <Client_Result

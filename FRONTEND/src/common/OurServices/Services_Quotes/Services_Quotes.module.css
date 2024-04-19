@@ -1,5 +1,5 @@
 .Instrumental {
-    padding: 112px 16px;
+    /* padding: 112px 16px; */
 }
 
 .Instrumental h2 {
@@ -21,7 +21,7 @@
 
 @media screen and (max-width:768px) {
     .Instrumental {
-        padding: 80px 16px 50px 16px;
+        /* padding: 80px 16px 50px 16px; */
     }
 
 }

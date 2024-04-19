@@ -12,23 +12,25 @@ const Logo_moving = ({ data }: any) => {
       <div
         className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10  `}
       >
-        <div className={`${classes.gradient_border} relative py-16 `}>
+        <div className={`${classes.gradient_border} relative md:py-16 py-[50px] `}>
           <div className={`${classes.shadow_custom} `}></div>
 
           <Marquee className={`gap-16 `}>
-            <div className="flex  max-w-auto gap-16 me-5">
+            <div className="flex  max-w-auto gap-[80px] me-5 ">
               {data?.map((item: any, index: number) => {
                 // console.log("solution", item.icon);
                 return (
-                
+                <div className="md:max-w-[200px] max-w-[150px] mx-auto w-full  self-center">
+
                   <Image
                     src={urlFor(item.icon).url()}
                     alt="brand img"
-                    width={100}
-                    height={100}
-                    className="w-auto"
+                    width={200}
+                    height={200}
+                    className=" "
                     key={index}
-                  />
+                    />
+                    </div>
                 );
               })}
             </div>

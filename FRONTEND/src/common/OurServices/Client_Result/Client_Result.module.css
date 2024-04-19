@@ -2,30 +2,38 @@
     background-image: url(../../../assets/images/\ gross\ profit.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px 16px;
+    /* padding: 100px 16px; */
     background-position: center;
     background-color: #000;
+    
+    @apply rounded-[20px] md:rounded-30px xl:pt-[100px] lg:pt-[80px] md:pt-[60px] sm:pt-[40px] pt-[25px] xl:px-[110px] lg:px-[90px] md:px-[65px] sm:px-[40px] px-[25px] xl:pb-[132px] lg:pb-[110px] md:pb-[80px] sm:pb-[65px] pb-[30px]
 }
 
 .Client_Result_title {
-    margin-bottom: 145px;
+    @apply xl:mb-[146px] lg:mb-[130px] md:mb-[100px] sm:mb-[70px] mb-[50px]
+    /* margin-bottom: 145px; */
 }
 
 .view_more_btn {
-    margin-top: 137px;
+    /* margin-top: 137px; */
+}
+.button_div{
+    display: flex;
+    height: -webkit-fill-available;
+    align-items: end;
 }
 
 @media screen and (max-width:768px) {
     .Client_Result {
-        padding: 80px 16px;
+        /* padding: 80px 16px; */
     }
 
     .Client_Result_title {
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
     }
 
     .view_more_btn {
-        margin-top: 90px;
+        /* margin-top: 90px; */
     }
 
 
