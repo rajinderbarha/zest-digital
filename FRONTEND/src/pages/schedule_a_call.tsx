@@ -13,7 +13,7 @@ function schedulecall({ schedule_a_call }: any) {
 
 export default schedulecall;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const schedule_a_call = await getSchedule_a_callData();
 
   return {

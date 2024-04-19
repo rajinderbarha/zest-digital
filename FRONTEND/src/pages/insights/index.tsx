@@ -15,7 +15,7 @@ const filters = ({insights}:any) => {
 
 export default filters;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const insights = await getInsightsData();
   
     return {

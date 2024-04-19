@@ -13,7 +13,7 @@ function contact({ contactData }: { contactData: ContactType[] }) {
 }
 export default contact;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const contactData = await getContactData();
   return {
     props: {
