@@ -15,8 +15,7 @@ const HeroSection = ({ data }: any) => {
     video,
   } = data;
 
-  console.log(video.asset
-  );
+  console.log(video.asset.playbackId);
   return (
     <>
       <div className="main_padding">
@@ -59,22 +58,18 @@ const HeroSection = ({ data }: any) => {
                 />
               </div>
               <MuxPlayer
-  playbackId="bqiqqtmvNHHWd9AcMW621E1um9aJTakD3Qkz36hgo1E"
-  className={`${classes.video_class} md:rounded-30px rounded-[20px] xl:w-[685px] xl:h-[450px] lg:w-[500px] lg:h-[350px] md:w-[400px] md:h-[250px] w-full sm:h-[320px]`}
-  metadata={{
-    video_id: "video-id-54321",
-    video_title: "Test video title",
-    viewer_user_id: "user-id-007",
-  }}
-  streamType="on-demand"
-  autoPlay
-  muted
-/>
-
-
-              
+                playbackId={video.asset.playbackId}
+                className={`${classes.video_class} md:rounded-30px rounded-[20px] xl:w-[685px] xl:h-[450px] lg:w-[500px] lg:h-[350px] md:w-[400px] md:h-[250px] w-full sm:h-[320px]`}
+                metadata={{
+                  video_id: "video-id-54321",
+                  video_title: "Test video title",
+                  viewer_user_id: "user-id-007",
+                }}
+                streamType="on-demand"
+                autoPlay
+                muted
+              />
             </div>
-           
           </div>
         </div>
       </div>
