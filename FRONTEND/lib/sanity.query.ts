@@ -251,6 +251,11 @@ export async function getInsightsData() {
       },
       heading,
       linkSectionIcon,
+
+      linkSection{
+        linkName,
+        linkUrl
+      },
       collection[]->{
         slug,
        hero{
@@ -402,30 +407,30 @@ export function getSingleTerms(slug: string) {
   );
 }
 
-export async function getOurServicesSectionData() {
-  const OurServicesSection = `
-  *[_type == "OurServicesSection"] {
-    heading, 
-      "cards": card[]-> {
-      "slug": slug.current,
-      "title": title,
+// export async function getOurServicesSectionData() {
+//   const OurServicesSection = `
+//   *[_type == "OurServicesSection"] {
+//     heading, 
+//       "cards": card[]-> {
+//       "slug": slug.current,
+//       "title": title,
      
-    },
-    "images": images {
-      "vertical_bar": vertical_bar.asset->url,
-      "Code_icon": Code_icon.asset->url,
-      "target_icon": target_icon.asset->url
-    },
-    "banner": banner-> {
-      "climate_actionImg": climate_actionImg.asset->url,
-      "earth_img": earth_img.asset->url,
-      "smallDescription": smallDescription
-    }
-  }  
-  `;
-  const data = await client.fetch(OurServicesSection);
-  return data;
-}
+//     },
+//     "images": images {
+//       "vertical_bar": vertical_bar.asset->url,
+//       "Code_icon": Code_icon.asset->url,
+//       "target_icon": target_icon.asset->url
+//     },
+//     "banner": banner-> {
+//       "climate_actionImg": climate_actionImg.asset->url,
+//       "earth_img": earth_img.asset->url,
+//       "smallDescription": smallDescription
+//     }
+//   }  
+//   `;
+//   const data = await client.fetch(OurServicesSection);
+//   return data;
+// }
 
 export async function getSingleOurServicesData(slug: string) {
   const singleServicesSectionData = `
