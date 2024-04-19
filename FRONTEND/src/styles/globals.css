@@ -113,7 +113,10 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
   height: 23px;
   right: 0 !important;
 }
-
+.bg_color_green{
+background-color: #a2ff8f;
+color:  #000 !important
+}
 /* Nav bar style end*/
 
 

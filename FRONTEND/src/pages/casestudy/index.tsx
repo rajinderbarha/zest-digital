@@ -1,11 +1,11 @@
 import Casestudyintro from "@/components/caseStudy/CaseStudyIntro";
 import Gross_profit from "@/components/caseStudy/gross_profit";
-import Conversions from "@/components/caseStudy/instrumental/conversions";
+// import Conversions from "@/components/caseStudy/instrumental/conversions";
 import Instrumental from "@/components/caseStudy/instrumental/instrumental_main";
-import Interests from "@/components/caseStudy/instrumental/interests";
-import Partnership from "@/components/caseStudy/instrumental/partnership";
-import Timeline from "@/components/caseStudy/instrumental/timeline";
-import Visibility from "@/components/caseStudy/instrumental/visibility";
+// import Interests from "@/components/caseStudy/instrumental/interests";
+// import Partnership from "@/components/caseStudy/instrumental/partnership";
+// import Timeline from "@/components/caseStudy/instrumental/timeline";
+// import Visibility from "@/components/caseStudy/instrumental/visibility";
 import React from "react";
 import { getCasestudyData } from "../../../lib/sanity.query";
 
@@ -39,7 +39,7 @@ function Casestudy({ singleCasestudy }: any) {
 
 export default Casestudy;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const singleCasestudy = await getCasestudyData();
 
   return {

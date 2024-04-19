@@ -10,7 +10,7 @@ import Resources_Calculater_Step_3 from "@/components/Resources_Calculater_Step_
 import Resources_Calculater_Step_4 from "@/components/Resources_Calculater_Step_4";
 import Resources_Calculater_Step_5 from "@/components/Resources_Calculater_Step_5";
 import StepPopup from "@/common/PopupWrapper/stepPopup";
-import { usePopup } from "@/context";
+// import { usePopup } from "@/context";
 import { useForm } from "react-hook-form";
 function resources({ resources }: any) {
   const searchParams = useSearchParams();
@@ -92,7 +92,7 @@ function resources({ resources }: any) {
 
 export default resources;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const resources = await getResourcesData();
 
   return {

@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
-// import Zest_circle_text from '../../assets/images/Zest_circle_text.png'
-// import closeIcon from '../../assets/images/Icon ionic-ios-close.png'
 import classes from "./heroSection.module.css";
-// import chatIcon from '../../assets/images/chatIcon.png'
 import { urlFor } from "../../../lib/sanity.client";
 import MuxPlayer from "@mux/mux-player-react";
 
@@ -61,31 +58,20 @@ const HeroSection = ({ data }: any) => {
                   alt=""
                 />
               </div>
-              {/* <MuxPlayer
-                playbackId="bqiqqtmvNHHWd9AcMW621E1um9aJTakD3Qkz36hgo1E"
-               
-                metadata={{
-                  video_id: "video-id-54321",
-                  video_title: "Test video title",
-                  viewer_user_id: "user-id-007",
-                }}
-                style={{width:"100%",maxWidth:"200px", height:"200px"}}
-              /> */}
+              <MuxPlayer
+  playbackId="bqiqqtmvNHHWd9AcMW621E1um9aJTakD3Qkz36hgo1E"
+  className={`${classes.video_class} md:rounded-30px rounded-[20px] xl:w-[685px] xl:h-[450px] lg:w-[500px] lg:h-[350px] md:w-[400px] md:h-[250px] w-full sm:h-[320px]`}
+  metadata={{
+    video_id: "video-id-54321",
+    video_title: "Test video title",
+    viewer_user_id: "user-id-007",
+  }}
+  streamType="on-demand"
+  autoPlay
+  muted
+/>
 
 
-              <video
-                controls
-                className={`${classes.video_class} md:rounded-30px rounded-[20px] xl:w-[685px] xl:h-[450px] lg:w-[500px] lg:h-[350px] md:w-[400px] md:h-[250px] w-full sm:h-[320px]`}
-              >
-              
-                <source
-                src="https://youtu.be/SFvcUsGuT2k?si=GNrj2dBAKU-uTlIs"
-                  // src={`https://stream.mux.com/${video.asset.playbackId}.m3u8`}
-                  type="video/mp4"
-                  className=""
-                />
-                Your browser does not support the video tag.
-              </video>
               
             </div>
            

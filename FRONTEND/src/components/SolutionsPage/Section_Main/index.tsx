@@ -5,7 +5,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 
 function Section_Main({ data, card }: any) {
   
-console.log("000000000000000000000000000", card[2].card?.image)
+// console.log("000000000000000000000000000", card[2].card?.image)
 // console.log("--------------------------",card.map(item =>( item)))
   return (
     <>

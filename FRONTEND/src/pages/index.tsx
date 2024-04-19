@@ -5,18 +5,17 @@ import Logo_moving from "@/common/Logo_moving";
 import Services from "@/common/Services";
 import {
   getHomepageData,
-  getOurServicesSectionData,
+  // getOurServicesSectionData,
 } from "../../lib/sanity.query";
-import { OurServicesSection } from "../../lib/interface";
+// import { OurServicesSection } from "../../lib/interface";
 
 export default function Home({
   homepageData,
-  ourServicesData,
-}: {
-  ourServicesData: OurServicesSection[];
+}: // ourServicesData,
+{
+  // ourServicesData: OurServicesSection[];
   homepageData: any;
 }) {
-
   return (
     <>
       <HeroSection data={homepageData[0].growRevenue} />
@@ -31,11 +30,11 @@ export default function Home({
 
 export async function getStaticProps() {
   const homepageData = await getHomepageData();
-  const ourServicesData = await getOurServicesSectionData();
+  // const ourServicesData = await getOurServicesSectionData();
   return {
     props: {
       homepageData,
-      ourServicesData,
+      // ourServicesData,
     },
   };
 }
