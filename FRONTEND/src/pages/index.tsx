@@ -3,16 +3,9 @@ import HeroSection from "@/components/HeroSection";
 import Growth from "@/components/Growth";
 import Logo_moving from "@/common/Logo_moving";
 import Services from "@/common/Services";
-import {
-  getHomepageData,
-} from "../../lib/sanity.query";
+import { getHomepageData } from "../../lib/sanity.query";
 
-export default function Home({
-  homepageData,
-}: 
-{
-  homepageData: any;
-}) {
+export default function Home({ homepageData }: { homepageData: any }) {
   return (
     <>
       <HeroSection data={homepageData[0].growRevenue} />

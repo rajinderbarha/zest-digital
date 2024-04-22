@@ -26,9 +26,9 @@ export interface FooterType {
     heading: string;
     list: {
       id:any,
-      name: string;
-      link: string;
-      icon: { _type: string; asset: { _type: string /* other fields */ } };
+      address:any,
+      contact:string;
+     
     }[];
   }[];
   brands: {
@@ -40,7 +40,7 @@ export interface FooterType {
     socialImage: { _type: string; asset: { _type: string /* other fields */ } };
     socialLink: string;
   }[];
-  copyRightText: string;
+  copyRightText: any;
 }
 
 
@@ -166,6 +166,7 @@ export interface AboutType {
   }[];
   escape: {
     heading: string;
+    careerPagelink:string;
     description: string;
     marquee: {
       title: string;

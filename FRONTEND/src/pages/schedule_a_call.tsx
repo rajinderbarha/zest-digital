@@ -1,5 +1,4 @@
 import ScheduleCall from "@/components/ScheduleCall";
-// import Layout from '@/layout'
 import React from "react";
 import { getSchedule_a_callData } from "../../lib/sanity.query";
 

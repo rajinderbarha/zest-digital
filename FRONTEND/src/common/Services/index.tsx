@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./Services.module.css";
 import Image from "next/image";
-import vertical_bar from "../../assets/images/vertical_bar.png";
-import Code_icon from "../../assets/images/Code_icon.png";
-import target_icon from "../../assets/images/target_icon.png";
+// import vertical_bar from "../../assets/images/vertical_bar.png";
+// import Code_icon from "../../assets/images/Code_icon.png";
+// import target_icon from "../../assets/images/target_icon.png";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../lib/sanity.client";
@@ -42,7 +42,7 @@ const Services = ({ data }: any) => {
               <div className="  h-max self-end">
                 <Image
                   src={urlFor(data.image1).url()}
-                  width={342}
+                  width={320}
                   height={342}
                   alt=""
                   className=" "
@@ -51,8 +51,8 @@ const Services = ({ data }: any) => {
               <div className="   h-max self-center">
                 <Image
                   src={urlFor(data.image2).url()}
-                  width={342}
-                  height={342}
+                  width={282}
+                  height={282}
                   alt=""
                   className=" "
                 />
@@ -60,8 +60,8 @@ const Services = ({ data }: any) => {
               <div className="    h-max">
                 <Image
                   src={urlFor(data.image3).url()}
-                  width={342}
-                  height={342}
+                  width={273}
+                  height={273}
                   alt=""
                   className="  "
                 />

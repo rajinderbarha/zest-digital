@@ -38,33 +38,37 @@ function LearnToGrow({ data }: any) {
             </p>
           </div>
           <div className="md:max-w-[60px] max-w-[40px] mx-auto">
+            <a href="#tools">
+
             <Image
               src={urlFor(data.hero.icon).url()}
               alt="img"
               width={60}
               height={60}
               className="mx-auto"
-            />
+              />
+              </a>
           </div>
         </div>
       </div>
-      <div className="max-w-[1335px] mx-auto -mt-[250px] md:-mt-[279px]">
+      <div className="max-w-[1335px] mx-auto -mt-[250px] md:-mt-[279px]" id="tools">
         <h2 className="font-mono font-semibold xl:text-45px lg:text-40px text-35px text-white mx-auto text-center">
           Tools
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1355px] px-5 font-mono mx-auto mt-[40px] md:mt-[80px]">
+        <div  className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1355px] px-5 font-mono mx-auto mt-[40px] md:mt-[80px]">
           {data.tool.map((item: any, index: number) => {
             const data = {
               ...item,
               buttonLink: `/resources?popup=${item.buttonLink}`,
             };
 
-            return (
+            return (<>
               <Growth_engine
                 props={data}
                 has_image={false}
                 shadow_right={index % 2 === 0}
               />
+              </>
             );
           })}
         </div>

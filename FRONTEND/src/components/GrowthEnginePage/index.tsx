@@ -3,7 +3,7 @@ import GrowthEnginePage_Banner from "./GrowthEnginePage_Banner";
 import GrowthEnginePage_Box from "./GrowthEnginePage_Box";
 import Global_Accordion from "../../common/Global_Accordion";
 import Growths from "./Growths";
-import flag_img from "../../assets/images/flags.png";
+// import flag_img from "../../assets/images/flags.png";
 
 function GrowthEnginePage({ data , card}: any) {
 

@@ -45,9 +45,8 @@ export function getFooter() {
       footerItem[] {
         heading,
         list[] {
-          name,
-          link,
-          icon
+          address,
+          contact,
         }
       },
       brands[] {
@@ -97,6 +96,7 @@ export async function getAboutData() {
     },
     escape {
       heading,
+      careerPagelink,
       description,
       marquee[] {
         title,
@@ -181,6 +181,7 @@ export async function getCasestudyData() {
         image,
         heading,
         belowLine,
+        imageDesc,
         item
         }
       }

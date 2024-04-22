@@ -26,6 +26,7 @@ export const SingleCaseStudy = defineType({
                 { name: 'heading', type: 'string', title: 'Heading' },
                 { name: 'belowLine', type: 'string', title: 'Below Line' },
                 { name: 'image', type: 'image', title: 'Image' },
+                { name: 'imageDesc', type: 'string', title: 'Image description' },
                 {
                     name: 'item', type: 'array', title: 'Item', validation: Rule => {
                         return Rule.custom((items: any) => {             

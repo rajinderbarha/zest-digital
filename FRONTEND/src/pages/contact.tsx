@@ -4,7 +4,6 @@ import { getContactData } from "../../lib/sanity.query";
 import { ContactType } from "../../lib/interface";
 
 function contact({ contactData }: { contactData: ContactType[] }) {
-  // console.log("contactData============================",contactData[0])
   return (
     <>
       <Contact data={contactData[0]} />

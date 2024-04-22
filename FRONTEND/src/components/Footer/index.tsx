@@ -5,6 +5,7 @@ import { urlFor } from "../../../lib/sanity.client";
 import Link from "next/link";
 import { ClimateAction, FooterType } from "../../../lib/interface";
 import Climate_action from "@/common/Climate_action";
+import { PortableText } from "next-sanity";
 
 
 const Footer = ({ data }: { data: FooterType[]  }) => {
@@ -78,8 +79,9 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
                     {footerItm.list.map((list, index) => (
                       <div key={`${index}_list`} className={`${classes.address}`}>
                         <address className="not-italic">
-                          <Link href={list.link}> {list.name}</Link> <br />
+                          <PortableText value={list.address}/>
                         </address>
+                          <p>{list.contact}</p>
                       </div>
                     ))}
                   </div>
@@ -116,10 +118,10 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
               </div>
             </div>
           </div>
-          <div className="bg-color-1 py-[35px]">
-            <p className="text-white max-w-[970px] px-10 text-center mx-auto">
-              {item.copyRightText}{" "}
-            </p>
+          <div className="bg-color-1 py-[35px] " >
+            <div className={"text-white max-w-[970px] px-10 text-center mx-auto "}>
+              <PortableText value={item.copyRightText}  />
+              </div>
           </div>
         </div>
       ))}

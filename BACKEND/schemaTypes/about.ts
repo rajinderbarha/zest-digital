@@ -86,6 +86,7 @@ export const About = defineType({
             fields: [
                 { name: 'heading', type: 'string', title: 'Heading' },
                 { name: 'description', type: 'string', title: 'Description' },
+                { name: 'careerPagelink', type: 'string', title: 'Career Page link' },
                 {
                     name: 'marquee', type: 'array', title: 'Marquee', of: [
                         {
@@ -97,9 +98,9 @@ export const About = defineType({
                         },
                     ],
                 },
-
+                
             ]
-
+            
         },
 
         {
