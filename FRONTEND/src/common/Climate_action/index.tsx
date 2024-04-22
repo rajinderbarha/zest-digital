@@ -12,30 +12,32 @@ function Climate_action({ climate_actionImg, earth_img, smallDescription }: Clim
 
       <div className="main_container ">
         <div
-          className={` mx-auto md:ps-14 px-10 md:pe-7  md:py-[70px] py-[60px] rounded-30px shadow-compo border border-black font-mono bg-white text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}
+          className={` mx-auto md:ps-14 sm:px-10 px-[30px] md:pe-7  lg:py-[70px] md:py-[60px] sm:py-[50px] py-[30px] rounded-[20px] md:rounded-30px shadow-blue-right border border-black font-mono bg-white text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}
         >
-          <div className={` col-span-4 flex items-center  mx-auto`}>
-            <div className={`${classes.image1_w} w-[120px] sm:w-[250px]`}>
+          <div className={` md:col-span-4 flex items-center  mx-auto`}>
+            <div className={`${classes.image1_w}`}>
               <Image
                 src={urlFor(climate_actionImg).url()}
                 width={250}
                 height={105}
                 alt=""
-                className="w-full"
+                // className=" w-[150px] sm:w-[210px] md:max-w-full "
+                className="md:max-w-full sm:max-w-[210px] max-w-[150px]"
                 />
             </div>
-            <div className=" w-[80px] sm:w-[150px]">
+            <div className=" ">
               <Image
                 src={urlFor(earth_img).url()}
                 width={197}
                 height={198}
                 alt=""
-                className="w-full"
+                // className="w-[90px] sm:w-[110px] md:max-w-max"
+                className="md:max-w-full sm:max-w-[110px] max-w-[90px]"
               />
             </div>
           </div>
-          <div className="col-span-8 md:ps-10 max-w-[919px]   items-center">
-            <p className={`${classes.growth_engine_desc} text-3xl `}>
+          <div className="md:col-span-8 md:ps-10 max-w-[919px] flex items-center">
+            <p className={`${classes.growth_engine_desc}  ms-auto  lg:text-30px md:text-25px text-[20px] `}>
               {smallDescription}
             </p>
           </div>
