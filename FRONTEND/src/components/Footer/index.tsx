@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ClimateAction, FooterType } from "../../../lib/interface";
 import Climate_action from "@/common/Climate_action";
 import { PortableText } from "next-sanity";
+import { FaPhoneAlt } from "react-icons/fa";
 
 
 const Footer = ({ data }: { data: FooterType[]  }) => {
@@ -81,7 +82,7 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
                         <address className="not-italic">
                           <PortableText value={list.address}/>
                         </address>
-                          <p>{list.contact}</p>
+                          <p className=" flex items-center justify-center gap-1 text-left"><FaPhoneAlt className='text-white' /><span className="text-color-7"> {list.contact}</span></p>
                       </div>
                     ))}
                   </div>

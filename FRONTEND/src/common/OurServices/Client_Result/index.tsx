@@ -16,7 +16,7 @@ const Client_Result: React.FC<clientResults> = (props) => {
                     <div className={`${classes.Client_Result} `}>
                         <div className={`${classes.Client_Result_title} `}>
                             <h2 className='font-mono xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[25px] font-semibold text-white text-center'>{title_CR}</h2>
-                            <p className="font-mono lg:text-30px md:text-25px sm:text-[20px] text-[18px] mt-6 font-medium text-color-7 text-center">{heading_CR}</p>
+                            <p className="font-mono lg:text-30px md:text-25px sm:text-[20px] text-[18px] md:mt-6 sm:mt-[10px] mt-[5px] font-medium text-color-7 text-center">{heading_CR}</p>
                         </div>
                         <div className='Gross_profit_boxs grid  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  justify-items-stretch gap-10 2xl:gap-20'>
                             {card && card.map(({ mapped_title, description_1_CR, description_2_CR, percentage_CR, buttonName_CR }, index) => (

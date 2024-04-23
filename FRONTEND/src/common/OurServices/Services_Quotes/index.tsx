@@ -23,13 +23,13 @@ const Services_Quotes : React.FC<Services_Quotes> = ({ Services_Quotes }) => {
                         {(index%2==0) ? 
                       
                        <div className=" md:mt-0 mt-10">
-                            <h2 className={`${classes.Interests_h2} font-mono font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-[28px] text-[21px] italic lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[8px] max-w-[1347px] `}>{desc_quote}</h2>
-                            <p className='text-color-9 md:pt-[8px] sm:pt-[5px] pt-[3px] border-t lg:text-30px md:text-25px sm:text-[20px] text-lg font-mono  border-color-9'>{name_quote}</p>
+                            <h2 className={`${classes.Interests_h2} font-mono font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-[28px] text-[20px] italic lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[8px] max-w-[1347px] `}>{desc_quote}</h2>
+                            <p className='text-color-9 md:pt-[8px] sm:pt-[5px] pt-[3px] border-t lg:text-30px md:text-25px sm:text-[20px] text-[16px] font-mono  border-color-9'>{name_quote}</p>
                         </div>
                         :
                             <div className="text-right xl:mt-[120px] lg:mt-[90px] md:mt-[60px] sm:mt-[30px] mt-[20px]  max-w-[1347px] ms-auto ">
-                                <h2 className={`${classes.Interests_h2} font-mono font-semibold xl:text-45px lg:text-40px md:text-35px  sm:text-[28px] text-[21px] italic lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[8px]`}>{desc_quote}</h2>
-                                <p className='ms-auto text-color-9 md:pt-[8px] sm:pt-[5px] pt-[3px] border-t lg:text-30px md:text-25px sm:text-[20px]  font-moo  border-color-9'>{name_quote}</p>
+                                <h2 className={`${classes.Interests_h2} font-mono font-semibold xl:text-45px lg:text-40px md:text-35px  sm:text-[28px] text-[20px] italic lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[8px]`}>{desc_quote}</h2>
+                                <p className='ms-auto text-color-9 md:pt-[8px] sm:pt-[5px] pt-[3px] border-t lg:text-30px md:text-25px sm:text-[20px] text-[16px] font-moo  border-color-9'>{name_quote}</p>
                         </div>
                             }
                     </div>

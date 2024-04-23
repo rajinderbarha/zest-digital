@@ -8,36 +8,55 @@ const Logo_moving = ({ data }: any) => {
 
   // console.log("brandslist==============",data)
   return (
-    
-      <div
-        className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10  `}
-      >
-        <div className={`${classes.gradient_border} relative md:py-16 py-[50px] `}>
-          <div className={`${classes.shadow_custom} `}></div>
 
-          <Marquee className={`gap-16 `}>
-            <div className="flex  max-w-auto gap-[80px] me-5 ">
-              {data?.map((item: any, index: number) => {
-                // console.log("solution", item.icon);
-                return (
-                <div className="md:max-w-[200px] max-w-[150px] mx-auto w-full  self-center">
+    <div
+      className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10`}
+    >
+      <div className={`${classes.gradient_border} relative md:py-16 py-[50px] `}>
+        <div className={`${classes.shadow_custom} `}></div>
+
+        <Marquee className={` `}>
+          <div className="flex  max-w-auto gap-[50px] me-5 ">
+            {data?.map((item: any, index: number) => {
+              // console.log("solution", item.icon);
+              return (
+                <>
+
 
                   <Image
                     src={urlFor(item.icon).url()}
                     alt="brand img"
                     width={200}
-                    height={200}
-                    className=" "
+                    height={81}
                     key={index}
-                    />
-                    </div>
-                );
-              })}
-            </div>
-          </Marquee>
-        </div>
+                  />
+
+                </>
+              );
+            })}
+            {data?.map((item: any, index: number) => {
+              // console.log("solution", item.icon);
+              return (
+                <>
+
+
+                  <Image
+                    src={urlFor(item.icon).url()}
+                    alt="brand img"
+                    width={116}
+                    height={47}
+                    key={index}
+                  />
+
+                </>
+              );
+            })}
+          </div>
+        </Marquee>
+
       </div>
-    
+    </div>
+
   );
 };
 

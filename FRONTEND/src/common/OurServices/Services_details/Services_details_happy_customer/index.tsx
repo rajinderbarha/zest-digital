@@ -27,7 +27,7 @@ const Services_details_happy_customer = (props:any) => {
                 <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[28px] text-color-1 font-semibold font-mono ">
                   {item.heading}
                 </h2>
-                <div className="font-mono lg:text-30px md:text-25px text-[20px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] ">
+                <div className="font-mono lg:text-30px md:text-25px text-[19px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] ">
                   <PortableText value={item.content}/>
                  
                 </div>
@@ -58,7 +58,7 @@ const Services_details_happy_customer = (props:any) => {
                   <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[28px] text-color-1 font-semibold font-mono ">
                     {item.heading}
                   </h2>
-                  <div className="font-mono lg:text-30px md:text-25px text-[20px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] ">
+                  <div className="font-mono lg:text-30px md:text-25px text-[19px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] ">
                     <PortableText value={item.content}/>
                  
                   </div>

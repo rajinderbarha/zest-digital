@@ -39,7 +39,7 @@ const Global_Accordion = ({heading_acc,card_acc,belowbtnName_acc,belowbtnLink_ac
    <>
    <div className="main_padding">
     <div className={`${classes.accordion} max-w-[1520px] mx-auto `}>
-      <div className="font-mono font-semibold text-30px md:text-45px text-center text-color-1 xl:mb-[115px] lg:mb-[100px] md:mb-[80px] sm:mb-[60px] mb-[40px]">
+      <div className="font-mono font-semibold text-[30px] md:text-45px text-center text-color-1 xl:mb-[115px] lg:mb-[100px] md:mb-[80px] sm:mb-[60px] mb-[40px]">
       {heading_acc}
       </div>
       {card_acc.map((item,index) => (
@@ -74,7 +74,7 @@ const Global_Accordion = ({heading_acc,card_acc,belowbtnName_acc,belowbtnLink_ac
     </div>
     <div className="text-center">
         <Link href={belowbtnLink_acc}>
-          <button className="font-mono bg-color-1 border border-color-1 text-[#c0c0c0] text-base md:px-[25px] px-[20px] py-[5px] md:py-[10px]  mt-[20px] md:mt-[60px] rounded-full">
+          <button className="font-mono bg-color-1 border border-color-1 text-[#c0c0c0] text-[15px] md:px-[25px] px-[20px] py-[5px] md:py-[10px]  mt-[20px] md:mt-[60px] rounded-full">
           {belowbtnName_acc}
           </button>
         </Link>

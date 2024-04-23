@@ -62,7 +62,7 @@
     }
 
     .growth_engine button {
-        /* font-size: 12px; */
+        font-size: 14px;
         /* padding: 4px 0 4px 10px; */
     }
 
@@ -78,6 +78,18 @@
 
 }
 
+@media only screen and (max-width:500px) {
+    .growth_engine_title {
+        font-size: 25px;
+    }
+
+    .growth_engine_desc {
+        font-size: 18px;
+    }
+    .growth_engine button {
+        font-size: 12px;
+    }
+}
 @media only screen and (max-width:530px) {
     .grow_image {
         width: 250px;

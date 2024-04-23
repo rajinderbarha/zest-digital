@@ -42,8 +42,8 @@ const Services = ({ data }: any) => {
               <div className="  h-max self-end">
                 <Image
                   src={urlFor(data.image1).url()}
-                  width={342}
-                  height={342}
+                  width={320}
+                  height={320}
                   alt=""
                   className=" "
                 />
@@ -51,8 +51,8 @@ const Services = ({ data }: any) => {
               <div className="   h-max self-center">
                 <Image
                   src={urlFor(data.image2).url()}
-                  width={342}
-                  height={342}
+                  width={282}
+                  height={282}
                   alt=""
                   className=" "
                 />
@@ -60,8 +60,8 @@ const Services = ({ data }: any) => {
               <div className="    h-max">
                 <Image
                   src={urlFor(data.image3).url()}
-                  width={342}
-                  height={342}
+                  width={273}
+                  height={273}
                   alt=""
                   className="  "
                 />
