@@ -10,7 +10,7 @@ import React from "react";
 import { getCasestudyData } from "../../../lib/sanity.query";
 
 function Casestudy({ singleCasestudy }: any) {
-  // console.log("lib", singleCasestudy);
+  console.log("lib", singleCasestudy);
   return (
     <div>
       <Casestudyintro data={singleCasestudy[0].hero} />

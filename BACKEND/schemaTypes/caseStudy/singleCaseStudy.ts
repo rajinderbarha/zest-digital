@@ -41,7 +41,9 @@ export const SingleCaseStudy = defineType({
                             { type: 'string', name: 'count', title: 'Count' },
                             { name: 'heading', title: 'Heading', type: 'string' },
                             {name:'title', title:'Title', type:'string'},
-                            { type: 'string', name: 'description', title: 'Description' }
+                            { type: 'string', name: 'description', title: 'Description' },
+                            { type: 'string', name: 'buttonname', title: 'Button Name' },
+                            
                         ]
                     }]
                 },

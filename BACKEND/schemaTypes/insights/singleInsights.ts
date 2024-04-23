@@ -44,6 +44,11 @@ export const SingleInsights = defineType({
           title: 'Icon',
           type: 'image',
         },
+        {
+          name: 'grow_down',
+          title: 'Grow down image',
+          type: 'image',
+        },
       ],
     },
     {

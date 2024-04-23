@@ -3,7 +3,6 @@ import classes from "./gross_profit.module.css";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 function Gross_profit({ data }: any) {
-
   return (
     <div className="main_padding xl:mt-[85px] lg:mt-[65px] md:mt-[50px] sm:mt-[40px] mt-[35px]">
     <div className="main_container">
@@ -22,9 +21,9 @@ function Gross_profit({ data }: any) {
                 <p className="font-lato text-base sm:text-lg font-normal  text-white xl:mb-[30px] lg:mb-[25px] sm:mb-[20px]  mb-[15px] text-center">
                   {item.description}
                 </p>
-                <Link href={`/casestudy/${data.slug.current}`}>
+                <Link href={`/casestudies/${data.slug.current}`}>
                 <button className="font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[15px] sm:text-base md:py-[3px] sm:py-[2px] py-[1px] md:ps-4 sm:ps-[15px] ps-[13px] flex sm:gap-2 gap-[6px] items-center">
-                  View case study{" "}
+                 {item.buttonname}
                   <span className="p-1 text-white rounded-full bg-black me-[2px] sm:me-[3px] md:me-1 text-[15px] sm:text-lg">
                     <GoArrowRight />
                   </span>

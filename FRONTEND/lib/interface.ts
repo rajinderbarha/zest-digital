@@ -514,12 +514,12 @@ export interface ServiceQuote {
   name_quote: string;
 }
 
-export interface ServiceAddress {
-  title_add: string;
-  streetAddress_add: string;
-  hourstitle_add: string;
-  dayandtiming_add: string;
-}
+// export interface ServiceAddress {
+//   title_add: string;
+//   streetAddress_add: string;
+//   hourstitle_add: string;
+//   dayandtiming_add: string;
+// }
 
 export interface clientResults  {
   title_CR: string;
@@ -537,11 +537,11 @@ export type AgencyAddress = {
   heading_add: string;
   slotDescription_add: string;
   buttonName_add: string;
-    address: ServiceAddress[];
-    card: {
+    address: any;
+    cardLoc: {
       location: {
-        latitude: string;
-        longitude: string;
+        latitude: any;
+        longitude: any;
       };
       contactno: string;
     }[];
