@@ -14,6 +14,7 @@
     margin: 0;
     font-size: 14px;
 }
+
 .Filters_btn{
     cursor: pointer;
     @apply text-color-1 hover:bg-color-7 hover:border-color-1 md:hover:border-color-7  hover:text-color-1 md:text-color-7 md:border-color-7 border border-color-1 rounded-full font-mono
@@ -28,8 +29,9 @@
     .Filters {
         padding: 0px 0px 0px 0px;
     }
-    .Filters_btn {
-        padding: 3px 8px;
+    .Filters_btn ,.Insight_tag{
+        padding: 5px 20px;
+        font-size: 12px;
     }
 }
 

@@ -1,6 +1,5 @@
 import React from 'react'
-import climate_action from '../../assets/images/climate_action.png'
-import earth from '../../assets/images/earth.png'
+
 import Image from 'next/image'
 import classes from './Climate_action.module.css'
 import { ClimateAction } from '../../../lib/interface'
@@ -8,7 +7,8 @@ import { urlFor } from '../../../lib/sanity.client'
 function Climate_action({ climate_actionImg, earth_img, smallDescription }: ClimateAction) {
   return (
     <>
-    <div className="main_padding mt-[74px] mb-[110px]">
+    
+    <div className="main_padding  md:mt-[74px] mt-[30px] md:mb-[110px] mb-[50px]">
 
       <div className="main_container ">
         <div

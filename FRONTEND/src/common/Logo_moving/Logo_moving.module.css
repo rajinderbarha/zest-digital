@@ -8,6 +8,11 @@
     z-index: 6;
 
 }
+@media only screen and (max-width:767px){
+  .shadow_custom {
+    background-image: linear-gradient(90deg, #fff , transparent 12%, transparent 88%, #fff );
+}
+}
 .gradient_border{
     position: relative;
     background-color: transparent; /* Adjust based on your background color */

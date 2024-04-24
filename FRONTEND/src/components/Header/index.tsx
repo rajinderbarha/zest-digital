@@ -37,7 +37,7 @@ const MobileViewHeader = () => {
         <Image src={barsIcon} alt="Logo" />
       </div>
       <div
-        className={`${classes.menu} ${isMenuOpen ? classes.menuOpen : classes.menuOpen}`}
+        className={`${classes.menu} main_padding ${isMenuOpen ? classes.menuOpen : classes.menuOpen}`}
         style={{ height: isMenuOpen ? '100vh' : 0 }}
       >
       

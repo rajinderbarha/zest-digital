@@ -13,9 +13,9 @@ function MapLocations({data}:any) {
     <>
     {data.map(({longitude,latitude,leftDescriptionList,rightDescriptionList}:any,index:any)=> (
 
-      <div key={index} className={`${classes.MapLocations} max-w-max mb-[114px]`}>
+      <div key={index} className={`${classes.MapLocations} max-w-max `}>
         <div
-          className={`${classes.location_div} rounded-[20px] md:rounded-30px `}
+          className={`${classes.location_div}  `}
         >
           <Map
             height={300}
@@ -32,15 +32,15 @@ function MapLocations({data}:any) {
         <div className="contact flex justify-between gap-2 mt-[20px]">
           <div className="address ">
             <address className="text-[13px] md:text-base font-mono text-color-1 not-italic">
-              {leftDescriptionList}
+              {/* {leftDescriptionList} */}
             </address>
           </div>
           <div className="tele  h-max">
             <div className=" flex items-center text-color-9 font-mono ">
-              <FaPhoneAlt className="text-black w-max" />
+              {/* <FaPhoneAlt className="text-black w-max" /> */}
               <span className="text-[13px] md:text-base">
                 {" "}
-              {rightDescriptionList}
+              {/* {rightDescriptionList} */}
               </span>
             </div>
           </div>
