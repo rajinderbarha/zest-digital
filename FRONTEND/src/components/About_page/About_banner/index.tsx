@@ -21,7 +21,6 @@ function About_banner({ data }: { data: AboutType[] }) {
                 <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-[42px] text-[30px] text-color-1  mb-5 xl:mt-[35px] lg:mt-[27px] md:mt-[22px] mt-[15px]">
                   {item.hero.heading}
                 </h1>
-                {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
               </div>
               <div className="md:col-span-6 ">
                 <Image

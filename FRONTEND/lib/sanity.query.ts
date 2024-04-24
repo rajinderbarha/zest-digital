@@ -18,7 +18,6 @@ export function getHeader() {
   );
 }
 
-
 export function getFooter() {
   return client.fetch(
     groq`
@@ -144,8 +143,6 @@ export async function getSingleCasestudyData(slug: string) {
   const data = await client.fetch(query);
   return data;
 }
-
-
 
 export async function getCasestudyData() {
   const query = `
@@ -292,9 +289,10 @@ export async function getSingleInsightsData(slug: string) {
   return data;
 }
 
+
+
 export async function getResourcesData() {
   const query = `
-
 *[_type == "resources"]{
       "banner": banner-> {
         climate_actionImg,
@@ -396,7 +394,6 @@ export function getSingleTerms(slug: string) {
     `
   );
 }
-
 
 export async function getSingleOurServicesData(slug: string) {
   const query = `
@@ -517,7 +514,6 @@ export async function getCareersData() {
     }
   }
   
-
   `;
   const data = await client.fetch(query);
   return data;
@@ -558,16 +554,14 @@ export async function getGrowthData(slug: string) {
     image,
     buttonName,
     buttonLink,
-    "growthcard": growthcard-> {
-      "slug":slug.current,
-      mainheading,
-      card{
-     heading,
-     description,
-     image,
-     buttonName,
-      }
- },
+    Solheading,
+    card{
+   heading,
+   description,
+   image,
+   buttonName,
+    
+},
     growthSection {
           upperHeading,
           upperSmallLine,

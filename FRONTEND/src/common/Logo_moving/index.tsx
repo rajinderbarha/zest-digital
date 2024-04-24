@@ -3,10 +3,10 @@ import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import classes from "./Logo_moving.module.css";
 import { urlFor } from "../../../lib/sanity.client";
+import { LogoMoving } from "../../../lib/interface";
 
-const Logo_moving = ({ data }: any) => {
+const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
 
-  // console.log("brandslist==============",data)
   return (
     
       <div
@@ -17,10 +17,10 @@ const Logo_moving = ({ data }: any) => {
 
           <Marquee className={`gap-16 `}>
             <div className="flex  max-w-auto gap-[80px] me-5 ">
-              {data?.map((item: any, index: number) => {
+              {LogoMovdata?.map((item: any, index: number) => {
                 // console.log("solution", item.icon);
                 return (
-                <div className="md:max-w-[200px] max-w-[150px] mx-auto w-full  self-center">
+                <div key={index} className="md:max-w-[200px] max-w-[150px] mx-auto w-full  self-center">
 
                   <Image
                     src={urlFor(item.icon).url()}

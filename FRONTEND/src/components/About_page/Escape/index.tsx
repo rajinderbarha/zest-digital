@@ -4,7 +4,6 @@ import Marquee from "react-fast-marquee";
 import { AboutType } from "../../../../lib/interface";
 import Link from "next/link";
 function Escape({ data }: { data: AboutType[] }) {
-  console.log(data);
 
   return (
     <div className="Escape_main main_padding">

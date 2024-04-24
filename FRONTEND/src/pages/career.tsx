@@ -4,11 +4,7 @@ import { getCareersData } from "../../lib/sanity.query";
 import { CareersType } from "../../lib/interface";
 
 function career({ careerData }: { careerData: CareersType[] }) {
-  return (
-    <>
-      <Career data={careerData} />
-    </>
-  );
+  return <Career data={careerData} />;
 }
 
 export default career;

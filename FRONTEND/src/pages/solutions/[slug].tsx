@@ -3,7 +3,13 @@ import React from "react";
 import { getGrowthData, getSolutionData } from "../../../lib/sanity.query";
 
 function growthengine({ growth, card }: any) {
-  return <GrowthEnginePage data={growth[0]} card={card} />;
+  return (
+    <GrowthEnginePage
+      data={growth[0]}
+      card={card}
+      otherSolHeading={growth[0].Solheading}
+    />
+  );
 }
 
 export default growthengine;

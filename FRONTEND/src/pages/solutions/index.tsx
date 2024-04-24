@@ -9,7 +9,7 @@ function solutions({ solution }: any) {
       <Solution_Banner data={solution[0].hero} />
       <Section_Main data={solution[0].transform} card={solution[0].growth} />
       <div className="xl:mt-[250px] lg:mt-[200px] md:mt-[150px] sm:mt-[140px] mt-[100px] xl:mb-[200px] lg:mb-[180px] md:mb-[150px] mb-[120px]">
-        <Logo_moving data={solution[0].brandList} />
+        <Logo_moving LogoMovdata={solution[0].brandList} />
       </div>
     </>
   );

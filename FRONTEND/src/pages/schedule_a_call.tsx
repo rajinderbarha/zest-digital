@@ -1,13 +1,12 @@
 import ScheduleCall from "@/components/ScheduleCall";
 import React from "react";
 import { getSchedule_a_callData } from "../../lib/sanity.query";
+import { ScheduleCallProps } from "../../lib/interface";
 
-function schedulecall({ schedule_a_call }: any) {
-  return (
-    <>
-      <ScheduleCall data={schedule_a_call[0]} />
-    </>
-  );
+function schedulecall({ schedule_a_call }: ScheduleCallProps) {
+  // console.log(schedule_a_call[0]);
+
+  return <ScheduleCall data={schedule_a_call[0]} />;
 }
 
 export default schedulecall;

@@ -1,9 +1,5 @@
 import Image from "next/image";
-import React, { useMemo } from "react";
-import facebook from "../../assets/images/Facebook_Zest_icon_black.png";
-import instagram from "../../assets/images/Instagram_Zest_icon_black.png";
-import linkedin from "../../assets/images/LinkedIn_Zest_icon_black.png";
-import hand_wave_img from "../../assets/images/Hand_wave_icon.png";
+import React from "react";
 import classes from "./Contact.module.css";
 import MapLocations from "./MapLocations";
 import { ContactType } from "../../../lib/interface";
@@ -11,11 +7,8 @@ import Link from "next/link";
 import { urlFor } from "../../../lib/sanity.client";
 
 function Contact({ data }: { data: ContactType }) {
-
   return (
     <>
-    
-    
       <div className="Contact mt-[140px] sm:px-[20px] px-3">
         <div className="main_container ">
           <div className="grid lg:grid-cols-12 ">
@@ -130,7 +123,6 @@ function Contact({ data }: { data: ContactType }) {
                     >
                       Message*
                     </label>
-                    {/* <input type="" name="emmessageail" id="" className='border border-color-9 rounded-[10px] px-[25px] py-[14px] text-lg h-[50px]' placeholder='johndoe@gmail.com' required /> */}
                     <textarea
                       name="message"
                       id=""
@@ -157,7 +149,6 @@ function Contact({ data }: { data: ContactType }) {
           </div>
           <div className="mt-[200px] flex justify-between gap-3 flex-wrap mb-[220px]">
             <MapLocations data={data.card} />
-           
           </div>
         </div>
       </div>
@@ -166,4 +157,3 @@ function Contact({ data }: { data: ContactType }) {
 }
 
 export default Contact;
-

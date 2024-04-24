@@ -3,8 +3,9 @@ import Image from "next/image";
 import classes from "./heroSection.module.css";
 import { urlFor } from "../../../lib/sanity.client";
 import MuxPlayer from "@mux/mux-player-react";
+import { HomepageHeroSec } from "../../../lib/interface";
 
-const HeroSection = ({ data }: any) => {
+const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
   const {
     heading,
     viewSolBtnName,
@@ -13,10 +14,9 @@ const HeroSection = ({ data }: any) => {
     SeeOurResBtnLink,
     image,
     video,
-  } = data;
+  } = HeroSecData;
 
-  console.log("vv", viewSolBtnLink,
-  SeeOurResBtnLink,);
+  console.log("vv", viewSolBtnLink, SeeOurResBtnLink);
   return (
     <>
       <div className="main_padding">
@@ -32,15 +32,14 @@ const HeroSection = ({ data }: any) => {
               </h1>
               <div className="flex gap-5 md:flex-col lg:flex-row mt-9 flex-col sm:flex-row">
                 <a href={viewSolBtnLink}>
-
-                <button className="text-base px-25px md:h-10 h-9 bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white  hover:border-color-1">
-                  {viewSolBtnName}
-                </button>
+                  <button className="text-base px-25px md:h-10 h-9 bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white  hover:border-color-1">
+                    {viewSolBtnName}
+                  </button>
                 </a>
                 <a href={SeeOurResBtnLink}>
-                <button className="text-base px-25px md:h-10 h-9 bg-transparent text-white rounded-full hover:text-color-1 hover:bg-white border border-white ">
-                  {SeeOurResBtnName}
-                </button>
+                  <button className="text-base px-25px md:h-10 h-9 bg-transparent text-white rounded-full hover:text-color-1 hover:bg-white border border-white ">
+                    {SeeOurResBtnName}
+                  </button>
                 </a>
               </div>
               <div className={`${classes.marketing_agency_logo_1} self-end`}>

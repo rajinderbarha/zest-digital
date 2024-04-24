@@ -1,12 +1,12 @@
 import DigitalTerms from "@/components/DigitalTerms";
 import React from "react";
 import { getSingleTerms } from "../../../lib/sanity.query";
-import { TermsOfServiceType } from "../../../lib/interface";
+import { SingletermsAndConditionsType } from "../../../lib/interface";
 
 function SingletermsAndConditions({
   singletermsdata,
 }: {
-  singletermsdata: TermsOfServiceType[];
+  singletermsdata: SingletermsAndConditionsType[];
 }) {
   return <DigitalTerms data={singletermsdata} />;
 }

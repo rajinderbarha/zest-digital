@@ -1,15 +1,12 @@
 import React from "react";
 import classes from "./Services.module.css";
 import Image from "next/image";
-// import vertical_bar from "../../assets/images/vertical_bar.png";
-// import Code_icon from "../../assets/images/Code_icon.png";
-// import target_icon from "../../assets/images/target_icon.png";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../lib/sanity.client";
-const Services = ({ data }: any) => {
-  console.log("services--------", data);
+import { HomePageServices } from "../../../lib/interface";
 
+const Services = ({ data }: HomePageServices) => {
   return (
     <>
       <div className="main_padding">
