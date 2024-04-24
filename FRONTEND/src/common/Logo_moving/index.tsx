@@ -8,12 +8,6 @@ import { LogoMoving } from "../../../lib/interface";
 const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
 
   return (
-    
-      <div
-        className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10  `}
-      >
-        <div className={`${classes.gradient_border} relative md:py-16 py-[50px] `}>
-          <div className={`${classes.shadow_custom} `}></div>
 
           <Marquee className={`gap-16 `}>
             <div className="flex  max-w-auto gap-[80px] me-5 ">
@@ -26,18 +20,20 @@ const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
                     src={urlFor(item.icon).url()}
                     alt="brand img"
                     width={200}
-                    height={200}
-                    className=" "
+                    height={81}
                     key={index}
-                    />
-                    </div>
-                );
-              })}
-            </div>
-          </Marquee>
-        </div>
-      </div>
-    
+                    className="xl:w-[200px] lg:w-[180px] md:w-[150px] sm:w-[120px] w-[100px] h-auto "
+                  />
+
+                </div>
+              );
+            })}
+          
+          </div>
+        </Marquee>
+
+     
+
   );
 };
 

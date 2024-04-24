@@ -5,7 +5,7 @@
 @apply md:rounded-30px rounded-[20px]
   }
   .title_desc_text_class{
-    @apply font-mono lg:text-30px md:text-[28px] sm:text-[25px] text-[20px] 
+    @apply font-mono lg:text-30px md:text-[28px] sm:text-[25px] text-[19px] 
   }
   .title_desc_padding_class{
     @apply lg:px-[55px] md:px-[45px] sm:px-[30px] px-[20px] 

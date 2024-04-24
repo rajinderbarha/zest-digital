@@ -11,7 +11,7 @@ function About_banner({ data }: { data: AboutType[] }) {
         <div className="main_container">
           {data?.map((item, index) => (
             <div
-              className="grid md:grid-cols-12 "
+              className="grid md:grid-cols-12 xl:mt-[143px] lg:mt-[120px] md:mt-[100px] sm:mt-[70px] mt-[40px]"
               key={`${index}_About_banner`}
             >
               <div className="md:col-span-6">
@@ -22,7 +22,7 @@ function About_banner({ data }: { data: AboutType[] }) {
                   {item.hero.heading}
                 </h1>
               </div>
-              <div className="md:col-span-6 ">
+              <div className="md:col-span-6 hidden md:block">
                 <Image
                   className="md:ms-auto "
                   src={urlFor(item.hero.image).url()}
