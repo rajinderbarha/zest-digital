@@ -6,7 +6,6 @@ import Link from "next/link";
 import { ClimateAction, FooterType } from "../../../lib/interface";
 import Climate_action from "@/common/Climate_action";
 import { PortableText } from "next-sanity";
-import { FaPhoneAlt } from "react-icons/fa";
 
 
 const Footer = ({ data }: { data: FooterType[]  }) => {
@@ -80,10 +79,10 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
                     </h2>
                     {footerItm.list.map((list, index) => (
                       <div key={`${index}_list`} className={`${classes.address}`}>
-                        <address className="font-lato not-italic xl:text-[18px] lg:text-[16px] md:text-[15px] text-[13px]">
+                        <address className="not-italic">
                           <PortableText value={list.address}/>
                         </address>
-                          <p className=" flex font-lato items-center justify-center gap-1 text-left"><FaPhoneAlt className='text-white xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]' /><span className="text-color-7 xl:text-[18px] lg:text-[16px] md:text-[15px] text-[13px]"> {list.contact}</span></p>
+                          <p>{list.contact}</p>
                       </div>
                     ))}
                   </div>
@@ -122,8 +121,8 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
             </div>
           </div>
           <div className="bg-color-1 py-[35px] " >
-            <div className={"text-white max-w-[970px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]"}>
-              <PortableText value={item.copyRightText as any}  />
+            <div className={"text-white max-w-[970px] px-10 text-center mx-auto "}>
+              <PortableText value={item.copyRightText}  />
               </div>
           </div>
         </div>

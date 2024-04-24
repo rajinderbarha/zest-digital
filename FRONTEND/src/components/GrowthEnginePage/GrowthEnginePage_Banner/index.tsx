@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./GrowthEnginePage_Banner.module.css";
-import { GrowthTrackerType } from "../../../../lib/interface";
+// import { GrowthTrackerType } from "../../../../lib/interface";
 import Link from "next/link";
 
 const GrowthEnginePage_Banner = ({ data }: any) => {

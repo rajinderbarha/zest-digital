@@ -2,7 +2,7 @@ import Growth_engine from "@/common/Growth_engine";
 import React from "react";
 // import { GrowthTrackerType } from "../../../../lib/interface";
 
-function Growths({ data }: { data: any }) {
+function Growths({ data ,otherSolHeading}: any ) {
   // console.log("growths-------------",data)
   return (
     <>
@@ -16,7 +16,7 @@ function Growths({ data }: { data: any }) {
                 // key={`${index}_Growths`}
                 className="text-30px md:text-45px sm:text-35px font-mono font-semibold mx-auto text-center"
               >
-                "sdjdjkbskdbdbk"
+                {otherSolHeading}
               </h2>
             {/* ))} */}
             <div className={` font-mono  mx-auto grid gap-10 mt-10 md:mt-28 `}>

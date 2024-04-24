@@ -2,13 +2,15 @@ import React from "react";
 import classes from "../About_banner.module.css";
 import Marquee from "react-fast-marquee";
 import { AboutType } from "../../../../lib/interface";
+import Link from "next/link";
 function Escape({ data }: { data: AboutType[] }) {
-  console.log(data);
 
   return (
     <div className="Escape_main main_padding">
       {data?.map((Escapedata, index) => (
         <div className="main_container" key={`${index}_Escape`}>
+
+          <Link href={Escapedata.escape.careerPagelink}>
           <div className={`${classes.Escape}`}>
             <h2 className="xl:text-55px lg:text-50px md:text-40px text-35px md:mb-12 mb-6 font-mono text-center  font-semibold text-white">
               {Escapedata.escape.heading}
@@ -39,6 +41,8 @@ function Escape({ data }: { data: AboutType[] }) {
               </Marquee>
             </div>
           </div>
+</Link>
+
         </div>
       ))}
     </div>

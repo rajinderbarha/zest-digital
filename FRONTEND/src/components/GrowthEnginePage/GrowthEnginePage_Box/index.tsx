@@ -3,7 +3,7 @@ import classes from "./GrowthEnginePage_Box.module.css";
 import { GoArrowRight } from "react-icons/go";
 import Box_Title from "../Box_Title";
 import Image from "next/image";
-import { GrowthTrackerType } from "../../../../lib/interface";
+// import { GrowthTrackerType } from "../../../../lib/interface";
 import Link from "next/link";
 import { urlFor } from "../../../../lib/sanity.client";
 

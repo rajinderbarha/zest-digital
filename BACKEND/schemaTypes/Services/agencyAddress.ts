@@ -16,17 +16,23 @@ export const ServicesAgencyAddress = defineType({
                 {
                     type: 'object',
                     fields: [
-                        { name: 'title_add', type: 'string', title: 'Title' },
-                        { name: 'streetAddress_add', type: 'string', title: 'Street Address' },
-                        { name: 'hourstitle_add', type: 'string', title: 'Hours Title' },
-                        { name: 'dayandtiming_add', type: 'string', title: 'Day and timing' },
+                        {name:"contactInfo", title:"Contact information ", type:"array", of:[{
+                            type:"block"
+                        }]},
+                        
+
+                        
+                        // { name: 'title_add', type: 'string', title: 'Title' },
+                        // { name: 'streetAddress_add', type: 'string', title: 'Street Address' },
+                        // { name: 'hourstitle_add', type: 'string', title: 'Hours Title' },
+                        // { name: 'dayandtiming_add', type: 'string', title: 'Day and timing' },
 
                     ],
                 },
             ],
         },
         {
-            name: 'card', type: 'array', title: 'Card', of: [{
+            name: 'cardLoc', type: 'array', title: 'Card Location', of: [{
                 type: 'object', fields: [
                     {
                         name: 'location',
