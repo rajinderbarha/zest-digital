@@ -123,7 +123,7 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
           </div>
           <div className="bg-color-1 py-[35px] " >
             <div className={"text-white max-w-[970px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]"}>
-              <PortableText value={item.copyRightText}  />
+              <PortableText value={item.copyRightText as any}  />
               </div>
           </div>
         </div>
