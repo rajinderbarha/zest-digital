@@ -6,92 +6,92 @@ import popup_percantage from '../../assets/images/popup_percantage.svg'
 import popup_euro from '../../assets/images/popup_euro.svg'
 import { GoArrowLeft } from "react-icons/go";
 import ProgressBar from '@/common/ProgressBar'
-function Resources_Calculater_Step_4({setStep}:any) {
+function Resources_Calculater_Step_4({ setStep }: any) {
     return (
         <>
             <div className="Resources_Calculater_Step_3">
-                <div className="">
-                <div className="Resources_Calculater_Step_5 popup_conatiner md:pt-[29px] pt-[20px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
+                <div className="pe-[6px] pb-[6px]">
+                    <div className="Resources_Calculater_Step_5 popup_conatiner md:pt-[29px] pt-[20px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                         <div className="progrees_bar xl:mb-[140px] lg:mb-[110px] md:mb-[80px] sm:mb-[70px] mb-[60px] ">
-                        <ProgressBar value={80} />
+                            <ProgressBar value={80} />
                         </div>
-                        <h2 className="text-center font-mono xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[25px] font-semibold md:mb-[30px] sm:mb-[20px] mb-[10px]">Input your data (use the ‘?’ for help)</h2>
-                        <div className="form_details  max-w-[640px] md:px-10  mx-auto grid gap-5 md:pb-[97px] sm:pb-[60px] pb-[30px]">
-                            <div className="flex relative text-center  mx-auto   justify-items-end  max-w-max">
-                                <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
-                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold text-[18px] text-color-1'>Average monthly sessions:</label>
-                                    <div className="flex items-center gap-2">
+                        <h2 className="text-center font-mono xl:text-45px lg:text-40px md:text-[35px] sm:text-[25px] text-[20px] font-semibold md:mb-[30px] sm:mb-[30px] mb-[10px]">Input your data (use the ‘?’ for help)</h2>
+                        <div className="form_details max-w-[710px] mx-auto md:justify-end justify-center grid gap-5 md:pb-[97px] sm:pb-[60px] pb-[30px]">
+                            <div className="flex relative  md:justify-self-end   max-w-max ">
+                                <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px] ">
+                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold sm:text-base md:text-[18px] text-color-1'>Average monthly sessions:</label>
+                                    <div className="flex items-center gap-2 relative">
 
-                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='1000' className='py-[14px] px-[22px] rounded-[10px] md:w-[300px] border border-color-1' />
+                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='1000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
-                                        <div className="max-w-[30px] w-full">
-                                            <Image src={popup_person} alt='' className='max-w-[30px] w-full' />
+                                        <div className="">
+                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
-                                    </div>
+                                <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  ">
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
                                 </div>
-                                <div className="ml-2 relative top-0 sm:-top-5">
-                                    <Image src={popup_question_mark} alt='' className='' />
+                                    </div>
                                 </div>
 
                             </div>
-                            <div className="flex  relative text-center mx-auto max-w-max">
+                            <div className="flex  relative md:justify-self-end  max-w-max">
                                 <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
-                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold text-[18px] text-color-1'>Average conversion rate:</label>
-                                    <div className="flex items-center gap-2">
+                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Average conversion rate:</label>
+                                    <div className="flex items-center gap-2 relative">
 
-                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='3' className='py-[14px] px-[22px] rounded-[10px] md:w-[300px] border border-color-1' />
+                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='3' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
-                                        <div className="max-w-[30px] w-full">
-                                            <Image src={popup_person} alt='' className='max-w-[30px] w-full' />
+                                        <div className="">
+                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
-                                    </div>
+                                <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  ">
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
                                 </div>
-                                <div className="ml-2 relative top-0 sm:-top-5">
-                                    <Image src={popup_question_mark} alt='' className='' />
+                                    </div>
                                 </div>
 
                             </div>
-                            <div className="flex  relative text-center mx-auto max-w-max">
+                            <div className="flex  relative  md:justify-self-end   max-w-max">
                                 <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
-                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold text-[18px] text-color-1'>Average order value:</label>
-                                    <div className="flex items-center gap-2">
+                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Average order value:</label>
+                                    <div className="flex items-center gap-2 relative">
 
-                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='5000' className='py-[14px] px-[22px] rounded-[10px] md:w-[300px] border border-color-1' />
+                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='5000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
-                                        <div className="max-w-[30px] w-full">
-                                            <Image src={popup_person} alt='' className='max-w-[30px] w-full' />
+                                        <div className="">
+                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
-                                    </div>
+                                <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max " >
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
                                 </div>
-                                <div className="ml-2 relative top-0 sm:-top-5">
-                                    <Image src={popup_question_mark} alt='' className='' />
+                                    </div>
                                 </div>
 
                             </div>
-                            <div className="flex  relative text-center mx-auto max-w-max">
+                            <div className="flex relative md:justify-self-end max-w-max">
                                 <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
-                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold text-[18px] text-color-1'>Average order value:</label>
-                                    <div className="flex items-center gap-2">
+                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Conversion rate (lead to sale):</label>
+                                    <div className="flex items-center gap-2 relative">
 
-                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='40' className='py-[14px] px-[22px] rounded-[10px] md:w-[300px] border border-color-1' />
+                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='40' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
-                                        <div className="max-w-[30px] w-full">
-                                            <Image src={popup_person} alt='' className='max-w-[30px] w-full' />
+                                        <div className="">
+                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
-                                    </div>
+                                <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  ">
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
                                 </div>
-                                <div className="ml-2 relative top-0 sm:-top-5">
-                                    <Image src={popup_question_mark} alt='' className='' />
+                                    </div>
                                 </div>
 
                             </div>
 
                         </div>
                         <div className="button text-center mb-[27px]">
-                            <button className='bg-color-1 font-mono text-base px-[40px] py-[10px] text-white rounded-full' type='button' onClick={()=>setStep(5)}>Next</button>
+                            <button className='bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] text-white rounded-full' type='button' onClick={() => setStep(5)}>Next</button>
                         </div>
                         <div className=" max-w-max mx-auto w-max ">
-                            <button className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1" type='button' onClick={()=>setStep(3)}><GoArrowLeft /> Back </button>
+                            <button className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1" type='button' onClick={() => setStep(3)}><GoArrowLeft /> Back </button>
                         </div>
                     </div>
                 </div>

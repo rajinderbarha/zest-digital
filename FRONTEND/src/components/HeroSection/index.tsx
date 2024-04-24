@@ -31,13 +31,13 @@ const HeroSection = ({ data }: any) => {
                 {heading}
               </h1>
               <div className="flex gap-5 md:flex-col lg:flex-row mt-9 flex-col sm:flex-row">
-                <a href={viewSolBtnLink}>
+                <a href={viewSolBtnLink} className="flex">
 
-                <button className="text-base px-25px md:h-10 h-9 bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white  hover:border-color-1">
+                <button className="text-base  px-25px md:h-10 h-9 bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white  hover:border-color-1">
                   {viewSolBtnName}
                 </button>
                 </a>
-                <a href={SeeOurResBtnLink}>
+                <a href={SeeOurResBtnLink} className="flex">
                 <button className="text-base px-25px md:h-10 h-9 bg-transparent text-white rounded-full hover:text-color-1 hover:bg-white border border-white ">
                   {SeeOurResBtnName}
                 </button>

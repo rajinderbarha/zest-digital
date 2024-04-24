@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   /* --foreground-rgb: 0, 0, 0;
@@ -26,15 +27,37 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+/* popups style */
+@media only screen and (max-width:500px) {
+  .css-1p6wq07-MuiPaper-root-MuiDialog-paper {
+    margin: 10px;
+    z-index: -1;
+  }
+}
+
+.css-zw3mfo-MuiModal-root-MuiDialog-root {
+  overflow-y: scroll;
+}
+
+.css-hz1bth-MuiDialog-container {
+  height: auto;
+}
+
+
+
 /* This will hide the default dropdown arrow */
 select {
-  -webkit-appearance: none; /* for Chrome, Safari */
-  -moz-appearance: none;    /* for Firefox */
-  appearance: none;         /* for modern browsers */
+  -webkit-appearance: none;
+  /* for Chrome, Safari */
+  -moz-appearance: none;
+  /* for Firefox */
+  appearance: none;
+  /* for modern browsers */
   background-image: url('../assets/images/select_drop_down.svg');
   background-repeat: no-repeat;
   background-position: right 10px center;
 }
+
 select::-ms-expand {
   display: none;
 }
@@ -52,10 +75,12 @@ select::-ms-expand {
   width: 100%;
   margin: 0 auto;
 }
-.main_padding{
-  padding-left: 15px!important;
-  padding-right: 15px!important;
+
+.main_padding {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
+
 .main_container_x {
   max-width: 1410px;
   width: 100%;
@@ -69,7 +94,7 @@ select::-ms-expand {
 }
 
 .popup_conatiner {
-  @apply max-w-[1510px] mx-auto border border-color-1 shadow-compo shadow-[#e43fa8] md:rounded-30px rounded-[20px];
+  @apply max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right md:rounded-30px sm:rounded-[20px] rounded-[15px];
 }
 
 
@@ -114,11 +139,10 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
   height: 23px;
   right: 0 !important;
 }
-.bg_color_green{
-background-color: #a2ff8f;
-color:  #000 !important
+
+.bg_color_green {
+  background-color: #a2ff8f;
+  color: #000 !important
 }
+
 /* Nav bar style end*/
-
-
-

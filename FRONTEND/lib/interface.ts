@@ -26,9 +26,11 @@ export interface FooterType {
     heading: string;
     list: {
       id:any,
-      name: string;
-      link: string;
-      icon: { _type: string; asset: { _type: string /* other fields */ } };
+      contact:any,
+      address:any,
+      // name: string;
+      // link: string;
+      // icon: { _type: string; asset: { _type: string /* other fields */ } };
     }[];
   }[];
   brands: {

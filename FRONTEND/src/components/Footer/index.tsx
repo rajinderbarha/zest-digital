@@ -5,6 +5,8 @@ import { urlFor } from "../../../lib/sanity.client";
 import Link from "next/link";
 import { ClimateAction, FooterType } from "../../../lib/interface";
 import Climate_action from "@/common/Climate_action";
+import { PortableText } from "next-sanity";
+import { FaPhoneAlt } from "react-icons/fa";
 
 
 const Footer = ({ data }: { data: FooterType[]  }) => {
@@ -52,15 +54,16 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
 
 
 
-          <div className={`${classes.bg_image} bg-black rounded-t-[30px]  `}>
-            <div className="max-w-[1720px] mx-auto px-5 pt-[48px] pb-10">
+          <div className={`${classes.bg_image} bg-black  rounded-t-[20px] md:rounded-t-[30px]  `}>
+            <div className="main_container  px-5 md:pt-[48px] sm:pt-[30px] pt-[20px] md:pb-10 sm:pb-[25px] pb-[20px]">
               <div className="flex flex-row items-center">
-                <div className="">
+                <div className="max-w-max w-full">
                   <Image
                     src={urlFor(item.logo).url()}
                     width={197}
                     height={76}
                     alt=""
+                    className="xl:w-[197px] lg:w-[165px] md:w-[160px] sm:w-[120px] w-[100px]"
                   />
                 </div>
                 <div className=" max-w-[1171px] w-full ml-[20px] ">
@@ -72,21 +75,22 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
               >
                 {item.footerItem.map((footerItm, index) => (
                   <div className={`${classes.footer_details}`} key={`${index}_footerItm`}>
-                    <h2 className="font-bold text-2xl mb-3 font-mono ">
+                    <h2 className="font-bold xl:text-[24px] lg:text-[22px] md:text-[20px] text-[18px] lg:mb-3 md:mb-[9px] sm:mb-[6px] mb-[4px] font-mono ">
                       {footerItm.heading}
                     </h2>
                     {footerItm.list.map((list, index) => (
                       <div key={`${index}_list`} className={`${classes.address}`}>
-                        <address className="not-italic">
-                          <Link href={list.link}> {list.name}</Link> <br />
+                        <address className="font-lato not-italic xl:text-[18px] lg:text-[16px] md:text-[15px] text-[13px]">
+                          <PortableText value={list.address}/>
                         </address>
+                          <p className=" flex font-lato items-center justify-center gap-1 text-left"><FaPhoneAlt className='text-white xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]' /><span className="text-color-7 xl:text-[18px] lg:text-[16px] md:text-[15px] text-[13px]"> {list.contact}</span></p>
                       </div>
                     ))}
                   </div>
                 ))}
               </div>
               <div
-                className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end my-10`}
+                className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end md:my-10 sm:my-[25px] my-[20px]`}
               >
                 {item.brands.map((brandsimg, index) => (
                   <div key={`${index}_brandsimg`} className="foter_logos">
@@ -100,7 +104,7 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
                   </div>
                 ))}
               </div>
-              <div className=" flex gap-5">
+              <div className=" flex md:justify-start justify-center md:gap-5 sm:gap-[15px] gap-[10px]">
                 {item.social.map((socialImg, index) => (
                   <div key={`${index}_socialImg`} className="">
                     <Link href={socialImg.socialLink}>
@@ -109,6 +113,7 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
                         width={50}
                         height={50}
                         alt=""
+                        className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px]"
                       />
                     </Link>
                   </div>
@@ -116,10 +121,10 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
               </div>
             </div>
           </div>
-          <div className="bg-color-1 py-[35px]">
-            <p className="text-white max-w-[970px] px-10 text-center mx-auto">
-              {item.copyRightText}{" "}
-            </p>
+          <div className="bg-color-1 py-[35px] " >
+            <div className={"text-white max-w-[970px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]"}>
+              <PortableText value={item.copyRightText as any}  />
+              </div>
           </div>
         </div>
       ))}
