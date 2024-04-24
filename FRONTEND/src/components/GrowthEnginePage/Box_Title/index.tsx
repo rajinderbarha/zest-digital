@@ -1,5 +1,5 @@
 import React from "react";
-import { GrowthTrackerType } from "../../../../lib/interface";
+// import { GrowthTrackerType } from "../../../../lib/interface";
 
 interface BoxTitleProps {
   upper: string;

@@ -47,12 +47,9 @@ body {
 
 /* This will hide the default dropdown arrow */
 select {
-  -webkit-appearance: none;
-  /* for Chrome, Safari */
-  -moz-appearance: none;
-  /* for Firefox */
-  appearance: none;
-  /* for modern browsers */
+  -webkit-appearance: none; /* for Chrome, Safari */
+  -moz-appearance: none;    /* for Firefox */
+  appearance: none;         /* for modern browsers */
   background-image: url('../assets/images/select_drop_down.svg');
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -61,8 +58,6 @@ select {
 select::-ms-expand {
   display: none;
 }
-
-
 
 @layer utilities {
   .text-balance {
@@ -75,10 +70,9 @@ select::-ms-expand {
   width: 100%;
   margin: 0 auto;
 }
-
-.main_padding {
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+.main_padding{
+  padding-left: 15px!important;
+  padding-right: 15px!important;
 }
 
 .main_container_x {
@@ -96,7 +90,6 @@ select::-ms-expand {
 .popup_conatiner {
   @apply max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right md:rounded-30px sm:rounded-[20px] rounded-[15px];
 }
-
 
 /* Nav bar style start*/
 
@@ -139,10 +132,12 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
   height: 23px;
   right: 0 !important;
 }
-
-.bg_color_green {
-  background-color: #a2ff8f;
-  color: #000 !important
+.bg_color_green{
+background-color: #a2ff8f;
+color:  #000 !important
 }
 
 /* Nav bar style end*/
+
+
+

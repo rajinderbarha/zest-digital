@@ -2,9 +2,11 @@ import React from "react";
 import Image from "next/image";
 import arrow from "../../assets/images/arrow.svg";
 import Growth_engine from "@/common/Growth_engine";
-import classes from "./growth.module.css";
+import classes from "./growthcard.module.css";
 import { urlFor } from "../../../lib/sanity.client";
-const Growth = ({ card }: any) => {
+import { HomepageGrowthCard } from "../../../lib/interface";
+
+const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
   const { heading, horizontalbars } = card;
 
   let outerSpan: string;
@@ -20,23 +22,21 @@ const Growth = ({ card }: any) => {
               <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px xl:-ms-[200px] lg:-ms-[140px] md:-ms-[120px]">
                 {heading}
               </h2>
-              <div className={`${classes.cards} relative w-fit `}>
-                {card.switcher.map((item: any, index: any) => (
-                  <div className={`${classes.card} `}>
-
+              <div className=" ">
+                {card?.switcher?.map((item: any, index: any) => (
                   <h2
                     key={index}
                     className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px  text-color-3"
                     >
                     {item}
                   </h2>
-                    </div>
+                  
                 ))}
               </div>
             </div>
 
             <div className={`${classes.growth_grid}`}>
-              {horizontalbars.map(
+              {horizontalbars?.map(
                 ({ numHeading, desc, title }: any, index: any) => {
                   if (index == 0) {
                     outerSpan = "md:col-span-6 ";
@@ -116,12 +116,12 @@ const Growth = ({ card }: any) => {
                   has_image={false}
                   shadow_right={false}
                   props={{
-                    title: card.growthcard[2].card.heading,
-                    description: card.growthcard[2].card.description,
-                    buttonName: card.growthcard[2].card.buttonName,
+                    title: card?.growthcard[2].card.heading,
+                    description: card?.growthcard[2].card.description,
+                    buttonName: card?.growthcard[2].card.buttonName,
                     buttonLink: `/solutions/${card.growthcard[2].slug}`,
-                    image: card.growthcard[2].card.image
-                      ? urlFor(card.growthcard[2].card.image).url()
+                    image: card?.growthcard[2].card.image
+                      ? urlFor(card?.growthcard[2].card.image).url()
                       : "",
                   }}
                 />
@@ -131,29 +131,29 @@ const Growth = ({ card }: any) => {
                 has_image={true}
                 shadow_right={false}
                 props={{
-                  title: card.growthcard[3].card.heading,
-                  description: card.growthcard[3].card.description,
-                  buttonName: card.growthcard[3].card.buttonName,
+                  title: card?.growthcard[3].card.heading,
+                  description: card?.growthcard[3].card.description,
+                  buttonName: card?.growthcard[3].card.buttonName,
                   buttonLink: `/solutions/${card.growthcard[3].slug}`,
-                  image: card.growthcard[3].card.image
-                    ? urlFor(card.growthcard[3].card.image).url()
+                  image: card?.growthcard[3].card.image
+                    ? urlFor(card?.growthcard[3].card.image).url()
                     : "",
                 }}
               />
-              {card.length > 4 &&
-                card.slice(3).map((item: any, index: number) => {
+              {card?.length && card?.length > 4 &&
+               card.slice && card?.slice(3).map((item: any, index: number) => {
                   return (
                     <div key={index}>
                       <Growth_engine
                         has_image={true}
                         shadow_right={false}
                         props={{
-                          title: item.card.heading,
-                          description: item.card.description,
-                          buttonName: item.card.buttonName,
+                          title: item.card?.heading,
+                          description: item.card?.description,
+                          buttonName: item.card?.buttonName,
                           buttonLink: `/solutions/${item.slug.current}`,
-                          image: item.card.image
-                            ? urlFor(item.card.image).url()
+                          image: item.card?.image
+                            ? urlFor(item.card?.image).url()
                             : "",
                         }}
                       />
@@ -168,4 +168,4 @@ const Growth = ({ card }: any) => {
   );
 };
 
-export default Growth;
+export default HomeGrowthCard;

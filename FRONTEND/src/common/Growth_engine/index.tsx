@@ -4,18 +4,8 @@ import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../lib/sanity.client";
+import { GrowthEngineProps } from "../../../lib/interface";
 
-export interface GrowthEngineProps {
-  props: {
-    title: string;
-    description: string;
-    buttonName: string;
-    buttonLink: string;
-    image: any;
-  };
-  has_image: boolean;
-  shadow_right: boolean;
-}
 const Growth_engine = ({
   props,
   shadow_right,
@@ -70,7 +60,7 @@ const Growth_engine = ({
           <h2
             className={`${classes.growth_engine_title} text-40px font-semibold `}
           >
-            {title} 
+            {title}
           </h2>
           <p className={`${classes.growth_engine_desc} text-3xl my-5 xl:mt-[29px] lg:mt-[26px] md:mt-[25px]`}>
             {description}

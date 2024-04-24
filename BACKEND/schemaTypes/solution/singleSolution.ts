@@ -20,11 +20,13 @@ export const SingleSolution = defineType({
     {name: 'buttonName', title: 'Button Name', type: 'string'},
     {name: 'buttonLink', title: 'Button Link', type: 'string'},
 
+    {name: 'Solheading', title: 'Soluton Heading', type: 'string'},
     {
       name: 'card',
       title: 'Card',
       type: 'object',
       fields: [
+
         {name: 'heading', title: 'Heading', type: 'string'},
         {name: 'description', title: 'Description', type: 'string'},
         {name: 'buttonName', title: 'Button Name', type: 'string'},

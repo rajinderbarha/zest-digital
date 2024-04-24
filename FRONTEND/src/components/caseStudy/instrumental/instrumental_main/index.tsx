@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "../instrumental.module.css";
-import Pie_chart_70 from "../../../../assets/images/Pie_chart_70.png";
 import Image from "next/image";
 import { urlFor } from "../../../../../lib/sanity.client";
 
 function Instrumental({ data }: any) {
-  console.log("data", data);
+
+  const {hero} = data
   return (
     <div className={`${classes.Instrumental} main_padding xl:mt-[112px] lg:mt-[90px] md:mt-[60px] sm:mt-[40px] mt-[30px] `}>
       <div className="max-w-[1520px] mx-auto w-full">
@@ -19,15 +19,15 @@ function Instrumental({ data }: any) {
               height={350}
             />
             <h3 className="font-mono font-semibold lg:text-30px md:text-25px text-[20px] md:max-w-[373px] max-w-[221px] text-center mx-auto mt-4">
-              Reduction in cost per conversion rate
+              {hero.imageDesc? hero.imageDesc : ""}
             </h3>
           </div>
           <div className="md:col-span-8    md:mt-0 sm:mt-[30px] mt-[25px]">
             <h2 className="font-mono font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-[28px] text-[20px] md:mb-[20px] sm:mb-[15px] mb-[10px] w-max-[909px]">
-              {data.hero.heading}
+              {hero.heading}
             </h2>
             <p className="text-color-9 pt-2 border-t text-[15px] sm:text-base border-color-9">
-              {data.hero.belowLine}
+              {hero.belowLine}
             </p>
           </div>
         </div>

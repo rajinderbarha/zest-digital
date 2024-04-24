@@ -33,9 +33,12 @@ export const Footer = defineType({
                 {
                   type: 'object',
                   fields: [
-                    {name: 'name', title: 'Name', type: 'string'},
-                    {name: 'link', title: 'Link', type: 'string'},
-                    {name: 'icon', title: 'Icon', type: 'image'},
+                    // {name: 'name', title: 'Name', type: 'string'},
+                    // {name: 'link', title: 'Link', type: 'string'},
+                    // {name: 'icon', title: 'Icon', type: 'image'},
+                    
+                    { name: 'address', type: 'array', title: 'Address', of: [{ type: 'block' }] },
+                    {name: 'contact', title: 'Contact no.', type: 'string'},
                   ],
                 },
               ],
@@ -69,6 +72,6 @@ export const Footer = defineType({
         },
       ],
     },
-    {name: 'copyRightText', type: 'string', title: 'Copy Right Text'},
+    { name: 'copyRightText', type: 'array', title: 'Copy Right Text', of: [{ type: 'block' }] },
   ],
 })

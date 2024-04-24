@@ -1,10 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const index = () => {
-  return (
-    <div>Service page</div>
-  )
-}
+  return <div>Service page</div>;
+};
 
-export default index
-
+export default index;

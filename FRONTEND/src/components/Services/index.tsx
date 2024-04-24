@@ -7,122 +7,30 @@ import Client_Result from "@/common/OurServices/Client_Result";
 import Services_Quotes from "@/common/OurServices/Services_Quotes";
 import Global_Accordion from "../../common/Global_Accordion";
 import Services_Address from "@/common/OurServices/Services_Address";
-// import Services_details_proven_growth from '@/common/OurServices/Services_details/Services_details_proven_growth'
-// import Services_details_increase_market from '@/common/OurServices/Services_details/Services_details_increase_market'
 import Services_details_happy_customer from "@/common/OurServices/Services_details/Services_details_happy_customer";
-import { SingleOurService } from "../../../lib/interface";
+import { SingleOurService } from "../../../lib/interface"
 
-function Services({ data }: { data: SingleOurService } ) {
-  
+function Services({ data }: { data: SingleOurService }) {
   const {
     title,
     smallDescription,
     button: { callButtonName, resultsButtonName },
     Services_Box: {
       contentBox: { heading, description, belowdesc, coloredText },
+      imageBox,
     },
-    clientResults: { title_CR, heading_CR, belowbuttonName_CR, card },
-    agencyAddress: {
-      buttonName_add,
-      heading_add,
-      slotDescription_add,
-      address,
-    },
-    globalaccordion:{accordiongroup:{heading_acc,card_acc,belowbtnName_acc,belowbtnLink_acc}}
-  } = data;
-  // console.log("belowbtnLink_acc------------------------", belowbtnLink_acc)
-  const {
+    clientResults: { title_CR, heading_CR, belowbuttonName_CR, card: clientResultsMapData },
+    agencyAddress: { buttonName_add, heading_add, slotDescription_add, address: agencyAddressData, cardLoc },
+    globalaccordion: { accordiongroup: { heading_acc, card_acc: card_Accordian, belowbtnName_acc, belowbtnLink_acc } },
     Services_book_call: { heading_call, buttonName },
+    ourSubServices: { heading_sub, services: subServices },
+    Services_details,
+    Services_Quotes: serviceQuotes,
   } = data;
-  const {
-    ourSubServices: { heading_sub },
-  } = data;
 
 
-  const card_Accordian = card_acc.map(({content,question},index)=>(
-    {
-      content,question
-    }
-  ))
-
-  const imageBox = data.Services_Box.imageBox.map((item, index) => ({
-    image: item.image,
-    imagetitle: item.imagetitle,
-  }));
-
-  const button = {
-    callButtonName,
-    resultsButtonName,
-  };
-
-  const serviceBox = {
-    contentBox: {
-      heading,
-      description,
-      belowdesc,
-      coloredText,
-
-    },
-    
-  };
-
-  const clientResultsMapData = card.map(
-    (
-      {
-        mapped_title,
-        description_1_CR,
-        description_2_CR,
-        percentage_CR,
-        buttonName_CR,
-      },
-      index
-    ) => ({
-      mapped_title: mapped_title,
-      description_1_CR: description_1_CR,
-      description_2_CR: description_2_CR,
-      percentage_CR: percentage_CR,
-      buttonName_CR: buttonName_CR,
-    })
-  );
-  // const clientResults = {
-  //   clientResults: {
-  //     title_CR:title_CR, heading_CR:heading_CR, belowbuttonName_CR:belowbuttonName_CR,card:clientResultsMapData
-  //   }
-  // }
-
-  const serviceDetails = data.Services_details.map((item, index) => ({
-    heading: item.heading,
-    content:item.content,
-    // description_1: item.description_1,
-    // description_2: item.description_2,
-    image: item.image,
-  }));
-  const subServices = data.ourSubServices.services.map(
-    ({ image, title_sub, desc_sub }, index) => ({
-      image,
-      title_sub,
-      desc_sub,
-    })
-  );
-
-  const serviceQuotes = data.Services_Quotes.map(
-    ({ desc_quote, name_quote }, index) => ({
-      desc_quote: desc_quote,
-      name_quote: name_quote,
-    })
-  );
-
-  const agencyAddress = address.map(
-    (
-      { dayandtiming_add, hourstitle_add, streetAddress_add, title_add },
-      index
-    ) => ({
-      dayandtiming_add,
-      hourstitle_add,
-      streetAddress_add,
-      title_add,
-    })
-  );
+  // Process agency address
+  const agencyAddress = agencyAddressData.flatMap((item: any) => item.contactInfo);
 
   return (
     <>
@@ -130,12 +38,11 @@ function Services({ data }: { data: SingleOurService } ) {
         max_width="1033px"
         title={title}
         smallDescription={smallDescription}
-        button={button}
+        button={{ callButtonName, resultsButtonName }}
       />
-      <Services_Box Services_Box={serviceBox} imageBox={imageBox} />
- <div className="xl:mt-[175px] lg:mt-[150px] md:mt-[125px] sm:mt-[80px] mt-[68px]"></div>
-      <Services_details_happy_customer Services_details={serviceDetails} className=""/>
-     
+      <Services_Box Services_Box={{ contentBox: { heading, description, belowdesc, coloredText }, imageBox }} />
+      <div className="xl:mt-[175px] lg:mt-[150px] md:mt-[125px] sm:mt-[80px] mt-[68px]"></div>
+      <Services_details_happy_customer Services_details={Services_details} className="" />
       <Services_book_call heading={heading_call} buttonName={buttonName} />
       <Services_SubServices heading_sub={heading_sub} services={subServices} />
       <Client_Result
@@ -144,16 +51,20 @@ function Services({ data }: { data: SingleOurService } ) {
         title_CR={title_CR}
         heading_CR={heading_CR}
       />
-      <Global_Accordion heading_acc={heading_acc} card_acc={card_Accordian} belowbtnName_acc={belowbtnName_acc} belowbtnLink_acc={belowbtnLink_acc}/>
+      <Global_Accordion
+        heading_acc={heading_acc}
+        card_acc={card_Accordian}
+        belowbtnName_acc={belowbtnName_acc}
+        belowbtnLink_acc={belowbtnLink_acc}
+      />
       <Services_Quotes Services_Quotes={serviceQuotes} />
       <Services_Address
         heading_add={heading_add}
         slotDescription_add={slotDescription_add}
         buttonName_add={buttonName_add}
         address={agencyAddress}
-        card={[]}
-      />{" "}
-      {/**here cardData is related to the google map */}
+        cardLoc={cardLoc}
+      />
     </>
   );
 }

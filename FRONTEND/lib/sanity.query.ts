@@ -17,22 +17,6 @@ export function getHeader() {
     }`
   );
 }
-export function getClimateActiondata() {
-  return client.fetch(
-    groq`
-      *[_type == 'header'] {
-        logo,
-        navItem[] {
-          buttonName,
-          buttonLink
-        },
-        button {
-          navName,
-          navLink
-        }
-    }`
-  );
-}
 
 export function getFooter() {
   return client.fetch(
@@ -64,7 +48,7 @@ export function getFooter() {
 }
 
 export async function getAboutData() {
-  const headerquery = `
+  const query = `
   *[_type == 'about'] {
     hero {
       title,
@@ -96,6 +80,7 @@ export async function getAboutData() {
     },
     escape {
       heading,
+      careerPagelink,
       description,
       marquee[] {
         title,
@@ -110,12 +95,12 @@ export async function getAboutData() {
   }
   
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
 export async function getSingleCasestudyData(slug: string) {
-  const headerquery = `
+  const query = `
 
 *[_type == "singleCaseStudy" && slug.current == "${slug}"]{
       "banner": banner-> {
@@ -143,7 +128,8 @@ export async function getSingleCasestudyData(slug: string) {
             count, 
             heading,
             title,
-            description
+            description,
+            buttonname
           }
       },
       card[]{
@@ -154,12 +140,12 @@ export async function getSingleCasestudyData(slug: string) {
     }
 
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
 export async function getCasestudyData() {
-  const headerquery = `
+  const query = `
 
 *[_type == "caseStudy"]{
       "banner": banner-> {
@@ -180,6 +166,7 @@ export async function getCasestudyData() {
         image,
         heading,
         belowLine,
+        imageDesc,
         item
         }
       }
@@ -187,11 +174,11 @@ export async function getCasestudyData() {
     }
 
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 export async function getSolutionData() {
-  const headerquery = `
+  const query = `
 
 *[_type == "solution"]{
       "banner": banner-> {
@@ -235,12 +222,12 @@ export async function getSolutionData() {
     }
 
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
 export async function getInsightsData() {
-  const headerquery = `
+  const query = `
 
 *[_type == "insights"]{
       "banner": banner-> {
@@ -266,12 +253,12 @@ export async function getInsightsData() {
     }
 
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
 export async function getSingleInsightsData(slug: string) {
-  const headerquery = `
+  const query = `
 
 *[_type == "singleInsights" && slug.current == "${slug}"]{
       "banner": banner-> {
@@ -283,7 +270,8 @@ export async function getSingleInsightsData(slug: string) {
     hero{
       heading,
       keywords[],
-      icon
+      icon,
+      grow_down
     },
     content[],
     linkSection{
@@ -297,13 +285,14 @@ export async function getSingleInsightsData(slug: string) {
     }
 
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
-export async function getResourcesData() {
-  const headerquery = `
 
+
+export async function getResourcesData() {
+  const query = `
 *[_type == "resources"]{
       "banner": banner-> {
         climate_actionImg,
@@ -332,12 +321,12 @@ export async function getResourcesData() {
     }
 
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
 export async function getSchedule_a_callData() {
-  const headerquery = `
+  const query = `
 
 *[_type == "Schedule_a_call"]{
       "banner": banner-> {
@@ -353,12 +342,12 @@ export async function getSchedule_a_callData() {
     }
 
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
 export async function getTermsndConditionsData() {
-  const headerquery = `
+  const query = `
 
   *[_type == 'termsAndConditions'] {
     heading,
@@ -383,7 +372,7 @@ export async function getTermsndConditionsData() {
   
 
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
@@ -406,33 +395,8 @@ export function getSingleTerms(slug: string) {
   );
 }
 
-// export async function getOurServicesSectionData() {
-//   const OurServicesSection = `
-//   *[_type == "OurServicesSection"] {
-//     heading,
-//       "cards": card[]-> {
-//       "slug": slug.current,
-//       "title": title,
-
-//     },
-//     "images": images {
-//       "vertical_bar": vertical_bar.asset->url,
-//       "Code_icon": Code_icon.asset->url,
-//       "target_icon": target_icon.asset->url
-//     },
-//     "banner": banner-> {
-//       "climate_actionImg": climate_actionImg.asset->url,
-//       "earth_img": earth_img.asset->url,
-//       "smallDescription": smallDescription
-//     }
-//   }
-//   `;
-//   const data = await client.fetch(OurServicesSection);
-//   return data;
-// }
-
 export async function getSingleOurServicesData(slug: string) {
-  const singleServicesSectionData = `
+  const query = `
   *[_type == "singleService"  && slug.current == "${slug}"] {
   
   
@@ -506,12 +470,9 @@ export async function getSingleOurServicesData(slug: string) {
       "slotDescription_add": slotDescription_add,
       "buttonName_add": buttonName_add,
       "address": address[] {
-        "title_add": title_add,
-        "streetAddress_add": streetAddress_add,
-        "hourstitle_add": hourstitle_add,
-        "dayandtiming_add": dayandtiming_add
+        contactInfo
       },
-       card []{
+      cardLoc []{
          location ->{
           
             "latitude": latitude,
@@ -532,12 +493,12 @@ export async function getSingleOurServicesData(slug: string) {
 }
 
   `;
-  const data = await client.fetch(singleServicesSectionData);
+  const data = await client.fetch(query);
   return data;
 }
 
 export async function getCareersData() {
-  const headerquery = `
+  const query = `
 
   *[_type == 'Careers'] {
     heading,
@@ -553,14 +514,13 @@ export async function getCareersData() {
     }
   }
   
-
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
 export async function getContactData() {
-  const headerquery = `
+  const query = `
   *[_type == 'contact'] {
     description,
     image,
@@ -578,13 +538,13 @@ export async function getContactData() {
   
 
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 
 export async function getGrowthData(slug: string) {
   //   we are getting this data from growthShared schema
-  const headerquery = `
+  const query = `
   *[_type == "growth" && slug.current == "${slug}"] {
 
 
@@ -594,16 +554,14 @@ export async function getGrowthData(slug: string) {
     image,
     buttonName,
     buttonLink,
-    "growthcard": growthcard-> {
-      "slug":slug.current,
-      mainheading,
-      card{
-     heading,
-     description,
-     image,
-     buttonName,
-      }
- },
+    Solheading,
+    card{
+   heading,
+   description,
+   image,
+   buttonName,
+    
+},
     growthSection {
           upperHeading,
           upperSmallLine,
@@ -641,12 +599,12 @@ export async function getGrowthData(slug: string) {
 
     
   `;
-  const data = await client.fetch(headerquery);
+  const data = await client.fetch(query);
   return data;
 }
 export async function getHomepageData() {
   //   we are getting this data from growthShared schema
-  const homepagequery = `
+  const query = `
   *[_type == "homepage"] {
     growRevenue{
       video{
@@ -706,6 +664,6 @@ export async function getHomepageData() {
 }
 
   `;
-  const data = await client.fetch(homepagequery);
+  const data = await client.fetch(query);
   return data;
 }

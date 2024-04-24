@@ -1,5 +1,5 @@
 
-
+// we maybe do not need this file bcz we have added this code in singleSolution.ts   instead of making a reference here 
 
 import { defineType } from 'sanity'
 
