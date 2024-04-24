@@ -45,9 +45,8 @@ export function getFooter() {
       footerItem[] {
         heading,
         list[] {
-          name,
-          link,
-          icon
+          address,
+          contact,
         }
       },
       brands[] {

@@ -72,7 +72,7 @@ const Growth_engine = ({
           >
             {title} 
           </h2>
-          <p className={`${classes.growth_engine_desc} text-3xl my-5 xl:mt-[50px] lg:mt-[40px] md:mt-[30px]`}>
+          <p className={`${classes.growth_engine_desc} text-3xl my-5 xl:mt-[29px] lg:mt-[26px] md:mt-[25px]`}>
             {description}
           </p>
           <Link href={buttonLink}>

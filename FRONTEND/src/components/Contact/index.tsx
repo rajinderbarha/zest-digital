@@ -16,7 +16,7 @@ function Contact({ data }: { data: ContactType }) {
     <>
     
     
-      <div className="Contact mt-[140px] sm:px-[20px] px-3">
+      <div className="Contact xl:mt-[140px] lg:mt-[120px] md:mt-[70px] sm:mt-[50px] mt-[30px] sm:px-[20px] main_padding">
         <div className="main_container ">
           <div className="grid lg:grid-cols-12 ">
             <div
@@ -27,7 +27,7 @@ function Contact({ data }: { data: ContactType }) {
                   {data?.description}
                 </h2>
 
-                <div className="icons flex mt-10 gap-[18px]">
+                <div className="icons flex md:mt-10 sm:mt-[30px] mt-[15px] gap-[18px]">
                   {data?.social.map((socialmap, index) => (
                     <Link
                       href={socialmap.socialLink}
@@ -38,6 +38,7 @@ function Contact({ data }: { data: ContactType }) {
                         height={45}
                         width={45}
                         alt=""
+                        className="md:w-[45px] sm:w-[38px] w-[35px]"
                       />
                     </Link>
                   ))}
@@ -53,20 +54,20 @@ function Contact({ data }: { data: ContactType }) {
                 />
               </div>
             </div>
-            <div className="lg:col-span-7 lg:mt-0 md:mt-[230px] mt-[150px]">
-              <div className="max-w-[956px] ms-auto bg-color-1 rounded-30px px-5 sm:px-10 ">
-                <form className="max-w-[670px] mx-auto sm:py-[88px] py-[50px] grid gap-5 sm:gap-9">
+            <div className="lg:col-span-7 lg:mt-0 md:mt-[230px] sm:mt-[150px] mt-[80px]">
+              <div className="max-w-[956px] ms-auto bg-color-1 rounded-[15px] sm:rounded-[20px] md:rounded-30px px-5 sm:px-10 ">
+                <form className="max-w-[670px] mx-auto sm:py-[88px] py-[50px] grid gap-6 sm:gap-9">
                   <div className="enquiry">
                     <label
                       htmlFor="enquiry"
-                      className="text-color-9 text-base font-semibold font-mono w-full "
+                      className="text-color-9 sm:text-base text-[15px] font-semibold font-mono w-full "
                     >
                       What is the nature of your enquiry?
                     </label>
                     <select
                       id="enquiry"
                       name="enquiry"
-                      className=" w-full font-lato border border-color-9 rounded-[10px] px-[25px]  py-[11px] text-lg text-color-1 mt-[11px]"
+                      className=" w-full font-lato border border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] text-color-1 md:mt-[11px] sm:mt-[9px] mt-[5px]"
                       required
                     >
                       <option>Grow my business</option>
@@ -78,7 +79,7 @@ function Contact({ data }: { data: ContactType }) {
                     <div className="first_name flex flex-col w-full max-w-[300px]">
                       <label
                         htmlFor="fname"
-                        className="text-color-9 text-base font-semibold font-mono mb-[11px]"
+                        className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
                       >
                         First name*
                       </label>
@@ -86,7 +87,7 @@ function Contact({ data }: { data: ContactType }) {
                         type="text"
                         name="fname"
                         id=""
-                        className="w-full border font-lato border-color-9 rounded-[10px] px-[25px] py-[14px] text-lg h-[50px]"
+                        className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] "
                         placeholder="John"
                         required
                       />
@@ -94,7 +95,7 @@ function Contact({ data }: { data: ContactType }) {
                     <div className="last_name flex flex-col w-full max-w-[300px]">
                       <label
                         htmlFor="lname"
-                        className="text-color-9 text-base font-semibold font-mono mb-[11px]"
+                        className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
                       >
                         Last name
                       </label>
@@ -102,7 +103,7 @@ function Contact({ data }: { data: ContactType }) {
                         type="text"
                         name="lname"
                         id=""
-                        className="w-full border font-lato border-color-9 rounded-[10px] px-[25px] py-[14px] text-lg h-[50px]"
+                        className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px]"
                         placeholder="Doe"
                       />
                     </div>
@@ -110,7 +111,7 @@ function Contact({ data }: { data: ContactType }) {
                   <div className="email flex flex-col w-full ">
                     <label
                       htmlFor="email"
-                      className="text-color-9 text-base font-semibold font-mono mb-[11px]"
+                      className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
                     >
                       E-mail*
                     </label>
@@ -118,7 +119,7 @@ function Contact({ data }: { data: ContactType }) {
                       type="email"
                       name="email"
                       id=""
-                      className="w-full border font-lato border-color-9 rounded-[10px] px-[25px] py-[14px] text-lg h-[50px]"
+                      className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px]"
                       placeholder="johndoe@gmail.com"
                       required
                     />
@@ -126,7 +127,7 @@ function Contact({ data }: { data: ContactType }) {
                   <div className="message flex flex-col w-full ">
                     <label
                       htmlFor="message"
-                      className="text-color-9 text-base font-semibold font-mono mb-[11px]"
+                      className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
                     >
                       Message*
                     </label>
@@ -136,12 +137,12 @@ function Contact({ data }: { data: ContactType }) {
                       id=""
                       cols={30}
                       rows={10}
-                      className="w-full border font-lato border-color-9 rounded-[10px] px-[25px] py-[14px] text-lg h-[172px]"
+                      className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px] md:py-[11px] sm:py-[9px] py-[6px]  text-lg h-[172px]"
                       placeholder="Type your message here"
                       required
                     ></textarea>
                   </div>
-                  <div className="note sm:mt-[-26px] -mt-[6px]">
+                  <div className="note sm:mt-[-26px] -mt-[18px]">
                     <p className="text-color-9 text-md font-mono">
                       * required fields
                     </p>
@@ -149,13 +150,13 @@ function Contact({ data }: { data: ContactType }) {
                   <input
                     type="submit"
                     value="Send"
-                    className="bg-white text-base font-mono text-color-1 rounded-full px-[26px] py-[8px] mx-auto"
+                    className="bg-white text-[15px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[17px] md:py-[8px] sm:py-[5px] py-[3px] mx-auto"
                   />
                 </form>
               </div>
             </div>
           </div>
-          <div className="mt-[200px] flex justify-between gap-3 flex-wrap mb-[220px]">
+          <div className={`${classes.map_div} xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[120px] mt-[100px] flex justify-between gap-3 flex-wrap xl:mb-[268px] lg:mb-[200px] md:mb-[140px] sm:mb-[90px] mb-[80px]`}>
             <MapLocations data={data.card} />
            
           </div>

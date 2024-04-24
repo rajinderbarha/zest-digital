@@ -1,5 +1,5 @@
 .About_banner {
-    padding: 143px 15px 141px 15px;
+    /* padding: 143px 15px 141px 15px; */
     overflow: hidden;
 }
 
@@ -108,7 +108,7 @@ width: 95%;
 
 @media screen and (max-width:768px) {
 
-    .About_banner,
+    /* .About_banner, */
     .values_bg,
     .Zest_for_life {
         padding: 80px 16px 50px 16px;

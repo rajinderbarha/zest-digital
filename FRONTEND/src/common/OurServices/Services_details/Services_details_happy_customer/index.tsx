@@ -27,7 +27,7 @@ const Services_details_happy_customer = (props:any) => {
                 <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[28px] text-color-1 font-semibold font-mono ">
                   {item.heading}
                 </h2>
-                <div className="font-mono lg:text-30px md:text-25px text-[20px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] ">
+                <div className="font-mono lg:text-30px md:text-25px text-[19px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] ">
                   <PortableText value={item.content}/>
                  
                 </div>
@@ -47,18 +47,20 @@ const Services_details_happy_customer = (props:any) => {
               <div
                 className={`flex items-center flex-col-reverse md:flex-row  bg-white ${classes.objective_inner} lg:gap-10 `}
               >
-                <div className="md:flex mx-auto  hidden ">
+                <div className=" image_class md:flex mx-auto  hidden ">
                   <Image
-                    src={growth_framework_img}
+                    src={urlFor(item.image).url()}
+                    width={400}
+                    height={400}
                     alt=""
-                    className="xl:max-w-[350px] lg:max-w-[250px] md:max-w-[180px] max-w-[200px]"
+                    className=""
                   />
                 </div>
                 <div className=" md:ms-auto md:max-w-[1057px] xl:ps-[80px] lg:ps-[50px] md:ps-[20px] md:text-right">
-                  <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[28px] text-color-1 font-semibold font-mono ">
+                  <h2 className=" max-w-[675px] ms-auto xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[28px] text-color-1 font-semibold font-mono ">
                     {item.heading}
                   </h2>
-                  <div className="font-mono lg:text-30px md:text-25px text-[20px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] ">
+                  <div className="font-mono lg:text-30px md:text-25px text-[19px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] ">
                     <PortableText value={item.content}/>
                  
                   </div>

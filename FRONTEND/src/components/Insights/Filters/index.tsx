@@ -42,7 +42,7 @@ function Filters({ data }: any) {
             <Image
               src={Filters_image}
               alt=""
-              className={`${classes.Filters_img} invisible md:visible  bg-color-1 rounded-30px absolute top-0`}
+              className={`${classes.Filters_img} invisible md:visible  bg-color-1 rounded-30px absolute top-0 w-full`}
             />
             <div className="Filters_box relative z-10  grid lg:grid-cols-12">
               <div className="lg:col-span-8 lg:order-1 order-2">
@@ -53,19 +53,21 @@ function Filters({ data }: any) {
                         index % 2 === 0
                           ? "shadow-dark-pink-left"
                           : "shadow-blue-left"
-                      } max-w-[1345px] mx-auto xl:ps-[50px] lg:ps-[45px] md:ps-[35px] ps-[20px] lg:pe-7 md:pe-[20px] pe-[20px] xl:py-[70px] lg:py-[60px] md:py-[50px] py-[30px] rounded-30px border border-black  bg-white text-color-1`}
+                      } max-w-[1345px] mx-auto xl:ps-[50px] lg:ps-[45px] md:ps-[35px] ps-[20px] lg:pe-7 md:pe-[20px] pe-[20px] xl:py-[70px] lg:py-[60px] md:py-[50px] py-[30px] rounded-[20px] md:rounded-30px border border-black  bg-white text-color-1`}
                     >
                       <div className="sm:col-span-9">
+                        <div className="flex flex-row md:gap-[15px] sm:gap-[10px] gap-[5px] flex-wrap">
                         {item.hero.keywords.map(
                           (filterName: string, i: number) => (
                             <h6
                               key={i}
                               className={`${classes.Insight_tag} bg-color-7 border border-color-7 rounded-full font-mono w-max`}
-                            >
+                              >
                               {filterName}
                             </h6>
                           )
                         )}
+                              </div>
                         <h2
                           className={`lg:text-35px md:text-30px text-25px font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}
                         >
@@ -82,7 +84,7 @@ function Filters({ data }: any) {
                       </div>
                       <div className="col-span-3 sm:block hidden">
                         <Image
-                          className="w-[150px] ms-auto"
+                          className="lg:w-[150px] md:w-[130px] w-[110px] ms-auto"
                           src={urlFor(item.hero.icon).url()}
                           alt="card img"
                           width={200}
@@ -95,11 +97,11 @@ function Filters({ data }: any) {
               </div>
 
               <div className="lg:col-span-1 lg:order-2"></div>
-              <div className="lg:col-span-3  lg:order-3 order-1">
-                <h2 className="text-30px md:text-white text-color-1  font-mono font-semibold mb-[20px] lg:mb-10">
+              <div className="lg:col-span-3  lg:order-3 order-1 lg:text-right ">
+                <h2 className="text-30px md:text-white text-color-1  font-mono font-semibold xl:mb-10 lg:mb-[20px] md:mb-[10px] mb-[8px]">
                   Filters
                 </h2>
-                <div className="Filters_main_btn flex flex-wrap gap-3 ">
+                <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3 ">
                   {combinedArray.map((uniqueEl: any, index: any) => (
                     <h6
                       key={index}
@@ -118,7 +120,7 @@ function Filters({ data }: any) {
             </div>
           </div>
           <div
-            className={`${classes.Footer_Img} bg-black rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[55px] mb-[30px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}
+            className={`${classes.Footer_Img} bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[55px] mb-[30px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}
           >
             <div
               className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}
