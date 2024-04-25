@@ -9,7 +9,7 @@ import { urlFor } from "../../../lib/sanity.client";
 function Contact({ data }: { data: ContactType }) {
   return (
     <>
-      <div className="Contact mt-[140px] sm:px-[20px] px-3">
+      <div className="Contact xl:mt-[140px] lg:mt-[120px] md:mt-[70px] sm:mt-[50px] mt-[30px] sm:px-[20px] xl:mb-[268px] lg:mb-[200px] md:mb-[140px] sm:mb-[90px] mb-[80px] main_padding">
         <div className="main_container ">
           <div className="grid lg:grid-cols-12 ">
             <div
@@ -148,7 +148,7 @@ function Contact({ data }: { data: ContactType }) {
               </div>
             </div>
           </div>
-          <div className={`${classes.map_div} xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[120px] mt-[100px] flex justify-between gap-3 flex-wrap xl:mb-[268px] lg:mb-[200px] md:mb-[140px] sm:mb-[90px] mb-[80px]`}>
+          <div className={`${classes.map_div} xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[120px] mt-[100px] flex justify-between gap-3 flex-wrap `}>
             <MapLocations data={data.card} />
           </div>
         </div>

@@ -7,7 +7,7 @@ import { Schedule_a_call } from "../../../lib/interface";
 function ScheduleCall({ data }: { data: Schedule_a_call }) {
   return (
     <>
-      <div className="ScheduleCall main_padding">
+      <div className="ScheduleCall main_padding xl:mb-[132px] lg:mb-[110px] md:mb-[80px] sm:mb-[60px] mb-[50px]">
         <div className="main_container">
           <h2 className="font-mono xl:text-55px lg:text-50px md:text-40px text-35px font-semibold mt-[32px]">
             {data.heading}

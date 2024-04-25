@@ -11,12 +11,12 @@ function About_team({ data }: { data: AboutType[] }) {
         {data?.map((aboutdata, index) => (
           <div key={`${index}_About_team_1`} className="">
             <div
-              className="About_team_box text-center grid sm:grid-cols-2 md:grid-cols-3 gap-20"
+              className="About_team_box text-center grid grid-cols-2 md:grid-cols-3 md:gap-x-20 md:gap-y-20 sm:gap-x-[60px] sm:gap-y-[30px] gap-x-[40px] gap-y-[20px]"
               key={`${aboutdata}_About_team`}
             >
               {aboutdata.team.map((teamData, index) => (
                 <div key={`${index}_About_team_2`}>
-                  <div className="About_img_box relative mx-auto md:mb-14 mb-8 max-w-[430px]">
+                  <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[430px]">
                     <div
                       className={`${classes.Team_img_circle} absolute  bottom-0`}
                     ></div>
@@ -29,10 +29,10 @@ function About_team({ data }: { data: AboutType[] }) {
                     />
                   </div>
 
-                  <h3 className="text-25px md:text-35px font-semibold font-mono text-color-1">
+                  <h3 className="lg:text-35px md:text-30px sm:text-25px text-[20px] font-semibold font-mono text-color-1">
                     {teamData.title}{" "}
                   </h3>
-                  <p className="text-lg font-normal font-mono text-color-1">
+                  <p className="lg:text-lg md:text-[16px] sm:text-[14px] text-[12px] font-normal font-mono text-color-1">
                     {teamData.description}
                   </p>
                 </div>

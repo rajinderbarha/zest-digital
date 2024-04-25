@@ -7,23 +7,23 @@
 
 .Block_Content h2{
 /* border: 1px solid black; */
-@apply md:text-45px text-30px font-semibold font-mono bg-color-7 w-fit md:mb-[33px] mb-[13px] md:mt-[120px] mt-[50px]
+@apply lg:text-45px md:text-40px sm:text-30px text-[25px] font-semibold font-mono bg-color-7 w-fit md:mb-[33px] sm:mb-[23px] mb-[13px] xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px]
 }
 
 .Block_Content h3{
-    @apply font-mono text-25px md:text-35px font-semibold  md:mb-[38px] mb-[13px]
+    @apply font-mono md:text-35px sm:text-30px text-[22px] font-semibold  md:mb-[38px] mb-[13px]
 }
 .Block_Content p{
-    @apply font-lato text-lg mb-[24px]
+    @apply font-lato md:text-lg sm:text-base text-[14px] md:mb-[24px] sm:mb-[16px] mb-[10px]
 }
 .Block_Content h3:not(:first-child) ~  p{
     @apply md:ml-[40px] ml-[10px]
 }
 .Block_Content figure{
-    @apply lg:max-w-max md:max-w-[600px] mx-auto max-w-[300px] mt-[66px]
+    @apply xl:max-w-max md:max-w-[550px] mx-auto sm:max-w-[350px] max-w-[250px] md:my-[66px] sm:my-[40px] mt-[0px]
 }
 .Block_Content h2:not(:first-child) ~ h3{
-    @apply md:mt-[100px] mt-[50px]
+    @apply md:mt-[100px] sm:mt-[50px] mt-[30px]
 }
 
 .Block_Content h2:not(:first-child) + h3{
