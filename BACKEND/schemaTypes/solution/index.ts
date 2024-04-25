@@ -49,6 +49,7 @@ export const Solution = defineType({
 
 
 
+    
     {
       name:'brandList',
       title:"Brand List",
