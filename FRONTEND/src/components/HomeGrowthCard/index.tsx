@@ -16,10 +16,10 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
       <div className="main_padding lg:my-[47px] md:my-[35px] sm:my-[25px] my-[15px] ">
         <div className="text-white main_container ">
           <div
-            className={`${classes.growth_result} bg-black rounded-30px font-mono xl:pt-[88px] lg:pt-[68px] md:pt-[48px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}
+            className={`${classes.growth_result} bg-black rounded-30px font-mono xl:pt-[136px] lg:pt-[110px] md:pt-[75px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}
           >
-            <div className="flex gap-4 items-center mx-auto md:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[114px] lg:pb-[95px] md:pb-[70px] sm:pb-[50px] pb-[35px]">
-              <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px">
+            <div className="  flex gap-4 mx-auto mb-[130px] md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[114px] lg:pb-[95px] md:pb-[70px] sm:pb-[50px] pb-[35px]">
+              <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px xl:-ms-[200px] lg:-ms-[140px] md:-ms-[120px]">
                 {heading}
               </h2>
               <div className=" ">
@@ -27,9 +27,10 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                   <h2
                     key={index}
                     className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px  text-color-3"
-                  >
+                    >
                     {item}
                   </h2>
+                  
                 ))}
               </div>
             </div>

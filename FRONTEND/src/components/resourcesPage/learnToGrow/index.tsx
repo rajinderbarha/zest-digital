@@ -74,9 +74,10 @@ function LearnToGrow({ data }: any) {
         </div>
       </div>
       </div>
-      <div className="xl:mt-[200px] lg:mt-[180px] md:mt-[160px] mt-[120px] xl:mb-[190px] lg:mb-[170px] md:mb-[150px] mb-[130px]">
+      <div className="xl:mt-[200px] lg:mt-[170px] md:mt-[120px] mt-[80px] xl:mb-[190px] lg:mb-[160px] md:mb-[110px] mb-[80px]">
 
-      <Logo_moving data={data.brandList.map((a: any) => a)} />
+
+      <Logo_moving LogoMovdata={data.brandList.map((a: any) => a)} />
       </div>
     </>
   );

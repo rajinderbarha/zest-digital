@@ -21,6 +21,41 @@ const Header = ({ data }: { data: HeaderType[] }) => {
     }
   };
 
+<<<<<<< HEAD
+=======
+  return (
+    <div className="main_padding">
+      <nav className={`${classes.navbar} flex pt-[10px] pb-[10px] md:pt-25px md:pb-21px screen-1-min:hidden  justify-between items-center main_container relative`}>
+      <div className={`${classes.logo} screen-1-max:w-24 lg:w-28 xl:w-auto `}>
+  
+        <Image src={logo} alt="Logo" width={112} height={51} />
+      </div>
+      <div className={classes.menuIcon} onClick={toggleMenu}>
+        <Image src={barsIcon} alt="Logo" />
+      </div>
+      <div
+        className={`${classes.menu} main_padding ${isMenuOpen ? classes.menuOpen : classes.menuOpen}`}
+        style={{ height: isMenuOpen ? '100vh' : 0 }}
+      >
+      
+        <a href="/link1"  className={`${classes.custom_menu_items_class}`}>About</a>
+        <a href="/link2" className={`${classes.custom_menu_items_class}`}>Solutions</a>
+        <a href="/link3" className={`${classes.custom_menu_items_class}`}>Result</a>
+        <a href="/link3" className={`${classes.custom_menu_items_class}`}>Insights</a>
+        <a href="/link3" className={`${classes.custom_menu_items_class}`}>Resource</a>
+        <a href="javascript:void(0)" className='inline-block mt-[5px] md:mt-[10px] max-w-max nav-button font-mono text-[14px] sm:text-base px-21px sm:py-[5px] py-[4px] bg-black text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1'>schedule a call</a>
+      </div>
+    </nav>
+    </div>
+  );
+};
+
+                                                //  navbar for the mobile end 
+
+
+const Header = ({ data }: { data: HeaderType[] }) => {
+
+>>>>>>> ea03d62c648a93d64239fc54a1138e6c1cb9569e
   const navMenu = {
     menu: {
       simple: "flex gap-5 text-base font-mono border-black",

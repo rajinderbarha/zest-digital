@@ -8,6 +8,11 @@
     @apply w-full border font-lato border-color-9 rounded-[10px] md:px-[25px] px-[12px] md:py-[14px] py-[10px] text-[15px] md:text-lg h-[100px] md:h-[172px]
 }
 
+.map_div > div:not(:last-child){
+    /* border:5px solid yellow; */
+    @apply xl:mb-[114px] lg:mb-[80px] md:mb-[60px] sm:mb-[40px] mb-[30px]
+}
+
 @media only screen and (max-width:767px) {
     .select_field{
         background-position: right 5px center;
@@ -36,5 +41,10 @@
 @media only screen and (max-width:1023px) {
     .text_div {
         max-width: 636px;
+    }
+}
+@media only screen and (max-width:704px) {
+    .map_div{
+        justify-content: center;
     }
 }
