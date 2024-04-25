@@ -21,7 +21,6 @@ function Casestudy({ singleCasestudy }: any) {
             <Instrumental data={item}/>
 
 
-
 {/* 
             <Visibility />
       <Gross_profit />

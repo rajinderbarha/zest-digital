@@ -49,7 +49,7 @@ function Growths({ data ,otherSolHeading}: any ) {
                         title: item.card.heading,
                         description: item.card.description,
                         buttonName: item.card.buttonName,
-                        buttonLink: `/solutions{item.slug.current}`,
+                        buttonLink: `/solutions/${item.slug.current}`,
                         image: item.card.image,
                       }}
                       has_image={true}
