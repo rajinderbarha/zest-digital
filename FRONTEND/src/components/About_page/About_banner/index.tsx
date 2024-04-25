@@ -11,16 +11,17 @@ function About_banner({ data }: { data: AboutType[] }) {
         <div className="main_container">
           {data?.map((item, index) => (
             <div
-              className="grid md:grid-cols-12 xl:mt-[143px] lg:mt-[120px] md:mt-[100px] sm:mt-[70px] mt-[40px]"
+              className="grid md:grid-cols-12 xl:mt-[143px] lg:mt-[120px] md:mt-[50px] sm:mt-[40px] mt-[30px]"
               key={`${index}_About_banner`}
             >
               <div className="md:col-span-6">
                 <h2 className="xl:text-45px lg:text-40px md:text-35px text-[18px] font-semibold text-color-1 font-mono bg-color-7 w-max px-2">
                   {item.hero.title}
                 </h2>
-                <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-[42px] text-[30px] text-color-1  mb-5 xl:mt-[35px] lg:mt-[27px] md:mt-[22px] mt-[15px]">
+                <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-[42px] text-[30px] text-color-1  mb-5 xl:mt-[35px] lg:mt-[27px] md:mt-[15px] mt-[5px]">
                   {item.hero.heading}
                 </h1>
+                {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
               </div>
               <div className="md:col-span-6 hidden md:block">
                 <Image

@@ -28,3 +28,26 @@
 
     }
 }
+
+.About_team {
+    /* padding: 0px 15px 141px 15px; */
+}
+.Team_img {
+    max-width: 435px;
+    width: 100%;
+    
+}
+.Team_img_circle{
+    width: 90.2%;
+    height: 83%;
+    background: #1d2671;
+    border-radius: 100%;
+    left: 4.38%;
+    bottom: 0.7%;
+    }
+    
+    @media screen and (max-width:768px) {
+        .About_team {
+            /* padding: 0px 16px 50px 16px; */
+        }
+    }

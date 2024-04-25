@@ -13,19 +13,19 @@
 
 
 .Portable_text h2{
-    @apply lg:text-45px md:text-40px text-30px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[40px]
+    @apply lg:text-45px md:text-40px sm:text-30px text-[25px] font-mono font-semibold xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px]  md:mb-[40px] sm:mb-[30px] mb-[15px]
 }
 .Portable_text p{
-    @apply flex flex-col gap-6 font-lato text-lg mb-[24px]
+    @apply flex flex-col gap-6 font-lato md:text-lg sm:text-base text-[14px]  md:mb-[24px] sm:mb-[16px] mb-[10px]
 }
 .Portable_text h3{
-    @apply md:text-35px text-30px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[40px] 
+    @apply md:text-35px sm:text-30px text-[22px] font-mono font-semibold mt-[30px] sm:mt-[50px] md:mt-[95px] sm:mb-[40px] mb-[10px] 
 }
 .Portable_text h3 ~ p{
     @apply md:ml-[60px] ml-[8px]
 }
 .Portable_text ul{
-    @apply list-disc list-inside md:ml-[100px] ml-[15px]
+    @apply list-disc list-inside md:ml-[100px] ml-[15px] md:text-lg sm:text-base text-[14px]
 }
 .Portable_text a{
     word-wrap: break-word;

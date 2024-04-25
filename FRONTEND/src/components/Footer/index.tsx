@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ClimateAction, FooterType } from "../../../lib/interface";
 import Climate_action from "@/common/Climate_action";
 import { PortableText } from "next-sanity";
+import { FaPhoneAlt } from "react-icons/fa";
 
 
 const Footer = ({ data }: { data: FooterType[]  }) => {
@@ -53,7 +54,7 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
 
 
 
-          <div className={`${classes.bg_image} bg-black  rounded-t-[20px] md:rounded-t-[30px]  `}>
+<div className={`${classes.bg_image} bg-black  rounded-t-[20px] md:rounded-t-[30px]  `}>
             <div className="main_container  px-5 md:pt-[48px] sm:pt-[30px] pt-[20px] md:pb-10 sm:pb-[25px] pb-[20px]">
               <div className="flex flex-row items-center">
                 <div className="max-w-max w-full">
@@ -74,54 +75,54 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
               >
                 {item.footerItem.map((footerItm, index) => (
                   <div className={`${classes.footer_details}`} key={`${index}_footerItm`}>
-                    <h2 className="font-bold xl:text-[24px] lg:text-[22px] md:text-[20px] text-[18px] lg:mb-3 md:mb-[9px] sm:mb-[6px] mb-[4px] font-mono ">
-                      {footerItm.heading}
-                    </h2>
-                    {footerItm.list.map((list, index) => (
-                      <div key={`${index}_list`} className={`${classes.address}`}>
-                        <address className="not-italic">
-                          <PortableText value={list.address}/>
-                        </address>
-                          <p>{list.contact}</p>
-                      </div>
-                    ))}
-                  </div>
+                  <h2 className="font-bold xl:text-[24px] lg:text-[22px] md:text-[20px] text-[18px] lg:mb-3 md:mb-[9px] sm:mb-[6px] mb-[4px] font-mono ">
+                    {footerItm.heading}
+                  </h2>
+                  {footerItm.list.map((list, index) => (
+                    <div key={`${index}_list`} className={`${classes.address}`}>
+                      <address className="font-lato not-italic xl:text-[18px] lg:text-[16px] md:text-[15px] text-[13px]">
+                        <PortableText value={list.address}/>
+                      </address>
+                        <p className=" flex font-lato items-center justify-center gap-1 text-left"><FaPhoneAlt className='text-white xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]' /><span className="text-color-7 xl:text-[18px] lg:text-[16px] md:text-[15px] text-[13px]"> {list.contact}</span></p>
+                    </div>
+                  ))}
+                </div>
                 ))}
-              </div>
-              <div
-                className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end md:my-10 sm:my-[25px] my-[20px]`}
-              >
+                </div>
+                <div
+                  className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end md:my-10 sm:my-[25px] my-[20px]`}
+                >
                 {item.brands.map((brandsimg, index) => (
                   <div key={`${index}_brandsimg`} className="foter_logos">
-                    <Image
-                      src={urlFor(brandsimg.brandImage).url()}
-                      width={400}
-                      height={400}
-                      className="w-auto"
-                      alt=""
-                    />
-                  </div>
+                  <Image
+                    src={urlFor(brandsimg.brandImage).url()}
+                    width={400}
+                    height={400}
+                    className="w-auto"
+                    alt=""
+                  />
+                </div>
                 ))}
-              </div>
-              <div className=" flex md:justify-start justify-center md:gap-5 sm:gap-[15px] gap-[10px]">
+                </div>
+                <div className=" flex md:justify-start justify-center md:gap-5 sm:gap-[15px] gap-[10px]">
                 {item.social.map((socialImg, index) => (
-                  <div key={`${index}_socialImg`} className="">
-                    <Link href={socialImg.socialLink}>
-                      <Image
-                        src={urlFor(socialImg.socialImage).url()}
-                        width={50}
-                        height={50}
-                        alt=""
-                        className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px]"
-                      />
-                    </Link>
-                  </div>
+                 <div key={`${index}_socialImg`} className="">
+                 <Link href={socialImg.socialLink}>
+                   <Image
+                     src={urlFor(socialImg.socialImage).url()}
+                     width={50}
+                     height={50}
+                     alt=""
+                     className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px]"
+                   />
+                 </Link>
+               </div>
                 ))}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="bg-color-1 py-[35px] " >
-            <div className={"text-white max-w-[970px] px-10 text-center mx-auto "}>
+            <div className="bg-color-1 py-[35px] " >
+            <div className={"text-white max-w-[970px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]"}>
               <PortableText value={item.copyRightText}  />
               </div>
           </div>

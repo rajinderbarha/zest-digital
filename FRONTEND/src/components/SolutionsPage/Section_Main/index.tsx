@@ -4,26 +4,30 @@ import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
 
 function Section_Main({ data, card }: any) {
-  
-// console.log("000000000000000000000000000", card[2].card?.image)
-// console.log("--------------------------",card.map(item =>( item)))
+
   return (
     <>
         <div className="main_padding">
         <div className={`${classes.SingleIntro}  main_container  md:rounded-30px rounded-[20px]`}>
           <div className={`${classes.single_container}`}>
-            <div className="max-w-[1099px] mx-auto lg:pt-[126px] md:pt-[90px] pt-[60px] md:pb-[368px] pb-[290px]">
-              <div className="flex gap-4 items-center  mx-auto md:w-max w-full font-semibold text-center max-w-[550px]  md:max-w-none flex-col md:flex-row">
-                <h2 className="min-1350:text-45px md:text-4xl md:max-970:text-[32px]  text-[25px] text-white font-mono">
+            <div className="max-w-[1099px] mx-auto xl:pt-[136px] lg:pt-[110px] md:pt-[75px] sm:pt-[35px] pt-[30px] md:pb-[368px] pb-[290px]">
+              <div className="  flex gap-[18px] mx-auto mb-[130px] md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] ">
+                <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px xl:-ms-[200px] lg:-ms-[140px] md:-ms-[120px] text-white font-mono">
                   {data.upperTitle.title}
                 </h2>
-                <div className=" ">
-                  {/* <h2 className='min-1350:text-40px md:text-3xl text-color-4'>mapper</h2> */}
-                  <h2 className="min-1350:text-45px md:text-4xl md:max-970:text-[29px] text-[25px] text-color-7 font-mono">
-                    {data.upperTitle.switcher[0]}
+                <div className={`${classes.cards} relative w-fit `}>
+                {data?.upperTitle.switcher?.map((item: any, index: any) => (
+                  <div className={`${classes.card} `}>
+
+                  <h2
+                    key={index}
+                    className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px  text-color-7"
+                    >
+                    {item}
                   </h2>
-                  {/* <h2 className='min-1350:text-40px md:text-3xl text-color-4'>tracker</h2> */}
-                </div>
+                    </div>
+                ))}
+              </div>
               </div>
               <div className=" mx-auto max-w-[1027px] xl:mt-[215px] lg:mt-[180px] md:mt-[130px] mt-[80px]">
                 <h2 className="font-mono italic font-semibold text-25px sm:text-30px md:text-35px leading-10 lg:leading-normal lg:text-40px xl:text-45px text-white mx-auto text-center px-4 sm:px-10 pb-6">

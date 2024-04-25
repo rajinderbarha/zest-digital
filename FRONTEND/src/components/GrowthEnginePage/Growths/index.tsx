@@ -7,7 +7,7 @@ function Growths({ data ,otherSolHeading}: any ) {
   return (
     <>
       {data.length > 0 && (
-        <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] overflow-hidden">
+        <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] overflow-hidden xl:mb-[311px] lg:mb-[290px] md:mb-[240px] sm:mb-[150px] mb-[100px]">
 
           <div className="2xl:mb-[235px] xl:mb-[200px] lg:mb-[175px] md:mb-[120px] sm:mb-[100px] mb-[50px]">
               {/* {data.map((item: any, index: number) => ( */}
@@ -49,7 +49,7 @@ function Growths({ data ,otherSolHeading}: any ) {
                         title: item.card.heading,
                         description: item.card.description,
                         buttonName: item.card.buttonName,
-                        buttonLink: `/solutions{item.slug.current}`,
+                        buttonLink: `/solutions/${item.slug.current}`,
                         image: item.card.image,
                       }}
                       has_image={true}

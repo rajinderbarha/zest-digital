@@ -6,8 +6,8 @@ import Action from '../singlebox/action';
 import Result from '../singlebox/result';
 import Image from 'next/image';
 import { urlFor } from '../../../../lib/sanity.client'
-function SingleIntro({ hero, card }: any) {
-
+function SingleIntro({ hero, card, team }: any) {
+  const { heading, profile } = team;
     
     return (
         <>
@@ -38,10 +38,48 @@ function SingleIntro({ hero, card }: any) {
             </div>
             <div className="grid gap-10 md:gap-20 -mt-40">
                 <Objective card={card}/>
+
+
+
+        
                 {/* <Strategy />
                 <Action />
                 <Result /> */}
             </div>
+            <div className={`${classes.About_team} xl:mt-[122px] lg:mt-[100px] md:mt-[80px] sm:mt-[60px] mt-[40px] xl:mb-[352px] lg:mb-[300px] md:mb-[250px] sm:mb-[200px] mb-[150px]`}>
+            <div className="main_container_x">
+              <h2 className=" text-center xl:text-45px lg:text-40px md:text-35px text-30px  font-mono font-semibold">
+                {heading}
+              </h2>
+              <div className="">
+                <div className="About_team_box text-center grid grid-cols-2 md:grid-cols-3  md:gap-x-20 md:gap-y-20 sm:gap-x-[60px] sm:gap-y-[30px] gap-x-[40px] gap-y-[20px]">
+                  {profile?.map((data: any, index: any) => (
+                    <div key={`${index}_About_team_2`}>
+                      <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[430px]">
+                        <div
+                          className={`${classes.Team_img_circle} absolute  bottom-0`}
+                        ></div>
+                        <Image
+                          src={urlFor(data.image).url()}
+                          width={481}
+                          height={481}
+                          className={`${classes.Team_img} relative z-10 mx-auto `}
+                          alt=""
+                        />
+                      </div>
+
+                      <h3 className="lg:text-35px md:text-30px sm:text-25px text-[20px] font-semibold font-mono text-color-1">
+                        {data.name}{" "}
+                      </h3>
+                      <p className="lg:text-lg md:text-[16px] sm:text-[14px] text-[12px] font-normal font-mono text-color-1">
+                        {data.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
             </div>
         </>
     )

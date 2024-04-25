@@ -14,7 +14,7 @@ function LearnToGrow({ data }: any) {
 
     
       <div
-        className={`${classes.SingleIntro}  main_container  h-100  rounded-30px`}
+        className={`${classes.SingleIntro}  main_container  h-100 rounded-[20px] md:rounded-30px`}
       >
         <div
           className={`${classes.single_container} max-w-[1335px] mx-auto  pt-[88px] md:pb-[564px] pb-[400px] relative`}
@@ -74,7 +74,7 @@ function LearnToGrow({ data }: any) {
         </div>
       </div>
       </div>
-      <div className="xl:mt-[200px] lg:mt-[170px] md:mt-[120px] mt-[80px] xl:mb-[190px] lg:mb-[160px] md:mb-[110px] mb-[80px]">
+      <div className="xl:mt-[200px] lg:mt-[170px] md:mt-[120px] sm:mt-[80px] mt-[50px] xl:mb-[190px] lg:mb-[160px] md:mb-[110px] sm:mb-[80px] mb-[50px]">
 
 
       <Logo_moving LogoMovdata={data.brandList.map((a: any) => a)} />

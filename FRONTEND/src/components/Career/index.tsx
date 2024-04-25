@@ -6,7 +6,7 @@ import { urlFor } from "../../../lib/sanity.client";
 
 const Career: React.FC<CareerProps> = ({ data }) => {
   return (
-    <div className={`Career mb-[100px] md:mb-[160px]`}>
+    <div className={`Career xl:mb-[160px] lg:mb-[140px] md:mb-[120px] sm:mb-[90px] mb-[60px]`}>
       {data?.map((careerData, index) => {
         const { title, description, image } = careerData.card;
 

@@ -1,5 +1,5 @@
 import React from "react";
-import SingleIntro from "@/components/singleCaseStudyPage/SingleIntro/indedx";
+import SingleIntro from "@/components/singleCaseStudyPage/SingleIntro";
 import Singalcasebanner from "@/components/singleCaseStudyPage/singalcasebanner";
 import { getSingleCasestudyData } from "../../../lib/sanity.query";
 
@@ -15,6 +15,7 @@ function singlecasestudy({ singleCasestudy }: any) {
       <SingleIntro
         hero={singleCasestudy[0].hero}
         card={singleCasestudy[0].card}
+        team={singleCasestudy[0].team }
       />
     </>
   );
