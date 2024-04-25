@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import classes from "./heroSection.module.css";
 import { urlFor } from "../../../lib/sanity.client";
-import MuxPlayer from "@mux/mux-player-react";
 import { HomepageHeroSec } from "../../../lib/interface";
 
 const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
@@ -13,7 +12,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
     viewSolBtnLink,
     SeeOurResBtnLink,
     image,
-    video,
+    videosrc,
   } = HeroSecData;
 
   console.log("vv", viewSolBtnLink, SeeOurResBtnLink);
@@ -32,15 +31,14 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
               </h1>
               <div className="flex gap-5 md:flex-col lg:flex-row mt-9 flex-col sm:flex-row">
                 <a href={viewSolBtnLink} className="flex">
-
-                <button className="text-base  px-25px md:h-10 h-9 bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white  hover:border-color-1">
-                  {viewSolBtnName}
-                </button>
+                  <button className="text-base  px-25px md:h-10 h-9 bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white  hover:border-color-1">
+                    {viewSolBtnName}
+                  </button>
                 </a>
                 <a href={SeeOurResBtnLink} className="flex">
-                <button className="text-base px-25px md:h-10 h-9 bg-transparent text-white rounded-full hover:text-color-1 hover:bg-white border border-white ">
-                  {SeeOurResBtnName}
-                </button>
+                  <button className="text-base px-25px md:h-10 h-9 bg-transparent text-white rounded-full hover:text-color-1 hover:bg-white border border-white ">
+                    {SeeOurResBtnName}
+                  </button>
                 </a>
               </div>
               <div className={`${classes.marketing_agency_logo_1} self-end`}>
@@ -63,18 +61,13 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
                   alt=""
                 />
               </div>
-              <MuxPlayer
-                playbackId={video.asset.playbackId}
-                className={`${classes.video_class} md:rounded-30px rounded-[20px] xl:w-[685px] xl:h-[450px] lg:w-[500px] lg:h-[350px] md:w-[400px] md:h-[250px] w-full sm:h-[320px]`}
-                metadata={{
-                  video_id: "video-id-54321",
-                  video_title: "Test video title",
-                  viewer_user_id: "user-id-007",
-                }}
-                streamType="on-demand"
-                autoPlay
-                muted
-              />
+              <video width="640" height="360" controls>
+                <source
+                  src={videosrc}
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
