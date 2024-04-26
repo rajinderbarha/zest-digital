@@ -54,8 +54,8 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
 
 
 
-<div className={`${classes.bg_image} bg-black  rounded-t-[20px] md:rounded-t-[30px]  `}>
-            <div className="main_container  px-5 md:pt-[48px] sm:pt-[30px] pt-[20px] md:pb-10 sm:pb-[25px] pb-[20px]">
+<div className={`${classes.bg_image} bg-color-1  rounded-t-[20px] md:rounded-t-[30px]  px-5`}>
+            <div className="main_container   md:pt-[48px] sm:pt-[30px] pt-[20px] md:pb-[28px] sm:pb-[20px] pb-[13px]">
               <div className="flex flex-row items-center">
                 <div className="max-w-max w-full">
                   <Image
@@ -121,8 +121,8 @@ const Footer = ({ data }: { data: FooterType[]  }) => {
                 </div>
               </div>
             </div>
-            <div className="bg-color-1 py-[35px] " >
-            <div className={"text-white max-w-[970px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]"}>
+            <div className="bg-color-1 lg:h-[90px] md:h-[80px] sm:h-[60px] sm:py-0 py-[5px] flex items-center " >
+            <div className={"text-white max-w-[1720px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]"}>
               <PortableText value={item.copyRightText}  />
               </div>
           </div>

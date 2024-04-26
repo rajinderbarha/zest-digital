@@ -6,7 +6,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 
 function About_team({ data }: { data: AboutType[] }) {
   return (
-    <div className={`${classes.About_team} main_padding`}>
+    <div className={`${classes.About_team} main_padding xl:mt-[141px] lg:mt-[120px] md:mt-[80px] sm:mt-[50px] mt-[30px]`}>
       <div className="main_container_x">
         {data?.map((aboutdata, index) => (
           <div key={`${index}_About_team_1`} className="">

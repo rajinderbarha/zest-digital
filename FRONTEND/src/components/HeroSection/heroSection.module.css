@@ -1,3 +1,47 @@
+.custom_border {
+    position: relative;
+}
+
+.video_class {
+    position: relative;
+    z-index: 11;
+}
+
+.custom_border:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -2px;
+    background: linear-gradient(115deg, #8aff0a 0%, transparent 64%, transparent 54%, transparent -256%);
+    
+    z-index: 0;
+    @apply xl:rounded-30px md:rounded-[20px] rounded-[10px]
+}
+
+.custom_border:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -2px;
+    background: linear-gradient(-78deg, #000000 0%, transparent 28%, transparent 148%, transparent -387%);
+   
+    z-index: 0;
+       @apply xl:rounded-30px md:rounded-[20px] rounded-[10px]
+}
+@media only screen and (max-width:1410px) {
+    .marketing_agency_logo_1 {
+        position: relative;
+        top: 50px;
+    }
+}
+
+
 @media only screen and (min-width:769px) and (max-width:1066px) {
     .banner_text {
         /* font-size: 40px; */
@@ -22,12 +66,13 @@
     .marketing_agency_logo_2 {
         display: none;
     }
+
     .mux-player {
         width: 100%;
         max-width: 800px;
         margin: 40px auto;
-      }
-      
+    }
+
 
 }
 
@@ -42,10 +87,10 @@
         display: block;
         position: absolute;
         top: -93px;
-        right: -60px;
+        right: -31px;
         /* bottom: -180px;
         right: -40px; */
-        z-index: 1;
+        z-index: 26;
         /* width: calc(100% - 50px); */
     }
 
@@ -58,18 +103,29 @@
         overflow: hidden;
     }
 }
-@media only screen and (max-width:639px){
-    .marketing_agency_logo_2{
-        top:-86px;
-        right:-64px
+
+@media only screen and (max-width:639px) {
+    .marketing_agency_logo_2 {
+        top: -18vw;
+        right: -14px;
+        display: flex;
+        justify-content: end;
+       
     }
-    .marketing_agency_logo_2 img{
-        width: calc(100% - 20px);
+
+    .marketing_agency_logo_2 img {
+        width: 36vw;
 
     }
+    .custom_border:before, .custom_border:after {
+        margin: -1.5px;
+    }
+    
 }
-@media only screen and (max-width:425px){
-.video_class{
-    height: 175px;
+
+/* @media only screen and (max-width:425px){*/
+.video_class {
+    /* height: 450px; */
 }
-}
+
+/*} */

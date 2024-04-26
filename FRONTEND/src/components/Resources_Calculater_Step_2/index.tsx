@@ -10,7 +10,7 @@ function Resources_Calculater_Step_2({setStep}:any) {
         <>
             <div className="Resources_Calculater_Step_2">
                 <div className="pe-[6px] pb-[6px]">
-                    <div className="Resources_Calculater_Step_2 popup_conatiner  md:pt-[29px] pt-[20px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
+                    <div className="Resources_Calculater_Step_2 popup_conatiner  md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                     <div className="progrees_bar xl:mb-[80px] lg:mb-[60px] md:mb-[40px] sm:mb-[30px] mb-[20px] ">
                         <ProgressBar value={40} />
                         </div>

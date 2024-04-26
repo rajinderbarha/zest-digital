@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import arrow from "../../assets/images/arrow.svg";
+import hover_arrow from "../../assets/images/hover_arrow.png";
 import Growth_engine from "@/common/Growth_engine";
 import classes from "./growthcard.module.css";
 import { urlFor } from "../../../lib/sanity.client";
@@ -16,7 +17,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
       <div className="main_padding lg:my-[47px] md:my-[35px] sm:my-[25px] my-[15px] ">
         <div className="text-white main_container ">
           <div
-            className={`${classes.growth_result} bg-black rounded-[20px] md:rounded-30px font-mono xl:pt-[136px] lg:pt-[110px] md:pt-[75px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}
+            className={`${classes.growth_result} bg-color-1 rounded-[20px] md:rounded-30px font-mono xl:pt-[136px] lg:pt-[110px] md:pt-[75px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}
           >
             <div className="  flex gap-4 mx-auto mb-[130px] md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[114px] lg:pb-[95px] md:pb-[70px] sm:pb-[50px] pb-[35px]">
               <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px xl:-ms-[200px] lg:-ms-[140px] md:-ms-[120px]">
@@ -54,13 +55,15 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                     <div key={index} className="grid gap-10 pe-5">
                       <div className="grid md:grid-cols-12 gap-[5px] md:gap-6 ">
                         <div
-                          className={`${outerSpan} ${classes.box_size} p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 md:p-[35px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
+                          className={`${outerSpan} ${classes.box_size} group p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 md:p-[35px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
                         >
                           <div className="font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px md:text-[25px] md:max-970:text-[18px] md:max-800:text-[17px] sm:text-25px text-[20px]">
                             {numHeading}
                           </div>
-                          <div className="min-1350:w-auto md:w-10 max-970:w-9">
-                            <Image src={arrow} alt="" />
+                          <div className="min-1350:w-auto md:w-10 max-970:w-9  ">
+                            
+                            <Image src={arrow} alt=""  className="group-hover:hidden"/>
+                            <Image src={hover_arrow} alt=""  className="text-[10px] group-hover:block hidden"/>
                           </div>
                         </div>
                         <div

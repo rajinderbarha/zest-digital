@@ -21,7 +21,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
                             {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
                         </div>
                         <div className="md:col-span-3 hidden md:block">
-                            <Image className=' md:ms-auto mx-auto md:max-w-full sm:max-w-[150px] max-w-[100px]' src={urlFor(item.lifeSection.image).url()} width={197} height={198} alt="" />
+                            <Image className=' md:ms-auto mx-auto xl:max-w-full lg:max-w-[250px] md:max-w-[200px] sm:max-w-[150px] max-w-[100px]' src={urlFor(item.lifeSection.image).url()} width={300} height={300} alt="" />
                         </div>                    </div>
 
 

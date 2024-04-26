@@ -28,28 +28,49 @@ body {
 }
 
 /* popups style */
-@media only screen and (max-width:500px) {
-  .css-1p6wq07-MuiPaper-root-MuiDialog-paper {
-    margin: 10px!important;
-    /* z-index: -1!important; */
-  }
-}
+
 
 .css-zw3mfo-MuiModal-root-MuiDialog-root {
-  overflow-y: scroll!important;
+  overflow-y: scroll !important;
 }
 
 .css-hz1bth-MuiDialog-container {
-  height: auto!important;
+  /* height: auto!important; */
+}
+
+.MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container {
+  backdrop-filter: blur(10px);
+  height: 100vh;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1p6wq07-MuiPaper-root-MuiDialog-paper {
+  height: inherit;
+  margin-top: 70px !important;
+}
+
+@media only screen and (max-width:500px) {
+  .css-1p6wq07-MuiPaper-root-MuiDialog-paper {
+    margin: 10px !important;
+
+    /* z-index: -1!important; */
+  }
+
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1p6wq07-MuiPaper-root-MuiDialog-paper {
+
+    margin-top: 50px !important;
+  }
 }
 
 
 
 /* This will hide the default dropdown arrow */
 select {
-  -webkit-appearance: none; /* for Chrome, Safari */
-  -moz-appearance: none;    /* for Firefox */
-  appearance: none;         /* for modern browsers */
+  -webkit-appearance: none;
+  /* for Chrome, Safari */
+  -moz-appearance: none;
+  /* for Firefox */
+  appearance: none;
+  /* for modern browsers */
   background-image: url('../assets/images/select_drop_down.svg');
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -70,10 +91,23 @@ select::-ms-expand {
   width: 100%;
   margin: 0 auto;
 }
-.main_padding{
-  padding-left: 15px!important;
-  padding-right: 15px!important;
+
+.main_padding {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
+/* @media only screen and (max-width: 1420px) {
+  .main_padding {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .main_padding {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+} */
 
 .main_container_x {
   max-width: 1410px;
@@ -132,12 +166,10 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
   height: 23px;
   right: 0 !important;
 }
-.bg_color_green{
-background-color: #a2ff8f;
-color:  #000 !important
+
+.bg_color_green {
+  background-color: #a2ff8f;
+  color: #000 !important
 }
 
 /* Nav bar style end*/
-
-
-
