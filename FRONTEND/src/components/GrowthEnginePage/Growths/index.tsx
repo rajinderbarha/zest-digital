@@ -6,10 +6,11 @@ function Growths({ data ,otherSolHeading}: any ) {
   // console.log("growths-------------",data)
   return (
     <>
+    {/* xl:mb-[311px] lg:mb-[250px]  md:mb-[160px] sm:mb-[150px] mb-[50px] */}
       {data.length > 0 && (
-        <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] overflow-hidden xl:mb-[311px] lg:mb-[290px] md:mb-[240px] sm:mb-[150px] mb-[100px]">
+        <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] overflow-hidden ">
 
-          <div className="2xl:mb-[235px] xl:mb-[200px] lg:mb-[175px] md:mb-[120px] sm:mb-[100px] mb-[50px]">
+          <div className="xl:mb-[311px] lg:mb-[210px] mb:mb-[175px] md:mb-[170px] sm:mb-[140px] mb-[50px]">
               {/* {data.map((item: any, index: number) => ( */}
 
               <h2

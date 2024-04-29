@@ -13,7 +13,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
     SeeOurResBtnLink,
     image,
     videosrc,
-  } = HeroSecData;
+  } = HeroSecData
 
   console.log("vv", viewSolBtnLink, SeeOurResBtnLink);
   return (
@@ -21,7 +21,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
       <div className="main_padding">
         <div className=" text-white main_container">
           <div
-            className={`${classes.banner} grid md:grid-cols-2 grid-cols-1 gap-10 bg-black bg-image-1 bg-no-repeat bg-cover md:rounded-30px rounded-[20px] xl:pb-[166px] lg:pb-[106px] xl:pt-[185px] lg:pt-[135px] md:py-[90px] sm:py-[50px] py-[30px] xl:px-[100px] lg:px-[80px] md:px-[60px] sm:px-[40px] px-[22px] relative`}
+            className={`${classes.banner} grid md:grid-cols-2 grid-cols-1 gap-10 bg-black bg-image-1 bg-no-repeat bg-cover md:rounded-30px rounded-[20px] xl:pb-[110px] lg:pb-[86px] xl:pt-[130px] lg:pt-[90px] md:pt-[90px] sm:pt-[50px] pt-[30px] md:pb-[150px] sm:pb-[50px] pb-[30px] xl:px-[100px] lg:px-[60px] md:px-[60px] sm:px-[40px] px-[22px] relative`}
           >
             <div className=" font-mono text-55px border-white flex flex-col">
               <h1
@@ -61,13 +61,14 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
                   alt=""
                 />
               </div>
-              <video width="640" height="360" controls>
+              <div className={classes.custom_border}>
+              <video width="680" height="450"  controls className={`${classes.video_class} xl:rounded-30px md:rounded-[20px] rounded-[10px]`}>
                 <source
                   src={videosrc}
-                  type="video/mp4"
-                />
+                  type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+              </div>
             </div>
           </div>
         </div>

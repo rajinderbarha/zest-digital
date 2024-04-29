@@ -9,9 +9,9 @@ import ProgressBar from '@/common/ProgressBar'
 function Resources_Calculater_Step_4({ setStep }: any) {
     return (
         <>
-            <div className="Resources_Calculater_Step_3">
+            <div className="Resources_Calculater_Step_4">
                 <div className="pe-[6px] pb-[6px]">
-                    <div className="Resources_Calculater_Step_5 popup_conatiner md:pt-[29px] pt-[20px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
+                    <div className="Resources_Calculater_Step_4 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                         <div className="progrees_bar xl:mb-[140px] lg:mb-[110px] md:mb-[80px] sm:mb-[70px] mb-[60px] ">
                             <ProgressBar value={80} />
                         </div>

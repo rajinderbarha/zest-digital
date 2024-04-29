@@ -212,7 +212,7 @@ function Filters({ data }: any) {
             <Image
               src={Filters_image}
               alt=""
-              className={`${classes.Filters_img} invisible md:visible  bg-color-1 rounded-30px absolute top-0 w-full`}
+              className={`${classes.Filters_img} invisible md:visible  bg-color-1  rounded-30px absolute top-0 w-full`}
             />
             <div className="Filters_box relative z-10  grid lg:grid-cols-12">
               <div className="lg:col-span-8 lg:order-1 order-2">
@@ -271,7 +271,7 @@ function Filters({ data }: any) {
                 <h2 className="text-30px md:text-white text-color-1  font-mono font-semibold xl:mb-10 lg:mb-[20px] md:mb-[10px] mb-[8px]">
                   Filters
                 </h2>
-                <div className="Filters_main_btn flex flex-wrap gap-3 ">
+                <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3 ">
                   {newArray.map((uniqueEl: any, index: any) => (
                     <h6
                       key={index}

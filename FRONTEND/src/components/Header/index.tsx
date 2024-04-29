@@ -23,14 +23,14 @@ const Header = ({ data }: { data: HeaderType[] }) => {
 
   const navMenu = {
     menu: {
-      simple: "flex gap-5 text-base font-mono border-black",
+      simple: "flex gap-[40px] text-base font-mono border-black",
       responsive1:
         "screen-1-max:hidden screen-1-max:flex-col screen-1-max:gap-0 screen-1-max:text-lg screen-1-max:absolute screen-1-max:top-90px screen-1-max:-right-1/3 screen-1-max:w-1/3 screen-1-max:z-10",
       responsive2:
         "sm-max:w-auto screen-1-max:bg-color-1 screen-1-max:text-white screen-1-max:ps-5 screen-1-max:rounded-l-lg screen-1-max:h-[89vh]",
     },
     linkclass:
-      "screen-1-max:border-b screen-1-max:border-color-2 screen-1-max:ps-2 screen-1-max:pe-20 screen-1-max:py-3",
+      "screen-1-max:border-b screen-1-max:border-color-2 screen-1-max:ps-2 screen-1-max:pe-20 screen-1-max:py-3 text-color-1",
     btn: "screen-1-max:block mt-20 hidden mx-auto font-mono text-base px-21px h-10 bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white hover:border-white border border-color-1 sm-max:mx-2",
   };
 
@@ -63,7 +63,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                     <Link
                       href={navItem.buttonLink}
                       key={`navItem_${index}`}
-                      className={navMenu.linkclass}
+                      className={`${navMenu.linkclass} hover:underline ${classes.nav_links_hover}`}
                     >
                       {navItem.buttonName}
                     </Link>
@@ -77,11 +77,6 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                 >
                   {item.button.navName}
                 </Link>
-                <Image
-                  src={bars}
-                  alt="bars"
-                  className="screen-1-max:block hidden screen-1-max:w-[23px] screen-1-max:h-[23px]"
-                />
               </div>
             </div>
             {/*------------------- Desktop View----------------- */}
