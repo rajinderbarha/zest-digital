@@ -23,6 +23,48 @@
 
 
 
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+
+.animationDiv .animationFullText p span{
+    display: none;
+    text-align: left;
+}
+.animationDiv .animationFullText p{
+	margin:0;
+	overflow: hidden;
+}
+.animationDiv .animationFullText p span.textIn{
+	display: block;
+	animation: textIn .5s ease;
+  
+}
+.animationDiv .animationFullText p span.textOut{
+
+  animation: textOut .5s ease!important;
+}
+.animatedText{
+  margin: 0 auto!important;
+}
+
+
+
+
 
 
 

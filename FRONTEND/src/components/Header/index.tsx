@@ -8,8 +8,13 @@ import { HeaderType } from "../../../lib/interface";
 import classes from "./Header.module.css";
 import barsIcon from "../../assets/images/bars-svgrepo-com.svg";
 import logo from "../../assets/images/zest-logo_vector.png";
+import { useRouter } from 'next/router';
 
 const Header = ({ data }: { data: HeaderType[] }) => {
+
+  const router = useRouter();
+
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -59,12 +64,26 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   id="nav-menus"
                   className={`${navMenu.menu.simple} + ${navMenu.menu.responsive1} + ${navMenu.menu.responsive2}`}
                 >
+                  {/* {item.navItem.map((navItem, index) => (
+                    <Link href={navItem.buttonLink} key={`navItem_${index}`} passHref>
+                    <Link
+                      className={`${
+                        router.pathname === navItem.buttonLink
+                          ? 'font-bold' // This is a Tailwind CSS class for bold text
+                          : ''
+                      } ${navMenu.linkclass} hover:underline ${classes.nav_links_hover}`}
+                    >
+                      {navItem.buttonName}
+                    </Link>
+                  </Link>
+                  ))} */}
                   {item.navItem.map((navItem, index) => (
                     <Link
                       href={navItem.buttonLink}
                       key={`navItem_${index}`}
-                      className={`${navMenu.linkclass} hover:underline ${classes.nav_links_hover}`}
-                    >
+                      className={`
+                          ${router.pathname === navItem.buttonLink ? 'font-bold' : ''} 
+                          ${navMenu.linkclass} hover:underline ${classes.nav_links_hover}`}>
                       {navItem.buttonName}
                     </Link>
                   ))}
@@ -101,9 +120,8 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                 <Image src={barsIcon} alt="Logo" />
               </div>
               <div
-                className={`${classes.menu} px-[16px] ${
-                  isMenuOpen ? classes.menuOpen : classes.menuOpen
-                }`}
+                className={`${classes.menu} px-[16px] ${isMenuOpen ? classes.menuOpen : classes.menuOpen
+                  }`}
                 style={{ height: isMenuOpen ? "100vh" : 0 }}
               >
                 {item.navItem.map((navItem, index) => (
@@ -111,7 +129,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                     onClick={toggleMenu}
                     href={navItem.buttonLink}
                     key={`navItem_${index}`}
-                    className={`${classes.custom_menu_items_class}`}
+                    className={`${classes.custom_menu_items_class} `}
                   >
                     {navItem.buttonName}
                   </Link>

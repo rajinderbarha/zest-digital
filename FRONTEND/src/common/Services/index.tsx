@@ -18,14 +18,14 @@ const Services = ({ data }: HomePageServices) => {
             <h2 className=" md:w-max xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[28px] text-white font-semibold xl:mb-[14px] lg:mb-[12px] md:mb-[10px] sm:mb-[6px] mb-[4px]">
                 {data.title}
               </h2>
-              <div className="  flex xl:gap-[17px] lg:gap-[12px] md:gap-[9px] sm:gap-[7px] gap-[5px] flex-col text-color-6">
+              <div className="  flex xl:gap-[17px] lg:gap-[12px] md:gap-[9px] sm:gap-[7px] gap-[5px] flex-col text-white">
                 {data.services.map((item: any, index: number) => (
                   <ul key={`${index}_servicesList`}>
                     <li>
                       {" "}
                       <Link
                         href={`/services/${item.slug}`}
-                        className="border-b border-color-6 hover:border-[transparent] w-max text-md lg:text-lg flex items-center gap-1"
+                        className="border-b border-white hover:border-[transparent] w-max text-md lg:text-lg flex items-center gap-1"
                       >
                         {item.title}
                         <GoArrowRight />
@@ -35,7 +35,7 @@ const Services = ({ data }: HomePageServices) => {
                 ))}
               </div>
             </div>
-            <div className="md:flex ms-auto hidden xl:-mt-[158px] lg:-mt-[125px] -mt-[94px]">
+            <div className="md:flex xl:gap-[40px] lg:gap-[25px] md:gap-[8px] ms-auto hidden xl:-mt-[150px] lg:-mt-[120px] -mt-[90px]">
               <div className="  self-end">
                 <Image
                   src={urlFor(data.image1).url()}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import arrow from "../../assets/images/arrow.svg";
 import hover_arrow from "../../assets/images/hover_arrow.png";
@@ -8,6 +8,31 @@ import { urlFor } from "../../../lib/sanity.client";
 import { HomepageGrowthCard } from "../../../lib/interface";
 
 const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
+
+
+  const texts = ["Wear ", "Cover Face ", "Wash Your "];
+  const [animateIndex, setAnimateIndex] = useState(0);
+  const textInTimer = 3000; 
+
+  useEffect(() => {
+      
+      const handleAnimation = () => {
+          const timeoutId = setTimeout(() => {
+              setAnimateIndex(prev => (prev + 1) % ( card.switcher ? card.switcher.length: [].length));
+          }, textInTimer);
+          return timeoutId; 
+      };
+
+      const timeoutId = handleAnimation(); 
+
+      return () => {
+          clearTimeout(timeoutId); 
+      };
+  }, [animateIndex, textInTimer]); 
+
+
+
+
   const { heading, horizontalbars } = card;
 
   let outerSpan: string;
@@ -17,26 +42,23 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
       <div className="main_padding lg:my-[47px] md:my-[35px] sm:my-[25px] my-[15px] ">
         <div className="text-white main_container ">
           <div
-            className={`${classes.growth_result} bg-color-1 rounded-[20px] md:rounded-30px font-mono xl:pt-[136px] lg:pt-[110px] md:pt-[75px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}
+            className={`${classes.growth_result} bg-color-1 rounded-[20px] md:rounded-30px font-mono xl:pt-[131px] lg:pt-[110px] md:pt-[75px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}
           >
-            <div className="  flex gap-4 mx-auto mb-[130px] md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[114px] lg:pb-[95px] md:pb-[70px] sm:pb-[50px] pb-[35px]">
-              <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px xl:-ms-[200px] lg:-ms-[140px] md:-ms-[120px]">
+            <div className={`${classes.animationDiv}`}>
+                <div className={`${classes.animationFullText} mx-auto   md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[160px] lg:pb-[120px] md:pb-[80px]  pb-[50px]`}>
+                <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px flex md:gap-4 flex-wrap  text-center">
                 {heading}
-              </h2>
-              <div className={`${classes.cards} relative w-fit `}>
-                {card?.switcher?.map((item: any, index: any) => (
-                  <div className={`${classes.card} `}>
-
-                  <h2
-                    key={index}
-                    className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px  text-color-3"
-                    >
-                    {item}
-                  </h2>
-                    </div>
-                ))}
-              </div>
-            </div>
+             
+                    <p className={`${classes.animatedText} md:w-[177px]`}>
+                        {card?.switcher?.map((text: any, idx: any) => (
+                            <span key={idx} className={ `${ idx === animateIndex ? classes.textIn : classes.textOut }  xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px  text-color-3`}>
+                                {text}
+                            </span>
+                        ))}
+                    </p>
+                    </h2>
+             </div>
+         </div>
 
             <div className={`${classes.growth_grid}`}>
               {horizontalbars?.map(

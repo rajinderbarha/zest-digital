@@ -14,7 +14,7 @@
 }
 
 .Team_img {
-    max-width: 435px;
+    max-width: 463px;
     width: 100%;
     
 }
@@ -56,12 +56,12 @@
 
 }
 .Team_img_circle{
-    width: 90.2%;
-    height: 83%;
+    width: 95.2%;
+    height: 85%;
     background: #1d2671;
     border-radius: 100%;
-    left: 4.38%;
-    bottom: 0.7%;
+    left: 2.38%;
+    /* bottom: 0.7%; */
 }
 
 .Escape_p {
