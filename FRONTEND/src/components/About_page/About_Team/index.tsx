@@ -7,7 +7,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 function About_team({ data }: { data: AboutType[] }) {
   return (
     <div className={`${classes.About_team} main_padding xl:mt-[141px] lg:mt-[120px] md:mt-[80px] sm:mt-[50px] mt-[30px]`}>
-      <div className="main_container_x">
+      <div className="max-w-[1562px] w-full mx-auto">
         {data?.map((aboutdata, index) => (
           <div key={`${index}_About_team_1`} className="">
             <div
@@ -16,7 +16,7 @@ function About_team({ data }: { data: AboutType[] }) {
             >
               {aboutdata.team.map((teamData, index) => (
                 <div key={`${index}_About_team_2`}>
-                  <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[430px]">
+                  <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[463px]">
                     <div
                       className={`${classes.Team_img_circle} absolute  bottom-0`}
                     ></div>
@@ -24,7 +24,7 @@ function About_team({ data }: { data: AboutType[] }) {
                       src={urlFor(teamData.image).url()}
                       width={481}
                       height={481}
-                      className={`${classes.Team_img} relative z-10 mx-auto `}
+                      className={`${classes.Team_img} rounded-[100%] relative z-10 mx-auto `}
                       alt=""
                     />
                   </div>
