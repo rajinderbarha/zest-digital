@@ -106,7 +106,8 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
             </div>
           </div>
 
-          <div className="md:px-10 sm:px-[35px] px-[15px]">
+          {/* <div className="md:px-10 sm:px-[35px] px-[15px]"> */}
+          <div className={`${classes.growth_container} main_padding`}>
             <div
               className={`max-w-[1345px] font-mono  mx-auto grid gap-10 lg:-mt-64 md:-mt-[200px] -mt-[150px] `}
             >

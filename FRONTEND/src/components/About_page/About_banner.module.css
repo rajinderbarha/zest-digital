@@ -3,6 +3,7 @@
     overflow: hidden;
 }
 
+
 .Team_img_box {
     max-width: 421px;
     width: 100%;
@@ -99,6 +100,18 @@
     z-index: 6;
     background-image: linear-gradient(90deg, #191516, transparent 27%, transparent, #191516);
 }
+
+/* @media screen and (max-width:900px) {
+.banner_image{
+    padding:00px 0 0px 75px;
+}
+} */
+@media only screen and (max-width:1155px){
+    .Founded_img{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width:1040px) {
     .Our_values_main_2 {

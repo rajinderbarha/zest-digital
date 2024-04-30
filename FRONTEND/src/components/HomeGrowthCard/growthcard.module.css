@@ -4,8 +4,43 @@
     @apply  xl:mt-[65px] lg:mt-[45px] md:mt-[25px] mt-[35px]
     
 }
+@media only screen and (max-width:860px){
 
+    /* .animationFullText{
+        
+        @apply   max-w-[655px] text-center border
+    } */
+}
+/* @media only screen and (min-width:1366px){
+    .growth_container{
 
+        padding: 0 100px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+    .growth_container{
+
+        padding: 0 50px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .growth_container{
+
+        padding: 0 40px;
+    }
+  }
+  @media only screen and (min-width: 640px) and (max-width: 767px){
+    .growth_container{
+
+        padding: 0 35px;
+    }
+  }
+@media only screen and (max-width:639px){
+    .growth_container{
+
+        padding: 0 15px;
+    }
+} */
 
 
 @keyframes textIn{

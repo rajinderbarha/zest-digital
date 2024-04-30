@@ -11,10 +11,10 @@ function About_banner({ data }: { data: AboutType[] }) {
         <div className="main_container">
           {data?.map((item, index) => (
             <div
-              className="grid md:grid-cols-12 xl:mt-[143px] lg:mt-[120px] md:mt-[50px] sm:mt-[40px] mt-[30px]"
+              className="  xl:mt-[143px] lg:mt-[120px] md:mt-[50px] sm:mt-[40px] mt-[30px] relative"
               key={`${index}_About_banner`}
             >
-              <div className="md:col-span-6">
+              <div className="Founded_heading max-w-[850px]">
                 <h2 className="xl:text-45px lg:text-40px md:text-35px text-[18px] font-semibold text-color-1 font-mono bg-color-7 w-max px-2">
                   {item.hero.title}
                 </h2>
@@ -23,13 +23,14 @@ function About_banner({ data }: { data: AboutType[] }) {
                 </h1>
                 {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
               </div>
-              <div className="md:col-span-6 hidden md:block">
+              <div className={`${classes.Founded_img} hidden md:flex absolute top-0 max-w-[245px] right-0 h-full`}>
                 <Image
-                  className="md:ms-auto "
+                  className={`${classes.banner_image}`}
                   src={urlFor(item.hero.image).url()}
-                  width={350}
-                  height={350}
+                  width={250}
+                  height={250}
                   alt=""
+
                 />
               </div>
             </div>
