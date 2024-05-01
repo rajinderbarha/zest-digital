@@ -8,8 +8,63 @@
     }
 
 }
-@media only screen and (max-width:1155px){
-    .image_div{
+
+@media only screen and (max-width:1155px) {
+    .image_div {
         display: none;
+    }
+}
+
+
+
+
+
+
+.Casestudyintro {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+@media only screen and (min-width: 1775px) {
+    .Casestudyintro {
+        margin-top: 119px;
+        margin-bottom: 95px;
+
+    }
+}
+
+@media only screen and (min-width: 1450px) and (max-width: 1774px) {
+    .Casestudyintro {
+        margin-top: 100px;
+        margin-bottom: 85px;
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1449px) {
+    .Casestudyintro {
+        margin-top: 80px;
+        margin-bottom: 75px;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+    .Casestudyintro {
+        margin-top: 70px;
+        margin-bottom: 65px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .Casestudyintro {
+        margin-top: 60px;
+        margin-bottom: 55px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Casestudyintro {
+        margin-top: 40px;
+        margin-bottom: 45px;
     }
 }

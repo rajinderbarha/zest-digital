@@ -7,8 +7,9 @@ import { urlFor } from "../../../../lib/sanity.client";
 function Casestudyintro({ data }: any) {
   return (
     <>
-      <div className={`${classes.Casestudyintro} main_padding xl:mt-[120px] lg:mt-[100px] md:mt-[50px] sm:mt-[50px] mt-[30px]`}>
-        <div className=" px-[20px] max-w-[1520px] mx-auto w-full relative">
+    {/* xl:mt-[120px] lg:mt-[100px] md:mt-[50px] sm:mt-[50px] mt-[30px] */}
+      <div className={`${classes.Casestudyintro} main_padding `}>
+        <div className=" md:px-[20px] sm:px-[15px] px-[8px] max-w-[1520px] mx-auto w-full relative">
           <div className="">
             <div className="xl:max-w-[971px] max-w-[800px]">
               <h1 className="font-mono font-semibold  xl:text-55px lg:text-50px md:text-[42px] text-[30px] mb-5">

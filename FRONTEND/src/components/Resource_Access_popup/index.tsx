@@ -37,7 +37,7 @@ function Resource_Access_popup({setStep, register,handleSubmit,setFormData}:any)
                             </div>
                         </div>
                         <div className="button lg:mt-[40px] md:mt-[30px] sm:mt-[20px] mt-[10px] text-center lg:mb-[108px] mb:mb-[80px] sm:mb-[50px] mb-[30px]">
-                            <button className='bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] text-white rounded-full' type='submit'>Get access</button>
+                            <button className='bg-color-1 hover:bg-white hover:text-color-1 border border-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] text-white rounded-full' type='submit'>Get access</button>
                         </div>
                         <div className="term_condition max-w-[857px] mt-[40px] mx-auto mb-[30px]">
                             <p className='font-lato text-base text-color-1 text-center'>*required fields</p>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import arrow from "../../assets/images/arrow.svg";
-import hover_arrow from "../../assets/images/hover_arrow.png";
+import hover_arrow from "../../assets/images/hover_arrow.svg";
 import Growth_engine from "@/common/Growth_engine";
 import classes from "./growthcard.module.css";
 import { urlFor } from "../../../lib/sanity.client";

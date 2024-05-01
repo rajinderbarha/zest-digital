@@ -11,7 +11,7 @@ function Escape({ data }: { data: AboutType[] }) {
         <div className="main_container" key={`${index}_Escape`}>
 
           <Link href={Escapedata.escape.careerPagelink}>
-          <div className={`${classes.Escape} rounded-[20px] md:rounded-[30px] xl:py-[130px] lg:my-[100px] md:py-[80px] sm:py-[60px] py-[40px] px-4`}>
+          <div className={`${classes.Escape} main_padding rounded-[20px] md:rounded-[30px] xl:py-[130px] lg:my-[100px] md:py-[80px] sm:py-[60px] py-[40px]`}>
             <h2 className="xl:text-55px lg:text-50px md:text-40px sm:text-35px text-30px md:mb-12 mb-6 font-mono text-center  font-semibold text-white">
               {Escapedata.escape.heading}
             </h2>
@@ -20,7 +20,7 @@ function Escape({ data }: { data: AboutType[] }) {
             >
               {Escapedata.escape.description}
             </p>
-            <div className={`${classes.Marquee_border}  border-color-3 md:py-16 sm:py-[40px] py-[30px] -mx-[16px] relative `}>
+            <div className={`${classes.Marquee_border}   border-color-3 md:py-16 sm:py-[40px] py-[30px]  relative `}>
               <div className={`${classes.custom_shadow}`}></div>
               <Marquee className={` md:gap-16 sm:gap-[50px] gap-[40px]`}>
                 <div className="flex text-white   max-w-auto md:gap-16 sm:gap-[50px] gap-[40px] me-5">

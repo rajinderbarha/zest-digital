@@ -23,7 +23,7 @@ function About_banner({ data }: { data: AboutType[] }) {
                 </h1>
                 {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
               </div>
-              <div className={`${classes.Founded_img} hidden md:flex absolute top-0 max-w-[245px] right-0 h-full`}>
+              <div className={`${classes.Founded_img} hidden md:flex absolute top-0 max-w-[245px] right-[25px] h-full`}>
                 <Image
                   className={`${classes.banner_image}`}
                   src={urlFor(item.hero.image).url()}

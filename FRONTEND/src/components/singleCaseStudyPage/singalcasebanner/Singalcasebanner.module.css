@@ -1,10 +1,53 @@
 .Singalcasebanner {
     /* padding: 123px 16px 0 16px; */
-    @apply xl:mt-[123px] lg:mt-[95px] md:mt-[65px] sm:mt-[45px] mt-[35px]
+    /* @apply xl:mt-[123px] lg:mt-[95px] md:mt-[65px] sm:mt-[45px] mt-[35px] */
 }
 
 @media only screen and (max-width:767px) {
     .Singalcasebanner {
         /* padding: 60px 16px 0 16px; */
+    }
+}
+
+
+.Singalcasebanner {
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 1775px) {
+    .Singalcasebanner {
+        margin-top: 119px;
+
+    }
+}
+
+@media only screen and (min-width: 1450px) and (max-width: 1774px) {
+    .Singalcasebanner {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1449px) {
+    .Singalcasebanner {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+    .Singalcasebanner {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .Singalcasebanner {
+        margin-top: 60px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Singalcasebanner {
+        margin-top: 40px;
     }
 }

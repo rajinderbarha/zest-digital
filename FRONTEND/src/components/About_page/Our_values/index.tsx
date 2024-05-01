@@ -8,10 +8,10 @@ function Our_values({ data }: { data: AboutType[] }) {
   return (
     <div className={`${classes.Our_values} main_padding`}>
       <div className="main_container">
-        <div className={`${classes.values_bg} rounded-[20px] md:rounded-[30px]`}>
+        <div className={`${classes.values_bg} rounded-[20px] md:rounded-[30px] main_padding`}>
           {data?.map((ourvalue, index) => (
              <div
-             className="main_container_x  md:px-5"
+             className="main_container_x "
              key={`${index}_Our_values_1`}
            >
              <h2 className="md:text-55px text-35px font-mono text-center md:mb-20 mb-8 font-semibold text-white">
@@ -41,7 +41,7 @@ function Our_values({ data }: { data: AboutType[] }) {
                   ) : (
                     <div className={`${classes.Our_values_main_2} text-end `} key={`${path}_path_right`}>
                       <Image
-                        className="xl:max-w-[250px] xl:h-[250px] lg:max-w-[210px] lg:h-[210px] md:max-w-[170px] md:h-[170px] sm:max-w-[130px] sm:h-[130px] max-w-[90px] h-[90px] w-full ms-auto"
+                        className="xl:max-w-[250px] xl:h-[250px] lg:max-w-[210px] lg:h-[210px] md:max-w-[170px] md:h-[170px] sm:max-w-[130px] sm:h-[130px] max-w-[90px] h-[90px] w-full ms-auto xl:mb-[30px] lg:mb-[25px] md:mb-[18px] sm:mb-[10px] mb-[5px]"
                         src={urlFor(valSection.image).url()}
                         width={250}
                         height={250}

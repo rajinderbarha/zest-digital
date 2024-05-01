@@ -57,6 +57,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                       alt="Site Logo"
                       width={149}
                       height={69}
+                      className=" h-[69px]"
                     />
                   </Link>
                 </div>

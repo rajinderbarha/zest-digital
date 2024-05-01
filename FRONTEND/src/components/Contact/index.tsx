@@ -142,7 +142,7 @@ function Contact({ data }: { data: ContactType }) {
                   <input
                     type="submit"
                     value="Send"
-                    className="bg-white text-[15px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[17px] md:py-[8px] sm:py-[5px] py-[3px] mx-auto"
+                    className="bg-white border border-white hover:text-white hover:bg-color-1  text-[15px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[17px] md:py-[8px] sm:py-[5px] py-[3px] mx-auto"
                   />
                 </form>
               </div>
