@@ -6,7 +6,7 @@ function Gross_profit({ data }: any) {
   return (
     <div className="main_padding xl:mt-[85px] lg:mt-[65px] md:mt-[50px] sm:mt-[40px] mt-[35px]">
     <div className="main_container">
-      <div className={`${classes.Gross_profit} xl:py-[300px] lg:py-[280px] md:py-[170px] sm:py-[100px] py-[65px] xl:px-[110px] lg:px-[90px] md:px-[65px] sm:px-[40px] px-[25px] md:rounded-30px rounded-[20px] `}>
+      <div className={`${classes.Gross_profit} xl:py-[300px] lg:py-[280px] md:py-[170px] sm:py-[100px] py-[65px] main_padding md:rounded-30px rounded-[20px] `}>
         <div className="Gross_profit_boxs grid  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  justify-items-stretch	gap-10 2xl:gap-20">
           {data?.hero?.item.map((item: any, index: number) => {
              

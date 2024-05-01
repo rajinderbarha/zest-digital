@@ -8,3 +8,8 @@
     }
 
 }
+@media only screen and (max-width:1155px){
+    .image_div{
+        display: none;
+    }
+}

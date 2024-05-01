@@ -50,13 +50,13 @@ const Header = ({ data }: { data: HeaderType[] }) => {
               className="screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative"
             >
               <div className="flex items-center gap-68px ">
-                <div className="screen-1-max:w-24 lg:w-28 xl:w-auto">
+                <div className="screen-1-max:w-24 lg:w-28 xl:w-auto ">
                   <Link href={"/"}>
                     <Image
                       src={urlFor(item.logo).url()}
                       alt="Site Logo"
-                      width={112}
-                      height={51}
+                      width={149}
+                      height={69}
                     />
                   </Link>
                 </div>

@@ -22,7 +22,7 @@ function Our_values({ data }: { data: AboutType[] }) {
                   {(path + 1) % 2 !== 0 ? (
                     <div className="Our_values_main">
                     <Image
-                      className=" xl:max-w-[250px] lg:max-w-[210px] md:max-w-[170px] sm:max-w-[130px] max-w-[90px] w-full"
+                      className=" xl:max-w-[250px] xl:h-[250px]  lg:max-w-[210px] lg:h-[210px] md:max-w-[170px] md:h-[170px] sm:max-w-[130px] sm:h-[130px] max-w-[90px] h-[90px] w-full "
                       src={urlFor(valSection.image).url()}
                       width={250}
                       height={250}
@@ -41,7 +41,7 @@ function Our_values({ data }: { data: AboutType[] }) {
                   ) : (
                     <div className={`${classes.Our_values_main_2} text-end `} key={`${path}_path_right`}>
                       <Image
-                        className="xl:max-w-[250px] lg:max-w-[210px] md:max-w-[170px] sm:max-w-[130px] max-w-[90px] w-full ms-auto"
+                        className="xl:max-w-[250px] xl:h-[250px] lg:max-w-[210px] lg:h-[210px] md:max-w-[170px] md:h-[170px] sm:max-w-[130px] sm:h-[130px] max-w-[90px] h-[90px] w-full ms-auto"
                         src={urlFor(valSection.image).url()}
                         width={250}
                         height={250}

@@ -61,7 +61,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
 
 
 
-          <div className={`${classes.bg_image} bg-color-1  rounded-t-[20px] md:rounded-t-[30px]  px-5`}>
+          <div className={`${classes.bg_image} bg-color-1  rounded-t-[20px] md:rounded-t-[30px] main_padding`}>
             <div className="main_container   md:pt-[48px] sm:pt-[30px] pt-[20px] md:pb-[28px] sm:pb-[20px] pb-[13px]">
               <div className="flex flex-row items-center">
                 <div className="max-w-max w-full">
