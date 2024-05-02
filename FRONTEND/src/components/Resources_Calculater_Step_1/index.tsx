@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Traffic_conversion_icon from '../../assets/images/Traffic_conversion_icon.png'
+import Traffic_conversion_icon from '../../assets/images/Traffic_conversion_icon_svg.svg'
 import { GoArrowLeft } from "react-icons/go";
 import ProgressBar from '@/common/ProgressBar';
 
@@ -14,7 +14,7 @@ function Resources_Calculater_Step_1({setStep}:any) {
                         <ProgressBar value={20} />
                         </div>
                         <div className="trafic_image ">
-                            <Image src={Traffic_conversion_icon} alt='' className='mx-auto md:max-w-[206px] sm:max-w-[150px] max-w-[100px]' />
+                            <Image src={Traffic_conversion_icon} alt='' className='mx-auto md:max-w-[206px] md:max-h-[207px] sm:max-w-[150px] sm:max-h-[150px] max-w-[100px] max-h-[100px]' />
                         </div>
                         <div className=" text-center xl:mt-[38px] lg:mt-[28px] md:mt-[18px] sm:mt-[15px] mt-[15px] max-w-[1280px] mx-auto">
                             <h2 className='font-mono xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[20px] font-semibold'>Set Your Traffic & Conversion Goals</h2>

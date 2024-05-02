@@ -26,7 +26,7 @@ const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
                   width={200}
                   height={81}
                   key={index}
-                  className="xl:w-[200px] lg:w-[180px] md:w-[150px] sm:w-[120px] w-[100px] h-auto "
+                  className="xl:w-[200px] xl:h-[81px] lg:w-[180px] lg:h-[73px] md:w-[150px] md:h-[61px] sm:w-[120px] sm:h-[49px] w-[100px] h-[41px]  "
                 />
               );
             })}
@@ -40,7 +40,7 @@ const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
                   width={200}
                   height={81}
                   key={index}
-                  className="xl:w-[200px] lg:w-[180px] md:w-[150px] sm:w-[120px] w-[100px] h-auto "
+                  className="xl:w-[200px] xl:h-[81px] lg:w-[180px] lg:h-[73px] md:w-[150px] md:h-[61px] sm:w-[120px] sm:h-[49px] w-[100px] h-[41px]  "
                 />
               );
             })}

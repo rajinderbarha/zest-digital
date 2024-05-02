@@ -77,12 +77,12 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                     <div key={index} className="grid gap-10 pe-5">
                       <div className="grid md:grid-cols-12 gap-[5px] md:gap-6 ">
                         <div
-                          className={`${outerSpan} ${classes.box_size} group p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 md:p-[35px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
+                          className={`${outerSpan} ${classes.box_size}  p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 md:p-[35px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
                         >
                           <div className="font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px md:text-[25px] md:max-970:text-[18px] md:max-800:text-[17px] sm:text-25px text-[20px]">
                             {numHeading}
                           </div>
-                          <div className="min-1350:w-auto md:w-10 max-970:w-9  ">
+                          <div className="min-1350:w-auto md:w-10 max-970:w-9  group">
                             
                             <Image src={arrow} alt=""  className="group-hover:hidden"/>
                             <Image src={hover_arrow} alt=""  className="text-[10px] group-hover:block hidden"/>

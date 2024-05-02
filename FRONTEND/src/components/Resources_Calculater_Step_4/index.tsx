@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import popup_person from '../../assets/images/popup_person.svg'
+import popup_percentage from '../../assets/images/percent.svg'
+import popup_pound from '../../assets/images/pound-circle.svg'
 import popup_question_mark from '../../assets/images/popup_question_mark.svg'
 import popup_percantage from '../../assets/images/popup_percantage.svg'
 import popup_euro from '../../assets/images/popup_euro.svg'
@@ -42,7 +44,7 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='3' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
-                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
+                                            <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  ">
                                     <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
@@ -59,7 +61,7 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='5000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
-                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
+                                            <Image src={popup_pound} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max " >
                                     <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
@@ -76,7 +78,7 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='40' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
-                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
+                                            <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  ">
                                     <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />

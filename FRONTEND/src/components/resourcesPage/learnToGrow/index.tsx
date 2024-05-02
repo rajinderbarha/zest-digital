@@ -37,15 +37,22 @@ function LearnToGrow({ data }: any) {
               {data.hero.description}
             </p>
           </div>
-          <div className="md:max-w-[60px] max-w-[40px] mx-auto">
-            <a href="#tools">
+          <div className="md:max-w-[60px] max-w-[40px] mx-auto group ">
+            <a href="#tools  ">
 
             <Image
               src={urlFor(data.hero.icon).url()}
               alt="img"
               width={60}
               height={60}
-              className="mx-auto"
+              className="mx-auto group-hover:hidden"
+              />
+            <Image
+              src={urlFor(data.hero.hovericon).url()}
+              alt="img"
+              width={60}
+              height={60}
+              className="mx-auto hidden group-hover:block"
               />
               </a>
           </div>

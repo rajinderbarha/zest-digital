@@ -36,6 +36,11 @@ export const Resources = defineType({
           title: 'Icon',
           type: 'image',
         },
+        {
+          name: 'hovericon',
+          title: 'Hover Icon',
+          type: 'image',
+        },
       ],
     },
     {
