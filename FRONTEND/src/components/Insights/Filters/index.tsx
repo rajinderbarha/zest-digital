@@ -214,12 +214,12 @@ function Filters({ data }: any) {
               alt=""
               className={`${classes.Filters_img} invisible md:visible  bg-color-1  rounded-30px absolute top-0 w-full`}
             />
-            <div className="Filters_box relative z-10  grid lg:grid-cols-12">
+            <div className={`${classes.Filters_box} relative z-10  grid lg:grid-cols-12`}>
               <div className="lg:col-span-8 lg:order-1 order-2">
                 {filteredProducts.map((item: any, index: number) => (
                   <div className="my-10" key={index}>
                     <div
-                      className={`grid sm:grid-cols-12 items-end ${
+                      className={` ${classes.insight_box} grid sm:grid-cols-12 items-end ${
                         index % 2 === 0
                           ? "shadow-dark-pink-left"
                           : "shadow-blue-left"
@@ -227,6 +227,7 @@ function Filters({ data }: any) {
                     >
                       <div className="sm:col-span-9">
                         <div className="flex flex-row md:gap-[15px] sm:gap-[10px] gap-[5px] flex-wrap">
+                          
                         {item.hero.keywords.map(
                           (filterName: string, i: number) => (
                             <h6
@@ -239,26 +240,26 @@ function Filters({ data }: any) {
                         )}
                               </div>
                         <h2
-                          className={`lg:text-35px md:text-30px text-25px font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}
+                          className={`xl:text-35px lg:text-[34px] md:text-30px text-25px font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}
                         >
                           {item.hero.heading}
                         </h2>
                         <Link href={`/insights/${item.slug.current}`}>
-                          <button className="bg-color-1 rounded-full text-white text-base md:py-[7px] md:ps-5 py-[3px] ps-[13px] pe-[5px] md:pe-0 flex gap-2 items-center">
+                          <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base md:py-[7px] md:ps-5 py-[3px] ps-[13px] pe-[5px] md:pe-0 flex gap-2 items-center">
                             Read more{" "}
-                            <span className="md:p-1 p-[2px] bg-white rounded-full text-black me-0 md:me-2 text-[15px] md:text-lg">
+                            <span className="md:p-1 p-[2px] group-hover:bg-color-1 group-hover:text-white bg-white rounded-full text-black me-0 md:me-2 text-[15px] md:text-lg">
                               <GoArrowRight />
                             </span>
                           </button>
                         </Link>
                       </div>
-                      <div className="col-span-3 sm:block hidden">
+                      <div className="col-span-3 sm:block hidden relative">
                         <Image
-                          className="lg:w-[150px] md:w-[130px] w-[110px] ms-auto"
+                          className="lg:w-[150px] md:w-[130px] w-[110px] ms-auto h-[110px] lg:h-[150px]"
                           src={urlFor(item.hero.icon).url()}
                           alt="card img"
-                          width={200}
-                          height={200}
+                          width={150}
+                          height={150}
                         />
                       </div>
                     </div>
@@ -292,7 +293,7 @@ function Filters({ data }: any) {
             </div>
           </div>
           <div
-            className={`${classes.Footer_Img} bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[55px] mb-[30px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}
+            className={`${classes.Footer_Img} md:mt-[100px] mt-[50px] bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[55px] mb-[30px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}
           >
             <div
               className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}

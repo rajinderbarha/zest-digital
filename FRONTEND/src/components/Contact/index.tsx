@@ -55,7 +55,7 @@ function Contact({ data }: { data: ContactType }) {
                       htmlFor="enquiry"
                       className="text-color-9 sm:text-base text-[15px] font-semibold font-mono w-full "
                     >
-                      What is the nature of your enquiry?
+                      What is the nature of your enquiry?*
                     </label>
                     <select
                       id="enquiry"
@@ -64,8 +64,9 @@ function Contact({ data }: { data: ContactType }) {
                       required
                     >
                       <option>Grow my business</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
+                      <option>Career opportunities</option>
+                      <option>Media enquiries</option>
+                      <option>Others</option>
                     </select>
                   </div>
                   <div className={`${classes.names_div} flex justify-between`}>
@@ -142,7 +143,7 @@ function Contact({ data }: { data: ContactType }) {
                   <input
                     type="submit"
                     value="Send"
-                    className="bg-white text-[15px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[17px] md:py-[8px] sm:py-[5px] py-[3px] mx-auto"
+                    className="bg-white border border-white hover:text-white hover:bg-color-1  text-[15px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[17px] md:py-[8px] sm:py-[5px] py-[3px] mx-auto"
                   />
                 </form>
               </div>

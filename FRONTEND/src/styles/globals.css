@@ -96,10 +96,16 @@ select::-ms-expand {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
-@media only screen and (min-width: 1450px) {
+@media only screen and (min-width: 1775px) {
   .main_padding {
     padding-left: 100px !important;
     padding-right: 100px !important;
+  }
+}
+@media only screen and (min-width: 1450px) and (max-width: 1774px) {
+  .main_padding {
+    padding-left: 75px !important;
+    padding-right: 75px !important;
   }
 }
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {

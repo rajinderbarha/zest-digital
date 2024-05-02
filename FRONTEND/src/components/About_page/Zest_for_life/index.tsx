@@ -9,8 +9,9 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
     
     return (
         <>
-            <div className={`${classes.Zest_for_life} main_padding xl:mt-[125px] lg:mt-[100px] md:mt-[80px] sm:mt-[50px] mt-[30px]`}>
-                <div className='main_container_x'>
+            <div className={`${classes.Zest_for_life}  main_padding xl:mt-[125px] lg:mt-[100px] md:mt-[80px] sm:mt-[50px] mt-[30px]`}>
+                <div className="main_padding">
+                <div className='main_container_x '>
                     {data?.map((item,index)=>(
 
                    <div key={`${item}_Zest_for_life`} >
@@ -78,6 +79,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
 </div>
 
 
+            </div>
             </div>
         </>
     )

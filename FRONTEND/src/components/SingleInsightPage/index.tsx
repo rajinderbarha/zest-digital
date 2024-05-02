@@ -25,8 +25,8 @@ function SingleInsightPage({ data }: any) {
               <Image
                 src={urlFor(data.hero.grow_down).url()}
                 alt="grow_down icon"
-                width={70}
-                height={70}
+                width={60}
+                height={60}
               />
             </div>
           </div>

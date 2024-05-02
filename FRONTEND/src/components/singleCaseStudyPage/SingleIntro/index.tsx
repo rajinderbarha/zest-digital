@@ -12,13 +12,13 @@ function SingleIntro({ hero, card, team }: any) {
     return (
         <>
         <div className="main_padding">
-            <div className={`${classes.SingleBox}  main_container  md:mt-40  h-100 md:rounded-30px rounded-[20px]`}>
+            <div className={`${classes.SingleBox}  main_container   h-100 md:rounded-30px rounded-[20px]`}>
                 <div className={`${classes.singleBox_container}`}>
                     <div className="hidden md:flex  justify-evenly ">
                         {hero.item.map((item: { icon: any, description: string, count: string }, index: number) => {
                             return (<div className="text-center " key={index}>
-                                <div className=" xl:max-w-[250px] lg:max-w-[200px]  max-w-[150px]  text-center  mx-auto">
-                                    <Image src={urlFor(item.icon).url()} alt="growth" width={300} height={300} className='mx-auto'/>
+                                <div className={` ${classes.top_image} xl:max-w-[250px] lg:max-w-[200px]  max-w-[150px]  text-center  mx-auto`}>
+                                    <Image src={urlFor(item.icon).url()} alt="growth" width={250} height={250} className='mx-auto'/>
                                 </div>
                                 <h2 className='xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px text-color-7 font-mono font-semibold'>{item.count}</h2>
                                 <p className='xl:text-30px md:text-25px sm:text-[20px] text-base font-mono font-medium text-white xl:leading-9 lg:leading-8  mx-auto 2xl:max-w-[319px] xl:max-w-[270px] lg:max-w-[215px]  max-w-[200px]  '>{item.description}</p>
@@ -36,7 +36,7 @@ function SingleIntro({ hero, card, team }: any) {
                 </div>
 
             </div>
-            <div className="grid gap-10 md:gap-20 -mt-40">
+            <div className={` ${classes.cards_div} grid  xl:gap-[84px] lg:gap-[60px] md:gap-[40px] sm:gap-[32px] gap-[25px]  -mt-40 px-[52px]`}>
                 <Objective card={card}/>
 
 
@@ -46,7 +46,7 @@ function SingleIntro({ hero, card, team }: any) {
                 <Action />
                 <Result /> */}
             </div>
-            <div className={`${classes.About_team} xl:mt-[122px] lg:mt-[100px] md:mt-[80px] sm:mt-[60px] mt-[40px] xl:mb-[352px] lg:mb-[300px] md:mb-[250px] sm:mb-[200px] mb-[150px]`}>
+            <div className={`${classes.About_team} xl:mt-[122px] lg:mt-[110px] md:mt-[95px] sm:mt-[80px] mt-[60px] xl:mb-[352px] lg:mb-[290px] md:mb-[210px] sm:mb-[150px] mb-[100px]`}>
             <div className="main_container_x">
               <h2 className=" text-center xl:text-45px lg:text-40px md:text-35px text-30px  font-mono font-semibold">
                 {heading}
@@ -55,19 +55,19 @@ function SingleIntro({ hero, card, team }: any) {
                 <div className="About_team_box text-center grid grid-cols-2 md:grid-cols-3  md:gap-x-20 md:gap-y-20 sm:gap-x-[60px] sm:gap-y-[30px] gap-x-[40px] gap-y-[20px]">
                   {profile?.map((data: any, index: any) => (
                     <div key={`${index}_About_team_2`}>
-                      <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[430px]">
-                        <div
-                          className={`${classes.Team_img_circle} absolute  bottom-0`}
-                        ></div>
-                        <Image
-                          src={urlFor(data.image).url()}
-                          width={481}
-                          height={481}
-                          className={`${classes.Team_img} relative z-10 mx-auto `}
-                          alt=""
-                        />
-                      </div>
-
+                    <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[463px]">
+                      <div
+                        className={`${classes.Team_img_circle} absolute  bottom-0`}
+                      ></div>
+                      <Image
+                        src={urlFor(data.image).url()}
+                        width={481}
+                        height={481}
+                        className={`${classes.Team_img} rounded-[100%] relative z-10 mx-auto `}
+                        alt=""
+                      />
+                    </div>
+  
                       <h3 className="lg:text-35px md:text-30px sm:text-25px text-[20px] font-semibold font-mono text-color-1">
                         {data.name}{" "}
                       </h3>

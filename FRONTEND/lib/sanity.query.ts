@@ -304,7 +304,8 @@ export async function getResourcesData() {
       title,
       description,
       image,
-      icon
+      icon,
+      hovericon
     },
     tool[]{
       heading,

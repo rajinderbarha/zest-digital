@@ -17,7 +17,7 @@ function LearnToGrow({ data }: any) {
         className={`${classes.SingleIntro}  main_container  h-100 rounded-[20px] md:rounded-30px`}
       >
         <div
-          className={`${classes.single_container} max-w-[1335px] mx-auto  pt-[88px] md:pb-[564px] pb-[400px] relative`}
+          className={`${classes.single_container}  max-w-[1335px] mx-auto  pt-[88px] md:pb-[564px] pb-[400px] relative`}
         >
           <div
             className={`${classes.grow_img}  absolute max-w-[200px] md:max-w-[250px] lg:max-w-[300px]`}
@@ -37,15 +37,22 @@ function LearnToGrow({ data }: any) {
               {data.hero.description}
             </p>
           </div>
-          <div className="md:max-w-[60px] max-w-[40px] mx-auto">
-            <a href="#tools">
+          <div className="md:max-w-[60px] max-w-[40px] mx-auto group ">
+            <a href="#tools  ">
 
             <Image
               src={urlFor(data.hero.icon).url()}
               alt="img"
               width={60}
               height={60}
-              className="mx-auto"
+              className="mx-auto group-hover:hidden"
+              />
+            <Image
+              src={urlFor(data.hero.hovericon).url()}
+              alt="img"
+              width={60}
+              height={60}
+              className="mx-auto hidden group-hover:block"
               />
               </a>
           </div>
