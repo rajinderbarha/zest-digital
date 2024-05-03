@@ -109,7 +109,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
           {/* <div className="md:px-10 sm:px-[35px] px-[15px]"> */}
           <div className={`${classes.growth_container} main_padding`}>
             <div
-              className={`max-w-[1345px] font-mono  mx-auto grid gap-10 lg:-mt-64 md:-mt-[200px] -mt-[150px] `}
+              className={`max-w-[1345px] font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] lg:-mt-64 md:-mt-[200px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] -mt-[150px] `}
             >
               <Growth_engine
                 has_image={false}
@@ -125,7 +125,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                 }}
               />
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
                 <Growth_engine
                   has_image={false}
                   shadow_right={true}
