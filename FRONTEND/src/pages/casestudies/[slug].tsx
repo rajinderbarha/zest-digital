@@ -4,7 +4,8 @@ import Singalcasebanner from "@/components/singleCaseStudyPage/singalcasebanner"
 import { getSingleCasestudyData } from "../../../lib/sanity.query";
 
 function singlecasestudy({ singleCasestudy }: any) {
-  // console.log("slug", singleCasestudy[0]);
+  console.log("singleCasestudy", singleCasestudy);
+
   const data = {
     title: singleCasestudy[0].Title,
     upperTitle: singleCasestudy[0].upperTitle,

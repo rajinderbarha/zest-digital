@@ -10,17 +10,17 @@ const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
   return (
 
     <div
-    className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10`}
-  >
-    <div className={`${classes.gradient_border} relative xl:py-16 lg:py-[50px] md:py-[40px] sm:py-[30px] py-[30px]`}>
-      <div className={`${classes.shadow_custom} `}></div>
+      className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10`}
+    >
+      <div className={`${classes.gradient_border} relative xl:py-16 lg:py-[50px] md:py-[40px] sm:py-[30px] py-[30px]`}>
+        <div className={`${classes.shadow_custom} `}></div>
 
-      <Marquee className={`xl:gap-[100px] lg:gap-[80px] md:gap-[60px] sm:gap-[40px] gap-[35px] `}>
-        <div className="flex  max-w-auto xl:gap-[100px] lg:gap-[80px] md:gap-[60px] sm:gap-[40px] gap-[35px] ">
-              {LogoMovdata?.map((item: any, index: number) => {
-                // console.log("solution", item.icon);
-                return (
-                  <Image
+        <Marquee className={`xl:gap-[100px] lg:gap-[80px] md:gap-[60px] sm:gap-[40px] gap-[35px] `}>
+          <div className="flex  max-w-auto xl:gap-[100px] lg:gap-[80px] md:gap-[60px] sm:gap-[40px] gap-[35px] ">
+            {LogoMovdata?.map((item: any, index: number) => {
+              // console.log("solution", item.icon);
+              return (
+                <Image
                   src={urlFor(item.icon).url()}
                   alt="brand img"
                   width={200}
@@ -31,10 +31,10 @@ const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
               );
             })}
 
-              {LogoMovdata?.map((item: any, index: number) => {
-                // console.log("solution", item.icon);
-                return (
-                  <Image
+            {LogoMovdata?.map((item: any, index: number) => {
+              // console.log("solution", item.icon);
+              return (
+                <Image
                   src={urlFor(item.icon).url()}
                   alt="brand img"
                   width={200}

@@ -3,14 +3,9 @@ import { getSingleOurServicesData } from "../../../lib/sanity.query";
 import { SingleOurService } from "../../../lib/interface";
 import Services from "@/components/Services";
 
-function SingleService({
-  singleservicedata,
-}: {
-  singleservicedata: SingleOurService[];
-}) {
+function SingleService({ singleservicedata, }: { singleservicedata: SingleOurService[]; }) {
   return <Services data={singleservicedata[0]} />;
 }
-
 export default SingleService;
 
 export async function getServerSideProps({

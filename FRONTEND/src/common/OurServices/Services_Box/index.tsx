@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import classes from "./Services_Box.module.css";
-import { SingleOurService } from "../../../../lib/interface";
+// import { SingleOurService } from "../../../../lib/interface";
 import { urlFor } from "../../../../lib/sanity.client";
 
 const Services_Box = (props: any) => {

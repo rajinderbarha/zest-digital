@@ -8,6 +8,7 @@ import { getAboutData } from "../../lib/sanity.query";
 import { AboutType } from "../../lib/interface";
 
 const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
+  
   return (
     <div>
       <About_banner data={aboutdata} />

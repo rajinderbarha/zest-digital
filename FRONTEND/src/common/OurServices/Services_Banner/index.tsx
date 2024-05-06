@@ -1,5 +1,5 @@
 import React from "react";
-interface Services_Banner_Props {
+export interface Services_Banner_Props {
   title: string;
   smallDescription: string;
   max_width: string;
