@@ -7,6 +7,11 @@ export const BrandList = defineType({
 
   fields: [
     {
+      name: 'imagetitle',
+      type: 'string',
+      title: 'Image Title',
+    },
+    {
       name: 'icon',
       type: 'image',
       title: 'Icon',

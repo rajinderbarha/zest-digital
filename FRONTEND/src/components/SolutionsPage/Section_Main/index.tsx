@@ -80,8 +80,9 @@ function Section_Main({ data, card }: any) {
             </div>
           </div>
         </div>
+        <div className="main_padding">
         <div
-          className={`max-w-[1345px] font-mono  mx-auto grid gap-10 lg:-mt-64 md:-mt-[200px] -mt-[165px] px-5 overflow-x-clip `}
+          className={`max-w-[1345px] font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] lg:-mt-64 md:-mt-[200px] -mt-[165px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] overflow-x-clip `}
         >
           <Growth_engine
             has_image={false}
@@ -95,7 +96,7 @@ function Section_Main({ data, card }: any) {
             }}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto ">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
             <Growth_engine
               has_image={false}
               shadow_right={true}
@@ -149,6 +150,7 @@ function Section_Main({ data, card }: any) {
               </div>
             );
           })}
+        </div>
         </div>
       </div>
     </>

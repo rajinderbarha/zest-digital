@@ -5,6 +5,12 @@ import MapLocations from "./MapLocations";
 import { ContactType } from "../../../lib/interface";
 import Link from "next/link";
 import { urlFor } from "../../../lib/sanity.client";
+import facebook_black from '../../assets/images/facebook_black.svg'
+import linkedin_black from '../../assets/images/linkedin_black.svg'
+import instagram_black from '../../assets/images/instagram_black.svg'
+import facebook_white from '../../assets/images/facebook_white.svg'
+import linkedin_white from '../../assets/images/linkedin_white.svg'
+import instagram_white from '../../assets/images/instagram_white.svg'
 
 function Contact({ data }: { data: ContactType }) {
   return (
@@ -21,7 +27,7 @@ function Contact({ data }: { data: ContactType }) {
                 </h2>
 
                 <div className="icons flex md:mt-10 sm:mt-[30px] mt-[15px] gap-[18px]">
-                  {data?.social.map((socialmap, index) => (
+                  {/* {data?.social.map((socialmap, index) => (
                     <Link
                       href={socialmap.socialLink}
                       key={`${index}_socialmap`}
@@ -34,7 +40,61 @@ function Contact({ data }: { data: ContactType }) {
                         className="md:w-[45px] sm:w-[38px] w-[35px]"
                       />
                     </Link>
-                  ))}
+                  ))} */}
+                  <div className="group">
+                    <Link href="https://www.facebook.com/ZestDigital/">
+                      <Image
+                        src={facebook_black}
+                        width={50}
+                        height={50}
+                        alt=""
+                        className="md:w-[45px] sm:w-[38px] w-[35px] group-hover:hidden"
+                      />
+                      <Image
+                        src={facebook_white}
+                        width={50}
+                        height={50}
+                        alt=""
+                        className="md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                      />
+                    </Link>
+                  </div>
+                  <div className="group">
+                    <Link href="https://www.linkedin.com/company/zest-digital/">
+                      <Image
+                        src={linkedin_black}
+                        width={50}
+                        height={50}
+                        alt=""
+                        className=" md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
+                      />
+                      <Image
+                        src={linkedin_white}
+                        width={50}
+                        height={50}
+                        alt=""
+                        className=" md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                      />
+                    </Link>
+                  </div>
+                  <div className="group">
+                    <Link href="https://www.instagram.com/zestdigital/">
+                      <Image
+                        src={instagram_black}
+                        width={50}
+                        height={50}
+                        alt=""
+                        className=" md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
+                      />
+                      <Image
+                        src={instagram_white}
+                        width={50}
+                        height={50}
+                        alt=""
+                        className=" md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="sm:block hidden hand_img absolute right-0 md:-bottom-[60%] -bottom-[20%] md:max-w-max max-w-[150px]">
@@ -91,7 +151,7 @@ function Contact({ data }: { data: ContactType }) {
                         htmlFor="lname"
                         className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
                       >
-                        Last name
+                        Last name*
                       </label>
                       <input
                         type="text"
