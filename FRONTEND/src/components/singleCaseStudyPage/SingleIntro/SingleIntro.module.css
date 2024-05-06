@@ -4,7 +4,7 @@
     background-position: top center;
     background-size: cover;
     background-color: black;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 
     border: 1px solid transparent;
 }
@@ -15,9 +15,9 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
-    .SingleBox{
+    /* .SingleBox{
         margin-top: 180px;
-    }
+    } */
 }
 @media only screen and (max-width:767px) {
     .singleBox_container {
@@ -25,7 +25,141 @@
     }
     .SingleBox {
         margin-top: 50px;
+    }
+    .cards_div{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
 
+@media only screen and (max-width:639px){
+    .cards_div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+.About_team {
+    /* padding: 0px 15px 141px 15px; */
+}
+.Team_img {
+    max-width: 463px;
+    width: 100%;
+    
+}
+.Team_img_circle{
+    width: 95.2%;
+    height: 85%;
+    background: #1d2671;
+    border-radius: 100%;
+    left: 2.38%;
+    /* bottom: 0.7%; */
+}
+    
+    @media screen and (max-width:768px) {
+        .About_team {
+            /* padding: 0px 16px 50px 16px; */
+        }
+    }
+
+    
+.Singalcasebanner {
+    margin-top: 30px;
+}
+
+
+@media only screen and (min-width: 1775px) {
+    .top_image{
+        max-width: 250px;
+        /* margin-bottom: 40px; */
+    }
+    .top_image ~ p{
+        max-width: 314px;
+    }
+    .SingleBox{
+        margin-top: 233px;
+    }
+}
+
+@media only screen and (min-width: 1450px) and (max-width: 1774px) {
+    .top_image{
+        max-width: 230px;
+        /* margin-bottom: 35px; */
+    }
+    .top_image ~ p{
+        max-width: 314px;
+    }
+    .SingleBox{
+        margin-top: 220px;
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1449px) {
+      .top_image{
+        max-width: 210px;
+        /* margin-bottom: 30px; */
+    }
+    .singleBox_container {
+        margin-top: -97px;
+    }
+    .top_image ~ p{
+        max-width: 314px;
+    }
+    .SingleBox{
+        margin-top: 190px;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+    .top_image{
+        max-width: 190px;
+        /* margin-bottom: 27px; */
+    }
+    .singleBox_container {
+        margin-top: -92px;
+    }
+    .top_image ~ p{
+        max-width: 314px;
+    }
+    .SingleBox{
+        margin-top: 180px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .top_image{
+        max-width: 170px;
+        /* margin-bottom: 22px; */
+    }
+    .singleBox_container {
+        margin-top: -84px;
+    }
+    .top_image ~ p{
+        max-width: 280px;
+    }
+    .SingleBox{
+        margin-top: 160px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Singalcasebanner {
+        margin-top: 40px;
+        /* margin-bottom: 18px; */
+    }
+    .singleBox_container {
+        margin-top: -75px;
+    }
+    .top_image ~ p{
+    font-size: 22px;
+    }
+    .SingleBox{
+        margin-top: 140px;
+    }
+    .cards_div{
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 

@@ -16,7 +16,7 @@ function singlecasestudy({ singleCasestudy }: any) {
       <SingleIntro
         hero={singleCasestudy[0].hero}
         card={singleCasestudy[0].card}
-        team={singleCasestudy[0].team}
+        team={singleCasestudy[0].team }
       />
     </>
   );

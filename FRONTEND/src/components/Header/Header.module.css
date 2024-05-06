@@ -7,6 +7,14 @@
     /* background-color: #333; */
     color: #fff;
   }
+  .nav_links_hover{
+    /* border-bottom: 1px solid transparent; */
+  }
+.nav_links_hover:hover{
+/* border-bottom: 1px solid #191615; */
+/* text-decoration: underline; */
+}
+
 
   .menuIcon{
     max-width: max-content;

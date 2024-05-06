@@ -9,7 +9,7 @@ function objective({ card }: any) {
       {card.map((item: any, index: number) => {
         return (
           <div
-            className={`${classes.objective} max-w-[1545px] mx-auto lg:px-12 px-[20px]`}
+            className={`${classes.objective} max-w-[1545px] mx-auto `}
             key={index}
           >
             {index % 2 === 0 ? (

@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 import React from "react";
 import { useRouter } from "next/router";
 import GrowthEnginePage_Banner from "./GrowthEnginePage_Banner";
@@ -10,6 +17,11 @@ function GrowthEnginePage({ data, card, otherSolHeading }: any) {
   const router = useRouter();
   const { slug } = router.query;
   const currentPath = `/solutions/${slug}`;
+
+  console.log("Current path:", currentPath); // Log current path
+
+
+
   const {
     globalaccordion: {
       accordiongroup: {

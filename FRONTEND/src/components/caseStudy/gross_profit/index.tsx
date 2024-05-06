@@ -4,27 +4,29 @@ import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 function Gross_profit({ data }: any) {
   return (
-    <div className="main_padding xl:mt-[85px] lg:mt-[65px] md:mt-[50px] sm:mt-[40px] mt-[35px]">
+    // xl:mt-[85px] lg:mt-[65px] md:mt-[50px] sm:mt-[40px] mt-[35px]
+    <div className="main_padding ">
     <div className="main_container">
-      <div className={`${classes.Gross_profit} xl:py-[300px] lg:py-[280px] md:py-[170px] sm:py-[100px] py-[65px] xl:px-[110px] lg:px-[90px] md:px-[65px] sm:px-[40px] px-[25px] md:rounded-30px rounded-[20px] `}>
-        <div className="Gross_profit_boxs grid  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  justify-items-stretch	gap-10 2xl:gap-20">
+      <div className={`${classes.Gross_profit} main_padding   md:rounded-30px rounded-[20px] `}>
+        <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid grid-cols-3  justify-items-stretch	gap-10 2xl:gap-20`}>
           {data?.hero?.item.map((item: any, index: number) => {
              
             return (
+              // xl:px-[78px] lg:px-[55px] md:px-[40px] sm:px-[25px] px-[18px]
               <div
                 key={index}
-                className="Gross_profit_box_start text-center border bg-black rounded-[20px] md:rounded-30px  font-mono border-color-8 xl:py-[75px] lg:py-[55px]  sm:py-[25px] py-[18px] xl:px-[78px] lg:px-[55px] md:px-[40px] sm:px-[25px] px-[18px]"
+                className={` ${classes.profit_box} Gross_profit_box_start text-center border bg-black rounded-[20px] md:rounded-30px  font-mono border-color-8 xl:py-[75px] lg:py-[55px]  sm:py-[25px] py-[18px] `}
               >
                 <h2 className="xl:text-55px lg:text-50px md:text-40px sm:text-35px text-[30px] font-semibold text-color-7">{item.count} </h2>
-                <p className="lg:text-30px md:text-25px sm:text-[20px] text-[18px] text-color-7 font-semibold xl:mb-[35px] lg:mb-[30px] md:mb-[25px] sm:mb-[20px] mb-[15px]">{item.heading}</p>
-                <h3 className="lg:text-30px md:text-25px sm:text-[20px] text-[18px] text-white lg:mb-[11px] md:mb-[7px] sm:mb-[5px] mb-[3px] ">{item.title}</h3>
-                <p className="font-lato text-base sm:text-lg font-normal  text-white xl:mb-[30px] lg:mb-[25px] sm:mb-[20px]  mb-[15px] text-center">
+                <p className={` ${classes.profit_box_heading} lg:text-30px md:text-25px sm:text-[22px] text-[20px] text-color-7 font-semibold xl:mb-[35px] lg:mb-[30px] md:mb-[25px] sm:mb-[20px] mb-[15px]`}>{item.heading}</p>
+                <h3 className="lg:text-30px md:text-25px sm:text-[22px] text-[20px] text-white lg:mb-[11px] md:mb-[7px] sm:mb-[5px] mb-[3px] ">{item.title}</h3>
+                <p className={`${classes.profit_box_desc} font-lato text-base sm:text-lg font-normal  text-white xl:mb-[30px] lg:mb-[25px] sm:mb-[20px]  mb-[15px] text-center`}>
                   {item.description}
                 </p>
                 <Link href={`/casestudies/${data.slug.current}`}>
-                <button className="font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[15px] sm:text-base md:py-[3px] sm:py-[2px] py-[1px] md:ps-4 sm:ps-[15px] ps-[13px] flex sm:gap-2 gap-[6px] items-center">
+                <button className="font-mono group hover:bg-color-1 hover:text-white border border-white font-normal mx-auto text-color-1 rounded-full bg-white text-[15px] sm:text-base md:py-[3px] sm:py-[2px] py-[1px] md:ps-4 sm:ps-[15px] ps-[13px] flex sm:gap-2 gap-[6px] items-center">
                  {item.buttonname}
-                  <span className="p-1 text-white rounded-full bg-black me-[2px] sm:me-[3px] md:me-1 text-[15px] sm:text-lg">
+                  <span className="p-1 text-white rounded-full bg-black me-[2px] sm:me-[3px] md:me-1 text-[15px] sm:text-lg group-hover:bg-white group-hover:text-color-1">
                     <GoArrowRight />
                   </span>
                 </button>

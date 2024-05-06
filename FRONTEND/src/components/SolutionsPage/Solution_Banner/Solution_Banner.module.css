@@ -2,6 +2,11 @@
     padding: 143px 16px 141px 16px;
 }
 
+@media screen and (max-width:950px) {
+.banner_image{
+    padding:00px 0 0px 135px;
+}
+}
 
 @media screen and (max-width:1024px) {
    .Solution_Banner {

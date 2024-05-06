@@ -4,99 +4,83 @@
     @apply  xl:mt-[65px] lg:mt-[45px] md:mt-[25px] mt-[35px]
     
 }
+@media only screen and (max-width:860px){
 
+    /* .animationFullText{
+        
+        @apply   max-w-[655px] text-center border
+    } */
+}
+/* @media only screen and (min-width:1366px){
+    .growth_container{
 
+        padding: 0 100px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+    .growth_container{
 
- .card {
-    /* background: red; */
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    opacity: 0;
-    animation: animate 15s infinite linear;
-    animation-delay: calc(3s * var(--delay));
+        padding: 0 50px;
+    }
   }
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .growth_container{
+
+        padding: 0 40px;
+    }
+  }
+  @media only screen and (min-width: 640px) and (max-width: 767px){
+    .growth_container{
+
+        padding: 0 35px;
+    }
+  }
+@media only screen and (max-width:639px){
+    .growth_container{
+
+        padding: 0 15px;
+    }
+} */
+
+
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+
+.animationDiv .animationFullText p span{
+    display: none;
+      text-align: left;
+}
+.animationDiv .animationFullText p{
+	margin:0;
+	overflow: hidden;
+}
+.animationDiv .animationFullText p span.textIn{
+	display: block;
+	animation: textIn .5s ease;
   
-.outer:hover .card {
-    animation-play-state: paused;
-  }
-  .cards .card:last-child {
-    animation-delay: calc(-3s * var(--delay));
-  }
-  
-  @keyframes animate {
-    0% {
-      opacity: 0;
-      transform: translateY(100%) scale(1);
-    }
-    5%,
-    20% {
-      opacity: 0.4;
-      transform: translateY(100%) scale(1);
-    }
-    25%,
-    40% {
-      opacity: 1;
-      pointer-events: all;
-      transform: translateY(0%) scale(1);
-    }
-    45%,
-    60% {
-      opacity: 0.4;
-      transform: translateY(-100%) scale(1);
-    }
-    65%,
-    100% {
-      opacity: 0;
-      transform: translateY(-100%) scale(1);
-    }
-  }
+}
+.animationDiv .animationFullText p span.textOut{
 
-  .card:nth-child(1){
-    --delay: -1;
-  }
-  .card:nth-child(2){
-    --delay: 0;
-  }
-  .card:nth-child(3){
-    --delay: 1;
-  }
-  .card:nth-child(4){
-    --delay: 2;
-  }
-  .card:nth-child(5){
-    --delay: 2;
-  }
-  
-  @media only screen and  (max-width: 767px) {
-    /*Edited*/
-    .cards{
-        margin-top: 20px;
-      left: calc(40% - 10px);
-        /*   right: 50%; */
-        /* margin: 0 auto; */
-        text-align: center;
-        /* border: 1px solid white; */
-        /* left: 10px; */
-        /* transform: translate(-50%,-50%); */
-        /* bottom: 0; */
-      /* font-size: 10px;
-      padding: 0.5rem !important;
-      margin: 0.5rem;
-      text-align: center; */
-    }
-  }
-  
-
-
-
-
-
-
-
-
-
-
+  animation: textOut .5s ease!important;
+}
+.animatedText{
+  margin: 0 auto!important;
+}
 
 
 

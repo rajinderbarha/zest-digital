@@ -8,8 +8,13 @@ import { HeaderType } from "../../../lib/interface";
 import classes from "./Header.module.css";
 import barsIcon from "../../assets/images/bars-svgrepo-com.svg";
 import logo from "../../assets/images/zest-logo_vector.png";
+import { useRouter } from 'next/router';
 
 const Header = ({ data }: { data: HeaderType[] }) => {
+
+  const router = useRouter();
+
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,51 +26,16 @@ const Header = ({ data }: { data: HeaderType[] }) => {
     }
   };
 
-<<<<<<< HEAD
-=======
-  return (
-    <div className="main_padding">
-      <nav className={`${classes.navbar} flex pt-[10px] pb-[10px] md:pt-25px md:pb-21px screen-1-min:hidden  justify-between items-center main_container relative`}>
-      <div className={`${classes.logo} screen-1-max:w-24 lg:w-28 xl:w-auto `}>
-  
-        <Image src={logo} alt="Logo" width={112} height={51} />
-      </div>
-      <div className={classes.menuIcon} onClick={toggleMenu}>
-        <Image src={barsIcon} alt="Logo" />
-      </div>
-      <div
-        className={`${classes.menu} main_padding ${isMenuOpen ? classes.menuOpen : classes.menuOpen}`}
-        style={{ height: isMenuOpen ? '100vh' : 0 }}
-      >
-      
-        <a href="/link1"  className={`${classes.custom_menu_items_class}`}>About</a>
-        <a href="/link2" className={`${classes.custom_menu_items_class}`}>Solutions</a>
-        <a href="/link3" className={`${classes.custom_menu_items_class}`}>Result</a>
-        <a href="/link3" className={`${classes.custom_menu_items_class}`}>Insights</a>
-        <a href="/link3" className={`${classes.custom_menu_items_class}`}>Resource</a>
-        <a href="javascript:void(0)" className='inline-block mt-[5px] md:mt-[10px] max-w-max nav-button font-mono text-[14px] sm:text-base px-21px sm:py-[5px] py-[4px] bg-black text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1'>schedule a call</a>
-      </div>
-    </nav>
-    </div>
-  );
-};
-
-                                                //  navbar for the mobile end 
-
-
-const Header = ({ data }: { data: HeaderType[] }) => {
-
->>>>>>> ea03d62c648a93d64239fc54a1138e6c1cb9569e
   const navMenu = {
     menu: {
-      simple: "flex gap-5 text-base font-mono border-black",
+      simple: "flex gap-[40px] text-base font-mono border-black",
       responsive1:
         "screen-1-max:hidden screen-1-max:flex-col screen-1-max:gap-0 screen-1-max:text-lg screen-1-max:absolute screen-1-max:top-90px screen-1-max:-right-1/3 screen-1-max:w-1/3 screen-1-max:z-10",
       responsive2:
         "sm-max:w-auto screen-1-max:bg-color-1 screen-1-max:text-white screen-1-max:ps-5 screen-1-max:rounded-l-lg screen-1-max:h-[89vh]",
     },
     linkclass:
-      "screen-1-max:border-b screen-1-max:border-color-2 screen-1-max:ps-2 screen-1-max:pe-20 screen-1-max:py-3",
+      "screen-1-max:border-b screen-1-max:border-color-2 screen-1-max:ps-2 screen-1-max:pe-20 screen-1-max:py-3 text-color-1",
     btn: "screen-1-max:block mt-20 hidden mx-auto font-mono text-base px-21px h-10 bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white hover:border-white border border-color-1 sm-max:mx-2",
   };
 
@@ -80,13 +50,14 @@ const Header = ({ data }: { data: HeaderType[] }) => {
               className="screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative"
             >
               <div className="flex items-center gap-68px ">
-                <div className="screen-1-max:w-24 lg:w-28 xl:w-auto">
+                <div className="screen-1-max:w-24 lg:w-28 xl:w-auto ">
                   <Link href={"/"}>
                     <Image
                       src={urlFor(item.logo).url()}
                       alt="Site Logo"
-                      width={112}
-                      height={51}
+                      width={149}
+                      height={69}
+                      className=" h-[69px]"
                     />
                   </Link>
                 </div>
@@ -94,12 +65,26 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   id="nav-menus"
                   className={`${navMenu.menu.simple} + ${navMenu.menu.responsive1} + ${navMenu.menu.responsive2}`}
                 >
+                  {/* {item.navItem.map((navItem, index) => (
+                    <Link href={navItem.buttonLink} key={`navItem_${index}`} passHref>
+                    <Link
+                      className={`${
+                        router.pathname === navItem.buttonLink
+                          ? 'font-bold' // This is a Tailwind CSS class for bold text
+                          : ''
+                      } ${navMenu.linkclass} hover:underline ${classes.nav_links_hover}`}
+                    >
+                      {navItem.buttonName}
+                    </Link>
+                  </Link>
+                  ))} */}
                   {item.navItem.map((navItem, index) => (
                     <Link
                       href={navItem.buttonLink}
                       key={`navItem_${index}`}
-                      className={navMenu.linkclass}
-                    >
+                      className={`
+                          ${router.pathname === navItem.buttonLink ? 'font-bold' : ''} 
+                          ${navMenu.linkclass} hover:underline ${classes.nav_links_hover}`}>
                       {navItem.buttonName}
                     </Link>
                   ))}
@@ -112,11 +97,6 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                 >
                   {item.button.navName}
                 </Link>
-                <Image
-                  src={bars}
-                  alt="bars"
-                  className="screen-1-max:block hidden screen-1-max:w-[23px] screen-1-max:h-[23px]"
-                />
               </div>
             </div>
             {/*------------------- Desktop View----------------- */}
@@ -141,9 +121,8 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                 <Image src={barsIcon} alt="Logo" />
               </div>
               <div
-                className={`${classes.menu} px-[16px] ${
-                  isMenuOpen ? classes.menuOpen : classes.menuOpen
-                }`}
+                className={`${classes.menu} px-[16px] ${isMenuOpen ? classes.menuOpen : classes.menuOpen
+                  }`}
                 style={{ height: isMenuOpen ? "100vh" : 0 }}
               >
                 {item.navItem.map((navItem, index) => (
@@ -151,7 +130,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                     onClick={toggleMenu}
                     href={navItem.buttonLink}
                     key={`navItem_${index}`}
-                    className={`${classes.custom_menu_items_class}`}
+                    className={`${classes.custom_menu_items_class} `}
                   >
                     {navItem.buttonName}
                   </Link>

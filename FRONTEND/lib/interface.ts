@@ -21,7 +21,7 @@ export interface HomepageProps {
       viewSolBtnLink: string;
       SeeOurResBtnLink: string;
       image: any;
-      video: any;
+      videosrc: any;
     };
     TransformResults: {
       brandList?: any;
@@ -44,7 +44,7 @@ export interface HomepageHeroSec {
     viewSolBtnLink: string;
     SeeOurResBtnLink: string;
     image: any;
-    video: any;
+    videosrc: any;
   };
 }
 

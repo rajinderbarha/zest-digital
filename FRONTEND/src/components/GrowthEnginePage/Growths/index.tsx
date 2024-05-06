@@ -6,10 +6,11 @@ function Growths({ data ,otherSolHeading}: any ) {
   // console.log("growths-------------",data)
   return (
     <>
+    {/* xl:mb-[311px] lg:mb-[250px]  md:mb-[160px] sm:mb-[150px] mb-[50px] */}
       {data.length > 0 && (
-        <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] overflow-hidden">
+        <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] overflow-hidden ">
 
-          <div className="2xl:mb-[235px] xl:mb-[200px] lg:mb-[175px] md:mb-[120px] sm:mb-[100px] mb-[50px]">
+          <div className="xl:mb-[311px] lg:mb-[210px] mb:mb-[175px] md:mb-[170px] sm:mb-[140px] mb-[50px]">
               {/* {data.map((item: any, index: number) => ( */}
 
               <h2
@@ -19,8 +20,8 @@ function Growths({ data ,otherSolHeading}: any ) {
                 {otherSolHeading}
               </h2>
             {/* ))} */}
-            <div className={` font-mono  mx-auto grid gap-10 mt-10 md:mt-28 `}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1345px] mx-auto">
+            <div className={` font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] mt-10 md:mt-28 `}>
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto">
                 {data.slice(0, 2).map((item: any, index: number) => {
                   return (
                     <div key={index} className="grid">

@@ -8,17 +8,17 @@ function About_team({ data }: { data: AboutType[] }) {
   console.log("aboutTeam",data)
   
   return (
-    <div className={`${classes.About_team} main_padding`}>
-      <div className="main_container_x">
+    <div className={`${classes.About_team} main_padding xl:mt-[141px] lg:mt-[120px] md:mt-[80px] sm:mt-[50px] mt-[30px]`}>
+      <div className="max-w-[1562px] w-full mx-auto">
         {data?.map((aboutdata, index) => (
           <div key={`${index}_About_team_1`} className="">
             <div
-              className="About_team_box text-center grid sm:grid-cols-2 md:grid-cols-3 gap-20"
+              className="About_team_box text-center grid grid-cols-2 md:grid-cols-3 md:gap-x-20 md:gap-y-20 sm:gap-x-[60px] sm:gap-y-[30px] gap-x-[40px] gap-y-[20px]"
               key={`${aboutdata}_About_team`}
             >
               {aboutdata.team.map((teamData, index) => (
                 <div key={`${index}_About_team_2`}>
-                  <div className="About_img_box relative mx-auto md:mb-14 mb-8 max-w-[430px]">
+                  <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[463px]">
                     <div
                       className={`${classes.Team_img_circle} absolute  bottom-0`}
                     ></div>
@@ -26,15 +26,15 @@ function About_team({ data }: { data: AboutType[] }) {
                       src={urlFor(teamData.image).url()}
                       width={481}
                       height={481}
-                      className={`${classes.Team_img} relative z-10 mx-auto `}
+                      className={`${classes.Team_img} rounded-[100%] relative z-10 mx-auto `}
                       alt=""
                     />
                   </div>
 
-                  <h3 className="text-25px md:text-35px font-semibold font-mono text-color-1">
+                  <h3 className="lg:text-35px md:text-30px sm:text-25px text-[20px] font-semibold font-mono text-color-1">
                     {teamData.title}{" "}
                   </h3>
-                  <p className="text-lg font-normal font-mono text-color-1">
+                  <p className="lg:text-lg md:text-[16px] sm:text-[14px] text-[12px] font-normal font-mono text-color-1">
                     {teamData.description}
                   </p>
                 </div>

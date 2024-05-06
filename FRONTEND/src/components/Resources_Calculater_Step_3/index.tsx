@@ -7,7 +7,7 @@ function Resources_Calculater_Step_3({setStep}:any) {
         <>
             <div className="Resources_Calculater_Step_3">
                 <div className="pe-[6px] pb-[6px]">
-                <div className="Resources_Calculater_Step_3 popup_conatiner md:pt-[29px] pt-[20px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
+                <div className="Resources_Calculater_Step_3 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                         <div className="progrees_bar xl:mb-[190px] lg:mb-[160px] md:mb-[130px] sm:mb-[80px] mb-[40px] ">
                         <ProgressBar value={60} />
                         </div>
@@ -18,8 +18,24 @@ function Resources_Calculater_Step_3({setStep}:any) {
                                 <label htmlFor="industry" className="text-color-1  font-normal font-mono w-full sm:text-base text-[13px]">Select your industry from the list</label>
                                 <select id="industry" name="industry" className=" w-full font-lato border border-color-9 rounded-[10px] md:rounded-[15px] lg:rounded-[20px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[20px] sm:py-[15px] py-[10px] lg:text-[20px] md:text-[18px] text-[16px]  text-color-1 md:mt-[11px] mt-[7px]" required>
                                     <option>Please select industry</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
+                                    <option value="">Aerospace/Defence/Marine</option>
+                                    <option value="">Construction</option>
+                                    <option value="">Creative Industries</option>
+                                    <option value="">Education</option>
+                                    <option value="">Energy</option>
+                                    <option value="">Environment</option>
+                                    <option value="">Financial Services</option>
+                                    <option value="">Food and Drink</option>
+                                    <option value="">Healthcare</option>
+                                    <option value="">Hospitality</option>
+                                    <option value="">IT/Software</option>
+                                    <option value="">Manufacturing</option>
+                                    <option value="">Other</option>
+                                    <option value="">Pharmaceuticals/Sciences</option>
+                                    <option value="">Retail</option>
+                                    <option value="">Sports and Recreation</option>
+                                    <option value="">Transport and Logistics</option>
+
                                 </select>
                             </div>
                         </div>

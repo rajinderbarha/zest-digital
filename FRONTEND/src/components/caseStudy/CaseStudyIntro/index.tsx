@@ -7,10 +7,11 @@ import { urlFor } from "../../../../lib/sanity.client";
 function Casestudyintro({ data }: any) {
   return (
     <>
-      <div className={`${classes.Casestudyintro} main_padding xl:mt-[120px] lg:mt-[100px] md:mt-[80px] sm:mt-[50px] mt-[30px]`}>
-        <div className="main_container">
-          <div className="grid md:grid-cols-12 ">
-            <div className="md:col-span-8">
+    {/* xl:mt-[120px] lg:mt-[100px] md:mt-[50px] sm:mt-[50px] mt-[30px] */}
+      <div className={`${classes.Casestudyintro} main_padding `}>
+        <div className=" md:px-[20px] sm:px-[15px] px-[8px] max-w-[1520px] mx-auto w-full relative">
+          <div className="">
+            <div className="xl:max-w-[971px] max-w-[800px]">
               <h1 className="font-mono font-semibold  xl:text-55px lg:text-50px md:text-[42px] text-[30px] mb-5">
                 {data.heading}
               </h1>
@@ -21,13 +22,13 @@ function Casestudyintro({ data }: any) {
                 </button>
               </Link>
             </div>
-            <div className="md:col-span-4 md:block hidden">
+            <div className={` ${classes.image_div} absolute top-0 right-[20px] md:flex md:items-start hidden`}>
               <Image
-                className="md:ms-auto mx-auto"
+                className={`${classes.banner_image} md:ms-auto max-w-[245px] max-h-[245px] w-full h-full`}
                 src={urlFor(data.image).url()}
                 alt="hero img"
-                width={400}
-                height={400}
+                width={245}
+                height={245}
               />
             </div>
           </div>

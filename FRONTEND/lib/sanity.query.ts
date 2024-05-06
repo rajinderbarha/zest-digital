@@ -312,7 +312,8 @@ export async function getResourcesData() {
       title,
       description,
       image,
-      icon
+      icon,
+      hovericon
     },
     tool[]{
       heading,
@@ -615,13 +616,7 @@ export async function getHomepageData() {
   const query = `
   *[_type == "homepage"] {
     growRevenue{
-      video{
-        asset-> {
-       playbackId,
-       assetId,
-       filename,
-     }
-     },
+      videosrc,
      image,
      heading,
      viewSolBtnName,

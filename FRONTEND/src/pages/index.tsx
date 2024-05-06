@@ -11,7 +11,7 @@ export default function Home({ homepageData }: HomepageProps) {
     <>
       <HeroSection HeroSecData={homepageData[0].growRevenue} />
       <HomeGrowthCard card={homepageData[0].TransformResults} />
-      <div className="xl:mt-[274px] lg:mt-[220px] md:mt-[170px] sm:mt-[150px] mt-[110px] xl:mb-[184px] lg:mb-[160px] md:mb-[130px] mb-[100px]">
+      <div className="xl:mt-[274px] lg:mt-[220px] md:mt-[170px] sm:mt-[150px] mt-[70px] xl:mb-[184px] lg:mb-[160px] md:mb-[130px] mb-[70px]">
         <Logo_moving LogoMovdata={homepageData[0].TransformResults.brandList} />
       </div>
       <Services data={homepageData[0].TransformResults.serviceSection} />

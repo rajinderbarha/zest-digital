@@ -9,31 +9,46 @@ const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
 
   return (
 
-          <Marquee className={`gap-16 `}>
-            <div className="flex  max-w-auto gap-[80px] me-5 ">
+    <div
+    className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10`}
+  >
+    <div className={`${classes.gradient_border} relative xl:py-16 lg:py-[50px] md:py-[40px] sm:py-[30px] py-[30px]`}>
+      <div className={`${classes.shadow_custom} `}></div>
+
+      <Marquee className={`xl:gap-[100px] lg:gap-[80px] md:gap-[60px] sm:gap-[40px] gap-[35px] `}>
+        <div className="flex  max-w-auto xl:gap-[100px] lg:gap-[80px] md:gap-[60px] sm:gap-[40px] gap-[35px] ">
               {LogoMovdata?.map((item: any, index: number) => {
                 // console.log("solution", item.icon);
                 return (
-                <div key={index} className="md:max-w-[200px] max-w-[150px] mx-auto w-full  self-center">
-
                   <Image
-                    src={urlFor(item.icon).url()}
-                    alt="brand img"
-                    width={200}
-                    height={81}
-                    key={index}
-                    className="xl:w-[200px] lg:w-[180px] md:w-[150px] sm:w-[120px] w-[100px] h-auto "
-                  />
-
-                </div>
+                  src={urlFor(item.icon).url()}
+                  alt="brand img"
+                  width={200}
+                  height={81}
+                  key={index}
+                  className="xl:w-[200px] xl:h-[81px] lg:w-[180px] lg:h-[73px] md:w-[150px] md:h-[61px] sm:w-[120px] sm:h-[49px] w-[100px] h-[41px]  "
+                />
               );
             })}
-          
+
+              {LogoMovdata?.map((item: any, index: number) => {
+                // console.log("solution", item.icon);
+                return (
+                  <Image
+                  src={urlFor(item.icon).url()}
+                  alt="brand img"
+                  width={200}
+                  height={81}
+                  key={index}
+                  className="xl:w-[200px] xl:h-[81px] lg:w-[180px] lg:h-[73px] md:w-[150px] md:h-[61px] sm:w-[120px] sm:h-[49px] w-[100px] h-[41px]  "
+                />
+              );
+            })}
           </div>
         </Marquee>
 
-     
-
+      </div>
+    </div>
   );
 };
 

@@ -12,12 +12,10 @@
 }
 .grow_img{
     right: 0;
-    top:-150px;
+    top:-140px;
+    right: 50px;
 }
 @media only screen and (min-width:768px) and (max-width:1024px){
-    .grow_img{
-        top:-120px;
-    }
     .SingleIntro{
         margin-top: 90px;
     }
@@ -30,3 +28,89 @@
         top:-100px;
     }
 }
+
+.margin_outer {
+    margin-left: 15px  ;
+    margin-right: 15px  ;
+  }
+  @media only screen and (min-width: 1775px) {
+    .margin_outer {
+      margin-left: 100px  ;
+      margin-right: 100px  ;
+    }
+    .grow_img{
+        width: 300px;
+      right: 0;
+      top:-140px;
+      right: 50px;
+  }
+  }
+  @media only screen and (min-width: 1450px) and (max-width: 1774px) {
+    .margin_outer {
+      margin-left: 75px  ;
+      margin-right: 75px  ;
+    }
+    .grow_img{
+        width: 270px;
+      top:-124px;
+      right: 90px;
+    }
+  }
+  @media only screen and (min-width: 1366px) and (max-width: 1449px) {
+    .margin_outer {
+      margin-left: 60px  ;
+      margin-right: 60px  ;
+    }
+    .grow_img{
+        width: 230px;
+        top:-106px;
+      right: 135px;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1365px){
+    .margin_outer {
+      margin-left: 40px  ;
+      margin-right: 40px  ;
+    }
+    .grow_img{
+      width: 200px;
+      top:-94px;
+      right: 105px;
+    }
+    
+  }
+  @media only screen and (min-width: 1124px) and (max-width: 1365px){
+    .grow_img{
+      width: 220px;
+      top:-106px;
+    right: 135px;
+  }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .margin_outer {
+      margin-left: 25px  ;
+      margin-right: 25px  ;
+    }
+    .grow_img{
+      width: 180px;
+      top:-85px;
+      right: 95px;
+    }
+  }
+  @media only screen and (min-width: 640px) and (max-width: 767px){
+    .grow_img{
+      width: 160px;
+      top: -73px;
+      right: 56px;
+    }
+  }
+  @media only screen and (max-width: 639px) {
+    .grow_img{
+      width: 115px;
+      top: -53px;
+      right: 37px;
+    }
+    .SingleIntro{
+      margin-top: 50px;
+  }
+  }

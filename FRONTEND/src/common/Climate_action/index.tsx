@@ -8,7 +8,7 @@ function Climate_action({ climate_actionImg, earth_img, smallDescription }: Clim
   return (
     <>
     
-    <div className="main_padding  md:mt-[74px] mt-[30px] md:mb-[110px] mb-[50px]">
+    <div className="main_padding  md:mb-[110px] mb-[50px]">
 
       <div className="main_container ">
         <div

@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import popup_person from '../../assets/images/popup_person.svg'
+import popup_percentage from '../../assets/images/percent.svg'
+import popup_pound from '../../assets/images/pound-circle.svg'
 import popup_question_mark from '../../assets/images/popup_question_mark.svg'
 import popup_percantage from '../../assets/images/popup_percantage.svg'
 import popup_euro from '../../assets/images/popup_euro.svg'
@@ -9,9 +11,9 @@ import ProgressBar from '@/common/ProgressBar'
 function Resources_Calculater_Step_4({ setStep }: any) {
     return (
         <>
-            <div className="Resources_Calculater_Step_3">
+            <div className="Resources_Calculater_Step_4">
                 <div className="pe-[6px] pb-[6px]">
-                    <div className="Resources_Calculater_Step_5 popup_conatiner md:pt-[29px] pt-[20px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
+                    <div className="Resources_Calculater_Step_4 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                         <div className="progrees_bar xl:mb-[140px] lg:mb-[110px] md:mb-[80px] sm:mb-[70px] mb-[60px] ">
                             <ProgressBar value={80} />
                         </div>
@@ -42,7 +44,7 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='3' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
-                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
+                                            <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  ">
                                     <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
@@ -59,7 +61,7 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='5000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
-                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
+                                            <Image src={popup_pound} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max " >
                                     <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
@@ -76,7 +78,7 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                                         <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='40' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
-                                            <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
+                                            <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  ">
                                     <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />

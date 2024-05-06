@@ -3,6 +3,7 @@
     overflow: hidden;
 }
 
+
 .Team_img_box {
     max-width: 421px;
     width: 100%;
@@ -14,7 +15,7 @@
 }
 
 .Team_img {
-    max-width: 435px;
+    max-width: 463px;
     width: 100%;
     
 }
@@ -29,8 +30,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #191615;
-    padding: 85px 16px 260px 16px;
-    border-radius: 30px;
+    padding: 85px 0px 260px 0px;
+    /* border-radius: 30px; */
 }
 
 .Our_values_main_p {
@@ -42,7 +43,7 @@
 }
 
 .Zest_for_life {
-    padding: 150px 16px;
+    /* padding: 150px 16px; */
 }
 
 .Escape {
@@ -51,17 +52,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #191615;
-    padding: 129px 16px 140px 16px;
-    border-radius: 30px;
+    /* padding: 129px 16px 140px 16px; */
+    /* border-radius: 30px; */
 
 }
 .Team_img_circle{
-width: 95%;
-    height: 84%;
+    width: 95.2%;
+    height: 85%;
     background: #1d2671;
     border-radius: 100%;
-    left: 6px;
-    bottom: 4px;
+    left: 2.38%;
+    /* bottom: 0.7%; */
 }
 
 .Escape_p {
@@ -76,8 +77,8 @@ width: 95%;
 .Marquee_border::after {
   content: '';
   position: absolute;
-  left: 0;
-  right: 0;
+  left: -1px;
+  right: -1px;
   height: 2px;
   background: linear-gradient(transparent 40%, #BD378B 82%, transparent 40%); /* The glow effect */
 }
@@ -90,7 +91,7 @@ width: 95%;
     bottom: 0; /* Aligns the line with the bottom of the text */
   }
 
-.gri {
+.custom_shadow {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -100,18 +101,55 @@ width: 95%;
     background-image: linear-gradient(90deg, #191516, transparent 27%, transparent, #191516);
 }
 
+/* @media screen and (max-width:900px) {
+.banner_image{
+    padding:00px 0 0px 75px;
+}
+} */
+
+@media only screen and (min-width:1500px){
+    .Founded_img{
+        right: 60px;
+    }
+}
+@media only screen and (min-width:1600px){
+    .Founded_img{
+        right: 65px;
+    }
+}
+@media only screen and (min-width:1700px){
+    .Founded_img{
+        right: 75px;
+    }
+}
+@media only screen and (min-width:1800px){
+    .Founded_img{
+        right: 85px;
+    }
+}
+@media only screen and (max-width:1155px){
+    .Founded_img{
+        display: none;
+    }
+}
+
+
 @media screen and (max-width:1040px) {
     .Our_values_main_2 {
         margin: 0px 0 !important;
+    }
+    .values_bg{
+        padding-top: 55px;
     }
 }
 
 @media screen and (max-width:768px) {
 
     /* .About_banner, */
-    .values_bg,
-    .Zest_for_life {
-        padding: 80px 16px 50px 16px;
+    .values_bg
+    /* .Zest_for_life */
+     {
+        padding: 30px 16px 50px 16px;
     }
 
     .About_team {
@@ -119,9 +157,9 @@ width: 95%;
     }
 
     .Escape {
-        padding: 60px 16px 60px 16px;
+        /* padding: 60px 16px 60px 16px; */
     }
     .Our_values_main_2{
-        margin: 20px 0!important;
+        margin: 30px 0!important;
     }
 }
