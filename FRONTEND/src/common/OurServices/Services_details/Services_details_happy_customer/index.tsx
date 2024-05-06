@@ -1,19 +1,18 @@
-import Image from "next/image";
 import React from "react";
 import classes from "../Services_details.module.css";
-import { ServiceDetail } from "../../../../../lib/interface";
+import { HappyCustomer } from "../../../../../lib/interface";
 import { urlFor } from "../../../../../lib/sanity.client";
 import { PortableText } from "next-sanity";
 
-const Services_details_happy_customer = (props: any) => {
+const Services_details_happy_customer = ({ Services_details }: { Services_details: HappyCustomer[] }) => {
   return (
     <>
       <div className="main_padding ">
         <div className={`${classes.objective} main_container`}>
-          {props.Services_details.map((item: any, index: number) =>
+          {Services_details.map((item: HappyCustomer, index: number) =>
             index % 2 == 0 ? (
               <div
-              key={`${item.heading}_${index}`}
+                key={`${item.heading}_${index}`}
                 className={`flex items-center  flex-col md:flex-row  bg-white ${classes.objective_inner} ${classes.objective_select} lg:gap-10  `}
               >
                 <div className=" md:max-w-[1057px] xl:pe-[100px] lg:pe-[70px] md:pe-[50px]">
@@ -26,10 +25,8 @@ const Services_details_happy_customer = (props: any) => {
                   </div>
                 </div>
                 <div className="md:flex mx-auto  hidden">
-                  <Image
+                  <img
                     src={urlFor(item.image).url()}
-                    width={350}
-                    height={350}
                     alt=""
                     className="xl:max-w-[350px] lg:max-w-[250px] md:max-w-[180px] max-w-[200px]"
                   />
@@ -41,10 +38,8 @@ const Services_details_happy_customer = (props: any) => {
                 className={`flex items-center flex-col-reverse md:flex-row  bg-white ${classes.objective_inner} lg:gap-10 `}
               >
                 <div className=" image_class md:flex mx-auto  hidden ">
-                  <Image
+                  <img
                     src={urlFor(item.image).url()}
-                    width={400}
-                    height={400}
                     alt=""
                     className="xl:max-w-[400px] lg:max-w-[300px] md:max-w-[230px] max-w-[200px]"
                   />

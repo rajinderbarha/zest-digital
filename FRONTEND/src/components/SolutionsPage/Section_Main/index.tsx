@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import classes from "./Section_Main.module.css";
 import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
+import { SolSection_Main, SolSection_Main_Card } from "../../../../lib/interface";
 
-function Section_Main({ data, card }: any) {
 
 
-  const texts = ["Wear ", "Cover Face ", "Wash Your "];
+function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_Main_Card[] }) {
+  // const texts = ["Wear ", "Cover Face ", "Wash Your "];
   const [animateIndex, setAnimateIndex] = useState(0);
   const textInTimer = 3000;
 
@@ -14,7 +15,7 @@ function Section_Main({ data, card }: any) {
 
     const handleAnimation = () => {
       const timeoutId = setTimeout(() => {
-        setAnimateIndex(prev => (prev + 1) % (data.upperTitle.switcher ? data.upperTitle.switcher.length : [].length));
+        setAnimateIndex(prev => (prev + 1) % (data.upperTitle.switcher ? data.upperTitle.switcher.length : 0));
       }, textInTimer);
       return timeoutId;
     };
@@ -81,76 +82,76 @@ function Section_Main({ data, card }: any) {
           </div>
         </div>
         <div className="main_padding">
-        <div
-          className={`max-w-[1345px] font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] lg:-mt-64 md:-mt-[200px] -mt-[165px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] overflow-x-clip `}
-        >
-          <Growth_engine
-            has_image={false}
-            shadow_right={false}
-            props={{
-              title: card[0].card.heading,
-              description: card[0].card.description,
-              buttonName: card[0].card.buttonName,
-              buttonLink: `/solutions/${card[0].slug.current}`,
-              image: card[0].card?.image ? urlFor(card[0].card.image).url() : "",
-            }}
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
-            <Growth_engine
-              has_image={false}
-              shadow_right={true}
-              props={{
-                title: card[1].card.heading,
-                description: card[1].card.description,
-                buttonName: card[1].card.buttonName,
-                buttonLink: `/solutions/${card[1].slug.current}`,
-                image: card[1].card?.image ? urlFor(card[1].card.image).url() : "",
-              }}
-            />
-
+          <div
+            className={`max-w-[1345px] font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] lg:-mt-64 md:-mt-[200px] -mt-[165px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] overflow-x-clip `}
+          >
             <Growth_engine
               has_image={false}
               shadow_right={false}
               props={{
-                title: card[2].card.heading,
-                description: card[2].card.description,
-                buttonName: card[2].card.buttonName,
-                buttonLink: `/solutions/${card[2].slug.current}`,
-                image: card[2].card?.image ? urlFor(card[2].card.image).url() : "",
+                title: card[0].card.heading,
+                description: card[0].card.description,
+                buttonName: card[0].card.buttonName,
+                buttonLink: `/solutions/${card[0].slug.current}`,
+                image: card[0].card?.image ? urlFor(card[0].card.image).url() : "",
               }}
             />
-          </div>
 
-          <Growth_engine
-            has_image={true}
-            shadow_right={false}
-            props={{
-              title: card[3].card.heading,
-              description: card[3].card.description,
-              buttonName: card[3].card.buttonName,
-              buttonLink: `/solutions/${card[3].slug.current}`,
-              image: urlFor(card[3].card.image).url(),
-            }}
-          />
-          {card.length > 4 && card.slice(3).map((item: any, index: number) => {
-            return (
-              <div key={index}>
-                <Growth_engine
-                  has_image={true}
-                  shadow_right={false}
-                  props={{
-                    title: item.card.heading,
-                    description: item.card.description,
-                    buttonName: item.card.buttonName,
-                    buttonLink: `/solutions/${item.slug.current}`,
-                    image: item.card?.image ? urlFor(item.card.image).url() : "",
-                  }}
-                />
-              </div>
-            );
-          })}
-        </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
+              <Growth_engine
+                has_image={false}
+                shadow_right={true}
+                props={{
+                  title: card[1].card.heading,
+                  description: card[1].card.description,
+                  buttonName: card[1].card.buttonName,
+                  buttonLink: `/solutions/${card[1].slug.current}`,
+                  image: card[1].card?.image ? urlFor(card[1].card.image).url() : "",
+                }}
+              />
+
+              <Growth_engine
+                has_image={false}
+                shadow_right={false}
+                props={{
+                  title: card[2].card.heading,
+                  description: card[2].card.description,
+                  buttonName: card[2].card.buttonName,
+                  buttonLink: `/solutions/${card[2].slug.current}`,
+                  image: card[2].card?.image ? urlFor(card[2].card.image).url() : "",
+                }}
+              />
+            </div>
+
+            <Growth_engine
+              has_image={true}
+              shadow_right={false}
+              props={{
+                title: card[3].card.heading,
+                description: card[3].card.description,
+                buttonName: card[3].card.buttonName,
+                buttonLink: `/solutions/${card[3].slug.current}`,
+                image: urlFor(card[3].card.image).url(),
+              }}
+            />
+            {card.length > 4 && card.slice(3).map((item: any, index: number) => {
+              return (
+                <div key={index}>
+                  <Growth_engine
+                    has_image={true}
+                    shadow_right={false}
+                    props={{
+                      title: item.card.heading,
+                      description: item.card.description,
+                      buttonName: item.card.buttonName,
+                      buttonLink: `/solutions/${item.slug.current}`,
+                      image: item.card?.image ? urlFor(item.card.image).url() : "",
+                    }}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

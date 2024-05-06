@@ -11,7 +11,8 @@ const Growth_engine = ({
   shadow_right,
   has_image,
 }: GrowthEngineProps) => {
-  const { title, description, buttonName, buttonLink, image } = props;
+  const { heading, description, buttonName, buttonLink, image } = props;
+  
   return (
     <>
       {has_image ? (
@@ -24,7 +25,7 @@ const Growth_engine = ({
             <h2
               className={`${classes.growth_engine_title} text-40px font-semibold `}
             >
-              {title}
+              {heading}
             </h2>
             <p className={`${classes.growth_engine_desc} text-3xl mt-5 md:mb-[37px] mb-[20px]`}>
               {description}
@@ -60,7 +61,7 @@ const Growth_engine = ({
           <h2
             className={`${classes.growth_engine_title} text-40px font-semibold `}
           >
-            {title}
+            {heading}
           </h2>
           <p className={`${classes.growth_engine_desc} text-3xl mt-5 md:mb-[37px] mb-[20px] xl:mt-[29px] lg:mt-[26px] md:mt-[25px]`}>
             {description}
