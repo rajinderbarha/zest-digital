@@ -51,12 +51,15 @@ function Services({ data }: { data: SingleOurService }) {
         title_CR={title_CR}
         heading_CR={heading_CR}
       />
+      <div className="main_padding">
+
       <Global_Accordion
         heading_acc={heading_acc}
         card_acc={card_Accordian}
         belowbtnName_acc={belowbtnName_acc}
         belowbtnLink_acc={belowbtnLink_acc}
-      />
+        />
+        </div>
       <Services_Quotes Services_Quotes={serviceQuotes} />
       <Services_Address
         heading_add={heading_add}

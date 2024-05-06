@@ -15,7 +15,7 @@ function Gross_profit({ data }: any) {
               // xl:px-[78px] lg:px-[55px] md:px-[40px] sm:px-[25px] px-[18px]
               <div
                 key={index}
-                className={` ${classes.profit_box} Gross_profit_box_start text-center border bg-black rounded-[20px] md:rounded-30px  font-mono border-color-8 xl:py-[75px] lg:py-[55px]  sm:py-[25px] py-[18px] `}
+                className={` ${classes.profit_box} Gross_profit_box_start text-center border bg-black rounded-[20px] lg:rounded-30px  font-mono border-color-8 xl:py-[75px] lg:py-[55px]  sm:py-[25px] py-[18px] `}
               >
                 <h2 className="xl:text-55px lg:text-50px md:text-40px sm:text-35px text-[30px] font-semibold text-color-7">{item.count} </h2>
                 <p className={` ${classes.profit_box_heading} lg:text-30px md:text-25px sm:text-[22px] text-[20px] text-color-7 font-semibold xl:mb-[35px] lg:mb-[30px] md:mb-[25px] sm:mb-[20px] mb-[15px]`}>{item.heading}</p>

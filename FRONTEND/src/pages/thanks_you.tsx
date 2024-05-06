@@ -1,4 +1,4 @@
-import Thanks_you from '@/common/Thanks_you/Thanks_you'
+import Thanks_you from '@/common/Thanks_you'
 import React from 'react'
 
 function thanks_you() {

@@ -23,7 +23,7 @@ const Services_Box = (props: any) => {
 
               {imageBox?.map((item: any, index: any) => (
                 <div className="text-center max-w-[513px] w-full " key={index}>
-                <div className="2xl:max-w-[250px] xl:max-w-[240px] lg:max-w-[200px] max-w-[150px] mx-auto  ">
+                <div className={`${classes.top_image} 2xl:max-w-[250px] xl:max-w-[240px] lg:max-w-[200px] max-w-[150px] mx-auto  `}>
                     <Image src={urlFor(item.image).url()} width={250} height={250} alt="" className=' mx-auto'/>
                 </div>
                 <h2 className="xl:text-45px lg:text-[38px] md:text-30px text-color-7 font-mono font-semibold">{item.imagetitle}</h2>

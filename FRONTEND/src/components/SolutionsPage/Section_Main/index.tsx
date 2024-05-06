@@ -82,7 +82,7 @@ function Section_Main({ data, card }: any) {
         </div>
         <div className="main_padding">
         <div
-          className={`max-w-[1345px] font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] lg:-mt-64 md:-mt-[200px] -mt-[165px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] overflow-x-clip `}
+          className={`max-w-[1345px] font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] lg:-mt-64 md:-mt-[200px] -mt-[165px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px]  `}
         >
           <Growth_engine
             has_image={false}
