@@ -13,7 +13,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
     SeeOurResBtnLink,
     image,
     videosrc,
-  } = HeroSecData
+  } = HeroSecData || {}
 
   console.log("vv", viewSolBtnLink, SeeOurResBtnLink);
   return (
@@ -41,24 +41,29 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
                 </a>
               </div>
               <div className={`${classes.marketing_agency_logo_1} self-end`}>
-                <Image
-                  src={urlFor(image).url()}
-                  width={256}
-                  height={246}
-                  alt=""
-                />
+                  <Image
+                    src={urlFor(image).url()}
+                    width={256}
+                    height={246}
+                    alt="Award winning growth marketing agency"
+                    loading="lazy"
+                  />
+
+                
               </div>
             </div>
             <div
               className={`${classes.banner_video}  flex justify-end items-start  relative`}
             >
               <div className={`${classes.marketing_agency_logo_2}`}>
-                <Image
-                  src={urlFor(image).url()}
-                  width={256}
-                  height={246}
-                  alt=""
-                />
+                  <Image
+                    src={urlFor(image).url()}
+                    width={256}
+                    height={246}
+                    alt="Image not loaded"
+                    loading="lazy"
+                  />
+                
               </div>
               <div className={classes.custom_border}>
               <video width="680" height="450"  controls className={`${classes.video_class} xl:rounded-30px md:rounded-[20px] rounded-[10px]`}>
@@ -77,3 +82,8 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
 };
 
 export default HeroSection;
+
+
+
+
+
