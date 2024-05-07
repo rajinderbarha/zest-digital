@@ -4,6 +4,9 @@ import Boxes from "./Boxes";
 import { TermsAndConditionsType } from "../../../lib/interface";
 
 function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
+  if (!data) {
+    return "Failed to load Terms_Conditions page data" ; // or display a placeholder message
+  }
   return (
     <div className="term_condition main_padding xl:mb-[216px] lg:mb-[160px] md:mb-[110px] sm:mb-[90px] mb-[80px]">
       <div className="main_container">

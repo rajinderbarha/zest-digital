@@ -89,7 +89,8 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
               has_image={false}
               shadow_right={false}
               props={{
-                title: card[0].card.heading,
+                // title: card[0].card.heading,                     // This warn is from GrowthEngineProps  typescript
+                heading: card[0].card.heading,
                 description: card[0].card.description,
                 buttonName: card[0].card.buttonName,
                 buttonLink: `/solutions/${card[0].slug.current}`,
@@ -102,7 +103,8 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
                 has_image={false}
                 shadow_right={true}
                 props={{
-                  title: card[1].card.heading,
+                  // title: card[1].card.heading,
+                  heading: card[1].card.heading,
                   description: card[1].card.description,
                   buttonName: card[1].card.buttonName,
                   buttonLink: `/solutions/${card[1].slug.current}`,
@@ -114,7 +116,8 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
                 has_image={false}
                 shadow_right={false}
                 props={{
-                  title: card[2].card.heading,
+                  // title: card[2].card.heading,
+                  heading: card[2].card.heading,
                   description: card[2].card.description,
                   buttonName: card[2].card.buttonName,
                   buttonLink: `/solutions/${card[2].slug.current}`,
@@ -127,7 +130,8 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
               has_image={true}
               shadow_right={false}
               props={{
-                title: card[3].card.heading,
+                // title: card[3].card.heading,
+                heading: card[3].card.heading,
                 description: card[3].card.description,
                 buttonName: card[3].card.buttonName,
                 buttonLink: `/solutions/${card[3].slug.current}`,
@@ -141,7 +145,8 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
                     has_image={true}
                     shadow_right={false}
                     props={{
-                      title: item.card.heading,
+                      // title: item.card.heading,
+                      heading: item.card.heading,
                       description: item.card.description,
                       buttonName: item.card.buttonName,
                       buttonLink: `/solutions/${item.slug.current}`,
@@ -159,3 +164,6 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
 }
 
 export default Section_Main;
+
+
+

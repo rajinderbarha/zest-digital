@@ -3,8 +3,9 @@ import Image from "next/image";
 import classes from "./CaseStudyIntro.module.css";
 import Link from "next/link";
 import { urlFor } from "../../../../lib/sanity.client";
+import { CaseStudyIntroType } from "../../../../lib/interface";
 
-function Casestudyintro({ data }: any) {
+function Casestudyintro({ data }: {data:CaseStudyIntroType}) {
   return (
     <>
     {/* xl:mt-[120px] lg:mt-[100px] md:mt-[50px] sm:mt-[50px] mt-[30px] */}

@@ -161,12 +161,14 @@ import Filters_image from "../../../assets/images/Filters.png";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../../lib/sanity.client";
+import { FiltersType } from "../../../../lib/interface";
 
-function Filters({ data }: any) {
+function Filters({ data }: {data:FiltersType}) {
+  // console.log("data",data)
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
-  const arrayElements = data.collection.map((item: any) => item.hero.keywords);
-  const combinedArray = arrayElements.reduce((acc: any, curr: any) => {
+  const arrayElements = data.collection.map((item) => item.hero.keywords);
+  const combinedArray = arrayElements.reduce((acc, curr) => {
     const uniqueElements = new Set(acc);
     curr.forEach((element: any) => uniqueElements.add(element));
     return Array.from(uniqueElements);
@@ -190,7 +192,7 @@ function Filters({ data }: any) {
     });
   };
 
-  const filteredProducts = data.collection.filter((item: any) =>
+  const filteredProducts = data.collection.filter((item) =>
     selectedCategories.length === 0
       ? true // Show all products if no category is selected
       : selectedCategories.some((selectedCategory) =>
@@ -216,7 +218,7 @@ function Filters({ data }: any) {
             />
             <div className={`${classes.Filters_box} relative z-10  grid lg:grid-cols-12`}>
               <div className="lg:col-span-8 lg:order-1 order-2">
-                {filteredProducts.map((item: any, index: number) => (
+                {filteredProducts.map((item, index: number) => (
                   <div className="my-10" key={index}>
                     <div
                       className={` ${classes.insight_box} grid sm:grid-cols-12 items-end ${

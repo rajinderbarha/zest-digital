@@ -3,7 +3,8 @@ import classes from "../singlebox.module.css";
 import Image from "next/image"; //@ts-ignore
 import BlockContent from "@sanity/block-content-to-react";
 import { urlFor } from "../../../../../lib/sanity.client";
-function objective({ card }: any) {
+import { Card } from "../../../../../lib/interface";
+function objective({ card }: {card:Card[]}) {
   return (
     <>
       {card.map((item: any, index: number) => {

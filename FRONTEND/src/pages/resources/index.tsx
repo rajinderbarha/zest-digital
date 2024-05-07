@@ -25,7 +25,7 @@ function resources({ resources }: any) {
     formState: { errors },
   } = useForm();
 
-  console.log("resources", resources);
+  console.log("formData", formData);
   return (
     <>
       <StepPopup

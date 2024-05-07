@@ -3,12 +3,12 @@ import classes from "./footer.module.css";
 import Image from "next/image";
 import { urlFor } from "../../../lib/sanity.client";
 import Link from "next/link";
-import { ClimateAction, FooterType } from "../../../lib/interface";
+import { FooterType } from "../../../lib/interface";
 import Climate_action from "@/common/Climate_action";
 import { PortableText } from "next-sanity";
 import { FaPhoneAlt } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa6";
-import { BiLogoFacebookSquare } from "react-icons/bi";
+// import { FaFacebookF } from "react-icons/fa6";
+// import { BiLogoFacebookSquare } from "react-icons/bi";
 import facebook_black from '../../assets/images/facebook_black.svg'
 import linkedin_black from '../../assets/images/linkedin_black.svg'
 import instagram_black from '../../assets/images/instagram_black.svg'
@@ -17,7 +17,6 @@ import linkedin_white from '../../assets/images/linkedin_white.svg'
 import instagram_white from '../../assets/images/instagram_white.svg'
 
 const Footer = ({ data }: { data: FooterType[] }) => {
-
 
   return (
     <>
@@ -131,61 +130,61 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                </div>
                 ))} */}
                 <div className="group">
-                <Link href="https://www.facebook.com/ZestDigital/">
-                   <Image
-                     src={facebook_white}
-                     width={50}
-                     height={50}
-                     alt=""
-                     className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] group-hover:hidden"
-                   />
-                   <Image
-                     src={facebook_black}
-                     width={50}
-                     height={50}
-                     alt=""
-                     className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
-                   />
-                 </Link>
-               
+                  <Link href="https://www.facebook.com/ZestDigital/">
+                    <Image
+                      src={facebook_white}
+                      width={50}
+                      height={50}
+                      alt=""
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] group-hover:hidden"
+                    />
+                    <Image
+                      src={facebook_black}
+                      width={50}
+                      height={50}
+                      alt=""
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                    />
+                  </Link>
+
                 </div>
                 <div className="group">
-                <Link href="https://www.linkedin.com/company/zest-digital/">
-                   <Image
-                     src={linkedin_white}
-                     width={50}
-                     height={50}
-                     alt=""
-                     className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
-                   />
-                   <Image
-                     src={linkedin_black}
-                     width={50}
-                     height={50}
-                     alt=""
-                     className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
-                   />
-                 </Link>
-               
+                  <Link href="https://www.linkedin.com/company/zest-digital/">
+                    <Image
+                      src={linkedin_white}
+                      width={50}
+                      height={50}
+                      alt=""
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
+                    />
+                    <Image
+                      src={linkedin_black}
+                      width={50}
+                      height={50}
+                      alt=""
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                    />
+                  </Link>
+
                 </div>
                 <div className="group">
-                <Link href="https://www.instagram.com/zestdigital/">
-                   <Image
-                     src={instagram_white}
-                     width={50}
-                     height={50}
-                     alt=""
-                     className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
-                   />
-                   <Image
-                     src={instagram_black}
-                     width={50}
-                     height={50}
-                     alt=""
-                     className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
-                   />
-                 </Link>
-               
+                  <Link href="https://www.instagram.com/zestdigital/">
+                    <Image
+                      src={instagram_white}
+                      width={50}
+                      height={50}
+                      alt=""
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
+                    />
+                    <Image
+                      src={instagram_black}
+                      width={50}
+                      height={50}
+                      alt=""
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                    />
+                  </Link>
+
                 </div>
               </div>
             </div>
