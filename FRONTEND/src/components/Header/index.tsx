@@ -43,7 +43,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
     <>
       {data?.map((item, index) => {
         return (
-          <div className="main_padding p-0" key={index}>
+          <div className="main_padding py-4 md:p-0" key={index}>
             {/*------------------- Desktop View----------------- */}
             <div
               key={`header_${item.logo._id}`}

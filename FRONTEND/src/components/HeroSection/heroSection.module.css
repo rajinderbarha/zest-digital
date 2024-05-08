@@ -16,7 +16,7 @@
     left: 0;
     margin: -2px;
     background: linear-gradient(115deg, #8aff0a 0%, transparent 64%, transparent 54%, transparent -256%);
-    
+
     z-index: 0;
     @apply xl:rounded-30px md:rounded-[20px] rounded-[10px]
 }
@@ -30,10 +30,11 @@
     left: 0;
     margin: -2px;
     background: linear-gradient(-78deg, #000000 0%, transparent 28%, transparent 148%, transparent -387%);
-   
+
     z-index: 0;
-       @apply xl:rounded-30px md:rounded-[20px] rounded-[10px]
+    @apply xl:rounded-30px md:rounded-[20px] rounded-[10px]
 }
+
 @media only screen and (max-width:1410px) {
     .marketing_agency_logo_1 {
         position: relative;
@@ -100,7 +101,7 @@
     }
 
     .banner {
-        gap: 6rem;
+        /* gap: 6rem; */
         overflow: hidden;
     }
 }
@@ -108,20 +109,22 @@
 @media only screen and (max-width:639px) {
     .marketing_agency_logo_2 {
         top: -18vw;
-        right: -14px;
+        right: -8px;
         display: flex;
         justify-content: end;
-       
+
     }
 
     .marketing_agency_logo_2 img {
         width: 36vw;
 
     }
-    .custom_border:before, .custom_border:after {
+
+    .custom_border:before,
+    .custom_border:after {
         margin: -1.5px;
     }
-    
+
 }
 
 /* @media only screen and (max-width:425px){*/
