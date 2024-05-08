@@ -2,8 +2,9 @@ import React from 'react'
 import Casestudyintro_Image from '../../../assets/images/Case_studies_circle.png'
 import Image from 'next/image'
 import classes from './resourcesbanner.module.css'
+import { Resources } from '../../../../lib/interface'
 
-function Resourcesbanner({data}:any) {
+function Resourcesbanner({data}:{data:Resources}) {
     return (
         <>
             <div className={`${classes.Resourcesbanner} main_padding xl:mt-[95px] lg:mt-[75px] md:mt-[55px] mt-[35px]`}>

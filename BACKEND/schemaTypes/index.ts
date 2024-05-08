@@ -23,7 +23,6 @@ import {FAQ} from './common/FAQ'
 import {ServicesAgencyAddress} from './Services/agencyAddress'
 import {HomePage} from './Homepage'
 import {GrowthCard} from './common/growthCard'
-
 export const schemaTypes = [
   Header,
   Footer,

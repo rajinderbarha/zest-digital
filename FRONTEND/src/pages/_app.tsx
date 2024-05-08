@@ -4,16 +4,16 @@ import type { AppProps } from "next/app";
 import Layout from "../layout/index";
 import { getFooter, getHeader } from "../../lib/sanity.query";
 import { PopupProvider } from "@/context";
+import { FooterType, HeaderType } from "../../lib/interface";
 
 function MyApp({
   Component,
   pageProps,
   headerdata,
   footerdata,
-}: AppProps & { headerdata: any; footerdata: any }) {
+}: AppProps & { headerdata: HeaderType[]; footerdata: FooterType[] }) {
   return (
     <PopupProvider>
-      
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
       </Layout>

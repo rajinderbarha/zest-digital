@@ -8,6 +8,7 @@ import { getAboutData } from "../../lib/sanity.query";
 import { AboutType } from "../../lib/interface";
 
 const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
+  
   return (
     <div>
       <About_banner data={aboutdata} />
@@ -22,10 +23,20 @@ const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
 export default About_page;
 
 export async function getServerSideProps() {
-  const aboutdata = await getAboutData();
-  return {
-    props: {
-      aboutdata,
-    },
-  };
+  try{
+
+    const aboutdata = await getAboutData();
+    return {
+      props: {
+        aboutdata,
+      },
+    };
+  }catch (error) {
+    console.error("Error fetching About_page data:", error);
+    return {
+      props: {
+        aboutdata: [],
+      },
+    };
+  }
 }
