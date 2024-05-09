@@ -115,8 +115,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                 has_image={false}
                 shadow_right={false}
                 props={{
-                  // title: card.growthcard[0].card.heading,
-                  heading: card.growthcard[0].card.heading,
+                  title: card.growthcard[0].card.heading,
                   description: card.growthcard[0].card.description,
                   buttonName: card.growthcard[0].card.buttonName,
                   buttonLink: `/solutions/${card.growthcard[0].slug}`,
@@ -131,8 +130,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                   has_image={false}
                   shadow_right={true}
                   props={{
-                    // title: card.growthcard[1].card.heading,
-                    heading: card.growthcard[1].card.heading,
+                    title: card.growthcard[1].card.heading,
                     description: card.growthcard[1].card.description,
                     buttonName: card.growthcard[1].card.buttonName,
                     buttonLink: `/solutions/${card.growthcard[1].slug}`,
@@ -146,8 +144,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                   has_image={false}
                   shadow_right={false}
                   props={{
-                    // title: card?.growthcard[2].card.heading,
-                    heading: card.growthcard[2].card.heading,
+                    title: card?.growthcard[2].card.heading,
                     description: card?.growthcard[2].card.description,
                     buttonName: card?.growthcard[2].card.buttonName,
                     buttonLink: `/solutions/${card.growthcard[2].slug}`,
@@ -162,8 +159,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                 has_image={true}
                 shadow_right={false}
                 props={{
-                  // title: card?.growthcard[3].card.heading,
-                  heading: card.growthcard[3].card.heading,
+                  title: card?.growthcard[3].card.heading,
                   description: card?.growthcard[3].card.description,
                   buttonName: card?.growthcard[3].card.buttonName,
                   buttonLink: `/solutions/${card.growthcard[3].slug}`,
@@ -180,8 +176,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                         has_image={true}
                         shadow_right={false}
                         props={{
-                          // title: item.card?.heading,
-                          heading: item.card.heading,
+                          title: item.card?.heading,
                           description: item.card?.description,
                           buttonName: item.card?.buttonName,
                           buttonLink: `/solutions/${item.slug.current}`,
