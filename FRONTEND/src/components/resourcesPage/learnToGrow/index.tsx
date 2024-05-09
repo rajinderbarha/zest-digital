@@ -8,6 +8,8 @@ import Climate_action from "@/common/Climate_action";
 import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
 function LearnToGrow({ data }: any) {
+  console.log("tools =", data );
+  
   return (
     <>
       <div className="main_padding">

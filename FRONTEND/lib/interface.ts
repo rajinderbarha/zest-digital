@@ -68,6 +68,7 @@ export interface LogoMoving {
 
 export interface GrowthEngineProps {
   props: {
+    // heading:string;
     title: string;
     description: string;
     buttonName: string;

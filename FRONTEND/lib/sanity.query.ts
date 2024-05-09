@@ -308,7 +308,7 @@ export async function getResourcesData() {
       hovericon
     },
     tool[]{
-      heading,
+      title,
       description,
       buttonName,
       buttonLink,
