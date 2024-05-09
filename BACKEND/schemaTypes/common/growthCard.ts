@@ -24,7 +24,7 @@ export const GrowthCard = defineType({
         title: 'Card',
         type: 'object',
         fields: [
-          {name: 'heading', title: 'Heading', type: 'string'},
+          {name: 'title', title: 'Title', type: 'string'},
           {name: 'description', title: 'Description', type: 'string'},
           {name: 'buttonName', title: 'Button Name', type: 'string'},
           {name: 'image', title: 'Image', type: 'image'},
