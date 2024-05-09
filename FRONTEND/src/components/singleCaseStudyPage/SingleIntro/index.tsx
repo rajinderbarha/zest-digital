@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './SingleIntro.module.css'
 import Objective from '../singlebox/objective'
-import Strategy from '../singlebox/strategy';
-import Action from '../singlebox/action';
-import Result from '../singlebox/result';
+// import Strategy from '../singlebox/strategy';
+// import Action from '../singlebox/action';
+// import Result from '../singlebox/result';
 import Image from 'next/image';
 import { urlFor } from '../../../../lib/sanity.client'
 import { SingleCasestudyType } from '../../../../lib/interface';

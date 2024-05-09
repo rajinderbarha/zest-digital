@@ -226,6 +226,14 @@ export async function getSolutionData() {
   return data;
 }
 
+
+
+
+
+
+
+
+
 export async function getInsightsData() {
   const query = `
 

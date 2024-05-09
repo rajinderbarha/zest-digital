@@ -12,7 +12,6 @@ const Growth_engine = ({
   has_image,
 }: GrowthEngineProps) => {
   const { title, description, buttonName, buttonLink, image } = props;
-  console.log("props =- ",props);
   
   return (
     <>

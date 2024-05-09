@@ -56,6 +56,12 @@ export const Solution = defineType({
       of:[{type:'reference',to:[{type:"brandList"}]}]
   },
     {
+      name:'growth',
+      title:"Growth",
+      type: 'array',
+      of:[{type:'reference',to:[{type:"growth"}]}]
+  },
+    {
       name: 'banner',
       title: 'Banner',
       type: 'reference',
