@@ -4,7 +4,7 @@ import Image from "next/image";
 import { urlFor } from "../../../../../lib/sanity.client";
 import { Gross_profitType } from "../../../../../lib/interface";
 
-function Instrumental({ data }: {data:Gross_profitType}) {
+function Instrumental({ data }: { data: Gross_profitType }) {
 
   const { hero } = data
   return (
@@ -23,7 +23,7 @@ function Instrumental({ data }: {data:Gross_profitType}) {
                 objectFit="contain"
               />
             </div> */}
-            
+
             {/* -----------desktop view------------- */}
             <div className="hidden md:block">
 
@@ -35,8 +35,8 @@ function Instrumental({ data }: {data:Gross_profitType}) {
                 height={350}
               />
             </div>
-             {/* -----------desktop view------------- */}
-             {/* -----------mobile view------------- */}
+            {/* -----------desktop view------------- */}
+            {/* -----------mobile view------------- */}
             <div className="block md:hidden max-w-[350px] sm:h-[360px] h-[250px] box-border  mx-auto relative">
 
               <Image
@@ -49,12 +49,12 @@ function Instrumental({ data }: {data:Gross_profitType}) {
             </div>
             {/* -----------mobile view------------- */}
 
-            <h3 className="font-mono font-semibold lg:text-30px md:text-25px text-[20px] md:max-w-[373px] max-w-[221px] text-center mx-auto mt-4">
+            <h3 className="font-mono text-color-1 font-semibold lg:text-30px md:text-25px text-[20px] md:max-w-[373px] max-w-[221px] text-center mx-auto mt-4">
               {hero.imageDesc ? hero.imageDesc : ""}
             </h3>
           </div>
           <div className="md:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] md:mt-0 sm:mt-[30px] mt-[25px]">
-            <h2 className="font-mono italic font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-[28px] text-[20px] md:mb-[20px] sm:mb-[15px] mb-[10px] w-max-[909px]">
+            <h2 className="font-mono italic font-semibold text-color-1 xl:text-45px lg:text-40px md:text-35px sm:text-[28px] text-[20px] md:mb-[20px] sm:mb-[15px] mb-[10px] w-max-[909px]">
               {hero.heading}
             </h2>
             <p className="text-color-9 pt-2 border-t text-[15px] sm:text-base border-color-9">

@@ -13,7 +13,7 @@ function Casestudyintro({ data }: {data:CaseStudyIntroType}) {
         <div className=" md:px-[20px] sm:px-[15px] px-[8px] max-w-[1520px] mx-auto w-full relative">
           <div className="">
             <div className="xl:max-w-[971px] max-w-[800px]">
-              <h1 className="font-mono font-semibold  xl:text-55px lg:text-50px md:text-[42px] text-[30px] mb-5">
+              <h1 className="font-mono font-semibold text-color-1  xl:text-55px lg:text-50px md:text-[42px] text-[30px] mb-5">
                 {data.heading}
               </h1>
               <Link href={data.buttonLink}>
