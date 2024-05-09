@@ -1,0 +1,48 @@
+.bg_image {
+    background-image: url('../../assets/images/Gradient_calendar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: bottom; */
+    background-color: #191615;
+}
+.time_text{
+    font-weight: 100!important;
+    /* border: 1px solid black; */
+}
+.select_region:focus-visible{
+    outline: none;
+    
+}
+.select_region{
+    width: min-content;
+    padding-right: 35px;
+    background-image: none!important;
+    background-image: url('../../assets/images/call_select_down_icon.svg')!important;
+    background-position: right 10px center;
+}
+
+.specific_time::-webkit-scrollbar {
+    width: 5px;
+    height: 10px; 
+  }
+  
+  .specific_time::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 10px; 
+  }
+  
+  .specific_time::-webkit-scrollbar-thumb {
+    background: #fff; 
+    border-radius: 10px; 
+  }
+  
+  .specific_time::-webkit-scrollbar-thumb:hover {
+    background: #d1d1d1;
+  }
+  
+  @media only screen and (max-width:639px)
+  {
+    .specific_time::-webkit-scrollbar {
+        width: 3px; 
+      }
+  }

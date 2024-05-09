@@ -23,26 +23,112 @@
     /* margin-top: -100px; */
 }
 
-.grow_img {
-    right: 0;
-    top: -150px;
+
+
+
+
+@media only screen and (min-width: 1775px) {
+
+    .grow_img {
+        top: -163px;
+        right: 50px;
+    }
+
+    .grow_img img {
+        width: 294px;
+        height: 294px;
+    }
 }
 
-@media only screen and (max-width:1027px) {
+@media only screen and (min-width: 1450px) and (max-width: 1774px) {
+
     .grow_img {
-        top: -120px;
+        top: -150px;
+        right: 90px;
     }
-    .Careerbanner {
-        /* padding: 50px 16px 0 16px; */
+
+    .grow_img img {
+        width: 270px;
+        height: 270px
     }
 }
-@media only screen and (max-width:768px) {
-    .grow_img{
+
+@media only screen and (min-width: 1366px) and (max-width: 1449px) {
+
+    .grow_img {
+        top: -127px;
+        right: 135px;
+    }
+
+    .grow_img img {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+
+    .grow_img {
+        top: -114px;
+        right: 105px;
+    }
+
+    .grow_img img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 1124px) and (max-width: 1365px) {
+    .grow_img {
+        top: -123px;
+        right: 135px;
+    }
+
+    .grow_img img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .grow_img {
         top: -100px;
+        right: 95px;
+    }
+
+    .grow_img img {
+        width: 180px;
+        height: 180px;
     }
 }
-@media only screen and (max-width:640px) {
-    .grow_img{
-        top: -70px;
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+    .grow_img {
+        top: -88px;
+        right: 56px;
+    }
+
+    .grow_img img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .grow_img {
+        top: -65px;
+        right: 37px;
+    }
+
+    .grow_img img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .SingleIntro {
+        margin-top: 60px;
     }
 }

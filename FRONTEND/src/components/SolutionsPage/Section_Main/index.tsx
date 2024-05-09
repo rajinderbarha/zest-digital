@@ -82,9 +82,24 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
           </div>
         </div>
         <div className="main_padding">
-          <div
-            className={`max-w-[1345px] font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] lg:-mt-64 md:-mt-[200px] -mt-[165px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] overflow-x-clip `}
-          >
+
+        <div
+          className={`max-w-[1345px] font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] lg:-mt-64 md:-mt-[200px] -mt-[165px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px]  `}
+        >
+          <Growth_engine
+            has_image={false}
+            shadow_right={false}
+            props={{
+              title: card[0].card.heading,
+              description: card[0].card.description,
+              buttonName: card[0].card.buttonName,
+              buttonLink: `/solutions/${card[0].slug.current}`,
+              image: card[0].card?.image ? urlFor(card[0].card.image).url() : "",
+            }}
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
+
             <Growth_engine
               has_image={false}
               shadow_right={false}

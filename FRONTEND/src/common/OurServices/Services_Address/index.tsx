@@ -18,7 +18,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
           <div
             className={`${classes.bg_image} rounded-[20px] md:rounded-30px xl:py-[160px] lg:py-[130px] md:py-[100px] sm:py-[70px] py-[50px] xl:px-[77px] lg:px-[60px] md:px-[45px] sm:px-[35px] px-[25px]  grid md:grid-cols-2 md:gap-y-0 gap-y-12 md:gap-x-10`}
           >
-            <div className="col-span-1 sm:max-w-[558px] max-w-[250px]  mx-auto">
+            <div className="col-span-1 md:max-w-[558px] sm:max-w-[300px] max-w-[250px]  mx-auto">
               <h2 className="font-mono xl:text-55px lg:text-50px md:text-40px sm:text-30px text-25px font-semibold text-color-9 text-center ">
                 {heading_add}
               </h2>

@@ -10,3 +10,53 @@
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
+
+
+
+@media only screen and (min-width: 1775px) {
+    .top_image{
+        max-width: 250px;
+        /* margin-bottom: 40px; */
+    }
+
+}
+
+@media only screen and (min-width: 1450px) and (max-width: 1774px) {
+    .top_image{
+        max-width: 230px;
+        /* margin-bottom: 35px; */
+    }
+
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1449px) {
+      .top_image{
+        max-width: 210px;
+        /* margin-bottom: 30px; */
+    }
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+    .top_image{
+        max-width: 190px;
+        /* margin-bottom: 27px; */
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .top_image{
+        max-width: 170px;
+        /* margin-bottom: 22px; */
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .top_image ~ p{
+    font-size: 22px;
+    }
+}

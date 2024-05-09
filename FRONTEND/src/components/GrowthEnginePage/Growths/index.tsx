@@ -20,7 +20,7 @@ function Growths({ data ,otherSolHeading}: any ) {
                 {otherSolHeading}
               </h2>
             {/* ))} */}
-            <div className={` font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] mt-10 md:mt-28 `}>
+            <div className={` font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] mt-10 md:mt-28 lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] `}>
               <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto">
                 {data.slice(0, 2).map((item: any, index: number) => {
                   return (

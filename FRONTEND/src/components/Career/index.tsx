@@ -26,7 +26,7 @@ const Career: React.FC<CareerProps> = ({ data }) => {
                 className={`${classes.SingleIntro}  main_container md:rounded-30px rounded-[20px]`}
               >
                 <div
-                  className={`${classes.single_container} max-w-[1335px] mx-auto lg:pt-[170px] md:pt-[130px] pt-[80px] lg:pb-[140px] mb:pb-[90px] pb-[50px] relative`}
+                  className={`${classes.single_container} main_padding max-w-[1335px] mx-auto lg:pt-[170px] md:pt-[130px] sm:pt-[80px] pt-[45px] lg:pb-[140px] mb:pb-[90px] pb-[50px] relative`}
                 >
                   <div
                     className={`${classes.grow_img}  absolute max-w-[120px] sm:max-w-[180px] md:max-w-[220px] lg:max-w-max `}
@@ -34,8 +34,8 @@ const Career: React.FC<CareerProps> = ({ data }) => {
                     <Image
                       src={urlFor(image).url()}
                       alt=""
-                      width={280}
-                      height={280}
+                      width={294}
+                      height={294}
                       className=""
                     />
                   </div>

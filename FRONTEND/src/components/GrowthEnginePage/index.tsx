@@ -51,12 +51,15 @@ function GrowthEnginePage({ data, card, otherSolHeading }: any) {
       />
       <GrowthEnginePage_Box data={data.growthSection} />
       {currentPath == `/solutions/growth-tracker` && <Sign_up />}
+
+      <div className="main_padding">
       <Global_Accordion
         heading_acc={heading_acc}
         belowbtnLink_acc={belowbtnLink_acc}
         belowbtnName_acc={belowbtnName_acc}
         card_acc={card_Accordian}
-      />
+        />
+        </div>
       <Growths data={card} otherSolHeading={otherSolHeading} />
     </>
   );

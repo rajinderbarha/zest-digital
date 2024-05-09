@@ -19,7 +19,7 @@ function Resources_Calculater_Step_2({setStep}:any) {
                             <p className="font-mono text-[15px] md:text-base font-normal text-center ">Select an option below:</p>
                         </div>
                         <div className="grid md:grid-cols-2 sm:gap-10 gap-[20px] xl:mb-[70px] lg:mb-[50px] md:mb-[30px]  mb-[55px]">
-                            <div className="col-span-1 max-w-[493px] mx-auto text-center">
+                            <div className="col-span-1 max-w-[493px] mx-auto text-center border rounded-[30px] border-color-9">
                                 <div className="text-center mx-auto">
                                     <Image src={ecommerce_icon} alt='' className='mx-auto lg:max-w-[195px] lg:max-h-[195px] md:max-w-[140px] md:max-h-[140px] sm:max-w-[100px] sm:max-h-[100px] max-w-[90px] max-h-[90px] ' />
                                 </div>

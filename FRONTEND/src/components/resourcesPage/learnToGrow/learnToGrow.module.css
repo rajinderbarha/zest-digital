@@ -10,22 +10,10 @@
 .single_container{
     /* margin-top: -100px; */
 }
-.grow_img{
-    right: 0;
-    top:-140px;
-    right: 50px;
-}
+
 @media only screen and (min-width:768px) and (max-width:1024px){
     .SingleIntro{
         margin-top: 90px;
-    }
-}
-@media only screen and (max-width:767px){
-    .SingleIntro{
-        margin-top: 80px;
-    }
-    .grow_img{
-        top:-100px;
     }
 }
 
@@ -39,10 +27,13 @@
       margin-right: 100px  ;
     }
     .grow_img{
-        width: 300px;
       right: 0;
-      top:-140px;
+      top:-163px;
       right: 50px;
+  }
+  .grow_img img{
+    width: 300px;
+        height: 300px;
   }
   }
   @media only screen and (min-width: 1450px) and (max-width: 1774px) {
@@ -51,9 +42,12 @@
       margin-right: 75px  ;
     }
     .grow_img{
-        width: 270px;
-      top:-124px;
+      top:-144px;
       right: 90px;
+    }
+    .grow_img img{
+      width: 270px;
+        height: 270px
     }
   }
   @media only screen and (min-width: 1366px) and (max-width: 1449px) {
@@ -62,9 +56,12 @@
       margin-right: 60px  ;
     }
     .grow_img{
-        width: 230px;
-        top:-106px;
+        top:-122px;
       right: 135px;
+    }
+    .grow_img img{
+      width: 230px;
+        height: 230px;
     }
   }
   @media only screen and (min-width: 1024px) and (max-width: 1365px){
@@ -73,17 +70,23 @@
       margin-right: 40px  ;
     }
     .grow_img{
-      width: 200px;
-      top:-94px;
+      top:-109px;
       right: 105px;
+    }
+    .grow_img img{
+      width: 200px;
+      height: 200px;
     }
     
   }
   @media only screen and (min-width: 1124px) and (max-width: 1365px){
     .grow_img{
-      width: 220px;
-      top:-106px;
+      top:-118px;
     right: 135px;
+  }
+  .grow_img img{
+    width: 220px;
+      height: 220px;
   }
   }
   @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -92,23 +95,32 @@
       margin-right: 25px  ;
     }
     .grow_img{
-      width: 180px;
-      top:-85px;
+      top:-97px;
       right: 95px;
+    }
+    .grow_img img{
+      width: 180px;
+      height: 180px;
     }
   }
   @media only screen and (min-width: 640px) and (max-width: 767px){
     .grow_img{
-      width: 160px;
-      top: -73px;
+      top: -86px;
       right: 56px;
+    }
+    .grow_img img{
+      width: 160px;
+      height: 160px;
     }
   }
   @media only screen and (max-width: 639px) {
     .grow_img{
-      width: 115px;
-      top: -53px;
+      top: -62px;
       right: 37px;
+    }
+    .grow_img img{
+      width: 115px;
+      height: 115px;
     }
     .SingleIntro{
       margin-top: 50px;

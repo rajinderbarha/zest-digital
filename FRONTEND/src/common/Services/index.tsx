@@ -15,13 +15,14 @@ const Services = ({ data }: HomePageServices) => {
             className={`${classes.bg_image}  xl:pt-[88px] lg:pt-[65px] md:pt-[45px] sm:pt-[30px] pt-[25px] xl:px-[100px] lg:px-[80px] md:px-[60px] sm:px-[40px] px-[30px] xl:pb-[80px] lg:pb-[60px] md:pb-[40px] sm:pb-[25px] pb-[20px] bg-black rounded-[20px] md:rounded-30px font-mono flex md:flex-row flex-col `}
           >
             <div className="  xl:pb-[158px] lg:pb-[120px] md:pb-[90px] pb-[20px]">
-            <h2 className=" md:w-max xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[28px] text-white font-semibold xl:mb-[14px] lg:mb-[12px] md:mb-[10px] sm:mb-[6px] mb-[4px]">
+              <h2 className="  md:w-max xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[28px] text-white font-semibold xl:mb-[25px] lg:mb-[20px] md:mb-[10px] sm:mb-[6px] mb-[4px]">
                 {data.title}
               </h2>
               <div className="  flex xl:gap-[17px] lg:gap-[12px] md:gap-[9px] sm:gap-[7px] gap-[5px] flex-col text-white">
-                {data.services.map((item: any, index: number) => (
-                  <ul key={`${index}_servicesList`}>
-                    <li>
+                <ul >
+                  {data.services.map((item: any, index: number) => (
+
+                    <li key={`${index}_servicesList `} className="mb-6">
                       {" "}
                       <Link
                         href={`/services/${item.slug}`}
@@ -31,8 +32,9 @@ const Services = ({ data }: HomePageServices) => {
                         <GoArrowRight />
                       </Link>
                     </li>
-                  </ul>
-                ))}
+
+                  ))}
+                </ul>
               </div>
             </div>
             <div className="md:flex xl:gap-[40px] lg:gap-[25px] md:gap-[8px] ms-auto hidden xl:-mt-[150px] lg:-mt-[120px] -mt-[90px]">
