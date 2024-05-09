@@ -64,10 +64,8 @@ export interface LogoMoving {
 }
 export interface GrowthEngineProps {
   props: {
-
     title: string;
     // heading: string;
-
     description: string;
     buttonName: string;
     buttonLink: string;
@@ -232,9 +230,7 @@ export interface ClimateAction {
     _type: string;
     asset: { _type: string };
   };
-
   earth_img: { type: string; asset: { type: string } };
-
   smallDescription: string;
 }
 export interface FooterType extends ClimateAction {
@@ -251,13 +247,11 @@ export interface FooterType extends ClimateAction {
   }[];
   brands: {
     id: any;
-
     brandImage: { type: string; asset: { type: string } };
   }[];
   social: {
     id: any;
     socialImage: { type: string; asset: { type: string } };
-
     socialLink: string;
   }[];
   copyRightText: any;
@@ -293,7 +287,6 @@ export interface SolSection_Main_Card {
     image: any;
   };
   slug: Slug;
-
 }
 export interface Slug {
   current: string;
