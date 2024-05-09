@@ -6,7 +6,8 @@ import Action from '../singlebox/action';
 import Result from '../singlebox/result';
 import Image from 'next/image';
 import { urlFor } from '../../../../lib/sanity.client'
-function SingleIntro({ hero, card, team }: any) {
+import { SingleCasestudyType } from '../../../../lib/interface';
+function SingleIntro({ hero, card, team }: SingleCasestudyType) {
   const { heading, profile } = team;
     
     return (
@@ -53,7 +54,7 @@ function SingleIntro({ hero, card, team }: any) {
               </h2>
               <div className="">
                 <div className="About_team_box text-center grid grid-cols-2 md:grid-cols-3  md:gap-x-20 md:gap-y-20 sm:gap-x-[60px] sm:gap-y-[30px] gap-x-[40px] gap-y-[20px]">
-                  {profile?.map((data: any, index: any) => (
+                  {profile?.map((data, index: any) => (
                     <div key={`${index}_About_team_2`}>
                     <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[463px]">
                       <div

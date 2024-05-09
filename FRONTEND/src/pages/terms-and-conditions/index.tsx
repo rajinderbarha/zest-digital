@@ -14,10 +14,20 @@ function Termsconditions({
 export default Termsconditions;
 
 export async function getServerSideProps() {
-  const termsAndConditionData = await getTermsndConditionsData();
-  return {
-    props: {
-      termsAndConditionData,
-    },
-  };
+  try{
+
+    const termsAndConditionData = await getTermsndConditionsData();
+    return {
+      props: {
+        termsAndConditionData,
+      },
+    };
+  }catch(e){
+    console.log(`Error fetching Termscondition data ${e}`)
+    return {
+      props: {
+        termsAndConditionData: [],
+      },
+    };
+  }
 }

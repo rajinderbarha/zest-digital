@@ -2,8 +2,9 @@ import React from "react";
 import classes from "../instrumental.module.css";
 import Image from "next/image";
 import { urlFor } from "../../../../../lib/sanity.client";
+import { Gross_profitType } from "../../../../../lib/interface";
 
-function Instrumental({ data }: any) {
+function Instrumental({ data }: {data:Gross_profitType}) {
 
   const { hero } = data
   return (

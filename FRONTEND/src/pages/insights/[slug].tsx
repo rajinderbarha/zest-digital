@@ -1,8 +1,10 @@
 import SingleInsightPage from "@/components/SingleInsightPage";
 import React from "react";
 import { getSingleInsightsData } from "../../../lib/sanity.query";
+import { SingleInsightsType } from "../../../lib/interface";
 
-function singleinsightpage({ singleInsights }: any) {
+function singleinsightpage({ singleInsights }: { singleInsights: SingleInsightsType[] }) {
+  // console.log("singleInsights",singleInsights)
   return (
     <>
       <SingleInsightPage data={singleInsights[0]} />

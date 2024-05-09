@@ -13,7 +13,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
     SeeOurResBtnLink,
     image,
     videosrc,
-  } = HeroSecData
+  } = HeroSecData || {}
 
   console.log("vv", viewSolBtnLink, SeeOurResBtnLink);
   return (

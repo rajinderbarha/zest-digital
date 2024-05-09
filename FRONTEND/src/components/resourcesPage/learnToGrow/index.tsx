@@ -1,14 +1,15 @@
 import React from "react";
 import classes from "./learnToGrow.module.css";
-import how_to_grow from "../../../assets/images/how_to_grow.png";
-import down_arrow from "../../../assets/images/grow_down.png";
+// import how_to_grow from "../../../assets/images/how_to_grow.png";
+// import down_arrow from "../../../assets/images/grow_down.png";
 import Image from "next/image";
 import Logo_moving from "@/common/Logo_moving";
-import Climate_action from "@/common/Climate_action";
+// import Climate_action from "@/common/Climate_action";
 import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
-function LearnToGrow({ data }: any) {
-  console.log("tools =", data );
+import { Resources } from "../../../../lib/interface";
+function LearnToGrow({ data }: {data:Resources}) {
+  // console.log("tools =", data );
   
   return (
     <>

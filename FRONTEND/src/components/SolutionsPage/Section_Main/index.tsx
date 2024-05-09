@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import classes from "./Section_Main.module.css";
 import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
+import { SolSection_Main, SolSection_Main_Card } from "../../../../lib/interface";
 
-function Section_Main({ data, card }: any) {
+function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_Main_Card[] }) {
 
 
   const texts = ["Wear ", "Cover Face ", "Wash Your "];

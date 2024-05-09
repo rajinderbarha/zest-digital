@@ -1,16 +1,16 @@
 import Image from "next/image";
 import React from "react";
 import classes from "../Services_details.module.css";
-import { ServiceDetail } from "../../../../../lib/interface";
+import { HappyCustomer } from "../../../../../lib/interface";
 import { urlFor } from "../../../../../lib/sanity.client";
 import { PortableText } from "next-sanity";
 
-const Services_details_happy_customer = (props: any) => {
+const Services_details_happy_customer = ({ Services_details }: { Services_details: HappyCustomer[] }) => {
   return (
     <>
       <div className="main_padding ">
         <div className={`${classes.objective} main_container`}>
-          {props.Services_details.map((item: any, index: number) =>
+        {Services_details.map((item: HappyCustomer, index: number) =>
             index % 2 == 0 ? (
               <div
               key={`${item.heading}_${index}`}

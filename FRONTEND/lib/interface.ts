@@ -3,7 +3,6 @@ import { ReactNode } from "react";
 export interface ScheduleCallProps {
   schedule_a_call: Schedule_a_call[];
 }
-
 export interface Schedule_a_call {
   heading: string;
   description: string;
@@ -35,7 +34,6 @@ export interface HomepageProps {
     };
   }[];
 }
-
 export interface HomepageHeroSec {
   HeroSecData: {
     heading: string;
@@ -47,8 +45,8 @@ export interface HomepageHeroSec {
     videosrc: any;
   };
 }
-
 export interface HomepageGrowthCard {
+  // switcher: any;
   card: {
     growthcard?: any;
     length?: number;
@@ -59,17 +57,15 @@ export interface HomepageGrowthCard {
     horizontalbars?: { desc: string; numHeading: string; title: string }[];
   };
 }
-
 export interface LogoMoving {
   LogoMovdata: {
     icon: string;
   }[];
 }
-
 export interface GrowthEngineProps {
   props: {
-    // heading:string;
     title: string;
+    // heading: string;
     description: string;
     buttonName: string;
     buttonLink: string;
@@ -78,7 +74,6 @@ export interface GrowthEngineProps {
   has_image: boolean;
   shadow_right: boolean;
 }
-
 export interface HomePageServices {
   data: {
     title: string;
@@ -121,17 +116,15 @@ export interface ContactType {
 
 //---------------------------------------------Career------------------------------------
 export interface CareerCard {
-  image: string; // Assuming this is the URL of the image
+  image: string;
   title: string;
   description: string;
 }
-
 export interface CareersType {
   heading: string;
   card: CareerCard;
   banner: ClimateAction;
 }
-
 export interface CareerProps {
   data: CareersType[];
 }
@@ -145,7 +138,6 @@ export interface ImageType {
     url: string;
   };
 }
-
 export interface AboutBanner {
   title: string;
   heading: string;
@@ -178,13 +170,11 @@ export interface AboutEscapeSec {
   }[];
 }
 
-
 export interface AboutBanner {
   image1: ImageType;
   image2: ImageType;
   description: string;
-};
-
+}
 
 export interface AboutType {
   hero: AboutBanner;
@@ -201,23 +191,12 @@ export interface AboutType {
   };
   card: AboutCard[];
   escape: AboutEscapeSec;
-  banner: AboutBanner
+  banner: AboutBanner;
 }
 
 //---------------------------------------------About------------------------------------
 
-
-
-
-
-
-
-
-
-
-
 //---------------------------------------------Termsconditions------------------------------------
-
 export interface TermsAndConditionsType {
   heading: string;
   cards: {
@@ -231,390 +210,131 @@ export interface TermsAndConditionsType {
   }[];
   banner: ClimateAction;
 }
-
 export interface SingletermsAndConditionsType {
   content: any;
   title: string;
 }
-
 //---------------------------------------------Termsconditions------------------------------------
 
-
-
-
-
-
-//---------------------------------------------Solution------------------------------------
-
-//---------------------------------------------Solution------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export interface SingalcasebannerProps {
-  data: {
-    title: string;
-    upperTitle: string;
-  };
-}
-
-export interface FooterType {
-  id: any;
-
-  climate_actionImg: {
-    _type: string;
-    asset: { _type: string /* other fields */ };
-  };
-  earth_img: { _type: string; asset: { _type: string /* other fields */ } };
-  smallDescription: string;
-
-  logo: string;
-  footerItem: {
-    id: any;
-    heading: string;
-    list: {
-      id:any,
-      contact:any,
-      address:any,
-      // name: string;
-      // link: string;
-      // icon: { _type: string; asset: { _type: string /* other fields */ } };
-    }[];
-  }[];
-  brands: {
-    id: any;
-    brandImage: { _type: string; asset: { _type: string /* other fields */ } };
-  }[];
-  social: {
-    id: any;
-    socialImage: { _type: string; asset: { _type: string /* other fields */ } };
-    socialLink: string;
-  }[];
-  copyRightText: any;
-}
-
-export interface ClimateAction {
-  climate_actionImg: {
-    _type: string;
-    asset: { _type: string /* other fields */ };
-  };
-  earth_img: { _type: string; asset: { _type: string /* other fields */ } };
-  smallDescription: string;
-}
-
+//---------------------------------------------Header------------------------------------
 export interface HeaderType {
   logo: any;
   navItem: { buttonName: string; buttonLink: string }[];
   button: { navName: string; navLink: string };
 }
+//---------------------------------------------Header------------------------------------
 
-// export interface TermsAndConditionsType {
-//   heading: string;
-//   cards: {
-//     slug: string;
-//     title: string;
-//     smallDescription: string;
-//     buttonName: string;
-//     buttonLink: string;
-//     content: string[];
-//     banner: ClimateAction;
-//   }[];
-//   banner: ClimateAction;
-// }
-
-export interface GrowthTrackerType {
-  children: any;
-  growthTracker: {
-    heroSection: {
-      upperTitle: string;
-      heading: string;
-      button: {
-        buttonName: string;
-        buttonLink: string;
-      };
-    };
-    growthSection: {
-      headingUpper: string;
-      titleUpper: string;
-      growthContent: {
-        title: string;
-        description: string;
-        buttonName: string;
-        buttonLink: string;
-      }[];
-      headingBelow: string;
-      titleBelow: string;
-      image: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-    };
-    solution: {
-      heading: string;
-      card: {
-        title: string;
-        description: string;
-        buttonName: string;
-        buttonLink: string;
-      }[];
-      image: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-    };
-    banner: {
-      climate_actionImg: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-      earth_img: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-      smallDescription: string;
-    };
+//---------------------------------------------Footer------------------------------------
+export interface ClimateAction {
+  climate_actionImg: {
+    _type: string;
+    asset: { _type: string };
   };
-  
-  signupform: {
-    signupheading: string;
-    signupdescription: string;
-    firstnameLabel: string;
-    lastnameLabel: string;
-    emailLabel: string;
+  earth_img: { type: string; asset: { type: string } };
+  smallDescription: string;
+}
+export interface FooterType extends ClimateAction {
+  id: any;
+  logo: string;
+  footerItem: {
+    id: any;
+    heading: string;
+    list: {
+      id: any;
+      contact: any;
+      address: any;
+    }[];
+  }[];
+  brands: {
+    id: any;
+    brandImage: { type: string; asset: { type: string } };
+  }[];
+  social: {
+    id: any;
+    socialImage: { type: string; asset: { type: string } };
+    socialLink: string;
+  }[];
+  copyRightText: any;
+}
+//---------------------------------------------Footer------------------------------------
+
+//---------------------------------------------Solution------------------------------------
+
+export interface SolutionProps {
+  brandList: { icon: string }[];
+  growth: SolSection_Main_Card[];
+  transform: SolSection_Main;
+  hero: Solution_BannerType;
+}
+export interface Solution_BannerType {
+  upperTitle: string;
+  heading: string;
+  image: any;
+}
+export interface SolSection_Main {
+  belowLine: string;
+  heading: string;
+  upperTitle: {
+    switcher: string[];
+    title: string;
+  };
+}
+export interface SolSection_Main_Card {
+  card: {
     buttonName: string;
-    buttonLink: string;
-    privacyDescription: string;
+    description: string;
+    heading: string;
+    image: any;
   };
+  slug: Slug;
 }
-
-export interface GrowthCurveType {
-  children: any;
-  growthCurve: {
-    heroSection: {
-      upperTitle: string;
-      heading: string;
-      button: {
-        buttonName: string;
-        buttonLink: string;
-      };
-    };
-    growthSection: {
-      headingUpper: string;
-      titleUpper: string;
-      growthContent: {
-        title: string;
-        description: string;
-        buttonName: string;
-        buttonLink: string;
-      }[];
-      headingBelow: string;
-      titleBelow: string;
-      image: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-    };
-    solution: {
-      heading: string;
-      card: {
-        title: string;
-        description: string;
-        buttonName: string;
-        buttonLink: string;
-      }[];
-      image: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-    };
-    banner: {
-      climate_actionImg: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-      earth_img: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-      smallDescription: string;
-    };
-  };
-  // signupform: {
-  //   signupheading: string;
-  //   signupdescription: string;
-  //   firstnameLabel: string;
-  //   lastnameLabel: string;
-  //   emailLabel: string;
-  // };
+export interface Slug {
+  current: string;
+  _type: string;
 }
+//---------------------------------------------Solution------------------------------------
 
-export interface GrowthEngineType {
-  growthEngine: {
-    heroSection: {
-      upperTitle: string;
-      heading: string;
-      button: {
-        buttonName: string;
-        buttonLink: string;
-      };
-    };
-    growthSection: {
-      headingUpper: string;
-      titleUpper: string;
-      growthContent: {
-        title: string;
-        description: string;
-        buttonName: string;
-        buttonLink: string;
-        price: {
-          priceOutline: string;
-        } | null; // Nullable type to handle null values
-      }[];
-      headingBelow: string;
-      titleBelow: string;
-      image: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-    };
-    solution: {
-      heading: string;
-      card: {
-        title: string;
-        description: string;
-        buttonName: string;
-        buttonLink: string;
-      }[];
-      image: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-    };
-    banner: {
-      climate_actionImg: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-      earth_img: {
-        _type: string;
-        asset: {
-          _type: string;
-          url: string;
-        };
-      };
-      smallDescription: string;
-    };
-  };
-  // signupform: {
-  //   signupheading: string;
-  //   signupdescription: string;
-  //   firstnameLabel: string;
-  //   lastnameLabel: string;
-  //   emailLabel: string;
-  // };
-}
-
-export interface ServiceCard {
+//---------------------------------------------Services------------------------------------
+export interface SingleOurService {
+  buttonName: ReactNode;
+  heading: ReactNode;
+  imageBox: any;
   slug: string;
   title: string;
+  smallDescription: string;
+  max_width: string;
+  button: {
+    callButtonName: string;
+    resultsButtonName: string;
+  };
+  Services_Box: Services_BoxType;
+
+  Services_details: HappyCustomer[];
+  Services_book_call: Services_book_cal;
+  ourSubServices: SubServices;
+  clientResults: clientResults;
+  globalaccordion: {
+    accordiongroup: AccordianType;
+  };
+  Services_Quotes: ServiceQuote[];
+  agencyAddress: AgencyAddress;
+  banner: ClimateAction;
 }
-
-export interface ServiceImages {
-  vertical_bar: string;
-  Code_icon: string;
-  target_icon: string;
-}
-
-// export interface OurServicesSection {
-//   heading: string;
-//   cards: ServiceCard[];
-//   images: ServiceImages;
-//   banner: ClimateAction;
-// }
-
-interface ourServiceCard {
-  percentage_CR: string;
-  mapped_title: string;
-  description_1_CR: string;
-  description_2_CR: string;
-  buttonName_CR: string;
-}
-
-interface ServiceImageBox {
+export interface ServiceImageBox {
   image: string;
   imagetitle: string;
 }
-
-interface ServiceContentBox {
+export interface Services_BoxType {
+  imageBox: ServiceImageBox[];
+  contentBox: ServiceContentBox;
+}
+export interface ServiceContentBox {
   heading: string;
   coloredText: string;
   description: string;
   belowdesc: string;
 }
-
-export interface Services_book_cal {
-  [x: string]: any;
-  heading: string;
-  buttonName: string;
-}
-
-export interface ServiceDetail {
+export interface HappyCustomer {
   [x: string]: any;
   Services_details: {
     heading: string;
@@ -624,7 +344,11 @@ export interface ServiceDetail {
     image: string;
   }[];
 }
-
+export interface Services_book_cal {
+  [x: string]: any;
+  heading: string;
+  buttonName: string;
+}
 export interface SubServices {
   heading_sub: string;
   services: {
@@ -633,29 +357,34 @@ export interface SubServices {
     desc_sub: string;
   }[];
 }
-
-export interface ServiceQuote {
-  desc_quote: string;
-  name_quote: string;
-}
-
-// export interface ServiceAddress {
-//   title_add: string;
-//   streetAddress_add: string;
-//   hourstitle_add: string;
-//   dayandtiming_add: string;
-// }
-
 export interface clientResults {
   title_CR: string;
   heading_CR: string;
   belowbuttonName_CR: string;
   card: ourServiceCard[];
   //   clientResult: {
-
   // }
 }
-
+export interface ourServiceCard {
+  percentage_CR: string;
+  mapped_title: string;
+  description_1_CR: string;
+  description_2_CR: string;
+  buttonName_CR: string;
+}
+export interface AccordianType {
+  heading_acc: string;
+  card_acc: {
+    question: string;
+    content: any;
+  }[];
+  belowbtnName_acc: string;
+  belowbtnLink_acc: string;
+}
+export interface ServiceQuote {
+  desc_quote: string;
+  name_quote: string;
+}
 export type AgencyAddress = {
   heading_add: string;
   slotDescription_add: string;
@@ -669,72 +398,132 @@ export type AgencyAddress = {
     contactno: string;
   }[];
 };
+//---------------------------------------------Services------------------------------------
 
-export interface SingleOurService {
-  buttonName: ReactNode;
-  heading: ReactNode;
-  imageBox: any;
-  slug: string;
-  title: string;
-  smallDescription: string;
-  max_width: string;
-  button: {
-    callButtonName: string;
-    resultsButtonName: string;
+//---------------------------------------------Resources------------------------------------
+export interface Resources {
+  tool: any;
+  brandList: { icon: any }[];
+  heading: string;
+  hero: {
+    description: string;
+    hovericon: { icon: any };
+    icon: any;
+    image: any;
+    title: string;
+    tool: {
+      buttonLink: string;
+      buttonName: string;
+      description: string;
+      heading: string;
+    }[];
   };
-  Services_Box: {
-    imageBox: ServiceImageBox[];
-    contentBox: ServiceContentBox;
-  };
-
-  Services_details: ServiceDetail[];
-  Services_book_call: Services_book_cal;
-  ourSubServices: SubServices;
-  clientResults: clientResults;
-  globalaccordion: {
-    accordiongroup: AccordianType;
-  };
-  Services_Quotes: ServiceQuote[];
-  agencyAddress: AgencyAddress;
-  banner: ClimateAction;
 }
+[];
+//---------------------------------------------Resources------------------------------------
 
-export interface AccordianType {
-  heading_acc: string;
-  card_acc: {
-    question: string;
-    content: any;
+//---------------------------------------------insights------------------------------------
+export interface FiltersType {
+  collection: {
+    hero: {
+      heading: string;
+      icon: any;
+      keywords: string[];
+    };
+    slug: Slug;
   }[];
-  belowbtnName_acc: string;
-  belowbtnLink_acc: string;
+  heading: string;
+  linkSection: {
+    linkName: string;
+    linkUrl: string;
+  };
+  linkSectionIcon: any;
 }
+export interface SingleInsightsType {
+  content: any;
+  hero: {
+    grow_down: any;
+    heading: string;
+    icon: any;
+    keywords: string[];
+  };
+  linkSection: {
+    icon: any;
+    linkName: string;
+    linkUrl: string;
+  };
+  slug: Slug;
+}
+//---------------------------------------------insights------------------------------------
 
-
-
-// export interface DigitalTermsOfServiceType {
-//   content: {
-//     _type: string; // Ensure correct typing based on your schema
-//     // Add any other fields if necessary
-//   }[];
-//   banner: {
-//     climate_actionImg: {
-//       _type: string; // Ensure correct typing based on your schema
-//       asset: {
-//         _type: string; // Ensure correct typing based on your schema
-//         url: string; // Ensure correct typing based on your schema
-//         // Add any other fields if necessary
-//       };
-//       // Add any other fields if necessary
-//     };
-//     earth_img: {
-//       _type: string; // Ensure correct typing based on your schema
-//       asset: {
-//         _type: string; // Ensure correct typing based on your schema
-//         url: string; // Ensure correct typing based on your schema
-//         // Add any other fields if necessary
-//       };
-//       // Add any other fields if necessary
-//     };
-//     smallDescription: string;
-//   };
-// }
+//---------------------------------------------Casestudy------------------------------------
+export interface CasestudyType {
+  collection: {}[];
+  hero: CaseStudyIntroType;
+}
+export interface CaseStudyIntroType {
+  buttonLink: string;
+  buttonName: string;
+  heading: string;
+  image: any;
+}
+export interface Gross_profitType {
+  hero: {
+    belowLine: string;
+    heading: string;
+    image: any;
+    imageDesc: string;
+    item: {
+      buttonname: string;
+      count: string;
+      description: string;
+      heading: string;
+      icon: any;
+      title: string;
+      _key: string;
+    }[];
+  };
+  slug: Slug;
+}
+export interface SingleCasestudyType {
+  // singleCasestudy:{}
+  Title: string;
+  card: Card[];
+  hero: Hero;
+  // slug: Slug;
+  team: Team;
+  upperTitle: string;
+}
+[];
+export interface Hero {
+  heading: string;
+  belowLine: string;
+  item: {
+    buttonname: string;
+    count: string;
+    description: string;
+    heading: string;
+    icon: any;
+    title: string;
+  }[];
+}
+export interface Team {
+  heading: string;
+  profile: {
+    description: string;
+    image: any;
+    name: string;
+  }[];
+}
+export interface Card {
+  description: any;
+  heading: string;
+  image: any;
+}
+export interface SingalcasebannerProps {
+  data: {
+    title: string;
+    upperTitle: string;
+  };
+}
+//---------------------------------------------Casestudy------------------------------------

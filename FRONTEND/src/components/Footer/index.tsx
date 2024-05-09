@@ -3,7 +3,7 @@ import classes from "./footer.module.css";
 import Image from "next/image";
 import { urlFor } from "../../../lib/sanity.client";
 import Link from "next/link";
-import { ClimateAction, FooterType } from "../../../lib/interface";
+import { FooterType } from "../../../lib/interface";
 import Climate_action from "@/common/Climate_action";
 import { PortableText } from "next-sanity";
 import { FaPhoneAlt } from "react-icons/fa";

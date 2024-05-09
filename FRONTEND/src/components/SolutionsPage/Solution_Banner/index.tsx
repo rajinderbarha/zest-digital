@@ -2,8 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import classes from './Solution_Banner.module.css'
 import { urlFor } from '../../../../lib/sanity.client'
+import { Solution_BannerType } from '../../../../lib/interface'
 
-function Solution_Banner({data}:any) {
+function Solution_Banner({data}:{data:Solution_BannerType}) {
     return (
         <>
              <div className={`${classes.Solution_Banner} main_padding`}>

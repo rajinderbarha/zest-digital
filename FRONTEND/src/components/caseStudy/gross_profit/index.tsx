@@ -2,14 +2,18 @@ import React from "react";
 import classes from "./gross_profit.module.css";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
-function Gross_profit({ data }: any) {
+import { Gross_profitType } from "../../../../lib/interface";
+function Gross_profit({ data }: { data: Gross_profitType }) {
+  const columnCount = Math.min(data?.hero?.item.length, 3); // Calculate the number of columns dynamically
+  const columnClass = `grid-cols-${columnCount}`;
+
   return (
     // xl:mt-[85px] lg:mt-[65px] md:mt-[50px] sm:mt-[40px] mt-[35px]
     <div className="main_padding ">
     <div className="main_container">
       <div className={`${classes.Gross_profit} main_padding   md:rounded-30px rounded-[20px] `}>
-        <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid grid-cols-3  justify-items-stretch	gap-10 2xl:gap-20`}>
-          {data?.hero?.item.map((item: any, index: number) => {
+        <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid ${columnClass}  justify-items-stretch	gap-10 2xl:gap-20`}>
+          {data?.hero?.item.map((item, index: number) => {
              
             return (
               // xl:px-[78px] lg:px-[55px] md:px-[40px] sm:px-[25px] px-[18px]
