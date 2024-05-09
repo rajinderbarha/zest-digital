@@ -3,7 +3,7 @@ import React from "react";
 // import { GrowthTrackerType } from "../../../../lib/interface";
 
 function Growths({ data ,otherSolHeading}: any ) {
-  // console.log("growths-------------",data)
+  console.log("growths-------------",data)
   return (
     <>
     {/* xl:mb-[311px] lg:mb-[250px]  md:mb-[160px] sm:mb-[150px] mb-[50px] */}

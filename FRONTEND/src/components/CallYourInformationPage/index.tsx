@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './callYourInformationPage.module.css'
+import classes from './CallYourInformationPage.module.css'
 import Link from 'next/link'
 import { GoArrowLeft } from "react-icons/go";
 function CallYourInformation() {
