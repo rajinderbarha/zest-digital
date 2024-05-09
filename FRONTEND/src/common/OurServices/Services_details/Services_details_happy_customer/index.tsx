@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import classes from "../Services_details.module.css";
 import { HappyCustomer } from "../../../../../lib/interface";
@@ -10,10 +9,12 @@ const Services_details_happy_customer = ({ Services_details }: { Services_detail
     <>
       <div className="main_padding ">
         <div className={`${classes.objective} main_container`}>
+
         {Services_details.map((item: HappyCustomer, index: number) =>
+
             index % 2 == 0 ? (
               <div
-              key={`${item.heading}_${index}`}
+                key={`${item.heading}_${index}`}
                 className={`flex items-center  flex-col md:flex-row  bg-white ${classes.objective_inner} ${classes.objective_select} lg:gap-10  `}
               >
                 <div className=" md:max-w-[1057px] xl:pe-[100px] lg:pe-[70px] md:pe-[50px]">
@@ -26,10 +27,8 @@ const Services_details_happy_customer = ({ Services_details }: { Services_detail
                   </div>
                 </div>
                 <div className="md:flex mx-auto  hidden">
-                  <Image
+                  <img
                     src={urlFor(item.image).url()}
-                    width={350}
-                    height={350}
                     alt=""
                     className="xl:max-w-[350px] lg:max-w-[250px] md:max-w-[180px] max-w-[200px]"
                   />
@@ -41,10 +40,8 @@ const Services_details_happy_customer = ({ Services_details }: { Services_detail
                 className={`flex items-center flex-col-reverse md:flex-row  bg-white ${classes.objective_inner} lg:gap-10 `}
               >
                 <div className=" image_class md:flex mx-auto  hidden ">
-                  <Image
+                  <img
                     src={urlFor(item.image).url()}
-                    width={400}
-                    height={400}
                     alt=""
                     className="xl:max-w-[400px] lg:max-w-[300px] md:max-w-[230px] max-w-[200px]"
                   />

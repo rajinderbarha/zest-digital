@@ -54,16 +54,17 @@ const Services = ({ data }: HomePageServices) => {
                   height={282}
                   alt=""
                   className=" "
-                />
+                  />
               </div>
               <div className="    h-max">
+
                 <Image
                   src={urlFor(data.image3).url()}
                   width={273}
                   height={273}
                   alt=""
                   className="  "
-                />
+                  />
               </div>
             </div>
           </div>

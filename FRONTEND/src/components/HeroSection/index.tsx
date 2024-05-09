@@ -55,12 +55,14 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
               className={`${classes.banner_video}  flex justify-end items-start  relative`}
             >
               <div className={`${classes.marketing_agency_logo_2}`}>
+
                 {/* <Image
                   src={urlFor(image).url()}
                   width={236}
                   height={246}
                   alt=""
                 /> */}
+
               </div>
               <div className={classes.custom_border}>
                 <video width="680" height="480" controls className={`${classes.video_class} xl:rounded-30px md:rounded-[20px] rounded-[10px]`}>
@@ -79,3 +81,8 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
 };
 
 export default HeroSection;
+
+
+
+
+

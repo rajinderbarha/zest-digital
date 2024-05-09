@@ -8,14 +8,13 @@ import Logo_moving from "@/common/Logo_moving";
 import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
 import { Resources } from "../../../../lib/interface";
+
 function LearnToGrow({ data }: {data:Resources}) {
   // console.log("tools =", data );
-  
+
   return (
     <>
       <div className="main_padding">
-
-
         <div
           className={`${classes.SingleIntro}  main_container  h-100 rounded-[20px] md:rounded-30px`}
         >
@@ -68,28 +67,27 @@ function LearnToGrow({ data }: {data:Resources}) {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1355px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] font-mono mx-auto mt-[40px] md:mt-[80px]">
               {data.tool.map((item: any, index: number) => {
-                const data = {
+                const key = `tool_${index}`; // Unique key for each item
+                const updatedItem = {
                   ...item,
                   buttonLink: `/resources?popup=${item.buttonLink}`,
                 };
 
                 return (
-                  <>
-                    <Growth_engine
-                      props={data}
-                      has_image={false}
-                      shadow_right={index % 2 === 0}
-                    />
-                  </>
+                  <Growth_engine
+                    key={key} // Assigning the key prop here
+                    props={updatedItem}
+                    has_image={false}
+                    shadow_right={index % 2 === 0}
+                  />
                 );
               })}
             </div>
+
           </div>
         </div>
       </div>
       <div className="xl:mt-[200px] lg:mt-[170px] md:mt-[120px] sm:mt-[80px] mt-[50px] xl:mb-[190px] lg:mb-[160px] md:mb-[110px] sm:mb-[80px] mb-[50px]">
-
-
         <Logo_moving LogoMovdata={data.brandList.map((a: any) => a)} />
       </div>
     </>

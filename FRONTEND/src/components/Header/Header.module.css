@@ -49,6 +49,7 @@
     height: 23px;
     right: 0!important;
 }
-  .custom_menu_items_class{
-    @apply text-color-1 font-mono text-[20px] md:text-[22px] px-4 py-[3px] md:py-[8px] mb-[10px] hover:bg-color-1 hover:text-white rounded-[6px]  active:bg-color-1 active:text-white
+
+.custom_menu_items_class{
+  @apply text-color-1 font-mono text-[20px] md:text-[22px] px-4 py-[3px] md:py-[8px] mb-[10px] hover:bg-color-1 hover:text-white rounded-[6px]  active:bg-color-1 active:text-white
 }
