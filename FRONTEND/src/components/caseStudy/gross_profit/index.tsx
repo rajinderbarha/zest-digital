@@ -77,8 +77,8 @@ function Gross_profit({ data }: { data: Gross_profitType }) {
 
     <div className="main_container">
       <div className={`${classes.Gross_profit} main_padding   md:rounded-30px rounded-[20px] `}>
-        <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid grid-cols-3  justify-items-stretch	gap-10 2xl:gap-20`}>
-          {data?.hero?.item.map((item: any, index: number) => {
+        <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid ${columnClass}  justify-items-stretch	gap-10 2xl:gap-20`}>
+          {data?.hero?.item.map((item, index: number) => {
              
             return (
               // xl:px-[78px] lg:px-[55px] md:px-[40px] sm:px-[25px] px-[18px]

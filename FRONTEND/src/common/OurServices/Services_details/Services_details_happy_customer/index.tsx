@@ -9,7 +9,9 @@ const Services_details_happy_customer = ({ Services_details }: { Services_detail
     <>
       <div className="main_padding ">
         <div className={`${classes.objective} main_container`}>
-          {Services_details.map((item: HappyCustomer, index: number) =>
+
+        {Services_details.map((item: HappyCustomer, index: number) =>
+
             index % 2 == 0 ? (
               <div
                 key={`${item.heading}_${index}`}

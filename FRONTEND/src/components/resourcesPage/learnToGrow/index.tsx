@@ -9,8 +9,8 @@ import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
 import { Resources } from "../../../../lib/interface";
 
-
-function LearnToGrow({ data }: { data: Resources }) {
+function LearnToGrow({ data }: {data:Resources}) {
+  // console.log("tools =", data );
 
   return (
     <>

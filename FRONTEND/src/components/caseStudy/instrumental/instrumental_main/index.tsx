@@ -5,6 +5,7 @@ import { urlFor } from "../../../../../lib/sanity.client";
 import { Gross_profitType } from "../../../../../lib/interface";
 
 function Instrumental({ data }: {data:Gross_profitType}) {
+
   const { hero } = data
   return (
     // xl:mt-[112px] lg:mt-[90px] md:mt-[60px] sm:mt-[40px] mt-[30px] xl:mb-[271px] lg:mb-[220px] md:mb-[170px] sm:mb-[120px] mb-[70px]

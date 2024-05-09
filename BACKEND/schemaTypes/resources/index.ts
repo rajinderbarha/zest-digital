@@ -53,7 +53,7 @@ export const Resources = defineType({
           title: 'Card',
           type: 'object',
           fields: [
-            {name: 'heading', title: 'Heading', type: 'string'},
+            {name: 'title', title: 'Title', type: 'string'},
             {
               name: 'description',
               title: 'Description',

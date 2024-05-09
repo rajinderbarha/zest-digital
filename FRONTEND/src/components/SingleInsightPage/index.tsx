@@ -8,7 +8,9 @@ import Link from "next/link";
 import { SingleInsightsType } from "../../../lib/interface";
 
 function SingleInsightPage({ data }: { data: SingleInsightsType }) {
-  // console.log("singleInsights-------", data);
+
+  // console.log("singleInsights", data);
+
   return (
     <>
       <div className="SingleInsightPage mt-[50px] md:mt-[100px] main_padding">
