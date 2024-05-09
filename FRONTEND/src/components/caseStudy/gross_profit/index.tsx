@@ -67,14 +67,13 @@ import classes from "./gross_profit.module.css";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { Gross_profitType } from "../../../../lib/interface";
-
 function Gross_profit({ data }: { data: Gross_profitType }) {
   const columnCount = Math.min(data?.hero?.item.length, 3); // Calculate the number of columns dynamically
   const columnClass = `grid-cols-${columnCount}`;
 
   return (
+    // xl:mt-[85px] lg:mt-[65px] md:mt-[50px] sm:mt-[40px] mt-[35px]
     <div className="main_padding ">
-
     <div className="main_container">
       <div className={`${classes.Gross_profit} main_padding   md:rounded-30px rounded-[20px] `}>
         <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid ${columnClass}  justify-items-stretch	gap-10 2xl:gap-20`}>
@@ -117,9 +116,9 @@ function Gross_profit({ data }: { data: Gross_profitType }) {
                         <p className='font-lato text-lg font-normal  text-white mb-4'>Best SEO Campaign finalist at the UK Digital Growth Awards</p>
                         <button className='font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center'>View case study <span className='p-1 text-white rounded-full bg-black me-1 text-lg'><GoArrowRight /></span></button>
                     </div> */}
-
         </div>
       </div>
+    </div>
     </div>
   );
 }
