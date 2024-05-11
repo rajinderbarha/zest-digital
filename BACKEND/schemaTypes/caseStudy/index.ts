@@ -19,13 +19,32 @@ export const CaseStudy = defineType({
                 { name: 'buttonLink', type: 'string', title: 'Button Link' },
             ],
         },
-        {
-            name: 'collection',
-            title: 'Collection',
-            type: 'array',
-            of: [{ type: 'reference', to: [{ type: 'singleCaseStudy' }] }],
 
+        {
+            name: 'section',
+            title: 'Section',
+            type: 'array',
+            of: [
+                {
+                    type: 'object',
+                    fields: [
+                        { name: 'heading', type: 'string', title: 'Heading' },
+                        { name: 'belowLine', type: 'string', title: 'Below Line'},
+                        { name: 'imageDesc', type: 'string', title: 'Image Desc'},
+                        { name: 'image', type: 'image', title: 'Image' },
+
+                        {
+                            name: 'collection',
+                            title: 'Collection',
+                            type: 'array',
+                            of: [{ type: 'reference', to: [{ type: 'singleCaseStudy' }] }],
+                
+                        },
+                    ],
+                },
+            ],
         },
+       
         {
             name: 'banner',
             title: 'Banner',

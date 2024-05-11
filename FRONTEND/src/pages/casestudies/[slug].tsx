@@ -6,7 +6,7 @@ import { SingleCasestudyType } from "../../../lib/interface";
 import { GetStaticPaths } from "next";
 
 function singlecasestudy({ singleCasestudy }: {singleCasestudy:SingleCasestudyType[]}) {
-  console.log("singleCasestudy", singleCasestudy);
+ 
 
   const data = {
     title: singleCasestudy[0].Title,
@@ -18,7 +18,7 @@ function singlecasestudy({ singleCasestudy }: {singleCasestudy:SingleCasestudyTy
       <Singalcasebanner data={data} />
       <SingleIntro
         hero={singleCasestudy[0].hero}
-        card={singleCasestudy[0].card}
+        sectionCard={singleCasestudy[0].sectionCard}
         team={singleCasestudy[0].team} Title={""}  upperTitle={""}      />
     </>
   );
