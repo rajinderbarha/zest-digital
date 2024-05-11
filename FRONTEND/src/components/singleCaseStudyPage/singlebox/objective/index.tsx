@@ -4,10 +4,11 @@ import Image from "next/image"; //@ts-ignore
 import BlockContent from "@sanity/block-content-to-react";
 import { urlFor } from "../../../../../lib/sanity.client";
 import { Card } from "../../../../../lib/interface";
-function objective({ card }: {card:Card[]}) {
+function objective({ sectionCard }: {sectionCard:Card[]}) {
+  console.log("sectionCard", sectionCard)
   return (
     <>
-      {card.map((item: any, index: number) => {
+      {sectionCard.map((item: any, index: number) => {
         return (
           <div
             className={`${classes.objective} max-w-[1545px] mx-auto `}

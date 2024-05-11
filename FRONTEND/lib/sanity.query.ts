@@ -132,11 +132,17 @@ export async function getSingleCasestudyData(slug: string) {
             buttonname
           }
       },
-      card[]{
+      card{
           heading,
+          headingBelow,
           description,
-          image
-      }
+          descriptionBelow
+      },
+      sectionCard[]{
+        heading,
+        description,
+        image
+    }
     }
 
   `;
@@ -160,8 +166,14 @@ export async function getCasestudyData() {
         buttonName,
         buttonLink
       },
-      collection[]->{
+      section[]{
+        heading,
+        imageDesc,
+        belowLine,
+        image,
+        collection[]->{
         slug,
+        card,
         hero{
         image,
         heading,
@@ -169,6 +181,7 @@ export async function getCasestudyData() {
         imageDesc,
         item
         }
+      }
       }
       
     }

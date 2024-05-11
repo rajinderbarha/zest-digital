@@ -14,6 +14,7 @@ function MyApp({
 }: AppProps & { headerdata: HeaderType[]; footerdata: FooterType[] }) {
   return (
     <PopupProvider>
+     
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
       </Layout>

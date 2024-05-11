@@ -458,7 +458,7 @@ export interface SingleInsightsType {
 
 //---------------------------------------------Casestudy------------------------------------
 export interface CasestudyType {
-  collection: {}[];
+  section: {}[];
   hero: CaseStudyIntroType;
 }
 export interface CaseStudyIntroType {
@@ -468,12 +468,12 @@ export interface CaseStudyIntroType {
   image: any;
 }
 export interface Gross_profitType {
-  hero: {
+
     belowLine: string;
     heading: string;
     image: any;
     imageDesc: string;
-    item: {
+    collection: {
       buttonname: string;
       count: string;
       description: string;
@@ -481,14 +481,15 @@ export interface Gross_profitType {
       icon: any;
       title: string;
       _key: string;
+      slug: Slug;
+      card:any;
     }[];
-  };
-  slug: Slug;
+  
 }
 export interface SingleCasestudyType {
   // singleCasestudy:{}
   Title: string;
-  card: Card[];
+  sectionCard: Card[];
   hero: Hero;
   // slug: Slug;
   team: Team;

@@ -6,7 +6,7 @@ import { Gross_profitType } from "../../../../../lib/interface";
 
 function Instrumental({ data }: { data: Gross_profitType }) {
 
-  const { hero } = data
+  
   return (
     // xl:mt-[112px] lg:mt-[90px] md:mt-[60px] sm:mt-[40px] mt-[30px] xl:mb-[271px] lg:mb-[220px] md:mb-[170px] sm:mb-[120px] mb-[70px]
     <div className={`${classes.Instrumental} main_padding `}>
@@ -29,7 +29,7 @@ function Instrumental({ data }: { data: Gross_profitType }) {
 
               <Image
                 className="md:ms-auto mx-auto xl:max-w-[350px] h-max lg:max-w-[280px] md:max-w-[200px] box-border text-center"
-                src={urlFor(data.hero.image).url()}
+                src={urlFor(data.image).url()}
                 alt="casestudy img"
                 width={350}
                 height={350}
@@ -41,7 +41,7 @@ function Instrumental({ data }: { data: Gross_profitType }) {
 
               <Image
                 className="md:ms-auto mx-auto xl:max-w-[350px] h-max lg:max-w-[280px] md:max-w-[200px] box-border text-center"
-                src={urlFor(data.hero.image).url()}
+                src={urlFor(data.image).url()}
                 alt="casestudy img"
                 layout="fill"
                 objectFit="contain"
@@ -50,15 +50,15 @@ function Instrumental({ data }: { data: Gross_profitType }) {
             {/* -----------mobile view------------- */}
 
             <h3 className="font-mono text-color-1 font-semibold lg:text-30px md:text-25px text-[20px] md:max-w-[373px] max-w-[221px] text-center mx-auto mt-4">
-              {hero.imageDesc ? hero.imageDesc : ""}
+              {data.imageDesc ? data.imageDesc : ""}
             </h3>
           </div>
           <div className="md:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] md:mt-0 sm:mt-[30px] mt-[25px]">
             <h2 className="font-mono italic font-semibold text-color-1 xl:text-45px lg:text-40px md:text-35px sm:text-[28px] text-[20px] md:mb-[20px] sm:mb-[15px] mb-[10px] w-max-[909px]">
-              {hero.heading}
+              {data.heading}
             </h2>
             <p className="text-color-9 pt-2 border-t text-[15px] sm:text-base border-color-9">
-              {hero.belowLine}
+              {data.belowLine}
             </p>
           </div>
         </div>

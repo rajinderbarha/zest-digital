@@ -7,7 +7,7 @@ import Objective from '../singlebox/objective'
 import Image from 'next/image';
 import { urlFor } from '../../../../lib/sanity.client'
 import { SingleCasestudyType } from '../../../../lib/interface';
-function SingleIntro({ hero, card, team }: SingleCasestudyType) {
+function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
   const { heading, profile } = team;
     
     return (
@@ -38,7 +38,7 @@ function SingleIntro({ hero, card, team }: SingleCasestudyType) {
 
             </div>
             <div className={` ${classes.cards_div} grid  xl:gap-[84px] lg:gap-[60px] md:gap-[40px] sm:gap-[32px] gap-[25px]  -mt-40 px-[52px]`}>
-                <Objective card={card}/>
+                <Objective sectionCard={sectionCard}/>
 
 
 

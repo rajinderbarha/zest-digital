@@ -11,15 +11,15 @@ import { getCasestudyData } from "../../../lib/sanity.query";
 import { CasestudyType } from "../../../lib/interface";
 
 function Casestudy({ Casestudy }: {Casestudy:CasestudyType[]}) {
-  // console.log("lib", Casestudy);
+  console.log("lib", Casestudy);
   return (
     <div>
       <Casestudyintro data={Casestudy[0].hero} />
-      {Casestudy[0].collection.map((item:any, index:number) => {
+      {Casestudy[0].section.map((item:any, index:number) => {
         return (
           <div key={index}>
             <Gross_profit data={item} />
-            <Instrumental data={item}/>
+            {/* <Instrumental data={item}/> */}
 
 
 
