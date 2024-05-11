@@ -13,7 +13,7 @@ function Termsconditions({
 
 export default Termsconditions;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try{
 
     const termsAndConditionData = await getTermsndConditionsData();

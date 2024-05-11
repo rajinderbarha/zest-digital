@@ -22,7 +22,7 @@ const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
 
 export default About_page;
 
-export async function getServerSideProps() {
+export async function getStaticProps () {
   try{
 
     const aboutdata = await getAboutData();

@@ -3,6 +3,7 @@ import SingleIntro from "@/components/singleCaseStudyPage/SingleIntro";
 import Singalcasebanner from "@/components/singleCaseStudyPage/singalcasebanner";
 import { getSingleCasestudyData } from "../../../lib/sanity.query";
 import { SingleCasestudyType } from "../../../lib/interface";
+import { GetStaticPaths } from "next";
 
 function singlecasestudy({ singleCasestudy }: {singleCasestudy:SingleCasestudyType[]}) {
   console.log("singleCasestudy", singleCasestudy);
@@ -24,8 +25,14 @@ function singlecasestudy({ singleCasestudy }: {singleCasestudy:SingleCasestudyTy
 }
 
 export default singlecasestudy;
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
-export async function getServerSideProps({ params }: { params: { slug: string } }) {
+  return {
+      paths: [], //indicates that no page needs be created at build time
+      fallback: 'blocking' //indicates the type of fallback
+  }
+}
+export async function getStaticProps({ params }: { params: { slug: string } }) {
   const { slug } = params;
 
   const singleCasestudy = await getSingleCasestudyData(slug);

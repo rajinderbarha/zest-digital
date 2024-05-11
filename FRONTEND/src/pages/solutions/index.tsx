@@ -20,7 +20,7 @@ function solutions({ solution }: {solution:SolutionProps[]}) {
 
 export default solutions;
 
-export async function getServerSideProps() {
+export async function getStaticProps () {
   const solution = await getSolutionData();
 
   return {
