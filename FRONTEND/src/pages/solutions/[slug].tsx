@@ -1,6 +1,7 @@
 import GrowthEnginePage from "@/components/GrowthEnginePage";
 import React from "react";
 import { getGrowthData, getSolutionData } from "../../../lib/sanity.query";
+import { GetStaticPaths } from "next";
 
 function growthengine({ growth, card }: any) {
   return (
@@ -13,8 +14,14 @@ function growthengine({ growth, card }: any) {
 }
 
 export default growthengine;
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
-export async function getServerSideProps({
+  return {
+      paths: [], //indicates that no page needs be created at build time
+      fallback: 'blocking' //indicates the type of fallback
+  }
+}
+export async function getStaticProps({
   params,
 }: {
   params: { slug: string };

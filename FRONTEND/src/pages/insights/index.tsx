@@ -13,7 +13,7 @@ const filters = ({ insights }: {insights:FiltersType[]}) => {
 
 export default filters;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const insights = await getInsightsData();
 
   return {

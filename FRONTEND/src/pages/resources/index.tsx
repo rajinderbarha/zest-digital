@@ -92,7 +92,7 @@ function resources({ resources }: any) {
 
 export default resources;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const resources = await getResourcesData();
 
   return {

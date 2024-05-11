@@ -8,7 +8,7 @@ function contact({ contactData }: { contactData: ContactType[] }) {
 }
 export default contact;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const contactData = await getContactData();
   return {
     props: {

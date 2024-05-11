@@ -2,13 +2,20 @@ import React from "react";
 import { getSingleOurServicesData } from "../../../lib/sanity.query";
 import { SingleOurService } from "../../../lib/interface";
 import Services from "@/components/Services";
+import { GetStaticPaths } from "next";
 
 function SingleService({ singleservicedata, }: { singleservicedata: SingleOurService[]; }) {
   return <Services data={singleservicedata[0]} />;
 }
 export default SingleService;
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
-export async function getServerSideProps({
+  return {
+      paths: [], //indicates that no page needs be created at build time
+      fallback: 'blocking' //indicates the type of fallback
+  }
+}
+export async function getStaticProps({
   params,
 }: {
   params: { slug: string };
