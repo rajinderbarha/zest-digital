@@ -19,10 +19,7 @@ function Casestudy({ Casestudy }: {Casestudy:CasestudyType[]}) {
         return (
           <div key={index}>
             <Gross_profit data={item} />
-            {/* <Instrumental data={item}/> */}
-
-
-
+            <Instrumental data={item}/>
           </div>
         );
       })}
