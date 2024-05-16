@@ -29,13 +29,13 @@ body {
 
 /* popups style */
 
-
+                                    /* old popup style */
 
 .css-hz1bth-MuiDialog-container {
   /* height: auto!important; */
 }
 
-.MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container {
+/* .MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container {
   backdrop-filter: blur(10px);
   height: 100vh;
   overflow-y: scroll !important;
@@ -51,7 +51,6 @@ body {
   .css-1p6wq07-MuiPaper-root-MuiDialog-paper {
     margin: 10px !important;
 
-    /* z-index: -1!important; */
   }
 
   .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1p6wq07-MuiPaper-root-MuiDialog-paper {
@@ -61,7 +60,39 @@ body {
   .MuiBox-root.css-79elbk{
     margin-top: 20px!important;
   }
+} */
+                                /* old popup style */
+
+                                 /* new popup style */
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1p6wq07-MuiPaper-root-MuiDialog-paper {
+  /* padding: 15px 0; */
 }
+
+.MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  /* height: 100vh; */
+  overflow-y: scroll !important;
+  border: 2px solid black;
+  /* margin-top: 19px; */
+  align-items: baseline;
+  justify-content: center;
+}
+
+@media only screen and (max-width:767px) {
+  .css-1p6wq07-MuiPaper-root-MuiDialog-paper {
+    margin: 20px !important;
+
+  }
+}
+@media only screen and (max-width:639px) {
+  .css-1p6wq07-MuiPaper-root-MuiDialog-paper {
+    margin: 10px !important;
+
+  }
+}
+
+                        /* new popup style */
 
 
 

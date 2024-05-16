@@ -18,8 +18,8 @@ const Services_SubServices: React.FC<SubServices> = (props) => {
 
             {props.services.map((item, index) => (
               <div  key={index} className="max-w-[270px] ">
-              <div className={`${classes.top_image} xl:max-w-[250px] lg:max-w-[220px] md:max-w-[190px] sm:max-w-[155px] max-w-[125px] mx-auto w-full`}>
-                  <Image src={urlFor(item.image).url()} alt='' width={250} height={250} className='' />
+              <div className={`${classes.top_image} h-full w-full mx-auto `}>
+                  <Image src={urlFor(item.image).url()} alt='' width={250} height={250} className={` h-full w-full`} />
               </div>
               <div className="text-center">
                   <h2 className='font-mono font-semibold lg:text-35px md:text-30px sm:text-25px text-[20px] text-center text-color-1 mt-[10px] xl:mb-[28px] lg:mb-[25px] md:mb-[20px] sm:mb-[18px] mb-[15px]'>{item.title_sub}</h2>

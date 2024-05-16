@@ -34,16 +34,16 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                           >
                             {item.description}
                           </p>
-                          <p className="text-[#d3d3d3] md:text-base text-sm md:mt-[16px] mt-[10px]">{item.belowLine}</p>
+                          <p className="text-[#d3d3d3] md:text-base text-sm md:mt-[16px] mt-[10px] font-mono ">{item.belowLine}</p>
 
                           {item.buttonLink !== null &&
                             item.buttonName !== null && (
                               <Link
                                 href={item.buttonLink}
-                                className="font-mono font-normal text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center md:mt-[25px] mt-[18px] w-max"
+                                className="font-mono font-normal group hover:bg-color-1 border border-white hover:text-white text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center md:mt-[25px] mt-[18px] w-max"
                               >
                                 {item.buttonName}{" "}
-                                <span className="p-1 text-white rounded-full bg-black me-1 text-lg">
+                                <span className="p-1 text-white rounded-full bg-black me-1 text-lg group-hover:bg-white group-hover:text-color-1">
                                   <GoArrowRight />
                                 </span>
                               </Link>
@@ -61,16 +61,16 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                           >
                             {item.description}
                           </p>
-                          <p className="text-[#d3d3d3] md:text-base text-sm md:mt-[16px] mt-[10px]">{item.belowLine}</p>
+                          <p className="text-[#d3d3d3] md:text-base text-sm md:mt-[16px] mt-[10px] font-mono">{item.belowLine}</p>
 
                           {item.buttonLink !== null &&
                             item.buttonName !== null && (
                               <Link
                                 href={item.buttonLink}
-                                className="font-mono font-normal ms-auto text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center md:mt-[25px] mt-[18px] w-max"
+                                className="font-mono font-normal group ms-auto hover:bg-color-1 border border-white hover:text-white text-color-1 rounded-full bg-white text-base py-[3px] ps-5 flex gap-2 items-center md:mt-[25px] mt-[18px] w-max"
                               >
                                 {item.buttonName}{" "}
-                                <span className="p-1 text-white rounded-full bg-black me-1 text-lg">
+                                <span className="p-1 text-white rounded-full bg-color-1 me-1 text-lg group-hover:bg-white group-hover:text-color-1">
                                   <GoArrowRight />
                                 </span>
                               </Link>

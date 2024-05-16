@@ -13,7 +13,7 @@ function MapLocations({data}:any) {
     <>
     {data.map(({longitude,latitude,leftDescriptionList,rightDescriptionList}:any,index:any)=> (
 
-      <div key={index} className={`${classes.MapLocations} max-w-max `}>
+      <div key={index} className={`${classes.MapLocations} `}>
         <div
           className={`${classes.location_div}  `}
         >

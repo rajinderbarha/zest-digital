@@ -2,20 +2,23 @@
 
 } */
 .location_div {
-    max-width: 500px!important;
-    width: 500px;
-    max-height: 500px;
-    height: 500px;
-    @apply  rounded-[15px] sm:rounded-[20px] md:rounded-[30px] md:rounded-30px  
+    max-width: -webkit-fill-available!important;
+    width: 100%;
+    /* max-height: -webkit-fill-available; */
+    aspect-ratio: 1 / 1;
+    @apply  rounded-[15px] sm:rounded-[20px] lg:rounded-[30px] md:rounded-30px  
 }
 .location_div > div{
     /* border: 5px solid blue; */
-    height: inherit!important;
-    @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right border border-color-1
+    height:-webkit-fill-available!important;
+    @apply rounded-[15px] sm:rounded-[20px] lg:rounded-[30px] shadow-dark-pink-right border border-color-1
+}
+.MapLocations{
+    /* border: 1px solid black; */
 }
 
 
-@media only screen and (max-width:1600px) {
+/* @media only screen and (max-width:1600px) {
     .location_div {
         max-width: 30vw;
         width: 30vw;
@@ -51,4 +54,4 @@
         max-height: 290px;
         height: 290px;
     }
-}
+} */

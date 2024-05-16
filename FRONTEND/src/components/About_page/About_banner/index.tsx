@@ -15,7 +15,7 @@ function About_banner({ data }: { data: AboutType[] }) {
               key={`${index}_About_banner`}
             >
               <div className="Founded_heading max-w-[850px]">
-                <h2 className="xl:text-45px lg:text-40px md:text-35px text-[18px] font-semibold text-color-1 font-mono bg-color-7 w-max px-2">
+                <h2 className="xl:text-45px lg:text-40px md:text-35px text-[18px] font-semibold text-color-1 font-mono bg-light-green-1 w-max px-2">
                   {item.hero.title}
                 </h2>
                 <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-[42px] text-[30px] text-color-1   xl:mt-[35px] lg:mt-[27px] md:mt-[15px] mt-[5px]">

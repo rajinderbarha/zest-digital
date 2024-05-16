@@ -16,7 +16,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
       <div className="GrowthMarketingServices_Address main_padding xl:mb-[200px] lg:mb-[160px] md:mb-[120px] sm:mb-[100px] mb-[80px]">
         <div className="main_container">
           <div
-            className={`${classes.bg_image} rounded-[20px] md:rounded-30px xl:py-[160px] lg:py-[130px] md:py-[100px] sm:py-[70px] py-[50px] xl:px-[77px] lg:px-[60px] md:px-[45px] sm:px-[35px] px-[25px]  grid md:grid-cols-2 md:gap-y-0 gap-y-12 md:gap-x-10`}
+            className={`${classes.bg_image} bg-color-1 rounded-[20px] md:rounded-30px xl:py-[160px] lg:py-[130px] md:py-[100px] sm:py-[70px] py-[50px] xl:px-[77px] lg:px-[60px] md:px-[45px] sm:px-[35px] px-[25px]  grid md:grid-cols-2 md:gap-y-0 gap-y-12 md:gap-x-10`}
           >
             <div className="col-span-1 md:max-w-[558px] sm:max-w-[300px] max-w-[250px]  mx-auto">
               <h2 className="font-mono xl:text-55px lg:text-50px md:text-40px sm:text-30px text-25px font-semibold text-color-9 text-center ">
@@ -26,9 +26,9 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
                 {slotDescription_add}
               </h2>
               <div className="bokk_now_btn">
-                <button className="font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[15px] md:text-base py-[1px] sm:py-[2px] md:py-[3px] md:ps-5 sm:ps-[15px] ps-[10px] flex md:gap-2 sm:gap-[6px] gap-[4px] items-center">
+                <button className="font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[15px] md:text-base py-[1px] sm:py-[2px] md:py-[3px] md:ps-5 sm:ps-[15px] ps-[10px] flex md:gap-2 sm:gap-[6px] gap-[4px] items-center group border border-white hover:bg-color-1 hover:text-white">
                   {buttonName_add}
-                  <span className="p-1 text-white rounded-full bg-black md:me-1 sm:me-[3px] me-[1px] text-[15px] sm:text-[17px] md:text-lg">
+                  <span className="p-1 text-white rounded-full bg-color-1 group-hover:bg-white group-hover:text-color-1 md:me-1 sm:me-[3px] me-[1px] text-[15px] sm:text-[17px] md:text-lg">
                     <GoArrowRight />
                   </span>
                 </button>

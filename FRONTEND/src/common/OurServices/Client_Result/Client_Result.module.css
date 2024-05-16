@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     /* padding: 100px 16px; */
     background-position: center;
-    background-color: #000;
+    /* background-color: #000; */
     
     @apply rounded-[20px] md:rounded-30px xl:pt-[100px] lg:pt-[80px] md:pt-[60px] sm:pt-[40px] pt-[25px]  xl:pb-[132px] lg:pb-[110px] md:pb-[80px] sm:pb-[65px] pb-[30px]
     /* xl:px-[110px] lg:px-[90px] md:px-[65px] sm:px-[40px] px-[25px] */

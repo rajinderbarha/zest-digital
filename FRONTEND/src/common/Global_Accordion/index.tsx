@@ -67,7 +67,7 @@ const Global_Accordion = ({
       </div>
       <div className="text-center">
         <Link href={belowbtnLink_acc}>
-          <button className="font-mono bg-color-1 border border-color-1 text-[#c0c0c0] text-[15px] md:px-[25px] px-[20px] py-[5px] md:py-[10px]  mt-[20px] md:mt-[60px] rounded-full">
+          <button className="font-mono bg-color-1 border border-color-1 text-white hover:text-color-1 hover:bg-white text-[15px] md:px-[25px] px-[20px] py-[5px] md:py-[10px]  mt-[20px] md:mt-[60px] rounded-full">
           {belowbtnName_acc}
           </button>
         </Link>
