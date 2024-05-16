@@ -15,7 +15,7 @@
     bottom: 0;
     left: 0;
     margin: -2px;
-    background: linear-gradient(115deg, #8aff0a 0%, transparent 64%, transparent 54%, transparent -256%);
+    background: linear-gradient(115deg, #A2FF8F 0%, transparent 64%, transparent 54%, transparent -256%);
 
     z-index: 0;
     @apply xl:rounded-30px md:rounded-[20px] rounded-[10px]

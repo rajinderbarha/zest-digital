@@ -13,6 +13,9 @@
     margin-top: -100px;
     border: 1px solid transparent;
 }
+.top_image img{
+    filter: drop-shadow(0px 6px 10px #FFFFFF29);
+}
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
     /* .SingleBox{
@@ -222,14 +225,7 @@
     border-radius: 30px;
 
 } */
-.Team_img_circle{
-width: 95%;
-    height: 84%;
-    background: #1d2671;
-    border-radius: 100%;
-    left: 6px;
-    bottom: 4px;
-}
+
 
 .Escape_p {
     max-width: 1200px;

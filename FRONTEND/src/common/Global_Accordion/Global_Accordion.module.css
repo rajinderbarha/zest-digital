@@ -24,7 +24,6 @@
     align-items: center;
     transition: background-color 0.3s ease;
     width: 100%;
-    /* border-radius: 30px; */
     border: none;
     @apply md:rounded-[28px] rounded-[18px]
   }
@@ -47,12 +46,12 @@ margin-bottom: 10px;
   }
 
   .rotate {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     transition: transform 0.3s ;
   }
   
   .rotate_back{
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     transition: transform 0.3s ; 
   }
   
@@ -66,39 +65,61 @@ margin-bottom: 10px;
     transition: max-height 0.3s ease;
     background-color: transparent;
     width:inherit;
-    /* border-radius: 30px; */
   }
   
-  .content_inner {
+  .content_inner blockquote:not(:first-child){
+    padding-top: 45px; 
+  }
+  .content_inner p:not(:first-child){
+    /* border: 1px solid black; */
+    padding-top: 40px; 
   }
   
-  /* Clear the last item's bottom border */
-  .accordion_item:last-child {
-    /* border-bottom: none; */
-  }
   
+
   .arrow_img {
-    /* border: 1px solid white; */
     width: 60px;
   }
   
+  @media only screen and (max-width: 1024px) {
+    .content_inner blockquote:not(:first-child){
+      padding-top: 35px; 
+    }
+    .content_inner p:not(:first-child){
+      padding-top: 25px; 
+    }
+  
+  }
   @media only screen and (max-width: 950px) {
 
     .arrow_img {
         /* border: 1px solid white; */
         width: 50px;
       }
+
   }  
   @media only screen and (max-width: 767px) {
     .arrow_img {
-      /* border: 1px solid white; */
       width: 42px;
-      /* height: 50px!important; */
+    }
+    .content_inner blockquote:not(:first-child){
+      padding-top: 30px; 
+    }
+    .content_inner p:not(:first-child){
+      padding-top: 20px; 
     }
   }
   @media only screen and (max-width: 639px) {
     .arrow_img {
-        /* border: 1px solid white; */
         width: 37px;
       }
+      .content_inner blockquote:not(:first-child){
+        padding-top: 10px; 
+      }
+      .content_inner p:not(:first-child){
+        padding-top: 10px; 
+      }
   }
+
+  
+

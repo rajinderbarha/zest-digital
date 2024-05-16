@@ -11,7 +11,7 @@ const Client_Result: React.FC<clientResults> = (props) => {
       <div className="Client_Result main_padding xl:mt-[180px] lg:mt-[160px] md:mt-[135px] sm:mt-[90px] mt-[78px] xl:mb-[212px] lg:mb-[190px] md:mb-[160px] sm:mb-[110px] mb-[80px]" >
         <div className='main_container'>
 
-          <div className={`${classes.Client_Result}  main_padding`}>
+          <div className={`${classes.Client_Result}  main_padding bg-color-1`}>
             <div className={`${classes.Client_Result_title} `}>
               <h2 className='font-mono xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[25px] font-semibold text-white text-center'>{title_CR}</h2>
               <p className="font-mono lg:text-30px md:text-25px sm:text-[20px] text-[18px] md:mt-6 sm:mt-[10px] mt-[5px] font-medium text-color-7 text-center">{heading_CR}</p>
@@ -29,7 +29,7 @@ const Client_Result: React.FC<clientResults> = (props) => {
                     },
                     index
                   ) => (
-                    <div key={index} className={` ${classes.profit_box} flex flex-col Gross_profit_box_start text-center border bg-black rounded-[20px] lg:rounded-30px  font-mono border-color-8 xl:py-[75px] lg:py-[55px]  sm:py-[25px] py-[18px]`}>
+                    <div key={index} className={` ${classes.profit_box} flex flex-col Gross_profit_box_start text-center border bg-color-1 rounded-[20px] lg:rounded-30px  font-mono border-color-8 xl:py-[75px] lg:py-[55px]  sm:py-[25px] py-[18px]`}>
                       <h2 className='xl:text-55px lg:text-50px md:text-40px sm:text-35px text-[30px] font-semibold text-color-7'>{percentage_CR}</h2>
                       <p className={` ${classes.profit_box_heading} lg:text-30px md:text-25px sm:text-[22px] text-[20px] text-color-7 font-semibold xl:mb-[35px] lg:mb-[30px] md:mb-[25px] sm:mb-[20px] mb-[15px]`}>{mapped_title}</p>
                       <h3 className='lg:text-30px md:text-25px sm:text-[22px] text-[20px] text-white lg:mb-[11px] md:mb-[7px] sm:mb-[5px] mb-[3px]  '>{description_1_CR}</h3>
@@ -43,7 +43,7 @@ const Client_Result: React.FC<clientResults> = (props) => {
                 )}
             </div>
             <div className={`${classes.view_more_btn} text-center xl:mt-[137px] lg:mt-[115px] md:mt-[85px] sm:mt-[60px] mt-[40px]`}>
-              <button className='font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[15px] sm:text-base py-[5px] sm:py-[8px] md:py-[10px] px-7 flex gap-2 items-center'>{belowbuttonName_CR}</button>
+              <button className='font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[15px] sm:text-base py-[5px] sm:py-[8px] md:py-[10px] px-7 flex gap-2 items-center border border-white hover:bg-color-1 hover:text-white'>{belowbuttonName_CR}</button>
             </div>
           </div>
         </div>

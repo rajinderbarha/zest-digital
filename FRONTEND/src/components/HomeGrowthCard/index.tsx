@@ -46,10 +46,10 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
           >
             <div className={`${classes.animationDiv}`}>
                 <div className={`${classes.animationFullText} mx-auto   md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[160px] lg:pb-[120px] md:pb-[80px]  pb-[50px]`}>
-                <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px flex md:gap-4 flex-wrap  text-center">
+                <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px flex md:gap-4 flex-wrap justify-center text-center">
                 {heading}
              
-                    <p className={`${classes.animatedText} md:w-[177px]`}>
+                    <p className={`${classes.animatedText} xl:w-[177px] lg:w-[160px] md:w-[140px] `}>
                         {card?.switcher?.map((text: any, idx: any) => (
                             <span key={idx} className={ `${ idx === animateIndex ? classes.textIn : classes.textOut }  xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px  text-color-3`}>
                                 {text}

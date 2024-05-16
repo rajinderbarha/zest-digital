@@ -209,8 +209,11 @@ function Contact({ data }: { data: ContactType }) {
               </div>
             </div>
           </div>
-          <div className={`${classes.map_div} xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[120px] mt-[100px] flex justify-between gap-3 flex-wrap `}>
+          <div className={`${classes.map_div} xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[120px] mt-[100px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:gap-x-[105px]  `}>
+            {/* <div className="lg:col-span-4"> */}
+
             <MapLocations data={data.card} />
+            {/* </div> */}
           </div>
         </div>
       </div>

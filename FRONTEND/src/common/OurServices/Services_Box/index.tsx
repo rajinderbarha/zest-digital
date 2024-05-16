@@ -15,7 +15,7 @@ const Services_Box = (props: any) => {
   return (
     <>
      <div className="main_padding">
-                <div className={`${classes.SingleIntro}  main_container xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[80px]  h-100 md:rounded-30px rounded-[20px]`}>
+                <div className={`${classes.SingleIntro} bg-color-1 main_container xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[80px]  h-100 md:rounded-30px rounded-[20px]`}>
 
                     <div className={`${classes.single_container}`}>
 
@@ -23,8 +23,8 @@ const Services_Box = (props: any) => {
 
               {imageBox?.map((item: any, index: any) => (
                 <div className="text-center max-w-[513px] w-full " key={index}>
-                <div className={`${classes.top_image} 2xl:max-w-[250px] xl:max-w-[240px] lg:max-w-[200px] max-w-[150px] mx-auto  `}>
-                    <Image src={urlFor(item.image).url()} width={250} height={250} alt="" className=' mx-auto'/>
+                <div className={`${classes.top_image}  h-full w-full  mx-auto`}>
+                    <Image src={urlFor(item.image).url()} width={250} height={250} alt="" className='h-full w-full'/>
                 </div>
                 <h2 className="xl:text-45px lg:text-[38px] md:text-30px text-color-7 font-mono font-semibold">{item.imagetitle}</h2>
             </div>

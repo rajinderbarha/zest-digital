@@ -7,7 +7,7 @@
 
 .Block_Content h2{
 /* border: 1px solid black; */
-@apply lg:text-45px md:text-40px sm:text-30px text-[25px] font-semibold font-mono bg-color-7 w-fit md:mb-[33px] sm:mb-[23px] mb-[13px] xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px]
+@apply lg:text-45px md:text-40px sm:text-30px text-[25px] font-semibold font-mono bg-light-green-1 w-fit md:mb-[33px] sm:mb-[23px] mb-[13px] xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px]
 }
 
 .Block_Content h3{

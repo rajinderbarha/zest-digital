@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    background-color: black;
+    /* background-color: black; */
     /* margin-top: 200px; */
 
     border: 1px solid transparent;
@@ -13,6 +13,10 @@
     margin-top: -110px;
     border: 1px solid transparent;
 }
+.top_image img{
+    filter: drop-shadow(0px 6px 10px #FFFFFF29);
+}
+
 
 @media only screen and (max-width:1024px) {
     .single_container {
@@ -41,6 +45,8 @@
 @media only screen and (min-width: 1775px) {
     .top_image{
         max-width: 250px;
+        max-height: 250px;
+
         /* margin-bottom: 40px; */
     }
     .top_image ~ p{
@@ -54,6 +60,8 @@
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
     .top_image{
         max-width: 230px;
+        max-height: 230px;
+      /* height: 100%; */
         /* margin-bottom: 35px; */
     }
     .top_image ~ p{
@@ -67,6 +75,7 @@
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
       .top_image{
         max-width: 210px;
+        max-height: 210px;
         /* margin-bottom: 30px; */
     }
     .singleBox_container {
@@ -83,6 +92,7 @@
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
     .top_image{
         max-width: 190px;
+        max-height: 190px;
         /* margin-bottom: 27px; */
     }
     .singleBox_container {
@@ -99,6 +109,7 @@
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .top_image{
         max-width: 170px;
+        max-height:170px;
         /* margin-bottom: 22px; */
     }
     .singleBox_container {
@@ -113,6 +124,11 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .top_image{
+        max-width: 150px;
+        max-height:150px
+        /* margin-bottom: 22px; */
+    }
     .Singalcasebanner {
         margin-top: 40px;
         /* margin-bottom: 18px; */
