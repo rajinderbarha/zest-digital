@@ -14,6 +14,9 @@
     border: 1px solid #000;
     /* border-radius: 30px; */
   }
+  .content_inner p a{
+    text-decoration: underline;
+  }
   
   .accordion_title {
     background-color: #191615;

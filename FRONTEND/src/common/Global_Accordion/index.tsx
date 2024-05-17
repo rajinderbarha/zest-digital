@@ -58,7 +58,7 @@ const Global_Accordion = ({
               maxHeight: openItemId === index? contentRefs.current[index]?.scrollHeight + 'px' : '0',
             }}
           >
-            <div className={`${classes.content_inner}  ${classes.title_desc_padding_class} xl:pt-[80px] lg:pt-[60px] md:pt-[45px] sm:pt-[35px] pt-[20px] lg:pb-[30px] md:pb-[25px] pb-[20px]  max-w-[1221px]`}>
+            <div className={`${classes.content_inner}  ${classes.title_desc_padding_class}  xl:py-[80px] lg:py-[50px] md:py-[35px] py-[25px]  max-w-[1221px]`}>
               <PortableText value={item.content} />
             </div>
           </div>

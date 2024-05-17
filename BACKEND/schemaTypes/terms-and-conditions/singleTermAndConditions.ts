@@ -12,7 +12,7 @@ export const SingleTermsAndConditions = defineType({
             type: 'slug',
             options: {
               source: 'title',
-              maxLength: 15
+              maxLength: 25
             }
           },
           {
