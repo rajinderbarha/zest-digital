@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    background-color: black;
+    /* background-color: black; */
     /* margin-top: 200px; */
 
     border: 1px solid transparent;
@@ -44,7 +44,7 @@
 
 
 .About_team {
-    /* padding: 0px 15px 141px 15px; */
+    padding: 0px 15px 250px 15px;
 }
 .Team_img {
     max-width: 463px;
@@ -60,11 +60,7 @@
     /* bottom: 0.7%; */
 }
     
-    @media screen and (max-width:768px) {
-        .About_team {
-            /* padding: 0px 16px 50px 16px; */
-        }
-    }
+
 
     
 .Singalcasebanner {
@@ -75,6 +71,7 @@
 @media only screen and (min-width: 1775px) {
     .top_image{
         max-width: 250px;
+        max-height: 250px;
         /* margin-bottom: 40px; */
     }
     .top_image ~ p{
@@ -88,6 +85,8 @@
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
     .top_image{
         max-width: 230px;
+        max-height: 230px;
+        /* height: 100%; */
         /* margin-bottom: 35px; */
     }
     .top_image ~ p{
@@ -101,6 +100,7 @@
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
       .top_image{
         max-width: 210px;
+        max-height:210px ;
         /* margin-bottom: 30px; */
     }
     .singleBox_container {
@@ -112,11 +112,15 @@
     .SingleBox{
         margin-top: 190px;
     }
+    .About_team {
+        padding-bottom: 220px;
+    }
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
     .top_image{
         max-width: 190px;
+        max-height: 190px;
         /* margin-bottom: 27px; */
     }
     .singleBox_container {
@@ -128,11 +132,15 @@
     .SingleBox{
         margin-top: 180px;
     }
+    .About_team {
+        padding-bottom: 200px;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .top_image{
         max-width: 170px;
+        max-height: 170px;
         /* margin-bottom: 22px; */
     }
     .singleBox_container {
@@ -144,9 +152,17 @@
     .SingleBox{
         margin-top: 160px;
     }
+    .About_team {
+        padding-bottom: 180px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .top_image{
+        max-width: 150px;
+        max-height: 150px;
+        /* margin-bottom: 22px; */
+    }
     .Singalcasebanner {
         margin-top: 40px;
         /* margin-bottom: 18px; */
@@ -164,6 +180,14 @@
         padding-left: 40px;
         padding-right: 40px;
     }
+    .About_team {
+        padding-bottom: 140px;
+    }
+}
+@media screen and (max-width:768px) {
+    .About_team {
+        padding-bottom: 100px;
+    }
 }
 
 
@@ -179,9 +203,7 @@
     bottom: 5px;
 }
 
-.About_team {
-    padding: 0px 15px 141px 15px;
-}
+
 
 .Team_img {
     max-width: 435px;

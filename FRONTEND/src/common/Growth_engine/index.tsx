@@ -18,7 +18,7 @@ const Growth_engine = ({
       {has_image ? (
         <div
           className={`${classes.growth_engine}  ${
-            shadow_right ? ` shadow-blue-left ` : ` shadow-dark-pink-left`
+            shadow_right ? `shadow-dark-pink-left ` : ` shadow-blue-left`
           } grid sm:grid-cols-5 max-w-[1345px] mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] md:rounded-30px rounded-[20px] border border-black  bg-white text-color-1 relative`}
         >
           <div className="col-span-3">

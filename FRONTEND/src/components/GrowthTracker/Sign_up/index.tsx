@@ -68,7 +68,7 @@ function Sign_up() {
           <div className="button md:my-[40px] sm:my-[35px] my-[30px]  text-center">
             <Link
               href="#"
-              className="bg-color-1 font-mono sm:text-base text-[15px] md:px-[20px] px-[14px] sm:py-[10px] py-[7px] text-white rounded-full"
+              className="bg-color-1 hover:bg-white hover:text-color-1 border border-color-1 font-mono sm:text-base text-[15px] md:px-[20px] px-[14px] sm:py-[10px] py-[7px] text-white rounded-full"
             >
               Notify me
             </Link>
