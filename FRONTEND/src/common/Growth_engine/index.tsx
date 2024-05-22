@@ -18,7 +18,7 @@ const Growth_engine = ({
       {has_image ? (
         <div
           className={`${classes.growth_engine}  ${
-            shadow_right ? `shadow-dark-pink-left ` : ` shadow-blue-left`
+            shadow_right ? `shadow-dark-pink-left ` : `shadow-dark-pink-left`
           } grid sm:grid-cols-5 max-w-[1345px] mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] md:rounded-30px rounded-[20px] border border-black  bg-white text-color-1 relative`}
         >
           <div className="col-span-3">
@@ -27,7 +27,7 @@ const Growth_engine = ({
             >
               {title}
             </h2>
-            <p className={`${classes.growth_engine_desc} text-3xl mt-5 md:mb-[37px] mb-[20px]`}>
+            <p className={`${classes.growth_engine_desc} md:text-3xl mt-5 md:mb-[37px] mb-[20px]`}>
               {description}
             </p>
             <Link href={buttonLink}>
@@ -63,7 +63,7 @@ const Growth_engine = ({
           >
             {title}
           </h2>
-          <p className={`${classes.growth_engine_desc} text-3xl mt-5 md:mb-[37px] mb-[20px] xl:mt-[29px] lg:mt-[26px] md:mt-[25px]`}>
+          <p className={`${classes.growth_engine_desc} md:text-3xl mt-5 md:mb-[37px] mb-[20px] xl:mt-[29px] lg:mt-[26px] md:mt-[25px]`}>
             {description}
           </p>
           <Link href={buttonLink}>

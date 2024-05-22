@@ -1,7 +1,7 @@
 .growth_grid{
 }
 .growth_grid > div:not(:first-child){
-    @apply  xl:mt-[65px] lg:mt-[45px] md:mt-[25px] mt-[35px]
+    @apply  xl:mt-[65px] lg:mt-[45px] md:mt-[25px] sm:mt-[35px] mt-[20px]
     
 }
 @media only screen and (max-width:860px){
@@ -90,6 +90,12 @@
         padding-bottom: 30px;
     }
 }
+@media  only screen and (max-width:639px){
+    .box_size{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
 @media only screen and (max-width:767px) {
     .growth_results {
         padding-bottom: 150px;
@@ -102,7 +108,7 @@
         gap: 20px;
     }
        .box_size{
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }

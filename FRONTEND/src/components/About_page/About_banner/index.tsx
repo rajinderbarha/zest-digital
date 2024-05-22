@@ -15,15 +15,15 @@ function About_banner({ data }: { data: AboutType[] }) {
               key={`${index}_About_banner`}
             >
               <div className="Founded_heading max-w-[850px]">
-                <h2 className="xl:text-45px lg:text-40px md:text-35px text-[18px] font-semibold text-color-1 font-mono bg-light-green-1 w-max px-2">
+                <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-[27px] text-[22px] font-semibold text-color-1 font-mono bg-light-green-1 w-max px-2">
                   {item.hero.title}
                 </h2>
-                <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-[42px] text-[30px] text-color-1   xl:mt-[35px] lg:mt-[27px] md:mt-[15px] mt-[5px]">
+                <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-[42px] sm:text-[30px] text-[22px] text-color-1   xl:mt-[35px] lg:mt-[27px] md:mt-[15px] mt-[5px]">
                   {item.hero.heading}
                 </h1>
                 {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
               </div>
-              <div className={`${classes.Founded_img} hidden md:flex absolute top-0 max-w-[245px] right-[25px] h-full`}>
+              <div className={`${classes.Founded_img}  md:flex md:absolute top-0 max-w-[245px] right-[25px] h-full`}>
                 <Image
                   className={`${classes.banner_image}`}
                   src={urlFor(item.hero.image).url()}

@@ -13,7 +13,7 @@ import { CasestudyType } from "../../../lib/interface";
 function Casestudy({ Casestudy }: {Casestudy:CasestudyType[]}) {
   console.log("lib", Casestudy);
   return (
-    <div>
+    <div className="Body_padding">
       <Casestudyintro data={Casestudy[0].hero} />
       {Casestudy[0].section.map((item:any, index:number) => {
         return (

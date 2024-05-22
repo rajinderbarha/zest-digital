@@ -4,7 +4,8 @@
 
 @media screen and (max-width:950px) {
 .banner_image{
-    padding:00px 0 0px 135px;
+   max-width: 200px;
+   margin-left: auto;
 }
 }
 
@@ -18,10 +19,16 @@
     .Solution_Banner {
         padding: 60px 16px 50px 16px;
     }
+    .banner_image{
+        max-width: 110px;
+        margin-top: 10px;
+        margin-left: auto;
+     }
+
 }
 @media screen and (max-width:639px) {
 
     .Solution_Banner {
-        padding: 40px 16px 20px 16px;
+        padding: 40px 16px 50px 16px;
     }
 }

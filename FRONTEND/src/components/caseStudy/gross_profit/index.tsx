@@ -75,7 +75,7 @@ function Gross_profit({ data }: { data: Gross_profitType }) {
     // xl:mt-[85px] lg:mt-[65px] md:mt-[50px] sm:mt-[40px] mt-[35px]
     <div className="main_padding ">
       <div className="main_container">
-        <div className={`${classes.Gross_profit} main_padding   md:rounded-30px rounded-[20px] `}>
+        <div className={`${classes.Gross_profit} main_padding  md:rounded-30px rounded-[20px] `}>
           <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid ${columnClass} w-full justify-items-stretch	gap-10 2xl:gap-20`}>
             {data?.collection?.map((item, index: number) => {
 console.log("grossss", item.slug)
@@ -84,14 +84,14 @@ console.log("grossss", item.slug)
                   key={index}
                   className={` ${classes.profit_box} Gross_profit_box_start text-center border bg-color-1 rounded-[20px] lg:rounded-30px  font-mono border-color-8 xl:py-[75px] lg:py-[55px]  sm:py-[25px] py-[18px] `}
                 >
-                  <h2 className="xl:text-55px lg:text-50px md:text-40px sm:text-35px text-[30px] font-semibold text-color-7">{item.card.heading} </h2>
-                  <p className={` ${classes.profit_box_heading} lg:text-30px md:text-25px sm:text-[22px] text-[20px] text-color-7 font-semibold xl:mb-[35px] lg:mb-[30px] md:mb-[25px] sm:mb-[20px] mb-[15px]`}>{item.card.belowHeading}</p>
-                  <h3 className="lg:text-30px md:text-25px sm:text-[22px] text-[20px] text-white lg:mb-[11px] md:mb-[7px] sm:mb-[5px] mb-[3px] ">{item.card.description}</h3>
-                  <p className={`${classes.profit_box_desc} font-lato text-base sm:text-lg font-normal  text-white xl:mb-[30px] lg:mb-[25px] sm:mb-[20px]  mb-[15px] text-center`}>
+                  <h2 className="xl:text-55px lg:text-50px md:text-40px sm:text-35px text-[26px] font-semibold text-color-7">{item.card.heading} </h2>
+                  <p className={` ${classes.profit_box_heading} lg:text-30px md:text-25px sm:text-[22px] text-[16px] text-color-7 font-semibold xl:mb-[35px] lg:mb-[30px] md:mb-[25px] sm:mb-[20px] mb-[15px]`}>{item.card.belowHeading}</p>
+                  <h3 className="lg:text-30px md:text-25px sm:text-[22px] text-[16px] text-white lg:mb-[11px] md:mb-[7px] sm:mb-[5px] mb-[3px] ">{item.card.description}</h3>
+                  <p className={`${classes.profit_box_desc} font-lato text-[10px] sm:text-lg font-normal  text-white xl:mb-[30px] lg:mb-[25px] sm:mb-[20px]  mb-[15px] text-center`}>
                     {item.card.descriptionBelow}
                   </p>
                   <Link href={`/casestudies/${item.slug.current}`}>
-                    <button className="font-mono group hover:bg-color-1 hover:text-white border border-white font-normal mx-auto text-color-1 rounded-full bg-white text-[15px] sm:text-base md:py-[3px] sm:py-[2px] py-[1px] md:ps-4 sm:ps-[15px] ps-[13px] flex sm:gap-2 gap-[6px] items-center">
+                    <button className="font-mono group hover:bg-color-1 hover:text-white border border-white font-normal mx-auto text-color-1 rounded-full bg-white text-[12px] sm:text-base md:py-[3px] sm:py-[2px] py-[5px] md:ps-4 sm:ps-[15px] ps-[13px] flex sm:gap-2 gap-[6px] items-center">
                       View Case Study
                       <span className="p-1 text-white rounded-full bg-color-1 me-[2px] sm:me-[3px] md:me-1 text-[15px] sm:text-lg group-hover:bg-white group-hover:text-color-1">
                         <GoArrowRight />

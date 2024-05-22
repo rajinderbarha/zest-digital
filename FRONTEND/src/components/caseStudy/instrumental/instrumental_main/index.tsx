@@ -12,7 +12,7 @@ function Instrumental({ data }: { data: Gross_profitType }) {
     <div className={`${classes.Instrumental} main_padding `}>
       <div className="max-w-[1520px] mx-auto w-full">
         <div className="grid md:grid-cols-12  items-center">
-          <div className={`${classes.grid_image_div} md:col-span-4   `}>
+          <div className={`${classes.grid_image_div} md:col-span-4 md:order-1 order-2 sm:mt-[30px] mt-[25px] `}>
             {/* <div className={`${classes.image_div} hidden md:block relative`}>
 
               <Image
@@ -37,7 +37,7 @@ function Instrumental({ data }: { data: Gross_profitType }) {
             </div>
             {/* -----------desktop view------------- */}
             {/* -----------mobile view------------- */}
-            <div className="block md:hidden max-w-[350px] sm:h-[360px] h-[250px] box-border  mx-auto relative">
+            <div className="block  md:hidden md:max-w-[350px] max-w-[170px]  sm:h-[360px] h-[200px] box-border  mx-auto relative">
 
               <Image
                 className="md:ms-auto mx-auto xl:max-w-[350px] h-max lg:max-w-[280px] md:max-w-[200px] box-border text-center"
@@ -49,15 +49,15 @@ function Instrumental({ data }: { data: Gross_profitType }) {
             </div>
             {/* -----------mobile view------------- */}
 
-            <h3 className="font-mono text-color-1 font-semibold lg:text-30px md:text-25px text-[20px] md:max-w-[373px] max-w-[221px] text-center mx-auto mt-4">
+            <h3 className="font-mono text-color-1 font-semibold lg:text-30px md:text-25px sm:text-[18px] text-[14px] md:max-w-[373px] max-w-[221px] text-center mx-auto md: mt-4">
               {data.imageDesc ? data.imageDesc : ""}
             </h3>
           </div>
-          <div className="md:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] md:mt-0 sm:mt-[30px] mt-[25px]">
-            <h2 className="font-mono italic font-semibold text-color-1 xl:text-45px lg:text-40px md:text-35px sm:text-[28px] text-[20px] md:mb-[20px] sm:mb-[15px] mb-[10px] w-max-[909px]">
+          <div className="md:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] md:mt-0  order-1 md:order-2">
+            <h2 className="font-mono italic font-semibold text-color-1 xl:text-45px lg:text-40px md:text-35px sm:text-[23px] text-[18px] md:mb-[20px] sm:mb-[15px] mb-[10px] w-max-[909px]">
               {data.heading}
             </h2>
-            <p className="text-color-9 pt-2 border-t text-[15px] sm:text-base border-color-9">
+            <p className="text-color-9 pt-2 border-t md:text-[15px] sm:text-[12px] text-[10px] sm:text-base border-color-9">
               {data.belowLine}
             </p>
           </div>

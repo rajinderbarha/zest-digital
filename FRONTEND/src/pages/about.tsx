@@ -10,7 +10,7 @@ import { AboutType } from "../../lib/interface";
 const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
   
   return (
-    <div>
+    <div className="Body_padding">
       <About_banner data={aboutdata} />
       <About_team data={aboutdata} />
       <Our_values data={aboutdata} />

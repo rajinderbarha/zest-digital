@@ -8,17 +8,17 @@ function About_team({ data }: { data: AboutType[] }) {
   console.log("aboutTeam",data)
   
   return (
-    <div className={`${classes.About_team} main_padding xl:mt-[141px] lg:mt-[120px] md:mt-[80px] sm:mt-[50px] mt-[30px]`}>
+    <div className={`${classes.About_team} main_padding xl:mt-[141px] lg:mt-[120px] md:mt-[80px] sm:mt-[62px] mt-[62px]`}>
       <div className="max-w-[1562px] w-full mx-auto">
         {data?.map((aboutdata, index) => (
           <div key={`${index}_About_team_1`} className="">
             <div
-              className="About_team_box text-center grid grid-cols-2 md:grid-cols-3 md:gap-x-20 md:gap-y-20 sm:gap-x-[60px] sm:gap-y-[30px] gap-x-[40px] gap-y-[20px]"
+              className="About_team_box text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 md:gap-y-20 sm:gap-x-[60px] sm:gap-y-[30px] gap-x-[40px] gap-y-[20px]"
               key={`${aboutdata}_About_team`}
             >
               {aboutdata.team.map((teamData, index) => (
-                <div key={`${index}_About_team_2`}>
-                  <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[463px]">
+                <div key={`${index}_About_team_2`} className={`${classes.About_team_box}`}>
+                  <div className="classes.About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[5px] max-w-[463px]">
                     <div
                       className={`${classes.Team_img_circle} absolute  bottom-0`}
                     ></div>
