@@ -2,27 +2,20 @@
     /* padding: 120px 16px 84px 16px; */
 }
 
-@media screen and (max-width:768px) {
-    .Casestudyintro {
-        /* padding: 80px 16px 50px 16px; */
-    }
 
-}
 
 @media only screen and (max-width:1155px) {
     .image_div {
-        display: none;
+        display: block;
+        max-width: 0200px;
+        position: relative;
+        margin-left: auto;
+        margin-top: -60px;
     }
 }
-
-
-
-
-
-
 .Casestudyintro {
     margin-top: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 1775px) {
@@ -67,4 +60,12 @@
         margin-top: 40px;
         margin-bottom: 45px;
     }
+}
+
+@media screen and (max-width:768px) {
+    .image_div {
+        max-width: 0110px;
+        margin-top: 0px;
+    }
+
 }

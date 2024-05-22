@@ -145,8 +145,8 @@
   }
 
   .Gross_profit {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
   }
 
@@ -181,7 +181,10 @@
     padding: 25px 25px;
     padding-bottom: 40px;
   }
-
+.Gross_profit{
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
 }
 
 

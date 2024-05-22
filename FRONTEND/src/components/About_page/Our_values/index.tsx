@@ -14,7 +14,7 @@ function Our_values({ data }: { data: AboutType[] }) {
              className="main_container_x "
              key={`${index}_Our_values_1`}
            >
-             <h2 className="md:text-55px text-35px font-mono text-center md:mb-20 mb-8 font-semibold text-white">
+             <h2 className="md:text-55px sm:text-30px text-[22px] font-mono text-center md:mb-20 mb-8 font-semibold text-white">
                {ourvalue.ourValue.heading}
              </h2>
               {ourvalue.ourValue.ourValuesection.map((valSection, path) => (
@@ -29,11 +29,11 @@ function Our_values({ data }: { data: AboutType[] }) {
                       alt=""
                       
                     />
-                    <h3 className="font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[25px] mb-5 font-mono  text-color-7 border-b border-color-7 sm:pr-[63px] w-fit md:w-max">
+                    <h3 className="font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[16px] md:mb-5  mb-[5px] font-mono  text-color-7 border-b border-color-7 sm:pr-[63px] w-fit md:w-max">
                       {valSection.title}
                     </h3>
                     <p
-                      className={`${classes.Our_values_main_p}  text-white font-medium  font-mono lg:text-30px md:text-25px sm:text-[20px] text-[19px]`}
+                      className={`${classes.Our_values_main_p}  text-white font-medium  font-mono lg:text-30px md:text-25px sm:text-[18px] text-[12px]`}
                     >
                       {valSection.description}
                     </p>
@@ -47,11 +47,11 @@ function Our_values({ data }: { data: AboutType[] }) {
                         height={250}
                         alt=""
                       />
-                      <h3 className="font-semibold mb-5 xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[25px] ms-auto font-mono  text-color-7 border-b border-color-7 sm:ps-[63px] w-fit md:w-max">
+                      <h3 className="font-semibold  xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[16px] md:mb-5  mb-[5px] ms-auto font-mono  text-color-7 border-b border-color-7 sm:ps-[63px] w-fit md:w-max">
                         {valSection.title}
                       </h3>
                       <p
-                        className={`${classes.Our_values_main_p} ms-auto  text-white font-medium  font-mono lg:text-30px md:text-25px sm:text-[20px] text-[19px]`}
+                        className={`${classes.Our_values_main_p} ms-auto  text-white font-medium  font-mono lg:text-30px md:text-25px sm:text-[18px] text-[12px]`}
                       >
                         {valSection.description}
                       </p>

@@ -12,11 +12,11 @@ function Escape({ data }: { data: AboutType[] }) {
 
           <Link href={Escapedata.escape.careerPagelink}>
           <div className={`${classes.Escape} main_padding rounded-[20px] md:rounded-[30px] xl:py-[130px] lg:my-[100px] md:py-[80px] sm:py-[60px] py-[40px]`}>
-            <h2 className="xl:text-55px lg:text-50px md:text-40px sm:text-35px text-30px md:mb-12 mb-6 font-mono text-center  font-semibold text-white">
+            <h2 className="xl:text-55px  lg:text-50px md:text-40px sm:text-25px text-[22px] md:mb-12 mb-6 font-mono text-center  font-semibold text-white">
               {Escapedata.escape.heading}
             </h2>
             <p
-              className={`${classes.Escape_p} mx-auto lg:text-35px md:text-30px sm:text-[25px] text-[20px] font-mono text-white text-center xl:mb-[114px] lg:mb-[95px] md:mb-[80px] sm:mb-[70px] mb-[60px] font-semibold`}
+              className={`${classes.Escape_p} mx-auto lg:text-35px md:text-30px sm:text-[20px] text-[14px] font-mono text-white text-center xl:mb-[114px] lg:mb-[95px] md:mb-[80px] sm:mb-[70px] mb-[60px] font-semibold`}
             >
               {Escapedata.escape.description}
             </p>

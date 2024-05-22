@@ -127,8 +127,8 @@ select::-ms-expand {
 }
 
 .main_padding {
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 @media only screen and (min-width: 1775px) {
   .main_padding {
@@ -160,6 +160,11 @@ select::-ms-expand {
     padding-right: 25px !important;
   }
 }
+@media only screen and (max-width: 767px) {
+.Body_padding{
+  padding: 0 10px;
+}
+}
 
 /* @media only screen and (max-width: 1420px) {
   .main_padding {
@@ -182,9 +187,9 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 460px) {
-  .banner_title {
+  /* .banner_title {
     font-size: 18px;
-  }
+  } */
 }
 
 .popup_conatiner {
