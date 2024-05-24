@@ -61,20 +61,20 @@
 	}
 }
 
-.animationDiv .animationFullText p span{
+.animationDiv .animationFullText span span{
     display: none;
       text-align: left;
 }
-.animationDiv .animationFullText p{
+.animationDiv .animationFullText span   {
 	margin:0;
 	overflow: hidden;
 }
-.animationDiv .animationFullText p span.textIn{
+.animationDiv .animationFullText span span.textIn{
 	display: block;
 	animation: textIn .5s ease;
   
 }
-.animationDiv .animationFullText p span.textOut{
+.animationDiv .animationFullText span span.textOut{
 
   animation: textOut .5s ease!important;
 }

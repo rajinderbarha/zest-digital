@@ -9,11 +9,11 @@ interface BoxTitleProps {
 const Box_Title = ({ upper,below }: BoxTitleProps) => {
   return (
     <div className="mx-auto max-w-[1027px]">
-      <h2 className="font-mono font-semibold italic text-25px sm:text-30px md:text-35px leading-10 lg:leading-normal lg:text-40px xl:text-45px text-white mx-auto text-center sm:px-10 pb-6">
+      <h2 className="font-mono font-semibold italic text-[18px] sm:text-30px md:text-35px sm:leading-10 lg:leading-normal lg:text-40px xl:text-45px text-white mx-auto text-center sm:px-10 pb-6">
         {upper}
       </h2>
       <div className="sm:px-16 px-[20px]">
-        <p className="text-base font-mono text-color-9 mx-auto border-t border-color-9 text-center pt-3">
+        <p className="sm:text-base text-[10px] font-mono text-color-9 mx-auto border-t border-color-9 text-center pt-3">
           {below}
         </p>
       </div>

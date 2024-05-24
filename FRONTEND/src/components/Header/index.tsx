@@ -6,23 +6,27 @@ import Link from "next/link";
 import { HeaderType } from "../../../lib/interface";
 // import PropTypes from "prop-types";
 import classes from "./Header.module.css";
-import barsIcon from "../../assets/images/bars-svgrepo-com.svg";
+import barsIcon from "../../assets/images/barsIcon.svg";
 import logo from "../../assets/images/zest-logo_vector.png";
 import { useRouter } from 'next/router';
+import Sub_Logo from '../../assets/images/ManuLogo.svg'
+import closeIcon from '../../assets/images/closeIcon.svg'
+import { url } from "inspector";
 
 const Header = ({ data }: { data: HeaderType[] }) => {
 
   const router = useRouter();
-
+  const [iconSrc, setIconSrc] = useState(barsIcon);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    // Prevent or allow scroll based on the menu state
     if (!isMenuOpen) {
       document.body.style.overflow = "hidden";
+      setIconSrc(closeIcon); 
     } else {
       document.body.style.overflow = "";
+      setIconSrc(barsIcon); 
     }
   };
 
@@ -41,9 +45,10 @@ const Header = ({ data }: { data: HeaderType[] }) => {
 
   return (
     <>
+    <div className="Body_padding">
       {data?.map((item, index) => {
         return (
-          <div className="main_padding py-4 md:p-0" key={index}>
+          <div className="main_padding  md:p-0" key={index}>
             {/*------------------- Desktop View----------------- */}
             <div
               key={`header_${item.logo._id}`}
@@ -65,6 +70,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   id="nav-menus"
                   className={`${navMenu.menu.simple} + ${navMenu.menu.responsive1} + ${navMenu.menu.responsive2}`}
                 >
+                  
                   {/* {item.navItem.map((navItem, index) => (
                     <Link href={navItem.buttonLink} key={`navItem_${index}`} passHref>
                     <Link
@@ -117,32 +123,43 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   />
                 </Link>
               </div>
+              <div className="flex items-center gap-[15px]">
+              <Link
+                  href={item.button.navLink}
+                  className=" font-mono text-[12px] px-21px py-[7px] bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1"
+                >
+                  {item.button.navName}
+                </Link>
               <div className={classes.menuIcon} onClick={toggleMenu}>
-                <Image src={barsIcon} alt="Logo" />
+                <Image src={iconSrc} alt="Logo" />
               </div>
-              <div
+              </div>
+              <div 
                 className={`${classes.menu} px-[16px] ${isMenuOpen ? classes.menuOpen : classes.menuOpen
                   }`}
                 style={{ height: isMenuOpen ? "100vh" : 0 }}
               >
+                <div className={`${classes.BG_manu}`}>
                 {item.navItem.map((navItem, index) => (
                   <Link
                     onClick={toggleMenu}
                     href={navItem.buttonLink}
                     key={`navItem_${index}`}
                     className={`${classes.custom_menu_items_class} `}
-                  >
-                    {navItem.buttonName}
+                  ><span>{navItem.buttonName}</span>
+                    
                   </Link>
                 ))}
 
                 <div className="">
-                  <Link
+                  {/* <Link
                     href={item.button.navLink}
                     className="screen-1-max:hidden w-max font-mono text-base px-21px py-[5px] bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1"
                   >
                     {item.button.navName}
-                  </Link>
+                  </Link> */}
+                  <Image src={Sub_Logo} className="w-[130px] mt-[150px]" alt="Logo_img" />
+                  </div>
                 </div>
               </div>
             </nav>
@@ -150,6 +167,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
           </div>
         );
       })}
+      </div>
     </>
   );
 };

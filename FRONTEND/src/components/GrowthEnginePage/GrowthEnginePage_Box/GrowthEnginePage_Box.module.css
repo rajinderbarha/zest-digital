@@ -4,17 +4,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #000;
-    /* padding: 85px 16px 85px 16px; */
-    /* border-radius: 30px; */
 }
 
-.Our_values_main_p {
-    /* max-width: 724px; */
-}
-
-.Our_values_main_2 {
-    /* margin: -140px 0; */
-}
 
 @media screen and (max-width:1040px) {
     .Our_values_main_2 {
@@ -22,13 +13,6 @@
     }
 }
 
-@media screen and (max-width:768px) {
-
-
-    .growth_box {
-        /* padding: 80px 16px 50px 16px; */
-    }
-}
 
 
 
@@ -136,10 +120,11 @@
         max-width: 400px;
     }
     .growth_box_image{
-        width: 180px;
-        height: 180px;
+        width: 120px;
+        height: 120px;
+        margin-top: 8px;
     }
     .below_box_heading{
-        margin-bottom: 174px;
+        margin-bottom: 78px;
     }
 }

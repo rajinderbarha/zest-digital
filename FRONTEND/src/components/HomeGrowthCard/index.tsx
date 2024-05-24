@@ -49,13 +49,13 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                 <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px] flex md:gap-4 flex-wrap justify-center text-center">
                 {heading}
              
-                    <p className={`${classes.animatedText} xl:w-[177px] lg:w-[160px] md:w-[140px] `}>
+                    <span className={`${classes.animatedText} xl:w-[177px] lg:w-[160px] md:w-[140px] `}>
                         {card?.switcher?.map((text: any, idx: any) => (
                             <span key={idx} className={ `${ idx === animateIndex ? classes.textIn : classes.textOut }  xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px]  text-color-3`}>
                                 {text}
                             </span>
                         ))}
-                    </p>
+                    </span>
                     </h2>
              </div>
          </div>
@@ -64,13 +64,13 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
               {horizontalbars?.map(
                 ({ numHeading, desc, title }: any, index: any) => {
                   if (index == 0) {
-                    outerSpan = "md:col-span-6 ";
+                    outerSpan = "md:col-span-6 growth_grid_1";
                     innerSpan = "md:col-span-6";
                   } else if (index == 1) {
-                    outerSpan = "md:col-span-7 ";
+                    outerSpan = "md:col-span-7 growth_grid_2";
                     innerSpan = "md:col-span-5";
                   } else if (index == 2) {
-                    outerSpan = "md:col-span-8 ";
+                    outerSpan = "md:col-span-8 growth_grid_3";
                     innerSpan = "md:col-span-4";
                   }
                   return (

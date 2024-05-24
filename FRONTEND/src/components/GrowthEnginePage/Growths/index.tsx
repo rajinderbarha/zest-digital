@@ -15,7 +15,7 @@ function Growths({ data ,otherSolHeading}: any ) {
 
               <h2
                 // key={`${index}_Growths`}
-                className="text-30px md:text-45px sm:text-35px font-mono font-semibold mx-auto text-center"
+                className="text-[22px] md:text-45px sm:text-35px font-mono font-semibold mx-auto text-center"
               >
                 {otherSolHeading}
               </h2>
