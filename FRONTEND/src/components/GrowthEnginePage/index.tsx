@@ -40,6 +40,7 @@ function GrowthEnginePage({ data, card, otherSolHeading }: any) {
 
   return (
     <>
+    <div className="Body_padding">
       <GrowthEnginePage_Banner
         data={{
           heading: data.heading,
@@ -61,6 +62,7 @@ function GrowthEnginePage({ data, card, otherSolHeading }: any) {
         />
         </div>
       <Growths data={card} otherSolHeading={otherSolHeading} />
+      </div>
     </>
   );
 }

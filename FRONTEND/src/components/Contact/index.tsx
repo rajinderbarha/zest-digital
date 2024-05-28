@@ -22,25 +22,11 @@ function Contact({ data }: { data: ContactType }) {
               className={`${classes.text_div} lg:col-span-5   relative h-max lg:me-10`}
             >
               <div className=" max-w-[636px] ">
-                <h2 className="font-mono font-semibold md:text-35px text-25px pe-10">
+                <h2 className="font-mono font-semibold md:text-35px text-[22px] pe-10">
                   {data?.description}
                 </h2>
 
                 <div className="icons flex md:mt-10 sm:mt-[30px] mt-[15px] gap-[18px]">
-                  {/* {data?.social.map((socialmap, index) => (
-                    <Link
-                      href={socialmap.socialLink}
-                      key={`${index}_socialmap`}
-                    >
-                      <Image
-                        src={urlFor(socialmap.socialImage).url()}
-                        height={45}
-                        width={45}
-                        alt=""
-                        className="md:w-[45px] sm:w-[38px] w-[35px]"
-                      />
-                    </Link>
-                  ))} */}
                   <div className="group">
                     <Link href="https://www.facebook.com/ZestDigital/">
                       <Image
@@ -48,14 +34,14 @@ function Contact({ data }: { data: ContactType }) {
                         width={50}
                         height={50}
                         alt=""
-                        className="md:w-[45px] sm:w-[38px] w-[35px] group-hover:hidden"
+                        className="md:w-[45px] sm:w-[38px] w-[45px] group-hover:hidden"
                       />
                       <Image
                         src={facebook_white}
                         width={50}
                         height={50}
                         alt=""
-                        className="md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                        className="md:w-[45px] sm:w-[38px] w-[45px] hidden group-hover:block"
                       />
                     </Link>
                   </div>
@@ -66,14 +52,14 @@ function Contact({ data }: { data: ContactType }) {
                         width={50}
                         height={50}
                         alt=""
-                        className=" md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
+                        className=" md:w-[45px] sm:w-[38px] w-[45px]  group-hover:hidden"
                       />
                       <Image
                         src={linkedin_white}
                         width={50}
                         height={50}
                         alt=""
-                        className=" md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                        className=" md:w-[45px] sm:w-[38px] w-[45px] hidden group-hover:block"
                       />
                     </Link>
                   </div>
@@ -84,20 +70,20 @@ function Contact({ data }: { data: ContactType }) {
                         width={50}
                         height={50}
                         alt=""
-                        className=" md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
+                        className=" md:w-[45px] sm:w-[38px] w-[45px]  group-hover:hidden"
                       />
                       <Image
                         src={instagram_white}
                         width={50}
                         height={50}
                         alt=""
-                        className=" md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                        className=" md:w-[45px] sm:w-[38px] w-[45px] hidden group-hover:block"
                       />
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="sm:block hidden hand_img absolute right-0 md:-bottom-[60%] -bottom-[20%] md:max-w-max max-w-[150px]">
+              <div className="ms-auto  hand_img sm:absolute right-0 md:-bottom-[60%] -bottom-[20%] md:max-w-max max-w-[150px]">
                 <Image
                   src={urlFor(data?.image).url()}
                   width={270}
@@ -113,14 +99,14 @@ function Contact({ data }: { data: ContactType }) {
                   <div className="enquiry">
                     <label
                       htmlFor="enquiry"
-                      className="text-color-9 sm:text-base text-[15px] font-semibold font-mono w-full "
+                      className="text-color-9 sm:text-base text-[12px] font-semibold font-mono w-full "
                     >
                       What is the nature of your enquiry?*
                     </label>
                     <select
                       id="enquiry"
                       name="enquiry"
-                      className=" w-full font-lato border border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] text-color-1 md:mt-[11px] sm:mt-[9px] mt-[5px]"
+                      className=" w-full font-lato border border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[14px] text-color-1 md:mt-[11px] sm:mt-[9px] mt-[5px]"
                       required
                     >
                       <option>Grow my business</option>
@@ -133,7 +119,7 @@ function Contact({ data }: { data: ContactType }) {
                     <div className="first_name flex flex-col w-full max-w-[300px]">
                       <label
                         htmlFor="fname"
-                        className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
+                        className="text-color-9 sm:text-base text-[12px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
                       >
                         First name*
                       </label>
@@ -141,7 +127,7 @@ function Contact({ data }: { data: ContactType }) {
                         type="text"
                         name="fname"
                         id=""
-                        className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] "
+                        className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[14px] "
                         placeholder="John"
                         required
                       />
@@ -149,7 +135,7 @@ function Contact({ data }: { data: ContactType }) {
                     <div className="last_name flex flex-col w-full max-w-[300px]">
                       <label
                         htmlFor="lname"
-                        className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
+                        className="text-color-9 sm:text-base text-[12px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
                       >
                         Last name*
                       </label>
@@ -157,7 +143,7 @@ function Contact({ data }: { data: ContactType }) {
                         type="text"
                         name="lname"
                         id=""
-                        className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px]"
+                        className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[14px]"
                         placeholder="Doe"
                       />
                     </div>
@@ -165,7 +151,7 @@ function Contact({ data }: { data: ContactType }) {
                   <div className="email flex flex-col w-full ">
                     <label
                       htmlFor="email"
-                      className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
+                      className="text-color-9 sm:text-base text-[12px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
                     >
                       E-mail*
                     </label>
@@ -173,7 +159,7 @@ function Contact({ data }: { data: ContactType }) {
                       type="email"
                       name="email"
                       id=""
-                      className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px]"
+                      className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[14px]"
                       placeholder="johndoe@gmail.com"
                       required
                     />
@@ -181,7 +167,7 @@ function Contact({ data }: { data: ContactType }) {
                   <div className="message flex flex-col w-full ">
                     <label
                       htmlFor="message"
-                      className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
+                      className="text-color-9 sm:text-base text-[12px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[5px]"
                     >
                       Message*
                     </label>
@@ -190,20 +176,20 @@ function Contact({ data }: { data: ContactType }) {
                       id=""
                       cols={30}
                       rows={10}
-                      className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px] md:py-[11px] sm:py-[9px] py-[6px]  text-lg h-[172px]"
+                      className="w-full border font-lato border-color-9 rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px] md:py-[11px] sm:py-[9px] py-[6px] text-[14px] sm:text-lg h-[172px]"
                       placeholder="Type your message here"
                       required
                     ></textarea>
                   </div>
                   <div className="note sm:mt-[-26px] -mt-[18px]">
-                    <p className="text-color-9 text-md font-mono">
+                    <p className="text-color-9 text-[12px] sm:text-md font-mono">
                       * required fields
                     </p>
                   </div>
                   <input
                     type="submit"
                     value="Send"
-                    className="bg-white border border-white hover:text-white hover:bg-color-1  text-[15px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[17px] md:py-[8px] sm:py-[5px] py-[3px] mx-auto"
+                    className="bg-white border border-white hover:text-white hover:bg-color-1  text-[16px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[26px] md:py-[8px] sm:py-[5px] py-[10px] mx-auto"
                   />
                 </form>
               </div>

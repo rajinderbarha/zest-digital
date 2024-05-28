@@ -11,15 +11,26 @@
 /* text-decoration: underline; */
 }
 
-
+.BG_manu{
+  background-image: url(../../assets//images//Gradient_v3.png);
+  background-color: #191615;
+  background-position: bottom;
+  height: 93vh;
+  background-size: contain;
+  border-radius: 15px;
+  text-align: end;
+  padding: 65px 36px;
+  color: #fff;
+  background-repeat: no-repeat;
+}
   .menuIcon{
     max-width: max-content;
     width: 100%;
   }
   
   .menuIcon img {
-    width: 23px;
-    height: 23px; 
+    width: 27px;
+    height: 27px; 
     cursor: pointer;
   }
   
@@ -51,5 +62,10 @@
 }
 
 .custom_menu_items_class{
-  @apply text-color-1 font-mono text-[20px] md:text-[22px] px-4 py-[3px] md:py-[8px] mb-[10px] hover:bg-color-1 hover:text-white rounded-[6px]  active:bg-color-1 active:text-white
+  @apply text-white font-mono text-[26px] md:text-[22px] px-4 py-[3px] md:py-[8px] mb-[10px] hover:bg-color-1 hover:text-white rounded-[6px]  active:bg-color-1 active:text-white
+}
+
+.custom_menu_items_class span:hover{
+border-bottom: 2px solid #e43fa8;
+color: #e43fa8;
 }

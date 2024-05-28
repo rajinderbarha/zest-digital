@@ -115,12 +115,12 @@
   }
   @media only screen and (max-width: 639px) {
     .grow_img{
-      top: -62px;
+      top: -80px;
       right: 37px;
     }
     .grow_img img{
-      width: 115px;
-      height: 115px;
+      width: 130px;
+      height: 130px;
     }
     .SingleIntro{
       margin-top: 50px;

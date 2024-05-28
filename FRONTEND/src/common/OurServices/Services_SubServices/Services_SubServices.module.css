@@ -76,9 +76,9 @@
         max-height: 150px;  
       }
 }
-@media only screen and (max-width:639px){
+/* @media only screen and (max-width:639px){
     .top_image{
         max-width: 120px;
         max-height: 120px;  
       }
-}
+} */

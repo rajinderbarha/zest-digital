@@ -204,7 +204,7 @@ function Filters({ data }: {data:FiltersType}) {
     <>
       <div className="main_padding">
         <div className="main_container">
-          <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] md:my-[60px] my-[30px] xl:text-55px lg:text-50px md:text-40px text-35px">
+          <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] md:my-[60px] my-[38px] xl:text-55px text-color-1 lg:text-50px md:text-40px text-[22px] sm:text-35px">
             {data.heading}
           </h2>
         </div>
@@ -214,10 +214,10 @@ function Filters({ data }: {data:FiltersType}) {
             <Image
               src={Filters_image}
               alt=""
-              className={`${classes.Filters_img} invisible md:visible  bg-color-1  rounded-30px absolute top-0 w-full`}
+              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px] rounded-30px absolute top-0 w-full`}
             />
-            <div className={`${classes.Filters_box} relative z-10  grid lg:grid-cols-12`}>
-              <div className="lg:col-span-8 lg:order-1 order-2">
+            <div className={`${classes.Filters_box}  relative z-10  grid lg:grid-cols-12`}>
+              <div className="lg:col-span-8 md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
                 {filteredProducts.map((item, index: number) => (
                   <div className="my-10" key={index}>
                     <div
@@ -242,12 +242,12 @@ function Filters({ data }: {data:FiltersType}) {
                         )}
                               </div>
                         <h2
-                          className={`xl:text-35px lg:text-[34px] md:text-30px text-25px font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}
+                          className={`xl:text-35px lg:text-[34px] md:text-30px text-[20px] font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}
                         >
                           {item.hero.heading}
                         </h2>
                         <Link href={`/insights/${item.slug.current}`}>
-                          <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base md:py-[7px] md:ps-5 py-[3px] ps-[13px] pe-[5px] md:pe-0 flex gap-2 items-center">
+                          <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white sm:text-base text-[12px] md:py-[7px] md:ps-5 py-[8px] ps-[13px] pe-[5px] md:pe-0 flex gap-2 items-center">
                             Read more{" "}
                             <span className="md:p-1 p-[2px] group-hover:bg-color-1 group-hover:text-white bg-white rounded-full text-black me-0 md:me-2 text-[15px] md:text-lg">
                               <GoArrowRight />
@@ -255,7 +255,7 @@ function Filters({ data }: {data:FiltersType}) {
                           </button>
                         </Link>
                       </div>
-                      <div className="col-span-3 sm:block hidden relative">
+                      <div className="col-span-3  relative">
                         <Image
                           className="lg:w-[150px] md:w-[130px] w-[110px] ms-auto h-[110px] lg:h-[150px]"
                           src={urlFor(item.hero.icon).url()}
@@ -270,8 +270,8 @@ function Filters({ data }: {data:FiltersType}) {
               </div>
 
               <div className="lg:col-span-1 lg:order-2"></div>
-              <div className="lg:col-span-3  lg:order-3 order-1 lg:text-right ">
-                <h2 className="text-30px md:text-white text-color-1  font-mono font-semibold xl:mb-10 lg:mb-[20px] md:mb-[10px] mb-[8px]">
+              <div className="lg:col-span-3 md:px-0 pt-6 md:pt-0 px-[20px]  lg:order-3 order-1 lg:text-right ">
+                <h2 className="sm:text-30px text-[18px] text-white font-mono font-semibold xl:mb-10 lg:mb-[20px] md:mb-[10px] mb-[8px]">
                   Filters
                 </h2>
                 <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3 ">
@@ -298,7 +298,7 @@ function Filters({ data }: {data:FiltersType}) {
             className={`${classes.Footer_Img} md:mt-[100px] mt-[50px] bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[55px] mb-[30px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}
           >
             <div
-              className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}
+              className={`${classes.Zest_symbol_white} w-full  absolute top-[27px] left-0 right-0`}
             >
               {/* {/ <Image src={logo} alt='icon' className='mx-auto' width={50} height={50} /> /} */}
 

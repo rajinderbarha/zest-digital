@@ -81,15 +81,15 @@ const Footer = ({ data }: { data: FooterType[] }) => {
               >
                 {item.footerItem.map((footerItm, index) => (
                   <div className={`${classes.footer_details}`} key={`${index}_footerItm`}>
-                    <h2 className="font-bold xl:text-[24px] lg:text-[22px] md:text-[20px] text-[18px] lg:mb-3 md:mb-[9px] sm:mb-[6px] mb-[4px] font-mono ">
+                    <h2 className="font-bold xl:text-[24px] lg:text-[22px] md:text-[20px] text-[16px] lg:mb-3 md:mb-[9px] sm:mb-[6px] mb-[4px] font-mono ">
                       {footerItm.heading}
                     </h2>
                     {footerItm.list.map((list, index) => (
                       <div key={`${index}_list`} className={`${classes.address}`}>
-                        <address className="font-lato not-italic xl:text-[18px] lg:text-[16px] md:text-[15px] text-[13px]">
+                        <address className="font-lato not-italic xl:text-[18px] lg:text-[16px] md:text-[15px] text-[10px]">
                           <PortableText value={list.address} />
                         </address>
-                        <p className=" flex font-lato items-center justify-center gap-1 xl:mt-[13px] lg:mt-[10px] md:mt-[8px] mt-[5px] text-left"><FaPhoneAlt className='text-white xl:text-[20px] lg:text-[18px] md:text-[16px] text-[14px]' /><span className="text-color-7 xl:text-[18px] lg:text-[16px] md:text-[15px] text-[13px]"> {list.contact}</span></p>
+                        <p className=" flex font-lato items-center justify-center gap-1 xl:mt-[13px] lg:mt-[10px] md:mt-[8px] mt-[5px] text-left"><FaPhoneAlt className='text-white xl:text-[20px] lg:text-[18px] md:text-[16px] text-[11px]' /><span className="text-color-7 xl:text-[18px] lg:text-[16px] md:text-[15px] text-[10px]"> {list.contact}</span></p>
                       </div>
                     ))}
                   </div>
@@ -189,8 +189,8 @@ const Footer = ({ data }: { data: FooterType[] }) => {
               </div>
             </div>
           </div>
-          <div className="bg-color-1 lg:h-[90px] md:h-[80px] sm:h-[60px] sm:py-0 py-[5px] flex items-center " >
-            <div className={"text-white max-w-[1720px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]"}>
+          <div className="bg-color-1 lg:h-[90px] md:h-[80px] sm:h-[60px] sm:py-0 py-[10px] flex items-center " >
+            <div className={"text-white max-w-[1720px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] sm:text-[15px] text-[10px]"}>
               <PortableText value={item.copyRightText} />
             </div>
           </div>

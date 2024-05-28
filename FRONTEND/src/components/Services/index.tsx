@@ -34,6 +34,7 @@ function Services({ data }: { data: SingleOurService }) {
 
   return (
     <>
+    <div className="Body_padding">
       <Services_Banner
         max_width="1033px"
         title={title}
@@ -70,6 +71,7 @@ function Services({ data }: { data: SingleOurService }) {
         address={agencyAddress}
         cardLoc={cardLoc}
       />
+      </div>
     </>
   );
 }
