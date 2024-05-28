@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import popup_person from '../../assets/images/popup_person.svg'
 import popup_percentage from '../../assets/images/percent.svg'
 import popup_pound from '../../assets/images/pound-circle.svg'
@@ -8,9 +8,44 @@ import popup_percantage from '../../assets/images/popup_percantage.svg'
 import popup_euro from '../../assets/images/popup_euro.svg'
 import { GoArrowLeft } from "react-icons/go";
 import ProgressBar from '@/common/ProgressBar'
-function Resources_Calculater_Step_4({ setStep }: any) {
+function Resources_Calculater_Step_4({ setStep,formData, setFormData }: any) {
+    
+    const [inputValues, setInputValues] = useState({
+        average_monthly_sessions: '',
+        average_conversion_rate: '',
+        average_order_value: '',
+        conversion_rate: ''
+    });
+    const handleChange = (e: any) => {
+        const { name, value } = e.target;
+        setInputValues(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+    const handleNextButtonClick = () => {
+        if (
+            inputValues.average_monthly_sessions.trim() === '' ||
+            inputValues.average_conversion_rate.trim() === '' ||
+            inputValues.average_order_value.trim() === ''
+        ) {
+            
+            return;
+        }
+
+        setFormData((prevFormData: any) => ({
+            ...prevFormData,
+            averageMonthlySessions: inputValues.average_monthly_sessions,
+            averageConversionRate: inputValues.average_conversion_rate,
+            averageOrderValue: inputValues.average_order_value,
+            coversionRate: inputValues.conversion_rate,
+        }))
+        setStep(5)
+    }
+
     return (
         <>
+        
             <div className="Resources_Calculater_Step_4">
                 <div className="pe-[6px] pb-[6px]">
                     <div className="Resources_Calculater_Step_4 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
@@ -21,10 +56,10 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                         <div className="form_details max-w-[710px] mx-auto md:justify-end justify-center grid gap-5 md:pb-[97px] sm:pb-[60px] pb-[30px]">
                             <div className="flex relative  md:justify-self-end   max-w-max ">
                                 <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px] ">
-                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold sm:text-base md:text-[18px] text-color-1'>Average monthly sessions:</label>
+                                    <label htmlFor="average_monthly_sessions" className='font-mono font-semibold sm:text-base md:text-[18px] text-color-1'>Average monthly sessions:</label>
                                     <div className="flex items-center gap-2 relative">
-
-                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='1000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
+                                            
+                                        <input onChange={handleChange} value={inputValues.average_monthly_sessions } type="number" name="average_monthly_sessions" id="monthly_sessions" placeholder='1000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
                                             <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
@@ -38,10 +73,10 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                             </div>
                             <div className="flex  relative md:justify-self-end  max-w-max">
                                 <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
-                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Average conversion rate:</label>
+                                    <label htmlFor="average_conversion_rate" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Average conversion rate:</label>
                                     <div className="flex items-center gap-2 relative">
 
-                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='3' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
+                                        <input onChange={handleChange} value={inputValues.average_conversion_rate} type="number" name="average_conversion_rate" id="average_conversion_rate" placeholder='3' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
                                             <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
@@ -55,10 +90,10 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                             </div>
                             <div className="flex  relative  md:justify-self-end   max-w-max">
                                 <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
-                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Average order value:</label>
+                                    <label htmlFor="average_order_value" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Average order value:</label>
                                     <div className="flex items-center gap-2 relative">
 
-                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='5000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
+                                        <input onChange={handleChange} value={inputValues.average_order_value} type="number" name="average_order_value" id="average_order_value" placeholder='5000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
                                             <Image src={popup_pound} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
@@ -70,12 +105,13 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                                 </div>
 
                             </div>
+                            {formData.businessType === 'lead generation' &&
                             <div className="flex relative md:justify-self-end max-w-max">
                                 <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px]">
-                                    <label htmlFor="monthly_sessions" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Conversion rate (lead to sale):</label>
+                                    <label htmlFor="conversion_rate" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Conversion rate (lead to sale):</label>
                                     <div className="flex items-center gap-2 relative">
 
-                                        <input type="number" name="monthly_sessions" id="monthly_sessions" placeholder='40' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
+                                        <input onChange={handleChange} value={inputValues.conversion_rate} type="number" name="conversion_rate" id="conversion_rate" placeholder='40' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
 
                                         <div className="">
                                             <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
@@ -87,10 +123,11 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                                 </div>
 
                             </div>
+                            }
 
                         </div>
                         <div className="button text-center mb-[27px]">
-                            <button className='bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] text-white rounded-full' type='button' onClick={() => setStep(5)}>Next</button>
+                            <button className='bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] text-white rounded-full' type='button' onClick={handleNextButtonClick}>Next</button>
                         </div>
                         <div className=" max-w-max mx-auto w-max ">
                             <button className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1" type='button' onClick={() => setStep(3)}><GoArrowLeft /> Back </button>
@@ -98,6 +135,7 @@ function Resources_Calculater_Step_4({ setStep }: any) {
                     </div>
                 </div>
             </div>
+        
         </>
     )
 }

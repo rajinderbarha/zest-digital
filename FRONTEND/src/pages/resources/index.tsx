@@ -16,7 +16,9 @@ function resources({ resources }: any) {
   const searchParams = useSearchParams();
   const search = searchParams.get("popup");
   const [step, setStep] = useState<number>(0);
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+
+  });
 
   const {
     register,
@@ -26,6 +28,31 @@ function resources({ resources }: any) {
   } = useForm();
 
   console.log("formData", formData);
+
+
+
+
+
+  function sendDataToGoogleSheets() {
+    fetch('https://script.google.com/macros/s/AKfycbypYXDAAfgjAqOot2S1jWblyG9_Uo0nGtEgpkgbhp7kcFmFEU3t-W1ECr76vCkolAYS/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+      .then(response => response.json())
+      .then(data => console.log("Response from Google Sheets:", data))
+      .catch(error => console.error('Error:', error));
+  }
+
+
+
+
+
+
+
   return (
     <>
       <StepPopup
@@ -71,6 +98,7 @@ function resources({ resources }: any) {
               register={register}
               handleSubmit={handleSubmit}
               setFormData={setFormData}
+              formData={formData}
             />
           )}
           {step === 5 && (
@@ -79,8 +107,10 @@ function resources({ resources }: any) {
               register={register}
               handleSubmit={handleSubmit}
               setFormData={setFormData}
+              sendDataToGoogleSheets={sendDataToGoogleSheets}
             />
           )}
+
         </>
       </StepPopup>
 

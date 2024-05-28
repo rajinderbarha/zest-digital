@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import classes from './Resource_Access_popup.module.css'
 import popup_close_icon from '../../assets/images/popup_close_icon.png'
 import Image from 'next/image'
 function Resource_Access_popup({setStep, register,handleSubmit,setFormData}:any) {
+
+
     return (
         <form onSubmit={handleSubmit((data:any)=>{
+            if (!data.firstName || !data.lastName || !data.email) {
+                return;
+            }
             setFormData(data)
             setStep(1)
         })}>
+
             <div className="Resource_Access_popup ">
                 <div className="px-[6px] pb-[6px]">
 
