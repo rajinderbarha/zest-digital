@@ -22,14 +22,14 @@ function Our_values({ data }: { data: AboutType[] }) {
                   {(path + 1) % 2 !== 0 ? (
                     <div className="Our_values_main">
                     <Image
-                      className=" xl:max-w-[250px] xl:h-[250px]  lg:max-w-[210px] lg:h-[210px] md:max-w-[170px] md:h-[170px] sm:max-w-[130px] sm:h-[130px] max-w-[90px] h-[90px] w-full "
+                      className={`${classes.Our_values_img} xl:max-w-[250px] xl:h-[250px]  lg:max-w-[210px] lg:h-[210px] md:max-w-[170px] md:h-[170px] sm:max-w-[130px] sm:h-[130px] max-w-[90px] h-[90px] w-full `}
                       src={urlFor(valSection.image).url()}
                       width={250}
                       height={250}
                       alt=""
                       
                     />
-                    <h3 className="font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[16px] md:mb-5  mb-[5px] font-mono  text-color-7 border-b border-color-7 sm:pr-[63px] w-fit md:w-max">
+                    <h3 className="font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[16px] md:mb-5  mb-[5px] font-mono  text-color-7 border-b border-color-7 sm:pr-[63px] w-fit md:w-max pr-[35px]">
                       {valSection.title}
                     </h3>
                     <p
@@ -47,7 +47,7 @@ function Our_values({ data }: { data: AboutType[] }) {
                         height={250}
                         alt=""
                       />
-                      <h3 className="font-semibold  xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[16px] md:mb-5  mb-[5px] ms-auto font-mono  text-color-7 border-b border-color-7 sm:ps-[63px] w-fit md:w-max">
+                      <h3 className="font-semibold  xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[16px] md:mb-5  mb-[5px] ms-auto font-mono  text-color-7 border-b border-color-7 sm:ps-[63px] w-fit md:w-max ps-[35px]">
                         {valSection.title}
                       </h3>
                       <p
