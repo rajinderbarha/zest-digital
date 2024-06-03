@@ -30,6 +30,10 @@
     @apply border-yellow-500 mt-0
 }
 
+.Block_Content a{
+    @apply text-color-9 underline cursor-pointer
+}
+
 .sub_title {
     @apply font-mono text-25px md:text-35px font-semibold
 }
@@ -39,6 +43,11 @@
     
 }
 
+@media only screen and (max-width:991px) {
+    .Block_Content figure{
+        @apply  my-[35px]
+    }
+}
 @media only screen and (max-width:991px) {
     .Zest_symbol_white {
         margin-left: 0;

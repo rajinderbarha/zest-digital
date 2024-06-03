@@ -13,7 +13,7 @@ function Solution_Banner({ data }: { data: Solution_BannerType }) {
                 <div className='main_container'>
                     <div className="grid md:grid-cols-12 ">
                         <div className="md:col-span-7">
-                            <h2 className=' banner_title xl:text-45px lg:text-40px md:text-35px text-color-1 sm:text-[27px] text-[22px] font-semibold font-mono bg-light-green-1  w-fit md:w-max px-2 md:mb-9' >{data.upperTitle}</h2>
+                            <h2 className=' banner_title xl:text-45px lg:text-40px md:text-35px text-color-1 sm:text-[27px] text-[22px] font-semibold font-mono bg-light-green-1  w-fit md:w-max px-2 md:mb-9 sm:mb-[21px] mb-[15px]' >{data.upperTitle}</h2>
                             <h1 className='font-mono font-semibold xl:text-55px lg:text-50px md:text-[42px] sm:text-[30px] text-[22px] mb-5 text-color-1'>{data.heading}</h1>
                             {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
                         </div>

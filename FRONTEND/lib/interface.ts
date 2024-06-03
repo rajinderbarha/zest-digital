@@ -305,7 +305,9 @@ export interface SingleOurService {
   max_width: string;
   button: {
     callButtonName: string;
+    callButtonLink: string;
     resultsButtonName: string;
+    resultsButtonLink: string;
   };
   Services_Box: Services_BoxType;
 
@@ -348,6 +350,7 @@ export interface Services_book_cal {
   [x: string]: any;
   heading: string;
   buttonName: string;
+  buttonLink: string;
 }
 export interface SubServices {
   heading_sub: string;
@@ -361,6 +364,7 @@ export interface clientResults {
   title_CR: string;
   heading_CR: string;
   belowbuttonName_CR: string;
+  belowbuttonLink_CR: string;
   card: ourServiceCard[];
   //   clientResult: {
   // }
@@ -389,6 +393,7 @@ export type AgencyAddress = {
   heading_add: string;
   slotDescription_add: string;
   buttonName_add: string;
+  buttonName_link: string;
   address: any;
   cardLoc: {
     location: {

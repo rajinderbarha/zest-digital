@@ -59,7 +59,7 @@ function Resources_Calculater_Step_4({ setStep,formData, setFormData }: any) {
                                     <label htmlFor="average_monthly_sessions" className='font-mono font-semibold sm:text-base md:text-[18px] text-color-1'>Average monthly sessions:</label>
                                     <div className="flex items-center gap-2 relative">
                                             
-                                        <input onChange={handleChange} value={inputValues.average_monthly_sessions } type="number" name="average_monthly_sessions" id="monthly_sessions" placeholder='1000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
+                                        <input onChange={handleChange} value={inputValues.average_monthly_sessions } type="number" name="average_monthly_sessions" id="monthly_sessions" placeholder='1000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                         <div className="">
                                             <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
@@ -76,7 +76,7 @@ function Resources_Calculater_Step_4({ setStep,formData, setFormData }: any) {
                                     <label htmlFor="average_conversion_rate" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Average conversion rate:</label>
                                     <div className="flex items-center gap-2 relative">
 
-                                        <input onChange={handleChange} value={inputValues.average_conversion_rate} type="number" name="average_conversion_rate" id="average_conversion_rate" placeholder='3' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
+                                        <input onChange={handleChange} value={inputValues.average_conversion_rate} type="number" name="average_conversion_rate" id="average_conversion_rate" placeholder='3' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                         <div className="">
                                             <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
@@ -93,7 +93,7 @@ function Resources_Calculater_Step_4({ setStep,formData, setFormData }: any) {
                                     <label htmlFor="average_order_value" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Average order value:</label>
                                     <div className="flex items-center gap-2 relative">
 
-                                        <input onChange={handleChange} value={inputValues.average_order_value} type="number" name="average_order_value" id="average_order_value" placeholder='5000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
+                                        <input onChange={handleChange} value={inputValues.average_order_value} type="number" name="average_order_value" id="average_order_value" placeholder='5000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                         <div className="">
                                             <Image src={popup_pound} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
@@ -111,7 +111,7 @@ function Resources_Calculater_Step_4({ setStep,formData, setFormData }: any) {
                                     <label htmlFor="conversion_rate" className='font-mono font-semibold  sm:text-base md:text-[18px] text-color-1'>Conversion rate (lead to sale):</label>
                                     <div className="flex items-center gap-2 relative">
 
-                                        <input onChange={handleChange} value={inputValues.conversion_rate} type="number" name="conversion_rate" id="conversion_rate" placeholder='40' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-1' />
+                                        <input onChange={handleChange} value={inputValues.conversion_rate} type="number" name="conversion_rate" id="conversion_rate" placeholder='40' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                         <div className="">
                                             <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />

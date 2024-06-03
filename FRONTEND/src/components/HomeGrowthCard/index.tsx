@@ -94,7 +94,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                           <h3 className="sm:text-[25px] text-[16px] md:max-970:text-[23px] ">
                             {title}
                           </h3>
-                          <p className="sm:text-base text-[12px] md:max-970:text-[14px] md:max-970:leading-4 leading-5">
+                          <p className="sm:text-base text-[12px] md:max-970:text-[14px] md:max-970:leading-4 leading-[15px]">
                             {desc}
                           </p>
                         </div>

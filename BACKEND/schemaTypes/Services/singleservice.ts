@@ -32,7 +32,9 @@ export const SingleService = defineType({
       type: 'object',
       fields: [
         {name: 'callButtonName', type: 'string', title: 'Call button name'},
+        {name: 'callButtonLink', type: 'string', title: 'Call button Link'},
         {name: 'resultsButtonName', type: 'string', title: 'Results button name'},
+        {name: 'resultsButtonLink', type: 'string', title: 'Results button Link'},
       ],
     },
 
@@ -100,6 +102,7 @@ export const SingleService = defineType({
       fields: [
         {name: 'heading_call', type: 'string', title: 'Heading Call'},
         {name: 'buttonName', type: 'string', title: 'Button Name'},
+        {name: 'buttonLink', type: 'string', title: 'Button Link'},
       ],
     },
 
@@ -152,6 +155,7 @@ export const SingleService = defineType({
           ],
         },
         {name: 'belowbuttonName_CR', type: 'string', title: 'Below Button Name'},
+        {name: 'belowbuttonLink_CR', type: 'string', title: 'Below Button Link'},
       ],
     },
 

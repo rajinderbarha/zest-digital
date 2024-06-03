@@ -427,7 +427,9 @@ export async function getSingleOurServicesData(slug: string) {
     "smallDescription": smallDescription,
     "button": {
       "callButtonName": button.callButtonName,
-      "resultsButtonName": button.resultsButtonName
+      "callButtonLink": button.callButtonLink,
+      "resultsButtonName": button.resultsButtonName,
+      "resultsButtonLink": button.resultsButtonLink
     },
     "Services_Box": Services_Box {
       "imageBox": imageBox[] {
@@ -449,7 +451,8 @@ export async function getSingleOurServicesData(slug: string) {
     },
     "Services_book_call": Services_book_call {
       "heading_call": heading_call,
-      "buttonName": buttonName
+      "buttonName": buttonName,
+      "buttonLink": buttonLink,
     },
     "ourSubServices": ourSubServices {
       "heading_sub": heading_sub,
@@ -470,7 +473,8 @@ export async function getSingleOurServicesData(slug: string) {
         "percentage_CR": percentage_CR,
         "buttonName_CR": buttonName_CR
       },
-      "belowbuttonName_CR": belowbuttonName_CR
+      "belowbuttonName_CR": belowbuttonName_CR,
+      "belowbuttonLink_CR": belowbuttonLink_CR
     },
     "globalaccordion": globalaccordion-> {
       "accordiongroup": accordiongroup {
@@ -491,6 +495,7 @@ export async function getSingleOurServicesData(slug: string) {
       "heading_add": heading_add,
       "slotDescription_add": slotDescription_add,
       "buttonName_add": buttonName_add,
+      "buttonName_link": buttonName_link,
       "address": address[] {
         contactInfo
       },

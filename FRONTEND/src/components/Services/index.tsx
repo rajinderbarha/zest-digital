@@ -14,15 +14,15 @@ function Services({ data }: { data: SingleOurService }) {
   const {
     title,
     smallDescription,
-    button: { callButtonName, resultsButtonName },
+    button: { callButtonName, callButtonLink, resultsButtonName, resultsButtonLink },
     Services_Box: {
       contentBox: { heading, description, belowdesc, coloredText },
       imageBox,
     },
-    clientResults: { title_CR, heading_CR, belowbuttonName_CR, card: clientResultsMapData },
-    agencyAddress: { buttonName_add, heading_add, slotDescription_add, address: agencyAddressData, cardLoc },
+    clientResults: { title_CR, heading_CR, belowbuttonName_CR,belowbuttonLink_CR, card: clientResultsMapData },
+    agencyAddress: { buttonName_add, buttonName_link, heading_add, slotDescription_add, address: agencyAddressData, cardLoc },
     globalaccordion: { accordiongroup: { heading_acc, card_acc: card_Accordian, belowbtnName_acc, belowbtnLink_acc } },
-    Services_book_call: { heading_call, buttonName },
+    Services_book_call: { heading_call, buttonName, buttonLink },
     ourSubServices: { heading_sub, services: subServices },
     Services_details,
     Services_Quotes: serviceQuotes,
@@ -39,18 +39,19 @@ function Services({ data }: { data: SingleOurService }) {
         max_width="1033px"
         title={title}
         smallDescription={smallDescription}
-        button={{ callButtonName, resultsButtonName }}
+        button={{ callButtonName, callButtonLink, resultsButtonName, resultsButtonLink }}
       />
       <Services_Box Services_Box={{ contentBox: { heading, description, belowdesc, coloredText }, imageBox }} />
       <div className="xl:mt-[175px] lg:mt-[150px] md:mt-[125px] sm:mt-[80px] mt-[68px]"></div>
 
       <Services_details_happy_customer Services_details={Services_details} />
 
-      <Services_book_call heading={heading_call} buttonName={buttonName} />
+      <Services_book_call heading={heading_call} buttonName={buttonName} buttonLink={buttonLink}/>
       <Services_SubServices heading_sub={heading_sub} services={subServices} />
       <Client_Result
         card={clientResultsMapData}
         belowbuttonName_CR={belowbuttonName_CR}
+        belowbuttonLink_CR={belowbuttonLink_CR}
         title_CR={title_CR}
         heading_CR={heading_CR}
       />
@@ -68,6 +69,7 @@ function Services({ data }: { data: SingleOurService }) {
         heading_add={heading_add}
         slotDescription_add={slotDescription_add}
         buttonName_add={buttonName_add}
+        buttonName_link={buttonName_link}
         address={agencyAddress}
         cardLoc={cardLoc}
       />

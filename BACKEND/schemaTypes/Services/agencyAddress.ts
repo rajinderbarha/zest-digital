@@ -8,6 +8,7 @@ export const ServicesAgencyAddress = defineType({
         { name: 'heading_add', title: 'Heading', type: 'string' },
         { name: 'slotDescription_add', title: 'Slot Description', type: 'string' },
         { name: 'buttonName_add', title: 'Button name', type: 'string' },
+        { name: 'buttonName_link', title: 'Button link', type: 'string' },
         {
             name: 'address',
             title: 'Address',

@@ -15,7 +15,8 @@
     /* border-radius: 30px; */
   }
   .content_inner p a{
-    text-decoration: underline;
+   @apply underline text-color-9;
+
   }
   
   .accordion_title {

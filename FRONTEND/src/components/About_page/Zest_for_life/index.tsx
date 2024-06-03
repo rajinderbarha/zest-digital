@@ -33,7 +33,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
                                             return (
                                                 <div className='Zest_for_life_box text-center md:max-w-fit max-w-[270px] mx-auto' key={`${path}__Zest_for_life_path_0 `}>
                                                     <h2 className='font-mono font-semibold xl:text-45px lg:text-40px md:text-35px text-[18px] sm:text-25px  xl:mb-[70px] lg:mb-[50px] md:mb-[30px] mb-6  text-color-1'>{cardItem.title}</h2>
-                                                    <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black rounded-30px  mx-auto ' alt="" />
+                                                    <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black md:rounded-30px rounded-[20px] mx-auto ' alt="" />
                                                     <p className='text-base font-mono  font-normal lg:mt-8 md:mt-6 mt-4 md:px-8 max-w-[440px] mx-auto text-color-1'>{cardItem.description}</p>
                                                 </div>
                                             )
@@ -43,7 +43,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
 
                                                 <div className='Zest_for_life_box md:mt-20  md:max-w-fit text-center  max-w-[270px] mx-auto' key={`${path}__Zest_for_life_path_1`}>
                                                     <h2 className='font-mono font-semibold xl:text-45px lg:text-40px md:text-35px  text-[18px] sm:text-25px xl:mb-[70px] lg:mb-[50px] md:mb-[30px] mb-6  text-color-1'>{cardItem.title}</h2>
-                                                    <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black rounded-30px mx-auto' alt="" />
+                                                    <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black md:rounded-30px rounded-[20px] mx-auto' alt="" />
                                                     <p className='text-base font-mono  font-normal lg:mt-8 md:mt-6 mt-4 md:px-8 max-w-[440px] mx-auto text-color-1' >{cardItem.description}</p>
                                                 </div>
                                             )
@@ -53,7 +53,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
 
                                                 <div className='Zest_for_life_box  md:max-w-fit text-center md:mt-40  max-w-[270px] mx-auto' key={`${path}__Zest_for_life_path`}>
                                                     <h2 className='font-mono font-semibold xl:text-45px lg:text-40px md:text-35px  text-[18px] sm:text-25px xl:mb-[70px] lg:mb-[50px] md:mb-[30px] mb-6  text-color-1'>{cardItem.title}</h2>
-                                                    <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black rounded-30px mx-auto' alt="" />
+                                                    <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black md:rounded-30px rounded-[20px] mx-auto' alt="" />
                                                     <p className='text-base font-mono  font-normal lg:mt-8 md:mt-6 mt-4 md:px-8 max-w-[440px] mx-auto text-color-1'>{cardItem.description}</p>
                                                 </div>
                                             )

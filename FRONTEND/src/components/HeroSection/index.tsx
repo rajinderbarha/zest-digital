@@ -3,6 +3,7 @@ import Image from "next/image";
 import classes from "./heroSection.module.css";
 import { urlFor } from "../../../lib/sanity.client";
 import { HomepageHeroSec } from "../../../lib/interface";
+import arrow_image from "../../assets/images/arrow.svg"
 
 const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
   const {
@@ -22,7 +23,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
         <div className=" text-white main_container">
           {/* <div className={`${classes.banner} grid md:grid-cols-2 grid-cols-1 gap-10 bg-black bg-image-1 bg-no-repeat bg-cover md:rounded-30px rounded-[20px] xl:pb-[110px] lg:pb-[86px] xl:pt-[130px] lg:pt-[90px] md:pt-[90px] sm:pt-[50px] pt-[30px] md:pb-[150px] sm:pb-[50px] pb-[30px] xl:px-[100px] lg:px-[60px] md:px-[60px] sm:px-[40px] px-[22px] relative`}> */}
           {/* <div className={`${classes.banner} grid md:grid-cols-2 grid-cols-1 gap-10 bg-color-1 bg-image-1 bg-no-repeat bg-cover md:rounded-30px rounded-[20px] xl:pb-[166px] lg:pb-[86px] xl:pt-[185px] lg:pt-[90px] md:pt-[90px] sm:pt-[50px] pt-[60px] md:pb-[150px] sm:pb-[50px] pb-[60px] main_padding relative`}> */}
-          <div className={`${classes.banner} grid md:grid-cols-2 grid-cols-1 gap-10 bg-color-1 bg-image-1 bg-no-repeat md:bg-cover bg-contain bg-bottom md:rounded-30px rounded-[20px] xl:pb-[110px] lg:pb-[86px] xl:pt-[130px] lg:pt-[90px] md:pt-[90px] sm:pt-[50px] pt-[50px] md:pb-[150px] sm:pb-[50px] pb-[90px] main_padding relative`}>
+          <div className={`${classes.banner} grid md:grid-cols-2 grid-cols-1 gap-10 bg-color-1 bg-image-1 bg-no-repeat md:bg-cover bg-contain bg-bottom md:rounded-30px rounded-[20px] xl:pb-[110px] lg:pb-[86px] xl:pt-[130px] lg:pt-[90px] md:pt-[90px] sm:pt-[50px] pt-[50px] md:pb-[150px] pb-[50px] main_padding relative`}>
             <div className=" font-mono text-55px border-white flex flex-col">
               <h1
                 className={`${classes.banner_text} max-w-[650px] font-semibold leading-tight border-white xl:text-55px lg:text-50px md:text-40px sm:text-30px text-[22px]`}
@@ -74,6 +75,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
                 </video>
               </div>
             </div>
+            <Image src={arrow_image} alt="" className="sm:hidden w-[40px] mx-auto rotate-90"/>
           </div>
         </div>
       </div>
