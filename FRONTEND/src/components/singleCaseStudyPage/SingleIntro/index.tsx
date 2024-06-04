@@ -17,7 +17,7 @@ function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
                 <div className={`${classes.singleBox_container}`}>
                     <div className="hidden md:flex  justify-evenly ">
                         {hero.item.map((item: { icon: any, description: string, count: string }, index: number) => {
-                            return (<div className="text-center " key={index}>
+                            return (<div className="text-center flex justify-between flex-col" key={index}>
                                 <div className={` ${classes.top_image} xl:max-w-[250px] lg:max-w-[200px]  max-w-[150px] h-full text-center  mx-auto`}>
                                     <Image src={urlFor(item.icon).url()} alt="growth" width={250} height={250} className='w-full h-full mx-auto'/>
                                 </div>
