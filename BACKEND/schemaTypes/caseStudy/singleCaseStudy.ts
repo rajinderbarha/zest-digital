@@ -18,7 +18,7 @@ export const SingleCaseStudy = defineType({
 
     {name: 'upperTitle', title: 'Upper Title', type: 'string'},
 
-    {name: 'title', title: 'Title', type: 'string'},
+    {name: 'Title', title: 'Title', type: 'string'},
     {
       name: 'hero',
       title: 'Hero',
