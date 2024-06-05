@@ -4,14 +4,15 @@ import { FaPhoneAlt } from "react-icons/fa";
 import london_map from "../../../assets/images/london.webp";
 import classes from "./MapLocations.module.css";
 import { Map, Marker } from "pigeon-maps";
+import { PortableText } from "next-sanity";
 
 function MapLocations({data}:any) {
-  console.log("--------map--''''''",data)
+  console.log("--------map--''''''",data[0].contactInfo)
 
-
+  // const contactInfoArray = Array.isArray(data.address) ? data.address : [];
   return (
     <>
-    {data.map(({longitude,latitude,leftDescriptionList,rightDescriptionList}:any,index:any)=> (
+    {data.map(({longitude,latitude,contactInfo, leftDescriptionList,rightDescriptionList}:any,index:any)=> (
 
       <div key={index} className={`${classes.MapLocations} `}>
         <div
@@ -29,19 +30,23 @@ function MapLocations({data}:any) {
           </Map>
           {/* <Image src={london_map} alt="" className='w-full h-full rounded-[20px] md:rounded-30px shadow-dark-pink-right border border-black' /> */}
         </div>
-        <div className="contact flex justify-between gap-2 mt-[20px]">
+        <div className="contact flex justify-between flex-col-reverse md:flex-row gap-2 mt-[20px]">
           <div className="address ">
-            <address className="text-[13px] md:text-base font-mono text-color-1 not-italic">
+            <address className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] font-mono text-color-1 not-italic">
               {/* {leftDescriptionList} */}
-            </address>
+                <PortableText  value={contactInfo} key={index} />
+             
+            </address >
           </div>
           <div className="tele  h-max">
-            <div className=" flex items-center text-color-9 font-mono ">
-              {/* <FaPhoneAlt className="text-black w-max" /> */}
-              <span className="text-[13px] md:text-base">
+            <div className=" flex items-center text-color-9 font-mono gap-[5px]">
+            <div className="">
+              <FaPhoneAlt className="text-black w-max text-[16px] md:text-[17px] lg:text-[18px] xl:text-[20px]" />
+            </div>
+              <p className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px]">
                 {" "}
-              {/* {rightDescriptionList} */}
-              </span>
+              {rightDescriptionList}
+              </p>
             </div>
           </div>
         </div>

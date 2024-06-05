@@ -556,7 +556,8 @@ export async function getContactData() {
       socialLink
     },
     card[] {
-      leftDescriptionList,
+      contactInfo,
+      // leftDescriptionList,
       rightDescriptionList,
       'latitude': location->latitude,
       'longitude': location->longitude

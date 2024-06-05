@@ -4,6 +4,7 @@ import { getGrowthData, getSolutionData } from "../../../lib/sanity.query";
 import { GetStaticPaths } from "next";
 
 function growthengine({ growth, card }: any) {
+  console.log("data= = =",card);
   return (
     <GrowthEnginePage
       data={growth[0]}

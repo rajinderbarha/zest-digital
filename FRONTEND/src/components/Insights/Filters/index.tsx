@@ -247,9 +247,9 @@ function Filters({ data }: {data:FiltersType}) {
                           {item.hero.heading}
                         </h2>
                         <Link href={`/insights/${item.slug.current}`}>
-                          <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white sm:text-base text-[12px] md:py-[7px] md:ps-5 py-[8px] ps-[13px] pe-[5px] md:pe-0 flex gap-2 items-center">
+                          <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white sm:text-base text-[12px] md:py-[4px] md:ps-5 py-[4px] ps-[13px] pe-[4px] md:pe-0 flex gap-2 items-center">
                             Read more{" "}
-                            <span className="md:p-1 p-[2px] group-hover:bg-color-1 group-hover:text-white bg-white rounded-full text-black me-0 md:me-2 text-[15px] md:text-lg">
+                            <span className="md:p-1 p-[2px] group-hover:bg-color-1 group-hover:text-white bg-white rounded-full text-black me-0 md:me-[4px] text-[18px] md:text-[19px]">
                               <GoArrowRight />
                             </span>
                           </button>
@@ -295,7 +295,7 @@ function Filters({ data }: {data:FiltersType}) {
             </div>
           </div>
           <div
-            className={`${classes.Footer_Img} md:mt-[100px] mt-[50px] bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[55px] mb-[30px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}
+            className={`${classes.Footer_Img} md:mt-[100px] mt-[50px] bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[65px] mb-[150px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}
           >
             <div
               className={`${classes.Zest_symbol_white} w-full  absolute top-[27px] left-0 right-0`}

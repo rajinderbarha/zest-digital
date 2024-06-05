@@ -106,7 +106,8 @@ export interface ContactType {
     socialLink: string;
   }[];
   card: {
-    leftDescriptionList: string;
+    contactInfo: any;
+    // leftDescriptionList: string;
     rightDescriptionList: string;
     latitude: number;
     longitude: number;

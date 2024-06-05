@@ -12,7 +12,7 @@ export const SingleCaseStudy = defineType({
       type: 'slug',
       options: {
         source: 'upperTitle',
-        maxLength: 10,
+        // maxLength: 10,
       },
     },
 

@@ -31,7 +31,10 @@ export const Contact = defineType({
                         to: [{ type: 'location' }]
             
                     },
-                    { name: 'leftDescriptionList', type: 'string', title: 'Cad Left Description List' },
+                    {name:"contactInfo", title:"Contact information ", type:"array", of:[{
+                        type:"block"
+                    }]},
+                    // { name: 'leftDescriptionList', type: 'string', title: 'Cad Left Description List' },
                     { name: 'rightDescriptionList', type: 'string', title: 'Card Right Description List' },
                     // { name: 'icon', type: 'image', title: 'Icon' },
                 ],

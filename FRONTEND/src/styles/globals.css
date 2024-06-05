@@ -29,40 +29,6 @@ body {
 
 /* popups style */
 
-                                    /* old popup style */
-
-.css-hz1bth-MuiDialog-container {
-  /* height: auto!important; */
-}
-
-/* .MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container {
-  backdrop-filter: blur(10px);
-  height: 100vh;
-  overflow-y: scroll !important;
-  border: 2px solid black;
-}
-
-.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1p6wq07-MuiPaper-root-MuiDialog-paper {
-  height: inherit;
-  margin-top: 70px !important;
-}
-
-@media only screen and (max-width:500px) {
-  .css-1p6wq07-MuiPaper-root-MuiDialog-paper {
-    margin: 10px !important;
-
-  }
-
-  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1p6wq07-MuiPaper-root-MuiDialog-paper {
-
-    margin-top: 0px !important;
-  }
-  .MuiBox-root.css-79elbk{
-    margin-top: 20px!important;
-  }
-} */
-                                /* old popup style */
-
                                  /* new popup style */
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1p6wq07-MuiPaper-root-MuiDialog-paper {
   /* padding: 15px 0; */
@@ -71,12 +37,15 @@ body {
 .MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  /* height: 100vh; */
+
   overflow-y: scroll !important;
   border: 2px solid black;
-  /* margin-top: 19px; */
+
   align-items: baseline;
   justify-content: center;
+}
+.css-1p6wq07-MuiPaper-root-MuiDialog-paper{
+max-width: 1510px;
 }
 
 @media only screen and (max-width:767px) {
@@ -96,14 +65,10 @@ body {
 
 
 
-/* This will hide the default dropdown arrow */
 select {
   -webkit-appearance: none;
-  /* for Chrome, Safari */
   -moz-appearance: none;
-  /* for Firefox */
   appearance: none;
-  /* for modern browsers */
   background-image: url('../assets/images/select_drop_down.svg');
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -200,7 +165,7 @@ select::-ms-expand {
 
 .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
   background-color: transparent !important;
-  /* color:black!important; */
+
   box-shadow: none !important;
   border-radius: 0 !important;
   position: static !important;
