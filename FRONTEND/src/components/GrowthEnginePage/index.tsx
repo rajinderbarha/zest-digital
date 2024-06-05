@@ -17,8 +17,8 @@ function GrowthEnginePage({ data, card, otherSolHeading }: any) {
   const router = useRouter();
   const { slug } = router.query;
   const currentPath = `/solutions/${slug}`;
-
   console.log("Current path:", currentPath); // Log current path
+  
 
 
 

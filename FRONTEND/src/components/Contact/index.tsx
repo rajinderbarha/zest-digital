@@ -13,6 +13,7 @@ import linkedin_white from '../../assets/images/linkedin_white.svg'
 import instagram_white from '../../assets/images/instagram_white.svg'
 
 function Contact({ data }: { data: ContactType }) {
+  // console.log("datad= ",data)
   return (
     <>
       <div className="Contact xl:mt-[140px] lg:mt-[120px] md:mt-[70px] sm:mt-[50px] mt-[30px] sm:px-[20px] xl:mb-[268px] lg:mb-[200px] md:mb-[140px] sm:mb-[90px] mb-[80px] main_padding">

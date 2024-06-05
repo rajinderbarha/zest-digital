@@ -9,6 +9,8 @@ import { PortableText } from "next-sanity";
 import Link from "next/link";
 
 const Services_Address: React.FC<AgencyAddress> = (props) => {
+console.log(props)
+
   const { heading_add, slotDescription_add, buttonName_add, buttonName_link } = props;
 
   const contactInfoArray = Array.isArray(props.address) ? props.address : [];

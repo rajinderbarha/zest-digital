@@ -70,6 +70,8 @@ function SingleInsightPage({ data }: { data: SingleInsightsType }) {
             </div>
           </div>
         </div>
+
+      
       </div>
     </>
   );

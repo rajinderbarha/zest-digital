@@ -14,7 +14,11 @@
     @apply mt-1 md:mt-3 lg:mt-5
 }
 .box_detail div ul{
-    @apply list-disc pt-[10px] md:ps-[25px] sm:ps-[15px] ps-[10px]    
+    @apply list-disc pt-[10px] md:ps-[10px] sm:ps-[20px] ps-[25px] md:list-inside list-outside 
+}
+
+.box_detail div a{
+    @apply text-color-9 underline
 }
 .box_detail div h4{
     @apply md:text-[25px] sm:text-[22px] text-[20px] md:leading-[30px] sm:leading-[28px] leading-[20px] md:pt-[28px] sm:pt-[22px] pt-[18px] md:pb-[3px] pb-[4px]

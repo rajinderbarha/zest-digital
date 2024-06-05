@@ -8,7 +8,7 @@ function SingleService({ singleservicedata, }: { singleservicedata: SingleOurSer
   console.log(singleservicedata[0])
   return <Services data={singleservicedata[0]} />;
 }
-export default SingleService;
+export default SingleService; ``
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
   return {
