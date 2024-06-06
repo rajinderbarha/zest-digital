@@ -7,6 +7,7 @@ import { urlFor } from "../../../lib/sanity.client";
 import { HomePageServices } from "../../../lib/interface";
 
 const Services = ({ data }: HomePageServices) => {
+  console.log("---------", data.services[0].reference.slug)
   return (
     <>
       <div className="main_padding xl:mb-[74px] lg:mb-[68px] md:mb-[62px] sm:mb-[52px] mb-[45px]">
@@ -25,10 +26,10 @@ const Services = ({ data }: HomePageServices) => {
                     <li key={`${index}_servicesList `} className="md:mb-6 sm:mb-[18px] mb-[14px]">
                       {" "}
                       <Link
-                        href={`/services/${item.slug}`}
+                        href={`/services/${item.reference.slug}`}
                         className="border-b border-white hover:border-[transparent] w-max md:text-[16px] sm:text-[14px] text-[12px] lg:text-lg flex  items-center gap-1"
                       >
-                        {item.title}
+                        {item.servicetitle}
                         <GoArrowRight />
                       </Link>
                     </li>

@@ -42,12 +42,8 @@ function SingleInsightPage({ data }: { data: SingleInsightsType }) {
               dataset={"production"}
             />
           </div>
-          <div
-            className={`${classes.Footer_Img} bg-black rounded-[20px] md:rounded-30px xl:mb-[245px] lg:mb-[200px] md:mb-[150px] sm:mb-[100px] mb-[70px] py-[46px] px-[20px] md:px-[55px] xl:mt-[120px] lg:mt-[95px] md:mt-[70px] sm:mt-[60px] mt-[30px] relative flex items-center`}
-          >
-            <div
-              className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}
-            >
+          {/* <div className={`${classes.Footer_Img} bg-black rounded-[20px] md:rounded-30px xl:mb-[245px] lg:mb-[200px] md:mb-[150px] sm:mb-[100px] mb-[70px] py-[46px] px-[20px] md:px-[55px] xl:mt-[120px] lg:mt-[95px] md:mt-[70px] sm:mt-[60px] mt-[30px] relative flex items-center`}>
+            <div className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}>
               <Image
                 src={urlFor(data.linkSection.icon).url()}
                 alt="icon"
@@ -56,19 +52,44 @@ function SingleInsightPage({ data }: { data: SingleInsightsType }) {
                 height={50}
               />
             </div>
-            <div
-              className={`${classes.Footer_Link} max-w-max ms-auto relative  z-10`}
-            >
-              <Link
-                href={data.linkSection.linkUrl}
-                className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"
-              >
+            <div className={`${classes.Footer_Link} max-w-max ms-auto relative  z-10`}>
+              <Link href={data.linkSection.linkUrl} className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white">
                 {" "}
                 {data.linkSection.linkName}
                 <GoArrowRight />{" "}
               </Link>
             </div>
+          </div> */}
+
+          <div className={` bg-black rounded-[20px] md:rounded-30px xl:mb-[245px] lg:mb-[200px] md:mb-[150px] sm:mb-[100px] mb-[70px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px] xl:px-[55px] xl:mt-[120px] lg:mt-[95px] md:mt-[70px] sm:mt-[60px] mt-[30px] relative grid grid-cols-3`}>
+          <div className={`${classes.next_text_left} relative self-center  z-10`}>
+              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light invisible text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+                {" "}
+                {data.linkSection.linkName}
+              </Link>
+            </div>
+
+            <div className={`  self-center mx-auto`}>
+              <Image
+                src={urlFor(data.linkSection.icon).url()}
+                alt="icon"
+                className="mx-auto xl:max-w-[52px] lg:max-w-[45px] md:max-w-[35px] sm:max-w-[28px] max-w-[20px] w-full"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div className={`${classes.next_text_right} relative ms-auto self-center  z-10`}>
+              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+                {" "}
+                {data.linkSection.linkName}
+              </Link>
+            </div>
           </div>
+
+
+
+
+
         </div>
 
       

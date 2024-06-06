@@ -371,9 +371,12 @@ export async function getSchedule_a_callData() {
 export async function getTermsndConditionsData() {
   const query = `
 
+  
   *[_type == 'termsAndConditions'] {
     heading,
-    'cards': card[]-> {
+    'cards': card[]{
+      boxtitle,
+      reference->{
       slug,
       title,
       smallDescription,
@@ -383,7 +386,7 @@ export async function getTermsndConditionsData() {
         climate_actionImg,
         earth_img,
         smallDescription
-      }
+      }}
     },
     'banner': banner-> {
       climate_actionImg,
@@ -391,6 +394,9 @@ export async function getTermsndConditionsData() {
       smallDescription
     }
   }
+  
+
+  
   
 
   `;
@@ -444,7 +450,7 @@ export async function getSingleOurServicesData(slug: string) {
       }
     },
     "Services_details": Services_details[] {
-      "heading": heading,
+      serviceheading,
       content,
       
       "image": image.asset->url
@@ -666,9 +672,11 @@ export async function getHomepageData() {
           image1,
             image2,
             image3,
-              services[]->{
+              services[]{
+              servicetitle,
+                reference->{
                  "slug":slug.current,
-                title
+                }
             }
           
         },

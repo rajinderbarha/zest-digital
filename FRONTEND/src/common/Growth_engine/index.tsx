@@ -31,7 +31,7 @@ const Growth_engine = ({
               {description}
             </p>
             <Link href={buttonLink}>
-              <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[5px] md:pe-0 w-fit flex gap-2 items-center">
+              <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center">
                 {buttonName}{" "}
                 <span className="md:p-1 p-[2px] bg-white rounded-full text-black me-0 md:me-[6px] text-lg group-hover:bg-color-1 group-hover:text-white">
                   <GoArrowRight />
@@ -68,7 +68,7 @@ const Growth_engine = ({
           </p>
           <Link href={buttonLink}>
             <button
-              className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[5px] md:pe-0 w-fit flex gap-2 items-center"
+              className={` bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center`}
               type="button"
             >
               {buttonName}{" "}

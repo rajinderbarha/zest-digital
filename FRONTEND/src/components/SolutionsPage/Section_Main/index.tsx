@@ -56,6 +56,8 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
 
 
 
+              
+
               <div className={`${classes.animationDiv}`}>
                 <div className={`${classes.animationFullText} mx-auto  md:w-fit lg:w-fit w-full font-semibold text-center max-w-[460px] sm:max-w-[500px]  md:max-w-none  md:px-0 px-[22px]`}>
                   <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px]  text-white font-mono flex md:gap-4 justify-center  flex-wrap mx-auto text-center ">
@@ -63,7 +65,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
 
                     <p className={`${classes.animatedText}  xl:w-[177px] lg:w-[160px] md:w-[140px] mx-auto`}>
                       {data?.upperTitle.switcher?.map((text: any, idx: any) => (
-                        <span key={idx} className={`${idx === animateIndex ? classes.textIn : classes.textOut}  xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px]   text-color-7`}>
+                        <span key={idx} className={` ${idx === animateIndex ? classes.textIn : classes.textOut}  xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px]   text-color-7`}>
                           {text}
                         </span>
                       ))}

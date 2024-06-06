@@ -98,3 +98,11 @@
         padding: 20px 15px 20px 15px;
     }
 }
+
+@media only screen and (max-width:375px) {
+    .growth_engine button{
+        font-size: 11px;
+        padding-inline-end: 3px;
+        padding-inline-start: 6px;
+    }
+}
