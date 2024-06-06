@@ -80,9 +80,13 @@ export interface HomePageServices {
     image1: any;
     image2: any;
     image3: any;
-    services: { slug: string; title: string }[];
+    // services: { slug: string; title: string }[];
+    services:{
+      reference: any; servicetitle:string; slug: string
+}[]
   };
 }
+
 //---------------------------------------------Homepage------------------------------------
 
 //---------------------------------------------Contact------------------------------------
@@ -201,8 +205,10 @@ export interface AboutType {
 export interface TermsAndConditionsType {
   heading: string;
   cards: {
+    reference: any;
     slug: string;
     title: string;
+    boxtitle:string;
     smallDescription: string;
     buttonName: string;
     buttonLink: string;
@@ -340,7 +346,8 @@ export interface ServiceContentBox {
 export interface HappyCustomer {
   [x: string]: any;
   Services_details: {
-    heading: string;
+    // heading: string;
+    serviceheading: any;
     content: any;
     // description_1: string;
     // description_2: string;

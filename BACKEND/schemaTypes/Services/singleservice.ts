@@ -80,7 +80,13 @@ export const SingleService = defineType({
           name: 'services',
           type: 'object',
           fields: [
-            {name: 'heading', type: 'string', title: 'Heading'},
+            // {name: 'heading', type: 'string', title: 'Heading'},
+            {
+              name: 'serviceheading',
+              title: 'Heading',
+              type: 'array',
+              of: [{type: 'block'}],
+            },
             {
               name: 'content',
               title: 'Content',

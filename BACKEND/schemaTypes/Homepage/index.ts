@@ -74,16 +74,16 @@ export const HomePage = defineType({
               title: 'services',
               type: 'array',
               of: [ 
-                // {
-                //   type: 'object',
-                //   fields: [
-                //     {name: 'title', title: 'Title', type: 'string'},
-                //     {name: 'reference', title: 'reference', type: 'reference', to: [{type: 'singleService'}]}
-                //   ],
-                // },
+                {
+                  type: 'object',
+                  fields: [
+                    {name: 'servicetitle', title: 'Title', type: 'string'},
+                    {name: 'reference', title: 'reference', type: 'reference', to: [{type: 'singleService'}]}
+                  ],
+                },
                 
 
-                {type: 'reference', to: [{type: 'singleService'}]}
+                // {type: 'reference', to: [{type: 'singleService'}]}
 
 
               ],

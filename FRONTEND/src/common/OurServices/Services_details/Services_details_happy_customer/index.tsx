@@ -19,7 +19,8 @@ const Services_details_happy_customer = ({ Services_details }: { Services_detail
               >
                 <div className=" md:max-w-[1057px] xl:pe-[100px] lg:pe-[70px] md:pe-[50px]">
                   <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[22px] text-color-1 font-semibold font-mono ">
-                    {item.heading}
+                    {/* {item.heading} */}
+                    <PortableText value={item.serviceheading}/>
                   </h2>
                   <div className={`${classes.objective_description} font-mono lg:text-30px md:text-25px text-[12px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] `}>
                     <PortableText value={item.content}/>
@@ -48,7 +49,8 @@ const Services_details_happy_customer = ({ Services_details }: { Services_detail
                 </div>
                 <div className=" md:ms-auto md:max-w-[1057px] xl:ps-[80px] lg:ps-[50px] md:ps-[20px] md:text-right">
                   <h2 className=" md:max-w-[675px] ms-auto xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[22px] text-color-1 font-semibold font-mono ">
-                    {item.heading}
+                    {/* {item.heading} */}
+                    <PortableText value={item.serviceheading}/>
                   </h2>
                   <div className={`${classes.objective_description} font-mono lg:text-30px md:text-25px text-[12px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[25px] mt-[18px] `}>
                     <PortableText value={item.content}/>

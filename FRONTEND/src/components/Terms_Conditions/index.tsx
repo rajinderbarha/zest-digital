@@ -4,10 +4,12 @@ import Boxes from "./Boxes";
 import { TermsAndConditionsType } from "../../../lib/interface";
 
 function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
+  console.log("----------dfata",data.cards[6])
   if (!data) {
     return "Failed to load Terms_Conditions page data" ; // or display a placeholder message
   }
   return (
+    <>
     <div className="term_condition main_padding xl:mb-[216px] lg:mb-[160px] md:mb-[110px] sm:mb-[90px] mb-[80px]">
       <div className="main_container">
         <div className={`${classes.Careerbanner}`}>
@@ -27,17 +29,18 @@ function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
             {data.cards.map((card: any, cardIndex: number) => (
               <Boxes
                 key={cardIndex}
-                title={card?.title || ""}
-                smallDescription={card?.smallDescription || ""}
+                title={card?.boxtitle || ""}
+                smallDescription={card.reference?.smallDescription || ""}
                 shadow_right={cardIndex % 2 === 0} // Shadow alternating sides
-                buttonName={card?.buttonName || ""}
-                buttonLink={card?.slug.current}
+                buttonName={card.reference?.buttonName || ""}
+                buttonLink={card.reference?.slug.current}
               />
             ))}
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 }
 

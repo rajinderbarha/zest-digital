@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
+import classes from "./Resources_Calculater_Step_4.module.css"
 import popup_person from '../../assets/images/popup_person.svg'
 import popup_percentage from '../../assets/images/percent.svg'
 import popup_pound from '../../assets/images/pound-circle.svg'
@@ -46,7 +47,7 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
     const [MonthlySessionsIsHovered, setMonthlySessionsIsHovered] = useState(false);
     const [ConversionRateIsHovered, setConversionRateIsHovered] = useState(false);
     const [OrderValueIsHovered, setOrderValueIsHovered] = useState(false);
-    const [LeadToSaleIsHovered, setLeadToSaleIsHovered] = useState(true);
+    const [LeadToSaleIsHovered, setLeadToSaleIsHovered] = useState(false);
 
     return (
         <>
@@ -77,8 +78,8 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
                                 </div>
                             </div>
                             {MonthlySessionsIsHovered && (
-                            <div className="bg-white border border-color-1 rounded-[10px] p-[20px] w-[227px] absolute top-[-33px] left-[100%] shadow-msg">
-                                <ul className='list-decimal list-inside text-color-1 font-lato text-[14px] grid gap-y-[18px]'>
+                            <div className={`${classes.hover_box}`}>
+                                <ul className=''>
                                     <li>Log into Google Analytics</li>
                                     <li>Select Audience &gt; Overview</li>
                                     <li>Select a date range of 6-12 months</li>
@@ -105,8 +106,8 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
 
                             </div>
                             {ConversionRateIsHovered && (
-                            <div className="bg-white border border-color-1 rounded-[10px] p-[20px] w-[227px] absolute top-[-33px] left-[100%] shadow-msg">
-                                <ul className='list-decimal list-inside text-color-1 font-lato text-[14px] grid gap-y-[18px]'>
+                            <div className={`${classes.hover_box}`}>
+                                <ul className=''>
                                     <li>Log into Google Analytics</li>
                                     <li>Select Conversion &gt; Goals &gt; Overview OR Conversion &gt; Goals &gt; Ecommerce (if ecommerce)</li>
                                     <li>Select a date range of 6-12 months</li>
@@ -133,8 +134,8 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
 
                             </div>
                             {OrderValueIsHovered && (
-                            <div className="bg-white border border-color-1 rounded-[10px] p-[20px] w-[227px] absolute top-[-33px] left-[100%] shadow-msg">
-                                <ul className='list-decimal list-inside text-color-1 font-lato text-[14px] grid gap-y-[18px]'>
+                            <div className={`${classes.hover_box}`}>
+                                <ul className=''>
                                     <li>Select a date range of 6-12 months</li>
                                     <li>Take your total revenue</li>
                                     <li>Divide this by total number of sale made</li>
@@ -162,8 +163,8 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
 
                                 </div>
                                  {LeadToSaleIsHovered && (
-                                     <div className="bg-white border border-color-1 rounded-[10px] p-[20px] w-[227px] absolute top-[-33px] left-[100%] shadow-msg">
-                                         <ul className='list-decimal list-inside text-color-1 font-lato text-[14px] grid gap-y-[18px]'>
+                                     <div className={`${classes.hover_box}`}>
+                                         <ul className=''>
                                              <li>How many leads do you reqiure in order to close one sale?</li>
                                              <li>Enter the percentage into the calculator</li>
                                          </ul>
