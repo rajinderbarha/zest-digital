@@ -36,7 +36,7 @@ const Client_Result: React.FC<clientResults> = (props) => {
                       <p className={`${classes.profit_box_desc} max-w-[246px] mx-auto font-lato text-[10px] sm:text-lg font-normal  text-white xl:mb-[30px] lg:mb-[25px] sm:mb-[20px]  mb-[15px] text-center`}>{description_2_CR}</p>
                       <div className={classes.button_div}>
 
-                        <button className='font-mono group hover:bg-color-1 hover:text-white border border-white font-normal mx-auto text-color-1 rounded-full bg-white text-[12px] sm:text-base md:py-[3px] sm:py-[2px] py-[5px] md:ps-4 sm:ps-[15px] ps-[13px] flex sm:gap-2 gap-[6px] items-center'>{buttonName_CR}<span className='p-1 text-white rounded-full bg-black me-[2px] sm:me-[3px] md:me-1 text-[15px] sm:text-lg group-hover:bg-white group-hover:text-color-1'><GoArrowRight /></span></button>
+                        <button className='font-mono group hover:bg-color-1 hover:text-white border border-white font-normal mx-auto text-color-1 rounded-full bg-white text-[12px] sm:text-base md:py-[3px] sm:py-[3px] py-[2px] md:ps-4 sm:ps-[15px] ps-[13px] flex sm:gap-2 gap-[6px] items-center'>{buttonName_CR}<span className='p-1 text-white rounded-full bg-black me-[2px] sm:me-[3px] md:me-1 text-[15px] sm:text-lg group-hover:bg-white group-hover:text-color-1'><GoArrowRight /></span></button>
                       </div>
                     </div>
                   )

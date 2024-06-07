@@ -55,10 +55,26 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
               </div> */}
 
 
-
               
 
               <div className={`${classes.animationDiv}`}>
+                <div className={`${classes.animationFullText} mx-auto   md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[160px] lg:pb-[120px] md:pb-[80px]  pb-[50px]`}>
+                <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px] text-white font-mono flex md:gap-4 flex-wrap justify-center  text-center">
+                {data.upperTitle.title}
+             
+                    <span className={`${classes.animatedText} xl:w-[177px] lg:w-[160px] md:w-[140px] `}>
+                    {data?.upperTitle.switcher?.map((text: any, idx: any) => (
+                            <span key={idx} className={ `${ idx === animateIndex ? classes.textIn : classes.textOut }  xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px]  text-color-7`}>
+                                {text}
+                            </span>
+                        ))}
+                    </span>
+                    </h2>
+             </div>
+         </div>
+
+
+              {/* <div className={`${classes.animationDiv}`}>
                 <div className={`${classes.animationFullText} mx-auto  md:w-fit lg:w-fit w-full font-semibold text-center max-w-[460px] sm:max-w-[500px]  md:max-w-none  md:px-0 px-[22px]`}>
                   <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px]  text-white font-mono flex md:gap-4 justify-center  flex-wrap mx-auto text-center ">
                     {data.upperTitle.title}
@@ -72,7 +88,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
                     </p>
                   </h2>
                 </div>
-              </div>
+              </div> */}
 
               <div className=" mx-auto max-w-[1027px] xl:mt-[215px] lg:mt-[180px] md:mt-[130px] mt-[60px]">
                 <h2 className="font-mono italic font-semibold sm:text-25px text-[18px]  md:text-35px leading-normal lg:leading-normal lg:text-40px xl:text-45px text-white mx-auto text-center px-4 sm:px-10 pb-6">

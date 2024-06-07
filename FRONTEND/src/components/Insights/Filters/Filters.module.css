@@ -186,8 +186,6 @@
 
 
 
-
-
 .next_text_right a::after, .next_text_left a::before{
     content: '';
     /* position: absolute;

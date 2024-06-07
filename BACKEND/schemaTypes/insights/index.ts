@@ -17,11 +17,11 @@ export const Insights = defineType({
       type: 'array',
       of: [{type: 'reference', to: [{type: 'singleInsights'}]}],
     },
-    // {
-    //   name: 'linkSectionIcon',
-    //   title: 'Link Section Icon',
-    //   type: 'image'
-    // },
+    {
+      name: 'linkSectionIcon',
+      title: 'Link Section Icon',
+      type: 'image'
+    },
 
     {
       name: 'linkSection',

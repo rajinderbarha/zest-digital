@@ -5,6 +5,22 @@
     background-position: center;
 }
 
+@media only screen and (max-width:767px) {
+
+    .Services_List li:last-child {
+        margin-bottom: 0px;
+    }
+.Services_Image div:first-child {
+margin-top: 50%;
+}
+.Services_Image div:nth-child(2){
+    margin-top: 25%;
+}
+
+
+
+}
+
 @media only screen and (max-width:640px) {
     .bg_image {
         /* padding: 0px; */

@@ -18,6 +18,11 @@ const Header = ({ data }: { data: HeaderType[] }) => {
   const router = useRouter();
   const [iconSrc, setIconSrc] = useState(barsIcon);
 
+const closeMenu = () => {
+  setIsMenuOpen(false);
+  setIconSrc(barsIcon);
+};
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -116,15 +121,17 @@ const Header = ({ data }: { data: HeaderType[] }) => {
               >
                 <Link href={"/"}>
                   <Image
+
                     src={urlFor(item.logo).url()}
                     alt="Site Logo"
                     width={112}
                     height={51}
+                    onClick={closeMenu}
                   />
                 </Link>
               </div>
               <div className="flex items-center gap-[15px]">
-              <Link
+              <Link  onClick={closeMenu}
                   href={item.button.navLink}
                   className=" font-mono text-[12px] px-21px py-[7px] bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1"
                 >
