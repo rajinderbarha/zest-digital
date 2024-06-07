@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./SingleInsightPage.module.css";
 import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
@@ -8,6 +8,27 @@ import Link from "next/link";
 import { SingleInsightsType } from "../../../lib/interface";
 
 function SingleInsightPage({ data }: { data: SingleInsightsType }) {
+
+  useEffect(() => {
+    const parentDiv = document.querySelector(`.${classes.Block_Content}`);
+
+    if (parentDiv) {
+      const h2Elements = parentDiv.querySelectorAll('h2');
+
+      h2Elements.forEach((h2Element) => {
+        // Create a new div element
+        const newDiv = document.createElement('div');
+        // Add a class to the new div element
+        newDiv.className = classes.wrappedH2;
+
+        // Append the h2 element to the new div
+        newDiv.appendChild(h2Element.cloneNode(true));
+
+        // Replace the original h2 element with the new div element
+        h2Element.parentNode?.replaceChild(newDiv, h2Element);
+      });
+    }
+  }, [data]); // Run the effect whenever 'data' changes
 
   // console.log("singleInsights", data);
 
@@ -78,8 +99,8 @@ function SingleInsightPage({ data }: { data: SingleInsightsType }) {
                 height={50}
               />
             </div>
-            <div className={`${classes.next_text_right} relative ms-auto self-center  z-10`}>
-              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+            <div className={`${classes.next_text_right} relative ms-auto self-center leading-[13px]  z-10`}>
+              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px]  text-white`}>
                 {" "}
                 {data.linkSection.linkName}
               </Link>

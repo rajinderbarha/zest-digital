@@ -1,16 +1,17 @@
-.growth_grid{
+.growth_grid {}
+
+.growth_grid>div:not(:first-child) {
+    @apply xl:mt-[65px] lg:mt-[45px] md:mt-[25px] sm:mt-[35px] mt-[20px]
 }
-.growth_grid > div:not(:first-child){
-    @apply  xl:mt-[65px] lg:mt-[45px] md:mt-[25px] sm:mt-[35px] mt-[20px]
-    
-}
-@media only screen and (max-width:860px){
+
+@media only screen and (max-width:860px) {
 
     /* .animationFullText{
         
         @apply   max-w-[655px] text-center border
     } */
 }
+
 /* @media only screen and (min-width:1366px){
     .growth_container{
 
@@ -43,59 +44,80 @@
 } */
 
 
-@keyframes textIn{
-	0%{
-		transform: translateY(100%);
-	}
-	100%{
-		transform: translateY(0%);
-	}
-}
-@keyframes textOut{
-	0%{
-		transform: translateY(0%);
-	}
-	100%{
-		transform: translateY(-100%);
+@keyframes textIn {
+    0% {
+        transform: translateY(100%);
+    }
 
-	}
+    100% {
+        transform: translateY(0%);
+    }
 }
 
-.animationDiv .animationFullText span span{
+@keyframes textOut {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+
+    }
+}
+
+.animationDiv .animationFullText span span {
     display: none;
-      text-align: left;
-}
-.animationDiv .animationFullText span   {
-	margin:0;
-	overflow: hidden;
-}
-.animationDiv .animationFullText span span.textIn{
-	display: block;
-	animation: textIn .5s ease;
-  
-}
-.animationDiv .animationFullText span span.textOut{
-
-  animation: textOut .5s ease!important;
-}
-.animatedText{
-  margin: 0 auto!important;
+    text-align: left;
 }
 
+.animationDiv .animationFullText span {
+    margin: 0;
+    overflow: hidden;
+}
+
+.animationDiv .animationFullText span span.textIn {
+    display: block;
+    animation: textIn .5s ease;
+
+}
+
+.animationDiv .animationFullText span span.textOut {
+
+    animation: textOut .5s ease !important;
+}
+
+.animatedText {
+    margin: 0 auto !important;
+}
+
+@media only screen and (min-width:1230px) and (max-width:1403px) {
+.card_heading{
+font-size: 32px;
+}
+}
 
 
-@media  only screen and (max-width:906px){
-    .box_size{
+
+@media only screen and (min-width:768px) and (max-width:1560px) {
+    .box_size>div {
+        padding-inline-start: 0px;
+    }
+}
+
+@media only screen and (max-width:906px) {
+    .box_size {
         padding-top: 30px;
         padding-bottom: 30px;
     }
 }
-@media  only screen and (max-width:639px){
-    .box_size{
+
+@media only screen and (max-width:639px) {
+    .box_size {
         padding-top: 20px;
         padding-bottom: 20px;
     }
 }
+
 @media only screen and (max-width:767px) {
     .growth_results {
         padding-bottom: 150px;
@@ -107,7 +129,8 @@
         padding-right: 20px;
         gap: 20px;
     }
-       .box_size{
+
+    .box_size {
         padding-top: 10px;
         padding-bottom: 10px;
     }

@@ -7,7 +7,8 @@
 
 .Block_Content h2 {
     /* border: 1px solid black; */
-    @apply lg:text-45px md:text-40px sm:text-30px text-[25px] font-semibold font-mono bg-light-green-1 w-fit md:mb-[33px] sm:mb-[23px] mb-[13px] xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px]
+    @apply lg:text-45px md:text-40px sm:text-30px text-[25px] font-semibold font-mono bg-light-green-1 py-[2px] inline
+    /* md:mb-[33px] sm:mb-[23px] mb-[13px] xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px] */
 }
 
 .Block_Content h3 {
@@ -26,16 +27,21 @@
     @apply xl:max-w-max md:max-w-[550px] mx-auto sm:max-w-[350px] max-w-[250px] md:my-[66px] sm:my-[40px] mt-[0px]
 }
 
-.Block_Content h2:not(:first-child)~h3 {
-    @apply md:mt-[100px] sm:mt-[50px] mt-[30px]
+.Block_Content .wrappedH2:not(:first-child)~h3 {
+    @apply md:mt-[100px] sm:mt-[50px] mt-[30px] 
 }
 
-.Block_Content h2:not(:first-child)+h3 {
+.Block_Content .wrappedH2:not(:first-child)+h3 {
     @apply border-yellow-500 mt-0
 }
 
 .Block_Content a {
     @apply text-color-9 underline cursor-pointer
+}
+
+.wrappedH2{
+    /* border: 1px solid black; */
+    @apply md:pb-[33px] sm:pb-[23px] pb-[13px] xl:pt-[120px] lg:pt-[100px] md:pt-[70px] pt-[40px]
 }
 
 

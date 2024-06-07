@@ -79,10 +79,10 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                         <div
                           className={`${outerSpan} ${classes.box_size}  p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 md:p-[35px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
                         >
-                          <div className="font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px md:text-[25px] md:max-970:text-[18px] md:max-800:text-[17px] sm:text-25px text-[16px]">
+                          <div className={`${classes.card_heading} font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px md:text-[25px] md:max-970:text-[18px] md:max-800:text-[17px] sm:text-25px text-[16px]`}>
                             {numHeading}
                           </div>
-                          <div className="min-1350:w-auto md:w-10 sm:max-970:w-9 w-[40px] group">
+                          <div className="min-1350:w-auto md:w-[40px] sm:max-970:w-[35px] w-[40px] group">
                             
                             <Image src={arrow} alt=""  className="group-hover:hidden"/>
                             <Image src={hover_arrow} alt=""  className="text-[10px] group-hover:block hidden"/>
@@ -94,7 +94,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                           <h3 className="sm:text-[25px] text-[16px] md:max-970:text-[23px] ">
                             {title}
                           </h3>
-                          <p className="sm:text-base text-[12px] md:max-970:text-[14px] md:max-970:leading-4 leading-[15px]">
+                          <p className="sm:text-base text-[12px] md:max-970:text-[14px] md:max-970:leading-[16px] leading-[15px]">
                             {desc}
                           </p>
                         </div>
@@ -192,6 +192,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
           </div>
         </div>
       </div>
+      
     </>
   );
 };

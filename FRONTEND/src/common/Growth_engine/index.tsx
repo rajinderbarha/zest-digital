@@ -68,11 +68,11 @@ const Growth_engine = ({
           </p>
           <Link href={buttonLink}>
             <button
-              className={` bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center`}
+              className={` bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base md:py-[5px] md:ps-4  py-[4px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center`}
               type="button"
             >
               {buttonName}{" "}
-              <span className="md:p-1 p-[2px] bg-white rounded-full text-black me-0 md:me-[6px] text-lg group-hover:bg-color-1 group-hover:text-white">
+              <span className="md:p-1 p-[2px] bg-white rounded-full text-black me-0 md:me-[6px] text-[17px] lg:text-[18px] group-hover:bg-color-1 group-hover:text-white">
                 <GoArrowRight />
               </span>
             </button>

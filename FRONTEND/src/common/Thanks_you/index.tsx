@@ -3,6 +3,7 @@ import classes from './Thanks_you.module.css'
 import { GoArrowLeft } from "react-icons/go";
 import Image from 'next/image';
 import thankyou from '../../assets/images/thankyou.png'
+import Link from 'next/link';
 
 function Thanks_you() {
     return (
@@ -24,7 +25,9 @@ function Thanks_you() {
                                     </div>
                                 </div>
                                 <div className=" max-w-max mx-auto w-max xl:mt-[90px] lg:mt-[80px] md:mt-[60px] sm:mt-[45px] mt-[30px]">
+                                    <Link href={'/'}>
                                     <button className="border-b border-white text-white font-light w-max text-[14px] sm:text-[16px] lg:text-lg flex items-center gap-1" type='button' ><GoArrowLeft /> Back to homepage </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
