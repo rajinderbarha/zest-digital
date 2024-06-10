@@ -164,7 +164,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 import { FiltersType } from "../../../../lib/interface";
 
 function Filters({ data }: {data:FiltersType}) {
-  // console.log("data",data)
+  console.log("data",data)
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
   const arrayElements = data.collection.map((item) => item.hero.keywords);
@@ -247,9 +247,9 @@ function Filters({ data }: {data:FiltersType}) {
                           {item.hero.heading}
                         </h2>
                         <Link href={`/insights/${item.slug.current}`}>
-                          <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white sm:text-base text-[12px] md:py-[7px] md:ps-5 py-[8px] ps-[13px] pe-[5px] md:pe-0 flex gap-2 items-center">
+                          <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white sm:text-base text-[12px] md:py-[4px] md:ps-5 py-[4px] ps-[13px] pe-[4px] md:pe-0 flex gap-2 items-center">
                             Read more{" "}
-                            <span className="md:p-1 p-[2px] group-hover:bg-color-1 group-hover:text-white bg-white rounded-full text-black me-0 md:me-2 text-[15px] md:text-lg">
+                            <span className="md:p-1 p-[2px] group-hover:bg-color-1 group-hover:text-white bg-white rounded-full text-black me-0 md:me-[4px] text-[18px] md:text-[19px]">
                               <GoArrowRight />
                             </span>
                           </button>
@@ -294,13 +294,9 @@ function Filters({ data }: {data:FiltersType}) {
               </div>
             </div>
           </div>
-          <div
-            className={`${classes.Footer_Img} md:mt-[100px] mt-[50px] bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[55px] mb-[30px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}
-          >
-            <div
-              className={`${classes.Zest_symbol_white} w-full  absolute top-[27px] left-0 right-0`}
-            >
-              {/* {/ <Image src={logo} alt='icon' className='mx-auto' width={50} height={50} /> /} */}
+
+          {/* <div className={`${classes.Footer_Img} md:mt-[100px] mt-[50px] bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[65px] mb-[150px] py-[46px] px-[20px] md:px-[55px] relative flex items-center`}>
+            <div className={`${classes.Zest_symbol_white} w-full  absolute top-[27px] left-0 right-0`}>
 
               <Image
                 src={urlFor(data.linkSectionIcon).url()}
@@ -310,10 +306,7 @@ function Filters({ data }: {data:FiltersType}) {
                 height={50}
               />
             </div>
-            <div
-              className={`${classes.Footer_Link} max-w-max ms-auto relative  z-10`}
-            >
-              {/* {/ <Link href="#" className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"> Older posts<GoArrowRight /> </Link> /} */}
+            <div className={`${classes.Footer_Link} max-w-max ms-auto relative  z-10`}>
               <Link
                 href={data.linkSection.linkUrl}
                 className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1  text-white"
@@ -323,7 +316,34 @@ function Filters({ data }: {data:FiltersType}) {
                 <GoArrowRight />{" "}
               </Link>
             </div>
+          </div> */}
+        <div className={` bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[65px] mb-[120px] md:mt-[100px] sm:mt-[50px] mt-[45px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px]  relative grid grid-cols-3`}>
+          <div className={`${classes.next_text_left} relative self-center  z-10`}>
+              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light invisible text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+                {" "}
+                {data.linkSection.linkName}
+              </Link>
+            </div>
+
+            <div className={` w-full self-center mx-auto`}>
+              <Image
+                src={urlFor(data.linkSectionIcon).url()}
+                alt="icon"
+                className="mx-auto xl:max-w-[52px] lg:max-w-[45px] md:max-w-[35px] sm:max-w-[28px] max-w-[20px] w-full"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div className={`${classes.next_text_right} relative ms-auto leading-[13px] mb-[2px] self-center  z-10`}>
+              
+              
+              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+                {" "}
+                {data.linkSection.linkName}
+              </Link>
+            </div>
           </div>
+
         </div>
       </div>
     </>

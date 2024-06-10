@@ -6,9 +6,12 @@ import { AgencyAddress } from "../../../../lib/interface";
 
 import { Map, Marker } from "pigeon-maps";
 import { PortableText } from "next-sanity";
+import Link from "next/link";
 
 const Services_Address: React.FC<AgencyAddress> = (props) => {
-  const { heading_add, slotDescription_add, buttonName_add } = props;
+console.log(props)
+
+  const { heading_add, slotDescription_add, buttonName_add, buttonName_link } = props;
 
   const contactInfoArray = Array.isArray(props.address) ? props.address : [];
   return (
@@ -26,12 +29,14 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
                 {slotDescription_add}
               </h2>
               <div className="bokk_now_btn">
-                <button className="font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[12px] md:text-base py-[5px] sm:py-[2px] md:py-[3px] md:ps-5 sm:ps-[15px] ps-[10px] flex md:gap-2 sm:gap-[6px] gap-[4px] items-center group border border-white hover:bg-color-1 hover:text-white">
+                <Link href={buttonName_link}>
+                <button className="font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[12px] md:text-base py-[2px] sm:py-[3px] md:py-[3px] md:ps-5 sm:ps-[15px] ps-[10px] flex md:gap-2 sm:gap-[6px] gap-[4px] items-center group border border-white hover:bg-color-1 hover:text-white">
                   {buttonName_add}
-                  <span className="p-1 text-white rounded-full bg-color-1 group-hover:bg-white group-hover:text-color-1 md:me-1 sm:me-[3px] me-[1px] text-[15px] sm:text-[17px] md:text-lg">
+                  <span className="p-1 text-white rounded-full bg-color-1 group-hover:bg-white group-hover:text-color-1 md:me-1 sm:me-[3px] me-[2px] text-[15px] sm:text-[17px] md:text-lg">
                     <GoArrowRight />
                   </span>
                 </button>
+                </Link>
               </div>
 
               <div>

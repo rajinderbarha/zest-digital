@@ -2,12 +2,17 @@
     /* padding: 70px 52px; */
 }
 .objective_select:not(:first-child){
-@apply xl:mt-[350px] lg:mt-[280px] md:mt-[200px] sm:mt-[70px] mt-[50px] 
+@apply xl:mt-[350px] lg:mt-[280px] md:mt-[200px] sm:mt-[90px] mt-[85px] 
 }
 
 .objective_description p:not(:first-child){
     /* border: 1px solid black; */
     padding-top: 45px; 
+  }
+
+  .objective_inner h2 strong{
+    font-weight: inherit;
+  @apply text-color-9 
   }
 
   

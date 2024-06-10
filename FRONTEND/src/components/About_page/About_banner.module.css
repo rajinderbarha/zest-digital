@@ -10,6 +10,11 @@
     bottom: 5px;
 }
 
+.Our_values_img{
+        filter: drop-shadow(0px 6px 10px #FFFFFF29);
+    
+}
+
 .About_team {
     padding: 0px 15px 141px 15px;
 }

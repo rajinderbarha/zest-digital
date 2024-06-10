@@ -5,30 +5,48 @@
     background-color: black;
 }
 
-.Block_Content h2{
-/* border: 1px solid black; */
-@apply lg:text-45px md:text-40px sm:text-30px text-[25px] font-semibold font-mono bg-light-green-1 w-fit md:mb-[33px] sm:mb-[23px] mb-[13px] xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px]
+.Block_Content h2 {
+    /* border: 1px solid black; */
+    @apply lg:text-45px md:text-40px sm:text-30px text-[25px] font-semibold font-mono bg-light-green-1 py-[2px] inline
+    /* md:mb-[33px] sm:mb-[23px] mb-[13px] xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px] */
 }
 
-.Block_Content h3{
-    @apply font-mono md:text-35px sm:text-30px text-[22px] font-semibold  md:mb-[38px] mb-[13px]
+.Block_Content h3 {
+    @apply font-mono md:text-35px sm:text-30px text-[22px] font-semibold md:mb-[38px] mb-[13px]
 }
-.Block_Content p{
+
+.Block_Content p {
     @apply font-lato md:text-lg sm:text-base text-[14px] md:mb-[24px] sm:mb-[16px] mb-[10px]
 }
-.Block_Content h3:not(:first-child) ~  p{
+
+.Block_Content h3:not(:first-child)~p {
     @apply md:ml-[40px] ml-[10px]
 }
-.Block_Content figure{
+
+.Block_Content figure {
     @apply xl:max-w-max md:max-w-[550px] mx-auto sm:max-w-[350px] max-w-[250px] md:my-[66px] sm:my-[40px] mt-[0px]
 }
-.Block_Content h2:not(:first-child) ~ h3{
-    @apply md:mt-[100px] sm:mt-[50px] mt-[30px]
+
+.Block_Content .wrappedH2:not(:first-child)~h3 {
+    @apply md:mt-[100px] sm:mt-[50px] mt-[30px] 
 }
 
-.Block_Content h2:not(:first-child) + h3{
+.Block_Content .wrappedH2:not(:first-child)+h3 {
     @apply border-yellow-500 mt-0
 }
+
+.Block_Content a {
+    @apply text-color-9 underline cursor-pointer
+}
+
+.wrappedH2{
+    /* border: 1px solid black; */
+    @apply md:pb-[33px] sm:pb-[23px] pb-[13px] xl:pt-[120px] lg:pt-[100px] md:pt-[70px] pt-[40px]
+}
+
+
+
+
 
 .sub_title {
     @apply font-mono text-25px md:text-35px font-semibold
@@ -36,7 +54,12 @@
 
 .list_sub_items {
     @apply flex flex-col gap-6 font-lato text-lg md:ml-[40px] ml-[10px]
-    
+}
+
+@media only screen and (max-width:991px) {
+    .Block_Content figure {
+        @apply my-[35px]
+    }
 }
 
 @media only screen and (max-width:991px) {
@@ -66,15 +89,51 @@
         margin: 0 auto;
     }
 }
-@media only screen and (max-width:385px){
+
+@media only screen and (max-width:385px) {
     .Footer_Link {
         font-size: 12px;
         margin: 0 auto;
     }
-    .Footer_Img{
+
+    .Footer_Img {
         padding: 20px 10px;
     }
+
     .Zest_symbol_white {
         width: 40px;
+    }
+}
+
+.next_text_right a::after, .next_text_left a::before{
+    content: '';
+    /* position: absolute;
+    bottom: 3px;
+    right: -30px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    right: 0px;
+    width: 28px;
+    height: 28px;
+    padding: 0 12px;
+}
+
+.next_text_right a::after {
+    background-image: url('../../assets/images/Right_arrow_white.svg');
+}
+
+.next_text_left a::before {
+    background-image: url('../../assets/images/Left_arrow_white.svg');
+}
+
+@media only screen and (max-width:767px){
+    .next_text_right a::after, .next_text_left a::before  {
+        padding: 0 10px;
+    }
+}
+@media only screen and (max-width:639px){
+    .next_text_right a::after, .next_text_left a::before  {
+        padding: 0 8px;
     }
 }

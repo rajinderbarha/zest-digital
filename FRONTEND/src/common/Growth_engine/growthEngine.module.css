@@ -87,6 +87,9 @@
     .growth_engine button {
         font-size: 12px;
     }
+    .growth_engine button span{
+        font-size: 15px;
+    }
 }
 @media only screen and (max-width:530px) {
     .grow_image {
@@ -96,5 +99,27 @@
 @media only screen and (max-width:320px) {
     .growth_engine {
         padding: 20px 15px 20px 15px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .growth_engine button{
+        font-size: 11px;
+        /* padding-inline-end: 3px;
+        padding-inline-start: 6px; */
+        padding: 3px 3px 3px 6px;
+    }
+}
+@media only screen and (max-width:347px) {
+    .growth_engine button{
+        font-size: 9px;
+    }
+    .growth_engine button span{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:315px) {
+    .growth_engine button{
+        font-size: 8px;
     }
 }

@@ -17,9 +17,14 @@ export const TermsAndConditions = defineType({
       type: 'array',
       of: [
         {
-          type: 'reference',
-          to: [{ type: 'singleTermsOfService' }],
+          type: 'object',
+          fields: [
+            {name: 'boxtitle', title: 'Title', type: 'string'},
+            {name: 'reference', title: 'reference', type: 'reference', to: [{type: 'singleTermsOfService'}]}
+          ],
         },
+
+        // { type: 'reference', to: [{ type: 'singleTermsOfService' }], },
       ],
     },
    

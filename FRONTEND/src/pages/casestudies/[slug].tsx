@@ -12,7 +12,7 @@ function singlecasestudy({ singleCasestudy }: {singleCasestudy:SingleCasestudyTy
     title: singleCasestudy[0].Title,
     upperTitle: singleCasestudy[0].upperTitle,
   };
-  
+  console.log("datad == ",data)
   return (
     <>
       <Singalcasebanner data={data} />

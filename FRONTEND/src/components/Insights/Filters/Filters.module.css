@@ -179,3 +179,42 @@
             margin-top: 34px;
         }
 }
+
+
+
+
+
+
+
+.next_text_right a::after, .next_text_left a::before{
+    content: '';
+    /* position: absolute;
+    bottom: 3px;
+    right: -30px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    right: 0px;
+    width: 28px;
+    height: 28px;
+    padding: 0 12px;
+}
+
+.next_text_right a::after {
+    background-image: url('../../../assets/images/Right_arrow_white.svg');
+}
+
+.next_text_left a::before {
+    background-image: url('../../../assets/images/Left_arrow_white.svg');
+}
+
+@media only screen and (max-width:767px){
+    .next_text_right a::after, .next_text_left a::before  {
+        padding: 0 10px;
+    }
+}
+@media only screen and (max-width:639px){
+    .next_text_right a::after, .next_text_left a::before  {
+        padding: 0 8px;
+    }
+}

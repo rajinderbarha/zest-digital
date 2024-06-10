@@ -80,9 +80,13 @@ export interface HomePageServices {
     image1: any;
     image2: any;
     image3: any;
-    services: { slug: string; title: string }[];
+    // services: { slug: string; title: string }[];
+    services:{
+      reference: any; servicetitle:string; slug: string
+}[]
   };
 }
+
 //---------------------------------------------Homepage------------------------------------
 
 //---------------------------------------------Contact------------------------------------
@@ -106,7 +110,8 @@ export interface ContactType {
     socialLink: string;
   }[];
   card: {
-    leftDescriptionList: string;
+    contactInfo: any;
+    // leftDescriptionList: string;
     rightDescriptionList: string;
     latitude: number;
     longitude: number;
@@ -200,8 +205,10 @@ export interface AboutType {
 export interface TermsAndConditionsType {
   heading: string;
   cards: {
+    reference: any;
     slug: string;
     title: string;
+    boxtitle:string;
     smallDescription: string;
     buttonName: string;
     buttonLink: string;
@@ -305,7 +312,9 @@ export interface SingleOurService {
   max_width: string;
   button: {
     callButtonName: string;
+    callButtonLink: string;
     resultsButtonName: string;
+    resultsButtonLink: string;
   };
   Services_Box: Services_BoxType;
 
@@ -337,7 +346,8 @@ export interface ServiceContentBox {
 export interface HappyCustomer {
   [x: string]: any;
   Services_details: {
-    heading: string;
+    // heading: string;
+    serviceheading: any;
     content: any;
     // description_1: string;
     // description_2: string;
@@ -348,6 +358,7 @@ export interface Services_book_cal {
   [x: string]: any;
   heading: string;
   buttonName: string;
+  buttonLink: string;
 }
 export interface SubServices {
   heading_sub: string;
@@ -361,6 +372,7 @@ export interface clientResults {
   title_CR: string;
   heading_CR: string;
   belowbuttonName_CR: string;
+  belowbuttonLink_CR: string;
   card: ourServiceCard[];
   //   clientResult: {
   // }
@@ -389,6 +401,7 @@ export type AgencyAddress = {
   heading_add: string;
   slotDescription_add: string;
   buttonName_add: string;
+  buttonName_link: string;
   address: any;
   cardLoc: {
     location: {

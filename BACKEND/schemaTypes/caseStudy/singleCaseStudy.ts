@@ -12,13 +12,13 @@ export const SingleCaseStudy = defineType({
       type: 'slug',
       options: {
         source: 'upperTitle',
-        maxLength: 10,
+        // maxLength: 10,
       },
     },
 
     {name: 'upperTitle', title: 'Upper Title', type: 'string'},
 
-    {name: 'title', title: 'Title', type: 'string'},
+    {name: 'Title', title: 'Title', type: 'string'},
     {
       name: 'hero',
       title: 'Hero',

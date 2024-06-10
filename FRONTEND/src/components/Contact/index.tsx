@@ -11,8 +11,28 @@ import instagram_black from '../../assets/images/instagram_black.svg'
 import facebook_white from '../../assets/images/facebook_white.svg'
 import linkedin_white from '../../assets/images/linkedin_white.svg'
 import instagram_white from '../../assets/images/instagram_white.svg'
+import { useRouter } from "next/navigation";
 
 function Contact({ data }: { data: ContactType }) {
+
+  const router = useRouter()
+
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    const formData:any = new FormData(e.currentTarget);
+    const formObject: { [key: string]: any } = {};
+
+    for (const [key, value] of formData.entries()) {
+      formObject[key] = value;
+    }
+
+    console.log("Form Data--------:", formObject);
+
+    // Redirect after form submission
+    router.push(`/thanks_you`);
+  };
+  // console.log("datad= ",data)
   return (
     <>
       <div className="Contact xl:mt-[140px] lg:mt-[120px] md:mt-[70px] sm:mt-[50px] mt-[30px] sm:px-[20px] xl:mb-[268px] lg:mb-[200px] md:mb-[140px] sm:mb-[90px] mb-[80px] main_padding">
@@ -95,7 +115,7 @@ function Contact({ data }: { data: ContactType }) {
             </div>
             <div className="lg:col-span-7 lg:mt-0 md:mt-[230px] sm:mt-[150px] mt-[80px]">
               <div className="max-w-[956px] ms-auto bg-color-1 rounded-[15px] sm:rounded-[20px] md:rounded-30px px-5 sm:px-10 ">
-                <form className="max-w-[670px] mx-auto sm:py-[88px] py-[50px] grid gap-6 sm:gap-9">
+                <form  className="max-w-[670px] mx-auto sm:py-[88px] py-[50px] grid gap-6 sm:gap-9">
                   <div className="enquiry">
                     <label
                       htmlFor="enquiry"
@@ -186,11 +206,13 @@ function Contact({ data }: { data: ContactType }) {
                       * required fields
                     </p>
                   </div>
-                  <input
+                  {/* <Link href={`/thanks_you`} className="text-center"> */}
+                  <input 
                     type="submit"
                     value="Send"
-                    className="bg-white border border-white hover:text-white hover:bg-color-1  text-[16px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[26px] md:py-[8px] sm:py-[5px] py-[10px] mx-auto"
-                  />
+                    className="bg-white border border-white hover:text-white hover:bg-color-1  text-[16px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[26px] md:py-[8px] sm:py-[5px] py-[10px] mx-auto hover:cursor-pointer"
+                    />
+                    {/* </Link> */}
                 </form>
               </div>
             </div>
@@ -208,4 +230,3 @@ function Contact({ data }: { data: ContactType }) {
 }
 
 export default Contact;
-

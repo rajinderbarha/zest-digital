@@ -16,7 +16,8 @@
 @media only screen and (min-width: 1775px) {
     .top_image{
         max-width: 250px;
-        max-height: 250px;
+        /* max-height: 250px; */
+        height: 250px;
         /* margin-bottom: 40px; */
     }
 
@@ -25,7 +26,8 @@
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
     .top_image{
         max-width: 230px;
-        max-height:230px
+        /* max-height:230px */
+        height:230px;
         /* margin-bottom: 35px; */
     }
 
@@ -34,7 +36,8 @@
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
       .top_image{
         max-width: 210px;
-        max-height: 210px;
+        /* max-height: 210px; */
+        height: 210px;
         /* height: 100%; */
         /* margin-bottom: 30px; */
     }
@@ -44,7 +47,8 @@
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
     .top_image{
         max-width: 190px;
-        max-height: 190px;
+        /* max-height: 190px; */
+        height: 190px;
         /* margin-bottom: 27px; */
     }
 
@@ -53,7 +57,8 @@
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .top_image{
         max-width: 170px;
-        max-height: 170px;
+        /* max-height: 170px; */
+        height: 170px;
         /* margin-bottom: 22px; */
     }
 
@@ -63,7 +68,8 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .top_image{
         max-width: 150px;
-        max-height: 150px;
+        /* max-height: 150px; */
+        height: 150px;
         /* margin-bottom: 22px; */
     }
     .top_image ~ p{
@@ -73,7 +79,8 @@
 @media only screen and (max-width:767px){
     .top_image{
         max-width: 150px;
-        max-height: 150px;  
+        /* max-height: 150px;   */
+        height: 150px;  
       }
 }
 /* @media only screen and (max-width:639px){

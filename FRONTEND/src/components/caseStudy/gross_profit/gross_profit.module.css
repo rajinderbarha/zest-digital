@@ -105,6 +105,11 @@
     gap: 20px;
   }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1150px) {
+  .profit_box_heading {
+    font-size: 25px;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .profit_box {

@@ -1,0 +1,34 @@
+.hover_box{
+    @apply  bg-white border border-color-1 rounded-[10px] p-[10px] md:p-[20px] w-[190px] md:w-[227px] absolute top-[-33px]  shadow-msg z-[1]
+}
+.hover_box ul{
+    @apply list-decimal list-inside text-color-1 font-lato text-[10px] sm:text-[12px] md:text-[14px] grid gap-y-[5px] sm:gap-y-[14px] md:gap-y-[18px]
+}
+
+@media only screen and (min-width:1265px) {
+    .hover_box {
+        left: 100%;
+    
+    }
+}
+@media only screen and (min-width:768px){
+    .hover_box{
+        top: -33px;
+    }
+}
+
+@media only screen and (max-width:1264px){
+    .hover_box{
+        right:43px;
+    }
+}
+@media only screen and (max-width:767px){
+    .hover_box{
+        top: -0px;
+        right:33px;
+    }
+}
+
+@media only screen and (max-width:639px){
+
+}
