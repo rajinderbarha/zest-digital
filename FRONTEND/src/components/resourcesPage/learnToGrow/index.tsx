@@ -62,7 +62,7 @@ function LearnToGrow({ data }: {data:Resources}) {
           </div>
         </div>
         <div className="main_padding">
-          <div className="max-w-[1335px] mx-auto -mt-[250px] md:-mt-[279px] " id="tools">
+          <div className=" relative max-w-[1335px] mx-auto -mt-[250px] md:-mt-[279px] " id="tools">
             <h2 className="font-mono font-semibold xl:text-45px lg:text-40px text-[20px] text-white mx-auto text-center">
               Tools
             </h2>
