@@ -6,10 +6,12 @@ import Growth_engine from "@/common/Growth_engine";
 import classes from "./growthcard.module.css";
 import { urlFor } from "../../../lib/sanity.client";
 import { HomepageGrowthCard } from "../../../lib/interface";
+import Link from "next/link";
 
 const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
 
-
+  // console.log(card);
+  
   const texts = ["Wear ", "Cover Face ", "Wash Your "];
   const [animateIndex, setAnimateIndex] = useState(0);
   const textInTimer = 3000; 
@@ -18,7 +20,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
       
       const handleAnimation = () => {
           const timeoutId = setTimeout(() => {
-              setAnimateIndex(prev => (prev + 1) % ( card.switcher ? card.switcher.length: [].length));
+              setAnimateIndex(prev => (prev + 1) % ( card?.switcher ? card.switcher.length: [].length));
           }, textInTimer);
           return timeoutId; 
       };
@@ -62,7 +64,9 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
 
             <div className={`${classes.growth_grid}`}>
               {horizontalbars?.map(
-                ({ numHeading, desc, title }: any, index: any) => {
+                ({ SingleCaseStudyCard:{slug,upperTitle,card:{heading, belowHeading, homepageCardDesc}} }: any, index: any) => {
+                  const cleanedUpperTitle = upperTitle.replace(/[()]/g, '').trim();
+
                   if (index == 0) {
                     outerSpan = "md:col-span-6 growth_grid_1";
                     innerSpan = "md:col-span-6";
@@ -80,22 +84,25 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                           className={`${outerSpan} ${classes.box_size}  p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 lg:p-[35px] md:p-[30px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
                         >
                           <div className={`${classes.card_heading} font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px lg:text-[25px] md:text-[19px] md:max-970:text-[18px] md:max-800:text-[17px] sm:text-25px text-[16px]`}>
-                            {numHeading}
+                            {/* {numHeading} */}
+                            {heading} {belowHeading}
                           </div>
-                          <div className="min-1350:w-auto lg:w-[45px] md:w-[40px] sm:max-970:w-[35px] w-[40px] group">
+                          <Link href={`/casestudies/${slug}`}>
+                          <div className="min-1350:w-auto lg:w-[45px] md:w-[40px] sm:max-970:w-[35px] w-[40px] group" >
                             
                             <Image src={arrow} alt=""  className="group-hover:hidden"/>
                             <Image src={hover_arrow} alt=""  className="text-[10px] group-hover:block hidden"/>
                           </div>
+                          </Link>
                         </div>
                         <div
                           className={`${innerSpan} ps-[20px] md:ps-0 md:max-w-[442px] self-center md:self-center md:justify-self-start  sm:max-w-[550px] md:text-start  justify-self-start`}
                         >
                           <h3 className="sm:text-[25px] text-[16px] md:max-970:text-[23px] ">
-                            {title}
+                            {cleanedUpperTitle}
                           </h3>
                           <p className="sm:text-base text-[12px] md:max-970:text-[14px] md:max-970:leading-[16px] leading-[15px]">
-                            {desc}
+                            {homepageCardDesc}
                           </p>
                         </div>
                       </div>

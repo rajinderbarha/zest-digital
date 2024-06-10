@@ -15,4 +15,4 @@ const Layout = ({children,headerdata, footerdata}:{children:React.ReactNode,head
   )
 }
 
-export default Layout
+export default Layout;

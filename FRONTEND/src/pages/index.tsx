@@ -9,6 +9,9 @@ import { HomepageProps } from "../../lib/interface";
 export default function Home({ homepageData }: HomepageProps) {
   const { growRevenue, TransformResults } = homepageData[0] || {};
 
+  // console.log(homepageData[0]);
+  
+
   return (
     <>
     <div className="Body_padding">

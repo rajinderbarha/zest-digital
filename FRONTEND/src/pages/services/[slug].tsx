@@ -5,12 +5,13 @@ import Services from "@/components/Services";
 import { GetStaticPaths } from "next";
 
 function SingleService({ singleservicedata, }: { singleservicedata: SingleOurService[]; }) {
-  // console.log(singleservicedata[0])
+  // console.log("a---------",singleservicedata[0])
   return <Services data={singleservicedata[0]} />;
 }
-export default SingleService; ``
-export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
+export default SingleService; 
 
+
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
   return {
       paths: [], //indicates that no page needs be created at build time
       fallback: 'blocking' //indicates the type of fallback

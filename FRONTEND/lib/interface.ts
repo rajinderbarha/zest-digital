@@ -30,10 +30,22 @@ export interface HomepageProps {
       slice?: (arg0: number) => any;
       heading?: string;
       switcher?: string[];
-      horizontalbars?: { desc: string; numHeading: string; title: string }[];
+      horizontalbars?: HorizontalBarsType[]
     };
   }[];
 }
+
+export interface HorizontalBarsType{ 
+  SingleCaseStudyCard:{
+  slug:string,
+  upperTitle:string,
+  card:{
+    heading:string,
+    belowHeading:string,
+    homepageCardDesc:string
+  }
+}}[];
+
 export interface HomepageHeroSec {
   HeroSecData: {
     heading: string;
@@ -54,7 +66,7 @@ export interface HomepageGrowthCard {
 
     heading?: string;
     switcher?: string[];
-    horizontalbars?: { desc: string; numHeading: string; title: string }[];
+    horizontalbars?: HorizontalBarsType[]
   };
 }
 export interface LogoMoving {
@@ -378,11 +390,21 @@ export interface clientResults {
   // }
 }
 export interface ourServiceCard {
-  percentage_CR: string;
-  mapped_title: string;
+  // percentage_CR: string;
+  // mapped_title: string;
   description_1_CR: string;
   description_2_CR: string;
   buttonName_CR: string;
+
+  sigleCaseStudyCard:{
+    slug:string,
+    card:{
+      heading:string,
+      belowHeading:string,
+      description:string,
+      descriptionBelow:string
+    }
+  }
 }
 export interface AccordianType {
   heading_acc: string;

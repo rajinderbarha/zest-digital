@@ -65,6 +65,7 @@ export const SingleCaseStudy = defineType({
         {name: 'belowHeading', type: 'string', title: 'Below Heading'},
         {name: 'description', type: 'string', title: 'Description'},
         {name: 'descriptionBelow', type: 'string', title: 'Description Below'},
+        {name: 'homepageCardDesc', type: 'string', title: "Homepage single casestudy's Description"},
       ],
     },
     {

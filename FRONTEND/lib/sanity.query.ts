@@ -472,12 +472,22 @@ export async function getSingleOurServicesData(slug: string) {
       "title_CR": title_CR,
       "heading_CR": heading_CR,
       "card": card[] {
-        "percentage_CR": percentage_CR,
-        "mapped_title": mapped_title,
+       // "percentage_CR": percentage_CR,
+       // "mapped_title": mapped_title,
         "description_1_CR": description_1_CR,
         "description_2_CR": description_2_CR,
         "percentage_CR": percentage_CR,
-        "buttonName_CR": buttonName_CR
+        "buttonName_CR": buttonName_CR,
+        sigleCaseStudyCard->{
+          "slug": slug.current,
+          card{
+            
+          heading,
+            belowHeading,
+            description,
+            descriptionBelow
+          }
+        }
       },
       "belowbuttonName_CR": belowbuttonName_CR,
       "belowbuttonLink_CR": belowbuttonLink_CR
@@ -653,9 +663,16 @@ export async function getHomepageData() {
         heading,
         switcher[],
         horizontalbars[] {
-            numHeading,
-            title,
-            desc,
+            SingleCaseStudyCard->{
+              "slug":slug.current,
+              upperTitle,
+              card{
+                heading,
+                belowHeading,
+                homepageCardDesc
+              }
+
+            }
         },
         growthcard[]-> {
           "slug":slug.current,

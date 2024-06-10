@@ -151,11 +151,18 @@ export const SingleService = defineType({
             {
               type: 'object',
               fields: [
-                {name: 'percentage_CR', type: 'string', title: 'Percentage'},
-                {name: 'mapped_title', type: 'string', title: 'Title'},
+                // {name: 'percentage_CR', type: 'string', title: 'Percentage'},
+                // {name: 'mapped_title', type: 'string', title: 'Title'},
                 {name: 'description_1_CR', type: 'string', title: 'Description_1'},
                 {name: 'description_2_CR', type: 'string', title: 'Description_2'},
                 {name: 'buttonName_CR', type: 'string', title: 'Button Name'},
+
+                {
+                  name: 'sigleCaseStudyCard',
+                  title: 'sigleCaseStudy Card',
+                  type: 'reference',
+                  to: [{type: 'singleCaseStudy'}],
+                },
               ],
             },
           ],

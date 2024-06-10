@@ -46,10 +46,18 @@ export const HomePage = defineType({
               title: 'Colored Text Item',
               type: 'object',
               fields: [
-                {name: 'numHeading', type: 'string', title: 'Heading'},
-                {name: 'title', type: 'string', title: 'Title'},
-                {name: 'desc', type: 'string', title: 'Description'},
+                // {name: 'numHeading', type: 'string', title: 'Heading'},
+                // {name: 'title', type: 'string', title: 'Title'},
+                // {name: 'desc', type: 'string', title: 'Description'},
+                {
+                  name: 'SingleCaseStudyCard',
+                  title: 'Single CaseStudy Card',
+                  type: 'reference',
+                  to: [{type: 'singleCaseStudy'}],
+                },
               ],
+
+              
             },
           ],
         },
@@ -104,6 +112,9 @@ export const HomePage = defineType({
           type: 'reference',
           to: [{type: 'climteaction'}],
         },
+
+
+        
       ],
     },
   ],
