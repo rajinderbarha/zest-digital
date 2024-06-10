@@ -132,7 +132,7 @@ function Contact({ data }: { data: ContactType }) {
                       <option>Grow my business</option>
                       <option>Career opportunities</option>
                       <option>Media enquiries</option>
-                      <option>Others</option>
+                      <option>Other</option>
                     </select>
                   </div>
                   <div className={`${classes.names_div} flex justify-between`}>
@@ -217,7 +217,7 @@ function Contact({ data }: { data: ContactType }) {
               </div>
             </div>
           </div>
-          <div className={`${classes.map_div} xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[120px] mt-[100px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:gap-x-[105px]  `}>
+          <div className={`${classes.map_div} xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[120px] mt-[100px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  `}>
             {/* <div className="lg:col-span-4"> */}
 
             <MapLocations data={data.card} />

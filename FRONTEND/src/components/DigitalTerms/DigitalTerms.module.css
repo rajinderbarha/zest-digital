@@ -28,7 +28,7 @@
     @apply list-disc list-inside md:ml-[100px] ml-[15px] md:text-lg sm:text-base text-[14px]
 }
 .Portable_text p:has(strong){
-    @apply inline-block
+    @apply block
 }
 .Portable_text a{
     word-wrap: break-word;

@@ -112,7 +112,9 @@ function Services({ data }: { data: SingleOurService }) {
     Services_details,
     Services_Quotes: serviceQuotes,
   } = data;
+
 // console.log("------------------------dfdfdf----------",clientResultsMapData)
+
 
   // Process agency address
   const agencyAddress = agencyAddressData.flatMap((item: any) => item.contactInfo);
@@ -129,7 +131,7 @@ function Services({ data }: { data: SingleOurService }) {
       <Services_Box Services_Box={{ contentBox: { heading, description, belowdesc, coloredText }, imageBox }} />
       <div className="xl:mt-[175px] lg:mt-[150px] md:mt-[125px] sm:mt-[80px] mt-[68px]"></div>
 
-      <Services_details_happy_customer Services_details={Services_details} />
+      <Services_details_happy_customer Services_details={Services_details} Slug={data.slug} />
 
       <Services_book_call heading={heading_call} buttonName={buttonName} buttonLink={buttonLink}/>
       <Services_SubServices heading_sub={heading_sub} services={subServices} />

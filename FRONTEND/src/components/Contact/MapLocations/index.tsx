@@ -30,20 +30,20 @@ function MapLocations({data}:any) {
           </Map>
           {/* <Image src={london_map} alt="" className='w-full h-full rounded-[20px] md:rounded-30px shadow-dark-pink-right border border-black' /> */}
         </div>
-        <div className="contact flex justify-between flex-col-reverse md:flex-row gap-2 mt-[20px]">
-          <div className="address ">
-            <address className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] font-mono text-color-1 not-italic">
+        <div className="contact grid lg:grid-cols-12 gap-2  mt-[20px]">
+          <div className="address lg:col-span-6 lg:order-1 order-2">
+            <address className={`${classes.contact_detail}  font-mono text-color-1 not-italic`}>
               {/* {leftDescriptionList} */}
                 <PortableText  value={contactInfo} key={index} />
              
             </address >
           </div>
-          <div className="tele  h-max">
-            <div className=" flex items-center text-color-9 font-mono gap-[5px]">
+          <div className="tele lg:col-span-6 h-max lg:order-2 order-1">
+            <div className=" flex items-center text-color-9 lg:justify-end font-mono gap-[5px]">
             <div className="">
-              <FaPhoneAlt className="text-black w-max text-[16px] md:text-[17px] lg:text-[18px] xl:text-[20px]" />
+              <FaPhoneAlt className={`${classes.phone_icon} text-black w-max text-[15px] md:text-[15px] `} />
             </div>
-              <p className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px]">
+              <p className={`${classes.contact_detail} `}>
                 {" "}
               {rightDescriptionList}
               </p>
