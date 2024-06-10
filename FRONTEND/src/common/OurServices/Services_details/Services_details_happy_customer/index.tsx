@@ -4,13 +4,19 @@ import { HappyCustomer } from "../../../../../lib/interface";
 import { urlFor } from "../../../../../lib/sanity.client";
 import { PortableText } from "next-sanity";
 
-const Services_details_happy_customer = ({ Services_details }: { Services_details: HappyCustomer[] }) => {
+const Services_details_happy_customer = ({ Services_details, Slug }: { Services_details: HappyCustomer[], Slug: string }) => {
+  // const isGrowthPage
+  console.log("-----data--------", Services_details);
+  console.log("-----------slug-----", Slug)
+
+  const isGrowthPage = Slug === "growth-marketing-services";
+  
   return (
     <>
       <div className="main_padding ">
         <div className={`${classes.objective} main_container`}>
 
-        {Services_details.map((item: HappyCustomer, index: number) =>
+          {Services_details.map((item: HappyCustomer, index: number) =>
 
             index % 2 == 0 ? (
               <div
@@ -20,11 +26,11 @@ const Services_details_happy_customer = ({ Services_details }: { Services_detail
                 <div className=" md:max-w-[1057px] xl:pe-[100px] lg:pe-[70px] md:pe-[50px]">
                   <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[22px] text-color-1 font-semibold font-mono ">
                     {/* {item.heading} */}
-                    <PortableText value={item.serviceheading}/>
+                    <PortableText value={item.serviceheading} />
                   </h2>
                   <div className={`${classes.objective_description} font-mono lg:text-30px md:text-25px text-[12px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[20px] mt-[12px] `}>
-                    <PortableText value={item.content}/>
-                   
+                    <PortableText value={item.content} />
+
                   </div>
                 </div>
                 <div className="flex md:mx-auto ms-auto sm:mt-[15px] mt-[7px]">
@@ -37,28 +43,38 @@ const Services_details_happy_customer = ({ Services_details }: { Services_detail
               </div>
             ) : (
               <div className={`${classes.objective} ${classes.objective_select} main_container`} key={index}>
-              <div
-                className={`flex items-center flex-col-reverse md:flex-row  bg-white ${classes.objective_inner} lg:gap-10 `}
-              >
-                <div className=" image_class flex md:mx-auto  me-auto md:mt-0 sm:mt-[15px] mt-[7px]">
-                  <img
-                    src={urlFor(item.image).url()}
-                    alt=""
-                    className="xl:max-w-[400px] xl:w-[400px] xl:h-[400px] lg:max-w-[300px] lg:w-[300px] lg:h-[300px] md:max-w-[230px] md:w-[230px] md:h-[230px] sm:max-w-[160px] sm:w-[160px] sm:h-[160px] max-w-[150px] w-[150px] h-[150px]"
-                  />
-                </div>
-                <div className=" md:ms-auto md:max-w-[1057px] xl:ps-[80px] lg:ps-[50px] md:ps-[20px] text-right">
-                  <h2 className=" md:max-w-[675px] ms-auto xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[22px] text-color-1 font-semibold font-mono ">
-                    {/* {item.heading} */}
-                    <PortableText value={item.serviceheading}/>
-                  </h2>
-                  <div className={`${classes.objective_description} font-mono lg:text-30px md:text-25px text-[12px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[20px] mt-[12px] `}>
-                    <PortableText value={item.content}/>
-                 
+                <div
+                  className={`flex items-center flex-col-reverse md:flex-row  bg-white ${classes.objective_inner} lg:gap-10 `}
+                >
+                  {isGrowthPage ? (
+                    <div className=" image_class flex md:mx-auto  me-auto md:mt-0 sm:mt-[15px] mt-[14px]">
+                      <img
+                        src={urlFor(item.image).url()}
+                        alt=""
+                        className={`${classes.growth_service_image} xl:max-w-[618px] xl:w-[618px] xl:h-[950px] lg:max-w-[290px] lg:w-[290px] lg:h-[768px] md:max-w-[230px] md:w-[230px] md:h-[495px] sm:max-w-[200px] sm:w-[200px] sm:h-[485px] max-w-[173px] w-[173px] h-[476px]`}
+                      />
+                    </div>
+                  ) : (
+                    <div className=" image_class flex md:mx-auto  me-auto md:mt-0 sm:mt-[15px] mt-[7px]">
+                      <img
+                        src={urlFor(item.image).url()}
+                        alt=""
+                        className="xl:max-w-[400px] xl:w-[400px] xl:h-[400px] lg:max-w-[300px] lg:w-[300px] lg:h-[300px] md:max-w-[230px] md:w-[230px] md:h-[230px] sm:max-w-[160px] sm:w-[160px] sm:h-[160px] max-w-[150px] w-[150px] h-[150px]"
+                      />
+                    </div>
+                  )}
+                  <div className={`md:ms-auto md:max-w-[1057px] ${isGrowthPage ? ``: `xl:ps-[80px] lg:ps-[50px] md:ps-[20px]`} text-right`}>
+                    <h2 className=" md:max-w-[675px] ms-auto xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[22px] text-color-1 font-semibold font-mono ">
+                      {/* {item.heading} */}
+                      <PortableText value={item.serviceheading} />
+                    </h2>
+                    <div className={`${classes.objective_description} font-mono lg:text-30px md:text-25px text-[12px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[20px] mt-[12px] `}>
+                      <PortableText value={item.content} />
+
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             )
           )}
         </div>
