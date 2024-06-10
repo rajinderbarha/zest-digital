@@ -49,15 +49,29 @@
     }
 }
 
+
+
+
+@media only screen and (min-width:1690px) {
+    .map_div {
+        column-gap: 105px;
+      }
+}
+
+@media only screen and (min-width:1441px) and (max-width:1689px) {
+    .map_div {
+      column-gap: 85px;
+    }
+}
 @media only screen and (min-width:1260px) and (max-width:1440px) {
     .map_div {
-      column-gap: 75px;
+      column-gap: 50px;
     }
 }
 
 @media only screen and (min-width:1024px) and (max-width:1259px) {
     .map_div {
-      column-gap: 60px;
+      column-gap: 45px;
     }
 }
 @media only screen and (min-width:768px) and (max-width:1023px) {
