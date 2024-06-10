@@ -90,10 +90,16 @@
     margin: 0 auto !important;
 }
 
-@media only screen and (min-width:1230px) and (max-width:1403px) {
+@media only screen and (min-width:1239px) and (max-width:1403px) {
 .card_heading{
-font-size: 32px;
+    font-size: 32px;
 }
+}
+@media only screen and (min-width:1024px) and (max-width:1055px) {
+    
+    .card_heading{
+        font-size: 22px;
+    }
 }
 
 

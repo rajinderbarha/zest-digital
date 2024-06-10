@@ -14,12 +14,14 @@ import closeIcon from '../../assets/images/closeIcon.svg'
 import { url } from "inspector";
 
 const Header = ({ data }: { data: HeaderType[] }) => {
+  
 
   const router = useRouter();
   const [iconSrc, setIconSrc] = useState(barsIcon);
 
 const closeMenu = () => {
   setIsMenuOpen(false);
+  document.body.style.overflow = "";
   setIconSrc(barsIcon);
 };
 
@@ -133,7 +135,7 @@ const closeMenu = () => {
               <div className="flex items-center gap-[15px]">
               <Link  onClick={closeMenu}
                   href={item.button.navLink}
-                  className=" font-mono text-[12px] px-21px py-[7px] bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1"
+                  className=" font-mono text-[12px] px-21px py-[7px] bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1  border border-color-1"
                 >
                   {item.button.navName}
                 </Link>

@@ -27,6 +27,9 @@
 .Portable_text ul{
     @apply list-disc list-inside md:ml-[100px] ml-[15px] md:text-lg sm:text-base text-[14px]
 }
+.Portable_text p:has(strong){
+    @apply inline-block
+}
 .Portable_text a{
     word-wrap: break-word;
 }
@@ -34,7 +37,7 @@
     @apply ml-[0]
 }
 .Portable_text p:has(a){
-    display: inline;
+    display: inline-block;
 }
 .Portable_text a{
     color: #E43FA8;
