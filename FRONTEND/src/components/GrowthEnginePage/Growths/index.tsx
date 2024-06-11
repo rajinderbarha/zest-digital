@@ -66,4 +66,4 @@ function Growths({ data ,otherSolHeading}: any ) {
   );
 }
 
-export default Growths;
+export default Growths
