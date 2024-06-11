@@ -115,7 +115,7 @@ function Contact({ data }: { data: ContactType }) {
             </div>
             <div className="lg:col-span-7 lg:mt-0 md:mt-[230px] sm:mt-[150px] mt-[80px]">
               <div className="max-w-[956px] ms-auto bg-color-1 rounded-[15px] sm:rounded-[20px] md:rounded-30px px-5 sm:px-10 ">
-                <form  className="max-w-[670px] mx-auto sm:py-[88px] py-[50px] grid gap-6 sm:gap-9">
+                <form  onSubmit={handleFormSubmit} className="max-w-[670px] mx-auto sm:py-[88px] py-[50px] grid gap-6 sm:gap-9">
                   <div className="enquiry">
                     <label
                       htmlFor="enquiry"

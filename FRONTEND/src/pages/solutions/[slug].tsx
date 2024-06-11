@@ -15,6 +15,8 @@ function growthengine({ growth, card }: any) {
 }
 
 export default growthengine;
+
+
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
   return {
@@ -22,6 +24,8 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
       fallback: 'blocking' //indicates the type of fallback
   }
 }
+
+
 export async function getStaticProps({
   params,
 }: {
