@@ -30,8 +30,8 @@ const Growth_engine = ({
             <p className={`${classes.growth_engine_desc} md:text-3xl mt-5 md:mb-[37px] mb-[20px]`}>
               {description}
             </p>
-            <Link href={buttonLink}>
-              <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center">
+            <Link href={buttonLink} className="inline-block">
+              <button className="bg-color-1 group hover:bg-white max-sm:leading-normal hover:text-color-1 border border-color-1 rounded-full text-white text-base  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center">
                 {buttonName}{" "}
                 <span className="md:p-1 p-[2px] bg-white rounded-full text-black me-0 md:me-[6px] text-lg group-hover:bg-color-1 group-hover:text-white">
                   <GoArrowRight />
@@ -66,9 +66,9 @@ const Growth_engine = ({
           <p className={`${classes.growth_engine_desc} md:text-3xl mt-5 md:mb-[37px] mb-[20px] xl:mt-[29px] lg:mt-[26px] md:mt-[25px]`}>
             {description}
           </p>
-          <Link href={buttonLink}>
+          <Link href={buttonLink} className="inline-block">
             <button
-              className={` bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white text-base md:py-[5px] md:ps-4  py-[4px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center`}
+              className={` bg-color-1 group hover:bg-white  max-sm:leading-normal hover:text-color-1 border border-color-1 rounded-full text-white text-[16px] md:py-[5px] md:ps-4  py-[4px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center`}
               type="button"
             >
               {buttonName}{" "}
