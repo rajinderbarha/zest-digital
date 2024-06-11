@@ -26,9 +26,17 @@
         text-align: 20px;
     }
 }
-@media only screen and (min-width:1390px) and (max-width:1560px){
+@media only screen and (min-width:1483px) and (max-width:1560px){
     .contact_detail{
         font-size: 15px;
+    }
+    .phone_icon{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width:1390px) and (max-width:1483px){
+    .contact_detail{
+        font-size: 14.5px;
     }
     .phone_icon{
         font-size: 17px;
@@ -50,7 +58,7 @@
         font-size: 16px;
     }
 }
-@media only screen and (min-width:1100px) and (max-width:1195px){
+@media only screen and (min-width:1105px) and (max-width:1195px){
     .contact_detail{
         font-size: 12px;
     }
@@ -58,7 +66,7 @@
         font-size: 15px;
     }
 }
-@media only screen and (min-width:1035px) and (max-width:1100px){
+@media only screen and (min-width:1035px) and (max-width:1105px){
     .contact_detail{
         font-size: 11px;
     }

@@ -83,12 +83,12 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                         <div
                           className={`${outerSpan} ${classes.box_size}  p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 lg:p-[35px] md:p-[30px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
                         >
-                          <div className={`${classes.card_heading} font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px lg:text-[25px] md:text-[19px] md:max-970:text-[18px] md:max-800:text-[17px] sm:text-25px text-[16px]`}>
+                          <div className={`${classes.card_heading} font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px lg:text-[25px] md:text-[19px] md:max-970:text-[19px] md:max-800:text-[17px] sm:text-25px text-[16px]`}>
                             {/* {numHeading} */}
                             {heading} {belowHeading}
                           </div>
                           <Link href={`/casestudies/${slug}`}>
-                          <div className="min-1350:w-auto lg:w-[45px] md:w-[40px] sm:max-970:w-[35px] w-[40px] group" >
+                          <div className="min-1350:w-auto lg:w-[45px] md:w-[40px] sm:max-970:w-[32px] w-[40px] group" >
                             
                             <Image src={arrow} alt=""  className="group-hover:hidden"/>
                             <Image src={hover_arrow} alt=""  className="text-[10px] group-hover:block hidden"/>
