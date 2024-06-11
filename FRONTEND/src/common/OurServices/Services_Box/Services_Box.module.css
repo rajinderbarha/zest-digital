@@ -1,5 +1,6 @@
 .SingleIntro {
-    background-image: url('../../../assets/images/Gradient_v4.png');
+    /* background-image: url('../../../assets/images/Gradient_v5.png'); */
+    background-image: url('../../../assets/images/Services_bg_gradient.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -32,10 +33,13 @@
     .single_container {
         margin-top: -50px;
     }
+    .SingleIntro {
+        background-image: url('../../../assets/images/Services_bg_gradient_mobile.png');  
+    }
 }
 @media only screen and (max-width:639px) {
     .SingleIntro {
-        margin-top: 72px;
+        margin-top: 120px;
 
     }
 }

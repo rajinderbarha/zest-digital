@@ -5,6 +5,13 @@
     background-size: cover;
     /* background-color: black; */
 }
+
+@media only screen and (max-width:767px){
+    .bg_image {
+        background-image: url('../../../assets/images/Services_map_gradient_mobile.png');
+    }
+}
+
 .map_div {
     max-width: -webkit-fill-available!important;
     width: 100%;

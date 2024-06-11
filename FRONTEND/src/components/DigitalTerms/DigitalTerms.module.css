@@ -25,7 +25,7 @@
     @apply md:ml-[60px] ml-[8px]
 }
 .Portable_text ul{
-    @apply list-disc list-inside md:ml-[100px] ml-[15px] md:text-lg sm:text-base text-[14px]
+    @apply list-disc list-inside md:ml-[100px] ml-[15px] md:text-lg sm:text-base text-[14px] md:mb-[36px] sm:mb-[24px] mb-[17px]
 }
 .Portable_text p:has(strong){
     @apply block
@@ -42,4 +42,9 @@
 .Portable_text a{
     color: #E43FA8;
     text-decoration: underline;
+}
+
+.Portable_text h2:not(:first-child) + p + ul + p, .Portable_text h2:not(:first-child) + p + ul + p +p {
+    /* border: 10px solid black; */
+    @apply ml-[0]
 }
