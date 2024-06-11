@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
 import HomeGrowthCard from "@/components/HomeGrowthCard";
 import Logo_moving from "@/common/Logo_moving";
@@ -6,11 +6,12 @@ import Services from "@/common/Services";
 import { getHomepageData } from "../../lib/sanity.query";
 import { HomepageProps } from "../../lib/interface";
 
+
 export default function Home({ homepageData }: HomepageProps) {
   const { growRevenue, TransformResults } = homepageData[0] || {};
 
   // console.log(homepageData[0]);
-  
+
 
   return (
     <>
