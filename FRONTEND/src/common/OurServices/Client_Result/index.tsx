@@ -114,7 +114,7 @@ const Client_Result: React.FC<clientResults> = (props) => {
                 )}
             </div>
             <div className={`${classes.view_more_btn} text-center xl:mt-[137px] lg:mt-[115px] md:mt-[85px] sm:mt-[60px] mt-[40px]`}>  
-              <Link href={belowbuttonLink_CR}><button className='font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[12px] sm:text-base py-[7px] sm:py-[8px] md:py-[10px] px-7 flex gap-2 items-center border border-white hover:bg-color-1 hover:text-white'>{belowbuttonName_CR}</button></Link>
+              <Link href={belowbuttonLink_CR} className="inline-block"><button className='font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[12px] sm:text-base py-[7px] sm:py-[8px] md:py-[10px] px-7 flex gap-2 items-center border border-white hover:bg-color-1 hover:text-white leading-normal'>{belowbuttonName_CR}</button></Link>
             </div>
           </div>
         </div>

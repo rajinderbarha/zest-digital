@@ -158,6 +158,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import classes from "./Filters.module.css";
 import Filters_image from "../../../assets/images/Filters.png";
+import Filters_Desktop_image from "../../../assets/images/Insights_bg_gradient.png";
+import Filters_Mobile_image from "../../../assets/images/Insights_bg_gradient_mobile.png";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../../lib/sanity.client";
@@ -212,9 +214,14 @@ function Filters({ data }: {data:FiltersType}) {
         <div className="main_container">
           <div className={`${classes.Filters} relative `}>
             <Image
-              src={Filters_image}
+              src={Filters_Desktop_image}
               alt=""
-              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px] rounded-30px absolute top-0 w-full`}
+              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px] rounded-30px absolute top-0 w-full md:block hidden`}
+            />
+            <Image
+              src={Filters_Mobile_image}
+              alt=""
+              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px] rounded-30px absolute top-0 w-full block md:hidden`}
             />
             <div className={`${classes.Filters_box}  relative z-10  grid lg:grid-cols-12`}>
               <div className="lg:col-span-8 md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
