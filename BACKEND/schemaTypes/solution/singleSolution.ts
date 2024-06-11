@@ -84,5 +84,12 @@ export const SingleSolution = defineType({
       type: 'reference',
       to: [{type: 'climteaction'}],
     },
+   
+    // {                                          //----------------------tomorrow------------------------------
+    //   name: 'singlesolutionCard',
+    //   title: 'single Solution Card',
+    //   type: 'array',
+    //   of: [{type: 'reference', to: [{type: 'growth'}]}],
+    // },
   ],
 })

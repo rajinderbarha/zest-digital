@@ -3,7 +3,7 @@
 }
 
 .Instrumental h2 {
-    max-width: 909px;
+    /* max-width: 909px; */
 }
 
 .Instrumental p {
@@ -26,6 +26,9 @@
 @media screen and (max-width:768px) {
     .Instrumental {
         /* padding: 80px 16px 50px 16px; */
+    }
+    .instrumental_img img{
+        margin: auto;
     }
 
 }

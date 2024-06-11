@@ -12,17 +12,34 @@ import { CasestudyType } from "../../../lib/interface";
 
 function Casestudy({ Casestudy }: {Casestudy:CasestudyType[]}) {
   console.log("lib", Casestudy);
+
+  const caseStudy = Casestudy[0]?.section
+
   return (
     <div className="Body_padding">
       <Casestudyintro data={Casestudy[0].hero} />
-      {Casestudy[0].section.map((item:any, index:number) => {
+      {caseStudy.map((item: any, index: number) => {
+        let position = "";
+        let dynamicClass = "";
+
+        if (index === 2 || index === 3) {
+          dynamicClass = "special-instrumental";
+        } 
+        else if (index === 4) {
+          dynamicClass = "conversations";
+        }
+        else if (index === 5) {
+          dynamicClass = "project-window";
+        }
+
         return (
-          <div key={index}>
+          <div key={index} className={position}>
             <Gross_profit data={item} />
-            <Instrumental data={item}/>
+            <Instrumental data={item} dynamicClass={dynamicClass} />
           </div>
         );
       })}
+     
 
       {/* <Gross_profit />
       <Visibility />
