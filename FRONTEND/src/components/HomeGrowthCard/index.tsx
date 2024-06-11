@@ -33,7 +33,13 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
   }, [animateIndex, textInTimer]); 
 
 
-
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: true, 
+  //   });
+   
+  // }, []);
 
   const { heading, horizontalbars } = card;
 
@@ -41,7 +47,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
   let innerSpan: string;
   return (
     <>
-      <div className="main_padding lg:my-[47px] md:my-[35px] sm:my-[25px] my-[15px] ">
+      <div className="main_padding lg:my-[47px] md:my-[35px] sm:my-[25px] my-[15px] " data-aos="fade-up">
         <div className="text-white main_container ">
           <div
             className={`${classes.growth_result} bg-color-1 rounded-[20px] md:rounded-30px font-mono xl:pt-[131px] lg:pt-[110px] md:pt-[75px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}
@@ -62,7 +68,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
              </div>
          </div>
 
-            <div className={`${classes.growth_grid}`}>
+            <div className={`${classes.growth_grid}`} >
               {horizontalbars?.map(
                 ({ SingleCaseStudyCard:{slug,upperTitle,card:{heading, belowHeading, homepageCardDesc}} }: any, index: any) => {
                   const cleanedUpperTitle = upperTitle.replace(/[()]/g, '').trim();
@@ -78,7 +84,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                     innerSpan = "md:col-span-4";
                   }
                   return (
-                    <div key={index} className="grid gap-10 pe-5">
+                    <div key={index} className="grid gap-10 pe-5" data-aos="fade-right">
                       <div className="grid md:grid-cols-12 md:gap-6 gap-[13px]">
                         <div
                           className={`${outerSpan} ${classes.box_size}  p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 lg:p-[35px] md:p-[30px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
@@ -121,6 +127,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
               <Growth_engine
                 has_image={false}
                 shadow_right={false}
+             
                 props={{
                   title: card.growthcard[0].card.heading,
                   description: card.growthcard[0].card.description,
@@ -129,6 +136,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                   image: card.growthcard[0].card.image
                     ? urlFor(card.growthcard[0].card.image).url()
                     : "",
+                    
                 }}
               />
 

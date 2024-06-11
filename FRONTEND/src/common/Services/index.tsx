@@ -10,7 +10,7 @@ const Services = ({ data }: HomePageServices) => {
   console.log("---------", data.services[0].reference.slug)
   return (
     <>
-      <div className="main_padding xl:mb-[74px] lg:mb-[68px] md:mb-[62px] sm:mb-[52px] mb-[45px]">
+      <div className="main_padding xl:mb-[74px] lg:mb-[68px] md:mb-[62px] sm:mb-[52px] mb-[45px]"  data-aos="fade-up">
         <div className="main_container ">
           <div
             className={`${classes.bg_image}  xl:pt-[88px] lg:pt-[65px] md:pt-[45px] sm:pt-[55px] pt-[50px] xl:px-[100px] lg:px-[80px] md:px-[60px] sm:px-[35px] px-[20px] xl:pb-[80px] lg:pb-[60px] md:pb-[40px] sm:pb-[65px] pb-[56px] bg-black rounded-[20px] md:rounded-30px font-mono flex md:flex-row flex-col `}
