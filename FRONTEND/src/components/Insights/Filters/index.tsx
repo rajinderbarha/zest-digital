@@ -206,7 +206,7 @@ function Filters({ data }: {data:FiltersType}) {
     <>
       <div className="main_padding">
         <div className="main_container">
-          <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] md:my-[60px] my-[38px] xl:text-55px text-color-1 lg:text-50px md:text-40px text-[22px] sm:text-35px">
+          <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] min-tb:max-tb:text-30px  min-tb:max-tb:my-[50px  ] md:my-[60px] my-[38px] xl:text-55px text-color-1 lg:text-50px md:text-40px text-[22px] sm:text-35px">
             {data.heading}
           </h2>
         </div>
@@ -216,7 +216,7 @@ function Filters({ data }: {data:FiltersType}) {
             <Image
               src={Filters_Desktop_image}
               alt=""
-              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px] rounded-30px absolute top-0 w-full md:block hidden`}
+              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px]  min-tb:max-tb:h-[385px]  rounded-30px absolute top-0 w-full md:block hidden`}
             />
             <Image
               src={Filters_Mobile_image}
@@ -224,7 +224,7 @@ function Filters({ data }: {data:FiltersType}) {
               className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px] rounded-30px absolute top-0 w-full block md:hidden`}
             />
             <div className={`${classes.Filters_box}  relative z-10  grid lg:grid-cols-12`}>
-              <div className="lg:col-span-8 md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
+              <div className="lg:col-span-8  min-tb:max-tb:mt-[30px]  md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
                 {filteredProducts.map((item, index: number) => (
                   <div className="my-10" key={index}>
                     <div
@@ -249,7 +249,7 @@ function Filters({ data }: {data:FiltersType}) {
                         )}
                               </div>
                         <h2
-                          className={`xl:text-35px lg:text-[34px] md:text-30px text-[20px] font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}
+                          className={`xl:text-35px lg:text-[34px] md:text-30px text-[20px]    font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}
                         >
                           {item.hero.heading}
                         </h2>
@@ -278,7 +278,7 @@ function Filters({ data }: {data:FiltersType}) {
 
               <div className="lg:col-span-1 lg:order-2"></div>
               <div className="lg:col-span-3 md:px-0 pt-6 md:pt-0 px-[20px]  lg:order-3 order-1 lg:text-right ">
-                <h2 className="sm:text-30px text-[18px] text-white font-mono font-semibold xl:mb-10 lg:mb-[20px] md:mb-[10px] mb-[8px]">
+                <h2 className="sm:text-30px text-[18px]  min-tb:max-tb:text-[20px]  text-white font-mono font-semibold xl:mb-10 lg:mb-[20px]  min-tb:max-tb:mb-[14px]  md:mb-[10px] mb-[8px]">
                   Filters
                 </h2>
                 <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3 ">
@@ -324,7 +324,7 @@ function Filters({ data }: {data:FiltersType}) {
               </Link>
             </div>
           </div> */}
-        <div className={` bg-black rounded-[20px] md:rounded-30px xl:mb-[100px] lg:mb-[80px] md:mb-[65px] mb-[120px] md:mt-[100px] sm:mt-[50px] mt-[45px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px]  relative grid grid-cols-3`}>
+        <div className={` bg-black rounded-[20px] md:rounded-30px xl:mb-[100px]  min-tb:max-tb:mt-[23px]  min-tb:max-tb:mb-[100px] lg:mb-[100px] md:mb-[65px] mb-[120px] md:mt-[100px] sm:mt-[50px] mt-[45px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px]  relative grid grid-cols-3`}>
           <div className={`${classes.next_text_left} relative self-center  z-10`}>
               <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light invisible text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
                 {" "}
@@ -344,7 +344,7 @@ function Filters({ data }: {data:FiltersType}) {
             <div className={`${classes.next_text_right} relative ms-auto leading-[13px] mb-[2px] self-center  z-10`}>
               
               
-              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[16px] lg:text-[16px] xl:text-[18px]   text-white`}>
                 {" "}
                 {data.linkSection.linkName}
               </Link>

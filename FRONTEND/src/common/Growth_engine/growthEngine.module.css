@@ -26,11 +26,12 @@
 
     .growth_engine_desc {
         font-size: 25px;
-        margin: 12px auto;
+        margin-top: 25px ;
+        margin-bottom: 30px;
     }
 
     .growth_engine {
-        padding: 50px 23px 50px 40px;
+        padding: 50px 40px 50px 40px;
     }
 
     .grow_image {
@@ -39,11 +40,13 @@
 
 }
 
+
 @media only screen and (min-width:768px) and (max-width:865px) {
     .grow_image {
         width: 350px;
     }
 }
+
 
 @media only screen and (max-width:767px) {
     .growth_engine_title {
@@ -121,5 +124,31 @@
 @media only screen and (max-width:315px) {
     .growth_engine button{
         font-size: 8px;
+    }
+}
+
+
+
+@media only screen and (min-width:540px) and (max-width:830px) {
+    .growth_engine_title {
+        font-size: 26px;
+    }
+    .growth_engine_desc{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .grow_image{
+        width:262px;
+        bottom: -143px;
+    }
+}
+@media only screen and (max-width:815px){
+    .grow_image{
+        width:220px;
+    }
+}
+@media only screen and (max-width:715px){
+    .grow_image{
+        width:200px;
     }
 }

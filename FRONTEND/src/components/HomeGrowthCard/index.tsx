@@ -50,16 +50,16 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
       <div className="main_padding lg:my-[47px] md:my-[35px] sm:my-[25px] my-[15px] " data-aos="fade-up">
         <div className="text-white main_container ">
           <div
-            className={`${classes.growth_result} bg-color-1 rounded-[20px] md:rounded-30px font-mono xl:pt-[131px] lg:pt-[110px] md:pt-[75px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}
+            className={`${classes.growth_result} bg-color-1 rounded-[20px] md:rounded-30px font-mono xl:pt-[131px] lg:pt-[110px] md:pt-[85px] min-tb:max-tb:pt-[85px] sm:pt-[35px] pt-[30px] lg:pb-[384px] sm:pb-[300px] pb-[250px]`}
           >
             <div className={`${classes.animationDiv}`}>
                 <div className={`${classes.animationFullText} mx-auto   md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[160px] lg:pb-[120px] md:pb-[80px]  pb-[50px]`}>
-                <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px] flex md:gap-4 flex-wrap justify-center text-center">
+                <h2 className="xl:text-45px lg:text-40px px-4 md:text-35px min-tb:max-tb:text-25px sm:text-25px text-[18px] flex md:gap-4 flex-wrap justify-center text-center">
                 {heading}
              
                     <span className={`${classes.animatedText} xl:w-[177px] lg:w-[160px] md:w-[140px] `}>
                         {card?.switcher?.map((text: any, idx: any) => (
-                            <span key={idx} className={ `${ idx === animateIndex ? classes.textIn : classes.textOut }  xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px]  text-color-3`}>
+                            <span key={idx} className={ `${ idx === animateIndex ? classes.textIn : classes.textOut }  xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-25px sm:text-25px text-[18px]  text-color-3`}>
                                 {text}
                             </span>
                         ))}
@@ -87,14 +87,14 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                     <div key={index} className="grid gap-10 pe-5" data-aos="fade-right">
                       <div className="grid md:grid-cols-12 md:gap-6 gap-[13px]">
                         <div
-                          className={`${outerSpan} ${classes.box_size}  p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 lg:p-[35px] md:p-[30px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
+                          className={`${outerSpan} ${classes.box_size}  p-[10px] sm:p-5 bg-white flex justify-between items-center text-color-1 min-1350:p-12 lg:p-[35px] md:p-[30px] min-tb:max-tb:ps-[15px] lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
                         >
-                          <div className={`${classes.card_heading} font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px lg:text-[25px] md:text-[19px] md:max-970:text-[19px] md:max-800:text-[17px] sm:text-25px text-[16px]`}>
+                          <div className={`${classes.card_heading} font-semibold md:ps-16 sm:ps-5 ps-0 min-1350:text-35px lg:text-[25px] md:text-[19px] md:max-970:text-[19px] min-tb:max-tb:text-[22px] sm:text-25px text-[16px]`}>
                             {/* {numHeading} */}
                             {heading} {belowHeading}
                           </div>
                           <Link href={`/casestudies/${slug}`}>
-                          <div className="min-1350:w-auto lg:w-[45px] md:w-[40px] sm:max-970:w-[32px] w-[40px] group" >
+                          <div className="xl:w-[60px] md:w-[55px]  w-[40px] group min-tb:max-tb:w-[55px]" >
                             
                             <Image src={arrow} alt=""  className="group-hover:hidden"/>
                             <Image src={hover_arrow} alt=""  className="text-[10px] group-hover:block hidden"/>
@@ -104,10 +104,10 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                         <div
                           className={`${innerSpan} ps-[20px] md:ps-0 md:max-w-[442px] self-center md:self-center md:justify-self-start  sm:max-w-[550px] md:text-start  justify-self-start`}
                         >
-                          <h3 className="sm:text-[25px] text-[16px] md:max-970:text-[23px] ">
+                          <h3 className="sm:text-[25px] text-[16px] md:max-970:text-[23px] min-tb:max-tb:text-[20px]">
                             {cleanedUpperTitle}
                           </h3>
-                          <p className="sm:text-base text-[12px] md:max-970:text-[14px] md:max-970:leading-[16px] leading-[15px]">
+                          <p className="sm:text-base text-[12px] md:max-970:text-[14px] md:max-970:leading-[16px] leading-[15px] min-tb:max-tb:text-[12px] min-tb:max-tb:leading-[15px]">
                             {homepageCardDesc}
                           </p>
                         </div>
@@ -122,7 +122,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
           {/* <div className="md:px-10 sm:px-[35px] px-[15px]"> */}
           <div className={`${classes.growth_container} main_padding`}>
             <div
-              className={`max-w-[1345px] font-mono  mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] lg:-mt-64 md:-mt-[200px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] -mt-[150px] `}
+              className={`max-w-[1345px] font-mono min-tb:max-tb:px-0 min-tb:max-tb:mx-[-15px] mx-auto grid md:gap-[45px] sm:gap-[45px] gap-[20px] lg:-mt-64 md:-mt-[200px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] -mt-[150px] `}
             >
               <Growth_engine
                 has_image={false}
@@ -140,7 +140,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                 }}
               />
 
-              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
+              <div className="grid grid-cols-1 min-td:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
                 <Growth_engine
                   has_image={false}
                   shadow_right={true}

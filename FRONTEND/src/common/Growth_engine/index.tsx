@@ -21,7 +21,7 @@ const Growth_engine = ({
             shadow_right ? `shadow-dark-pink-left ` : `shadow-dark-pink-left`
           } grid sm:grid-cols-5 max-w-[1345px] mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] md:rounded-30px rounded-[20px] border border-black  bg-white text-color-1 relative`}
         >
-          <div className="col-span-3">
+          <div className="col-span-3 min-tb:max-tb:col-span-9">
             <h2
               className={`${classes.growth_engine_title} text-40px font-semibold `}
             >
@@ -56,7 +56,7 @@ const Growth_engine = ({
         <div  data-aos="fade-up"
           className={`${classes.growth_engine} ${
             shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right`
-          } max-w-[1345px] mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] md:rounded-30px rounded-[20px]  border border-black  bg-white text-color-1`}
+          } max-w-[1345px]  mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] md:rounded-30px rounded-[20px]  border border-black  bg-white text-color-1`}
         >
           <h2
             className={`${classes.growth_engine_title} text-40px font-semibold `}

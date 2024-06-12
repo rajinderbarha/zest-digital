@@ -165,9 +165,9 @@
     gap: 15px;
   }
 
-  .Gross_profit_grid_div {
+  /* .Gross_profit_grid_div {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
+  } */
 
   .Gross_profit {
     justify-content: stretch;
@@ -217,4 +217,40 @@
   .profit_box button span {
     margin-right: 1px;
   }
+}
+
+@media only screen and (min-width:830px){
+  .profit_box{
+    grid-column: span 4 / span 4;
+  }
+}
+@media only screen and (max-width:830px){
+.profit_box{
+  grid-column: span 6 / span 6;
+}
+}
+@media only screen and (max-width:540px){
+  .profit_box{
+    grid-column: span 12/ span 6;
+  }
+  }
+@media only screen and (min-width:540px) and (max-width:830px){
+ 
+    .Gross_profit_grid_div > :nth-child(3) {
+      grid-column-start: 4;
+    }
+    .Gross_profit_grid_div{
+      row-gap: 27px;
+      column-gap: 48px;
+    }
+    .profit_box h2{
+      font-size: 30px;
+    }
+    .profit_box_heading,   .profit_box h3 {
+      font-size: 20px;
+    }
+    .profit_box_desc{
+      font-size: 12px;
+      line-height: 18px;
+    }
 }

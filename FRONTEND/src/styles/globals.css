@@ -142,20 +142,31 @@ select::-ms-expand {
 }
 @media only screen and (min-width: 1024px) and (max-width: 1365px){
   .main_padding {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
+    padding-left: 50px !important;
+    padding-right:50px !important;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px){
+@media only screen and (min-width: 540px) and (max-width: 830px){
+  .main_padding {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+  .main_padding.tablet_padding{
+    padding-left:60px !important;
+    padding-right:60px !important;
+  }
+}
+/* @media only screen and (min-width: 300px) and (max-width: 540px){
   .main_padding {
     padding-left: 25px !important;
     padding-right: 25px !important;
   }
-}
-@media only screen and (max-width: 767px) {
+} */
+@media only screen and (max-width: 640px) {
 .Body_padding{
   padding: 0 10px;
 }
+
 }
 
 /* @media only screen and (max-width: 1420px) {

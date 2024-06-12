@@ -69,7 +69,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                     width={197}
                     height={76}
                     alt=""
-                    className="xl:w-[197px] lg:w-[165px] md:w-[160px] sm:w-[120px] w-[100px]"
+                    className="xl:w-[197px] lg:w-[165px] md:w-[160px] min-tb:max-tb:w-[108px] sm:w-[120px] w-[100px]"
                   />
                 </div>
                 <div className=" max-w-[1171px] w-full ml-[20px] ">
@@ -81,15 +81,15 @@ const Footer = ({ data }: { data: FooterType[] }) => {
               >
                 {item.footerItem.map((footerItm, index) => (
                   <div className={`${classes.footer_details}`} key={`${index}_footerItm`}>
-                    <h2 className="font-bold xl:text-[24px] lg:text-[22px] md:text-[20px] text-[16px] lg:mb-3 md:mb-[9px] sm:mb-[6px] mb-[4px] font-mono ">
+                    <h2 className="font-bold xl:text-[24px] lg:text-[22px] md:text-[20px] min-tb:max-tb:text-[18px] text-[16px] lg:mb-3 md:mb-[9px] sm:mb-[6px] mb-[4px] font-mono ">
                       {footerItm.heading}
                     </h2>
                     {footerItm.list.map((list, index) => (
                       <div key={`${index}_list`} className={`${classes.address}`}>
-                        <address className="font-lato not-italic xl:text-[18px] lg:text-[16px] md:text-[15px] text-[10px]">
+                        <address className="font-lato not-italic xl:text-[18px] lg:text-[16px] md:text-[15px] min-tb:max-tb:text-[12px] text-[10px]">
                           <PortableText value={list.address} />
                         </address>
-                        <p className=" flex font-lato items-center justify-center gap-1 xl:mt-[13px] lg:mt-[10px] md:mt-[8px] mt-[5px] text-left"><FaPhoneAlt className='text-white xl:text-[20px] lg:text-[18px] md:text-[16px] text-[11px]' /><span className="text-color-7 xl:text-[18px] lg:text-[16px] md:text-[15px] text-[10px]"> {list.contact}</span></p>
+                        <p className=" flex font-lato items-center justify-center gap-1 xl:mt-[13px] lg:mt-[10px] md:mt-[8px] mt-[5px] text-left"><FaPhoneAlt className='text-white xl:text-[20px] lg:text-[18px] md:text-[16px] min-tb:max-tb:text-[15px] text-[11px]' /><span className="text-color-7 xl:text-[18px] lg:text-[16px] md:text-[15px] min-tb:max-tb:text-[12px] text-[10px]"> {list.contact}</span></p>
                       </div>
                     ))}
                   </div>
@@ -136,14 +136,14 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                       width={50}
                       height={50}
                       alt=""
-                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] group-hover:hidden"
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] min-tb:max-tb:w-[45px] w-[35px] group-hover:hidden"
                     />
                     <Image
                       src={facebook_black}
                       width={50}
                       height={50}
                       alt=""
-                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] min-tb:max-tb:w-[45px] w-[35px] hidden group-hover:block"
                     />
                   </Link>
 
@@ -155,14 +155,14 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                       width={50}
                       height={50}
                       alt=""
-                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] min-tb:max-tb:w-[45px] w-[35px]  group-hover:hidden"
                     />
                     <Image
                       src={linkedin_black}
                       width={50}
                       height={50}
                       alt=""
-                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] min-tb:max-tb:w-[45px] w-[35px] hidden group-hover:block"
                     />
                   </Link>
 
@@ -174,14 +174,14 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                       width={50}
                       height={50}
                       alt=""
-                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
+                      className="lg:w-[50px] md:w-[45px] min-tb:max-tb:w-[45px] sm:w-[38px] w-[35px]  group-hover:hidden"
                     />
                     <Image
                       src={instagram_black}
                       width={50}
                       height={50}
                       alt=""
-                      className="lg:w-[50px] md:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
+                      className="lg:w-[50px] md:w-[45px] min-tb:max-tb:w-[45px] sm:w-[38px] w-[35px] hidden group-hover:block"
                     />
                   </Link>
 
@@ -190,7 +190,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
             </div>
           </div>
           <div className="bg-color-1 lg:h-[90px] md:h-[80px] sm:h-[60px] sm:py-0 py-[10px] flex items-center " >
-            <div className={"text-white max-w-[1720px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] sm:text-[15px] text-[10px]"}>
+            <div className={"text-white max-w-[1720px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] min-tb:max-tb:text-[12px] sm:text-[15px] text-[10px]"}>
               <PortableText value={item.copyRightText} />
             </div>
           </div>
