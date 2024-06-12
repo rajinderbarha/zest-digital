@@ -8,10 +8,10 @@
     aspect-ratio: 1 / 1;
     @apply  rounded-[15px] sm:rounded-[20px] lg:rounded-[30px] md:rounded-30px  
 }
-.location_div > div{
+.location_div > div > div{
     /* border: 5px solid blue; */
     height:-webkit-fill-available!important;
-    @apply rounded-[15px] sm:rounded-[20px] lg:rounded-[30px] shadow-dark-pink-right border border-color-1
+    @apply rounded-[15px] sm:rounded-[20px] lg:rounded-[30px] shadow-dark-pink-right  border border-color-1
 }
 
 .contact_detail{

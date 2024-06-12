@@ -14,6 +14,7 @@ import instagram_white from '../../assets/images/instagram_white.svg'
 import { useRouter } from "next/navigation";
 
 function Contact({ data }: { data: ContactType }) {
+console.log(data);
 
   const router = useRouter()
 
