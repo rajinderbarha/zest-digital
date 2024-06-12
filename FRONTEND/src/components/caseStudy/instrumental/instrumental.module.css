@@ -95,3 +95,26 @@
         margin-bottom: 60px;
     }
 }
+
+@media only screen and (max-width:830px){
+    .project_window, .conversations_img, .conversations_text{
+        @apply col-span-12
+    }
+    .project_window {
+        @apply ms-auto
+    }
+    .conversations_img{
+        @apply order-2
+    }
+    .conversations_text{
+        @apply order-1 
+    }
+    .conversations_img{
+        @apply me-auto
+    }
+}
+@media only screen and (min-width:768px) and (max-width:830px) {
+    .conversations_text{
+        @apply  ps-[100px]
+    }
+}

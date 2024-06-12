@@ -97,6 +97,12 @@ module.exports = {
         'max-1066': [
           { 'max': '1066px' },
         ],
+        'max-tb':[
+          {'max': '830px' }
+        ],
+        'min-tb':[
+          {'min': '540px' }
+        ]
 
       },
       spacing: {

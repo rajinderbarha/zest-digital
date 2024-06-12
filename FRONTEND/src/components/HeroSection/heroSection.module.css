@@ -74,8 +74,15 @@
         max-width: 800px;
         margin: 40px auto;
     }
+}
 
-
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+    .marketing_agency_logo_1 {
+        display: block;
+        max-width: 150px;
+        margin-left: auto;
+        top: 10px;
+    }
 }
 
 @media only screen and (max-width:767px) {

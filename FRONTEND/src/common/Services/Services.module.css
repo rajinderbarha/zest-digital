@@ -4,25 +4,29 @@
     background-size: cover;
     background-position: center;
 }
-.Services_Image img{
+
+.Services_Image img {
 
     filter: drop-shadow(0px 6px 10px #FFFFFF29);
-    }
+}
+
 @media only screen and (max-width:767px) {
 
-    .bg_image{
+    .bg_image {
         background-image: url('../../assets/images/OurServices_gradient_mobile.png');
     }
 
     .Services_List li:last-child {
         margin-bottom: 0px;
     }
-.Services_Image div:first-child {
-margin-top: 50%;
-}
-.Services_Image div:nth-child(2){
-    margin-top: 25%;
-}
+
+    .Services_Image div:first-child {
+        margin-top: 50%;
+    }
+
+    .Services_Image div:nth-child(2) {
+        margin-top: 25%;
+    }
 
 
 
