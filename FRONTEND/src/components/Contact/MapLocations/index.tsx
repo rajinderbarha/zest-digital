@@ -14,8 +14,8 @@ function MapLocations({data}:any) {
 
 
   const uniqueLocations = data.map((item:any) => ({
-    longitude: item.longitude.toString(),
-    latitude: item.latitude.toString()
+    longitude: item.longitude,
+    latitude: item.latitude
   }))
 
 // console.log(uniqueLocations);

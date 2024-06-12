@@ -121,23 +121,23 @@ export default function GoogleMapComponent({loc, mark, zoom}:any) {
 
 
   const markedLoc = {
-    lng: parseFloat(longitude), // Trim spaces and parse to float
-  lat: parseFloat(latitude),   // Trim spaces and parse to float
+    lng: longitude, // Trim spaces and parse to float
+  lat: latitude,   // Trim spaces and parse to float
   icon: <FaLocationDot style={{ color: 'red', height: '50px', width: '50px' }} />
   }
   
   
 
-  const parsedLatitude = parseFloat(latitude);
-  const parsedLongitude = parseFloat(longitude);
+  // const parsedLatitude = parseFloat(latitude);
+  // const parsedLongitude = parseFloat(longitude);
   // console.log(parsedLatitude);
   // console.log(parsedLongitude);
   
   // Define your static coordinates here
-  const coordinates = [
-    { lat: parsedLatitude, lng: parsedLongitude, icon: <FaLocationDot style={{ color: 'red', height: '50px', width: '50px' }}/> },
-    // { lat: 45.4349041, lng: 12.3384522, icon: <FaLocationDot style={{ color: 'red', height: '50px', width: '50px' }}/>  }
-  ];
+  // const coordinates = [
+  //   { lat: parsedLatitude, lng: parsedLongitude, icon: <FaLocationDot style={{ color: 'red', height: '50px', width: '50px' }}/> },
+  //   // { lat: 45.4349041, lng: 12.3384522, icon: <FaLocationDot style={{ color: 'red', height: '50px', width: '50px' }}/>  }
+  // ];
 
   
   const onGoogleApiLoaded = ({ map, maps }:any) => {
@@ -168,7 +168,7 @@ export default function GoogleMapComponent({loc, mark, zoom}:any) {
       <div style={{height: "100%", width:'100%'}}>
       <GoogleMap
         apiKey="AIzaSyAFtCeCUYm6K1QXujT_m17aRvbC9hRxr2k"
-        defaultCenter={{ lat: parsedLatitude, lng: parsedLongitude }}
+        defaultCenter={{ lat: latitude, lng: longitude }}
         defaultZoom={zoom}
         options={mapOptions}
         mapMinHeight="100%"
