@@ -78,6 +78,7 @@ export const SingleSolution = defineType({
       type: 'reference',
       to: [{type: 'faq'}],
     },
+
     {
       name: 'banner',
       title: 'Banner',
@@ -85,11 +86,6 @@ export const SingleSolution = defineType({
       to: [{type: 'climteaction'}],
     },
    
-    // {                                          //----------------------tomorrow------------------------------
-    //   name: 'singlesolutionCard',
-    //   title: 'single Solution Card',
-    //   type: 'array',
-    //   of: [{type: 'reference', to: [{type: 'growth'}]}],
-    // },
+    
   ],
 })

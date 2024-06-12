@@ -4,14 +4,18 @@ import { GoArrowRight } from "react-icons/go";
 import { FaPhoneAlt } from "react-icons/fa";
 import { AgencyAddress } from "../../../../lib/interface";
 
-import { Map, Marker } from "pigeon-maps";
+// import { Map, Marker } from "pigeon-maps";
 import { PortableText } from "next-sanity";
 import Link from "next/link";
+import GoogleMapComponent from "@/components/GoogleMapComponent";
 
 const Services_Address: React.FC<AgencyAddress> = (props) => {
-console.log(props)
+// console.log(props)
 
   const { heading_add, slotDescription_add, buttonName_add, buttonName_link } = props;
+
+  // console.log(props.cardLoc);
+  
 
   const contactInfoArray = Array.isArray(props.address) ? props.address : [];
   return (
@@ -67,16 +71,22 @@ console.log(props)
 
             <div className="col-span-1">
               {props.cardLoc?.map(
-                ({ location: { latitude, longitude }, contactno }, index) => (
-                  <div className="max-w-[738px] w-full" key={index}>
-                    <div className={`${classes.map_div}`}>
-                      <Map
+                ({ location: { latitude, longitude }, contactno }, index) => {
+                  const location = {
+                    latitude:latitude,
+                    longitude:longitude
+                  }
+                 return <div className="max-w-[738px] w-full" key={index}>
+                    <div className={`${classes.map_div} `}>
+                      {/* <Map
                         height={738}
                         defaultCenter={[latitude, longitude]}
                         defaultZoom={11}
                       >
                         <Marker width={50} anchor={[latitude, longitude]} />
-                      </Map>
+                      </Map> */}
+
+                      <GoogleMapComponent  loc={location} mark={[location]} zoom={15}/>
                     </div>
 
                     <div className=" flex items-center justify-end text-color-9 mt-[10px] md:mt-[25px] gap-[2px]">
@@ -84,7 +94,8 @@ console.log(props)
                       {contactno}
                     </div>
                   </div>
-                )
+                   }
+                
               )}
             </div>
           </div>

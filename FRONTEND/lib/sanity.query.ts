@@ -591,7 +591,6 @@ export async function getGrowthData(slug: string) {
   const query = `
   *[_type == "growth" && slug.current == "${slug}"] {
 
-
     slug,
     heading,
     description,
@@ -638,9 +637,6 @@ export async function getGrowthData(slug: string) {
             smallDescription
         }
     }
-   
-
-
     
   `;
   const data = await client.fetch(query);

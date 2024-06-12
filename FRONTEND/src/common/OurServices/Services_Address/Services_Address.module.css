@@ -11,15 +11,15 @@
         background-image: url('../../../assets/images/Services_map_gradient_mobile.png');
     }
 }
-
 .map_div {
     max-width: -webkit-fill-available!important;
     width: 100%;
+    overflow: hidden;
     /* max-height: -webkit-fill-available; */
     aspect-ratio: 1 / 1;
-    @apply  rounded-[15px] sm:rounded-[20px] md:rounded-[30px] md:rounded-30px  
+    @apply  rounded-[15px] sm:rounded-[20px] md:rounded-[30px] md:rounded-30px shadow-dark-pink-right  
 }
-.map_div > div {
+.map_div > div{
     border: 1px solid white;
     /* border-radius: 30px; */
     /* width: 100%!important; */
