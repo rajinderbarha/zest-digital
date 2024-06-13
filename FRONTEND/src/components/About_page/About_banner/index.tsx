@@ -25,7 +25,7 @@ function About_banner({ data }: { data: AboutType[] }) {
               </div>
               <div className={`${classes.Founded_img}  md:flex md:absolute top-0 max-w-[245px] right-[25px] h-full`}>
                 <Image
-                  className={`${classes.banner_image}`}
+                  className={`${classes.banner_image} rotate`}
                   src={urlFor(item.hero.image).url()}
                   width={250}
                   height={250}

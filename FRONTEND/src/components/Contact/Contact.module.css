@@ -19,7 +19,15 @@
     }
 }
 
-
+@media only screen and (min-width:540px) and (max-width:840px) {
+    .names_div {
+        flex-direction: column;
+        gap: 26px;
+    }
+    .map_div {
+        column-gap: 55px !important;
+      }
+}
 @media only screen and (min-width:1024px) and (max-width:1272px),
 (max-width:774px) {
     .names_div {
