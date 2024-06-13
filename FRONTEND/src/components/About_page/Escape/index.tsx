@@ -11,12 +11,13 @@ function Escape({ data }: { data: AboutType[] }) {
         <div className="main_container" key={`${index}_Escape`}>
 
           <Link href={Escapedata.escape.careerPagelink}>
-          <div className={`${classes.Escape} main_padding rounded-[20px] md:rounded-[30px] xl:py-[130px] lg:my-[100px] md:py-[80px] sm:py-[60px] py-[40px]`}>
-            <h2 className="xl:text-55px  lg:text-50px md:text-40px sm:text-25px text-[22px] md:mb-12 mb-6 font-mono text-center  font-semibold text-white">
+          <div className={`${classes.Escape} main_padding rounded-[20px] md:rounded-[30px] xl:py-[130px] lg:my-[100px] md:py-[80px] min-tb:max-tb:pt-[70px] min-tb:max-tb:pb-[106px] sm:py-[60px] py-[40px]`}>
+            <div className={`${classes.Escape_box}`}>
+            <h2 className="xl:text-55px  lg:text-50px md:text-40px min-tb:max-tb:text-[30px] sm:text-25px text-[22px] md:mb-12 mb-[24px] min-tb:max-tb:mb-[40px]  font-mono text-center  font-semibold text-white">
               {Escapedata.escape.heading}
             </h2>
             <p
-              className={`${classes.Escape_p} mx-auto lg:text-35px md:text-30px sm:text-[20px] text-[14px] font-mono text-white text-center xl:mb-[114px] lg:mb-[95px] md:mb-[80px] sm:mb-[70px] mb-[60px] font-semibold`}
+              className={`${classes.Escape_p} mx-auto lg:text-35px md:text-30px min-tb:max-tb:text-[16px] min-tb:max-tb:leading-[20px] min-tb:max-tb:mb-[65px] sm:text-[20px] text-[14px] font-mono text-white text-center xl:mb-[114px] lg:mb-[95px] md:mb-[80px] sm:mb-[70px] mb-[60px] font-semibold`}
             >
               {Escapedata.escape.description}
             </p>
@@ -27,18 +28,19 @@ function Escape({ data }: { data: AboutType[] }) {
                   {Escapedata.escape.marquee.map((marqueData, path) => (
                     <div
                       key={`${path}_marqueeData`}
-                      className="maving_box md:max-w-[400px] max-w-[250px] text-center"
+                      className="maving_box md:max-w-[400px] min-tb:max-tb:max-w-[276px] max-w-[250px] text-center"
                     >
-                      <h2 className="xl:text-40px lg:text-35px md:text-30px sm:text-25px text-[20px] text-color-7 font-semibold font-mono lg:mb-[30px] md:mb-[25px] mb-[20px]">
+                      <h2 className="xl:text-40px lg:text-35px md:text-30px min-tb:max-tb:text-[20px] min-tb:max-tb:leading-[27px] sm:text-25px text-[16px] text-color-7 font-semibold font-mono lg:mb-[30px] md:mb-[25px] mb-[20px]">
                         {marqueData.title}
                       </h2>
-                      <p className="md:text-lg sm:text-base text-[15px] font-normal font-mono">
+                      <p className="md:text-lg sm:text-base min-tb:max-tb:text-[12px] min-tb:max-tb:leading-[18px] text-[12px] font-normal font-mono">
                         {marqueData.description}
                       </p>
                     </div>
                   ))}
                 </div>
               </Marquee>
+            </div>
             </div>
           </div>
 </Link>

@@ -32,14 +32,14 @@ const Global_Accordion = ({
   
    <div className="">
     <div className={`${classes.accordion} max-w-[1520px] mx-auto `}>
-      <div className="font-mono font-semibold text-[22px] max-w-[300px] sm:max-w-full mx-auto md:text-45px text-center text-color-1 xl:mb-[115px] lg:mb-[100px] md:mb-[80px] sm:mb-[60px] mb-[40px]">
+      <div className="font-mono font-semibold text-[22px] max-w-[300px] sm:max-w-full mx-auto md:text-45px min-tb:max-tb:text-[30px] text-center text-color-1 xl:mb-[115px] lg:mb-[100px] md:mb-[80px] min-tb:max-tb:mb-[65px] sm:mb-[60px] mb-[40px]">
       {heading_acc}
       </div>
       {card_acc.map((item,index) => (
         <div key={index} className={classes.accordion_item}>
           <button
             onClick={() => toggleItem(index)}
-            className={`font-mono font-medium sm:py-[30px] py-[20px] text-left ${classes.title_desc_padding_class} ${classes.title_desc_text_class} ${classes.accordion_title} ${openItemId === index ? 'open' : ''}`}
+            className={`font-mono font-medium sm:py-[30px] py-[20px] min-tb:max-tb:py-[16px] text-left ${classes.title_desc_padding_class} ${classes.title_text_class} ${classes.accordion_title} ${openItemId === index ? 'open' : ''}`}
           >
             {item.question}
             <span className={`${classes.accordion_icon} ${classes.arrow_img}`}>
@@ -53,12 +53,12 @@ const Global_Accordion = ({
             }
           }}
           
-            className={`font-mono ${classes.accordion_content}  ${classes.title_desc_text_class} `}
+            className={`font-mono ${classes.accordion_content}  ${classes.desc_text_class} `}
             style={{
               maxHeight: openItemId === index? contentRefs.current[index]?.scrollHeight + 'px' : '0',
             }}
           >
-            <div className={`${classes.content_inner}  ${classes.title_desc_padding_class}  xl:py-[80px] lg:py-[50px] md:py-[35px] py-[25px]  max-w-[1221px]`}>
+            <div className={`${classes.content_inner}  ${classes.title_desc_padding_class}  xl:py-[80px] lg:py-[50px] min-tb:max-tb:py-[46px] md:py-[35px] py-[25px]  max-w-[1221px]`}>
               <PortableText value={item.content} />
             </div>
           </div>
