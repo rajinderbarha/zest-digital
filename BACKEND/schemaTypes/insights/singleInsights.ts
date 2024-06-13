@@ -1,10 +1,9 @@
-import {defineType} from 'sanity'
+import { defineType } from 'sanity';
 
 export const SingleInsights = defineType({
   title: 'Single Insights',
   name: 'singleInsights',
   type: 'document',
-
   fields: [
     {
       name: 'slug',
@@ -12,15 +11,14 @@ export const SingleInsights = defineType({
       type: 'slug',
       options: {
         source: 'hero.heading',
-        maxLength: 40
-      }
+        maxLength: 40,
+      },
     },
     {
       name: 'hero',
       title: 'Hero',
       type: 'object',
       fields: [
-       
         {
           name: 'heading',
           title: 'Heading',
@@ -38,7 +36,6 @@ export const SingleInsights = defineType({
             },
           ],
         },
-
         {
           name: 'icon',
           title: 'Icon',
@@ -56,10 +53,8 @@ export const SingleInsights = defineType({
       title: 'Content',
       type: 'array',
       of: [
-        {type: 'block'},
-        {
-          type: 'image',
-        },
+        { type: 'block' },
+        { type: 'image' },
       ],
     },
     {
@@ -88,7 +83,14 @@ export const SingleInsights = defineType({
       name: 'banner',
       title: 'Banner',
       type: 'reference',
-      to: [{type: 'climteaction'}],
+      to: [{ type: 'climteaction' }],
     },
   ],
-})
+
+  preview: {                          // here we are displaying the title for a page from a specific field 
+    select: {
+      title: 'hero.heading',
+    },
+    // component: SingleInsightsPreview,
+  },
+});

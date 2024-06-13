@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import classes from './Resource_Access_popup.module.css'
 import popup_close_icon from '../../assets/images/popup_close_icon.png'
 import Image from 'next/image'
-function Resource_Access_popup({setStep, register,handleSubmit,setFormData}:any) {
+function Resource_Access_popup({setStep, register,handleSubmit,setFormData,formTitle}:any) {
 
 
     return (
@@ -26,7 +26,7 @@ function Resource_Access_popup({setStep, register,handleSubmit,setFormData}:any)
 
                         </div>
                         <div className="detail text-center">
-                            <h2 className='xl:text-45px lg:text-40px md:text-[35px] sm:text-[25px] text-[20px] font-mono font-semibold mb-[10px]'>Access calculator</h2>
+                            <h2 className='xl:text-45px lg:text-40px md:text-[35px] sm:text-[25px] text-[20px] font-mono font-semibold mb-[10px]'>{formTitle}</h2>
                         </div>
                         <div className={`${classes.form_inputs} max-w-[1040px] mx-auto lg:mt-[52px] md:mt-[40px] sm:mt-[30px] mt-[20px] flex justify-between px-5`}>
                             <div className="first_name flex flex-col w-full max-w-[300px]">

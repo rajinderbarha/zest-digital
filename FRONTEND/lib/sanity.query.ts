@@ -333,7 +333,7 @@ export async function getResourcesData() {
       description,
       buttonName,
       buttonLink,
-
+     "uploadFileUrl": uploadFile.asset->url
     },
     brandList[]->{
       icon

@@ -10,9 +10,7 @@ import Link from "next/link";
 
 const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
 
-  // console.log(card);
-  
-  const texts = ["Wear ", "Cover Face ", "Wash Your "];
+
   const [animateIndex, setAnimateIndex] = useState(0);
   const textInTimer = 3000; 
 
@@ -127,7 +125,6 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
               <Growth_engine
                 has_image={false}
                 shadow_right={false}
-             
                 props={{
                   title: card.growthcard[0].card.heading,
                   description: card.growthcard[0].card.description,
@@ -136,9 +133,8 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                   image: card.growthcard[0].card.image
                     ? urlFor(card.growthcard[0].card.image).url()
                     : "",
-                    
-                }}
-              />
+                 
+                }}              />
 
               <div className="grid grid-cols-1 min-td:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
                 <Growth_engine
@@ -152,7 +148,9 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                     image: card.growthcard[1].card.image
                       ? urlFor(card.growthcard[1].card.image).url()
                       : "",
+                     
                   }}
+                 
                 />
 
                 <Growth_engine
@@ -166,7 +164,9 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                     image: card?.growthcard[2].card.image
                       ? urlFor(card?.growthcard[2].card.image).url()
                       : "",
+                     
                   }}
+                 
                 />
               </div>
 
@@ -181,7 +181,9 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                   image: card?.growthcard[3].card.image
                     ? urlFor(card?.growthcard[3].card.image).url()
                     : "",
+                    
                 }}
+                
               />
               {card?.length && card?.length > 4 &&
                card.slice && card?.slice(3).map((item: any, index: number) => {
@@ -198,7 +200,9 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                           image: item.card?.image
                             ? urlFor(item.card?.image).url()
                             : "",
+                            
                         }}
+                       
                       />
                     </div>
                   );
