@@ -13,12 +13,16 @@ import StepPopup from "@/common/PopupWrapper/stepPopup";
 // import { usePopup } from "@/context";
 import { useForm } from "react-hook-form";
 function resources({ resources }: any) {
+  // console.log(resources);
+
   const searchParams = useSearchParams();
   const search = searchParams.get("popup");
   const [step, setStep] = useState<number>(0);
   const [formData, setFormData] = useState({
 
   });
+  const [selectedFileUrl, setSelectedFileUrl] = useState("");
+  // console.log(selectedFileUrl);
 
   const {
     register,
@@ -26,12 +30,7 @@ function resources({ resources }: any) {
     watch,
     formState: { errors },
   } = useForm();
-
-  console.log("formData", formData);
-
-
-
-
+  // console.log("formData", formData);
 
   function sendDataToGoogleSheets() {
     fetch('https://script.google.com/macros/s/AKfycbypYXDAAfgjAqOot2S1jWblyG9_Uo0nGtEgpkgbhp7kcFmFEU3t-W1ECr76vCkolAYS/exec', {
@@ -44,13 +43,16 @@ function resources({ resources }: any) {
     })
       .then(response => response.json())
       .then(data => console.log("Response from Google Sheets:", data))
-      .catch(error => console.error('Error:', error));
+      .catch(error => console.error('No file available for download:', error));
   }
 
 
-
-
-
+  let title;
+  if (search === "/calculator") {
+    title = "Access calculator"
+  } else if (search === "/workbook") {
+    title = "Access workbook"
+  }
 
 
   return (
@@ -63,6 +65,7 @@ function resources({ resources }: any) {
           {step === 0 && (
             <Resource_Access_popup
               setStep={setStep}
+              formTitle={title}
               register={register}
               handleSubmit={handleSubmit}
               setFormData={setFormData}
@@ -108,14 +111,14 @@ function resources({ resources }: any) {
               handleSubmit={handleSubmit}
               setFormData={setFormData}
               sendDataToGoogleSheets={sendDataToGoogleSheets}
+              downloadUrls={[selectedFileUrl]}
             />
           )}
 
         </>
       </StepPopup>
-
       <Resourcesbanner data={resources[0]} />
-      <LearnToGrow data={resources[0]} />
+      <LearnToGrow data={resources[0]} setSelectedFileUrl={setSelectedFileUrl} />
     </>
   );
 }
@@ -124,7 +127,6 @@ export default resources;
 
 export async function getStaticProps() {
   const resources = await getResourcesData();
-
   return {
     props: { resources },
   };

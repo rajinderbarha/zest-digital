@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React, { useMemo } from "react";
+// import Image from "next/image";
+import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
-import london_map from "../../../assets/images/london.webp";
+// import london_map from "../../../assets/images/london.webp";
 import classes from "./MapLocations.module.css";
 // import { Map, Marker } from "pigeon-maps";
 import { PortableText } from "next-sanity";

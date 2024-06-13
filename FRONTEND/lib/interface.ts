@@ -82,8 +82,11 @@ export interface GrowthEngineProps {
     buttonName: string;
     buttonLink: string;
     image: any;
-  };
+    allFilesUrl?:string                   //we need these two fields just on resources page 
+    
+    };
   has_image: boolean;
+  selectedFile?:any      //  holds the address of the selected file 
   shadow_right: boolean;
 }
 export interface HomePageServices {

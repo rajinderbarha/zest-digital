@@ -1,20 +1,16 @@
 import React from "react";
 import classes from "./learnToGrow.module.css";
-// import how_to_grow from "../../../assets/images/how_to_grow.png";
-// import down_arrow from "../../../assets/images/grow_down.png";
 import Image from "next/image";
 import Logo_moving from "@/common/Logo_moving";
-// import Climate_action from "@/common/Climate_action";
 import Growth_engine from "@/common/Growth_engine";
 import { urlFor } from "../../../../lib/sanity.client";
 import { Resources } from "../../../../lib/interface";
-function LearnToGrow({ data }: {data:Resources}) {
-  // console.log("tools =", data );
-  
+function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelectedFileUrl: (url: string) => void }) {
+
+
   return (
     <>
       <div className="main_padding">
-
 
         <div
           className={`${classes.SingleIntro}  main_container  h-100 rounded-[20px] md:rounded-30px`}
@@ -25,6 +21,7 @@ function LearnToGrow({ data }: {data:Resources}) {
             <div
               className={`${classes.grow_img}  absolute max-w-[200px] md:max-w-[250px] lg:max-w-[300px] lg:max-h-[300px]`}
             >
+
               <Image
                 src={urlFor(data.hero.image).url()}
                 alt="img"
@@ -71,16 +68,16 @@ function LearnToGrow({ data }: {data:Resources}) {
                 const data = {
                   ...item,
                   buttonLink: `/resources?popup=${item.buttonLink}`,
+                  allFilesUrl: item.uploadFileUrl,
+
                 };
-                return (
-                  <>
-                    <Growth_engine
-                      props={data}
-                      has_image={false}
-                      shadow_right={index % 2 === 0}
-                    />
-                  </>
-                );
+                return <Growth_engine
+                  key={index}
+                  props={data}
+                  has_image={false}
+                  shadow_right={index % 2 === 0}
+                  selectedFile={(fileUrl: string) => setSelectedFileUrl(fileUrl)}
+                />
               })}
             </div>
           </div>
