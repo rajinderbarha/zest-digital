@@ -14,6 +14,16 @@
     padding: 90px 16px 141px 16px;
 } 
 }
+@media screen and (min-width:540px) and (max-width:830px) {
+    .banner_image{
+       max-width: 150px;
+       margin-left: auto;
+       margin-top: -40PX;
+    }
+    .Solution_Banner {
+        padding: 55px 16px ;
+    } 
+    }
 @media screen and (max-width:768px) {
 
     .Solution_Banner {

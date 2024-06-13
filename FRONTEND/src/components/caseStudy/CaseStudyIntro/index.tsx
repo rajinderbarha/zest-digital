@@ -25,7 +25,7 @@ function Casestudyintro({ data }: {data:CaseStudyIntroType}) {
             </div>
             <div className={` ${classes.image_div} md:absolute top-0 right-[20px] md:flex md:items-start `}>
               <Image
-                className={`${classes.banner_image} md:ms-auto max-w-[245px] max-h-[245px]  min-tb:max-tb:max-w-[150px] min-tb:max-tb:max-h-[150px] w-full h-full`}
+                className={`${classes.banner_image} rotate md:ms-auto max-w-[245px] max-h-[245px]  min-tb:max-tb:max-w-[150px] min-tb:max-tb:max-h-[150px] w-full h-full`}
                 src={urlFor(data.image).url()}
                 alt="hero img"
                 width={245}

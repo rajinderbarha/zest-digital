@@ -140,7 +140,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                 }}
               />
 
-              <div className="grid grid-cols-1 min-td:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
+              <div className="grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
                 <Growth_engine
                   has_image={false}
                   shadow_right={true}
