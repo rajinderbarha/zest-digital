@@ -10,9 +10,9 @@
     bottom: 5px;
 }
 
-.Our_values_img{
-        filter: drop-shadow(0px 6px 10px #FFFFFF29);
-    
+.Our_values_img {
+    filter: drop-shadow(0px 6px 10px #FFFFFF29);
+
 }
 
 .About_team {
@@ -22,9 +22,10 @@
 .Team_img {
     max-width: 463px;
     width: 100%;
-    
+
 }
-.Our_values{
+
+.Our_values {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -41,6 +42,16 @@
 
 .Our_values_main_p {
     max-width: 724px;
+}
+
+@media only screen and (max-width:830px) {
+    .Our_values_main_p {
+        max-width: 387px;
+    }
+
+    .Zest_for_life>div {
+        padding: 0 !important;
+    }
 }
 
 .Our_values_main_2 {
@@ -61,7 +72,8 @@
     /* border-radius: 30px; */
 
 }
-.Team_img_circle{
+
+.Team_img_circle {
     width: 95.2%;
     height: 85%;
     background: #1d2671;
@@ -74,27 +86,31 @@
     max-width: 1200px;
 }
 
-.Marquee_border{
+.Marquee_border {
     position: relative;
     background-color: transparent;
 }
+
 .Marquee_border::before,
 .Marquee_border::after {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 2px;
-  background: linear-gradient(transparent 40%, #BD378B 82%, transparent 40%); /* The glow effect */
+    content: '';
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    height: 2px;
+    background: linear-gradient(transparent 40%, #BD378B 82%, transparent 40%);
+    /* The glow effect */
 }
 
 .Marquee_border::before {
-    top: 0; /* Aligns the line with the top of the text */
-  }
-  
-  .Marquee_border::after {
-    bottom: 0; /* Aligns the line with the bottom of the text */
-  }
+    top: 0;
+    /* Aligns the line with the top of the text */
+}
+
+.Marquee_border::after {
+    bottom: 0;
+    /* Aligns the line with the bottom of the text */
+}
 
 .custom_shadow {
     position: absolute;
@@ -112,28 +128,32 @@
 }
 } */
 
-@media only screen and (min-width:1500px){
-    .Founded_img{
+@media only screen and (min-width:1500px) {
+    .Founded_img {
         right: 60px;
     }
 }
-@media only screen and (min-width:1600px){
-    .Founded_img{
+
+@media only screen and (min-width:1600px) {
+    .Founded_img {
         right: 65px;
     }
 }
-@media only screen and (min-width:1700px){
-    .Founded_img{
+
+@media only screen and (min-width:1700px) {
+    .Founded_img {
         right: 75px;
     }
 }
-@media only screen and (min-width:1800px){
-    .Founded_img{
+
+@media only screen and (min-width:1800px) {
+    .Founded_img {
         right: 85px;
     }
 }
-@media only screen and (max-width:1155px){
-    .Founded_img{
+
+@media only screen and (max-width:1155px) {
+    .Founded_img {
         display: block;
         position: relative;
         max-width: 200px;
@@ -147,23 +167,30 @@
     .Our_values_main_2 {
         margin: 0px 0 !important;
     }
-    .values_bg{
+
+    .values_bg {
         padding-top: 55px;
     }
 }
 
-@media screen and (max-width:768px) {
-    .Founded_img{
+@media screen and (max-width:830px) {
+    .Founded_img {
+        max-width: 150px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .Founded_img {
         display: block;
         position: relative;
         max-width: 110px;
         margin-left: auto;
-        margin-top: 17px;
-    }
-    /* .About_banner, */
-    .values_bg
-    /* .Zest_for_life */
-     {
+        /* margin-top: 17px; */
+    }}
+@media screen and (max-width:768px) {
+
+    .values_bg {
         padding: 30px 16px 50px 16px;
     }
 
@@ -174,11 +201,80 @@
     .Escape {
         /* padding: 60px 16px 60px 16px; */
     }
-    .Our_values_main_2{
-        margin: 30px 0!important;
+
+    .Our_values_main_2 {
+        margin: 30px 0 !important;
     }
-    .About_team_box{
+
+    .About_team_box {
         max-width: 214px;
         margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:830px) {
+    .zest_for_life_facility {
+        grid-column: span 4 / span 4;
+    }
+
+    .zest_for_life_facility_container {
+        column-gap: 56px;
+    }
+}
+
+@media only screen and (max-width:830px) {
+    .zest_for_life_facility {
+        grid-column: span 6 / span 6;
+        margin-top: 0;
+        max-width: 265px;
+    }
+}
+
+@media only screen and (max-width:645px) {
+    .zest_for_life_facility {
+        grid-column: span 12/ span 6;
+    }
+}
+
+@media only screen and (min-width:540px) and (max-width:830px) {
+
+    .zest_for_life_facility_container> :nth-child(3) {
+        grid-column-start: 4;
+    }
+
+    .zest_for_life_facility_container {
+        row-gap: 27px;
+        column-gap: 48px;
+    }
+
+    .zest_for_life_facility h2 {
+        font-size: 20px;
+    }
+
+
+    .zest_for_life_facility p {
+        font-size: 12px;
+    }
+
+    .values_bg {
+        padding-top: 70px;
+        padding-bottom: 73px;
+    }
+
+    .Escape_p {
+        max-width: 554px;
+    }
+    .our_values_box, .Escape_box{
+        margin-left: -10px;
+        margin-right: -10px;
     }
 }

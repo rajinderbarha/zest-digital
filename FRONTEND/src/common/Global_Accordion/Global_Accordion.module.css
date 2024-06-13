@@ -4,16 +4,20 @@
 
 .accordion_item,
 .accordion_content {
-  @apply md:rounded-30px rounded-[20px]
+  @apply md:rounded-30px max-tb:rounded-[20px]
 }
 
-.title_desc_text_class {
-  @apply font-mono lg:text-30px md:text-[28px] sm:text-[25px] text-[12px]
+.title_text_class {
+  @apply font-mono lg:text-30px md:text-[28px] min-tb:max-tb:text-[20px] sm:text-[25px] text-[12px]
+}
+.desc_text_class {
+  @apply font-mono lg:text-30px md:text-[28px] min-tb:max-tb:text-[16px] sm:text-[25px] text-[12px]
 }
 
 .title_desc_padding_class {
-  @apply lg:px-[55px] md:px-[45px] sm:px-[30px] px-[20px]
+  @apply lg:px-[55px] md:px-[45px] min-tb:max-tb:px-[40px] sm:px-[30px] px-[20px]
 }
+
 
 .accordion_item {
   border: 1px solid #000;
@@ -62,7 +66,7 @@ right:-3px;
   transition: background-color 0.3s ease;
   width: 100%;
   border: none;
-  @apply md:rounded-[28px] rounded-[18px]
+  @apply md:rounded-[28px] max-tb:rounded-[18px]
 }
 
 .accordion_item:not(:last-child) {
@@ -135,6 +139,14 @@ right:-3px;
   .arrow_img {
     /* border: 1px solid white; */
     width: 50px;
+  }
+
+}
+@media only screen and (max-width: 830px) {
+
+  .arrow_img {
+    /* border: 1px solid white; */
+    width: 55px;
   }
 
 }

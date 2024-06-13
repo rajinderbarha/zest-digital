@@ -109,13 +109,14 @@ function Growths({ data, otherSolHeading }: any ) {
   return (
     <>
       {data.length > 0 && (
-        <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] overflow-hidden ">
-          <div className="xl:mb-[311px] lg:mb-[210px] mb:mb-[175px] md:mb-[170px] sm:mb-[140px] mb-[50px]">
-            <h2 className="text-[22px] md:text-45px sm:text-35px font-mono font-semibold mx-auto text-center">
+        <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] min-tb:max-tb:mt-[106px] overflow-hidden">
+          <div className="xl:mb-[311px] lg:mb-[210px] mb:mb-[175px] md:mb-[170px] sm:max-tb:mb-[252px] sm:mb-[140px] mb-[50px]">
+            <h2 className="text-[22px] md:text-45px min-tb:max-tb:text-[30px] sm:text-35px font-mono font-semibold mx-auto text-center">
               {otherSolHeading}
             </h2>
-            <div className="font-mono mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] mt-10 md:mt-28 lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px]">
-              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto">
+            <div className="font-mono mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] mt-10 md:mt-28 min-tb:max-tb:mt-[70px] lg:px-[50px] md:px-[30px]   sm:max-tb:px-[90px] px-[25px]">
+              {/* <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto"> */}
+              <div className="grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
                 {firstTwoItems?.map((item: any, index: number) => {
                   return (
                     <div key={index} className="grid">
