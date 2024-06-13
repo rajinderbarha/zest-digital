@@ -14,7 +14,7 @@ function Thanks_you() {
                         <div className={`${classes.SingleIntro}  main_container md:rounded-30px rounded-[20px] `}>
                             <div className={`${classes.single_container} max-w-[1335px] mx-auto lg:pt-[78px] md:pt-[60px] sm:pt-[50px] pt-[35px] lg:pb-[113px] mb:pb-[80px] sm:pb-[60px] pb-[50px] relative`}>
                                 <div className="lg:mb-[35px] md:mb-[30px] sm:mb-[25px] mb-[20px]">
-                                    <Image src={thankyou} alt='' className='mx-auto xl:max-w-[225px] lg:max-w-[200px] md:max-w-[170px] sm:max-w-[140px] max-w-[95px] w-full'/>
+                                    <Image src={thankyou} alt='' className={`${classes.thanksyou_image} mx-auto xl:max-w-[225px] lg:max-w-[200px] md:max-w-[170px] sm:max-w-[140px] max-w-[95px] w-full`}/>
                                 </div>
                                 <div className="text-white font-mono text-center max-w-[1172px] mx-auto px-6 md:px-10 ">
                                     <h2 className="xl:text-55px lg:text-50px md:text-40px sm:text-[30px] text-[25px] font-semibold  lg:mb-[40px] md:mb-[30px] mb-[15px]">Thank you!</h2>

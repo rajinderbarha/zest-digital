@@ -13,8 +13,8 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
     // xl:mt-[112px] lg:mt-[90px] md:mt-[60px] sm:mt-[40px] mt-[30px] xl:mb-[271px] lg:mb-[220px] md:mb-[170px] sm:mb-[120px] mb-[70px]
     <div className={`${classes.Instrumental} main_padding `}>
       <div className="max-w-[1520px] mx-auto w-full">
-        <div className={`${dynamicClass !== "special-instrumental" && `grid md:grid-cols-12`}   items-center`}>
-          <div className={`${classes.grid_image_div} ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `md:col-span-4 md:order-1 order-2`} ${dynamicClass === "conversations" && `${classes.conversations_img} md:col-span-6 md:order-1 order-2`} ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 md:order-2 order-2`} sm:mt-[30px] mt-[25px] `}>
+        <div className={`${dynamicClass !== "special-instrumental" && `grid min-tb:max-tb:gap-10 min-tb:grid-cols-12`}   items-center`}>
+          <div className={`${classes.grid_image_div} ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `min-tb:col-span-4 min-tb:order-1 order-2`} ${dynamicClass === "conversations" && `${classes.conversations_img} md:col-span-6 md:order-1 order-2`} ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 md:order-2 order-2`} sm:mt-[30px] mt-[25px] `}>
             {/* <div className={`${classes.image_div} hidden md:block relative`}>
 
               <Image
@@ -30,7 +30,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
               <>
                 {/* -----------desktop view------------- */}
 
-                <div className="hidden md:block">
+                <div className="hidden min-tb:block">
                   <Image
                     className="md:ms-auto mx-auto xl:max-w-[350px] h-max lg:max-w-[280px] md:max-w-[200px] min-tb:max-tb:max-w-[170px] box-border text-center"
                     src={urlFor(data.image).url()}
@@ -43,7 +43,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
 
                 {/* -----------desktop view------------- */}
                 {/* -----------mobile view------------- */}
-                <div className="block  md:hidden md:max-w-[350px] max-w-[170px]  sm:h-[360px] h-[200px] box-border  mx-auto relative">
+                <div className="block  min-tb:hidden md:max-w-[350px] max-w-[170px]  sm:h-[360px] h-[200px] box-border  mx-auto relative">
 
                   <Image
                     className="md:ms-auto mx-auto xl:max-w-[350px] h-max lg:max-w-[280px] md:max-w-[200px] box-border text-center"
@@ -129,7 +129,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
               {data.imageDesc ? data.imageDesc : ""}
             </h3>
           </div>
-          <div className={` ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `md:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 md:order-2`}  ${dynamicClass === "conversations" && `${classes.conversations_text} md:col-span-6 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 md:order-2`}  ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 ms-auto lg:pe-[50px] md:pe-[30px] max-w-[891px] order-1 md:order-1`} md:mt-0  `}>
+          <div className={` ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `min-tb:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 min-tb:order-2`}  ${dynamicClass === "conversations" && `${classes.conversations_text} md:col-span-6 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 md:order-2`}  ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 ms-auto lg:pe-[50px] md:pe-[30px] max-w-[891px] order-1 md:order-1`} md:mt-0  `}>
             <h2 className={`font-mono italic font-semibold text-color-1 xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[26px] min-tb:max-tb:leading-[34px] sm:text-[23px] text-[18px] md:mb-[20px] sm:mb-[15px] mb-[10px] ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && `w-max-[909px]`}   ${dynamicClass === "conversations" || dynamicClass === "project-window" && `w-max-[819px]`}`}>
               {data.heading}
             </h2>

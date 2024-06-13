@@ -56,7 +56,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
                     width={236}
                     height={246}
                     alt=""
-                    className="xl:mt-8 xl:ms-8 lg:mt-2 lg:ms-2 lg:max-w-[150px] xl:max-w-[236px]"
+                    className="xl:mt-8 rotate xl:ms-8 lg:mt-2 lg:ms-2 lg:max-w-[150px] xl:max-w-[200px]"
                   />
                 </div>
               </div>

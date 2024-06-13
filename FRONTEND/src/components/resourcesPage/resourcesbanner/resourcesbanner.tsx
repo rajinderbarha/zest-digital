@@ -12,7 +12,7 @@ function Resourcesbanner({data}:{data:Resources}) {
                     <div className="grid lg:grid-cols-12 ">
                         <div className="lg:col-span-7">
                             {/* <h2 className='md:text-45px text-30px font-mono bg-color-7 w-max px-2' >Hanson (UK)</h2> */}
-                            <h1 className='font-mono font-semibold xl:text-55px lg:text-50px md:text-[42px] sm:text-30px text-[22px] mb-5 '>{data.heading}</h1>
+                            <h1 className='font-mono font-semibold xl:text-55px min-tb:max-tb:text-30px min-tb:max-tb:max-w-[516px]   lg:text-50px md:text-[42px] sm:text-30px text-[22px] mb-5 '>{data.heading}</h1>
                             {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
                         </div>
                         {/* <div className="md:col-span-6 ">

@@ -15,7 +15,7 @@ const Services_Box = (props: any) => {
   return (
     <>
      <div className="main_padding">
-                <div className={`${classes.SingleIntro} bg-color-1 main_container xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[140px]  h-100 md:rounded-30px rounded-[20px]`}>
+                <div className={`${classes.SingleIntro} bg-color-1 main_container xl:mt-[200px] lg:mt-[180px] md:mt-[150px] sm:mt-[140px]  min-tb:max-tb:mt-[160px] h-100 md:rounded-30px rounded-[20px]`}>
 
                     <div className={`${classes.single_container}`}>
 
@@ -26,7 +26,7 @@ const Services_Box = (props: any) => {
                 <div className={`${classes.top_image}  h-full w-full  mx-auto`}>
                     <Image src={urlFor(item.image).url()} width={250} height={250} alt="" className='h-full w-full'/>
                 </div>
-                <h2 className="xl:text-45px text-[20px] mt-2 sm:mt-0 lg:text-[38px] md:text-30px text-color-7 font-mono font-semibold">{item.imagetitle}</h2>
+                <h2 className="xl:text-45px text-[20px] mt-2 sm:mt-0 lg:text-[38px] md:text-30px  min-tb:max-tb:text-[20px] text-color-7 font-mono font-semibold">{item.imagetitle}</h2>
             </div>
               ))}
 
@@ -44,11 +44,11 @@ const Services_Box = (props: any) => {
                             <h2 className='2xl:text-45px xl:text-40px lg:text-35px  text-30px text-color-7 font-mono font-semibold'>{props.image_3_title}</h2>
                         </div> */}
             </div>
-                        <div className="xl:mt-[321px] lg:mt-[280px] md:mt-[200px] sm:mt-[45px] mt-[25px] mx-auto lg:max-w-[895px] md:max-w-[800px] xl:mb-[80px] lg:mb-[65px] md:mb-[60px] sm:mb-[50px] mb-[45px]">
-                            <h2 className='font-mono sm:px-[50px] px-4 font-semibold xl:text-45px lg:text-40px md:text-35px text-[18px] text-white mx-auto text-center '>{heading} <span className='text-color-9'> {coloredText}</span></h2>
+                        <div className="xl:mt-[321px] lg:mt-[280px] md:mt-[200px]  min-tb:max-tb:mt-[138px] sm:mt-[45px] mt-[25px] mx-auto lg:max-w-[895px] md:max-w-[800px] xl:mb-[80px] lg:mb-[65px] md:mb-[60px]  min-tb:max-tb:mb-[30px] sm:mb-[50px] mb-[45px]">
+                            <h2 className='font-mono sm:px-[50px]  min-tb:max-tb:px-[40px] px-4 font-semibold xl:text-45px lg:text-40px md:text-35px  min-tb:max-tb:text-[26px]  min-tb:max-tb:leading-[34px] text-[18px] text-white mx-auto text-center '>{heading} <span className='text-color-9'> {coloredText}</span></h2>
                         </div>
-                        <div className="max-w-[1428px] font-normal mx-auto mb-[55px] sm:mb-[65px] md:mb-[170px] md:px-12 px-4 lg:text-30px md:text-25px text-[12px] font-mono text-white text-center">
-                            <p className='xl:mb-[65px] lg:mb-[50px] md:mb-[40px] sm:mb-[25px] mb-[15px]'>{description}</p>
+                        <div className="max-w-[1428px] font-normal mx-auto mb-[55px] sm:mb-[65px] md:mb-[170px]  min-tb:max-tb:mb-[85px] md:px-12  min-tb:max-tb:px-[40px] px-4 lg:text-30px md:text-25px  min-tb:max-tb:text-[16px]  min-tb:max-tb:leading-[20px] text-[12px] font-mono text-white text-center">
+                            <p className='xl:mb-[65px] lg:mb-[50px] md:mb-[40px]  min-tb:max-tb:mb-[20px] sm:mb-[25px] mb-[15px]'>{description}</p>
                             <p>{belowdesc}</p>
                         </div>
                     </div>

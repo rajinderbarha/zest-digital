@@ -255,3 +255,16 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
 .growth_grid_2 {
   width: 90%;
 }
+
+
+.rotate{
+  animation: loading 15s linear infinite ;}
+  @keyframes loading {
+   0% { 
+     transform: rotate(0); 
+   }
+   100% { 
+     transform: rotate(360deg);
+   }
+  }
+ 

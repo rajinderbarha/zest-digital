@@ -24,20 +24,20 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
                 className={`flex items-center  flex-col md:flex-row  bg-white ${classes.objective_inner} ${classes.objective_select} lg:gap-10  `}
               >
                 <div className=" md:max-w-[1057px] xl:pe-[100px] lg:pe-[70px] md:pe-[50px]">
-                  <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[22px] text-color-1 font-semibold font-mono ">
+                  <h2 className="xl:text-45px lg:text-40px md:text-35px  min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[39px] sm:text-30px text-[22px] text-color-1 font-semibold font-mono ">
                     {/* {item.heading} */}
                     <PortableText value={item.serviceheading} />
                   </h2>
-                  <div className={`${classes.objective_description} font-mono lg:text-30px md:text-25px text-[12px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[20px] mt-[12px] `}>
+                  <div className={`${classes.objective_description} min-tb:max-tb:max-w-[396px] font-mono lg:text-30px md:text-25px text-[12px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px]  min-tb:max-tb:mt-[20px] min-tb:max-tb:text-[16px] min-tb:max-tb:leading-[20px] sm:mt-[20px] mt-[12px] `}>
                     <PortableText value={item.content} />
 
                   </div>
                 </div>
-                <div className="flex md:mx-auto ms-auto sm:mt-[15px] mt-[7px]">
+                <div className="flex md:mx-auto min-tb:max-tb:ms-auto  ms-auto sm:mt-[15px] mt-[7px]">
                   <img
                     src={urlFor(item.image).url()}
                     alt=""
-                    className="xl:max-w-[350px] xl:w-[350px] xl:h-[350px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px] md:max-w-[180px] md:w-[180px] md:h-[180px] sm:max-w-[160px] sm:w-[160px] sm:h-[160px] max-w-[150px] w-[150px] h-[150px] "
+                    className="xl:max-w-[350px] xl:w-[350px] xl:h-[350px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px] md:max-w-[180px] md:w-[180px] md:h-[180px] min-tb:max-tb:max-w-[196px] min-tb:max-tb:w-[196px] min-tb:max-tb:h-[196px] sm:max-w-[160px] sm:w-[160px] sm:h-[160px] max-w-[150px] w-[150px] h-[150px] "
                   />
                 </div>
               </div>
@@ -63,12 +63,12 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
                       />
                     </div>
                   )}
-                  <div className={`md:ms-auto md:max-w-[1057px] ${isGrowthPage ? ``: `xl:ps-[80px] lg:ps-[50px] md:ps-[20px]`} text-right`}>
-                    <h2 className=" md:max-w-[675px] ms-auto xl:text-45px lg:text-40px md:text-35px sm:text-30px text-[22px] text-color-1 font-semibold font-mono ">
+                  <div className={`md:ms-auto md:max-w-[1057px] min-tb:max-tb:max-w-[412px] ${isGrowthPage ? ``: `xl:ps-[80px] lg:ps-[50px] md:ps-[20px]`} text-right`}>
+                    <h2 className=" md:max-w-[675px] ms-auto xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[39px] sm:text-30px text-[22px] text-color-1 font-semibold font-mono ">
                       {/* {item.heading} */}
                       <PortableText value={item.serviceheading} />
                     </h2>
-                    <div className={`${classes.objective_description} font-mono lg:text-30px md:text-25px text-[12px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] sm:mt-[20px] mt-[12px] `}>
+                    <div className={`${classes.objective_description} font-mono lg:text-30px md:text-25px text-[12px] xl:mt-[70px] lg:mt-[55px] md:mt-[40px] min-tb:max-tb:mt-[20px] min-tb:max-tb:text-[16px] min-tb:max-tb:leading-[20px] sm:mt-[20px] mt-[12px] `}>
                       <PortableText value={item.content} />
 
                     </div>
