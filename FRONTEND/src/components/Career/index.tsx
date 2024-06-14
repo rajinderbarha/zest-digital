@@ -6,7 +6,7 @@ import { urlFor } from "../../../lib/sanity.client";
 
 const Career: React.FC<CareerProps> = ({ data }) => {
   return (
-    <div className={`Career xl:mb-[160px] lg:mb-[140px] md:mb-[120px] sm:mb-[90px] mb-[60px]`}>
+    <div className={`Career xl:mb-[160px] lg:mb-[140px] md:mb-[120px] min-tb:max-tb:mb-[80px] sm:mb-[90px] mb-[60px]`}>
       {data?.map((careerData, index) => {
         const { title, description, image } = careerData.card;
 
@@ -15,21 +15,21 @@ const Career: React.FC<CareerProps> = ({ data }) => {
             <div className="main_container">
               <div className={`${classes.Careerbanner}`}>
                 <div className="">
-                  <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-40px sm:text-35px text-[25px] mb-5 ">
+                  <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] min-tb:max-tb:max-w-[343px] sm:text-35px text-[22px] mb-5 ">
                     {careerData.heading}
                   </h1>
                 </div>
               </div>
             </div>
-            <div className="thanks_for_interest lg:mt-0 sm:mt-[100px] mt-[00px]">
+            <div className="thanks_for_interest lg:mt-0 min-tb:max-tb:mt-[0] sm:mt-[0] mt-[00px]">
               <div
                 className={`${classes.SingleIntro}  main_container md:rounded-30px rounded-[20px]`}
               >
                 <div
-                  className={`${classes.single_container} main_padding max-w-[1335px] mx-auto lg:pt-[170px] md:pt-[130px] sm:pt-[80px] pt-[45px] lg:pb-[140px] mb:pb-[90px] pb-[50px] relative`}
+                  className={`${classes.single_container} main_padding max-w-[1335px] mx-auto relative`}
                 >
                   <div
-                    className={`${classes.grow_img}  absolute max-w-[120px] sm:max-w-[180px] md:max-w-[220px] lg:max-w-max `}
+                    className={`${classes.grow_img}  absolute  `}
                   >
                     <Image
                       src={urlFor(image).url()}
@@ -39,11 +39,11 @@ const Career: React.FC<CareerProps> = ({ data }) => {
                       className=""
                     />
                   </div>
-                  <div className="text-white font-mono text-center max-w-[1172px] mx-auto p-6 md:p-10 ">
-                    <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px font-semibold  lg:mb-[60px] md:mb-[40px] mb-[20px]">
+                  <div className={`${classes.career_content} text-white font-mono text-center  mx-auto  `}>
+                    <h2 className="xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] sm:text-30px text-[22px] font-semibold  lg:mb-[60px] md:mb-[40px] mb-[20px]">
                       {title}
                     </h2>
-                    <p className="text-20px md:text-25px lg:text-30px  text-md ">
+                    <p className="text-[12px] md:text-25px min-tb:max-tb:text-[20px] lg:text-30px  text-md ">
                       {description}
                     </p>
                   </div>

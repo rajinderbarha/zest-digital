@@ -1,5 +1,5 @@
 .Careerbanner h1 {
-    @apply xl:mt-[95px] lg:mt-[70px] md:mt-[48px] mt-[25px]
+    @apply xl:mt-[95px] lg:mt-[70px] md:mt-[48px] mt-[33px]
     /* padding: 96px 16px 0 16px; */
 }
 
@@ -13,8 +13,9 @@
     background-image: url('../../assets/images/Gradient_calendar.png');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
-    background-color: black;
+    /* background-size: cover; */
+    /* background-size: ; */
+    background-color: #191615;
     margin-top: 80px;
 
 }
@@ -23,9 +24,13 @@
     /* margin-top: -100px; */
 }
 
+.single_container{
+    padding: 175px 0 191px 0;
+}
 
-
-
+.career_content p{
+    max-width: 1019px;
+}
 
 @media only screen and (min-width: 1775px) {
 
@@ -38,6 +43,8 @@
         width: 294px;
         height: 294px;
     }
+
+    
 }
 
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
@@ -50,6 +57,9 @@
     .grow_img img {
         width: 270px;
         height: 270px
+    }
+    .career_content p{
+        max-width: 1019px;
     }
 }
 
@@ -64,31 +74,49 @@
         width: 230px;
         height: 230px;
     }
+    .single_container{
+        padding: 165px 0 181px 0;
+    }
+    .career_content p{
+        max-width: 900px;
+    }
+    
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1365px) {
 
     .grow_img {
         top: -114px;
-        right: 105px;
+        right: 80px;
     }
 
     .grow_img img {
         width: 200px;
         height: 200px;
     }
+    .single_container{
+        padding: 150px 0 160px 0;
+    }
+
+    .career_content p{
+        max-width: 600px;
+    }
+    
 
 }
 
 @media only screen and (min-width: 1124px) and (max-width: 1365px) {
     .grow_img {
         top: -123px;
-        right: 135px;
+        right: 60px;
     }
 
     .grow_img img {
         width: 220px;
         height: 220px;
+    }
+    .career_content p{
+        max-width: 700px;
     }
 }
 
@@ -96,39 +124,91 @@
 
     .grow_img {
         top: -100px;
-        right: 95px;
+        right: 50px;
     }
 
     .grow_img img {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
+    .single_container{
+        padding: 131px 0 131px 0;
+    }
+    .career_content p{
+        max-width: 500px;
+    }
+    
 }
 
 @media only screen and (min-width: 640px) and (max-width: 767px) {
     .grow_img {
         top: -88px;
-        right: 56px;
+        right: 50px;
     }
 
     .grow_img img {
         width: 160px;
         height: 160px;
     }
+    .single_container{
+        padding: 100px 0 90px 0;
+    }
+    .career_content p{
+        max-width: 523px;
+    }
 }
 
 @media only screen and (max-width: 639px) {
     .grow_img {
         top: -65px;
-        right: 37px;
+        right: 20px;
     }
 
     .grow_img img {
-        width: 115px;
-        height: 115px;
+        width: 130px;
+        height: 130px;
     }
 
     .SingleIntro {
         margin-top: 60px;
+    }
+    .single_container{
+        padding: 95px 0 77px 0;
+    }
+    .career_content p{
+        max-width: 400px;
+    }
+    .Careerbanner h1{
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .career_content p{
+        max-width: 223px;
+    }
+    .Careerbanner h1{
+        max-width: 208px;
+    }
+    .career_content h2{
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (min-width: 639px) and (max-width: 830px) {
+    /* .grow_img img {
+        width: 200px;
+        height: 200px;
+    } */
+    .SingleIntro{
+        margin-top: 45px;
+    }
+    .single_container{
+        padding-bottom: 130px;
+    }
+    .single_container p{
+        /* max-width: 500px; */
+        margin: auto;
     }
 }
