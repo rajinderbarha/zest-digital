@@ -63,7 +63,7 @@ console.log(data);
                         height={50}
                         alt=""
                         className="md:w-[45px] sm:w-[38px] w-[45px] hidden group-hover:block"
-                      />
+                      />  
                     </Link>
                   </div>
                   <div className="group">
