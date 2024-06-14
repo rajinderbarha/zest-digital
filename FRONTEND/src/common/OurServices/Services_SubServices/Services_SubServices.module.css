@@ -14,7 +14,7 @@
 
 
 @media only screen and (min-width: 1775px) {
-    .top_image{
+    .top_image {
         max-width: 250px;
         /* max-height: 250px; */
         height: 250px;
@@ -24,17 +24,17 @@
 }
 
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
-    .top_image{
+    .top_image {
         max-width: 230px;
         /* max-height:230px */
-        height:230px;
+        height: 230px;
         /* margin-bottom: 35px; */
     }
 
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
-      .top_image{
+    .top_image {
         max-width: 210px;
         /* max-height: 210px; */
         height: 210px;
@@ -45,7 +45,7 @@
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
-    .top_image{
+    .top_image {
         max-width: 190px;
         /* max-height: 190px; */
         height: 190px;
@@ -55,7 +55,7 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .top_image{
+    .top_image {
         max-width: 170px;
         /* max-height: 170px; */
         height: 170px;
@@ -66,26 +66,55 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .top_image{
+    .top_image {
         max-width: 150px;
         /* max-height: 150px; */
         height: 150px;
         /* margin-bottom: 22px; */
     }
-    .top_image ~ p{
-    font-size: 22px;
+
+    .top_image~p {
+        font-size: 22px;
     }
 }
-@media only screen and (max-width:767px){
-    .top_image{
+
+@media only screen and (max-width:767px) {
+    .top_image {
         max-width: 150px;
         /* max-height: 150px;   */
-        height: 150px;  
-      }
+        height: 150px;
+    }
 }
+
 /* @media only screen and (max-width:639px){
     .top_image{
         max-width: 120px;
         max-height: 120px;  
       }
 } */
+
+@media only screen and (max-width:830px) {
+    .GrowthMarketingServices_services>div {
+        padding: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+
+    .top_image {
+        max-width: 180px;
+        height: 180px;
+    }
+
+    .desc_sub0, .desc_sub3, .desc_sub4 {
+        max-width: 234px;
+    }
+    .desc_sub5{
+        max-width: 249px;
+    }
+
+    .desc_sub1, .desc_sub2 {
+        max-width: 175px;
+    }
+
+}

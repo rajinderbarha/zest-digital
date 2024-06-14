@@ -149,4 +149,14 @@
 .below_box_heading{
     margin-bottom: 112px;
 }
+.right_content_without_button{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.below_box_heading{
+    margin-top: 105px;
+}
+.below_heading_without_button{
+    margin-top: 147px;
+}
 }

@@ -5,6 +5,27 @@
 
     .form_inputs div {
         max-width: 100%;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
+}
+.Sign_up{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media only screen and (max-width:840px){
+    .Sign_up{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media only screen and (max-width:540px){
+    .Sign_up{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+        .Sign_up h2 + p{
+            margin-left: -8px;
+            margin-right: -8px;
+        }
 }

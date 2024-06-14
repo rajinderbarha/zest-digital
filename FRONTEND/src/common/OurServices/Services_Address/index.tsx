@@ -23,13 +23,13 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
       <div className="GrowthMarketingServices_Address main_padding xl:mb-[200px] lg:mb-[160px] md:mb-[120px] sm:mb-[100px] mb-[80px]">
         <div className="main_container">
           <div
-            className={`${classes.bg_image} bg-color-1 rounded-[20px] md:rounded-30px xl:py-[160px] lg:py-[130px] md:py-[100px] sm:py-[70px] py-[50px] xl:px-[77px] lg:px-[60px] md:px-[45px] sm:px-[35px] px-[25px]  grid md:grid-cols-2 md:gap-y-0 gap-y-12 md:gap-x-10`}
+            className={`${classes.bg_image} bg-color-1 rounded-[20px] md:rounded-30px xl:py-[160px] lg:py-[130px] md:py-[100px] sm:py-[70px] py-[50px] xl:px-[77px] lg:px-[60px] md:px-[45px] sm:px-[35px] px-[25px]  grid md:grid-cols-2 max-tb:grid-cols-1 md:gap-y-0 max-tb:gap-y-[60px] max-tb:gap-x-0 md:gap-x-10 min-tb:max-tb:pt-[80px] min-tb:max-tb:pb-[61px]`}
           >
-            <div className="col-span-1 md:max-w-[558px] sm:max-w-[300px] max-w-[250px]  mx-auto">
-              <h2 className="font-mono xl:text-55px lg:text-50px md:text-40px sm:text-30px text-[22px] font-semibold text-color-9 text-center ">
+            <div className="col-span-1 md:max-w-[558px] min-tb:max-tb:max-w-[420px] sm:max-w-[300px] max-w-[250px]  mx-auto">
+              <h2 className="font-mono xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[45px] sm:text-30px text-[22px] font-semibold text-color-9 text-center ">
                 {heading_add}
               </h2>
-              <h2 className="font-mono lg:text-35px md:text-[33px] sm:text-[22px] text-[18px] font-semibold text-white text-center xl:mt-[60px] lg:mt-[45px] md:mt-[35px] sm:mt-[25px] mt-[20px] lg:mb-[26px] md:mb-[20px] sm:mb-[15px] mb-[10px]  max-w-[566px] mx-auto">
+              <h2 className="font-mono lg:text-35px md:text-[33px] min-tb:max-tb:text-[20px] min-tb:max-tb:mt-[42px] min-tb:max-tb:mb-[20px] min-tb:max-tb:leading-[27px] sm:text-[22px] text-[18px] font-semibold text-white text-center xl:mt-[60px] lg:mt-[45px] md:mt-[35px] sm:mt-[25px] mt-[20px] lg:mb-[26px] md:mb-[20px] sm:mb-[15px] mb-[10px]  max-w-[566px] mx-auto">
                 {slotDescription_add}
               </h2>
               <div className="bokk_now_btn">
@@ -44,7 +44,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
               </div>
 
               <div>
-                <div className="address xl:mt-[110px] lg:mt-[90px] md:mt-[60px] mt-[50px] lg:mb-[40px] md:mb-[30px] sm:mb-[25px] mb-[20px]  text-center">
+                <div className="address xl:mt-[110px] lg:mt-[90px] md:mt-[60px] min-tb:max-tb:mt-[72px] mt-[50px] lg:mb-[40px] md:mb-[30px] min-tb:max-tb:mb-[0px] sm:mb-[25px] mb-[20px]  text-center">
                   {/* <h2 className="font-mono lg:text-30px md:text-25px sm:text-[20px] text-[18px] font-normal text-white  lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[7px]">
                         {title_add}
                       </h2>
@@ -76,7 +76,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
                     latitude:latitude,
                     longitude:longitude
                   }
-                 return <div className="max-w-[738px] w-full" key={index}>
+                 return <div className="max-w-[738px] min-tb:max-tb:max-w-[448px] max-tb:mx-auto w-full" key={index}>
                     <div className={`${classes.map_div} `}>
                       {/* <Map
                         height={738}
@@ -89,7 +89,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
                       <GoogleMapComponent  loc={location} mark={[location]} zoom={15}/>
                     </div>
 
-                    <div className=" flex items-center justify-end text-color-9 mt-[10px] md:mt-[25px] gap-[2px]">
+                    <div className=" flex items-center justify-end text-color-9 mt-[10px] md:mt-[25px] min-tb:max-tb:mt-[23px] gap-[2px]">
                       <FaPhoneAlt className="text-white" />
                       {contactno}
                     </div>

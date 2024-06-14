@@ -6,23 +6,23 @@ function Sign_up() {
   return (
     <>
       <div className="main_padding">
-        <div className="Sign_up max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right  lg:pt-[55px] px-[16px]  sm:pt-[50px] pt-[30px] md:pb-[70px] sm:pb-[50px] pb-[30px] rounded-[20px] md:rounded-30px xl:mb-[206px] lg:mb-[190px] md:mb-[150px] sm:mb-[130px] mb-[100px]">
+        <div className={`${classes.Sign_up} max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right  lg:pt-[55px] px-[16px]  sm:pt-[50px] pt-[34px] md:pb-[70px] min-tb:max-tb:text-[60px] min-tb:max-tb:pb-[44px] sm:pb-[50px] pb-[34px] rounded-[20px] md:rounded-30px xl:mb-[206px] lg:mb-[190px] md:mb-[150px] min-tb:max-tb:mb-[132px] sm:mb-[130px] mb-[100px]`}>
           <div className="detail text-center">
-            <h2 className="xl:text-45px lg:text-40px md:text-35px text-[28px] font-mono font-semibold md:mb-[10px] sm:mb-[8px] mb-[2px]">
+            <h2 className="xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] text-[22px] font-mono font-semibold md:mb-[16px]  sm:mb-[8px] mb-[8px]">
               Sign up for early access
             </h2>
-            <p className=" font-lato md:text-lg sm:text-[16px] text-[14px]">
+            <p className=" font-lato md:text-lg min-tb:max-tb:text-[14px] sm:text-[16px] text-[14px]">
               Sign up with your email address to be notified on the release of
               our Beta version.
             </p>
           </div>
           <div
-            className={`${classes.form_inputs} max-w-[1040px] mx-auto md:mt-[52px] sm:mt-[40px] mt-[30px] flex justify-between `}
+            className={`${classes.form_inputs} max-w-[1040px] mx-auto md:mt-[52px] min-tb:max-tb:mt-[40px] mt-[40px] grid grid-cols-12 lg:gap-x-[40px] lg:gap-y-[0] sm:gap-x-[30px] sm:gap-y-[35px] gap-y-[25px]`}
           >
-            <div className="first_name flex flex-col w-full max-w-[300px]">
+            <div className="first_name flex flex-col w-full max-w-[300px] lg:col-span-4  sm:col-span-6 col-span-12">
               <label
                 htmlFor="fname"
-                className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[2px]"
+                className="text-color-9 sm:text-base min-tb:max-tb:text-[16px] text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[2px]"
               >
                 First name
               </label>
@@ -30,14 +30,14 @@ function Sign_up() {
                 type="text"
                 name="fname"
                 id=""
-                className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] "
+                className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
                 placeholder="John"
               />
             </div>
-            <div className="last_name flex flex-col w-full max-w-[300px]">
+            <div className="last_name flex flex-col w-full max-w-[300px] lg:col-span-4 sm:col-span-6 col-span-12">
               <label
                 htmlFor="lname"
-                className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[2px]"
+                className="text-color-9 sm:text-base min-tb:max-tb:text-[16px] text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[2px]"
               >
                 Last name
               </label>
@@ -45,14 +45,14 @@ function Sign_up() {
                 type="text"
                 name="lname"
                 id=""
-                className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] "
+                className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
                 placeholder="Doe"
               />
             </div>
-            <div className="email flex flex-col w-full max-w-[300px]">
+            <div className="email flex flex-col w-full max-w-[300px] lg:col-span-4 col-span-12">
               <label
                 htmlFor="email"
-                className="text-color-9 sm:text-base text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[2px]"
+                className="text-color-9 sm:text-base min-tb:max-tb:text-[16px] text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[2px]"
               >
                 E-mail
               </label>
@@ -60,21 +60,22 @@ function Sign_up() {
                 type="email"
                 name="email"
                 id=""
-                className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] "
+                className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
                 placeholder="johndoe@gmail.com"
               />
             </div>
           </div>
-          <div className="button md:my-[40px] sm:my-[35px] my-[30px]  text-center">
+          <div className="button md:my-[44px] min-tb:max-tb:mb-[81px] sm:my-[35px] mt-[31px] mb-[50px]  text-center">
             <Link
-              href="#"
-              className="bg-color-1 hover:bg-white hover:text-color-1 border border-color-1 font-mono sm:text-base text-[15px] md:px-[20px] px-[14px] sm:py-[10px] py-[7px] text-white rounded-full"
+              href="#">
+                <button className="bg-color-1 hover:bg-white hover:text-color-1 border border-color-1 font-mono sm:text-base text-[15px] md:px-[20px] px-[14px] sm:py-[10px] py-[7px] text-white rounded-full"
             >
               Notify me
+              </button>
             </Link>
           </div>
           <div className="term_condition max-w-[857px]  mx-auto">
-            <p className="font-lato sm:text-base text-[14px] text-color-1 text-center">
+            <p className="font-lato sm:text-base min-tb:max-tb:text-[12px] text-[14px] text-color-1 text-center">
               We respect your privacy, and you’ll only be contacted about Growth
               Tracker.
             </p>

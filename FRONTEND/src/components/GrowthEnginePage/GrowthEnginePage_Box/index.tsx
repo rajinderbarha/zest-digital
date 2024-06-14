@@ -8,6 +8,7 @@ import Link from "next/link";
 import { urlFor } from "../../../../lib/sanity.client";
 
 const GrowthEnginePage_Box = ({ data }: any) => {
+  
   return (
     <>
       <div className={` mt-[66px] md:mb-36 sm:mb-[130px] mb-[90px] min-tb:max-tb:mb-[161px] main_padding`}>
@@ -15,7 +16,7 @@ const GrowthEnginePage_Box = ({ data }: any) => {
           <div className={`${classes.growth_box} md:rounded-30px rounded-[20px]  xl:pt-[85px] lg:pt-[80px] md:pt-[65px] min-tb:max-tb:pt-[70px] sm:pt-[50px] pt-[45px] pb-[1px] main_padding`}>
             <div className={`${classes.growth_box_content} max-w-[1520px] mx-auto  relative`}>
               <div>
-                <div className="md:mb-[172px] mb-[87px]">
+                <div className="md:mb-[172px] mb-[87px] min-tb:max-tb:mb-[93px]">
                   <Box_Title
                     upper={data.upperHeading}
                     below={data.upperSmallLine}
@@ -51,7 +52,7 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                         </div>
                       ) : (
                         <div
-                          className={`${classes.growth_box_text_content_right} ${classes.growth_box_text_content} ms-auto text-end md:max-w-[830px] md:ps-16 my-[66px] sm:my-11`}
+                          className={`${classes.growth_box_text_content_right}  ${item.buttonLink === null && item.buttonName === null && ( `${classes.right_content_without_button}`)} ${classes.growth_box_text_content} ms-auto text-end md:max-w-[830px] md:ps-16 my-[66px] sm:my-11`}
                         >
                           <h3 className="font-semibold ms-auto font-mono  xl:text-40px lg:text-[36px] md:text-[32px] min-tb:max-tb:text-[20px] text-[16px] lg:mb-[30px] md:mb-[15px] min-tb:max-tb:mb-[8px] mb-[8px] text-color-7  md:w-max">
                             {item.heading}
@@ -80,7 +81,7 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                     </div>
                   ))}
                 </div>
-                <div className={`${classes.below_box_heading} mt-[86px] md:mt-[185px]  relative `}>
+                <div className={`${classes.below_box_heading} ${data.growthContent.buttonLink === null && data.growthContent.buttonName === null && ( `${classes.below_heading_without_button}`)} mt-[86px] md:mt-[185px]  relative `}>
                   <Box_Title
                     upper={data.belowHeading}
                     below={data.belowSmallLine}

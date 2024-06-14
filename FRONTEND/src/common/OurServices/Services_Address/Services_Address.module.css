@@ -1,6 +1,7 @@
 .bg_image {
     background-image: url('../../../assets/images/Gradient_map.png');
-    background-position: center;
+    /* background-position: center; */
+    background-position: 10%;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: black; */
@@ -29,11 +30,11 @@
     @apply md:rounded-[30px] rounded-[20px] shadow-dark-pink-right 
 }
 .address h4:first-child{
-    @apply font-mono lg:text-30px md:text-25px text-[14px] font-normal text-white  lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[7px]
+    @apply font-mono lg:text-30px md:text-25px min-tb:max-tb:text-[16px] text-[14px] font-normal text-white  lg:mb-[20px] md:mb-[15px] min-tb:max-tb:mb-[12px] sm:mb-[10px] mb-[7px]
 }
 .address h4:not(:first-child){
-    @apply font-mono lg:text-30px md:text-25px text-[20px] font-normal lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[7px] text-white xl:mt-[40px] lg:mt-[35px] md:mt-[30px] sm:mt-[25px] mt-[20px]
+    @apply font-mono lg:text-30px md:text-25px min-tb:max-tb:text-[16px] text-[20px] font-normal lg:mb-[20px] md:mb-[15px] min-tb:max-tb:mb-[12px] sm:mb-[10px] mb-[7px] text-white xl:mt-[40px] lg:mt-[35px] md:mt-[30px] sm:mt-[25px] mt-[20px]
 }
 .address p{
-    @apply text-[12px] md:text-base lg:text-lg font-lato text-white font-light
+    @apply text-[12px] md:text-base min-tb:max-tb:text-[12px] min-tb:max-tb:leading-[18px] lg:text-lg font-lato text-white font-light
 }
