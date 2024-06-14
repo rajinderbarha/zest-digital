@@ -25,7 +25,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
     });
   }, []);
 
-  console.log("vv", viewSolBtnLink, SeeOurResBtnLink);
+  // console.log("vv", viewSolBtnLink, SeeOurResBtnLink);
   return (
     <>
       <div className="main_padding" data-aos="fade-up">

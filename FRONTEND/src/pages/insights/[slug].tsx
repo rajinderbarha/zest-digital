@@ -1,14 +1,15 @@
 import SingleInsightPage from "@/components/SingleInsightPage";
 import React from "react";
-import { getSingleInsightsData } from "../../../lib/sanity.query";
+import { getSingleInsightsData, getSlugOfInsightsCards } from "../../../lib/sanity.query";
 import { SingleInsightsType } from "../../../lib/interface";
 import { GetStaticPaths } from "next";
 
-function singleinsightpage({ singleInsights }: { singleInsights: SingleInsightsType[] }) {
+function singleinsightpage({ singleInsights, slugInsightCard }: { singleInsights: SingleInsightsType[], slugInsightCard:any }) {
   // console.log("singleInsights",singleInsights)
+  // console.log("slugInsightCard----",slugInsightCard)
   return (
     <>
-      <SingleInsightPage data={singleInsights[0]} />
+      <SingleInsightPage data={singleInsights[0]}    slugCard={slugInsightCard[0].collection} />
     </>
   );
 }
@@ -21,6 +22,7 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
       fallback: 'blocking' //indicates the type of fallback
   }
 }
+
 export async function getStaticProps({
   params,
 }: {
@@ -29,9 +31,11 @@ export async function getStaticProps({
   const { slug } = params;
 
   const singleInsights = await getSingleInsightsData(slug);
+  const slugInsightCard = await getSlugOfInsightsCards()
   return {
     props: {
       singleInsights,
+      slugInsightCard
     },
   };
 }

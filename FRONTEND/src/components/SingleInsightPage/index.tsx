@@ -1,15 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./SingleInsightPage.module.css";
 import Image from "next/image";
-import { GoArrowRight } from "react-icons/go";
+// import { GoArrowRight } from "react-icons/go";
 import { urlFor } from "../../../lib/sanity.client"; //@ts-ignore
 import BlockContent from "@sanity/block-content-to-react";
 import Link from "next/link";
 import { SingleInsightsType } from "../../../lib/interface";
 
-function SingleInsightPage({ data }: { data: SingleInsightsType }) {
+function SingleInsightPage({ data,slugCard }: { data: SingleInsightsType, slugCard:any}) {
+  // const[showSingleInsightLink,setShowSingleInsight] = useState();
+console.log("ooooooooooo-------------oo",slugCard);
+console.log("ooooooooo1111111111111111111111111oo-------------oo",data);
 
-  useEffect(() => {
+
+  useEffect(() => {           
     const parentDiv = document.querySelector(`.${classes.Block_Content}`);
 
     if (parentDiv) {
@@ -31,6 +35,27 @@ function SingleInsightPage({ data }: { data: SingleInsightsType }) {
   }, [data]); // Run the effect whenever 'data' changes
 
   // console.log("singleInsights", data);
+
+  
+  // const currentpageSlug = data.slug.current
+  // console.log(currentpageSlug);
+  
+  //   const prevPost = slugCard.find((item:any)=> item.slug.current === currentpageSlug)
+
+  //   console.log(prevPost);
+    
+  const currentpageSlug = data.slug.current;
+console.log("Current page slug:", currentpageSlug);
+
+const currentPost = slugCard.findIndex((item:any ,index:number)=> item.slug === currentpageSlug);
+
+console.log("currentPost post:", currentPost);
+
+console.log(slugCard[currentPost-1])
+
+const prevPost = slugCard[currentPost-1]
+console.log(prevPost);
+
 
   return (
     <>
@@ -84,10 +109,20 @@ function SingleInsightPage({ data }: { data: SingleInsightsType }) {
 
           <div className={` bg-black rounded-[20px] md:rounded-30px xl:mb-[245px] lg:mb-[200px] md:mb-[150px] sm:mb-[100px] mb-[70px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px] xl:px-[55px] xl:mt-[120px] lg:mt-[95px] md:mt-[70px] sm:mt-[60px] mt-[30px] relative grid grid-cols-3`}>
           <div className={`${classes.next_text_left} relative self-center  z-10`}>
-              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light invisible text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+             
+{/*                
+          {prevPost?.slug !== null ?
+              <Link href={prevPost.slug} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+                {" "}
+                {prevPost.hero.heading}
+              </Link>  : */}
+
+              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6 invisible font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
                 {" "}
                 {data.linkSection.linkName}
               </Link>
+              
+            {/* } */}
             </div>
 
             <div className={`  self-center mx-auto`}>

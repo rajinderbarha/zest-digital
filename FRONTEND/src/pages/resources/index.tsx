@@ -1,6 +1,6 @@
 import LearnToGrow from "@/components/resourcesPage/learnToGrow";
 import Resourcesbanner from "@/components/resourcesPage/resourcesbanner/resourcesbanner";
-import React, { useState } from "react";
+import React, {useState } from "react";
 import { getResourcesData } from "../../../lib/sanity.query";
 import { useSearchParams } from "next/navigation";
 import Resources_Calculater_Step_1 from "@/components/Resources_Calculater_Step_1";
@@ -12,9 +12,8 @@ import Resources_Calculater_Step_5 from "@/components/Resources_Calculater_Step_
 import StepPopup from "@/common/PopupWrapper/stepPopup";
 // import { usePopup } from "@/context";
 import { useForm } from "react-hook-form";
-function resources({ resources }: any) {
-  // console.log(resources);
 
+function resources({ resources }: any) {
   const searchParams = useSearchParams();
   const search = searchParams.get("popup");
   const [step, setStep] = useState<number>(0);
@@ -22,12 +21,13 @@ function resources({ resources }: any) {
 
   });
   const [selectedFileUrl, setSelectedFileUrl] = useState("");
-  // console.log(selectedFileUrl);
+
+
 
   const {
     register,
     handleSubmit,
-    watch,
+    // watch,
     formState: { errors },
   } = useForm();
   // console.log("formData", formData);
@@ -55,10 +55,11 @@ function resources({ resources }: any) {
   }
 
 
+
   return (
     <>
       <StepPopup
-        onClose={() => setStep(0)}
+        onClose={() => setStep}
         open={search === "/calculator" || search === "/workbook"}
       >
         <>
@@ -117,8 +118,11 @@ function resources({ resources }: any) {
 
         </>
       </StepPopup>
+
       <Resourcesbanner data={resources[0]} />
       <LearnToGrow data={resources[0]} setSelectedFileUrl={setSelectedFileUrl} />
+
+
     </>
   );
 }
@@ -131,3 +135,7 @@ export async function getStaticProps() {
     props: { resources },
   };
 }
+
+
+
+

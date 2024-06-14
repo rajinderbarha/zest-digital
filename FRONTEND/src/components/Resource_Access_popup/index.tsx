@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import classes from './Resource_Access_popup.module.css'
 import popup_close_icon from '../../assets/images/popup_close_icon.png'
 import Image from 'next/image'
+import Link from 'next/link'
 function Resource_Access_popup({setStep, register,handleSubmit,setFormData,formTitle}:any) {
 
 
@@ -19,10 +20,10 @@ function Resource_Access_popup({setStep, register,handleSubmit,setFormData,formT
 
                     <div className="Resource_Access_popup popup_conatiner lg:pt-[88px] md:pt-[60px] sm:pt-[50px] pt-[40px]  relative bg-white">
                         <div className="absolute lg:right-[25px] lg:top-[40px]  md:right-[28px] md:top-[28px] sm:right-[20px] sm:top-[20px] top-[20px] right-[20px] md:max-w-max max-w-[20px]">
-                            <a href='/resources'>
+                            <Link href='/resources'>
 
                             <Image src={popup_close_icon} alt='' className='lg:max-w-[20px] md:max-w-[15px] sm:max-w-[17px] max-w-[10px] ' />
-                            </a>
+                            </Link>
 
                         </div>
                         <div className="detail text-center">

@@ -157,7 +157,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import classes from "./Filters.module.css";
-import Filters_image from "../../../assets/images/Filters.png";
+// import Filters_image from "../../../assets/images/Filters.png";
 import Filters_Desktop_image from "../../../assets/images/Insights_bg_gradient.png";
 import Filters_Mobile_image from "../../../assets/images/Insights_bg_gradient_mobile.png";
 import { GoArrowRight } from "react-icons/go";
@@ -166,7 +166,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 import { FiltersType } from "../../../../lib/interface";
 
 function Filters({ data }: {data:FiltersType}) {
-  console.log("data",data)
+  // console.log("data",data)
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
   const arrayElements = data.collection.map((item) => item.hero.keywords);
@@ -201,6 +201,10 @@ function Filters({ data }: {data:FiltersType}) {
           item.hero.keywords.includes(selectedCategory)
         )
   );
+
+
+//    const slug  = filteredProducts.map((item:any)=> item.slug.current)
+// console.log(slug);
 
   return (
     <>

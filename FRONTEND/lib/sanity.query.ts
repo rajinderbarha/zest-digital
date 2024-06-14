@@ -277,6 +277,27 @@ export async function getInsightsData() {
   const data = await client.fetch(query);
   return data;
 }
+export async function getSlugOfInsightsCards() {      //for blogpage of insights  <-- prev    next -->  
+  const query = `
+*[_type == "insights"]{
+      // linkSection{
+      //   linkName,
+      //   linkUrl
+      // },
+      collection[]->{
+        "slug":slug.current,
+       hero{
+        heading,
+        // keywords[],
+        // icon
+       }
+      }
+    }
+
+  `;
+  const data = await client.fetch(query);
+  return data;
+}
 
 export async function getSingleInsightsData(slug: string) {
   const query = `
