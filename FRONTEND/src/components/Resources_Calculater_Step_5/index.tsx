@@ -21,6 +21,10 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
             }));
             sendDataToGoogleSheets();
 
+           // Save form submission state to sessionStorage and cookies
+      sessionStorage.setItem('formSubmitted', 'true');
+      document.cookie = "formSubmitted=true; path=/";
+
             const downloadUrl = downloadUrls[0];
             if (downloadUrl) {
                 const link = document.createElement('a');
@@ -31,12 +35,12 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
 
                 // Delay routing to give download window time to appear
                 setTimeout(() => {
-                    router.push("/thanks_you");
-                }, 1000); // Adjust timeout as needed
+                    router.replace("/thanks_you");
+                }, 800); 
             } else {
                 // Handle case where downloadUrl is null, undefined, or empty
-                // alert("No file available for download.");
-                router.push("/thanks_you");
+                router.replace("/thanks_you");
+                
             }
         }
     }

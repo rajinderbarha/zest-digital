@@ -5,8 +5,8 @@ import popup_person from '../../assets/images/popup_person.svg'
 import popup_percentage from '../../assets/images/percent.svg'
 import popup_pound from '../../assets/images/pound-circle.svg'
 import popup_question_mark from '../../assets/images/popup_question_mark.svg'
-import popup_percantage from '../../assets/images/popup_percantage.svg'
-import popup_euro from '../../assets/images/popup_euro.svg'
+// import popup_percantage from '../../assets/images/popup_percantage.svg'
+// import popup_euro from '../../assets/images/popup_euro.svg'
 import { GoArrowLeft } from "react-icons/go";
 import ProgressBar from '@/common/ProgressBar'
 function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
