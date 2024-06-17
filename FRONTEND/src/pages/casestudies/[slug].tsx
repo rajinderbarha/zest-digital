@@ -15,11 +15,14 @@ function singlecasestudy({ singleCasestudy }: {singleCasestudy:SingleCasestudyTy
   console.log("datad == ",data)
   return (
     <>
+    <div className="Body_padding">
+
       <Singalcasebanner data={data} />
       <SingleIntro
         hero={singleCasestudy[0].hero}
         sectionCard={singleCasestudy[0].sectionCard}
         team={singleCasestudy[0].team} Title={""}  upperTitle={""}      />
+        </div>
     </>
   );
 }

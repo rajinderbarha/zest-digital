@@ -118,9 +118,11 @@ function resources({ resources }: any) {
 
         </>
       </StepPopup>
+<div className="Body_padding">
 
       <Resourcesbanner data={resources[0]} />
       <LearnToGrow data={resources[0]} setSelectedFileUrl={setSelectedFileUrl} />
+</div>
 
 
     </>

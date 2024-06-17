@@ -310,3 +310,56 @@
         margin: 20px 0!important;
     }
 }
+
+@media only screen and (min-width:540px) and (max-width:830px){
+    .top_image ~ p{
+        font-size: 18px;
+        max-width: 150px;
+        }
+        .top_image{
+            max-width: 100px;
+            max-height: 100px;
+        }
+        .singleBox_container {
+            margin-top: -54px;
+        }
+        .SingleBox{
+            margin-top: 95px;
+        }
+        .cards_div{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .About_team {
+            padding-bottom: 100px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+}
+
+@media screen and (max-width:639px) {
+    .singleBox_container {
+        margin-top: -40px;
+    }
+    .top_image{
+        max-width: 100px;
+        /* max-height: 100px; */
+    }
+    .top_image ~ p{
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 150px;
+        }
+        .SingleBox {
+            margin-top: 64px;
+        }
+        .About_team_box_inner{
+            max-width: 214px;
+            margin: auto;
+        }
+        .About_team {
+            padding-bottom: 100px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
