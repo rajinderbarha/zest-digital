@@ -23,8 +23,10 @@ const Footer = ({ data }: { data: FooterType[] }) => {
 
       {data.map((item, index) => (
         <div key={index}>
+<div className="Body_padding">
 
           <Climate_action climate_actionImg={item.climate_actionImg} earth_img={item.earth_img} smallDescription={item.smallDescription} />
+</div>
 
           {/* <div className="mx-auto max-w-[1720px] w-full px-5 my-10 mt-[74px] mb-[110px]">
             <div
@@ -60,7 +62,8 @@ const Footer = ({ data }: { data: FooterType[] }) => {
 
 
 
-          <div className={`${classes.bg_image} bg-color-1  rounded-t-[20px] md:rounded-t-[30px] main_padding`}>
+          <div className={`${classes.bg_image} bg-color-1 rounded-t-[15px] sm:rounded-t-[20px] md:rounded-t-[30px] main_padding`}>
+          <div className="Body_padding">
             <div className="main_container   md:pt-[48px] sm:pt-[30px] pt-[20px] md:pb-[28px] sm:pb-[20px] pb-[13px]">
               <div className="flex flex-row items-center">
                 <div className="max-w-max w-full">
@@ -188,6 +191,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                 </div>
               </div>
             </div>
+          </div>
           </div>
           <div className="bg-color-1 lg:h-[90px] md:h-[80px] sm:h-[60px] sm:py-0 py-[10px] flex items-center " >
             <div className={"text-white max-w-[1720px] px-10 text-center mx-auto lg:text-[18px] md:text-[16px] min-tb:max-tb:text-[12px] sm:text-[15px] text-[10px]"}>

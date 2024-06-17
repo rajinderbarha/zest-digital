@@ -4,7 +4,13 @@ import { getSchedule_a_callData } from "../../lib/sanity.query";
 import { ScheduleCallProps } from "../../lib/interface";
 
 function schedulecall({ schedule_a_call }: ScheduleCallProps) {
-  return <ScheduleCall data={schedule_a_call[0]} />;
+  return (
+  <div className="Body_padding">
+
+  <ScheduleCall data={schedule_a_call[0]} />
+  </div>
+
+  );
 }
 
 export default schedulecall;

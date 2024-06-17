@@ -9,7 +9,11 @@ function SingletermsAndConditions({
 }: {
   singletermsdata: SingletermsAndConditionsType[];
 }) {
-  return <DigitalTerms data={singletermsdata} />;
+  return (
+    <div className="Body_padding">
+  <DigitalTerms data={singletermsdata} />
+    </div>
+  );
 }
 
 export default SingletermsAndConditions;

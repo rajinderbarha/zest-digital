@@ -6,6 +6,7 @@ import { getFooter, getHeader } from "../../lib/sanity.query";
 import { PopupProvider } from "@/context";
 import { FooterType, HeaderType } from "../../lib/interface";
 
+
 function MyApp({
   Component,
   pageProps,
@@ -14,7 +15,7 @@ function MyApp({
 }: AppProps & { headerdata: HeaderType[]; footerdata: FooterType[] }) {
   return (
     <PopupProvider>
-     
+
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
       </Layout>

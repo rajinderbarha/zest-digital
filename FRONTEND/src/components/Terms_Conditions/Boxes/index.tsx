@@ -15,7 +15,7 @@ const Boxes: React.FC<BoxesProps> = (props) => {
     const { title, smallDescription, buttonName, buttonLink } = props; // Destructure props directly
 
     return (
-        <div className={`${classes.growth_engine} ${props.shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right`} w-full mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] md:rounded-30px rounded-[20px] border border-black  bg-white text-color-1`}>
+        <div className={`${classes.growth_engine} ${props.shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right`} w-full mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] lg:rounded-30px md:rounded-[20px] rounded-[15px] border border-black  bg-white text-color-1`}>
             <div className="max-w-[446px] ">
                 <h2 className={`${classes.growth_engine_title} text-40px font-semibold `}>{title || ''}</h2>
                 <p className={`${classes.growth_engine_desc} text-3xl my-5 lg:pe-[80px] lg:mb-[45px]`}>{smallDescription || ''}</p>

@@ -101,7 +101,8 @@
 
     .growth_engine_desc {
         font-size: 25px;
-        margin: 12px auto;
+        margin-top: 12px;
+        margin-bottom: 12px;
         margin-bottom: 30px;
         line-height: 30px;
     }
@@ -129,7 +130,8 @@
 
     .growth_engine_desc {
         font-size: 20px;
-        margin: 12px auto;
+        margin-top: 12px;
+        margin-bottom: 12px ;
         margin-bottom: 20px;
         line-height: 28px;
     }
@@ -175,5 +177,36 @@
 @media only screen and (max-width:320px) {
     .growth_engine {
         padding: 20px 15px 20px 20px;
+    }
+}
+
+@media only screen and (min-width:540px) and (max-width:830px) {
+    .growth_engine_title {
+        font-size: 30px;
+    }
+    .growth_engine_desc{
+        font-size: 18px;
+    }
+    .growth_engine {
+        padding: 38px 38px 54px 38px;
+    }
+    .growth_engine_desc{
+        max-width: 370px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .growth_engine_title {
+        font-size: 18px;
+    }
+    .growth_engine_desc{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .growth_engine {
+        padding: 26px 20px 43px 20px;
+    }
+    .growth_engine_desc{
+        max-width: 206px;
     }
 }

@@ -8,7 +8,13 @@ function Termsconditions({
 }: {
   termsAndConditionData: TermsAndConditionsType[];
 }) {
-  return <Terms_Conditions data={termsAndConditionData[0]} />;
+  return (
+  <div className="Body_padding">
+
+  <Terms_Conditions data={termsAndConditionData[0]} />
+  </div>
+
+  );
 }
 
 export default Termsconditions;
