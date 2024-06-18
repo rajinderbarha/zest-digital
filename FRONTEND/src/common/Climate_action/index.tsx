@@ -12,7 +12,8 @@ function Climate_action({ climate_actionImg, earth_img, smallDescription }: Clim
 
         <div className="main_container ">
           <div
-            className={` mx-auto md:ps-14  md:pe-7 min-tb:max-tb:px-[36px] sm:px-[35px] px-[20px]   lg:py-[70px] md:py-[60px] min-tb:max-tb:py-[40px] sm:py-[50px] py-[30px] rounded-[20px] md:rounded-30px shadow-blue-right border border-black font-mono bg-white text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}
+            // className={`mx-auto md:ps-14  md:pe-7 min-tb:max-tb:px-[36px] sm:px-[35px] px-[20px]   lg:py-[70px] md:py-[60px] min-tb:max-tb:py-[40px] sm:py-[50px] py-[30px] rounded-[20px] md:rounded-30px shadow-blue-right border border-black font-mono bg-white text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}
+            className={`${classes.climate_action_content} mx-auto rounded-[15px] md:rounded-[20px] lg:rounded-30px shadow-blue-right  font-mono text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}
           >
             <div className={` md:col-span-4 flex items-center min-tb:max-tb:gap-[16px] mx-auto`}>
               <div className={`${classes.image1_w}`}>
@@ -36,8 +37,10 @@ function Climate_action({ climate_actionImg, earth_img, smallDescription }: Clim
                 />
               </div>
             </div>
-            <div className="md:col-span-8 md:ps-10 min-tb:max-tb:ps-[100px] max-w-[919px] flex items-center">
-              <p className={`${classes.growth_engine_desc}  ms-auto  lg:text-30px md:text-25px min-tb:max-tb:text-[14px] sm:text-[14px] text-[12px]`}>
+            {/* <div className={`md:col-span-8 md:ps-10 min-tb:max-tb:ps-[100px] max-w-[919px] flex items-center`}> */}
+              {/* <p className={`${classes.growth_engine_desc}  ms-auto  lg:text-30px md:text-25px min-tb:max-tb:text-[14px] sm:text-[14px] text-[12px]`}> */}
+            <div className={` md:col-span-8 md:ps-10 md:max-tb:ps-[100px] max-w-[919px] flex items-center`}>
+              <p className={`${classes.growth_engine_desc}  ms-auto `}>
                 {smallDescription}
               </p>
             </div>

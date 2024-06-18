@@ -17,7 +17,7 @@ function MyApp({
     <PopupProvider>
 
       <Layout headerdata={headerdata} footerdata={footerdata}>
-        <Component {...pageProps} />
+        <Component {...pageProps}  />
       </Layout>
     </PopupProvider>
   );

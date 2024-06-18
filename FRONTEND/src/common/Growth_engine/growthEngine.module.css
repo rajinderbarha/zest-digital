@@ -1,6 +1,8 @@
-.growth_engine{
+.growth_engine {
     width: -webkit-fill-available;
 }
+
+
 .grow_image {
 
     /* border: 1px solid black; */
@@ -26,7 +28,7 @@
 
     .growth_engine_desc {
         font-size: 25px;
-        margin-top: 25px ;
+        margin-top: 25px;
         margin-bottom: 30px;
     }
 
@@ -87,18 +89,22 @@
     .growth_engine_desc {
         font-size: 12px;
     }
+
     .growth_engine button {
         font-size: 12px;
     }
-    .growth_engine button span{
+
+    .growth_engine button span {
         font-size: 15px;
     }
 }
+
 @media only screen and (max-width:530px) {
     .grow_image {
         width: 250px;
     }
 }
+
 @media only screen and (max-width:320px) {
     .growth_engine {
         padding: 20px 15px 20px 15px;
@@ -106,23 +112,26 @@
 }
 
 @media only screen and (max-width:380px) {
-    .growth_engine button{
+    .growth_engine button {
         font-size: 11px;
         /* padding-inline-end: 3px;
         padding-inline-start: 6px; */
         padding: 3px 3px 3px 6px;
     }
 }
+
 @media only screen and (max-width:351px) {
-    .growth_engine button{
+    .growth_engine button {
         font-size: 9px;
     }
-    .growth_engine button span{
+
+    .growth_engine button span {
         font-size: 12px;
     }
 }
+
 @media only screen and (max-width:315px) {
-    .growth_engine button{
+    .growth_engine button {
         font-size: 8px;
     }
 }
@@ -133,22 +142,54 @@
     .growth_engine_title {
         font-size: 26px;
     }
-    .growth_engine_desc{
+
+    .growth_engine_desc {
         font-size: 18px;
         line-height: 23px;
     }
-    .grow_image{
-        width:262px;
+
+    .grow_image {
+        width: 262px;
         bottom: -143px;
     }
 }
-@media only screen and (max-width:815px){
-    .grow_image{
-        width:220px;
+
+@media only screen and (max-width:815px) {
+    .grow_image {
+        width: 220px;
     }
 }
-@media only screen and (max-width:715px){
-    .grow_image{
-        width:200px;
+
+@media only screen and (max-width:715px) {
+    .grow_image {
+        width: 200px;
     }
 }
+
+
+
+
+/*  bg-white rounded-full text-black   group-hover:bg-color-1 group-hover:text-white */
+
+
+.growth_engine {
+    max-width: 1345px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+
+
+@media only screen and (min-width: 1280px) {
+    .growth_engine {
+        padding: 70px 28px 70px 56px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .growth_engine {
+        padding: 50px 20px 50px 48px;
+    }
+}
+
+

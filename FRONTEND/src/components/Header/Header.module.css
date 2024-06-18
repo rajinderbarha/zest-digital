@@ -1,17 +1,18 @@
-
 .navbar {
-    /* background-color: #333; */
-    color: #fff;
-  }
-  .nav_links_hover{
-    /* border-bottom: 1px solid transparent; */
-  }
-.nav_links_hover:hover{
-/* border-bottom: 1px solid #191615; */
-/* text-decoration: underline; */
+  /* background-color: #333; */
+  color: #fff;
 }
 
-.BG_manu{
+.nav_links_hover {
+  /* border-bottom: 1px solid transparent; */
+}
+
+.nav_links_hover:hover {
+  /* border-bottom: 1px solid #191615; */
+  /* text-decoration: underline; */
+}
+
+.BG_manu {
   background-image: url(../../assets//images//Gradient_v3.png);
   background-color: #191615;
   background-position: bottom;
@@ -23,49 +24,112 @@
   color: #fff;
   background-repeat: no-repeat;
 }
-  .menuIcon{
-    max-width: max-content;
-    width: 100%;
+
+.menuIcon {
+  max-width: max-content;
+  width: 100%;
+}
+
+.menuIcon img {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: -16px;
+  right: -16px;
+  background-color: white;
+  z-index: 9999;
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+}
+
+.menuOpen {
+  top: 100%;
+  height: max-content;
+}
+
+.bars-icon {
+  width: 23px !important;
+  height: 23px;
+  right: 0 !important;
+}
+
+.custom_menu_items_class {
+  /* @apply text-white font-mono text-[26px] md:text-[22px] px-4 py-[3px] md:py-[8px] mb-[10px] hover:bg-color-1 hover:text-white rounded-[6px]  active:bg-color-1 active:text-white */
+}
+
+.custom_menu_items_class span:hover {
+  border-bottom: 2px solid #e43fa8;
+  color: #e43fa8;
+}
+
+
+/* simple: "flex gap-[40px] text-base font-mono border-black",
+      responsive1:
+        "   ",
+      responsive2:
+        " ",
+    },
+    linkclass:
+      " "*/
+
+.custom_menu_items_class {
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+@media only screen and(max-width:767px) {
+  .custom_menu_items_class {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 26px;
   }
-  
-  .menuIcon img {
-    width: 27px;
-    height: 27px; 
-    cursor: pointer;
-  }
-  
-  .menu {
+}
+
+
+@media only screen and (max-width:1080px) {
+
+  .navMenuClass {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    font-size: 18px;
     position: absolute;
-    top: 100%; 
-    left: -16px;
-    right: -16px;
-    background-color: white;
-    z-index: 9999;
-    overflow: hidden;
-    transition: height 0.5s ease;
-  }
-  
-  .menu a {
-    display: block;
-    text-decoration: none;
-  }
-  
-  .menuOpen {
-    top: 100%;
-    height: max-content; 
+    top: 90px;
+    right: -33.333333%;
+    width: 33.333333%;
+    z-index: 10;
+    background-color: #191615;
+    color: white;
+    padding-inline-start: 20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 89vh;
   }
 
-  .bars-icon {
-    width: 23px !important;
-    height: 23px;
-    right: 0!important;
+  .navlinkclass {
+    border-bottom: 1px;
+    border-color: #373737;
+    /* padding-inline-start: 8px;
+padding-inline-end: 80px; */
+    padding: 12px 80px 12px 8px;
+    color: #191615;
+  }
+
 }
 
-.custom_menu_items_class{
-  @apply text-white font-mono text-[26px] md:text-[22px] px-4 py-[3px] md:py-[8px] mb-[10px] hover:bg-color-1 hover:text-white rounded-[6px]  active:bg-color-1 active:text-white
-}
-
-.custom_menu_items_class span:hover{
-border-bottom: 2px solid #e43fa8;
-color: #e43fa8;
+@media only screen and (max-width: 609px) {
+  .navMenuClass {
+    width: auto;
+  }
 }

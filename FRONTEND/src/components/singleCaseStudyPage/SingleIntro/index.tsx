@@ -13,22 +13,23 @@ function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
   return (
     <>
       <div className="main_padding">
-        <div className={`${classes.SingleBox} bg-color-1 main_container   h-100 md:rounded-30px rounded-[20px]`}>
+        <div className={`${classes.SingleBox} bg-color-1 main_container   h-100 lg:rounded-30px md:rounded-[20px] rounded-[15px]`}>
           <div className={`${classes.singleBox_container}`}>
             <div className=" flex sm:flex-row flex-col sm:gap-0 gap-[66px] justify-evenly ">
               {hero.item.map((item: { icon: any, description: string, count: string }, index: number) => {
                 return (
                   <div className="text-center " key={index}>
 
-                    <div className={` ${classes.top_image} xl:max-w-[250px] lg:max-w-[200px]  max-w-[150px] h-full text-center sm:mb-0 mb-[20px]   mx-auto`}>
+                    <div className={` ${classes.top_image} xl:max-w-[250px] lg:max-w-[200px]  max-w-[150px] h-full text-center sm:mb-0 mb-[15px]   mx-auto`}>
                       <Image src={urlFor(item.icon).url()} alt="growth" width={250} height={250} className='w-full h-full mx-auto ' />
                     </div>
                     {item.count !== null || undefined ?
 
-                      <h2 className='xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[26px] sm:text-30px text-[20px] text-color-7 font-mono font-semibold '>{item.count}</h2> : <h2 className='xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px text-color-7 font-mono font-semibold invisible'>0</h2>
-
+                      // <h2 className={` xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[26px] sm:text-30px text-[20px] text-color-7 font-mono font-semibold `}>{item.count}</h2> : <h2 className={` xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px text-color-7 font-mono font-semibold invisible`}>0</h2>
+                      <h2 className={`${classes.image_title}  text-color-7 font-mono font-semibold `}>{item.count}</h2> : <h2 className={`${classes.image_title}  text-color-7 font-mono font-semibold invisible`}>0</h2>
                     }
-                    <p className='xl:text-30px md:text-25px sm:text-[20px] text-base font-mono font-medium text-white xl:leading-9 lg:leading-8  mx-auto 2xl:max-w-[319px] xl:max-w-[270px] lg:max-w-[215px]  max-w-[200px]  '>{item.description}</p>
+                    {/* <p className='xl:text-30px md:text-25px sm:text-[20px] text-base font-mono font-medium text-white xl:leading-9 lg:leading-8  mx-auto 2xl:max-w-[319px] xl:max-w-[270px] lg:max-w-[215px]  max-w-[200px]  '>{item.description}</p> */}
+                    <p className={`${classes.image_desc}  font-mono font-medium text-white   mx-auto 2xl:max-w-[319px] xl:max-w-[270px] lg:max-w-[215px]  max-w-[200px] `}>{item.description}</p>
                   </div>)
               })}
 
@@ -55,7 +56,8 @@ function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
         </div>
         <div className={`${classes.About_team} xl:mt-[122px] lg:mt-[110px] md:mt-[95px] min-tb:max-tb:mt-[85px] sm:mt-[80px] mt-[84px] `}>
           <div className="main_container_x">
-            <h2 className=" text-center xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[45px] text-[22px] min-tb:max-tb:mb-[40px] sm:mb-0 mb-[30px] font-mono font-semibold">
+            {/* <h2 className="text-center xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[45px] text-[22px] min-tb:max-tb:mb-[40px] sm:mb-0 mb-[30px] font-mono font-semibold"> */}
+            <h2 className={`${classes.team_heading} text-center font-mono font-semibold`}>
               {heading}
             </h2>
             <div className="">
@@ -75,10 +77,12 @@ function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
                       />
                     </div>
 
-                    <h3 className="lg:text-35px md:text-30px max-tb:text-[20px] max-tb:leading-[27px] sm:text-25px  font-semibold font-mono text-color-1 ">
+                    {/* <h3 className="lg:text-35px md:text-30px max-tb:text-[20px] max-tb:leading-[27px] sm:text-25px  font-semibold font-mono text-color-1 "> */}
+                    <h3 className={`${classes.team_person_title}  font-semibold font-mono text-color-1 `}>
                       {data.name}{" "}
                     </h3>
-                    <p className="lg:text-lg md:text-[16px] max-tb:text-[12px] max-tb:leading-[20px] sm:text-[14px]  font-normal font-mono text-color-1">
+                    {/* <p className="lg:text-lg md:text-[16px] max-tb:text-[12px] max-tb:leading-[20px] sm:text-[14px]  font-normal font-mono text-color-1"> */}
+                    <p className={`${classes.team_person_detail} lg:text-lg md:text-[16px] max-tb:text-[12px] max-tb:leading-[20px] sm:text-[14px]  font-normal font-mono text-color-1`}>
                       {data.description}
                     </p>
                   </div>
