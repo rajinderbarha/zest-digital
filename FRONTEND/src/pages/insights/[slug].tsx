@@ -62,7 +62,10 @@ function singleinsightpage({ singleInsights, slugInsightCard }: { singleInsights
 
   return (
     <>
+    <div className="Body_padding">
+
       <SingleInsightPage data={singleInsights[0]}    slugCard={slugInsightCard[0].collection} />
+    </div>
     </>
   );
 }

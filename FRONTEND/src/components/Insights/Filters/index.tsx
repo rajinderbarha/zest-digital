@@ -220,12 +220,12 @@ function Filters({ data }: {data:FiltersType}) {
             <Image
               src={Filters_Desktop_image}
               alt=""
-              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px]  min-tb:max-tb:h-[385px]  rounded-30px absolute top-0 w-full md:block hidden`}
+              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px]  min-tb:max-tb:h-[385px]  rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full md:block hidden`}
             />
             <Image
               src={Filters_Mobile_image}
               alt=""
-              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px] rounded-30px absolute top-0 w-full block md:hidden`}
+              className={`${classes.Filters_img}  bg-color-1  sm:h-auto h-[390px] rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full block md:hidden`}
             />
             <div className={`${classes.Filters_box}  relative z-10  grid lg:grid-cols-12`}>
               <div className="lg:col-span-8  min-tb:max-tb:mt-[30px]  md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
@@ -236,7 +236,7 @@ function Filters({ data }: {data:FiltersType}) {
                         index % 2 === 0
                           ? "shadow-dark-pink-left"
                           : "shadow-blue-left"
-                      } max-w-[1345px] mx-auto xl:ps-[50px] lg:ps-[45px] md:ps-[35px] ps-[20px] lg:pe-7 md:pe-[20px] pe-[20px] xl:py-[70px] lg:py-[60px] md:py-[50px] py-[30px] rounded-[20px] md:rounded-30px border border-black  bg-white text-color-1`}
+                      } max-w-[1345px] mx-auto xl:ps-[50px] lg:ps-[45px] md:ps-[35px] ps-[20px] lg:pe-7 md:pe-[20px] pe-[20px] xl:py-[70px] lg:py-[60px] md:py-[50px] py-[30px] rounded-[15px] md:rounded-[20px] lg:rounded-30px border border-black  bg-white text-color-1`}
                     >
                       <div className="sm:col-span-9">
                         <div className="flex flex-row md:gap-[15px] sm:gap-[10px] gap-[5px] flex-wrap">
@@ -282,7 +282,7 @@ function Filters({ data }: {data:FiltersType}) {
 
               <div className="lg:col-span-1 lg:order-2"></div>
               <div className="lg:col-span-3 md:px-0 pt-6 md:pt-0 px-[20px]  lg:order-3 order-1 lg:text-right ">
-                <h2 className="sm:text-30px text-[18px]  min-tb:max-tb:text-[20px]  text-white font-mono font-semibold xl:mb-10 lg:mb-[20px]  min-tb:max-tb:mb-[14px]  md:mb-[10px] mb-[8px]">
+                <h2 className="sm:text-30px text-[16px]  min-tb:max-tb:text-[20px]  text-white font-mono font-semibold xl:mb-10 lg:mb-[20px]  min-tb:max-tb:mb-[14px]  md:mb-[10px] mb-[8px]">
                   Filters
                 </h2>
                 <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3 ">

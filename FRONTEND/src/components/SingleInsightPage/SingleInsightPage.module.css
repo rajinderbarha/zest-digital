@@ -5,30 +5,33 @@
     background-color: black;
 }
 
+.Block_Content{
+    @apply 2xl:px-0 xl:px-[100px] lg:px-[70px] md:px-[40px] sm:px-[30px] px-[20px]
+}
 .Block_Content h2 {
     /* border: 1px solid black; */
-    @apply lg:text-45px md:text-40px sm:text-30px text-[25px] font-semibold font-mono bg-light-green-1 py-[2px] inline
+    @apply lg:text-45px md:text-40px min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[45px] sm:text-30px text-[22px] font-semibold font-mono bg-light-green-1 py-[2px] inline
     /* md:mb-[33px] sm:mb-[23px] mb-[13px] xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px] */
 }
 
 .Block_Content h3 {
-    @apply font-mono md:text-35px sm:text-30px text-[22px] font-semibold md:mb-[38px] mb-[13px]
+    @apply font-mono lg:text-35px md:text-[30px] min-tb:max-tb:text-[26px] sm:text-30px text-[18px] font-semibold lg:mb-[38px] md:mb-[30px] min-tb:max-tb:mb-[20px] mb-[16px]
 }
 
 .Block_Content p {
-    @apply font-lato md:text-lg sm:text-base text-[14px] md:mb-[24px] sm:mb-[16px] mb-[10px]
+    @apply font-lato md:text-lg   lg:mb-[24px] md:mb-[21px] min-tb:max-tb:mb-[19px] max-tb:text-[12px] max-tb:leading-[18px]  mb-[19px]
 }
 
 .Block_Content h3:not(:first-child)~p {
-    @apply md:ml-[40px] ml-[10px]
+    @apply lg:ml-[40px] md:ml-[20px] ml-[10px]
 }
 
 .Block_Content figure {
-    @apply xl:max-w-max md:max-w-[550px] mx-auto sm:max-w-[350px] max-w-[250px] md:my-[66px] sm:my-[40px] mt-[0px]
+    @apply xl:max-w-max md:max-w-[559px] mx-auto sm:max-w-[450px] max-w-[450px] md:my-[66px] sm:my-[40px] mt-[0px]
 }
 
 .Block_Content .wrappedH2:not(:first-child)~h3 {
-    @apply md:mt-[100px] sm:mt-[50px] mt-[30px] 
+    @apply xl:mt-[100px] lg:mt-[80px] md:mt-[50px] sm:mt-[50px] mt-[45px] min-tb:max-tb:mt-[40px]
 }
 
 .Block_Content .wrappedH2:not(:first-child)+h3 {
@@ -41,7 +44,7 @@
 
 .wrappedH2{
     /* border: 1px solid black; */
-    @apply md:pb-[33px] sm:pb-[23px] pb-[13px] xl:pt-[120px] lg:pt-[100px] md:pt-[70px] pt-[40px]
+    @apply md:pb-[33px] pb-[25px] xl:pt-[120px] lg:pt-[90px] md:pt-[60px] pt-[20px] min-tb:max-tb:pt-[52px] min-tb:max-tb:pb-[30px] 
 }
 
 
@@ -58,7 +61,7 @@
 
 @media only screen and (max-width:991px) {
     .Block_Content figure {
-        @apply my-[35px]
+        @apply mt-[64px] mb-[73px]
     }
 }
 
@@ -135,5 +138,8 @@
 @media only screen and (max-width:639px){
     .next_text_right a::after, .next_text_left a::before  {
         padding: 0 8px;
+    }
+    .Block_Content figure {
+        @apply mt-[45px] mb-[48px]
     }
 }

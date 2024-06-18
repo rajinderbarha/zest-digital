@@ -4,9 +4,11 @@
 
 .box_bg_image {
     background-image: url('../../assets/images/Gradient_v6.png');
-    background-color: black;
+    background-color: #191615;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    /* height: 660px; */
 }
 
 @media only screen and (max-width:767px) {
@@ -14,3 +16,10 @@
         /* padding: 60px 16px 0 16px; */
     }
 }
+@media only screen and (max-width:540px) and (min-width:830px) {
+    .t_and_c_cards > div{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+

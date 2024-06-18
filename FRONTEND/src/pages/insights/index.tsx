@@ -5,7 +5,7 @@ import { FiltersType } from "../../../lib/interface";
 
 const insights = ({ insights }: {insights:FiltersType[]}) => {
   return (
-    <div>
+    <div className="Body_padding">
       <Filters data={insights[0]} />
     </div>
   );

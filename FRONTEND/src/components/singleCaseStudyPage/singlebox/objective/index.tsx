@@ -16,7 +16,7 @@ function objective({ sectionCard }: {sectionCard:Card[]}) {
           >
             {index % 2 === 0 ? (
               <div
-                className={`grid md:grid-cols-2 rounded-[20px] md:rounded-30px bg-white ${classes.objective_inner} border border-color-1 shadow-blue-right md:gap-10 gap-[10px]`}
+                className={`grid md:grid-cols-2 max-tb:grid-cols-1 rounded-[20px] md:rounded-30px bg-white ${classes.objective_inner} border border-color-1 shadow-blue-right md:gap-10 max-tb:gap-[20px] gap-[10px]`}
               >
                 <div className="col-span-1">
                   <h2 className={`${classes.box_tittle}`}>
@@ -38,9 +38,9 @@ function objective({ sectionCard }: {sectionCard:Card[]}) {
               </div>
             ) : (
               <div
-                className={`grid md:grid-cols-2 ${classes.objective_inner} shadow-dark-pink-left `}
+                className={`grid md:grid-cols-2 max-tb:grid-cols-1 ${classes.objective_inner} shadow-dark-pink-left `}
               >
-                <div className="col-span-1 order-2 md:order-1 self-center">
+                <div className="col-span-1 max-tb:order-2 self-center">
                   <Image
                     src={urlFor(item.image).url()}
                     alt="case study"
@@ -49,7 +49,7 @@ function objective({ sectionCard }: {sectionCard:Card[]}) {
                     className="ms-auto"
                   />
                 </div>
-                <div className="col-span-1 md:text-right order-1 md:order-2">
+                <div className="col-span-1 text-right max-tb:order-1 ">
                   <h2 className={`${classes.box_tittle}`}>
                     {item.heading}
                   </h2>

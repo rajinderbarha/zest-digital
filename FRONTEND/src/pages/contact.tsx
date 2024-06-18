@@ -4,7 +4,12 @@ import { getContactData } from "../../lib/sanity.query";
 import { ContactType } from "../../lib/interface";
 
 function contact({ contactData }: { contactData: ContactType[] }) {
-  return <Contact data={contactData[0]} />;
+  return (
+    <div className="Body_padding">
+
+  <Contact data={contactData[0]} />
+    </div>
+  );
 }
 export default contact;
 
