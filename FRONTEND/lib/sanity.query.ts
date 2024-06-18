@@ -444,6 +444,7 @@ export function getSingleTerms(slug: string) {
   );
 }
 
+
 export async function getSingleOurServicesData(slug: string) {
   const query = `
   *[_type == "singleService"  && slug.current == "${slug}"] {
