@@ -4,54 +4,65 @@ import Singalcasebanner from "@/components/singleCaseStudyPage/singalcasebanner"
 import { getSingleCasestudyData } from "../../../lib/sanity.query";
 import { SingleCasestudyType } from "../../../lib/interface";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
-// import ErrorPage from "next/error";
+import Error from "next/error";
+import ErrorPage from 'next/error';
+import Custom404 from "../404";
 
-function singlecasestudy({ singleCasestudy }: {singleCasestudy:SingleCasestudyType[]}) {
- 
+interface SingleCaseStudyProps {
+  errorCode: number | boolean;
+  singleCasestudy: SingleCasestudyType[];
+}
 
-  // if (!singleCasestudy ) {
-  //   return <ErrorPage statusCode={404} />;
-  // }
+const SingleCaseStudy: React.FC<SingleCaseStudyProps> = ({ errorCode, singleCasestudy }) => {
+  if (errorCode) {
+    return <Custom404/>;
+  }
 
   const data = {
     title: singleCasestudy[0].Title,
     upperTitle: singleCasestudy[0].upperTitle,
   };
-  // console.log("datad == ",data)
-  return (
-    <>
-    <div className="Body_padding">
 
+  return (
+    <div className="Body_padding">
       <Singalcasebanner data={data} />
       <SingleIntro
         hero={singleCasestudy[0].hero}
         sectionCard={singleCasestudy[0].sectionCard}
-        team={singleCasestudy[0].team} Title={""}  upperTitle={""}      />
-        </div>
-    </>
+        team={singleCasestudy[0].team}
+        Title={""}
+        upperTitle={""}
+      />
+    </div>
   );
-}
+};
 
-export default singlecasestudy;
+export default SingleCaseStudy;
+
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
-
   return {
-      paths: [], //indicates that no page needs be created at build time
-      fallback: 'blocking' //indicates the type of fallback
-  }
-}
-export async function getStaticProps({ params }:{params:{slug:string}}) {
-  const { slug } = params;
-  const singleCasestudy = await getSingleCasestudyData(slug);
+    paths: [], // indicates that no page needs to be created at build time
+    fallback: 'blocking', // indicates the type of fallback
+  };
+};
 
-  // if (!singleCasestudy || singleCasestudy.length === 0 ) {
-  //   return {
-  //     notFound: true, // Return 404 page
-  //   };
-  // }
+export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
+  const { slug } = params!;
+  const singleCasestudy = await getSingleCasestudyData(slug as string);
+  
+  if (!singleCasestudy || singleCasestudy.length === 0) {
+    return {
+      props: {
+        errorCode: 404,
+        singleCasestudy: [],
+      },
+    };
+  }
+
   return {
     props: {
-      singleCasestudy
+      errorCode: false,
+      singleCasestudy,
     },
   };
-}
+};
