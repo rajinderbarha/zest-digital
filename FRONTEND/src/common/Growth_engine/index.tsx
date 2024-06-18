@@ -24,8 +24,8 @@ const Growth_engine = ({
       {has_image ? (
         <div
           data-aos="fade-up"
-          className={`${classes.growth_engine} ${shadow_right ? `shadow-dark-pink-left ` : `shadow-dark-pink-left`
-            } grid sm:grid-cols-5 max-w-[1345px] mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] lg:rounded-30px md:rounded-[20px] rounded-[15px] border border-black  bg-white text-color-1 relative`}
+          // className={`${classes.growth_engine} ${shadow_right ? `shadow-dark-pink-left ` : `shadow-dark-pink-left` } grid sm:grid-cols-5 max-w-[1345px] mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] lg:rounded-30px md:rounded-[20px] rounded-[15px] border border-black  bg-white text-color-1 relative`}
+          className={`${classes.growth_engine} ${shadow_right ? `shadow-dark-pink-left ` : `shadow-dark-pink-left` } grid sm:grid-cols-5  mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]  text-color-1 relative`}
         >
           <div className="col-span-3 min-tb:max-tb:col-span-9">
             <h2
@@ -39,10 +39,11 @@ const Growth_engine = ({
             <Link href={buttonLink} className="inline-block">
               <button
                 className="bg-color-1 group hover:bg-white max-sm:leading-normal hover:text-color-1 border border-color-1 rounded-full text-white text-base  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center"
+                
                 onClick={() => handlefileUrl(allFilesUrl)}
               >
                 {buttonName}{" "}
-                <span className="md:p-1 p-[2px] bg-white rounded-full text-black me-0 md:me-[6px] text-lg group-hover:bg-color-1 group-hover:text-white">
+                <span className="md:p-1 p-[2px] bg-white rounded-full text-black me-0 md:me-[6px] text-[17px] lg:text-[18px] group-hover:bg-color-1 group-hover:text-white">
                   <GoArrowRight />
                 </span>
               </button>
@@ -64,8 +65,8 @@ const Growth_engine = ({
       ) : (
         <div
           data-aos="fade-up"
-          className={`${classes.growth_engine} ${shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right`
-            } max-w-[1345px]  mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] lg:rounded-30px md:rounded-[20px] rounded-[15px]  border border-black  bg-white text-color-1`}
+          // className={`${classes.growth_engine} ${shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right` } max-w-[1345px]  mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] lg:rounded-30px md:rounded-[20px] rounded-[15px]  border border-black  bg-white text-color-1`}
+          className={`${classes.growth_engine} ${shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right` }   mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]   text-color-1`}
         >
           <h2 className={`${classes.growth_engine_title} text-40px font-semibold`}>
             {title}

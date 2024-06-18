@@ -42,6 +42,7 @@
 @media only screen and (min-width:1024px) and (max-width:1260px) {
     .detail_cont {
         grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 20px;
     }
 }
 
@@ -79,7 +80,137 @@
         font-size: 20px;
         line-height: 25px;
     }
+    .footer_linkheading{
+        margin-bottom: 6px;
+    }
+
 
 }
 
  /* {<Climate_action/>} */
+
+
+
+ /*  text-white max-w-[1720px] text-center mx-auto  */
+
+ .footer_linkheading{
+margin-bottom: 12px;
+ }
+ .socialimages img{
+width: 50px;
+ }
+ .footer_belowtext{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+ }
+
+
+ 
+@media only screen and (min-width: 1280px) {
+    .footer_linkheading{
+font-size: 24px;
+    }
+    .address address{
+        font-size: 18px;
+    }
+    .telephone{
+        margin-top: 13px;
+    }
+    .telephone svg{
+        font-size: 20px;
+    }
+    .telephone span{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+ .footer_linkheading{
+font-size: 22px;
+ }
+ .address address{
+    font-size: 16px;
+}
+.telephone{
+    margin-top: 10px;
+}
+.telephone svg{
+ font-size: 18px;       
+}
+.telephone span{
+ font-size: 16px;       
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+ .footer_linkheading{
+font-size: 20px;
+margin-bottom: 9px;
+ }
+ .address address{
+    font-size: 15px;
+}
+.telephone{
+    margin-top: 8px;
+}
+.telephone svg{
+ font-size: 16px;       
+}
+.telephone span{
+ font-size: 15px;       
+}
+.socialimages img{
+ width: 45px;   
+}
+.footer_belowtext{
+ font-size: 16px;   
+}
+}
+
+
+@media only screen and  (max-width: 767px) {
+   .footer_linkheading{
+font-size: 16px;
+ }
+ .address address{
+    font-size: 10px;
+}
+.telephone{
+    margin-top: 5px;
+}
+.telephone svg{
+ font-size: 11px;       
+}
+.telephone span{
+ font-size: 10px;       
+}
+.socialimages img{
+ width: 35px;   
+}
+.footer_belowtext{
+ font-size: 10px;   
+}
+}
+
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+ .footer_linkheading{
+font-size: 18px;
+margin-bottom: 4px
+ }
+ .address address{
+    font-size: 12px;
+}
+.telephone svg{
+ font-size: 15px;       
+}
+.telephone span{
+ font-size: 12px;       
+}
+.socialimages img{
+ width: 45px;   
+}
+.footer_belowtext{
+font-size: 12px;    
+}
+}

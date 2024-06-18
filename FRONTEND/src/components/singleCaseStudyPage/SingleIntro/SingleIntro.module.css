@@ -363,3 +363,149 @@
             padding-right: 0;
         }
     }
+
+
+
+
+
+    /*  lg:text-lg md:text-[16px] max-tb:text-[12px] max-tb:leading-[20px] sm:text-[14px]  font-normal font-mono text-color-1 */
+
+    .team_person_title{
+
+    }
+@media only screen and (min-width: 1280px) {
+ .image_title{
+        font-size: 45px;
+        margin-top: 10px;
+    }
+    .image_desc{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .team_heading{
+font-size: 45px;
+    }
+    .team_person_title{
+font-size: 35px;
+    }
+    .team_person_detail{
+font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+.image_title{
+       font-size: 40px; 
+       margin-top: 8px;
+    }
+    .image_desc{
+font-size: 25px;
+    }
+    .team_heading{
+font-size: 40px;
+    }
+    .team_person_title{
+
+    }
+    .team_person_detail{
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.image_title{
+        font-size: 35px;
+        margin-top: 7px;
+    }
+    .image_desc{
+font-size: 25px;
+    }
+    .team_heading{
+font-size: 35px;
+    }
+    .team_person_title{
+font-size: 30px;
+    }
+    .team_person_detail{
+font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .image_title{
+        font-size: 20px;
+    }
+    .image_desc{
+
+    }
+    .team_heading{
+font-size: 22px;
+    }
+    .team_person_title{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .team_person_detail{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (min-width:640px) and (max-width:767px) {
+
+.image_title{
+        
+    }
+    .image_desc{
+        font-size: 20px;
+    }
+    .team_heading{
+
+    }
+    .team_person_title{
+
+    }
+    .team_person_detail{
+
+    }
+}
+
+@media only screen and (max-width:639px) {
+.image_title{
+        
+    }
+    .image_desc{
+        font-size: 16px;
+    }
+    .team_heading{
+margin-bottom: 30px;
+    }
+    .team_person_title{
+
+    }
+    .team_person_detail{
+
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+.image_title{
+        font-size: 26px;
+    }
+    .image_desc{
+
+    }
+    .team_heading{
+font-size: 30px;
+line-height: 45px;
+margin-bottom: 40px;
+    }
+    .team_person_title{
+font-size: 20px;
+line-height: 27px;
+    }
+    .team_person_detail{
+font-size: 12px;
+line-height: 20px;
+    }
+}

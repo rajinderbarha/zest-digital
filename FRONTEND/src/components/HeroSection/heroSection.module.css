@@ -1,3 +1,11 @@
+.banner{
+    background-image: url('../../assets/images/Gradient_v3.png');
+background-repeat: no-repeat;
+background-size: cover;
+    background-position: bottom;
+
+}
+
 .custom_border {
     position: relative;
 }
@@ -44,21 +52,6 @@
 
 
 
-@media only screen and (min-width:769px) and (max-width:1066px) {
-    .banner_text {
-        /* font-size: 40px; */
-    }
-}
-
-@media only screen and (max-width:640px) {
-    .banner_text {
-        /* font-size: 30px; */
-    }
-
-    .banner {
-        /* padding: 30px 20px; */
-    }
-}
 
 @media only screen and (min-width:768px) {
     .marketing_agency_logo_1 {
@@ -76,17 +69,85 @@
     }
 }
 
-@media only screen and (min-width: 540px) and (max-width: 830px) {
-    .marketing_agency_logo_1 {
-        display: block;
-        max-width: 150px;
-        margin-left: auto;
-        top: 10px;
+@media only screen and (max-width:639px) {
+    .marketing_agency_logo_2 {
+        top: -18vw;
+        right: -8px;
+        display: flex;
+        justify-content: end;
+
+    }
+
+    .marketing_agency_logo_2 img {
+        width: 36vw;
+
+    }
+
+    .custom_border:before,
+    .custom_border:after {
+        margin: -1.5px;
+    }
+
+}
+
+
+.banner_text{
+    max-width: 650px;
+}
+.banner_btn button{
+    font-size: 16px;
+    width: max-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 40px;
+}
+
+@media only screen and (min-width: 1280px) {
+    .banner{
+        padding-top: 130px;
+        padding-bottom: 110px;
+    }
+    .banner_text{
+        font-size: 55px;
+        line-height: 67px;
     }
 }
 
-@media only screen and (max-width:767px) {
-    .marketing_agency_logo_1 {
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .banner{
+        padding-top: 90px;
+        padding-bottom: 86px;
+    }
+    .banner_text{
+        font-size: 50px;
+     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner{
+        padding-top: 90px;
+        padding-bottom: 150px;
+    }
+    .banner_text{
+        font-size: 40px;
+     }
+}
+
+
+@media only screen and  (max-width: 767px) {
+    .banner{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-size: contain;
+    }
+      .banner_text{
+        font-size: 22px;
+     }
+     .banner_btn button{
+        font-size: 12px;
+        height: 36px;
+     }
+     .marketing_agency_logo_1 {
         display: block;
         max-width: 110px;
         margin-left: auto;
@@ -116,30 +177,21 @@
     }
 }
 
-@media only screen and (max-width:639px) {
-    .marketing_agency_logo_2 {
-        top: -18vw;
-        right: -8px;
-        display: flex;
-        justify-content: end;
-
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+    .banner{
+        /* padding-top: 90px; */
+        padding-bottom: 43px;
     }
-
-    .marketing_agency_logo_2 img {
-        width: 36vw;
-
+    .banner_text{
+        max-width: 554px;
+        font-size: 30px;
+        line-height: 45px;
     }
-
-    .custom_border:before,
-    .custom_border:after {
-        margin: -1.5px;
+    
+    .marketing_agency_logo_1 {
+        display: block;
+        max-width: 150px;
+        margin-left: auto;
+        top: 10px;
     }
-
 }
-
-/* @media only screen and (max-width:425px){*/
-.video_class {
-    /* height: 450px; */
-}
-
-/*} */
