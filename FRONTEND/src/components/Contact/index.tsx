@@ -14,7 +14,7 @@ import instagram_white from '../../assets/images/instagram_white.svg'
 import { useRouter } from "next/navigation";
 
 function Contact({ data }: { data: ContactType }) {
-console.log(data);
+// console.log(data);
 
   const router = useRouter()
 
@@ -28,7 +28,7 @@ console.log(data);
       formObject[key] = value;
     }
 
-    console.log("Form Data--------:", formObject);
+    // console.log("Form Data--------:", formObject);
 
     // Redirect after form submission
     router.push(`/thanks_you`);

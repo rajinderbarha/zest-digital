@@ -23,6 +23,7 @@ import {FAQ} from './common/FAQ'
 import {ServicesAgencyAddress} from './Services/agencyAddress'
 import {HomePage} from './Homepage'
 import {GrowthCard} from './common/growthCard'
+import { customBlock } from './terms-and-conditions/customBlock'
 export const schemaTypes = [
   Header,
   Footer,
@@ -36,6 +37,7 @@ export const schemaTypes = [
   SingleInsights,
   TermsAndConditions,
   SingleTermsAndConditions,
+  customBlock,
   Solution,
   SingleSolution,
   Resources,

@@ -9,7 +9,7 @@ import { urlFor } from '../../../../lib/sanity.client'
 import { SingleCasestudyType } from '../../../../lib/interface';
 function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
   const { heading, profile } = team;
-  console.log("data ==", hero);
+  // console.log("data ==", hero);
   return (
     <>
       <div className="main_padding">

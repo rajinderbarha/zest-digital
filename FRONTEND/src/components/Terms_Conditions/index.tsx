@@ -4,7 +4,7 @@ import Boxes from "./Boxes";
 import { TermsAndConditionsType } from "../../../lib/interface";
 
 function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
-  console.log("----------dfata",data.cards[6])
+  // console.log("----------dfata",data.cards[6])
   if (!data) {
     return "Failed to load Terms_Conditions page data" ; // or display a placeholder message
   }

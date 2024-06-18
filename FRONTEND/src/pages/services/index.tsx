@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 
-const index = () => {
+const Index = ({ data }: any) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    const currentPath = router.asPath;
+    {currentPath === "/services" &&  router.replace("/")  }
+   
+  }, [router]);
+
   return <div>Service page</div>;
 };
 
-export default index;
+export default Index;

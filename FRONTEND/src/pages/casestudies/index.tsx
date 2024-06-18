@@ -11,7 +11,7 @@ import { getCasestudyData } from "../../../lib/sanity.query";
 import { CasestudyType } from "../../../lib/interface";
 
 function Casestudy({ Casestudy }: {Casestudy:CasestudyType[]}) {
-  console.log("lib", Casestudy);
+  // console.log("lib", Casestudy);
 
   const caseStudy = Casestudy[0]?.section
 

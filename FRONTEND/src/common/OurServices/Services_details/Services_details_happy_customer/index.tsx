@@ -6,8 +6,8 @@ import { PortableText } from "next-sanity";
 
 const Services_details_happy_customer = ({ Services_details, Slug }: { Services_details: HappyCustomer[], Slug: string }) => {
   // const isGrowthPage
-  console.log("-----data--------", Services_details);
-  console.log("-----------slug-----", Slug)
+  // console.log("-----data--------", Services_details);
+  // console.log("-----------slug-----", Slug)
 
   const isGrowthPage = Slug === "growth-marketing-services";
   
