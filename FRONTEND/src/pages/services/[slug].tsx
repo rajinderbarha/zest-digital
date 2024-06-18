@@ -55,10 +55,11 @@ import { SingleOurService } from "../../../lib/interface";
 import Services from "@/components/Services";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import ErrorPage from "next/error";
+import Custom404 from "../404";
 
-function SingleService({ singleservicedata }: { singleservicedata?: SingleOurService }) {
-  if (!singleservicedata) {
-    return <ErrorPage statusCode={404} />;
+function SingleService({ errorCode,singleservicedata }: {errorCode:any, singleservicedata: SingleOurService }) {
+  if (errorCode) {
+    return <Custom404/>;
   }
 
   return <Services data={singleservicedata} />;
@@ -73,18 +74,23 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
   };
 };
 
-export async function getStaticProps({ params }: GetStaticPropsContext<{ slug: string }>) {
+export const getStaticProps = async({ params }: GetStaticPropsContext<{ slug: string }>) => {
   const { slug } = params!;
-  const singleservicedata = await getSingleOurServicesData(slug);
+  const singleservicedata = await getSingleOurServicesData(slug as string);
 
   if (!singleservicedata || singleservicedata.length === 0) {
     return {
-      notFound: true, // Return 404 page
+      props:{
+
+        errorCode: 404,
+        singleservicedata:[]
+      }
     };
   }
 
   return {
     props: {
+      errorCode: false,
       singleservicedata: singleservicedata[0],
     },
   };

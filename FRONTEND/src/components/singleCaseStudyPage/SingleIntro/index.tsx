@@ -43,7 +43,7 @@ function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
           </div>
 
         </div>
-        <div className={` ${classes.cards_div} grid  xl:gap-[84px] lg:gap-[60px] md:gap-[40px] sm:gap-[32px] gap-[32px] max-tb:-mt-[120px]  px-[52px]`}>
+        <div className={` ${classes.cards_div} grid  xl:gap-[84px] lg:gap-[60px] md:gap-[40px] sm:gap-[32px] gap-[32px] max-tb:-mt-[120px] -mt-[137px] px-[52px]`}>
           <Objective sectionCard={sectionCard} />
 
 

@@ -52,11 +52,21 @@ import { SingleInsightsType } from "../../../lib/interface";
 
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import ErrorPage from "next/error";
+import Custom404 from "../404";
 
-function singleinsightpage({ singleInsights, slugInsightCard }: { singleInsights: SingleInsightsType[], slugInsightCard:any }) {
+
+interface SingleCaseStudyProps {
+  errorCode: number | boolean;
+  singleInsights: SingleInsightsType[];
+  slugInsightCard:any
+}
+
+
+
+const singleinsightpage: React.FC<SingleCaseStudyProps> = ({errorCode, singleInsights, slugInsightCard }) =>{
  
-  if (!singleInsights || !slugInsightCard) {
-    return <ErrorPage statusCode={404} />;
+  if (errorCode) {
+    return <Custom404/>;
   }
 
 
@@ -79,20 +89,25 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
   }
 }
 
-export async function getStaticProps({ params }: GetStaticPropsContext<{ slug: string }>) {
+export const  getStaticProps = async({ params }: GetStaticPropsContext<{ slug: string }>) =>{
   const { slug } = params!;
 
-  const singleInsights = await getSingleInsightsData(slug);
+  const singleInsights = await getSingleInsightsData(slug as string);
   const slugInsightCard = await getSlugOfInsightsCards()
 
   if (!singleInsights || singleInsights.length === 0  || !slugInsightCard) {
     return {
-      notFound: true, // Return 404 page
+      props: {
+      errorCode: 404,
+      singleInsights:[],
+      slugInsightCard:[]
+    },
     };
   }
 
   return {
     props: {
+      errorCode: false,
       singleInsights,
       slugInsightCard
     },
