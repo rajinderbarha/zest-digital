@@ -210,7 +210,7 @@ function Filters({ data }: {data:FiltersType}) {
     <>
       <div className="main_padding">
         <div className="main_container">
-          <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] min-tb:max-tb:text-30px  min-tb:max-tb:my-[50px  ] md:my-[60px] my-[38px] xl:text-55px text-color-1 lg:text-50px md:text-40px text-[22px] sm:text-35px">
+          <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] min-tb:max-tb:text-30px  min-tb:max-tb:my-[50px] md:my-[60px] my-[38px] xl:text-55px text-color-1 lg:text-50px md:text-40px text-[22px] sm:text-35px">
             {data.heading}
           </h2>
         </div>

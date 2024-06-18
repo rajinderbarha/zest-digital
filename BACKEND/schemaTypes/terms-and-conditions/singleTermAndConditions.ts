@@ -34,7 +34,14 @@ export const SingleTermsAndConditions = defineType({
             title: 'Content',
             type: 'array',
             of: [
-              {type: 'block'},
+              {
+                type: 'block',
+               
+
+              },
+              // {
+              //   type: 'customBlock', // Reference to a custom block type
+              // },
             ],
           },
         

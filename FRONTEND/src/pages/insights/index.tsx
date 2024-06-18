@@ -3,7 +3,7 @@ import React from "react";
 import { getInsightsData } from "../../../lib/sanity.query";
 import { FiltersType } from "../../../lib/interface";
 
-const filters = ({ insights }: {insights:FiltersType[]}) => {
+const insights = ({ insights }: {insights:FiltersType[]}) => {
   return (
     <div className="Body_padding">
       <Filters data={insights[0]} />
@@ -11,7 +11,7 @@ const filters = ({ insights }: {insights:FiltersType[]}) => {
   );
 };
 
-export default filters;
+export default insights;
 
 export async function getStaticProps() {
   const insights = await getInsightsData();
