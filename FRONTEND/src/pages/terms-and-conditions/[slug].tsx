@@ -3,7 +3,7 @@ import React from "react";
 import { getSingleTerms } from "../../../lib/sanity.query";
 import { SingletermsAndConditionsType } from "../../../lib/interface";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
-import ErrorPage from "next/error";
+// import ErrorPage from "next/error";
 import Custom404 from "../404";
 
 

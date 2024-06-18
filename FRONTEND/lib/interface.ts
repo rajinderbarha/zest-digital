@@ -478,6 +478,9 @@ export interface FiltersType {
   linkSectionIcon: any;
 }
 export interface SingleInsightsType {
+  title: ReactNode;
+  banner: any;
+  smallDescription: ReactNode;
   content: any;
   hero: {
     grow_down: any;

@@ -35,16 +35,17 @@ console.log("ooooooooo1111111111111111111111111oo-------------oo",data);
   // }, [data]); // Run the effect whenever 'data' changes
 
   const WrappedH2 = ({ children }:any) => {
-    return <div className={classes.wrappedH2}>{children}</div>;
+    return <div  className={classes.wrappedH2}>{children}</div>;
   };
 
   const renderCustomBlock = (blocks:any) => {
     return blocks.map((block:any, index:number) => {
       if (block._type === 'block' && block.style === 'h2') {
-        return <WrappedH2 key={index}><h2>{block.children[0].text}</h2></WrappedH2>;
+        return <WrappedH2 key={index}><h2 key={index}>{block.children[0].text}</h2></WrappedH2>;
       }
       // return BlockContent.defaultSerializers.types.block({ node: block });
       return <BlockContent
+      key={index}
       blocks={block}
       projectId={"dexthfb7"}
       dataset={"production"}
