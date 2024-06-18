@@ -55,15 +55,15 @@ import React from "react";
 import { getGrowthData, getSolutionData } from "../../../lib/sanity.query";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import ErrorPage from "next/error";
+import Custom404 from "../404";
 
-function growthengine({ growth, card }: any) {
+function growthengine({errorCode, growth, card }: any) {
   // console.log("data= = =",card);
 
 
-  if(!growth || !card){
-    return <ErrorPage  statusCode={404}/>
+  if (errorCode) {
+    return <Custom404/>;
   }
-
 
   return (
     <GrowthEnginePage
@@ -86,10 +86,10 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 }
 
 
-export async function getStaticProps({params}:GetStaticPropsContext<{slug:string}>) {
+export const getStaticProps = async({params}:GetStaticPropsContext<{slug:string}>) =>{
   const { slug } = params!;
 
-  const growth = await getGrowthData(slug);
+  const growth = await getGrowthData(slug as string);
   const solution = await getSolutionData();
   const card = solution[0].growth.filter(
     (a: any) => a.slug.current !== slug && a
@@ -97,12 +97,18 @@ export async function getStaticProps({params}:GetStaticPropsContext<{slug:string
 
   if(!growth || growth.length === 0 || !solution){
     return{
-      notFound: true, // Return 404 page
+      props:{
+
+        errorCode: 404,
+        growth:[],
+        solution:[]
+      }
     }
   }
 
   return {
     props: {
+      errorCode: false,
       growth,
       card,
     },
