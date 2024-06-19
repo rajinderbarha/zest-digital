@@ -6,7 +6,13 @@
 .banner_image{
    max-width: 200px;
    margin-left: auto;
+   padding: 0;
 }
+}
+@media screen and (min-width:830px) {
+  .image_div{
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width:1024px) {
@@ -18,7 +24,7 @@
     .banner_image{
        max-width: 150px;
        margin-left: auto;
-       margin-top: -40PX;
+       margin-top: -40px;
     }
     .Solution_Banner {
         padding: 55px 16px ;
@@ -42,3 +48,75 @@
         padding: 40px 16px 50px 16px;
     }
 }
+
+
+
+
+/* Base styles */
+.banner_title {
+    font-size: 22px; /* default font size */
+    padding: 4px; /* uniform padding for all sizes */
+  }
+  .banner_desc {
+    font-size: 22px; /* default font size */
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+
+
+  /* Small screens, specifically for min-width: 640px */
+  @media (min-width: 640px) {
+    .banner_title {
+      font-size: 27px;
+    }
+    .banner_desc {
+      font-size: 30px;
+      margin-top: 21px;
+    }
+  }
+  
+  /* Medium screens */
+  @media (min-width: 768px) {
+    .banner_title {
+      font-size: 35px;
+    }
+    .banner_desc {
+      font-size: 38px;
+      margin-top: 36px;
+    }
+  }
+  
+  /* Between 540px and 830px */
+  @media (min-width: 540px) and (max-width: 830px) {
+    .banner_title {
+      font-size: 25px;
+      padding-left: 8px; /* setting horizontal padding */
+      padding-right: 8px;
+    }
+    .banner_desc {
+      font-size: 30px;
+      max-width: 533px;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .banner_title {
+      font-size: 40px;
+    }
+    .banner_desc {
+      font-size: 47px;
+    }
+  }
+  
+  /* Extra large screens */
+  @media (min-width: 1280px) {
+    .banner_title {
+      font-size: 45px;
+    }
+    .banner_desc {
+      font-size: 55px;
+    }
+  }
+  

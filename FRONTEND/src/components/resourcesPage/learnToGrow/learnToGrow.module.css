@@ -13,7 +13,7 @@
 
 @media only screen and (min-width:768px) and (max-width:1024px){
     .SingleIntro{
-        margin-top: 90px;
+        margin-top: 100px;
     }
 }
 
@@ -123,6 +123,132 @@
       height: 130px;
     }
     .SingleIntro{
-      margin-top: 50px;
+      margin-top: 90px;
   }
   }
+
+
+
+
+
+.learnToGrow_title, .tools_title {
+  font-size: 22px; 
+}
+
+.learnToGrow_desc {
+  font-size: 12px; 
+  padding-top: 19px;
+  padding-bottom: 15px;
+}
+
+.tools_title {
+  font-size: 20px; 
+}
+
+.cards_div {
+  max-width: 1355px;
+  margin-top: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  gap: 20px;
+}
+.resources_logo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 640px) {
+  .learnToGrow_title, .tools_title {
+    font-size: 30px;
+  }
+  .learnToGrow_desc {
+    font-size: 16px; 
+    padding-top: 31px; 
+  }
+  .cards_div {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+  }
+  .resources_logo {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .learnToGrow_title {
+    font-size: 35px;
+  }
+  .tools_title {
+    font-size: 30px;
+  }
+  .learnToGrow_desc {
+    font-size: 25px;
+    padding-top: 38px; 
+    padding-bottom: 40px; 
+  }
+  .cards_div {
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 40px;
+    margin-top: 80px;
+  }
+  .resources_logo {
+    margin-top: 120px;
+    margin-bottom: 110px;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+  .learnToGrow_title, .tools_title {
+    font-size: 30px;
+  }
+  .learnToGrow_desc {
+    font-size: 16px; 
+    padding-bottom: 0; 
+    padding-top: 31px; 
+  }
+  .cards_div {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 47px;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 639px) {
+  .cards_div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .learnToGrow_title {
+    font-size: 40px;
+  }
+  .tools_title {
+    font-size: 40px;
+  }
+  .learnToGrow_desc {
+    font-size: 30px; 
+  }
+  .cards_div {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .resources_logo {
+    margin-top: 170px;
+    margin-bottom: 160px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .learnToGrow_title, .tools_title {
+    font-size: 45px;
+  }
+  .resources_logo {
+    margin-top: 200px;
+    margin-bottom: 190px;
+  }
+}

@@ -1,9 +1,57 @@
 /* .Resourcesbanner {
-    padding: 96px 16px 0 16px;
+    padding: 96px 16px 0 16px;banner_text
 }
 
-@media only screen and (max-width:767px) {
+@media  only screen and (max-width:767px) {
     .Resourcesbanner {
         padding: 60px 16px 0 16px;
     }
 } */
+
+
+/* Base styles */
+.banner_text {
+    font-size: 22px; /* default font size */
+    margin-bottom: 20px;
+    max-width: 442px;
+  }
+  
+  /* Small screens, specifically for min-width: 640px */
+  @media only screen and  (min-width: 640px) {
+    .banner_text {
+      font-size: 30px;
+    }
+  }
+  
+  /* Medium screens */
+  @media only screen and  (min-width: 768px) {
+    .banner_text {
+      font-size: 42px;
+      max-width: 716px;
+    }
+  }
+  
+  /* Large screens */
+  @media only screen and  (min-width: 1024px) {
+    .banner_text {
+      font-size: 50px;
+      max-width: 952px;
+    }
+  }
+  
+  /* Between 540px and 830px */
+  @media only screen and  (min-width: 540px) and (max-width: 830px) {
+    .banner_text {
+      font-size: 30px;
+      max-width: 516px;
+    }
+  }
+  
+  /* Extra large screens */
+  @media only screen and  (min-width: 1280px) {
+    .banner_text {
+      font-size: 55px;
+      max-width: 1050px;
+    }
+  }
+  
