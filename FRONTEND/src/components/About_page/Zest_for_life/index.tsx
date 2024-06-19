@@ -17,8 +17,10 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
                             <div key={`${item}_Zest_for_life`} >
                                 <div className="grid grid-cols-12 ">
                                     <div className="min-tb:col-span-9 col-span-7">
-                                        <h1 className='font-mono  font-semibold xl:text-55px lg:text-[50px] md:text-40px sm:text-[30px] min-tb:max-tb:text-[30px] text-[22px] xl:mb-[50px] lg:mb-[40px] md:mb-[30px] min-tb:max-tb:mb-[10px] sm:mb-[10px] mb-[5px] text-color-1'>{item.lifeSection.title}</h1>
-                                        <p className=' font-mono md:max-w-[986px] min-tb:max-tb:max-w-[400px] font-semibold lg:text-35px md:text-30px min-tb:max-tb:text-[20px] sm:text-20px text-[14px] mb:mb-0 sm:mb-5 mb-[5px] text-color-1'>{item.lifeSection.description}</p>
+                                        {/* <h1 className='font-mono  font-semibold xl:text-55px lg:text-[50px] md:text-40px sm:text-[30px] min-tb:max-tb:text-[30px] text-[22px] xl:mb-[50px] lg:mb-[40px] md:mb-[30px] min-tb:max-tb:mb-[10px] sm:mb-[10px] mb-[5px] text-color-1'>{item.lifeSection.title}</h1> */}
+                                        <h1 className={`${classes.zest_for_life_title} font-mono  font-semibold  text-color-1`}>{item.lifeSection.title}</h1>
+                                        {/* <p className=' font-mono md:max-w-[986px] min-tb:max-tb:max-w-[400px] font-semibold lg:text-35px md:text-30px min-tb:max-tb:text-[20px] sm:text-20px text-[14px] mb:mb-0 sm:mb-5 mb-[5px] text-color-1'>{item.lifeSection.description}</p> */}
+                                        <p className={`${classes.zest_for_life_desc} font-mono md:max-w-[986px] min-tb:max-tb:max-w-[400px] font-semiboldmb:mb-0 sm:mb-5 mb-[5px] text-color-1`}>{item.lifeSection.description}</p>
                                         {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
                                     </div>
                                     <div className="min-tb:col-span-3  col-span-5">
@@ -32,8 +34,9 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
                                         if (path == 0) {
                                             return (
                                                 <div className={`${classes.zest_for_life_facility} Zest_for_life_facility_image text-center md:max-w-fit max-w-[270px] mx-auto`} key={`${path}__Zest_for_life_path_0 `}>
-                                                    <h2 className='font-mono font-semibold xl:text-45px lg:text-40px md:text-35px  text-[18px] sm:text-25px  xl:mb-[70px] lg:mb-[50px] md:mb-[30px] max-tb:mb-[15px]   text-color-1'>{cardItem.title}</h2>
-                                                    <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black md:rounded-30px rounded-[20px] mx-auto ' alt="" />
+                                                    {/* <h2 className='font-mono font-semibold xl:text-45px lg:text-40px md:text-35px  text-[18px] sm:text-25px  xl:mb-[70px] lg:mb-[50px] md:mb-[30px] max-tb:mb-[15px]   text-color-1'>{cardItem.title}</h2> */}
+                                                    <h2 className={`${classes.image_heading} font-mono font-semibold    text-color-1`}>{cardItem.title}</h2>
+                                                    <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black md:rounded-30px rounded-[20px] rounded- mx-auto ' alt="" />
                                                     <p className='text-[16px] font-mono  font-normal lg:mt-8 md:mt-6 mt-4  md:px-8 max-w-[440px] mx-auto text-color-1'>{cardItem.description}</p>
                                                 </div>
                                             )
@@ -42,7 +45,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
                                             return (
 
                                                 <div className={`${classes.zest_for_life_facility} Zest_for_life_facility_image md:mt-20  md:max-w-fit text-center  max-w-[270px] mx-auto`} key={`${path}__Zest_for_life_path_1`}>
-                                                    <h2 className='font-mono font-semibold xl:text-45px lg:text-40px md:text-35px  text-[18px] sm:text-25px xl:mb-[70px] lg:mb-[50px] md:mb-[30px] max-tb:mb-[15px]   text-color-1'>{cardItem.title}</h2>
+                                                    <h2 className={`${classes.image_heading} font-mono font-semibold   text-color-1`}>{cardItem.title}</h2>
                                                     <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black md:rounded-30px rounded-[20px] mx-auto' alt="" />
                                                     <p className='text-[16px] font-mono  font-normal lg:mt-8 md:mt-6 mt-4 md:px-8 max-w-[440px] mx-auto text-color-1' >{cardItem.description}</p>
                                                 </div>
@@ -52,7 +55,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
                                             return (
 
                                                 <div className={`${classes.zest_for_life_facility} Zest_for_life_facility_image  md:max-w-fit text-center md:mt-40  max-w-[270px] mx-auto`} key={`${path}__Zest_for_life_path`}>
-                                                    <h2 className='font-mono font-semibold xl:text-45px lg:text-40px md:text-35px  text-[18px] sm:text-25px xl:mb-[70px] lg:mb-[50px] md:mb-[30px] max-tb:mb-[15px]   text-color-1'>{cardItem.title}</h2>
+                                                    <h2 className={`${classes.image_heading}font-mono font-semibold  text-color-1`}>{cardItem.title}</h2>
                                                     <Image src={urlFor(cardItem.image).url()} width={440} height={440} className='shadow-blue-right border border-black md:rounded-30px rounded-[20px] mx-auto' alt="" />
                                                     <p className='text-[16px] font-mono  font-normal lg:mt-8 md:mt-6 mt-4 md:px-8 max-w-[440px] mx-auto text-color-1'>{cardItem.description}</p>
                                                 </div>

@@ -8,6 +8,13 @@
 .Block_Content{
     @apply 2xl:px-0 xl:px-[100px] lg:px-[70px] md:px-[40px] sm:px-[30px] px-[20px]
 }
+.Block_Content ol{
+    @apply list-decimal 
+}
+
+.Block_Content ul{
+    @apply list-disc
+}
 .Block_Content h2 {
     /* border: 1px solid black; */
     @apply lg:text-45px md:text-40px min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[45px] sm:text-30px text-[22px] font-semibold font-mono bg-light-green-1 py-[2px] inline

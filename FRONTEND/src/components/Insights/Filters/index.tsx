@@ -210,7 +210,8 @@ function Filters({ data }: {data:FiltersType}) {
     <>
       <div className="main_padding">
         <div className="main_container">
-          <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] min-tb:max-tb:text-30px  min-tb:max-tb:my-[50px] md:my-[60px] my-[38px] xl:text-55px text-color-1 lg:text-50px md:text-40px text-[22px] sm:text-35px">
+          {/* <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] min-tb:max-tb:text-30px  min-tb:max-tb:my-[50px] md:my-[60px] my-[38px] xl:text-55px text-color-1 lg:text-50px md:text-40px text-[22px] sm:text-35px"> */}
+          <h2 className={`${classes.filter_heading} font-mono font-semibold  text-color-1 `}>
             {data.heading}
           </h2>
         </div>
@@ -236,7 +237,8 @@ function Filters({ data }: {data:FiltersType}) {
                         index % 2 === 0
                           ? "shadow-dark-pink-left"
                           : "shadow-blue-left"
-                      } max-w-[1345px] mx-auto xl:ps-[50px] lg:ps-[45px] md:ps-[35px] ps-[20px] lg:pe-7 md:pe-[20px] pe-[20px] xl:py-[70px] lg:py-[60px] md:py-[50px] py-[30px] rounded-[15px] md:rounded-[20px] lg:rounded-30px border border-black  bg-white text-color-1`}
+                      // } max-w-[1345px] mx-auto xl:ps-[50px] lg:ps-[45px] md:ps-[35px] ps-[20px] lg:pe-[28px] md:pe-[20px] pe-[20px] xl:py-[70px] lg:py-[60px] md:py-[50px] py-[30px] rounded-[15px] md:rounded-[20px] lg:rounded-30px border border-black  bg-white text-color-1`}
+                      } max-w-[1345px] mx-auto rounded-[15px] md:rounded-[20px] lg:rounded-30px border border-black  bg-white text-color-1`}
                     >
                       <div className="sm:col-span-9">
                         <div className="flex flex-row md:gap-[15px] sm:gap-[10px] gap-[5px] flex-wrap">
@@ -282,7 +284,8 @@ function Filters({ data }: {data:FiltersType}) {
 
               <div className="lg:col-span-1 lg:order-2"></div>
               <div className="lg:col-span-3 md:px-0 pt-6 md:pt-0 px-[20px]  lg:order-3 order-1 lg:text-right ">
-                <h2 className="sm:text-30px text-[16px]  min-tb:max-tb:text-[20px]  text-white font-mono font-semibold xl:mb-10 lg:mb-[20px]  min-tb:max-tb:mb-[14px]  md:mb-[10px] mb-[8px]">
+                {/* <h2 className="sm:text-30px text-[16px]  min-tb:max-tb:text-[20px]  text-white font-mono font-semibold xl:mb-10 lg:mb-[20px]  min-tb:max-tb:mb-[14px]  md:mb-[10px] mb-[8px]"> */}
+                <h2 className={`${classes.filter_text}  text-white font-mono font-semibold `}>
                   Filters
                 </h2>
                 <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3 ">
@@ -328,9 +331,10 @@ function Filters({ data }: {data:FiltersType}) {
               </Link>
             </div>
           </div> */}
-        <div className={` bg-black rounded-[20px] md:rounded-30px xl:mb-[100px]  min-tb:max-tb:mt-[23px]  min-tb:max-tb:mb-[100px] lg:mb-[100px] md:mb-[65px] mb-[120px] md:mt-[100px] sm:mt-[50px] mt-[45px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px]  relative grid grid-cols-3`}>
+        {/* <div className={` bg-black rounded-[15px] md:rounded-[20px] lg:rounded-30px xl:mb-[100px]  min-tb:max-tb:mt-[23px]  min-tb:max-tb:mb-[100px] lg:mb-[100px] md:mb-[65px] mb-[120px] md:mt-[100px] sm:mt-[50px] mt-[45px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px]  relative grid grid-cols-3`}> */}
+        <div className={`${classes.navigate_box} bg-black rounded-[15px] md:rounded-[20px] lg:rounded-30px  relative grid grid-cols-3`}>
           <div className={`${classes.next_text_left} relative self-center  z-10`}>
-              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light invisible text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+              <Link href={data.linkSection.linkUrl} className={`${classes.navigate_links} inline border-b border-color-6  font-light invisible    text-white`}>
                 {" "}
                 {data.linkSection.linkName}
               </Link>
@@ -348,7 +352,8 @@ function Filters({ data }: {data:FiltersType}) {
             <div className={`${classes.next_text_right} relative ms-auto leading-[13px] mb-[2px] self-center  z-10`}>
               
               
-              <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[16px] lg:text-[16px] xl:text-[18px]   text-white`}>
+              {/* <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[16px] lg:text-[16px] xl:text-[18px]   text-white`}> */}
+              <Link href={data.linkSection.linkUrl} className={`${classes.navigate_links} inline border-b border-color-6  font-light     text-white`}>
                 {" "}
                 {data.linkSection.linkName}
               </Link>
