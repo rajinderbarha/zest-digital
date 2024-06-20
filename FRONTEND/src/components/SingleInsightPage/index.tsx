@@ -129,7 +129,7 @@ const nextPost = slugCard[currentPost+1]
              
                 
           {prevPost?
-              <Link href={prevPost.slug} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]   text-white`}>
+              <Link href={prevPost.slug} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px]  text-white`}>
                 {" "}
                 {prevPost.hero.heading}
               </Link>  : 

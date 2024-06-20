@@ -118,3 +118,152 @@
     }
 
 }
+
+
+
+
+
+
+.service_box {
+    padding-top: 39px;
+    padding-bottom: 102px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .service_heading {
+    font-size: 22px;
+  }
+  
+  .services {
+    margin-top: 40px;
+  }
+  
+  .sub_heading {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .sub_desc {
+    font-size: 12px;
+  }
+  
+  /* Small screens, specifically for min-width: 640px */
+  @media (min-width: 640px) {
+    .service_box {
+      padding-top: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .service_heading {
+      font-size: 30px;
+    }
+  
+    .services {
+      margin-top: 60px;
+    }
+  
+    .sub_heading {
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+  
+    .sub_desc {
+      font-size: 16px;
+    }
+  }
+
+  
+  /* Medium screens */
+  @media (min-width: 768px) {
+    .service_box {
+      padding-top: 70px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .service_heading {
+      font-size: 35px;
+    }
+  
+    .services {
+      margin-top: 80px;
+    }
+  
+    .sub_heading {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  
+    .sub_desc {
+      font-size: 18px;
+    }
+  }
+  
+  /* Between 540px and 830px */
+  @media (min-width: 540px) and (max-width: 830px) {
+    .service_box {
+      padding-top: 48px;
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  
+    .service_heading {
+      font-size: 30px;
+    }
+  
+    .services {
+      margin-top: 70px;
+    }
+  
+    .sub_heading {
+      font-size: 26px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .service_box {
+      padding-top: 90px;
+      padding-bottom: 130px;
+    }
+  
+    .service_heading {
+      font-size: 40px;
+    }
+  
+    .services {
+      margin-top: 100px;
+    }
+  
+    .sub_heading {
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+  }
+  
+  /* Extra large screens */
+  @media (min-width: 1280px) {
+    .service_box {
+      padding-top: 114px;
+      padding-bottom: 165px;
+    }
+  
+    .service_heading {
+      font-size: 45px;
+    }
+  
+    .services {
+      margin-top: 123px;
+    }
+  
+    .sub_heading {
+      margin-bottom: 28px;
+    }
+  }
+  
