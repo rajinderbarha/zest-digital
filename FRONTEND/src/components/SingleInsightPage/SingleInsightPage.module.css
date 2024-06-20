@@ -13,8 +13,24 @@
 }
 
 .Block_Content ul{
-    @apply list-disc
+    @apply list-disc 
 }
+
+.Block_Content ul, .Block_Content ol{
+    @apply md:mb-[10px] mb-[3px] font-lato md:text-lg  max-tb:text-[12px]  max-tb:leading-[18px] list-inside
+}
+.Block_Content h3:not(:first-child)~ul {
+    @apply lg:ml-[40px] md:ml-[20px] ml-[10px]
+}
+
+.Block_Content h3:not(:first-child)~ol {
+    @apply lg:ml-[40px] md:ml-[20px] ml-[10px]
+}
+
+.Block_Content ul + p, .Block_Content ol + p {
+    @apply lg:mt-[14px] md:mt-[11px] min-tb:max-tb:mt-[9px] mt-[9px] 
+}
+
 .Block_Content h2 {
     /* border: 1px solid black; */
     @apply lg:text-45px md:text-40px min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[45px] sm:text-30px text-[22px] font-semibold font-mono bg-light-green-1 py-[2px] inline

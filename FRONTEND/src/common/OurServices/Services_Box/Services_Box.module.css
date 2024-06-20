@@ -37,12 +37,7 @@
         background-image: url('../../../assets/images/Services_bg_gradient_mobile.png');  
     }
 }
-@media only screen and (max-width:639px) {
-    .SingleIntro {
-        margin-top: 120px;
 
-    }
-}
 
 
 @media only screen and (min-width: 1775px) {
@@ -148,5 +143,209 @@
     .cards_div{
         padding-left: 40px;
         padding-right: 40px;
+    }
+}
+
+
+
+
+
+
+/* Base styles for .SingleIntro */
+.SingleIntro {
+    margin-top: 160px; 
+  }
+  
+  /* Base styles for .image_title */
+  .image_title {
+    font-size: 20px; 
+    margin-top: 8px; 
+  }
+  
+  /* Base styles for .text_div */
+  .text_div {
+    margin-top: 25px; 
+    margin-bottom: 45px; 
+  }
+  
+  /* Base styles for .box_heading */
+  .box_heading {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px; 
+    line-height: normal;
+  }
+  
+  /* Base styles for .below_text_div */
+  .below_text_div {
+    margin-bottom: 55px; 
+    padding-left: 16px; 
+    padding-right: 16px;
+    font-size: 12px; 
+    /* line-height: normal; default line height */
+  }
+  
+  /* Base styles for .below_text */
+  .below_text {
+    margin-bottom: 15px; 
+  }
+  
+  /* Small screens, specifically for min-width: 640px */
+  @media (min-width: 640px) {
+    .SingleIntro {
+      margin-top: 140px; 
+    }
+  
+    .image_title {
+      margin-top: 0; 
+    }
+  
+    .text_div {
+      margin-top: 45px; 
+      margin-bottom: 50px; 
+    }
+  
+    .box_heading {
+      padding-left: 50px; 
+      padding-right: 50px;
+      font-size: 26px; 
+      /* line-height: 34px; adjusted line height for small screens */
+    }
+  
+    .below_text_div {
+      margin-bottom: 65px; 
+      padding-left: 40px; 
+      padding-right: 40px;
+      font-size: 16px; 
+      /* line-height: 20px; adjusted line height for small screens */ 
+    }
+  
+    .below_text {
+      margin-bottom: 25px; 
+    }
+  }
+  
+  /* Medium screens */
+  @media (min-width: 768px) {
+    .SingleIntro {
+      margin-top: 150px; 
+    }
+  
+    .image_title {
+      font-size: 30px; 
+    }
+  
+    .text_div {
+      margin-top: 200px; 
+      margin-bottom: 60px; 
+    }
+  
+    .box_heading {
+      font-size: 35px; /* adjusted font size for medium screens */
+    }
+  
+    .below_text_div {
+      margin-bottom: 170px;
+      padding-left: 48px;
+      padding-right: 48px;
+      font-size: 25px; 
+    }
+  
+    .below_text {
+      margin-bottom: 40px; 
+    }
+  }
+  
+  /* Between 540px and 830px */
+  @media (min-width: 540px) and (max-width: 830px) {
+    .SingleIntro {
+      margin-top: 160px;
+    }
+  
+    .image_title {
+      font-size: 20px; 
+    }
+  
+    .text_div {
+      margin-top: 138px; 
+      margin-bottom: 30px; 
+    }
+  
+    .box_heading {
+      padding-left: 40px; 
+      padding-right: 40px;
+      font-size: 26px;
+      line-height: 34px; 
+    }
+  
+    .below_text_div {
+      margin-bottom: 85px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .below_text {
+      margin-bottom: 20px; 
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .SingleIntro {
+      margin-top: 180px;
+    }
+  
+    .image_title {
+      font-size: 38px; 
+    }
+  
+    .text_div {
+      margin-top: 280px; 
+      margin-bottom: 65px;
+    }
+  
+    .box_heading {
+      font-size: 40px;
+    }
+  
+    .below_text_div {
+      font-size: 30px; 
+    }
+  
+    .below_text {
+      margin-bottom: 50px;
+    }
+  }
+  
+  /* Extra large screens */
+  @media (min-width: 1280px) {
+    .SingleIntro {
+      margin-top: 200px; 
+    }
+  
+    .image_title {
+      font-size: 45px; 
+    }
+  
+    .text_div {
+      margin-top: 321px; 
+      margin-bottom: 80px;
+    }
+  
+    .box_heading {
+      font-size: 45px; 
+      line-height: 58px;
+    }
+  
+    .below_text {
+      margin-bottom: 65px;
+    }
+  }
+  @media only screen and (max-width:639px) {
+    .SingleIntro {
+        margin-top: 120px;
+
     }
 }
