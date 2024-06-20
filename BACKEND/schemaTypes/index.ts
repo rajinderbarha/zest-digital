@@ -9,7 +9,7 @@ import {SingleCaseStudy} from './caseStudy/singleCaseStudy'
 import {CaseStudy} from './caseStudy'
 import {Solution} from './solution'
 import {Insights} from './insights'
-import {SingleInsights} from './insights/singleInsights'
+import {SingleInsights, video} from './insights/singleInsights'
 import {Resources} from './resources'
 import {BrandList} from './common/brandList'
 import {Schedule_a_call} from './Schedule_a_call'
@@ -50,4 +50,5 @@ export const schemaTypes = [
   ServicesAgencyAddress,
   FAQ,
   GrowthCard,
+  video
 ]
