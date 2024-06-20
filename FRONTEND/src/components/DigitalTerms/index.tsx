@@ -32,23 +32,13 @@ import React, { useEffect } from "react";
 import classes from "./DigitalTerms.module.css";
 import { PortableText } from "next-sanity";
 import { SingletermsAndConditionsType } from "../../../lib/interface";
+import { handleHashChange,generateId } from "@/common/ScrollByID";
+
 
 function DigitalTerms({ data }: { data: SingletermsAndConditionsType[] }) {
   // console.log(data);
   
   useEffect(() => {
-    const handleHashChange = () => {
-      const { hash } = window.location;
-      // console.log(hash);
-      
-      if (hash) {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    };
-
     window.addEventListener("hashchange", handleHashChange);
     handleHashChange();
 
@@ -57,18 +47,16 @@ function DigitalTerms({ data }: { data: SingletermsAndConditionsType[] }) {
     };
   }, []);
 
-  const generateId = (text: string) => {
-    return text.toLowerCase().replace(/\s+/g, "-");
-  };
+  
 
-  const renderCustomBlock = (blocks: any) => {
+const renderCustomBlock = (blocks: any) => {
     return blocks.map((block: any, index: number) => {
       if (block._type === "block" && block.style === "h2") {
         const text = block.children[0].text;
-        // console.log(text);
+        console.log(text);
         
         const id = generateId(text);
-        // console.log(id);
+        console.log(id);
         
         return (
           <div id={id} key={index} className={classes.wrappedH2}>
@@ -80,6 +68,7 @@ function DigitalTerms({ data }: { data: SingletermsAndConditionsType[] }) {
     });
   };
 
+  
   return (
     <>
       <div className="DigitalTerms main_padding xl:mb-[200px] lg:mb-[150px] md:mb-[100px] sm:mb-[70px] mb-[80px]">

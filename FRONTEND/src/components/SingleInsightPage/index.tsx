@@ -6,69 +6,71 @@ import { urlFor } from "../../../lib/sanity.client"; //@ts-ignore
 import BlockContent from "@sanity/block-content-to-react";
 import Link from "next/link";
 import { SingleInsightsType } from "../../../lib/interface";
+import { generateId, handleHashChange } from "@/common/ScrollByID";
 
-function SingleInsightPage({ data,slugCard }: { data: SingleInsightsType, slugCard:any}) {
+function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugCard: any }) {
   // const[showSingleInsightLink,setShowSingleInsight] = useState();
-console.log("ooooooooooo-------------oo",slugCard);
-console.log("ooooooooo1111111111111111111111111oo-------------oo",data);
+  // console.log("ooooooooooo-------------oo", slugCard);
+  // console.log("ooooooooo1111111111111111111111111oo-------------oo", data);
 
 
-  // useEffect(() => {           
-  //   const parentDiv = document.querySelector(`.${classes.Block_Content}`);
+  useEffect(() => {
+    window.addEventListener("hashchange", handleHashChange);
+    handleHashChange();
 
-  //   if (parentDiv) {
-  //     const h2Elements = parentDiv.querySelectorAll('h2');
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
 
-  //     h2Elements.forEach((h2Element) => {
-  //       // Create a new div element
-  //       const newDiv = document.createElement('div');
-  //       // Add a class to the new div element
-  //       newDiv.className = classes.wrappedH2;
-
-  //       // Append the h2 element to the new div
-  //       newDiv.appendChild(h2Element.cloneNode(true));
-
-  //       // Replace the original h2 element with the new div element
-  //       h2Element.parentNode?.replaceChild(newDiv, h2Element);
-  //     });
-  //   }
-  // }, [data]); // Run the effect whenever 'data' changes
-
-  const WrappedH2 = ({ children }:any) => {
-    return <div  className={classes.wrappedH2}>{children}</div>;
+  const WrappedH2 = ({ children }: any) => {
+    return <div className={classes.wrappedH2}>{children}</div>;
   };
 
-  const renderCustomBlock = (blocks:any) => {
-    return blocks.map((block:any, index:number) => {
+  const renderCustomBlock = (blocks: any) => {
+    return blocks.map((block: any, index: number) => {
+      // if (block._type === 'block' && block.style === 'h2') {
+      //   let text = block.children[0].text;              
+      //   return <WrappedH2 key={index}><h2 key={index}>{text}</h2></WrappedH2> 
+      // }
       if (block._type === 'block' && block.style === 'h2') {
-        return <WrappedH2 key={index}><h2 key={index}>{block.children[0].text}</h2></WrappedH2>;
+       
+        return <WrappedH2><h2>{ block.children[0].text}</h2></WrappedH2>
       }
-      // return BlockContent.defaultSerializers.types.block({ node: block });
+      if (block._type === 'block' && block.style === 'h3') {
+        let text = block.children[0].text;              
+        const id = generateId(text);
+        console.log(text);
+        return<div id={id} key={index}>
+          <h3>{text}</h3>
+          </div>
+      }
+      // if (block._type === 'video' && block.iframeUrl !== "") {
+      //   let text = block?.children[0]?.text;              
+      //   const id = generateId(text);
+      //   console.log(block)
+      //   return<div id={id} key={index}>
+      //     <h3>{text}</h3>
+      //     </div>
+      // }
+      if (block._type === 'video') {
+        return <iframe key={index} width="725" height="407" src={block.iframeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="mx-auto xl:my-[50px] lg:my-[40px] md:my-[30px] my-[20px]"></iframe>
+      }
+      
+
       return <BlockContent
-      key={index}
-      blocks={block}
-      projectId={"dexthfb7"}
-      dataset={"production"}
-    />
+        key={index}
+        blocks={block}
+        projectId={"dexthfb7"}
+        dataset={"production"}
+      />
     });
   };
 
-
-
-
-
   const currentpageSlug = data.slug.current;
-// console.log("Current page slug:", currentpageSlug);
-
-const currentPost = slugCard.findIndex((item:any)=> item.slug === currentpageSlug);
-
-// console.log("currentPost post:", currentPost);
-
-// console.log(slugCard[currentPost-1])
-
-const prevPost = slugCard[currentPost-1]
-const nextPost = slugCard[currentPost+1]
-// console.log(prevPost);
+  const currentPost = slugCard.findIndex((item: any) => item.slug === currentpageSlug);
+  const prevPost = slugCard[currentPost - 1]
+  const nextPost = slugCard[currentPost + 1]
 
 
   return (
@@ -102,6 +104,7 @@ const nextPost = slugCard[currentPost+1]
               dataset={"production"}
             /> */}
             {renderCustomBlock(data.content)}
+
           </div>
           {/* <div className={`${classes.Footer_Img} bg-black rounded-[20px] md:rounded-30px xl:mb-[245px] lg:mb-[200px] md:mb-[150px] sm:mb-[100px] mb-[70px] py-[46px] px-[20px] md:px-[55px] xl:mt-[120px] lg:mt-[95px] md:mt-[70px] sm:mt-[60px] mt-[30px] relative flex items-center`}>
             <div className={`${classes.Zest_symbol_white} w-full absolute top-[27px] left-0 right-0`}>
@@ -125,6 +128,7 @@ const nextPost = slugCard[currentPost+1]
 
           <div className={` bg-black rounded-[20px] md:rounded-30px xl:mb-[245px] lg:mb-[170px] md:mb-[80px] sm:mb-[75px] mb-[70px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px] xl:px-[55px] xl:mt-[120px] lg:mt-[95px] md:mt-[60px] sm:mt-[60px] mt-[50px] relative grid grid-cols-3`}>
 
+
           <div className={`${classes.next_text_left} relative self-center md:leading-[25px] leading-[17px] z-10`}>
              
                 
@@ -140,6 +144,7 @@ const nextPost = slugCard[currentPost+1]
               // </Link>
               
           }
+
             </div>
 
             <div className={`  self-center mx-auto`}>
@@ -153,16 +158,16 @@ const nextPost = slugCard[currentPost+1]
             </div>
 
             <div className={`${classes.next_text_right} relative ms-auto self-center md:leading-[25px] leading-[17px] z-10`}>
-              
-              {nextPost?
-              
-              <Link href={nextPost.slug} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px]  text-white`}>
 
-                {" "}
-                {nextPost.hero.heading}
-              </Link>
-              :""
-          }
+              {nextPost ?
+
+                <Link href={nextPost.slug} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px]  text-white`}>
+
+                  {" "}
+                  {nextPost.hero.heading}
+                </Link>
+                : ""
+              }
             </div>
           </div>
 
@@ -172,7 +177,7 @@ const nextPost = slugCard[currentPost+1]
 
         </div>
 
-      
+
       </div>
     </>
   );
