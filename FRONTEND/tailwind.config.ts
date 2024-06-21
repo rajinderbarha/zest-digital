@@ -10,7 +10,7 @@ module.exports = {
         'image-1': "url('../../src/assets/images/Gradient_v3.png')",
       },
       fontFamily: {
-        mono: ['IBM Plex Mono', 'monospace'],
+        mono: ['IBMPlexMono'],
         // mono: [ 'monospace'], 
 
         lato: ['Lato', 'sans-serif'],

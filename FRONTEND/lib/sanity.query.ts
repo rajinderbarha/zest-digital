@@ -46,6 +46,20 @@ export function getFooter() {
     `
   );
 }
+export function getClimateActionData() {
+  return client.fetch(
+    groq`
+   *[_type == "climteaction"]{
+  "climateActionImgUrl": climate_actionImg.asset->url,
+  "earthImgUrl": earth_img.asset->url,
+  smallDescription
+}
+    `
+  );
+}
+
+
+
 
 export async function getAboutData() {
   const query = `
@@ -318,15 +332,9 @@ export async function getSingleInsightsData(slug: string) {
     content[],
     linkSection{
       icon,
-      linkName,
-      linkUrl
-    }
-     
-     
-    
-    }
 
-  `;
+   } 
+    }`;
   const data = await client.fetch(query);
   return data;
 }
@@ -392,8 +400,7 @@ export async function getSchedule_a_callData() {
 export async function getTermsndConditionsData() {
   const query = `
 
-  
-  *[_type == 'termsAndConditions'] {
+   *[_type == 'termsAndConditions'] {
     heading,
     'cards': card[]{
       boxtitle,
@@ -402,7 +409,7 @@ export async function getTermsndConditionsData() {
       title,
       smallDescription,
       buttonName,
-      content,
+      
       'banner': banner-> {
         climate_actionImg,
         earth_img,
@@ -415,10 +422,6 @@ export async function getTermsndConditionsData() {
       smallDescription
     }
   }
-  
-
-  
-  
 
   `;
   const data = await client.fetch(query);

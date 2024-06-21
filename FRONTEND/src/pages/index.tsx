@@ -3,15 +3,13 @@ import HeroSection from "@/components/HeroSection";
 import HomeGrowthCard from "@/components/HomeGrowthCard";
 import Logo_moving from "@/common/Logo_moving";
 import Services from "@/common/Services";
-import { getHomepageData } from "../../lib/sanity.query";
+import {  getHomepageData } from "../../lib/sanity.query";
 import { HomepageProps } from "../../lib/interface";
+// import Climate_action from "@/common/Climate_action";
 
 
 export default function Home({ homepageData }: HomepageProps) {
   const { growRevenue, TransformResults } = homepageData[0] || {};
-
-  // console.log(homepageData[0]);
-
 
   return (
     <>
@@ -22,6 +20,8 @@ export default function Home({ homepageData }: HomepageProps) {
         <Logo_moving LogoMovdata={TransformResults?.brandList} />
       </div>
       <Services data={TransformResults?.serviceSection} />
+
+      {/* <Climate_action climate_actionImg={item.climate_actionImg} earth_img={item.earth_img} smallDescription={item.smallDescription} /> */}
       </div>
     </>
   );
@@ -30,6 +30,7 @@ export default function Home({ homepageData }: HomepageProps) {
 export async function getStaticProps () {
   try {
     const homepageData = await getHomepageData();
+   
     return {
       props: {
         homepageData,

@@ -5,7 +5,6 @@ import { FooterType, HeaderType } from '../../lib/interface'
 // import { getHeader } from '../../sanity.query'
 
 const Layout = ({children,headerdata, footerdata}:{children:React.ReactNode,headerdata:HeaderType[], footerdata:FooterType[]} ) => {
-  
   return (
     <div>
         <Header data={headerdata}/>

@@ -8,6 +8,9 @@ function Termsconditions({
 }: {
   termsAndConditionData: TermsAndConditionsType[];
 }) {
+
+  // console.log("+++++",termsAndConditionData);
+  
   return (
   <div className="Body_padding">
 
