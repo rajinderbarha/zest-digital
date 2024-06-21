@@ -54,7 +54,7 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
       //     </div>
       // }
       if (block._type === 'video') {
-        return <iframe key={index} width="725" height="407" src={block.iframeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="mx-auto xl:my-[50px] lg:my-[40px] md:my-[30px] my-[20px]"></iframe>
+        return <iframe key={index} width="725" height="407" src={block.iframeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className=" max-w-[725px] w-full aspect-video mx-auto xl:my-[50px] lg:my-[40px] md:my-[30px] my-[20px]"></iframe>
       }
       
 
