@@ -5,6 +5,7 @@ import { SingletermsAndConditionsType } from "../../../lib/interface";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 // import ErrorPage from "next/error";
 import Custom404 from "../404";
+import { revalidatePath } from "next/cache";
 
 
 function SingletermsAndConditions({errorCode,singletermsdata,}: { singletermsdata: SingletermsAndConditionsType[]; errorCode:any}) {

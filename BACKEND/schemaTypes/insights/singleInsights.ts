@@ -53,7 +53,7 @@ export const SingleInsights = defineType({
       title: 'Content',
       type: 'array',
       of: [
-        { type: 'block' },
+        { type: 'block', },
         { type: 'image' },
         {type:"video"}
       ],
@@ -68,16 +68,16 @@ export const SingleInsights = defineType({
           title: 'Icon',
           type: 'image',
         },
-        {
-          name: 'linkName',
-          title: 'Link Name',
-          type: 'string',
-        },
-        {
-          name: 'linkUrl',
-          title: 'Link Url',
-          type: 'string',
-        },
+        // {
+        //   name: 'linkName',
+        //   title: 'Link Name',
+        //   type: 'string',
+        // },
+        // {
+        //   name: 'linkUrl',
+        //   title: 'Link Url',
+        //   type: 'string',
+        // },
       ],
     },
     {

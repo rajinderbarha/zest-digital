@@ -9,12 +9,8 @@ import { SingleInsightsType } from "../../../lib/interface";
 import { generateId, handleHashChange } from "@/common/ScrollByID";
 
 function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugCard: any }) {
-  // const[showSingleInsightLink,setShowSingleInsight] = useState();
-  // console.log("ooooooooooo-------------oo", slugCard);
-  // console.log("ooooooooo1111111111111111111111111oo-------------oo", data);
 
-
-  useEffect(() => {
+  useEffect(() => {      
     window.addEventListener("hashchange", handleHashChange);
     handleHashChange();
 
@@ -29,33 +25,32 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
 
   const renderCustomBlock = (blocks: any) => {
     return blocks.map((block: any, index: number) => {
-      // if (block._type === 'block' && block.style === 'h2') {
-      //   let text = block.children[0].text;              
-      //   return <WrappedH2 key={index}><h2 key={index}>{text}</h2></WrappedH2> 
-      // }
+     
       if (block._type === 'block' && block.style === 'h2') {
        
-        return <WrappedH2><h2>{ block.children[0].text}</h2></WrappedH2>
+        return <WrappedH2 key={index}><h2 key={index}>{ block.children[0].text}</h2></WrappedH2>
       }
       if (block._type === 'block' && block.style === 'h3') {
         let text = block.children[0].text;              
         const id = generateId(text);
-        console.log(text);
+        // console.log(text);
+        // console.log(id);
+        
         return<div id={id} key={index}>
-          <h3>{text}</h3>
+          <h3 key={index}>{text}</h3>
           </div>
       }
-      // if (block._type === 'video' && block.iframeUrl !== "") {
-      //   let text = block?.children[0]?.text;              
-      //   const id = generateId(text);
-      //   console.log(block)
-      //   return<div id={id} key={index}>
-      //     <h3>{text}</h3>
-      //     </div>
-      // }
-      if (block._type === 'video') {
-        return <iframe key={index} width="725" height="407" src={block.iframeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className=" max-w-[725px] w-full aspect-video mx-auto xl:my-[50px] lg:my-[40px] md:my-[30px] my-[20px]"></iframe>
-      }
+
+    
+      if (block._type === 'video' && block.iframeUrl !== "") {
+        // let text = block?.iframeUrl;              
+        // const id = generateId(text);
+        // console.log(block)
+        return <div id={block._type} key={index}>
+          <iframe key={index} width="725" height="407" src={block.iframeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className=" max-w-[725px] w-full aspect-video mx-auto xl:my-[50px] lg:my-[40px] md:my-[30px] my-[20px]"></iframe>
+          </div>
+    }
+
       
 
       return <BlockContent
@@ -160,7 +155,6 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
             <div className={`${classes.next_text_right} relative ms-auto self-center md:leading-[25px] leading-[17px] z-10`}>
 
               {nextPost ?
-
                 <Link href={nextPost.slug} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px]  text-white`}>
 
                   {" "}
@@ -170,10 +164,6 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
               }
             </div>
           </div>
-
-
-
-
 
         </div>
 
