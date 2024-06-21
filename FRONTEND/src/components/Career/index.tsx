@@ -6,7 +6,8 @@ import { urlFor } from "../../../lib/sanity.client";
 
 const Career: React.FC<CareerProps> = ({ data }) => {
   return (
-    <div className={`Career xl:mb-[160px] lg:mb-[140px] md:mb-[120px] min-tb:max-tb:mb-[80px] sm:mb-[90px] mb-[60px]`}>
+    // <div className={`Career xl:mb-[160px] lg:mb-[140px] md:mb-[120px] min-tb:max-tb:mb-[80px] sm:mb-[90px] mb-[60px]`}>
+    <div className={`${classes.Career} `}>
       {data?.map((careerData, index) => {
         const { title, description, image } = careerData.card;
 
@@ -15,7 +16,8 @@ const Career: React.FC<CareerProps> = ({ data }) => {
             <div className="main_container">
               <div className={`${classes.Careerbanner}`}>
                 <div className="">
-                  <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] min-tb:max-tb:max-w-[343px] sm:text-35px text-[22px] mb-5 ">
+                  {/* <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] min-tb:max-tb:max-w-[343px] sm:text-35px text-[22px] mb-5 "> */}
+                  <h1 className={`${classes.carrer_heading} min-tb:max-tb:max-w-[343px]  font-mono font-semibold `}>
                     {careerData.heading}
                   </h1>
                 </div>
@@ -23,7 +25,7 @@ const Career: React.FC<CareerProps> = ({ data }) => {
             </div>
             <div className="thanks_for_interest lg:mt-0 min-tb:max-tb:mt-[0] sm:mt-[0] mt-[00px]">
               <div
-                className={`${classes.SingleIntro}  main_container md:rounded-30px rounded-[20px]`}
+                className={`${classes.SingleIntro}  main_container lg:rounded-[30px] md:rounded-[20px] rounded-[15px]`}
               >
                 <div
                   className={`${classes.single_container} main_padding max-w-[1335px] mx-auto relative`}
@@ -40,10 +42,12 @@ const Career: React.FC<CareerProps> = ({ data }) => {
                     />
                   </div>
                   <div className={`${classes.career_content} text-white font-mono text-center  mx-auto  `}>
-                    <h2 className="xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] sm:text-30px text-[22px] font-semibold  lg:mb-[60px] md:mb-[40px] mb-[20px]">
+                    {/* <h2 className="xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] sm:text-30px text-[22px] font-semibold  lg:mb-[60px] md:mb-[40px] mb-[20px]"> */}
+                    <h2 className={`${classes.career_title}  font-semibold `}>
                       {title}
                     </h2>
-                    <p className="text-[12px] md:text-25px min-tb:max-tb:text-[20px] lg:text-30px  text-md ">
+                    {/* <p className="text-[12px] md:text-25px min-tb:max-tb:text-[20px] lg:text-30px  text-md mx-auto"> */}
+                    <p className={`${classes.career_desc}  text-md mx-auto`}>
                       {description}
                     </p>
                   </div>

@@ -38,3 +38,124 @@ margin-top: 77px;
         max-width: 627px;
     }
 }
+
+
+
+/* objective_right_description   xl:mt-[120px] lg:mt-[90px] md:mt-[60px] sm:mt-[30px] mt-[70px] */
+
+
+.Instrumental {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  
+  .Interests_h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .below_line {
+    padding-top: 3px;
+    font-size: 12px;
+  }
+  .objective_right_description
+  {
+    margin-top: 70px;
+  }
+  
+  @media (min-width: 640px) {
+    .Instrumental {
+      margin-top: 120px;
+      margin-bottom: 150px;
+    }
+  
+    .Interests_h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  
+    .below_line {
+      padding-top: 5px;
+      font-size: 20px;
+    }
+    .objective_right_description{
+        margin-top: 30px;
+    }
+  }
+
+  
+  @media (min-width: 768px) {
+    .Instrumental {
+      margin-top: 170px;
+      margin-bottom: 200px;
+    }
+  
+    .Interests_h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+  
+    .below_line {
+      padding-top: 8px;
+      font-size: 25px;
+    }
+    .objective_right_description{
+        margin-top: 60px;
+    }
+  }
+
+    
+  @media (min-width: 540px) and (max-width: 830px) {
+    .Instrumental {
+      margin-top: 129px;
+      margin-bottom: 140px;
+    }
+  
+    .Interests_h2 {
+      font-size: 26px;
+      line-height: 37px;
+    }
+  
+    .below_line {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    .objective_right_description{
+        padding-left: 40px;
+        margin-top: 77px;
+            }
+  }
+  
+  @media (min-width: 1024px) {
+    .Instrumental {
+      margin-top: 200px;
+      margin-bottom: 250px;
+    }
+  
+    .Interests_h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  
+    .below_line {
+      font-size: 30px;
+    }
+    .objective_right_description{
+        margin-top: 90px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .Instrumental {
+      margin-top: 225px;
+      margin-bottom: 290px;
+    }
+  
+    .Interests_h2 {
+      font-size: 45px;
+    }
+    .objective_right_description{
+        margin-top: 120px;
+    }
+  }
+  
