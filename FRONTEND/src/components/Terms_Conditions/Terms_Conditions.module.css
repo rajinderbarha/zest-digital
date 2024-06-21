@@ -23,3 +23,85 @@
     }
 }
 
+
+
+
+.term_condition {
+    margin-bottom: 80px;
+  }
+  
+  .terms_heading {
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .box_div {
+    margin-top: -626px;
+  }
+  
+  /* Small screens, specifically for min-width: 640px */
+  @media (min-width: 640px) {
+    .term_condition {
+      margin-bottom: 90px;
+    }
+  
+    .terms_heading {
+      font-size: 35px;
+    }
+  }
+
+
+    
+  /* Medium screens */
+  @media (min-width: 768px) {
+    .term_condition {
+      margin-bottom: 110px;
+    }
+  
+    .terms_heading {
+      font-size: 40px;
+      margin-top: 50px;
+    }
+  
+    .box_div {
+      margin-top: -870px;
+    }
+  }
+
+    
+  /* Between 540px and 830px */
+  @media (min-width: 540px) and (max-width: 830px) {
+    .terms_heading {
+      font-size: 30px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .term_condition {
+      margin-bottom: 160px;
+    }
+  
+    .terms_heading {
+      font-size: 50px;
+      margin-top: 70px;
+    }
+  
+    .box_div {
+      margin-top: -600px;
+    }
+  }
+  
+  /* Extra large screens */
+  @media (min-width: 1280px) {
+    .term_condition {
+      margin-bottom: 216px;
+    }
+  
+    .terms_heading {
+      font-size: 55px;
+      margin-top: 95px;
+    }
+  }
+  

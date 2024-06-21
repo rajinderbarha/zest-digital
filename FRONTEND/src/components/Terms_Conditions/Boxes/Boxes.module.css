@@ -210,3 +210,50 @@
         max-width: 206px;
     }
 }
+
+
+/* xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] */
+
+@media only screen and (min-width:1024px){
+    .growth_engine{
+        padding: 50px 20px 50px 48px;
+    }
+}
+
+@media only screen and (min-width:1280px){
+    .growth_engine{
+        padding: 70px 28px 70px 56px;
+    }
+}
+
+
+
+.terms_btn {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 13px;
+    padding-right: 5px;
+  }
+  
+  .terms_btn span {
+    padding: 2px;
+    margin-right: 0;
+    font-size: 18px;
+  }
+  
+
+  /* Medium screens */
+  @media (min-width: 768px) {
+    .terms_btn {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 16px;
+      padding-right: 0;
+    }
+  
+    .terms_btn span {
+      padding: 4px;
+      margin-right: 6px;
+    }
+  }
+  
