@@ -58,7 +58,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                 <h2 className="flex md:gap-4 flex-wrap justify-center text-center">
                 {heading}
              
-                    <span className={`${classes.animatedText} xl:w-[177px] lg:w-[160px] md:w-[140px] `}>
+                    <span className={`${classes.animatedText}  `}>
                         {card?.switcher?.map((text: any, idx: any) => (
                             <span key={idx} className={ `${ idx === animateIndex ? classes.textIn : classes.textOut }  text-color-3`}>
                                 {text}

@@ -13,6 +13,7 @@
     }
 }
 .map_div {
+border: 1px solid black;
     max-width: -webkit-fill-available!important;
     width: 100%;
     overflow: hidden;
@@ -21,7 +22,7 @@
     @apply  rounded-[15px] sm:rounded-[20px] md:rounded-[30px]  shadow-dark-pink-right  
 }
 .map_div > div{
-    border: 1px solid white;
+    /* border: 1px solid black; */
     /* border-radius: 30px; */
     /* width: 100%!important; */
     height:-webkit-fill-available!important;

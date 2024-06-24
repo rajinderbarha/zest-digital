@@ -35,7 +35,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
 
                   </div>
                 </div>
-                <div className="flex  min-tb:max-tb:ms-auto  ms-auto sm:mt-[15px] mt-[7px]">
+                <div className="flex  min-tb:max-tb:ms-auto  ms-auto sm:mt-[15px] mt-[25px]">
                   <img
                     src={urlFor(item.image).url()}
                     alt=""
@@ -59,7 +59,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
                       />
                     </div>
                   ) : (
-                    <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[7px]">
+                    <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[25px]">
                       <img
                         src={urlFor(item.image).url()}
                         alt=""

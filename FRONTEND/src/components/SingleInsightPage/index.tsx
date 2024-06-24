@@ -47,7 +47,7 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
         // const id = generateId(text);
         // console.log(block)
         return <div id={block._type} key={index}>
-          <iframe key={index} width="725" height="407" src={block.iframeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className=" max-w-[725px] w-full aspect-video mx-auto xl:my-[50px] lg:my-[40px] md:my-[30px] my-[20px]"></iframe>
+          <iframe key={index} width="725" height="407" src={block.iframeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className={`${classes.youtube_video} `}></iframe>
           </div>
     }
 
@@ -152,7 +152,7 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
               />
             </div>
 
-            <div className={`${classes.next_text_right} relative ms-auto self-center md:leading-[25px] leading-[17px] z-10`}>
+            <div className={`${classes.next_text_right} relative ms-auto self-center md:leading-[25px] leading-[17px] z-10 text-end`}>
 
               {nextPost ?
                 <Link href={nextPost.slug} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px]  text-white`}>

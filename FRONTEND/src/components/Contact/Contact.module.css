@@ -141,6 +141,7 @@
 .input_labels {
   font-size: 12px; 
   margin-bottom: 5px; 
+  display: block;
 }
 
 .form_input_field {

@@ -307,3 +307,156 @@
     line-height: 58px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.growth_grid {}
+
+.growth_grid>div:not(:first-child) {
+    @apply xl:mt-[65px] lg:mt-[45px] md:mt-[25px] sm:mt-[35px] mt-[20px]
+}
+
+@media only screen and (max-width:860px) {
+
+    /* .animationFullText{
+        
+        @apply   max-w-[655px] text-center border
+    } */
+}
+
+/* @media only screen and (min-width:1366px){
+    .growth_container{
+
+        padding: 0 100px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+    .growth_container{
+
+        padding: 0 50px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .growth_container{
+
+        padding: 0 40px;
+    }
+  }
+  @media only screen and (min-width: 640px) and (max-width: 767px){
+    .growth_container{
+
+        padding: 0 35px;
+    }
+  }
+@media only screen and (max-width:639px){
+    .growth_container{
+
+        padding: 0 15px;
+    }
+} */
+
+
+
+
+/*  font-mono   mx-auto grid md:gap-[45px] sm:gap-[45px] gap-[20px]  */
+
+
+
+.animationFullText {
+    margin-bottom: 0;
+    width: fit-content;
+}
+
+.animationFullText h2 {
+    padding-left: 23px;
+    padding-right: 23px;
+}
+  
+@media only screen and (min-width: 1280px) {
+    .animationFullText {
+        padding-bottom: 160px;
+    }
+
+    .animationFullText h2 {
+        font-size: 45px;
+    }
+    .animatedText{
+        width: 200px;
+        
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .animationFullText {
+        padding-bottom: 120px;
+    }
+
+    .animationFullText h2 {
+        font-size: 40px;
+    }
+    .animatedText{
+        width: 174px;
+        
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .animationFullText {
+        padding-bottom: 80px;
+    }
+
+    .animationFullText h2 {
+        font-size: 35px;
+    }
+    .animatedText{
+        width: 152px;
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .animationFullText {
+        width: 100%;
+        max-width: 500px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-bottom: 50px;
+    }
+
+    .animationFullText h2 {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+
+    .animationFullText h2 {
+        font-size: 25px;
+    }
+    .animatedText{
+        
+        width: 112px;
+    }
+}
+
+
+@media only screen and (max-width:772px){
+    .animatedText{
+        width: fit-content;
+    }
+}

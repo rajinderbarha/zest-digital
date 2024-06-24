@@ -184,8 +184,8 @@
 }
 
 .animationFullText h2 {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 23px;
+    padding-right: 23px;
 }
 
 .box_size {
@@ -233,6 +233,10 @@ padding-right: 50px;
     .animationFullText h2 {
         font-size: 45px;
     }
+    .animatedText{
+        width: 200px;
+        
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -247,7 +251,10 @@ padding-right: 50px;
     .animationFullText h2 {
         font-size: 40px;
     }
-
+    .animatedText{
+        width: 174px;
+        
+    }
     .upper_title {
         font-size: 28px;
     }
@@ -268,6 +275,10 @@ padding-right: 50px;
 
     .animationFullText h2 {
         font-size: 35px;
+    }
+    .animatedText{
+        width: 152px;
+        
     }
 
     .box_size {
@@ -362,6 +373,10 @@ padding-right: 0;
     .animationFullText h2 {
         font-size: 25px;
     }
+    .animatedText{
+        
+        width: 112px;
+    }
 
     .box_size {
         padding-left: 15px;
@@ -383,5 +398,12 @@ padding-left: 0;
 padding-right: 0;
 margin-left: -15px;
 margin-right: -15px;
+    }
+}
+
+
+@media only screen and (max-width:710px){
+    .animatedText{
+        width: fit-content;
     }
 }

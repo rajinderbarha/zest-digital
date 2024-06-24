@@ -53,7 +53,7 @@ function objective({ sectionCard }: {sectionCard:Card[]}) {
                   <h2 className={`${classes.box_tittle}`}>
                     {item.heading}
                   </h2>
-                  <div className={`${classes.box_detail} `}>
+                  <div className={`${classes.box_detail} ${classes.right_text} `}>
                     <BlockContent blocks={item.description} />
                   </div>
                 </div>

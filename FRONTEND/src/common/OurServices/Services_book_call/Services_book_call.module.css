@@ -8,8 +8,8 @@
 
 
 .bookcall_box {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 55px;
+    padding-bottom: 55px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -19,7 +19,7 @@
   }
   
   .btn_div {
-    margin-top: 15px;
+    margin-top: 35px;
   }
   
   /* Small screens, specifically for min-width: 640px */

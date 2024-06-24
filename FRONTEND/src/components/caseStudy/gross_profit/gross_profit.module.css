@@ -16,8 +16,84 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+.profit_box_heading {
+  font-size: 16px;
+margin-bottom: 15px;
+}
+.profit_box_des{
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+.profit_box_desc_below{
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+.profit_box h2 {
+  font-size: 26px;
+}
+.box_btn {
+  font-size: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 13px;
+}
+.box_btn span{
+  margin-right: 2px;
+  padding: 4px;
+  font-size: 15px;
+}
+@media (min-width: 640px) {
+  .box_btn {
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+  }
+  .box_btn span{
+    margin-right: 3px;
+    font-size: 18px;
+  }
+  .profit_box_des{
+    margin-bottom: 7px;
+  }
+}
 
+@media (min-width: 768px) {
+  .box_btn {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 16px;
+  }
+  .box_btn span{
+    margin-right: 4px;
+  }
+}
 
+@media (min-width: 540px) and (max-width: 830px) {
+  .box_btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .profit_box_heading {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  .profit_box_des{
+    font-size: 30px;
+    margin-bottom: 11px;
+  }
+  .profit_box_desc_below{
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .profit_box h2 {
+    /* padding-top: 75px;
+    padding-bottom: 75px; */
+    font-size: 55px;
+  }
+}
 @media only screen and (min-width: 1775px) {
   .profit_box {
     padding: 75px 75px;
@@ -75,6 +151,7 @@
   .Gross_profit_grid_div {
     gap: 30px;
   }
+  
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -89,9 +166,18 @@
 
   }
 
-  .profit_box_desc {
+  .profit_box_desc_below {
     max-width: 300px;
   }
+  .profit_box_des{
+    font-size: 30px;
+    margin-bottom: 11px;
+  }
+  .profit_box_desc_below{
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
 
   .profit_box h2 {
     font-size: 45px;
@@ -99,6 +185,7 @@
 
   .profit_box_heading {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 
   .Gross_profit_grid_div {
@@ -123,17 +210,28 @@
 
   }
 
-  .profit_box_desc {
+  .profit_box_desc_below {
     max-width: 300px;
+    font-size: 18px;
+    margin-bottom: 20px;
   }
 
   .Gross_profit_grid_div {
     gap: 15px;
   }
+  .profit_box h2 {
+    font-size: 40px;
+  }
+  
 
   .profit_box_heading {
+    font-size: 25px;
     margin-bottom: 20px;
   }
+  .profit_box_des{
+    font-size: 7px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 856px) {
@@ -155,7 +253,7 @@
 
   }
 
-  .profit_box_desc {
+  .profit_box_desc_below {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -177,7 +275,7 @@
     width: 100%;
   }
 
-  .profit_box_desc {}
+  .profit_box_desc_below {}
 
 }
 
@@ -206,7 +304,7 @@
     font-size: 22px;
   }
 
-  .profit_box_desc {
+  .profit_box_desc_below {
     font-size: 16px;
   }
 
@@ -249,8 +347,29 @@
     .profit_box_heading,   .profit_box h3 {
       font-size: 20px;
     }
-    .profit_box_desc{
+    .profit_box_desc_below{
       font-size: 12px;
       line-height: 18px;
     }
+    .box_btn span{
+      font-size: 22px;
+    }
 }
+@media only screen and (min-width:639px) and (max-width:767px) {
+  .profit_box_heading{
+    margin-bottom: 20px;
+  }
+  .profit_box_des{
+    font-size: 5px;
+  }
+  .profit_box_desc_below{
+    font-size: 12px;
+  }
+  .profit_box h2 {
+    font-size: 35px;
+  }
+
+}
+
+
+

@@ -168,7 +168,7 @@ const closeMenu = () => {
                   >
                     {item.button.navName}
                   </Link> */}
-                  <Image src={Sub_Logo} className="w-[130px] mt-[150px]" alt="Logo_img" />
+                  <Image src={Sub_Logo} className="w-[200px] mt-[150px]" alt="Logo_img" />
                   </div>
                 </div>
               </div>
