@@ -35,30 +35,12 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
         <div className={`${classes.SingleIntro} bg-color-1 main_container  lg:rounded-30px md:rounded-[20px] rounded-[15px]`}>
           <div className={`${classes.single_container}`}>
             {/* <div className={`max-w-[1099px] mx-auto xl:pt-[126px] lg:pt-[100px] min-tb:max-tb:pb-[300px] md:pt-[75px] sm:pt-[50px] pt-[50px] md:pb-[368px] pb-[240px]`}> */}
-            <div className={`${classes.solution_box} max-w-[1099px] mx-auto `}>
-              {/* <div className="  flex gap-[18px] mx-auto mb-[130px] md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] ">
-                <h2 className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px xl:-ms-[200px] lg:-ms-[140px] md:-ms-[120px] text-white font-mono">
-                  {data.upperTitle.title}
-                </h2>
-                <div className={`${classes.cards} relative w-fit `}>
-                  {data?.upperTitle.switcher?.map((item: any, index: any) => (
-                    <div className={`${classes.card} `}>
-
-                      <h2
-                        key={index}
-                        className="xl:text-45px lg:text-40px md:text-35px sm:text-30px text-25px  text-color-7"
-                      >
-                        {item}
-                      </h2>
-                    </div>
-                  ))}
-                </div>
-              </div> */}
+            <div className={`${classes.solution_box}  mx-auto `}>
 
 
               
 
-              <div className={`${classes.animationDiv}`}>
+              {/* <div className={`${classes.animationDiv}`}>
                 <div className={`${classes.animationFullText} mx-auto   md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row min-tb:max-tb:pb-[95px] md:px-0 px-[22px] xl:pb-[160px] lg:pb-[120px] md:pb-[80px]  pb-[50px]`}>
                 <h2 className="xl:text-45px min-tb:max-tb:px-4 lg:text-40px md:text-35px sm:text-25px min-tb:max-tb:text-25px text-[18px] text-white font-mono flex md:gap-4 flex-wrap justify-center  text-center">
                 {data.upperTitle.title}
@@ -66,6 +48,24 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
                     <span className={`${classes.animatedText} xl:w-[177px] min-tb:max-tb:text-25px min-tb:max-tb:leading-[36px] lg:w-[160px] md:w-[140px] `}>
                     {data?.upperTitle.switcher?.map((text: any, idx: any) => (
                             <span key={idx} className={ `${ idx === animateIndex ? classes.textIn : classes.textOut }  xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[18px]  text-color-7`}>
+                                {text}
+                            </span>
+                        ))}
+                    </span>
+                    </h2>
+             </div>
+         </div> */}
+
+<div className={`${classes.animationDiv} font-mono`}>
+                {/* <div className={`${classes.animationFullText} mx-auto   md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[160px] lg:pb-[120px] md:pb-[80px]  pb-[50px]`}> */}
+                <div className={`${classes.animationFullText} mx-auto text-white  font-semibold text-center  flex-col md:flex-row `}>
+                {/* <h2 className="xl:text-45px lg:text-40px px-4 md:text-35px min-tb:max-tb:text-25px sm:text-25px text-[18px] flex md:gap-4 flex-wrap justify-center text-center"> */}
+                <h2 className="flex md:gap-4 flex-wrap justify-center text-center">
+                {data.upperTitle.title}
+             
+                    <span className={`${classes.animatedText}  `}>
+                        {data?.upperTitle.switcher?.map((text: any, idx: any) => (
+                            <span key={idx} className={ `${ idx === animateIndex ? classes.textIn : classes.textOut }  text-color-7`}>
                                 {text}
                             </span>
                         ))}
@@ -91,7 +91,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
                 </div>
               </div> */}
 
-              <div className=" mx-auto min-tb:max-tb:mt-0 min-tb:max-tb:px-[67px] max-w-[1027px] xl:mt-[215px] lg:mt-[180px] md:mt-[130px] mt-[60px]">
+              <div className=" mx-auto min-tb:max-tb:mt-0 min-tb:max-tb:px-[67px] max-w-[1027px] xl:mt-[215px] lg:mt-[100px] md:mt-[90px] mt-[60px]">
                 {/* <h2 className="font-mono min-tb:max-tb:text-25px min-tb:max-tb:px-[0px] italic font-semibold sm:text-25px text-[18px]  md:text-35px leading-normal lg:leading-normal lg:text-40px xl:text-45px text-white mx-auto text-center px-[16px] sm:px-[40px] pb-[24px]"> */}
                 <h2 className={`${classes.solution_heading} font-mono italic font-semibold   text-white mx-auto text-center`}>
                   {data.heading}
