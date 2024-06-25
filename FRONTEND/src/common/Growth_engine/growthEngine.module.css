@@ -91,7 +91,7 @@
     }
 
     .growth_engine button {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .growth_engine button span {
@@ -113,7 +113,7 @@
 
 @media only screen and (max-width:380px) {
     .growth_engine button {
-        font-size: 11px;
+        font-size: 10px;
         /* padding-inline-end: 3px;
         padding-inline-start: 6px; */
         padding: 3px 3px 3px 6px;

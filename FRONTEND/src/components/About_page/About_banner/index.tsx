@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import classes from "../About_banner.module.css";
 import { AboutType } from "../../../../lib/interface";
 import { urlFor } from "../../../../lib/sanity.client";
 
+
 function About_banner({ data }: { data: AboutType[] }) {
-  return (
+
+  return ( 
     <>
-      <div className={`${classes.About_banner} main_padding`}>
+      <div className={`${classes.About_banner} main_padding`} data-aos="fade-up">
         <div className="main_container">
           {data?.map((item, index) => (
             <div
               className="  xl:mt-[143px] lg:mt-[120px] md:mt-[50px] sm:mt-[40px] mt-[30px] relative"
               key={`${index}_About_banner`}
             >
-              <div className="Founded_heading max-tb:max-w-[553px] max-w-[850px]">
+              <div className="Founded_heading max-tb:max-w-[553px] max-w-[850px]" >
                 {/* <h2 className="xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[26px] sm:text-[27px] text-[22px] font-semibold text-color-1 font-mono bg-light-green-1 w-max px-2"> */}
                 <h2 className={`${classes.about_title} font-semibold text-color-1 font-mono bg-light-green-1 w-max `}>
                   {item.hero.title}
@@ -25,7 +27,7 @@ function About_banner({ data }: { data: AboutType[] }) {
                 </h1>
                 {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
               </div>
-              <div className={`${classes.Founded_img}  md:flex md:absolute top-0 max-w-[245px]  max-tb:max-w-[150px]  right-[25px] h-full`}>
+              <div className={`${classes.Founded_img}  md:flex md:absolute top-0 max-w-[245px]  max-tb:max-w-[150px]  right-[25px] h-full`} data-aos="zoom-in" data-aos-delay="200">
                 <Image
                   className={`${classes.banner_image} rotate`}
                   src={urlFor(item.hero.image).url()}

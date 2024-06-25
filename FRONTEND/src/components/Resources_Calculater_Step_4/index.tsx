@@ -59,7 +59,7 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
                             <ProgressBar value={80} />
                         </div>
                         <h2 className="text-center font-mono xl:text-45px lg:text-40px md:text-[35px] sm:text-[25px] text-[20px] font-semibold md:mb-[30px] sm:mb-[30px] mb-[10px]">Input your data (use the ‘?’ for help)</h2>
-                        <div className="form_details max-w-[710px] mx-auto md:justify-end justify-center grid gap-5 md:pb-[97px] sm:pb-[60px] pb-[30px] relative w-fit">
+                        <div className="form_details max-w-[750px] mx-auto md:justify-end justify-center grid gap-5 md:pb-[97px] sm:pb-[60px] pb-[30px] relative w-fit">
                             <div className="flex relative  md:justify-self-end   max-w-max ">
                                 <div className="md:flex md:flex-row  max-w-max  items-center gap-x-[10px] ">
                                     <label htmlFor="average_monthly_sessions" className='font-mono font-semibold sm:text-base md:text-[18px] text-color-1 text-end'>Average monthly sessions:</label>

@@ -8,7 +8,7 @@ function Our_values({ data }: { data: AboutType[] }) {
   return (
     <div className={`${classes.Our_values} main_padding`}>
       <div className="main_container">
-        <div className={`${classes.values_bg} rounded-[15px] md:rounded-[20px] lg:rounded-[30px] main_padding`}>
+        <div className={`${classes.values_bg} rounded-[15px] md:rounded-[20px] lg:rounded-[30px] main_padding`} data-aos="fade-up">
           {data?.map((ourvalue, index) => (
              <div
              className={`${classes.our_values_box} main_container_x `}
@@ -21,7 +21,7 @@ function Our_values({ data }: { data: AboutType[] }) {
               {ourvalue.ourValue.ourValuesection.map((valSection, path) => (
                 <div className="Our_values_boxs " key={`${path}_path_left`}>
                   {(path + 1) % 2 !== 0 ? (
-                    <div className="Our_values_main">
+                    <div className="Our_values_main" data-aos="fade-right">
                     <Image
                       // className={`${classes.Our_values_img} xl:max-w-[250px] xl:h-[250px]  lg:max-w-[210px] lg:h-[210px] md:max-w-[170px] md:h-[170px]  min-tb:max-tb:max-w-[130px] min-tb:max-tb:h-[130px] sm:max-w-[130px] sm:h-[130px] max-w-[90px] h-[90px] w-full `}
                       className={`${classes.Our_values_img} `}
@@ -41,7 +41,7 @@ function Our_values({ data }: { data: AboutType[] }) {
                     </p>
                   </div>
                   ) : (
-                    <div className={`${classes.Our_values_main_2} text-end `} key={`${path}_path_right`}>
+                    <div className={`${classes.Our_values_main_2} text-end `} key={`${path}_path_right`} data-aos="fade-left">
                       <Image
                         className={`${classes.Our_values_img}  w-full ms-auto xl:mb-[30px] lg:mb-[25px] md:mb-[18px] sm:mb-[10px] mb-[5px] `}
                         src={urlFor(valSection.image).url()}
