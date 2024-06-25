@@ -61,7 +61,7 @@ const closeMenu = () => {
               key={`header_${item.logo._id}`}
               className="screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative"
             >
-              <div className="flex items-center gap-68px ">
+              <div className={`${classes.desktop_nav} flex items-center gap-68px `}>
                 <div className="screen-1-max:w-24 lg:w-28 xl:w-auto ">
                   <Link href={"/"}>
                     <Image
@@ -168,7 +168,7 @@ const closeMenu = () => {
                   >
                     {item.button.navName}
                   </Link> */}
-                  <Image src={Sub_Logo} className="w-[200px] mt-[150px]" alt="Logo_img" />
+                  <Image src={Sub_Logo} className="md:w-[200px] sm:w-[150px] w-[130px] mt-[150px]" alt="Logo_img" />
                   </div>
                 </div>
               </div>

@@ -133,3 +133,12 @@ padding-inline-end: 80px; */
     width: auto;
   }
 }
+
+@media only screen and (max-width: 1110px) {
+  .desktop_nav{
+gap: 40px;
+  }
+  .desktop_nav div:last-child{
+    gap: 30px;
+  }
+}
