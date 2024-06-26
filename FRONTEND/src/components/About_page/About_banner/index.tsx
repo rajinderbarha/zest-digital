@@ -3,9 +3,17 @@ import Image from "next/image";
 import classes from "../About_banner.module.css";
 import { AboutType } from "../../../../lib/interface";
 import { urlFor } from "../../../../lib/sanity.client";
-
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 function About_banner({ data }: { data: AboutType[] }) {
+
+   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return ( 
     <>
@@ -27,7 +35,7 @@ function About_banner({ data }: { data: AboutType[] }) {
                 </h1>
                 {/* <button className="font-mono text-base px-21px h-10 text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white hover:border-white border border-color-1 ">Schedule a call</button> */}
               </div>
-              <div className={`${classes.Founded_img}  md:flex md:absolute top-0 max-w-[245px]  max-tb:max-w-[150px]  right-[25px] h-full`} data-aos="zoom-in" data-aos-delay="200">
+              <div className={`${classes.Founded_img}  md:flex md:absolute top-0 max-w-[245px]  max-tb:max-w-[150px]  right-[25px] h-full`} data-aos="fade" data-aos-delay="200">
                 <Image
                   className={`${classes.banner_image} rotate`}
                   src={urlFor(item.hero.image).url()}

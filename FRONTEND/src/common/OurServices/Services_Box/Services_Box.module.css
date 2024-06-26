@@ -31,7 +31,7 @@
 }
 @media only screen and (max-width:767px) {
     .single_container {
-        margin-top: -50px;
+        margin-top: -62px;
     }
     .SingleIntro {
         background-image: url('../../../assets/images/Services_bg_gradient_mobile.png');  
@@ -146,7 +146,28 @@
     }
 }
 
-
+@media only screen and (max-width:767px){
+  .top_image{
+max-width: 170px;
+max-height: 170px;
+  }
+  .top_image ~ h2{
+    padding: 0 30px;
+    margin-top: 10px;
+    }
+}
+@media only screen and (max-width:639px){
+  .top_image{
+max-width: 110px;
+max-height: 110px;
+  }
+  .top_image ~ h2{
+    margin-top: 8px;
+    }
+    .single_container {
+      margin-top: -42px;
+  }
+}
 
 
 
@@ -196,9 +217,9 @@
       margin-top: 140px; 
     }
   
-    .image_title {
+    /* .image_title {
       margin-top: 0; 
-    }
+    } */
   
     .text_div {
       margin-top: 45px; 

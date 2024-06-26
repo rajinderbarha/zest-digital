@@ -13,13 +13,13 @@ function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelecte
       <div className="main_padding">
 
         <div
-          className={`${classes.SingleIntro}  main_container  h-100 rounded-[20px] md:rounded-30px`}
+          className={`${classes.SingleIntro}  main_container  h-100 rounded-[15px] md:rounded-[20px] lg:rounded-30px`} data-aos="fade-up"
         >
           <div
             className={`${classes.single_container}  max-w-[1335px] mx-auto  pt-[88px] min-tb:max-tb:pb-[400px] md:pb-[564px] pb-[350px] relative`}
           >
             <div
-              className={`${classes.grow_img}  absolute max-w-[200px] md:max-w-[250px] lg:max-w-[300px] lg:max-h-[300px]`}
+              className={`${classes.grow_img}  absolute max-w-[200px] md:max-w-[250px] lg:max-w-[300px] lg:max-h-[300px]` } 
             >
 
               <Image
@@ -29,13 +29,13 @@ function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelecte
                 height={300}
               />
             </div>
-            <div className="text-white font-mono text-center max-w-[1172px] mx-auto min-tb:max-tb:px-[50px] p-6 md:p-10 ">
+            <div className="text-white font-mono text-center max-w-[1172px] mx-auto min-tb:max-tb:px-[50px] p-6 md:p-10 " data-aos="fade-up" >
               {/* <h2 className="xl:text-45px  lg:text-40px min-tb:max-tb:text-30px md:text-35px sm:text-30px text-[22px] font-semibold"> */}
               <h2 className={`${classes.learnToGrow_title}  font-semibold`}>
                 {data.hero.title}
               </h2> 
               {/* <p className="lg:text-30px md:text-25px text-[12px] min-tb:max-tb:text-[16px] min-tb:max-tb:pb-[0px] text-md min-tb:max-tb:pt-[31px] pt-[19px] md:pb-[40px] pb-[15px]"> */}
-              <p className={`${classes.learnToGrow_desc} `}>
+              <p className={`${classes.learnToGrow_desc} `} >
                 {data.hero.description}
               </p>
             </div>
@@ -63,7 +63,7 @@ function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelecte
         <div className="main_padding">
           <div className=" relative max-w-[1335px] mx-auto -mt-[250px] md:-mt-[279px] " id="tools">
             {/* <h2 className="font-mono font-semibold xl:text-45px lg:text-40px min-tb:max-tb:text-[30px] text-[20px] text-white mx-auto text-center"> */}
-            <h2 className={`${classes.tools_title} font-mono font-semibold  text-white mx-auto text-center`}>
+            <h2 className={`${classes.tools_title} font-mono font-semibold  text-white mx-auto text-center`} data-aos="fade">
               Tools
             </h2>
             {/* <div className="grid grid-cols-1 min-tb:max-tb:px-[50px] min-tb:max-tb:grid-cols-1  md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1355px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] font-mono mx-auto mt-[40px] min-tb:max-tb:mt-[47px] md:mt-[80px]"> */}

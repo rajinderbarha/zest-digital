@@ -163,10 +163,10 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
 
                                 </div>
                                  {LeadToSaleIsHovered && (
-                                     <div className={`${classes.hover_box}`}>
+                                     <div className={`${classes.hover_box} ${classes.lead_to_sale} `}>
                                          <ul className=''>
-                                             <li>How many leads do you reqiure in order to close one sale?</li>
-                                             <li>Enter the percentage into the calculator</li>
+                                             <li>How many leads do you reqiure in order to close one sale? Enter the percentage into the calculator</li>
+                                             {/* <li></li> */}
                                          </ul>
                                      </div>
                                      )}

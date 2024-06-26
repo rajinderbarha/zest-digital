@@ -105,7 +105,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                           </Link>
                         </div>
                         <div
-                          className={`${innerSpan} ps-[20px] md:ps-0 md:max-w-[442px] self-center md:self-center md:justify-self-start  sm:max-w-[550px] md:text-start  justify-self-start`}
+                          className={`${innerSpan} ${classes.card_text}  ps-[20px] md:ps-0  self-center md:self-center md:justify-self-start  md:text-start  justify-self-start`}
                         >
                           {/* <h3 className={` sm:text-[25px] text-[16px] md:max-970:text-[23px] min-tb:max-tb:text-[20px]`}> */}
                           <h3 className={`${classes.upper_title} `}>

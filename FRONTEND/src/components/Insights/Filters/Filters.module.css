@@ -23,6 +23,9 @@
     .Filters{
         padding: 20px 40px 0px 40px;
     }
+    .Filters_btn,.Insight_tag {
+      padding: 7px 15px;
+  }
 }
 
 @media screen and (max-width:767px) {
@@ -30,7 +33,7 @@
         padding: 0px 0px 0px 0px;
     }
     .Filters_btn ,.Insight_tag{
-        padding: 5px 20px;
+        padding: 5px 10px;
         font-size: 12px;
     }
 }
@@ -87,7 +90,9 @@
 
     @media only screen and (min-width:1663px){
         .insight_box{
-            padding: 50px 70px;
+            /* padding: 50px 70px;
+            padding-bottom: 60px; */
+            padding: 60px 50px;
             padding-bottom: 60px;
         }
     }
@@ -99,15 +104,15 @@
 }
 @media only screen and (min-width:1280px) and (max-width:1662px){
     .insight_box {
-        padding: 40px 50px;
-        padding-bottom: 65px;
+        padding: 50px 40px;
+        padding-bottom: 75px;
         /* border:1px solid yellow; */
     }
 }
 @media only screen and (min-width:1024px) and (max-width:1279px){
     .insight_box {
-        padding: 35px 40px;
-        padding-bottom: 65px;
+        padding: 40px 35px;
+        padding-bottom: 70px;
         /* border:1px solid yellow; */
     }
 }
@@ -120,7 +125,7 @@
 }
 @media only screen and (min-width:640px) and (max-width:767px) {
     .insight_box {
-
+padding: 35px 30px;
         padding-bottom: 55px;
         /* border:1px solid yellow; */
     }
@@ -138,6 +143,11 @@
         margin-top: 35px;
         font-size: 26px;
         }
+        .insight_box {
+          padding: 37px 37px;
+          padding-bottom: 78px;
+          /* border:1px solid yellow; */
+      }
          
 }
 
@@ -178,7 +188,7 @@
     }
     .insight_box h2{
         margin-top: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         }
         .insight_box img{
             position: relative;
@@ -281,12 +291,12 @@
       margin-bottom: 60px;
       font-size: 40px;
     }
-    .insight_box {
+    /* .insight_box {
       padding-left: 35px;
       padding-right: 20px;
       padding-top: 50px;
       padding-bottom: 50px;
-    }
+    } */
     .filter_text {
       margin-bottom: 10px;
     }
@@ -326,12 +336,12 @@
       margin-bottom: 70px;
       font-size: 50px;
     }
-    .insight_box {
+    /* .insight_box {
       padding-left: 45px;
       padding-right: 28px;
       padding-top: 60px;
       padding-bottom: 60px;
-    }
+    } */
     .filter_text {
       margin-bottom: 20px;
     }
@@ -352,12 +362,12 @@
       margin-bottom: 20px;
       font-size: 55px;
     }
-    .insight_box {
+    /* .insight_box {
       padding-left: 50px;
       padding-right: 50px;
       padding-top: 70px;
       padding-bottom: 70px;
-    }
+    } */
     .filter_text {
       margin-bottom: 40px;
     }

@@ -17,7 +17,7 @@ const Services_Quotes: React.FC<Services_Quotes> = ({ Services_Quotes }) => {
 
             <div className="" key={index}>
               {index % 2 == 0 ? (
-                <div className={`${classes.objective_left_description} md:mt-0 mt-10`}>
+                <div className={`${classes.objective_left_description} md:mt-0 mt-10`} data-aos="fade-right">
                   {/* <h2 className={`${classes.Interests_h2} font-mono font-semibold xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[26px] min-tb:max-tb:leading-[37px] sm:text-[28px] text-[18px] italic lg:mb-[20px] md:mb-[15px] sm:mb-[10px] mb-[8px] max-w-[1347px] `}>{desc_quote}</h2> */}
                   <h2 className={`${classes.Interests_h2} font-mono font-semibold min-tb:max-tb:leading-[37px] italic max-w-[1347px] `}>{desc_quote}</h2>
                   {/* <p className='text-color-9 md:pt-[8px] sm:pt-[5px] pt-[3px] border-t lg:text-30px md:text-25px min-tb:max-tb:text-[18px] min-tb:max-tb:leading-[23px] sm:text-[20px] text-[12px] font-mono  border-color-9'>{name_quote}</p> */}
@@ -25,7 +25,7 @@ const Services_Quotes: React.FC<Services_Quotes> = ({ Services_Quotes }) => {
                 </div>
               ) : (
                 // <div className={`${classes.objective_right_description} text-right xl:mt-[120px] lg:mt-[90px] md:mt-[60px] sm:mt-[30px] mt-[70px]  max-w-[1347px] ms-auto `}>
-                <div className={`${classes.objective_right_description} text-right  max-w-[1347px] ms-auto `}>
+                <div className={`${classes.objective_right_description} text-right  max-w-[1347px] ms-auto `} data-aos="fade-left">
                   <h2 className={`${classes.Interests_h2} ms-auto font-mono font-semibold min-tb:max-tb:leading-[37px]  italic `}>{desc_quote}</h2>
                   <p className={`${classes.below_line} ms-auto text-color-9 border-t  font-moo  border-color-9`}>{name_quote}</p>
                 </div>

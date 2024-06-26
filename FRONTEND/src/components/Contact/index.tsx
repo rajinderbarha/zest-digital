@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./Contact.module.css";
 import MapLocations from "./MapLocations";
 import { ContactType } from "../../../lib/interface";
@@ -12,8 +12,16 @@ import facebook_white from '../../assets/images/facebook_white.svg'
 import linkedin_white from '../../assets/images/linkedin_white.svg'
 import instagram_white from '../../assets/images/instagram_white.svg'
 import { useRouter } from "next/navigation";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 function Contact({ data }: { data: ContactType }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 // console.log(data);
 
   const router = useRouter()
@@ -44,7 +52,7 @@ function Contact({ data }: { data: ContactType }) {
             <div
               className={`${classes.text_div} md:col-span-5 min-tb:max-tb:col-span-6  relative h-max lg:me-10`}
             >
-              <div className=" max-w-[636px] ">
+              <div className=" max-w-[636px] " data-aos="fade-up">
                 {/* <h2 className="font-mono font-semibold md:text-35px min-tb:max-tb:text-25px min-tb:max-tb:leading-[34px] text-[22px] pe-10"> */}
                 <h2 className={`${classes.contact_heading} font-mono font-semibold `}>
                   {data?.description}
@@ -108,7 +116,7 @@ function Contact({ data }: { data: ContactType }) {
                   </div>
                 </div>
               </div>
-              <div className="ms-auto  hand_img sm:absolute right-0 lg:-bottom-[60%] md:-bottom-[50%] -bottom-[20%] md:max-w-max ">
+              <div className="ms-auto  hand_img sm:absolute right-0 lg:-bottom-[60%] md:-bottom-[50%] -bottom-[20%] md:max-w-max " data-aos="fade-up">
                 <Image
                   src={urlFor(data?.image).url()}
                   width={270}
@@ -120,7 +128,7 @@ function Contact({ data }: { data: ContactType }) {
             </div>
             {/* <div className="md:col-span-7 md:mt-0 min-tb:max-tb:col-span-6 lg:mt-0  sm:mt-[150px] mt-[80px]"> */}
             <div className={`${classes.form_div} md:col-span-7 min-tb:max-tb:col-span-6`}>
-              <div className="max-w-[956px] min-tb:max-tb:px-[30px] ms-auto bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px px-5 sm:px-10 ">
+              <div className="max-w-[956px] min-tb:max-tb:px-[30px] ms-auto bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px px-5 sm:px-10 " data-aos="fade-up">
                 <form  onSubmit={handleFormSubmit} className="max-w-[670px] mx-auto min-tb:max-tb:gap-[26px] sm:py-[88px] min-tb:max-tb:py-[40px] pt-[38px] pb-[41px] grid gap-6 sm:gap-9">
                   <div className="enquiry">
                     <label

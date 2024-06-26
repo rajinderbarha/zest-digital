@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./ScheduleCall.module.css";
 import Image from "next/image";
 import { urlFor } from "../../../lib/sanity.client";
 import { Schedule_a_call } from "../../../lib/interface";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 function ScheduleCall({ data }: { data: Schedule_a_call }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <div className="ScheduleCall main_padding xl:mb-[132px] lg:mb-[110px] md:mb-[80px] sm:mb-[60px] mb-[50px]">
-        <div className="main_container">
+        <div className="main_container" data-aos="fade-up">
           <h2 className="font-mono xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] text-[22px] font-semibold mt-[32px]">
             {data.heading}
           </h2>
@@ -17,7 +25,7 @@ function ScheduleCall({ data }: { data: Schedule_a_call }) {
           </p>
           <div
             className={`${classes.bg_image} flex items-center max-tb:flex-col md:flex-row rounded-[15px] md:rounded-[20px] lg:rounded-30px px-[40px] md:px-[94px] xl:py-[160px] lg:py-[130px] md:py-[100px] min-tb:max-tb:pt-[75px] min-tb:max-tb:mt-[32px] sm:py-[55px] py-[53px] pb-[114px] mt-[44px] `}
-          >
+            data-aos="fade-up">
             <div className={`profile max-w-[307px] text-center`}>
               <div className="">
                 <Image

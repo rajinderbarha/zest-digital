@@ -24,7 +24,7 @@ function MapLocations({data}:any) {
     <>
     {data.map(({longitude,latitude,contactInfo, leftDescriptionList,rightDescriptionList}:any,index:any)=> (
 
-      <div key={index} className={`${classes.MapLocations} `}>
+      <div key={index} className={`${classes.MapLocations} `} data-aos="fade-up" >
         <div
           className={`${classes.location_div}  `}
         >

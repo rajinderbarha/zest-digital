@@ -7,7 +7,7 @@ const Services_book_call: React.FC<Services_book_cal> = (props) => {
   const { heading, buttonName, buttonLink } = props;
   return (
     <>
-    <div className="GrowthMarketingServices_book_call xl:mt-[170px] lg:mt-[150px] md:mt-[125px] min-tb:max-tb:mt-[143px] sm:mt-[80px] mt-[68px] main_padding">
+    <div className="GrowthMarketingServices_book_call xl:mt-[170px] lg:mt-[150px] md:mt-[125px] min-tb:max-tb:mt-[143px] sm:mt-[80px] mt-[68px] main_padding" data-aos="fade-up">
 
     <div className={`${classes.container_bg} main_container rounded-[15px] md:rounded-[20px] lg:rounded-30px bg-color-1`}>
         {/* <div className="max-w-[1584px] mx-auto xl:py-[121px] lg:py-[100px] md:py-[75px] min-tb:max-tb:pt-[60px] min-tb:max-tb:pb-[76px] sm:py-[40px] py-[30px] px-[20px] sm:px-[30px] md:px-[50px] lg:px-[70px] "> */}

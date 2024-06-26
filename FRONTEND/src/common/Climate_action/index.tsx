@@ -10,7 +10,7 @@ function Climate_action({ climate_actionImg, earth_img, smallDescription }: Clim
 
       <div className="main_padding  md:mb-[110px] mb-[50px]">
 
-        <div className="main_container ">
+        <div className="main_container " data-aos="fade-up">
           <div
             // className={`mx-auto md:ps-14  md:pe-7 min-tb:max-tb:px-[36px] sm:px-[35px] px-[20px]   lg:py-[70px] md:py-[60px] min-tb:max-tb:py-[40px] sm:py-[50px] py-[30px] rounded-[20px] md:rounded-30px shadow-blue-right border border-black font-mono bg-white text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}
             className={`${classes.climate_action_content} mx-auto rounded-[15px] md:rounded-[20px] lg:rounded-30px shadow-blue-right  font-mono text-color-1 grid md:grid-cols-12 grid-cols-1 md:gap-0 gap-5`}

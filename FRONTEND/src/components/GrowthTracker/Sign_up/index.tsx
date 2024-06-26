@@ -7,7 +7,7 @@ function Sign_up() {
     <>
       <div className="main_padding">
         {/* <div className={`${classes.Sign_up} max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right  lg:pt-[55px] px-[16px]  sm:pt-[50px] pt-[34px] md:pb-[70px] min-tb:max-tb:text-[60px] min-tb:max-tb:pb-[44px] sm:pb-[50px] pb-[34px] rounded-[15px] md:rounded-[20px] lg:rounded-30px xl:mb-[206px] lg:mb-[190px] md:mb-[150px] min-tb:max-tb:mb-[132px] sm:mb-[130px] mb-[100px]`}> */}
-        <div className={`${classes.Sign_up} max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right   rounded-[15px] md:rounded-[20px] lg:rounded-30px `}>
+        <div className={`${classes.Sign_up} max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right   rounded-[15px] md:rounded-[20px] lg:rounded-30px `} data-aos="fade-up">
           <div className="detail text-center">
             {/* <h2 className="xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] text-[22px] font-mono font-semibold md:mb-[16px]  sm:mb-[8px] mb-[8px]"> */}
             <h2 className={`${classes.form_heading} font-mono font-semibold `}>

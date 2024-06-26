@@ -102,6 +102,27 @@ background-size: cover;
     height: 40px;
 }
 
+@media only screen and (min-width: 1081px) {
+    .banner{
+        /* height: calc(100vh - 115px - 15px); */
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1082px) {
+    .banner{
+        /* height: calc(100vh - 80px - 5px); */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner{
+        /* height: calc(100vh - 54px - 5px); */
+    }
+}
+
+
+
+
+
 @media only screen and (min-width: 1280px) {
     .banner{
         padding-top: 130px;
@@ -109,7 +130,7 @@ background-size: cover;
     }
     .banner_text{
         font-size: 55px;
-        line-height: 67px;
+        line-height: 75px;
     }
 }
 
@@ -142,6 +163,7 @@ background-size: cover;
     }
       .banner_text{
         font-size: 22px;
+        line-height: 30px;
      }
      .banner_btn button{
         font-size: 12px;
