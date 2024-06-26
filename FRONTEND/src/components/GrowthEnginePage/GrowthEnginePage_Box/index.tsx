@@ -11,10 +11,10 @@ const GrowthEnginePage_Box = ({ data }: any) => {
   
   return (
     <>
-      <div className={` mt-[66px] md:mb-36 sm:mb-[130px] mb-[90px] min-tb:max-tb:mb-[161px] main_padding`}>
+      <div className={` mt-[66px] md:mb-36 sm:mb-[130px] mb-[90px] min-tb:max-tb:mb-[161px] main_padding`} >
         <div className="main_container ">
           {/* <div className={`${classes.growth_box} lg:rounded-30px md:rounded-[20px] rounded-[15px]  xl:pt-[85px] lg:pt-[80px] md:pt-[65px] min-tb:max-tb:pt-[70px] sm:pt-[50px] pt-[45px] pb-[1px] main_padding`}> */}
-          <div className={`${classes.growth_box} lg:rounded-30px md:rounded-[20px] rounded-[15px]   main_padding`}>
+          <div className={`${classes.growth_box} lg:rounded-30px md:rounded-[20px] rounded-[15px]   main_padding`} data-aos="fade-up">
             <div className={`${classes.growth_box_content} max-w-[1520px] mx-auto  relative`}>
               <div>
                 <div className="md:mb-[172px] mb-[87px] min-tb:max-tb:mb-[93px]">
@@ -27,7 +27,7 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                   {data.growthContent.map((item: any, index: number) => (
                     <div key={`${index}_GrowthEnginePage_Box_nested_1`}>
                       {index % 2 === 0 ? (
-                        <div className={`${classes.growth_box_text_content} ${classes.growth_box_text_content_left} Our_values_main  md:max-w-[830px] md:pe-16`}>
+                        <div className={`${classes.growth_box_text_content} ${classes.growth_box_text_content_left} Our_values_main  md:max-w-[830px] md:pe-16`} data-aos="fade-right">
                           {/* <h3 className="font-semibold xl:text-40px lg:text-[36px] md:text-[32px] min-tb:max-tb:text-[20px] text-[16px] lg:mb-[30px] md:mb-[15px] min-tb:max-tb:mb-[8px] mb-[8px] font-mono text-color-7  md:w-max"> */}
                           <h3 className={`${classes.growth_box_heading} font-semibold  font-mono text-color-7  md:w-max`}>
                             {item.heading}
@@ -58,7 +58,7 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                       ) : (
                         <div
                           className={`${classes.growth_box_text_content_right}  ${item.buttonLink === null && item.buttonName === null && ( `${classes.right_content_without_button}`)} ${classes.growth_box_text_content} ms-auto text-end md:max-w-[830px] md:ps-16 my-[66px] sm:my-11`}
-                        >
+                          data-aos="fade-left" >
                           <h3 className={`${classes.growth_box_heading} font-semibold ms-auto font-mono  text-color-7  md:w-max`}>
                             {item.heading}
                           </h3>

@@ -75,15 +75,15 @@ function Gross_profit({ data }: { data: Gross_profitType }) {
     // xl:mt-[85px] lg:mt-[65px] md:mt-[50px] sm:mt-[40px] mt-[35px]
     <div className="main_padding ">
       <div className="main_container">
-        <div className={`${classes.Gross_profit} main_padding tablet_padding  md:rounded-30px rounded-[20px] `}>
-          <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid grid-cols-12  w-full justify-items-stretch	gap-10 2xl:gap-20`}>
+        <div className={`${classes.Gross_profit} main_padding tablet_padding  md:rounded-30px rounded-[20px] `}  data-aos="fade-up">
+          <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid grid-cols-12  w-full justify-items-stretch	gap-10 2xl:gap-20`} >
             {data?.collection?.map((item, index: number) => {
               // console.log("grossss", item.slug)
               return (
                 <div
                   key={index}
                   // className={` ${classes.profit_box}  Gross_profit_box_start text-center border bg-color-1 rounded-[20px] lg:rounded-30px  font-mono border-color-8 xl:py-[75px] lg:py-[55px]  sm:py-[25px] py-[18px] `}
-                  className={` ${classes.profit_box}  Gross_profit_box_start text-center border bg-color-1 rounded-[20px] lg:rounded-30px  font-mono border-color-8  `}
+                  className={` ${classes.profit_box}  Gross_profit_box_start text-center border bg-color-1 rounded-[20px] lg:rounded-30px  font-mono border-color-8  `} data-aos="fade-up" data-aos-delay="180"
                 >
                   {/* <h2 className="xl:text-55px lg:text-50px md:text-40px sm:text-35px  text-[26px] font-semibold text-color-7">{item.card.heading} </h2> */}
                   <h2 className="font-semibold text-color-7">{item.card.heading} </h2>

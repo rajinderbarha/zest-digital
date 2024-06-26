@@ -21,9 +21,9 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
             index % 2 == 0 ? (
               <div
                 key={`${item.heading}_${index}`}
-                className={`${classes.content_left} flex items-center  flex-row  bg-white ${classes.objective_inner} ${classes.objective_select} lg:gap-10  `}
+                className={`${classes.content_left} flex items-center  flex-row  bg-white ${classes.objective_inner} ${classes.objective_select} lg:gap-10  `} 
               >
-                <div className="me-auto md:max-w-[1057px] xl:pe-[100px] lg:pe-[70px] md:pe-[50px]">
+                <div className="me-auto md:max-w-[1057px] xl:pe-[100px] lg:pe-[70px] md:pe-[50px]" data-aos="fade-right">
                   {/* <h2 className="xl:text-45px lg:text-40px md:text-35px  min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[39px] sm:text-30px text-[22px] text-color-1 font-semibold font-mono "> */}
                   <h2 className={`${classes.objective_title}  text-color-1 font-semibold font-mono `}>
                     {/* {item.heading} */}
@@ -35,7 +35,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
 
                   </div>
                 </div>
-                <div className="flex  min-tb:max-tb:ms-auto  ms-auto sm:mt-[15px] mt-[25px]">
+                <div className="flex  min-tb:max-tb:ms-auto  ms-auto sm:mt-[15px] mt-[25px]" data-aos="fade-left">
                   <img
                     src={urlFor(item.image).url()}
                     alt=""
@@ -45,12 +45,12 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
                 </div>
               </div>
             ) : (
-              <div className={`${classes.objective} ${classes.objective_select} main_container`} key={index}>
+              <div className={`${classes.objective} ${classes.objective_select} main_container`} key={index} >
                 <div
                   className={`${classes.content_right}  flex items-center flex-row  bg-white ${classes.objective_inner} lg:gap-10 `}
                 >
                   {isGrowthPage ? (
-                    <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[14px]">
+                    <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[14px]" data-aos="fade-right">
                       <img
                         src={urlFor(item.image).url()}
                         alt=""
@@ -59,7 +59,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
                       />
                     </div>
                   ) : (
-                    <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[25px]">
+                    <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[25px]" data-aos="fade-right">
                       <img
                         src={urlFor(item.image).url()}
                         alt=""
@@ -68,7 +68,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
                       />
                     </div>
                   )}
-                  <div className={`ms-auto md:max-w-[1057px]  ${isGrowthPage ? `min-tb:max-tb:max-w-[412px]`: `xl:ps-[80px] lg:ps-[50px] md:ps-[20px] min-tb:max-tb:max-w-[433px]`} text-right`}>
+                  <div className={`ms-auto md:max-w-[1057px]  ${isGrowthPage ? `min-tb:max-tb:max-w-[412px]`: `xl:ps-[80px] lg:ps-[50px] md:ps-[20px] min-tb:max-tb:max-w-[433px]`} text-right`} data-aos="fade-left">
                     {/* <h2 className=" md:max-w-[675px] ms-auto xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[39px] sm:text-30px text-[22px] text-color-1 font-semibold font-mono "> */}
                     <h2 className={`${classes.objective_title}  md:max-w-[675px] ms-auto text-color-1 font-semibold font-mono `}>
                       {/* {item.heading} */}

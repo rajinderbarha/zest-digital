@@ -33,7 +33,7 @@ const Growth_engine = ({
             >
               {title}
             </h2>
-            <p className={`${classes.growth_engine_desc} md:text-3xl mt-5 md:mb-[37px] mb-[20px]`}>
+            <p className={`${classes.growth_engine_desc} mt-5 md:mb-[37px] mb-[20px]`}>
               {description}
             </p>
             <Link href={buttonLink} className="inline-block">

@@ -61,7 +61,7 @@ const closeMenu = () => {
               key={`header_${item.logo._id}`}
               className="screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative"
             >
-              <div className={`${classes.desktop_nav} flex items-center gap-68px `}>
+              <div className={`${classes.desktop_nav} flex items-center gap-68px `} >
                 <div className="screen-1-max:w-24 lg:w-28 xl:w-auto ">
                   <Link href={"/"}>
                     <Image
@@ -76,7 +76,7 @@ const closeMenu = () => {
                 <div
                   id="nav-menus"
                   // className={`${navMenu.menu.simple} + ${navMenu.menu.responsive1} + ${navMenu.menu.responsive2}`}
-                  className={`flex gap-[40px] text-base font-mono border-black ${classes.navMenuClass}`}
+                  className={`flex gap-[40px] text-base font-mono border-black ${classes.navMenuClass}`} data-aos="fade-right"
                 >
                   
                   {/* {item.navItem.map((navItem, index) => (
@@ -104,7 +104,7 @@ const closeMenu = () => {
                   ))}
                 </div>
               </div>
-              <div className="">
+              <div className="" data-aos="fade-left">
                 <Link
                   href={item.button.navLink}
                   className="screen-1-max:hidden font-mono text-base px-21px py-[5px] bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1"
@@ -168,7 +168,7 @@ const closeMenu = () => {
                   >
                     {item.button.navName}
                   </Link> */}
-                  <Image src={Sub_Logo} className="md:w-[200px] sm:w-[150px] w-[130px] mt-[150px]" alt="Logo_img" />
+                  <Image src={Sub_Logo} className="md:w-[200px] sm:w-[150px] w-[130px] md:ml-[42px] sm:ml-[15px] ml-[0px] mt-[150px]" alt="Logo_img" />
                   </div>
                 </div>
               </div>

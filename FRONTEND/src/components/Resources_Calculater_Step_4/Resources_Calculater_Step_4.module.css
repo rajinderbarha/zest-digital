@@ -4,7 +4,9 @@
 .hover_box ul{
     @apply list-decimal list-inside text-color-1 font-lato text-[10px] sm:text-[12px] md:text-[14px] grid gap-y-[5px] sm:gap-y-[14px] md:gap-y-[18px]
 }
-
+.lead_to_sale ul{
+    list-style-type: none;
+}
 @media only screen and (min-width:1265px) {
     .hover_box {
         left: 100%;

@@ -28,6 +28,7 @@
 
     .growth_engine_desc {
         font-size: 25px;
+        line-height: 32px;
         margin-top: 25px;
         margin-bottom: 30px;
     }
@@ -57,11 +58,12 @@
 
     .growth_engine_desc {
         font-size: 18px;
+        line-height: 23px;
         margin: 12px auto;
     }
 
     .growth_engine {
-        padding: 30px 15px 30px 15px;
+        padding: 30px 23px 30px 23px;
     }
 
     .growth_engine button {
@@ -88,6 +90,7 @@
 
     .growth_engine_desc {
         font-size: 12px;
+        line-height: 15px;
     }
 
     .growth_engine button {
@@ -184,12 +187,25 @@
     .growth_engine {
         padding: 70px 28px 70px 56px;
     }
+    .growth_engine_desc{
+        font-size: 30px;
+        line-height: 39px;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .growth_engine {
         padding: 50px 20px 50px 48px;
     }
+    .growth_engine_desc{
+        font-size: 30px;
+        line-height: 39px;
+    }
 }
 
 
+@media only screen and (max-width:550px){
+    .growth_engine {
+        padding: 30px 15px 30px 15px;
+    }
+}

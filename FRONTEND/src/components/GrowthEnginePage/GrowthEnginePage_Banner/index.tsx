@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./GrowthEnginePage_Banner.module.css";
 // import { GrowthTrackerType } from "../../../../lib/interface";
 import Link from "next/link";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const GrowthEnginePage_Banner = ({ data }: any) => {
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
       {/* <div className={`${classes.GrowthEnginePage_Banne} main_padding  xl:mt-[143px] lg:mt-[110px] md:mt-[80px] min-tb:max-tb:mt-[55px] min-tb:max-tb:mb-[65px] sm:mt-[50px] mt-[40px]`}> */}
-      <div className={`${classes.GrowthEnginePage_Banner} main_padding  `}>
+      <div className={`${classes.GrowthEnginePage_Banner} main_padding  `} data-aos="fade-up">
         <div className="main_container">
           <div className={`${classes.banner_container} grid  `}>
             <div className="">

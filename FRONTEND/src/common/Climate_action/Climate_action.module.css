@@ -12,6 +12,7 @@ background-color: white;
 
 .growth_engine_desc{
 font-size: 30px;
+line-height: 39px;
 }
 
 
@@ -30,6 +31,7 @@ font-size: 30px;
     }
     .growth_engine_desc{
     font-size: 25px;
+    line-height: 32px;
     }
 }
 
@@ -43,6 +45,7 @@ font-size: 30px;
     }
     .growth_engine_desc{
         font-size: 12px;
+        line-height: 15px;
     }
 }
 
@@ -55,6 +58,7 @@ font-size: 30px;
     }
     .growth_engine_desc{
     font-size: 14px;
+    line-height: 18px;
     }
 
 }

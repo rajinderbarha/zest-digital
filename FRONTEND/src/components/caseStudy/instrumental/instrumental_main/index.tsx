@@ -14,7 +14,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
     <div className={`${classes.Instrumental} main_padding `}>
       <div className="max-w-[1520px] mx-auto w-full">
         <div className={`${dynamicClass !== "special-instrumental" && `grid sm:gap-10 sm:grid-cols-12`}   items-center`}>
-          <div className={`${classes.grid_image_div} ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `sm:col-span-4 sm:order-1 order-2`} ${dynamicClass === "conversations" && `${classes.conversations_img} md:col-span-6 md:order-1 order-2`} ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 md:order-2 order-2`} sm:mt-[30px] mt-[25px] `}>
+          <div className={`${classes.grid_image_div} ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `sm:col-span-4 sm:order-1 order-2`} ${dynamicClass === "conversations" && `${classes.conversations_img} md:col-span-6 md:order-1 order-2`} ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 md:order-2 order-2`} sm:mt-[30px] mt-[25px] `} data-aos={`${dynamicClass === "project-window" ? "fade-left" : "fade-right"}`}>
             {/* <div className={`${classes.image_div} hidden md:block relative`}>
 
               <Image
@@ -30,7 +30,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
               <>
                 {/* -----------desktop view------------- */}
 
-                <div className="hidden sm:block">
+                <div className="hidden sm:block"  >
                   <Image
                     // className={`md:ms-auto mx-auto xl:max-w-[350px] h-max lg:max-w-[280px] md:max-w-[200px] min-tb:max-tb:max-w-[170px] box-border text-center`}
                     className={`${classes.left_img} box-border text-center`}
@@ -66,7 +66,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
               <>
                 {/* -----------desktop view------------- */}
 
-                <div className="hidden md:block">
+                <div className="hidden md:block"  >
                   <Image
                     // className="md:ms-auto mx-auto xl:max-w-[685px] xl:h-[350px] lg:max-w-[500px] lg:h-[255px] md:max-w-[400px] md:h-[204px] box-border text-center"
                     className={`${classes.conversations_section_img}  box-border text-center`}
@@ -100,7 +100,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
               <>
                 {/* -----------desktop view------------- */}
 
-                <div className="hidden md:block">
+                <div className="hidden md:block"  >
                   <Image
                     // className="md:ms-auto mx-auto xl:max-w-[685px] xl:h-[540px] lg:max-w-[500px] lg:h-[394px] md:max-w-[514px] md:h-[404px] w-full box-border text-center"
                     className={`${classes.project_window_img} w-full box-border text-center`}
@@ -131,11 +131,11 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
 
 
             {/* <h3 className="font-mono text-color-1 font-semibold lg:text-30px md:text-25px sm:text-[18px] min-tb:max-tb:text-[16px] min-tb:max-tb:leading-[20px] text-[14px] md:max-w-[373px] max-w-[221px] text-center mx-auto md: mt-4"> */}
-            <h3 className={`${classes.image_desc} font-mono text-color-1 font-semibold  text-center mx-auto `}>
+            <h3 className={`${classes.image_desc} font-mono text-color-1 font-semibold  text-center mx-auto `} >
               {data.imageDesc ? data.imageDesc : ""}
             </h3>
           </div>
-          <div className={` ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `sm:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 sm:order-2`}  ${dynamicClass === "conversations" && `${classes.conversations_text} md:col-span-6 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 md:order-2`}  ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 ms-auto lg:pe-[50px] md:pe-[30px] max-w-[891px] order-1 md:order-1`} md:mt-0  `}>
+          <div className={` ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `sm:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 sm:order-2`}  ${dynamicClass === "conversations" && `${classes.conversations_text} md:col-span-6 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 md:order-2`}  ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 ms-auto lg:pe-[50px] md:pe-[30px] max-w-[891px] order-1 md:order-1`} md:mt-0  `} data-aos={`${dynamicClass !== "project-window" && dynamicClass !== "special-instrumental" ? "fade-left" : "fade-right"}`}>
             {/* <h2 className={`font-mono italic font-semibold text-color-1 xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[26px] min-tb:max-tb:leading-[34px] sm:text-[23px] text-[18px] md:mb-[20px] sm:mb-[15px] mb-[10px] ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && `w-max-[909px]`}   ${dynamicClass === "conversations" || dynamicClass === "project-window" && `w-max-[819px]`}`}> */}
             <h2 className={`${classes.text_heading} font-mono italic font-semibold text-color-1  ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && `w-max-[909px]`}   ${dynamicClass === "conversations" || dynamicClass === "project-window" && `w-max-[819px]`}`}>
               {data.heading}
@@ -148,7 +148,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
 
           {dynamicClass === "special-instrumental" &&
 
-            <div className={`${classes.instrumental_img} md:mt-[24px] mt-[32px]`}>
+            <div className={`${classes.instrumental_img} md:mt-[24px] mt-[32px]`} data-aos="fade-left">
               <Image
                 // className={`${classes.special_instrumental_img} md:ms-auto xl:max-w-[860px] xl:h-[460px] lg:max-w-[650px] lg:h-[347px] md:max-w-[560px]  md:h-[300px] sm:max-w-[525px] sm:h-[281px] box-border text-center`}
                 className={`${classes.special_instrumental_img}  md:ms-auto  box-border text-center`}

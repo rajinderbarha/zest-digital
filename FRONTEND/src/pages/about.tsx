@@ -10,12 +10,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
+ 
   return (
     <div className="Body_padding">
       <About_banner data={aboutdata} />

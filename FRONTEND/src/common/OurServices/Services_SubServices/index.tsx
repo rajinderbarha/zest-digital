@@ -12,7 +12,7 @@ const Services_SubServices: React.FC<SubServices> = (props) => {
       <div className={`${classes.GrowthMarketingServices_services} main_padding xl:mt-[170px] lg:mt-[150px] md:mt-[125px]  min-tb:max-tb:mt-[76px] sm:mt-[80px] mt-[68px]`}>
         <div className="main_padding">
                 {/* <div className="max-w-[1510px] w-full mx-auto xl:pt-[114px] lg:pt-[90px] md:pt-[70px] min-tb:max-tb:pt-[48px] sm:pt-[50px] pt-[39px] xl:pb-[165px] lg:pb-[130px]  pb-[102px]  md:px-[20px] min-tb:max-tb:px-[38px] sm:px-[15px] px-5  border border-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px shadow-compo"> */}
-                <div className={`${classes.service_box} max-w-[1510px] w-full mx-auto border border-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px shadow-blue-right`}>
+                <div className={`${classes.service_box} max-w-[1510px] w-full mx-auto border border-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px shadow-blue-right`} data-aos="fade-up">
                     {/* <h2 className='xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] sm:text-30px text-[22px] font-mono font-semibold max-w-[783px] mx-auto text-center text-color-1'>{heading_sub}</h2> */}
                     <h2 className={`${classes.service_heading} font-mono font-semibold max-w-[783px] mx-auto text-center text-color-1`}>{heading_sub}</h2>
                     
@@ -20,7 +20,7 @@ const Services_SubServices: React.FC<SubServices> = (props) => {
                     <div className={`${classes.services}  max-w-[1212px] mx-auto grid grid-cols-3 gap-10 gap-y-[50px] md:gap-y-[114px] min-tb:max-tb:gap-y-[80px] justify-items-center`}>
 
             {props.services.map((item, index) => (
-              <div  key={index} className="max-w-[270px] ">
+              <div  key={index} className="max-w-[270px] " data-aos="fade-up">
               <div className={`${classes.top_image} h-full w-full mx-auto `}>
                   <Image src={urlFor(item.image).url()} alt='' width={250} height={250} className={` h-full w-full`} />
               </div>

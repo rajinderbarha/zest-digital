@@ -33,11 +33,11 @@ const Global_Accordion = ({
    <div className="">
     <div className={`${classes.accordion} max-w-[1520px] mx-auto `}>
       {/* <div className="font-mono font-semibold text-[22px] max-w-[300px] sm:max-w-full mx-auto md:text-45px min-tb:max-tb:text-[30px] text-center text-color-1 xl:mb-[115px] lg:mb-[100px] md:mb-[80px] min-tb:max-tb:mb-[65px] sm:mb-[60px] mb-[40px]"> */}
-      <div className={`${classes.accordion_heading} font-mono font-semibold max-w-[300px] sm:max-w-full mx-auto text-center text-color-1 `}>
+      <div className={`${classes.accordion_heading} font-mono font-semibold max-w-[300px] sm:max-w-full mx-auto text-center text-color-1 `} data-aos="fade">
       {heading_acc}
       </div>
       {card_acc.map((item,index) => (
-        <div key={index} className={classes.accordion_item}>
+        <div key={index} className={classes.accordion_item} data-aos="fade-up">
           <button
             onClick={() => toggleItem(index)}
             // className={`font-mono font-medium sm:py-[30px] py-[20px] min-tb:max-tb:py-[16px] text-left ${classes.title_desc_padding_class} ${classes.title_text_class} ${classes.accordion_title} ${openItemId === index ? 'open' : ''}`}
@@ -68,7 +68,7 @@ const Global_Accordion = ({
           </div>
         ))}
       </div>
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-up">
         <Link href={belowbtnLink_acc}>
           {/* <button className="font-mono bg-color-1 border border-color-1 text-white hover:text-color-1 hover:bg-white text-[12px] md:px-[25px] px-[20px] py-[7px] md:py-[10px]  mt-[36px] md:mt-[60px] min-tb:max-tb:mt-[50px] rounded-full"> */}
           <button className={`${classes.speak_button} font-mono bg-color-1 border border-color-1 text-white hover:text-color-1 hover:bg-white  rounded-full`}>

@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./Terms_Conditions.module.css";
 import Boxes from "./Boxes";
 import { TermsAndConditionsType } from "../../../lib/interface";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   // console.log("----------dfata",data.cards[6])
   if (!data) {
     return "Failed to load Terms_Conditions page data" ; // or display a placeholder message
@@ -16,13 +26,13 @@ function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
         <div className={`${classes.Careerbanner}`}>
           <div className="">
           {/* <h1 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] sm:text-35px text-[22px] mb-[30px] xl:mt-[95px] lg:mt-[70px] md:mt-[50px] mt-[30px]"> */}
-          <h1 className={`${classes.terms_heading} font-mono font-semibold `}>
+          <h1 className={`${classes.terms_heading} font-mono font-semibold `} data-aos="fade">
                 {data.heading}
               </h1>
           </div>
         </div>
       </div>
-      <div className="main_container">
+      <div className="main_container" data-aos="fade-up">
         <div
           className={`${classes.box_bg_image} rounded-[15px] md:rounded-[20px] lg:rounded-30px h-[680px] md:h-[936px] lg:h-[680px] `}
         ></div>

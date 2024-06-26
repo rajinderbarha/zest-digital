@@ -154,7 +154,7 @@
 
 // --------------------------------for multiple selected Category ---------------------------------
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import classes from "./Filters.module.css";
 // import Filters_image from "../../../assets/images/Filters.png";
@@ -164,8 +164,18 @@ import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../../lib/sanity.client";
 import { FiltersType } from "../../../../lib/interface";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 function Filters({ data }: {data:FiltersType}) {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   // console.log("data",data)
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
@@ -211,13 +221,13 @@ function Filters({ data }: {data:FiltersType}) {
       <div className="main_padding">
         <div className="main_container">
           {/* <h2 className="font-mono font-semibold xl:my-20 lg:my-[70px] min-tb:max-tb:text-30px  min-tb:max-tb:my-[50px] md:my-[60px] my-[38px] xl:text-55px text-color-1 lg:text-50px md:text-40px text-[22px] sm:text-35px"> */}
-          <h2 className={`${classes.filter_heading} font-mono font-semibold  text-color-1 `}>
+          <h2 className={`${classes.filter_heading} font-mono font-semibold  text-color-1 `} data-aos="fade">
             {data.heading}
           </h2>
         </div>
 
         <div className="main_container">
-          <div className={`${classes.Filters} relative `}>
+          <div className={`${classes.Filters} relative `} data-aos="fade-up">
             <Image
               src={Filters_Desktop_image}
               alt=""
@@ -231,7 +241,7 @@ function Filters({ data }: {data:FiltersType}) {
             <div className={`${classes.Filters_box}  relative z-10  grid lg:grid-cols-12`}>
               <div className="lg:col-span-8  min-tb:max-tb:mt-[30px]  md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
                 {filteredProducts.map((item, index: number) => (
-                  <div className="my-10" key={index}>
+                  <div className="my-10" key={index} data-aos="fade-up">
                     <div
                       className={` ${classes.insight_box} grid sm:grid-cols-12 items-end ${
                         index % 2 === 0
@@ -283,14 +293,14 @@ function Filters({ data }: {data:FiltersType}) {
               </div>
 
               <div className="lg:col-span-1 lg:order-2"></div>
-              <div className="lg:col-span-3 md:px-0 pt-6 md:pt-0 px-[20px]  lg:order-3 order-1 lg:text-right ">
+              <div className="lg:col-span-3 md:px-0 pt-6 md:pt-0 px-[20px]  lg:order-3 order-1 lg:text-right " >
                 {/* <h2 className="sm:text-30px text-[16px]  min-tb:max-tb:text-[20px]  text-white font-mono font-semibold xl:mb-10 lg:mb-[20px]  min-tb:max-tb:mb-[14px]  md:mb-[10px] mb-[8px]"> */}
-                <h2 className={`${classes.filter_text}  text-white font-mono font-semibold `}>
+                <h2 className={`${classes.filter_text}  text-white font-mono font-semibold `} data-aos="fade">
                   Filters
                 </h2>
-                <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3 ">
+                <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3 " data-aos="fade-up">
                   {newArray.map((uniqueEl: any, index: any) => (
-                    <h6
+                    <h6 
                       key={index}
                       className={`${classes.Filters_btn} ${
                         index === 0 && selectedCategories.length === 0
@@ -332,15 +342,15 @@ function Filters({ data }: {data:FiltersType}) {
             </div>
           </div> */}
         {/* <div className={` bg-black rounded-[15px] md:rounded-[20px] lg:rounded-30px xl:mb-[100px]  min-tb:max-tb:mt-[23px]  min-tb:max-tb:mb-[100px] lg:mb-[100px] md:mb-[65px] mb-[120px] md:mt-[100px] sm:mt-[50px] mt-[45px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px]  relative grid grid-cols-3`}> */}
-        <div className={`${classes.navigate_box} bg-black rounded-[15px] md:rounded-[20px] lg:rounded-30px  relative grid grid-cols-3`}>
-          <div className={`${classes.next_text_left} relative self-center  z-10`}>
+        <div className={`${classes.navigate_box} bg-black rounded-[15px] md:rounded-[20px] lg:rounded-30px  relative grid grid-cols-3`} data-aos="fade-up">
+          <div className={`${classes.next_text_left} relative self-center  z-10`} data-aos="fade-left" >
               <Link href={data.linkSection.linkUrl} className={`${classes.navigate_links} inline border-b border-color-6  font-light invisible    text-white`}>
                 {" "}
                 {data.linkSection.linkName}
               </Link>
             </div>
 
-            <div className={` w-full self-center mx-auto`}>
+            <div className={` w-full self-center mx-auto`} data-aos="fade" data-aos-delay="250">
               <Image
                 src={urlFor(data.linkSectionIcon).url()}
                 alt="icon"
@@ -349,7 +359,7 @@ function Filters({ data }: {data:FiltersType}) {
                 height={50}
               />
             </div>
-            <div className={`${classes.next_text_right} relative ms-auto leading-[13px] mb-[2px] self-center  z-10`}>
+            <div className={`${classes.next_text_right} relative ms-auto leading-[13px] mb-[2px] self-center  z-10`} data-aos="fade-right" >
               
               
               {/* <Link href={data.linkSection.linkUrl} className={`inline border-b border-color-6  font-light  text-[10px] sm:text-[12px] md:text-[16px] lg:text-[16px] xl:text-[18px]   text-white`}> */}

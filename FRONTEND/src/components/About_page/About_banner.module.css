@@ -285,6 +285,7 @@
     .Escape_box {
         margin-left: -10px;
         margin-right: -10px;
+        width: calc(100% + 20px)
     }
 }
 

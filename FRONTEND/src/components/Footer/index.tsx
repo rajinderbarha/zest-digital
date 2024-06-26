@@ -62,7 +62,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
 
 
 
-          <div className={`${classes.bg_image} bg-color-1 rounded-t-[15px] sm:rounded-t-[20px] md:rounded-t-[30px] main_padding`}>
+          <div className={`${classes.bg_image} bg-color-1 rounded-t-[15px] sm:rounded-t-[20px] md:rounded-t-[30px] main_padding`} >
           <div className="Body_padding">
             <div className="main_container   md:pt-[48px] sm:pt-[30px] pt-[20px] md:pb-[28px] sm:pb-[20px] pb-[13px]">
               <div className="flex flex-row items-center">
@@ -75,7 +75,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                     className="xl:w-[197px] lg:w-[165px] md:w-[160px] min-tb:max-tb:w-[108px] sm:w-[120px] w-[100px]"
                   />
                 </div>
-                <div className=" max-w-[1171px] w-full ml-[20px] ">
+                <div className=" max-w-[1171px] w-full ml-[20px] " data-aos="fade-right" >
                   <hr className={`${classes.horizontal_line} h-0 border-none`} />
                 </div>
               </div>
@@ -83,7 +83,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                 className={`${classes.detail_cont} max-w-[1521px] mx-auto grid grid-cols-2 sm:grid-cols-6 gap-5 lg:gap-0 lg:grid-cols-12 mt-10`}
               >
                 {item.footerItem.map((footerItm, index) => (
-                  <div className={`${classes.footer_details}`} key={`${index}_footerItm`}>
+                  <div className={`${classes.footer_details}`} key={`${index}_footerItm`} data-aos="fade-up">
                     {/* <h2 className="font-bold xl:text-[24px] lg:text-[22px] md:text-[20px] min-tb:max-tb:text-[18px] text-[16px] lg:mb-3 md:mb-[9px] sm:mb-[6px] mb-[4px] font-mono "> */}
                     <h2 className={`${classes.footer_linkheading} font-bold  font-mono`}>
                       {footerItm.heading}
@@ -103,7 +103,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                 className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end md:my-10 sm:my-[25px] my-[20px]`}
               >
                 {item.brands.map((brandsimg, index) => (
-                  <div key={`${index}_brandsimg`} className="foter_logos">
+                  <div key={`${index}_brandsimg`} className="foter_logos" data-aos="fade-up">
                     <Image
                       src={urlFor(brandsimg.brandImage).url()}
                       width={400}
@@ -114,7 +114,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                   </div>
                 ))}
               </div>
-              <div className={`${classes.socialimages} flex md:justify-start justify-center md:gap-5 sm:gap-[15px] gap-[10px]`}>
+              <div className={`${classes.socialimages} flex md:justify-start justify-center md:gap-5 sm:gap-[15px] gap-[10px]`} data-aos="fade-up">
                 {/* <div className="">
 
                   <FaFacebookF

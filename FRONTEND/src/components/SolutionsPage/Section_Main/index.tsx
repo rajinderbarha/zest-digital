@@ -32,7 +32,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
   return (
     <>
       <div className="main_padding">
-        <div className={`${classes.SingleIntro} bg-color-1 main_container  lg:rounded-30px md:rounded-[20px] rounded-[15px]`}>
+        <div className={`${classes.SingleIntro} bg-color-1 main_container  lg:rounded-30px md:rounded-[20px] rounded-[15px]`} data-aos="fade-up"  >
           <div className={`${classes.single_container}`}>
             {/* <div className={`max-w-[1099px] mx-auto xl:pt-[126px] lg:pt-[100px] min-tb:max-tb:pb-[300px] md:pt-[75px] sm:pt-[50px] pt-[50px] md:pb-[368px] pb-[240px]`}> */}
             <div className={`${classes.solution_box}  mx-auto `}>
@@ -56,7 +56,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
              </div>
          </div> */}
 
-<div className={`${classes.animationDiv} font-mono`}>
+<div className={`${classes.animationDiv} font-mono`} >
                 {/* <div className={`${classes.animationFullText} mx-auto   md:mb-[0px] md:w-fit lg:w-fit w-full font-semibold text-center max-w-[500px]  md:max-w-none flex-col md:flex-row md:px-0 px-[22px] xl:pb-[160px] lg:pb-[120px] md:pb-[80px]  pb-[50px]`}> */}
                 <div className={`${classes.animationFullText} mx-auto text-white  font-semibold text-center  flex-col md:flex-row `}>
                 {/* <h2 className="xl:text-45px lg:text-40px px-4 md:text-35px min-tb:max-tb:text-25px sm:text-25px text-[18px] flex md:gap-4 flex-wrap justify-center text-center"> */}
@@ -91,7 +91,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
                 </div>
               </div> */}
 
-              <div className=" mx-auto min-tb:max-tb:mt-0 min-tb:max-tb:px-[67px] max-w-[1027px] xl:mt-[215px] lg:mt-[100px] md:mt-[90px] mt-[60px]">
+              <div className=" mx-auto min-tb:max-tb:mt-0 min-tb:max-tb:px-[67px] max-w-[1027px] xl:mt-[215px] lg:mt-[100px] md:mt-[90px] mt-[60px]" data-aos="fade-up" data-aos-delay="280">
                 {/* <h2 className="font-mono min-tb:max-tb:text-25px min-tb:max-tb:px-[0px] italic font-semibold sm:text-25px text-[18px]  md:text-35px leading-normal lg:leading-normal lg:text-40px xl:text-45px text-white mx-auto text-center px-[16px] sm:px-[40px] pb-[24px]"> */}
                 <h2 className={`${classes.solution_heading} font-mono italic font-semibold   text-white mx-auto text-center`}>
                   {data.heading}
