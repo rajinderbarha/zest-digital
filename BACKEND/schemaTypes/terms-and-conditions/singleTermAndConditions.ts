@@ -26,6 +26,7 @@ export const SingleTermsAndConditions = defineType({
             type: "string",
             title: "Small Description"             //title of the field
         },
+        
         {name: 'buttonName', type: 'string', title: 'Button Name'},
 
          
@@ -34,16 +35,12 @@ export const SingleTermsAndConditions = defineType({
             title: 'Content',
             type: 'array',
             of: [
-              {
-                type: 'block',
-               
-
-              },
-              // {
-              //   type: 'customBlock', // Reference to a custom block type
-              // },
+              { type: 'block' },
+              
+             
             ],
           },
+          
         
         {
             name: 'banner',
@@ -54,3 +51,5 @@ export const SingleTermsAndConditions = defineType({
         }
     ],
 })
+
+

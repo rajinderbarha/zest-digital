@@ -10,7 +10,10 @@ export default defineConfig({
   projectId: 'dexthfb7',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [
+    structureTool(),
+    visionTool(), // Add the table plugin here
+  ],
 
   schema: {
     types: schemaTypes,

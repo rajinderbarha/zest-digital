@@ -9,7 +9,8 @@ import {SingleCaseStudy} from './caseStudy/singleCaseStudy'
 import {CaseStudy} from './caseStudy'
 import {Solution} from './solution'
 import {Insights} from './insights'
-import {SingleInsights, video} from './insights/singleInsights'
+import {SingleInsights} from './insights/singleInsights'
+import { video } from './common/video'
 import {Resources} from './resources'
 import {BrandList} from './common/brandList'
 import {Schedule_a_call} from './Schedule_a_call'
@@ -22,8 +23,6 @@ import {SingleService} from './Services/singleservice'
 import {FAQ} from './common/FAQ'
 import {ServicesAgencyAddress} from './Services/agencyAddress'
 import {HomePage} from './Homepage'
-import {GrowthCard} from './common/growthCard'
-import { customBlock } from './terms-and-conditions/customBlock'
 export const schemaTypes = [
   Header,
   Footer,
@@ -37,7 +36,6 @@ export const schemaTypes = [
   SingleInsights,
   TermsAndConditions,
   SingleTermsAndConditions,
-  customBlock,
   Solution,
   SingleSolution,
   Resources,
@@ -49,6 +47,6 @@ export const schemaTypes = [
   Careers,
   ServicesAgencyAddress,
   FAQ,
-  GrowthCard,
-  video
+  video,
+
 ]
