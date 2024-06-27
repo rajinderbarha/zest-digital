@@ -10,7 +10,7 @@ const Services_Quotes: React.FC<Services_Quotes> = ({ Services_Quotes }) => {
   return (
     <>
       {/* <div className={`${classes.Instrumental} main_padding xl:mt-[225px] lg:mt-[200px] md:mt-[170px] min-tb:max-tb:mt-[129px] sm:mt-[120px] mt-[80px] xl:mb-[290px] lg:mb-[250px] md:mb-[200px] min-tb:max-tb:mb-[140px] sm:mb-[150px] mb-[100px]`}> */}
-      <div className={`${classes.Instrumental} main_padding xl:mt-[225px] lg:mt-[200px] md:mt-[170px] min-tb:max-tb:mt-[129px] sm:mt-[120px] mt-[80px] xl:mb-[290px] lg:mb-[250px] md:mb-[200px] min-tb:max-tb:mb-[140px] sm:mb-[150px] mb-[100px]`}>
+      <div className={`${classes.Instrumental} main_padding xl:mt-[225px] lg:mt-[200px] md:mt-[170px] min-tb:max-tb:mt-[129px] sm:mt-[120px] mt-[80px] xl:mb-[290px] lg:mb-[250px] md:mb-[200px] min-tb:max-tb:mb-[140px] sm:mb-[150px] mb-[100px] overflow-x-hidden`}>
         <div className='main_container'>
           {Services_Quotes && Services_Quotes.map(({ desc_quote, name_quote }, index) => (
 

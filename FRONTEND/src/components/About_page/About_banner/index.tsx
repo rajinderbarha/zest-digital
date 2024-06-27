@@ -21,10 +21,10 @@ function About_banner({ data }: { data: AboutType[] }) {
         <div className="main_container">
           {data?.map((item, index) => (
             <div
-              className="  xl:mt-[143px] lg:mt-[120px] md:mt-[50px] sm:mt-[40px] mt-[30px] relative"
+              className="  xl:mt-[143px] lg:mt-[120px] md:mt-[50px] sm:mt-[40px] mt-[30px] mb-[6px] relative"
               key={`${index}_About_banner`}
             >
-              <div className="Founded_heading max-tb:max-w-[553px] max-w-[850px]" >
+              <div className={`${classes.Founded_heading} max-tb:max-w-[553px] max-w-[992px]`} >
                 {/* <h2 className="xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[26px] sm:text-[27px] text-[22px] font-semibold text-color-1 font-mono bg-light-green-1 w-max px-2"> */}
                 <h2 className={`${classes.about_title} font-semibold text-color-1 font-mono bg-light-green-1 w-max `}>
                   {item.hero.title}

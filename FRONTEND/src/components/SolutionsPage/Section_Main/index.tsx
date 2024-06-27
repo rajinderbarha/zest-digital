@@ -91,7 +91,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
                 </div>
               </div> */}
 
-              <div className=" mx-auto min-tb:max-tb:mt-0 min-tb:max-tb:px-[67px] max-w-[1027px] xl:mt-[215px] lg:mt-[100px] md:mt-[90px] mt-[60px]" data-aos="fade-up" data-aos-delay="280">
+              <div className={`${classes.solution_box_text} mx-auto min-tb:max-tb:mt-0 min-tb:max-tb:px-[67px] max-w-[1027px] xl:mt-[215px] lg:mt-[100px] md:mt-[90px] mt-[60px]`} data-aos="fade-up" data-aos-delay="280">
                 {/* <h2 className="font-mono min-tb:max-tb:text-25px min-tb:max-tb:px-[0px] italic font-semibold sm:text-25px text-[18px]  md:text-35px leading-normal lg:leading-normal lg:text-40px xl:text-45px text-white mx-auto text-center px-[16px] sm:px-[40px] pb-[24px]"> */}
                 <h2 className={`${classes.solution_heading} font-mono italic font-semibold   text-white mx-auto text-center`}>
                   {data.heading}

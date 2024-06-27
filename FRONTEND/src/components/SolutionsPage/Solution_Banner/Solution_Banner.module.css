@@ -55,12 +55,17 @@
 /* Base styles */
 .banner_title {
     font-size: 22px; /* default font size */
-    padding: 4px; /* uniform padding for all sizes */
+    padding: 4px 0; /* uniform padding for all sizes */
+    line-height: 29px;
   }
   .banner_desc {
     font-size: 22px; /* default font size */
     margin-bottom: 20px;
+    line-height: 30px;
     margin-top: 15px;
+  }
+  .image_div img{
+    max-width: 110px;
   }
 
 
@@ -68,10 +73,14 @@
   @media (min-width: 640px) {
     .banner_title {
       font-size: 27px;
+      line-height: 35px;
     }
     .banner_desc {
       font-size: 30px;
       margin-top: 21px;
+    }
+    .image_div img{
+      max-width: 130px;
     }
   }
   
@@ -79,24 +88,34 @@
   @media (min-width: 768px) {
     .banner_title {
       font-size: 35px;
+      line-height: 47px;
     }
     .banner_desc {
       font-size: 38px;
+      line-height: 55px;
       margin-top: 36px;
+    }
+    .image_div img{
+      max-width: 180px;
     }
   }
   
   /* Between 540px and 830px */
   @media (min-width: 540px) and (max-width: 830px) {
     .banner_title {
-      font-size: 25px;
+      font-size: 26px;
+      line-height: 36px;
       padding-left: 8px; /* setting horizontal padding */
       padding-right: 8px;
     }
     .banner_desc {
       font-size: 30px;
+      line-height: 45px;
       max-width: 533px;
       margin-top: 20px;
+    }
+    .image_div img{
+      max-width: 150px;
     }
   }
   
@@ -104,9 +123,14 @@
   @media (min-width: 1024px) {
     .banner_title {
       font-size: 40px;
+      line-height: 56px;
     }
     .banner_desc {
       font-size: 47px;
+      line-height: 65px;
+    }
+    .image_div img{
+      max-width: 200px;
     }
   }
   
@@ -114,9 +138,14 @@
   @media (min-width: 1280px) {
     .banner_title {
       font-size: 45px;
+      line-height: 58px;
     }
     .banner_desc {
       font-size: 55px;
+      line-height: 75px;
+    }
+    .image_div img{
+      max-width: 245px;
     }
   }
   

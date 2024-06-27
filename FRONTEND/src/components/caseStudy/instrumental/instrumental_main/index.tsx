@@ -11,7 +11,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
 
   return (
     // xl:mt-[112px] lg:mt-[90px] md:mt-[60px] sm:mt-[40px] mt-[30px] xl:mb-[271px] lg:mb-[220px] md:mb-[170px] sm:mb-[120px] mb-[70px]
-    <div className={`${classes.Instrumental} main_padding `}>
+    <div className={`${classes.Instrumental} main_padding overflow-x-hidden`}>
       <div className="max-w-[1520px] mx-auto w-full">
         <div className={`${dynamicClass !== "special-instrumental" && `grid sm:gap-10 sm:grid-cols-12`}   items-center`}>
           <div className={`${classes.grid_image_div} ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `sm:col-span-4 sm:order-1 order-2`} ${dynamicClass === "conversations" && `${classes.conversations_img} md:col-span-6 md:order-1 order-2`} ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 md:order-2 order-2`} sm:mt-[30px] mt-[25px] `} data-aos={`${dynamicClass === "project-window" ? "fade-left" : "fade-right"}`}>

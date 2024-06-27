@@ -36,7 +36,7 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
         // console.log(text);
         // console.log(id);
         
-        return<div id={id} key={index}>
+        return<div id={id} key={index}> 
           <h3 key={index}>{text}</h3>
           </div>
       }
