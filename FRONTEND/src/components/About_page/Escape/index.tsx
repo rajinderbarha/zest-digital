@@ -30,13 +30,14 @@ function Escape({ data }: { data: AboutType[] }) {
                   {Escapedata.escape.marquee.map((marqueData, path) => (
                     <div
                       key={`${path}_marqueeData`}
-                      className="maving_box md:max-w-[400px] min-tb:max-tb:max-w-[276px] max-w-[250px] text-center"
+                      className={`${classes.maving_box}  text-center`}
                     >
                       {/* <h2 className="xl:text-40px lg:text-35px md:text-30px min-tb:max-tb:text-[20px] min-tb:max-tb:leading-[27px] sm:text-25px text-[16px] text-color-7 font-semibold font-mono lg:mb-[30px] md:mb-[25px] mb-[20px]"> */}
                       <h2 className={`${classes.marque_title}  text-color-7 font-semibold font-mono lg:mb-[30px] md:mb-[25px] mb-[20px]`}>
                         {marqueData.title}
                       </h2>
-                      <p className="md:text-lg sm:text-base min-tb:max-tb:text-[12px] min-tb:max-tb:leading-[18px] text-[12px] font-normal font-mono">
+                      {/* <p className="md:text-lg sm:text-base min-tb:max-tb:text-[12px] min-tb:max-tb:leading-[18px] text-[12px] font-normal font-mono"> */}
+                      <p className={`${classes.marque_desc}  font-normal font-mono`}>
                         {marqueData.description}
                       </p>
                     </div>

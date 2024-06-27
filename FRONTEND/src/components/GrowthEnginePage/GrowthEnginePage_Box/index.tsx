@@ -12,7 +12,7 @@ const GrowthEnginePage_Box = ({ data }: any) => {
   return (
     <>
       <div className={` mt-[66px] md:mb-36 sm:mb-[130px] mb-[90px] min-tb:max-tb:mb-[161px] main_padding`} >
-        <div className="main_container ">
+        <div className="main_container overflow-x-clip">
           {/* <div className={`${classes.growth_box} lg:rounded-30px md:rounded-[20px] rounded-[15px]  xl:pt-[85px] lg:pt-[80px] md:pt-[65px] min-tb:max-tb:pt-[70px] sm:pt-[50px] pt-[45px] pb-[1px] main_padding`}> */}
           <div className={`${classes.growth_box} lg:rounded-30px md:rounded-[20px] rounded-[15px]   main_padding`} data-aos="fade-up">
             <div className={`${classes.growth_box_content} max-w-[1520px] mx-auto  relative`}>

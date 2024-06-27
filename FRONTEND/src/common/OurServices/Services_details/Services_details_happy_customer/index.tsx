@@ -13,8 +13,8 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
   
   return (
     <>
-      <div className="main_padding ">
-        <div className={`${classes.objective} main_container`}>
+      <div className="main_padding overflow-x-hidden">
+        <div className={`${classes.objective} main_container `}>
 
           {Services_details.map((item: HappyCustomer, index: number) =>
 
