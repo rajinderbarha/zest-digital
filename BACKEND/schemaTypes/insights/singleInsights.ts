@@ -55,7 +55,7 @@ export const SingleInsights = defineType({
       of: [
         { type: 'block', },
         { type: 'image' },
-        {type:"video"}
+        {type:"video"},             // we created a object for this video type in common folder 
       ],
     },
     {
@@ -97,24 +97,3 @@ export const SingleInsights = defineType({
 });
 
 
-
-
-
-
-
-
-
-// Define the new video type
-export const video = defineType({
-  name: 'video',
-  title: 'Video',
-  type: 'object',
-  fields: [
-    {
-      name: 'iframeUrl',
-      title: 'Iframe URL',
-      type:"url",
-    },
-   
-  ],
-});
