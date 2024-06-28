@@ -11,7 +11,7 @@
   .banner_description {
     font-size: 12px;
     margin-bottom: 20px;
-    /* line-height: normal; */
+    line-height: 15px;
   }
   
   .banner_button {
@@ -34,7 +34,7 @@
     .banner_description {
       font-size: 18px; 
       margin-bottom: 20px;
-      /* line-height: 23px; */
+      line-height: 23px;
     }
   
     .banner_button {

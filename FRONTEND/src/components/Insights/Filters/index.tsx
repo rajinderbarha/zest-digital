@@ -264,9 +264,8 @@ function Filters({ data }: {data:FiltersType}) {
                           )
                         )}
                               </div>
-                        <h2
-                          className={`xl:text-35px lg:text-[34px] md:text-30px text-[20px]    font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}
-                        >
+                        {/* <h2 className={`xl:text-35px lg:text-[34px] md:text-30px text-[20px]    font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}> */}
+                        <h2 className={`   font-mono font-semibold mb-6 lg:mt-8 md:mt-[20px] mt-[10px] `}>
                           {item.hero.heading}
                         </h2>
                         <Link href={`/insights/${item.slug.current}`}>

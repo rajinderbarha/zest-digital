@@ -137,6 +137,7 @@
 
 .learnToGrow_desc {
   font-size: 12px; 
+  line-height: 15px;
   padding-top: 19px;
   padding-bottom: 15px;
 }
@@ -163,6 +164,7 @@
   }
   .learnToGrow_desc {
     font-size: 16px; 
+    line-height: 18px;
     padding-top: 31px; 
   }
   .cards_div {
@@ -184,7 +186,8 @@
     font-size: 30px;
   }
   .learnToGrow_desc {
-    font-size: 25px;
+    font-size: 21px;
+    line-height: 30px;
     padding-top: 38px; 
     padding-bottom: 40px; 
   }
@@ -206,6 +209,7 @@
   }
   .learnToGrow_desc {
     font-size: 16px; 
+    line-height: 20px;
     padding-bottom: 0; 
     padding-top: 31px; 
   }
@@ -231,7 +235,8 @@
     font-size: 40px;
   }
   .learnToGrow_desc {
-    font-size: 30px; 
+    font-size: 25px; 
+    line-height: 35px;
   }
   .cards_div {
     padding-left: 50px;
@@ -246,6 +251,10 @@
 @media only screen and (min-width: 1280px) {
   .learnToGrow_title, .tools_title {
     font-size: 45px;
+  }
+  .learnToGrow_desc {
+    font-size: 30px; 
+    line-height: 39px;
   }
   .resources_logo {
     margin-top: 200px;

@@ -17,11 +17,13 @@
   
   .career_title {
     font-size: 22px;
+    line-height: 30px;
     margin-bottom: 20px;
   }
   
   .career_desc {
     font-size: 12px;
+    line-height: 15px;
   }
   
   /* Small screens, specifically for min-width: 640px */
@@ -36,6 +38,7 @@
   
     .career_title {
       font-size: 30px;
+      line-height: 39px;
     }
   }
   
@@ -53,11 +56,13 @@
   
     .career_title {
       font-size: 35px;
+      line-height: 45px;
       margin-bottom: 40px;
     }
   
     .career_desc {
       font-size: 25px;
+      line-height: 32px;
     }
   }
 
@@ -75,10 +80,12 @@
       
         .career_title {
           font-size: 30px;
+          line-height: 39px;
         }
       
         .career_desc {
           font-size: 20px;
+          line-height: 27px;
         }
       }
       
@@ -96,11 +103,13 @@
   
     .career_title {
       font-size: 40px;
+      line-height: 52px;
       margin-bottom: 60px;
     }
   
     .career_desc {
       font-size: 30px;
+      line-height: 39px;
     }
   }
   
@@ -117,6 +126,7 @@
   
     .career_title {
       font-size: 45px;
+      line-height: 58px;
     }
   }
   
@@ -356,4 +366,52 @@
 }
 
 
+/* .SingleIntro::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../assets/images/Career_left.png');
+    background-repeat: no-repeat;
+    background-size: left top;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.SingleIntro::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url('../../assets/images/Career_right.png');
+    background-size: right bottom;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
 
+
+/* .bg_left{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.bg_right{
+    position: absolute;
+   
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.bg_right img
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */

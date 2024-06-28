@@ -178,6 +178,7 @@
     margin-left: 19px;
     margin-bottom: 8px;
     font-size: 12px;
+    line-height: 18px;
   }
 
   .Block_Content ul {
@@ -290,11 +291,12 @@
       padding-left: 40px;
       padding-right: 40px;
     }
-    .Block_Content ol,
+    /* .Block_Content ol,
     .Block_Content ul {
       margin-bottom: 10px;
       font-size: 18px;
-    }
+      line-height: 26px;
+    } */
     .Block_Content h3:not(:first-child)~ul,
     .Block_Content h3:not(:first-child)~ol {
       margin-left: 20px;
@@ -304,7 +306,7 @@
       margin-top: 11px;
     }
     .Block_Content h2 {
-      font-size: 40px;
+      font-size: 35px;
     }
     .Block_Content h3 {
       font-size: 30px;
@@ -312,8 +314,16 @@
       margin-bottom: 30px;
     }
     .Block_Content p {
-      font-size: 18px;
-      margin-bottom: 21px;
+      font-size: 14px;
+      /* font-size: 18px; */
+      line-height: 20px;
+      margin-bottom: 19px;
+    }
+    .Block_Content ol,
+    .Block_Content ul {
+      margin-bottom: 9px;
+      font-size: 14px;
+      line-height: 19px;
     }
     .Block_Content h3:not(:first-child)~p {
       margin-left: 20px;
@@ -393,12 +403,12 @@
     }
     
     .Block_Content h2 {
-      font-size: 45px;
+      font-size: 40px;
     }
     .Block_Content h3 {
-      font-size: 35px;
-      line-height: 45px;
-      margin-bottom: 38px;
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 35px;
     }
     
     .Block_Content p {
@@ -416,6 +426,17 @@
     .youtube_video{
       margin-top: 40px;
       margin-bottom: 40px;
+    }
+    .Block_Content p {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 21px;
+    }
+    .Block_Content ol,
+    .Block_Content ul {
+      margin-bottom: 9px;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
   
@@ -436,6 +457,26 @@
     .youtube_video{
       margin-top: 50px;
       margin-bottom: 50px;
+    }
+    .Block_Content p {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 21px;
+    }
+    .Block_Content ol,
+    .Block_Content ul {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .Block_Content h2 {
+      font-size: 45px;
+      /* line-height: 58px; */
+    }
+    .Block_Content h3 {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 38px;
     }
   }
   

@@ -4,7 +4,7 @@
 
 .upper_heading {
     font-size: 18px;
-    line-height: normal; 
+    line-height: 25px; 
     padding-bottom: 24px; 
   }
   
@@ -28,6 +28,7 @@
   @media (min-width: 768px) {
     .upper_heading {
       font-size: 35px; 
+      line-height: 48px;
     }
   }
   
@@ -46,13 +47,14 @@
   @media (min-width: 1024px) {
     .upper_heading {
       font-size: 40px; 
-      line-height: normal;
+      line-height: 54px;
     }
   }
   
   @media (min-width: 1280px) {
     .upper_heading {
       font-size: 45px; 
+      line-height: 58px;
     }
   }
   
