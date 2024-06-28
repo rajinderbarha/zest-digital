@@ -83,19 +83,21 @@ font-size: 45px;
     }
     .banner_text h1{
 font-size: 55px;
+line-height: 75px;
     }
     
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .banner_text {
-        max-width: 800px;
+        max-width: 865px;
     }
     .banner_text h2{
 font-size: 40px;
     }
     .banner_text h1{
         font-size: 50px;
+        line-height: 70px;
     }
     
 }
@@ -108,7 +110,8 @@ font-size: 40px;
 font-size: 35px;
     }
     .banner_text h1{
-     font-size: 40px;   
+     font-size: 40px; 
+     line-height: 60px;  
      margin-top: 15px;
     }
     
@@ -125,6 +128,7 @@ font-size: 22px;
     }
     .banner_text h1{
         font-size: 22px;
+        line-height: 30px;
         margin-top: 10px;
     }
     
@@ -135,7 +139,9 @@ font-size: 22px;
 }
 
 @media only screen and (max-width:639px) {
-    .banner_text {}
+    .banner_text {
+        max-width: 380px;
+    }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {

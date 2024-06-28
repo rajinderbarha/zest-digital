@@ -3,6 +3,8 @@ import classes from "./Career.module.css";
 import Image from "next/image";
 import { CareerProps } from "../../../lib/interface";
 import { urlFor } from "../../../lib/sanity.client";
+import image_bg_left from '../../assets/images/Career_left.png'
+import image_bg_right from '../../assets/images/Career_right.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
@@ -33,8 +35,14 @@ const Career: React.FC<CareerProps> = ({ data }) => {
             </div>
             <div className="thanks_for_interest lg:mt-0 min-tb:max-tb:mt-[0] sm:mt-[0] mt-[00px]">
               <div
-                className={`${classes.SingleIntro}  main_container lg:rounded-[30px] md:rounded-[20px] rounded-[15px] `} data-aos="fade-up"
+                className={`${classes.SingleIntro}  main_container lg:rounded-[30px] md:rounded-[20px] rounded-[15px] relative`} data-aos="fade-up"
               >
+                {/* <div className={`${classes.bg_left}`}>
+                  <Image src={image_bg_left} alt=""/>
+                </div>
+                <div className={`${classes.bg_right}`}>
+                  <Image src={image_bg_right} alt=""/>
+                </div> */}
 
                 <div
                   className={`${classes.single_container} main_padding max-w-[1335px] mx-auto relative`}

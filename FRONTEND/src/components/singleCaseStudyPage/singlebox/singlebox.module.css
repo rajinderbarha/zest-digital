@@ -7,7 +7,7 @@
     @apply xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[26px] sm:text-30px text-[20px] text-color-1 font-semibold font-mono 
 }
 .box_detail{
-    @apply font-lato  sm:text-base lg:text-lg  sm:mt-[20px] md:mt-[25px] max-tb:mt-[15px] max-tb:text-[12px] max-tb:leading-[20px] lg:mt-[30px] xl:mt-[48px] 
+    @apply font-lato sm:text-[14px] sm:leading-[21px]  lg:text-[16px] lg:leading-[23px] xl:text-[18px] xl:leading-[26px] sm:mt-[20px] md:mt-[25px] max-tb:mt-[15px] max-tb:text-[12px] max-tb:leading-[20px] lg:mt-[30px] xl:mt-[48px] 
 }
 
 .box_detail div p:not(:first-child){

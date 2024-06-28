@@ -20,7 +20,7 @@ function Casestudyintro({ data }: {data:CaseStudyIntroType}) {
       <div className={`${classes.Casestudyintro} main_padding `}  >
         <div className=" md:px-[20px] sm:px-[15px] px-[8px] max-tb:px-0 max-w-[1520px] mx-auto w-full relative" data-aos="fade-up" >
           <div className="">
-            <div className="xl:max-w-[971px] max-w-[800px] max-tb:max-w-[533px]">
+            <div className={`${classes.banner_text}`}>
               {/* <h1 className="font-mono font-semibold text-color-1  xl:text-55px lg:text-50px md:text-[42px] min-tb:max-tb:text-[30px] sm:text-[30px] text-[22px] mb-[20px]"> */}
               <h1 className={`${classes.heading} font-mono font-semibold text-color-1   min-tb:max-tb:text-[30px] `}>
                 {data.heading}

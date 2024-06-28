@@ -189,10 +189,12 @@ right:-3px;
 
 .accordion_heading {
   font-size: 22px;
+  line-height: 30px;
   margin-bottom: 40px; 
 }
 .title_text_class{
   font-size: 12px;
+  line-height: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -210,6 +212,7 @@ right:-3px;
 }
 .desc_text_class {
   font-size: 12px;
+  line-height: 15px;
 }
 .title_desc_padding_class {
   padding-left: 20px; 
@@ -219,15 +222,18 @@ right:-3px;
 @media (min-width: 640px) {
   .accordion_heading {
     font-size: 30px;
+    line-height: 39px;
     margin-bottom: 60px; 
   }
   .title_text_class{
     font-size: 25px; 
+    line-height: 35px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .desc_text_class {
     font-size: 25px; 
+    line-height: 35px;
   }
   .title_desc_padding_class {
     padding-left: 30px; 
@@ -238,6 +244,7 @@ right:-3px;
 @media (min-width: 768px) {
   .accordion_heading {
     font-size: 45px; 
+    line-height: 58px;
     margin-bottom: 80px; 
   }
   .content_inner{
@@ -252,10 +259,12 @@ right:-3px;
   margin-top: 60px; 
 }
 .title_text_class {
-  font-size: 28px; 
+  font-size: 28px;
+  line-height: 36px; 
 }
 .desc_text_class {
   font-size: 28px; 
+  line-height: 36px;
 }
 .title_desc_padding_class {
   padding-left: 45px; 
@@ -266,10 +275,12 @@ right:-3px;
 @media (min-width: 540px) and (max-width: 830px) {
   .accordion_heading {
     font-size: 30px; 
+    line-height: 39px;
     margin-bottom: 65px; 
   }
   .title_text_class{
     font-size: 20px;
+    line-height: 27px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -282,6 +293,7 @@ right:-3px;
   }
   .desc_text_class {
     font-size: 16px; 
+    line-height: 20px;
   }
   .title_desc_padding_class {
     padding-left: 40px;
@@ -292,6 +304,7 @@ right:-3px;
 @media (min-width: 1024px) {
   .accordion_heading {
     font-size: 45px; 
+    line-height: 58px;
     margin-bottom: 100px; 
   }
   .content_inner{
@@ -300,9 +313,11 @@ right:-3px;
   }
   .title_text_class {
     font-size: 30px; 
+    line-height: 39px;
   }
   .desc_text_class {
     font-size: 30px; 
+    line-height: 39px;
   }
   .title_desc_padding_class {
     padding-left: 55px; 

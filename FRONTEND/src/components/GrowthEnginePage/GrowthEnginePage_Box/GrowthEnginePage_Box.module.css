@@ -117,7 +117,7 @@
 @media only screen and  (max-width: 639px) {
     .growth_box_text_content {
         /* margin-top: 40px; */
-        max-width: 400px;
+        max-width: 268px;
     }
     .growth_box_image{
         width: 120px;
@@ -178,6 +178,7 @@
   }
     .Our_values_main_p{
     font-size: 12px;
+    line-height: 15px;
 }
 .box_btn {
     font-size: 12px; 
@@ -214,6 +215,7 @@
     }
     .Our_values_main_p{
         font-size: 25px;
+        line-height: 33px;
     }
     .box_btn {
       margin-top: 25px;
@@ -255,6 +257,7 @@ margin-top: 16px;
     }
     .Our_values_main_p{
         font-size: 30px;
+        line-height: 39px;
     }
   }
   

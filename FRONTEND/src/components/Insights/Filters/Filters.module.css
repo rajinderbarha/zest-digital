@@ -80,7 +80,7 @@
 
 
 .insight_box h2{
-    margin-top: 5px;
+    margin-top: 23px;
     }
 
     .insight_box img{
@@ -98,7 +98,8 @@
     }
 @media only screen and (min-width:1366px) and (max-width:1662px){
     .insight_box h2{
-        font-size: 34px;
+        font-size: 34px!important;
+        line-height: 45.5px!important;
     }
 
 }
@@ -139,10 +140,12 @@ padding: 35px 30px;
 
 }
 @media only screen and (min-width:540px) and (max-width:830px){
-    .insight_box h2{
+    /* .insight_box h2{
         margin-top: 35px;
         font-size: 26px;
-        }
+        line-height:34px;
+
+        } */
         .insight_box {
           padding: 37px 37px;
           padding-bottom: 78px;
@@ -264,6 +267,10 @@ padding: 35px 30px;
     .navigate_links {
       font-size: 10px;
     }
+    .insight_box h2{
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
   
   
@@ -280,6 +287,10 @@ padding: 35px 30px;
     }
     .navigate_links {
       font-size: 12px;
+    }
+    .insight_box h2{
+      font-size: 20px;
+      line-height: 30px;
     }
   }
   
@@ -308,6 +319,10 @@ padding: 35px 30px;
     .navigate_links {
       font-size: 16px;
     }
+    .insight_box h2{
+      font-size: 30px;
+      line-height: 41px;
+    }
   }
 
   
@@ -317,6 +332,11 @@ padding: 35px 30px;
       margin-top: 50px;
       margin-bottom: 50px;
     }
+    .insight_box h2{
+      font-size: 26px;
+      line-height: 34px;
+      margin-top: 35px;
+      }
     .filter_text {
       font-size: 20px;
       margin-bottom: 14px;
@@ -352,9 +372,12 @@ padding: 35px 30px;
     .navigate_links {
       font-size: 16px;
     }
-  }
+    .insight_box h2{
+      font-size: 34px;
+      line-height: 45.5px;
+      }
   
-
+    }
   
   @media only screen and (min-width: 1280px) {
     .filter_heading {
@@ -376,6 +399,10 @@ padding: 35px 30px;
     }
     .navigate_links {
       font-size: 18px;
+    }
+    .insight_box h2{
+font-size: 35px;
+line-height: 46px;
     }
   }
   

@@ -31,6 +31,7 @@
   
   .banner_description {
     font-size: 22px; 
+    line-height: 30px;
     margin-bottom: 20px; 
   }
      .banner_container{
@@ -47,6 +48,7 @@
     }
     .banner_description {
       font-size: 30px;
+      line-height: 45px;
     }
     .banner_container{
         max-width: 500px;
@@ -63,6 +65,7 @@
     }
     .banner_description {
       font-size: 40px;
+      line-height: 55px;
     }
     .banner_container{
         max-width: 700px;
@@ -97,6 +100,7 @@
     }
     .banner_description {
       font-size: 50px;
+      line-height: 71px;
     }
     .banner_container{
         max-width: 992px;
@@ -112,6 +116,7 @@
     }
     .banner_description {
       font-size: 55px;
+      line-height: 75px;
     }
   }
   
