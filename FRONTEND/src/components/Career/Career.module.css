@@ -152,7 +152,7 @@
 }
 
 .SingleIntro {
-    background-image: url('../../assets/images/Gradient_calendar.png');
+    background-image: url('../../assets/images/Gradient_calendar_new.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -354,3 +354,6 @@
         margin: auto;
     }
 }
+
+
+

@@ -33,8 +33,9 @@ const Career: React.FC<CareerProps> = ({ data }) => {
             </div>
             <div className="thanks_for_interest lg:mt-0 min-tb:max-tb:mt-[0] sm:mt-[0] mt-[00px]">
               <div
-                className={`${classes.SingleIntro}  main_container lg:rounded-[30px] md:rounded-[20px] rounded-[15px]`} data-aos="fade-up"
+                className={`${classes.SingleIntro}  main_container lg:rounded-[30px] md:rounded-[20px] rounded-[15px] `} data-aos="fade-up"
               >
+
                 <div
                   className={`${classes.single_container} main_padding max-w-[1335px] mx-auto relative`}
                 >
