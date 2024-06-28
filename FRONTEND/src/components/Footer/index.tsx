@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./footer.module.css";
 import Image from "next/image";
 import { urlFor } from "../../../lib/sanity.client";
@@ -15,8 +15,17 @@ import instagram_black from '../../assets/images/instagram_black.svg'
 import facebook_white from '../../assets/images/facebook_white.svg'
 import linkedin_white from '../../assets/images/linkedin_white.svg'
 import instagram_white from '../../assets/images/instagram_white.svg'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 
 const Footer = ({ data }: { data: FooterType[] }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
