@@ -36,7 +36,13 @@ export const SingleTermsAndConditions = defineType({
             type: 'array',
             of: [
               { type: 'block' },
-              
+              {
+                // Include the table as a field
+                // Giving it a semantic title
+                name: 'tableChart',
+                title: 'Table Chart',
+                type: 'table',
+              },
              
             ],
           },
@@ -51,5 +57,4 @@ export const SingleTermsAndConditions = defineType({
         }
     ],
 })
-
 

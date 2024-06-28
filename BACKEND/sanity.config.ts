@@ -2,7 +2,7 @@ import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
-
+import { table } from '@sanity/table';
 export default defineConfig({
   name: 'default',
   title: 'Zest Digital',
@@ -13,6 +13,8 @@ export default defineConfig({
   plugins: [
     structureTool(),
     visionTool(), // Add the table plugin here
+      // Include the table plugin
+      table(),
   ],
 
   schema: {
