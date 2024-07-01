@@ -90,24 +90,400 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
   const TableComponent = ({ data }: { data: TableChart }) => {
     return (
       <div className={classes.tableContainer}>
-        <table className={classes.table}>
-          <thead>
-            <tr>
-              <th>Type of Data Held</th>
-              <th>Length of Time Held</th>
-              <th>How Data Held</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.rows.map((row) => (
-              <tr key={row._key}>
-                {row.cells.map((cell, cellIndex) => (
-                  <td key={`${row._key}-${cellIndex}`} dangerouslySetInnerHTML={{ __html: formatCellContent(cell) }}></td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+
+        {/* <table>
+          <tr>
+            <th></th>
+            <th>Length of Time Held</th>
+            <th>How Data is Held</th>
+            <th>Type of Data Held</th>
+          </tr>
+          <tr>
+            <td className={`${classes.category}`}>CLIENTS</td>
+            <td className={`tdclass`}>
+              <ul>
+                <li>Name and contact information.</li>
+                <li>Information and documents relating to the services we are providing, including communications with you.</li>
+                <li>Billing and payment information.</li>
+              </ul>
+            </td>
+            <td>We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</td>
+            <td>We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</td>
+          </tr>
+          < tr>
+            <td className={`${classes.category}`}>PROSPECTIVE CLIENTS</td>
+            <td>
+              <ul>
+                <li>Name and contact information.</li>
+                <li>Information and documents relating to the services we are providing, including communications with you.</li>
+              </ul>
+            </td>
+            <td>We will retain information about you for the duration of the enquiry, then one year.</td>
+            <td>We store this information electronically in our lead generation system, which is hosted on US-based servers.</td>
+          </tr>
+          <tr>
+            <td className={`${classes.category}`}>JOB APPLICANTS</td>
+            <td>
+              <ul>
+                <li>Name and contact information.</li>
+                <li>CV and application form.</li>
+                <li>Interview notes (for those short-listed).</li>
+              </ul>
+            </td>
+            <td>We will retain information about you for the duration of the recruitment campaign, then one year.</td>
+            <td>We store this information electronically on servers within the EEA.</td>
+          </tr>
+          <tr>
+            <td className={`${classes.category}`}>OUR CURRENT AND FORMER EMPLOYEES</td>
+            <td>
+              <ul>
+                <li>Name and contact information.</li>
+                <li>CV and application form.</li>
+                <li>Interview notes.</li>
+                <li>Bank Details.</li>
+                <li>National Insurance Number.</li>
+                <li>Gender.</li>
+              </ul>
+            </td>
+            <td>We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</td>
+            <td>We store this information electronically on servers within the EEA.</td>
+          </tr>
+        </table> */}
+
+        <div className={`${classes.table_div} ${classes.desktop_table}`}>
+          {/* <div className=""> */}
+          <div className={`${classes.columns_heading}`}>
+            <div className={`${classes.divide_columns} `}>
+              <div className=""></div>
+              <div className=""><h5>Length of Time Held</h5></div>
+              <div className=""><h5>How Data is Held</h5></div>
+              <div className=""><h5>Type of Data Held</h5></div>
+            </div>
+          </div>
+          <div className={`${classes.row_1} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
+              <div className="">
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>Information and documents relating to the services we are providing, including communications with you.</li>
+                  <li>Billing and payment information.</li>
+                </ul>
+              </div>
+              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</div>
+              <div className="">We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</div>
+            </div>
+          </div>
+          <div className={`${classes.row_2} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
+              <div className="">
+
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>Information and documents relating to the services we are providing, including communications with you.</li>
+                </ul>
+              </div>
+              <div className="">We will retain information about you for the duration of the enquiry, then one year.</div>
+              <div className="">We store this information electronically in our lead generation system, which is hosted on US-based servers.</div>
+            </div>
+          </div>
+          <div className={`${classes.row_3} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>JOB APPLICANTS</h6></div>
+              <div className="">
+
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>CV and application form.</li>
+                  <li>Interview notes (for those short-listed).</li>
+                </ul>
+              </div>
+              <div className="">We will retain information about you for the duration of the recruitment campaign, then one year.</div>
+              <div className="">We store this information electronically on servers within the EEA.</div>
+            </div>
+          </div>
+
+          <div className={`${classes.row_4} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
+              <div className="">
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>CV and application form.</li>
+                  <li>Interview notes.</li>
+                  <li>Bank Details.</li>
+                  <li>National Insurance Number.</li>
+                  <li>Gender.</li>
+                </ul>
+              </div>
+              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</div>
+              <div className="">We store this information electronically on servers within the EEA.</div>
+            </div>
+          </div>
+          {/* </div> */}
+        </div>
+
+
+
+        <div className={`${classes.table_div} ${classes.tablet_table}`}>
+          {/* <div className=""> */}
+          <div className={`${classes.columns_heading}`}>
+            <div className={`${classes.divide_columns} `}>
+              <div className=""></div>
+              <div className=""><h5>Length of Time Held</h5></div>
+              <div className=""><h5>How Data is Held</h5></div>
+            </div>
+          </div>
+          <div className={`${classes.row_1} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
+              <div className="">
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>Information and documents relating to the services we are providing, including communications with you.</li>
+                  <li>Billing and payment information.</li>
+                </ul>
+              </div>
+              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</div>
+</div>
+          </div>
+          <div className={`${classes.row_2} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
+              <div className="">
+
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>Information and documents relating to the services we are providing, including communications with you.</li>
+                </ul>
+              </div>
+              <div className="">We will retain information about you for the duration of the enquiry, then one year.</div>
+            </div>
+          </div>
+          <div className={`${classes.row_3} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>JOB APPLICANTS</h6></div>
+              <div className="">
+
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>CV and application form.</li>
+                  <li>Interview notes (for those short-listed).</li>
+                </ul>
+              </div>
+              <div className="">We will retain information about you for the duration of the recruitment campaign, then one year.</div>
+            </div>
+          </div>
+
+          <div className={`${classes.row_4} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
+              <div className="">
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>CV and application form.</li>
+                  <li>Interview notes.</li>
+                  <li>Bank Details.</li>
+                  <li>National Insurance Number.</li>
+                  <li>Gender.</li>
+                </ul>
+              </div>
+              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</div>
+            </div>
+          </div>
+          {/* </div> */}
+
+           {/* <div className=""> */}
+           <div className={`${classes.columns_heading} ${classes.table_div2}`}>
+            <div className={`${classes.divide_columns} `}>
+              <div className=""></div>
+              <div className=""><h5>Type of Data Held</h5></div>
+            </div>
+          </div>
+          <div className={`${classes.row_1} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
+           <div className="">We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</div>
+            </div>
+          </div>
+          <div className={`${classes.row_2} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
+              <div className="">We store this information electronically in our lead generation system, which is hosted on US-based servers.</div>
+            </div>
+          </div>
+          <div className={`${classes.row_3} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>JOB APPLICANTS</h6></div>
+              <div className="">We store this information electronically on servers within the EEA.</div>
+            </div>
+          </div>
+
+          <div className={`${classes.row_4} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
+              <div className="">We store this information electronically on servers within the EEA.</div>
+            </div>
+          </div>
+          {/* </div> */}
+        </div>
+
+        <div className={` ${classes.mobile_table}`}>
+          {/* <div className=""> */}
+          <div className={`${classes.columns_heading}`}>
+            <div className={`${classes.divide_columns} `}>
+              <div className=""></div>
+              <div className=""><h5>Length of Time Held</h5></div>
+            </div>
+          </div>
+          <div className={`${classes.row_1} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
+              <div className="">
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>Information and documents relating to the services we are providing, including communications with you.</li>
+                  <li>Billing and payment information.</li>
+                </ul>
+              </div>
+              </div>
+          </div>
+          <div className={`${classes.row_2} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
+              <div className="">
+
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>Information and documents relating to the services we are providing, including communications with you.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={`${classes.row_3} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>JOB APPLICANTS</h6></div>
+              <div className="">
+
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>CV and application form.</li>
+                  <li>Interview notes (for those short-listed).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className={`${classes.row_4} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
+              <div className="">
+                <ul>
+                  <li>Name and contact information.</li>
+                  <li>CV and application form.</li>
+                  <li>Interview notes.</li>
+                  <li>Bank Details.</li>
+                  <li>National Insurance Number.</li>
+                  <li>Gender.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {/* </div> */}
+           {/* <div className=""> */}
+           <div className={`${classes.columns_heading} ${classes.mobile_table1}`}>
+            <div className={`${classes.divide_columns} `}>
+              <div className=""></div>
+              <div className=""><h5>How Data is Held</h5></div>
+            </div>
+          </div>
+          <div className={`${classes.row_1} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
+              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</div>
+             </div>
+          </div>
+          <div className={`${classes.row_2} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
+              <div className="">We will retain information about you for the duration of the enquiry, then one year.</div>
+            </div>
+          </div>
+          <div className={`${classes.row_3} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>JOB APPLICANTS</h6></div>
+              <div className="">We will retain information about you for the duration of the recruitment campaign, then one year.</div>
+            </div>
+          </div>
+
+          <div className={`${classes.row_4} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+               <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
+              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</div>
+            </div>
+          </div>
+          {/* </div> */}
+
+           {/* <div className=""> */}
+           <div className={`${classes.columns_heading} ${classes.mobile_table2}`}>
+            <div className={`${classes.divide_columns} `}>
+              <div className=""></div>
+              <div className=""><h5>Type of Data Held</h5></div>
+            </div>
+          </div>
+          <div className={`${classes.row_1} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
+              <div className="">We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</div>
+            </div>
+          </div>
+          <div className={`${classes.row_2} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+            <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
+              <div className="">We store this information electronically in our lead generation system, which is hosted on US-based servers.</div>
+            </div>
+          </div>
+          <div className={`${classes.row_3} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>JOB APPLICANTS</h6></div>
+              <div className="">We store this information electronically on servers within the EEA.</div>
+            </div>
+          </div>
+
+          <div className={`${classes.row_4} ${classes.rows}`}>
+
+            <div className={`${classes.divide_columns} `}>
+              <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
+              <div className="">We store this information electronically on servers within the EEA.</div>
+            </div>
+          </div>
+          {/* </div> */}
+        </div>
+
       </div>
     );
   };
