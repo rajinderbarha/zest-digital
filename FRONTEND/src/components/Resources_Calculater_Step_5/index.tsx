@@ -11,6 +11,38 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
         setUserEmail(e.target.value);
     }
 
+    // const handleNextClick = () => {
+    //     if (userEmail === "") {
+    //         return;
+    //     } else {
+    //         setFormData((prevFormData: any) => ({
+    //             ...prevFormData,
+    //             userEmail: userEmail
+    //         }));
+    //         sendDataToGoogleSheets();
+
+    //         // Save form submission state to sessionStorage and cookies
+    //         sessionStorage.setItem('formSubmitted', 'true');
+    //         document.cookie = "formSubmitted=true; path=/";
+
+    //         const downloadUrl = downloadUrls[0];
+    //         if (downloadUrl) {
+    //             const link = document.createElement('a');
+    //             link.href = downloadUrl;
+    //             document.body.appendChild(link);
+    //             link.click();
+    //             document.body.removeChild(link);
+
+    //             setTimeout(() => {
+    //                 router.replace("/thanks_you");
+    //             }, 1000);
+    //         } else {
+    //             router.replace("/thanks_you");
+
+    //         }
+    //     }
+    // }
+
     const handleNextClick = () => {
         if (userEmail === "") {
             return;
@@ -20,28 +52,37 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
                 userEmail: userEmail
             }));
             sendDataToGoogleSheets();
-
+    
             // Save form submission state to sessionStorage and cookies
             sessionStorage.setItem('formSubmitted', 'true');
             document.cookie = "formSubmitted=true; path=/";
-
+    
             const downloadUrl = downloadUrls[0];
             if (downloadUrl) {
-                const link = document.createElement('a');
-                link.href = downloadUrl;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-
-                setTimeout(() => {
-                    router.replace("/thanks_you");
-                }, 800);
+                fetch(downloadUrl)
+                    .then(response => response.blob())
+                    .then(blob => {
+                        const link = document.createElement('a');
+                        const url = URL.createObjectURL(blob);
+                        link.href = url;
+                        link.setAttribute('download', 'filename.ext'); // You can dynamically set the filename if needed
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        URL.revokeObjectURL(url);
+    
+                        setTimeout(() => {
+                            router.replace("/thanks_you");
+                        }, 1000);
+                    })
+                    .catch(error => console.error('Error downloading file:', error));
             } else {
                 router.replace("/thanks_you");
-
             }
         }
     }
+    
+    
 
     return (
         <>
