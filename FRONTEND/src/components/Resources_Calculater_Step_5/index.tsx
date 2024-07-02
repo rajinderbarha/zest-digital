@@ -73,7 +73,7 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
     
                         setTimeout(() => {
                             router.replace("/thanks_you");
-                        }, 1000);
+                        }, 100);
                     })
                     .catch(error => console.error('Error downloading file:', error));
             } else {

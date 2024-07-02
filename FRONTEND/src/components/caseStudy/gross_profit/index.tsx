@@ -14,7 +14,6 @@ function Gross_profit({ data }: { data: Gross_profitType }) {
         <div className={`${classes.Gross_profit} main_padding tablet_padding  md:rounded-30px rounded-[20px] `} data-aos="fade-up">
           <div className={`${classes.Gross_profit_grid_div} Gross_profit_boxs grid grid-cols-12  w-full justify-items-stretch	gap-10 2xl:gap-20`} >
             {data?.collection?.map((item, index: number) => {
-              // console.log("grossss", item.slug)
               return (
                 <div
                   key={index}
