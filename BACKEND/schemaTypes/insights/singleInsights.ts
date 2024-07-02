@@ -70,12 +70,7 @@ export const SingleInsights = defineType({
         },
       ],
     },
-    {
-      name: 'banner',
-      title: 'Banner',
-      type: 'reference',
-      to: [{type: 'climteaction'}],
-    },
+  
   ],
 
   preview: {

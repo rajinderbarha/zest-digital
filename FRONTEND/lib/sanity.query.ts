@@ -369,11 +369,7 @@ export async function getTermsndConditionsData() {
       smallDescription,
       buttonName,
       
-      'banner': banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      }}
+      }
     },
   }
 

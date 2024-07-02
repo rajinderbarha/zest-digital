@@ -166,7 +166,9 @@
 }
 
 
-
+.Block_Content li a{
+  font-weight: 700;
+}
    .Block_Content {
     padding-left: 20px;
     padding-right: 20px;

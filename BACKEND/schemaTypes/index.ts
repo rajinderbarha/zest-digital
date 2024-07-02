@@ -2,7 +2,6 @@ import {Footer} from './layout/footer'
 import {Header} from './layout/header'
 import {About} from './about'
 import {Contact} from './contact'
-import {ClimteAction} from './common/climateaction'
 import {SingleTermsAndConditions} from './terms-and-conditions/singleTermAndConditions'
 import {SocialMedia} from './common/socialMedia'
 import {SingleCaseStudy} from './caseStudy/singleCaseStudy'
@@ -39,7 +38,6 @@ export const schemaTypes = [
   Solution,
   SingleSolution,
   Resources,
-  ClimteAction,
   LocationObj,
   SocialMedia,
   BrandList,
