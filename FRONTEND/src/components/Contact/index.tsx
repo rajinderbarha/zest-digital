@@ -34,6 +34,8 @@ function Contact({ data }: { data: ContactType }) {
     }
     router.push(`/thanks_you`);
   };
+  console.log(data);
+  
 
   return (
     <>
@@ -53,7 +55,7 @@ function Contact({ data }: { data: ContactType }) {
 
                 <div className="icons flex md:mt-10 sm:mt-[30px] mt-[15px] gap-[18px]">
                   <div className="group">
-                    <Link href="https://www.facebook.com/ZestDigital/">
+                    <Link href={data.social[0]?.socialLink}>
                       <Image
                         src={facebook_black}
                         width={50}
@@ -72,7 +74,7 @@ function Contact({ data }: { data: ContactType }) {
                     </Link>
                   </div>
                   <div className="group">
-                    <Link href="https://www.linkedin.com/company/zest-digital/">
+                    <Link href={data.social[1]?.socialLink}>
                       <Image
                         src={linkedin_black}
                         width={50}
@@ -90,7 +92,7 @@ function Contact({ data }: { data: ContactType }) {
                     </Link>
                   </div>
                   <div className="group">
-                    <Link href="https://www.instagram.com/zestdigital/">
+                    <Link href={data.social[2]?.socialLink}>
                       <Image
                         src={instagram_black}
                         width={50}

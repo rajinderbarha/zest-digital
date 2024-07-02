@@ -17,6 +17,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 const Footer = ({ data }: { data: FooterType[] }) => {
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -86,7 +87,8 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                 <div className={`${classes.socialimages} flex md:justify-start justify-center md:gap-5 sm:gap-[15px] gap-[10px]`} data-aos="fade-up">
 
                   <div className="group">
-                    <Link href="https://www.facebook.com/ZestDigital/">
+                    {/* <Link href="https://www.facebook.com/ZestDigital/"> */}
+                    <Link href={item.social[0].socialLink}>
                       <Image
                         src={facebook_white}
                         width={50}
@@ -105,7 +107,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
 
                   </div>
                   <div className="group">
-                    <Link href="https://www.linkedin.com/company/zest-digital/">
+                    <Link href={item.social[1].socialLink}>
                       <Image
                         src={linkedin_white}
                         width={50}
@@ -124,7 +126,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
 
                   </div>
                   <div className="group">
-                    <Link href="https://www.instagram.com/zestdigital/">
+                    <Link href={item.social[2].socialLink}>
                       <Image
                         src={instagram_white}
                         width={50}

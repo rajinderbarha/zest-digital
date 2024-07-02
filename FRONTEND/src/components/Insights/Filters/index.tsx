@@ -30,7 +30,10 @@ function Filters({ data }: { data: FiltersType }) {
   }, []);
 
   const newArray = [...combinedArray];
-  newArray.unshift("All");
+  const uniqueArray = Array.from(new Set(newArray.map(item => item.trim())));
+
+  uniqueArray.unshift("All");
+
 
   const handleCategoryClick = (category: string) => {
     setSelectedCategories((prevCategories) => {
@@ -140,7 +143,7 @@ function Filters({ data }: { data: FiltersType }) {
               Filters
             </h2>
             <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3" data-aos="fade-up">
-              {newArray.map((uniqueEl: any, index: any) => (
+              {uniqueArray?.map((uniqueEl: any, index: any) => (
                 <h6
                   key={index}
                   className={`${classes.Filters_btn} ${index === 0 && selectedCategories.length === 0
@@ -160,7 +163,7 @@ function Filters({ data }: { data: FiltersType }) {
       </div>
 
       <div className={`${classes.navigate_box} bg-black rounded-[15px] md:rounded-[20px] lg:rounded-30px relative grid grid-cols-3`} data-aos="fade-up">
-        
+
         <div className={`${classes.next_text_left} relative  mb-[2px] self-center z-10`} data-aos="fade-left">
           {currentPage > 1 && (
             <button onClick={handlePreviousPage} className={`${classes.navigate_links} inline border-b border-color-6 font-light text-white`}>
