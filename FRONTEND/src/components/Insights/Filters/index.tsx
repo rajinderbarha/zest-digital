@@ -78,12 +78,12 @@ function Filters({ data }: { data: FiltersType }) {
         <Image
           src={Filters_Desktop_image}
           alt=""
-          className={`${classes.Filters_img} bg-color-1 sm:h-auto h-[390px] min-tb:max-tb:h-[385px] rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full md:block hidden`}
+          className={`${classes.Filters_img} bg-color-1  min-tb:max-tb:h-[455px] rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full md:block hidden h-[590px]`}
         />
         <Image
           src={Filters_Mobile_image}
           alt=""
-          className={`${classes.Filters_img} bg-color-1 sm:h-auto h-[390px] rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full block md:hidden`}
+          className={`${classes.Filters_img} bg-color-1 sm:h-auto h-[450px] rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full block md:hidden`}
         />
         <div className={`${classes.Filters_box} relative z-10 grid lg:grid-cols-12`}>
           <div className="lg:col-span-8 min-tb:max-tb:mt-[30px] md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
@@ -160,7 +160,8 @@ function Filters({ data }: { data: FiltersType }) {
       </div>
 
       <div className={`${classes.navigate_box} bg-black rounded-[15px] md:rounded-[20px] lg:rounded-30px relative grid grid-cols-3`} data-aos="fade-up">
-        <div className={`${classes.next_text_left} relative self-center z-10`} data-aos="fade-left">
+        
+        <div className={`${classes.next_text_left} relative  mb-[2px] self-center z-10`} data-aos="fade-left">
           {currentPage > 1 && (
             <button onClick={handlePreviousPage} className={`${classes.navigate_links} inline border-b border-color-6 font-light text-white`}>
               {"Newer Posts"}
@@ -177,7 +178,7 @@ function Filters({ data }: { data: FiltersType }) {
             height={50}
           />
         </div>
-        <div className={`${classes.next_text_right} relative ms-auto leading-[13px] mb-[2px] self-center z-10`} data-aos="fade-right">
+        <div className={`${classes.next_text_right} relative ms-auto mb-[2px] self-center z-10`} data-aos="fade-right">
           {indexOfLastPost < filteredProducts.length && (
             <button onClick={handleNextPage} className={`${classes.navigate_links} inline border-b border-color-6 font-light text-white`}>
               {"Older Posts"}

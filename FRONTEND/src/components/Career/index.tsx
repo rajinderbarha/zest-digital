@@ -3,6 +3,8 @@ import classes from "./Career.module.css";
 import Image from "next/image";
 import { CareerProps } from "../../../lib/interface";
 import { urlFor } from "../../../lib/sanity.client";
+import image_bg_left from '../../assets/images/Gradient_calendar_new_transparent_right.png'
+import image_bg_right from '../../assets/images/Gradient_calendar_new_transparent_left.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 

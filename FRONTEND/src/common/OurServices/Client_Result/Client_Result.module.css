@@ -570,3 +570,11 @@
     margin-top: 137px;
   }
 }
+
+
+@media only screen and (max-width:540px){
+
+  .profit_box{
+    height: fit-content;
+  }
+}

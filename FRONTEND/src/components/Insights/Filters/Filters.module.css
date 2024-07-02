@@ -206,7 +206,7 @@ padding: 35px 30px;
 
 
 
-.next_text_right a::after, .next_text_left a::before{
+.next_text_right button::after, .next_text_left button::before{
     content: '';
     /* position: absolute;
     bottom: 3px;
@@ -220,21 +220,21 @@ padding: 35px 30px;
     padding: 0 12px;
 }
 
-.next_text_right a::after {
+.next_text_right button::after {
     background-image: url('../../../assets/images/Right_arrow_white.svg');
 }
 
-.next_text_left a::before {
+.next_text_left button::before {
     background-image: url('../../../assets/images/Left_arrow_white.svg');
 }
 
 @media only screen and (max-width:767px){
-    .next_text_right a::after, .next_text_left a::before  {
+    .next_text_right button::after, .next_text_left button::before  {
         padding: 0 10px;
     }
 }
 @media only screen and (max-width:639px){
-    .next_text_right a::after, .next_text_left a::before  {
+    .next_text_right button::after, .next_text_left button::before  {
         padding: 0 8px;
     }
 }
@@ -267,6 +267,9 @@ padding: 35px 30px;
     .navigate_links {
       font-size: 10px;
     }
+    .next_text_left, .next_text_right{
+      line-height: 13px;
+    }
     .insight_box h2{
       font-size: 20px;
       line-height: 30px;
@@ -287,6 +290,9 @@ padding: 35px 30px;
     }
     .navigate_links {
       font-size: 12px;
+    }
+    .next_text_left, .next_text_right{
+      line-height: 15px;
     }
     .insight_box h2{
       font-size: 20px;
@@ -318,6 +324,9 @@ padding: 35px 30px;
     }
     .navigate_links {
       font-size: 16px;
+    }
+    .next_text_left, .next_text_right{
+      line-height: 20px;
     }
     .insight_box h2{
       font-size: 30px;
@@ -372,6 +381,10 @@ padding: 35px 30px;
     .navigate_links {
       font-size: 16px;
     }
+    
+    .next_text_left, .next_text_right{
+      line-height: 21px;
+    }
     .insight_box h2{
       font-size: 34px;
       line-height: 45.5px;
@@ -399,6 +412,9 @@ padding: 35px 30px;
     }
     .navigate_links {
       font-size: 18px;
+    }
+    .next_text_left, .next_text_right{
+      line-height: 22px;
     }
     .insight_box h2{
 font-size: 35px;
