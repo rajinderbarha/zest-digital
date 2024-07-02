@@ -2,10 +2,8 @@
   background-image: url(../../../assets/images/\ gross\ profit.png);
   background-size: cover;
   background-repeat: no-repeat;
-  /* padding: 280px 16px; */
   background-position: center;
   background-color: #191516;
-  /* height: 905px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,8 +89,6 @@ margin-bottom: 15px;
     line-height: 26px;
   }
   .profit_box h2 {
-    /* padding-top: 75px;
-    padding-bottom: 75px; */
     font-size: 55px;
   }
 }
@@ -279,7 +275,7 @@ margin-bottom: 15px;
     width: 100%;
   }
 
-  .profit_box_desc_below {}
+  
 
 }
 

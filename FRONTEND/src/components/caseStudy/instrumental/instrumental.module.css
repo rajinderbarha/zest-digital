@@ -1,18 +1,7 @@
-.Instrumental {
-    /* padding: 112px 16px; */
-}
-
-.Instrumental h2 {
-    /* max-width: 909px; */
-}
 
 .Instrumental p {
     max-width: 750px;
     margin-right: 50px;
-}
-
-.Instrumental h3 {
-    /* max-width: 373px; */
 }
 
 .Interests_img {
@@ -24,29 +13,13 @@
 }
 
 @media screen and (max-width:768px) {
-    .Instrumental {
-        /* padding: 80px 16px 50px 16px; */
-    }
+
     .instrumental_img img{
         margin: auto;
     }
 
 }
 
-/* .grid_image_div{
-    align-self: normal;
-}
-
-
-.image_div{
-    width: -webkit-fill-available;
-    height:100%;
-}
-.image_div img{
-    width: -webkit-fill-available!important;
-     border: 1px solid black;
-    height: -webkit-fill-available!important;;
-} */
 
 
 .Instrumental {

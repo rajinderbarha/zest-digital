@@ -10,10 +10,10 @@ module.exports = {
         'image-1': "url('../../src/assets/images/Gradient_v3.png')",
       },
       fontFamily: {
-        mono: ['IBMPlexMono'],
+        mono: ['IBMPlexMono', 'monospace'],
         // mono: [ 'monospace'], 
 
-        lato: ['Lato', 'sans-serif'],
+        lato: ['Lato_font'],
       },
       colors: {
         'color-1': '#191615',
