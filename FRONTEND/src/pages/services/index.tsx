@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 
-const Index = ({ data }: any) => {
+const Index = () => {
   const router = useRouter();
-
   useEffect(() => {
     const currentPath = router.asPath;
-    {currentPath === "/services" &&  router.replace("/")  }
-   
+    { currentPath === "/services" && router.replace("/") }
   }, [router]);
 
   return <div>Service page</div>;

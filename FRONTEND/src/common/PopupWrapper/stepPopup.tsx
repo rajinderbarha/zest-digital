@@ -1,7 +1,6 @@
 import { Dialog, DialogTitle, Fab, useMediaQuery, useTheme } from "@mui/material";
 import { Box, SxProps } from "@mui/system";
 import React, { ReactNode, useEffect, useState } from "react";
-// import { ArrowLeft } from "../../svg";
 interface IProps {
   children: ReactNode;
   onClose: () => void;
@@ -21,20 +20,20 @@ const StepPopup = ({
         sx: {
           width: "100%",
           maxWidth: 1150,
-          maxHeight:1000,
+          maxHeight: 1000,
           background: "transparent",
-          border:"none !important",
+          border: "none !important",
           boxShadow: "none",
-         
+
         },
       }}
     >
       <Box sx={{ position: "relative" }}>
-       
+
         <Box
           sx={{
             height: "100%",
-            border:"none !important"
+            border: "none !important"
           }}
         >
           {children}

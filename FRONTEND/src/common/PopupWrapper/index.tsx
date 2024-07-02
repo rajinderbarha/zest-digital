@@ -1,4 +1,3 @@
-import Resource_Access_popup from "@/components/Resource_Access_popup";
 import { usePopup } from "@/context";
 import React from "react";
 

@@ -65,25 +65,27 @@ export const SingleCaseStudy = defineType({
         {name: 'belowHeading', type: 'string', title: 'Below Heading'},
         {name: 'description', type: 'string', title: 'Description'},
         {name: 'descriptionBelow', type: 'string', title: 'Description Below'},
-        {name: 'homepageCardDesc', type: 'string', title: "Homepage single casestudy's Description"},
+        {
+          name: 'homepageCardDesc',
+          type: 'string',
+          title: "Homepage single casestudy's Description",
+        },
       ],
     },
     {
-        name: 'sectionCard',
-        title: 'Section Card',
-        type: 'array',
-        of: [
-            {
-
-
-                type: 'object',
-                fields: [
-                    { name: 'heading', type: 'string', title: 'Heading' },
-                    { name: 'description', type: 'array', title: 'Description', of: [{ type: 'block' }] },
-                    { name: 'image', type: 'image', title: 'Image' },
-                ],
-            },
-        ],
+      name: 'sectionCard',
+      title: 'Section Card',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {name: 'heading', type: 'string', title: 'Heading'},
+            {name: 'description', type: 'array', title: 'Description', of: [{type: 'block'}]},
+            {name: 'image', type: 'image', title: 'Image'},
+          ],
+        },
+      ],
     },
     {
       name: 'team',
@@ -111,12 +113,6 @@ export const SingleCaseStudy = defineType({
           ],
         },
       ],
-    },
-    {
-      name: 'banner',
-      title: 'Banner',
-      type: 'reference',
-      to: [{type: 'climteaction'}],
     },
   ],
 })

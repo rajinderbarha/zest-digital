@@ -1,4 +1,4 @@
-import { defineType } from 'sanity';
+import {defineType} from 'sanity'
 
 export const SingleInsights = defineType({
   title: 'Single Insights',
@@ -53,9 +53,9 @@ export const SingleInsights = defineType({
       title: 'Content',
       type: 'array',
       of: [
-        { type: 'block', },
-        { type: 'image' },
-        {type:"video"},             // we created a object for this video type in common folder 
+        {type: 'block'},
+        {type: 'image'},
+        {type: 'video'}, // we created a object for this video type in common folder
       ],
     },
     {
@@ -68,32 +68,21 @@ export const SingleInsights = defineType({
           title: 'Icon',
           type: 'image',
         },
-        // {
-        //   name: 'linkName',
-        //   title: 'Link Name',
-        //   type: 'string',
-        // },
-        // {
-        //   name: 'linkUrl',
-        //   title: 'Link Url',
-        //   type: 'string',
-        // },
       ],
     },
     {
       name: 'banner',
       title: 'Banner',
       type: 'reference',
-      to: [{ type: 'climteaction' }],
+      to: [{type: 'climteaction'}],
     },
   ],
 
-  preview: {                          // here we are displaying the title for a page from a specific field 
+  preview: {
+    // here we are displaying the title for a page from a specific field
     select: {
       title: 'hero.heading',
     },
     // component: SingleInsightsPreview,
   },
-});
-
-
+})

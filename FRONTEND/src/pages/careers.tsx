@@ -6,7 +6,6 @@ import { CareersType } from "../../lib/interface";
 function careers({ careerData }: { careerData: CareersType[] }) {
   return <Career data={careerData} />;
 }
-
 export default careers;
 
 export async function getStaticProps() {

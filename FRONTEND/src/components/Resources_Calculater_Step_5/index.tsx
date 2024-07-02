@@ -10,7 +10,7 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
     const handleEmailChange = (e: any) => {
         setUserEmail(e.target.value);
     }
-    
+
     const handleNextClick = () => {
         if (userEmail === "") {
             return;
@@ -21,9 +21,9 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
             }));
             sendDataToGoogleSheets();
 
-           // Save form submission state to sessionStorage and cookies
-      sessionStorage.setItem('formSubmitted', 'true');
-      document.cookie = "formSubmitted=true; path=/";
+            // Save form submission state to sessionStorage and cookies
+            sessionStorage.setItem('formSubmitted', 'true');
+            document.cookie = "formSubmitted=true; path=/";
 
             const downloadUrl = downloadUrls[0];
             if (downloadUrl) {
@@ -33,14 +33,12 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
                 link.click();
                 document.body.removeChild(link);
 
-                // Delay routing to give download window time to appear
                 setTimeout(() => {
                     router.replace("/thanks_you");
-                }, 800); 
+                }, 800);
             } else {
-                // Handle case where downloadUrl is null, undefined, or empty
                 router.replace("/thanks_you");
-                
+
             }
         }
     }

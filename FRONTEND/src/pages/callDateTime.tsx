@@ -2,11 +2,7 @@ import CallTimeAndDurationPage from '@/components/CallTimeAndDurationPage'
 import React from 'react'
 
 function callDateTime() {
-  return (
-   <>
-   <CallTimeAndDurationPage />
-   </>
-  )
+  return <CallTimeAndDurationPage />
 }
 
 export default callDateTime

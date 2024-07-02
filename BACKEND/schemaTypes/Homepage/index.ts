@@ -21,7 +21,6 @@ export const HomePage = defineType({
         {name: 'image', type: 'image', title: 'Image'},
 
         {name: 'videosrc', type: 'string', title: 'Video source'},
-        
       ],
     },
 
@@ -46,9 +45,6 @@ export const HomePage = defineType({
               title: 'Colored Text Item',
               type: 'object',
               fields: [
-                // {name: 'numHeading', type: 'string', title: 'Heading'},
-                // {name: 'title', type: 'string', title: 'Title'},
-                // {name: 'desc', type: 'string', title: 'Description'},
                 {
                   name: 'SingleCaseStudyCard',
                   title: 'Single CaseStudy Card',
@@ -56,8 +52,6 @@ export const HomePage = defineType({
                   to: [{type: 'singleCaseStudy'}],
                 },
               ],
-
-              
             },
           ],
         },
@@ -81,19 +75,19 @@ export const HomePage = defineType({
               name: 'services',
               title: 'services',
               type: 'array',
-              of: [ 
+              of: [
                 {
                   type: 'object',
                   fields: [
                     {name: 'servicetitle', title: 'Title', type: 'string'},
-                    {name: 'reference', title: 'reference', type: 'reference', to: [{type: 'singleService'}]}
+                    {
+                      name: 'reference',
+                      title: 'reference',
+                      type: 'reference',
+                      to: [{type: 'singleService'}],
+                    },
                   ],
                 },
-                
-
-                // {type: 'reference', to: [{type: 'singleService'}]}
-
-
               ],
             },
           ],
@@ -105,16 +99,6 @@ export const HomePage = defineType({
           type: 'array',
           of: [{type: 'reference', to: [{type: 'brandList'}]}],
         },
-
-        {
-          name: 'banner',
-          title: 'Banner',
-          type: 'reference',
-          to: [{type: 'climteaction'}],
-        },
-
-
-        
       ],
     },
   ],

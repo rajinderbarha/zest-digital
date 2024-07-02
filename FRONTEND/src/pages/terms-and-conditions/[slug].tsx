@@ -3,49 +3,38 @@ import React from "react";
 import { getSingleTerms } from "../../../lib/sanity.query";
 import { SingletermsAndConditionsType } from "../../../lib/interface";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
-// import ErrorPage from "next/error";
 import Custom404 from "../404";
-import { revalidatePath } from "next/cache";
 
-
-function SingletermsAndConditions({errorCode,singletermsdata,}: { singletermsdata: SingletermsAndConditionsType[]; errorCode:any}) {
-
-  
+function SingletermsAndConditions({ errorCode, singletermsdata, }: { singletermsdata: SingletermsAndConditionsType[]; errorCode: any }) {
   if (errorCode) {
-    return <Custom404/>;
+    return <Custom404 />;
   }
 
-  return (
-    <div className="Body_padding">
-  <DigitalTerms data={singletermsdata} />
-    </div>
-  );
-
+  return <div className="Body_padding">
+    <DigitalTerms data={singletermsdata} />
+  </div>
 }
-
 export default SingletermsAndConditions;
-export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
   return {
     paths: [], //indicates that no page needs be created at build time
     fallback: 'blocking' //indicates the type of fallback
   }
 }
-export const getStaticProps = async({params}:GetStaticPropsContext<{slug:string}>) =>  {
+
+export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
   const { slug } = params!;
-
   const singletermsdata = await getSingleTerms(slug as string);
-
-  if(!singletermsdata || singletermsdata.length === 0){
+  if (!singletermsdata || singletermsdata.length === 0) {
     return {
-      props:{
+      props: {
 
         errorCode: 404,
-        singletermsdata:[]
+        singletermsdata: []
       }
-      }
+    }
   }
-
   return {
     props: {
       errorCode: false,

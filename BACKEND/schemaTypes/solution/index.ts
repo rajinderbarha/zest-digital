@@ -17,7 +17,6 @@ export const Solution = defineType({
       ],
     },
     {
-
       name: 'transform',
       title: 'Transform',
       type: 'object',
@@ -47,25 +46,17 @@ export const Solution = defineType({
       ],
     },
 
-
-
     {
-      name:'brandList',
-      title:"Brand List",
-      type:"array",
-      of:[{type:'reference',to:[{type:"brandList"}]}]
-  },
-    {
-      name:'growth',
-      title:"Growth",
+      name: 'brandList',
+      title: 'Brand List',
       type: 'array',
-      of:[{type:'reference',to:[{type:"growth"}]}]
-  },
+      of: [{type: 'reference', to: [{type: 'brandList'}]}],
+    },
     {
-      name: 'banner',
-      title: 'Banner',
-      type: 'reference',
-      to: [{type: 'climteaction'}],
+      name: 'growth',
+      title: 'Growth',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'growth'}]}],
     },
   ],
 })

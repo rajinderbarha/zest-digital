@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { AccordianType } from "../../../lib/interface";
 import { PortableText } from "next-sanity";
-import arrowImage from "../../assets/images/arrow.svg";
 import classes from "./Global_Accordion.module.css";
 import arrow_image from "../../assets/images/arrow.svg"
 

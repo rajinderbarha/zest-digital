@@ -1,6 +1,6 @@
 import LearnToGrow from "@/components/resourcesPage/learnToGrow";
 import Resourcesbanner from "@/components/resourcesPage/resourcesbanner/resourcesbanner";
-import React, {useState } from "react";
+import React, { useState } from "react";
 import { getResourcesData } from "../../../lib/sanity.query";
 import { useSearchParams } from "next/navigation";
 import Resources_Calculater_Step_1 from "@/components/Resources_Calculater_Step_1";
@@ -10,19 +10,14 @@ import Resources_Calculater_Step_3 from "@/components/Resources_Calculater_Step_
 import Resources_Calculater_Step_4 from "@/components/Resources_Calculater_Step_4";
 import Resources_Calculater_Step_5 from "@/components/Resources_Calculater_Step_5";
 import StepPopup from "@/common/PopupWrapper/stepPopup";
-// import { usePopup } from "@/context";
 import { useForm } from "react-hook-form";
 
 function resources({ resources }: any) {
   const searchParams = useSearchParams();
   const search = searchParams.get("popup");
   const [step, setStep] = useState<number>(0);
-  const [formData, setFormData] = useState({
-
-  });
+  const [formData, setFormData] = useState({});
   const [selectedFileUrl, setSelectedFileUrl] = useState("");
-
-
 
   const {
     register,
@@ -30,7 +25,7 @@ function resources({ resources }: any) {
     // watch,
     formState: { errors },
   } = useForm();
-  // console.log("formData", formData);
+
 
   function sendDataToGoogleSheets() {
     fetch('https://script.google.com/macros/s/AKfycbypYXDAAfgjAqOot2S1jWblyG9_Uo0nGtEgpkgbhp7kcFmFEU3t-W1ECr76vCkolAYS/exec', {
@@ -46,14 +41,12 @@ function resources({ resources }: any) {
       .catch(error => console.error('No file available for download:', error));
   }
 
-
   let title;
   if (search === "/calculator") {
     title = "Access calculator"
   } else if (search === "/workbook") {
     title = "Access workbook"
   }
-
 
 
   return (
@@ -118,17 +111,14 @@ function resources({ resources }: any) {
 
         </>
       </StepPopup>
-<div className="Body_padding">
-
-      <Resourcesbanner data={resources[0]} />
-      <LearnToGrow data={resources[0]} setSelectedFileUrl={setSelectedFileUrl} />
-</div>
-
+      <div className="Body_padding">
+        <Resourcesbanner data={resources[0]} />
+        <LearnToGrow data={resources[0]} setSelectedFileUrl={setSelectedFileUrl} />
+      </div>
 
     </>
   );
 }
-
 export default resources;
 
 export async function getStaticProps() {

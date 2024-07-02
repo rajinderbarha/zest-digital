@@ -12,26 +12,19 @@ export const Schedule_a_call = defineType({
       type: 'string',
     },
     {
-        name: 'description',
-        title: 'Description',
-        type: 'string',
-      },
-      {
-          name: 'image',
-          title: 'Image',
-          type: 'image',
-        },
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+    },
     {
-        name: 'subheading',
-        title: 'Sub Heading',
-        type: 'string',
-      },
-   
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+    },
     {
-      name: 'banner',
-      title: 'Banner',
-      type: 'reference',
-      to: [{type: 'climteaction'}],
+      name: 'subheading',
+      title: 'Sub Heading',
+      type: 'string',
     },
   ],
 })

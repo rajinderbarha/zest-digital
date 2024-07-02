@@ -22,26 +22,19 @@ function Contact({ data }: { data: ContactType }) {
       once: true,
     });
   }, []);
-// console.log(data);
-
   const router = useRouter()
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
-    const formData:any = new FormData(e.currentTarget);
+    const formData: any = new FormData(e.currentTarget);
     const formObject: { [key: string]: any } = {};
 
     for (const [key, value] of formData.entries()) {
       formObject[key] = value;
     }
-
-    // console.log("Form Data--------:", formObject);
-
-    // Redirect after form submission
     router.push(`/thanks_you`);
   };
-  // console.log("datad= ",data)
+
   return (
     <>
       {/* <div className="Contact xl:mt-[140px] lg:mt-[120px] md:mt-[70px] sm:mt-[50px] mt-[30px] min-tb:max-tb:mb-[60px] sm:px-[20px] xl:mb-[268px] lg:mb-[200px] md:mb-[140px] sm:mb-[90px] mb-[80px] main_padding"> */}
@@ -75,7 +68,7 @@ function Contact({ data }: { data: ContactType }) {
                         height={50}
                         alt=""
                         className={`${classes.socal_image} hidden group-hover:block`}
-                      />  
+                      />
                     </Link>
                   </div>
                   <div className="group">
@@ -129,7 +122,7 @@ function Contact({ data }: { data: ContactType }) {
             {/* <div className="md:col-span-7 md:mt-0 min-tb:max-tb:col-span-6 lg:mt-0  sm:mt-[150px] mt-[80px]"> */}
             <div className={`${classes.form_div} md:col-span-7 min-tb:max-tb:col-span-6`}>
               <div className="max-w-[956px] min-tb:max-tb:px-[30px] ms-auto bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px px-5 sm:px-10 " data-aos="fade-up">
-                <form  onSubmit={handleFormSubmit} className="max-w-[670px] mx-auto min-tb:max-tb:gap-[26px] sm:py-[88px] min-tb:max-tb:py-[40px] pt-[38px] pb-[41px] grid gap-6 sm:gap-9">
+                <form onSubmit={handleFormSubmit} className="max-w-[670px] mx-auto min-tb:max-tb:gap-[26px] sm:py-[88px] min-tb:max-tb:py-[40px] pt-[38px] pb-[41px] grid gap-6 sm:gap-9">
                   <div className="enquiry">
                     <label
                       htmlFor="enquiry"
@@ -224,13 +217,13 @@ function Contact({ data }: { data: ContactType }) {
                     </p>
                   </div>
                   {/* <Link href={`/thanks_you`} className="text-center"> */}
-                  <input 
+                  <input
                     type="submit"
                     value="Send"
                     // className="bg-white border min-tb:max-tb:text-[12px] border-white hover:text-white hover:bg-color-1  text-[16px] sm:text-base font-mono text-color-1 rounded-full lg:px-[26px] md:px-[20px]  px-[26px] md:py-[8px] sm:py-[5px] py-[10px] mx-auto hover:cursor-pointer"
                     className={`${classes.submit_btn}  bg-white border  border-white hover:text-white hover:bg-color-1  font-mono text-color-1 rounded-full mx-auto hover:cursor-pointer`}
-                    />
-                    {/* </Link> */}
+                  />
+                  {/* </Link> */}
                 </form>
               </div>
             </div>
@@ -239,7 +232,7 @@ function Contact({ data }: { data: ContactType }) {
           <div className={`${classes.map_div} ${classes.map_container} min-tb:max-tb:grid-cols-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  `}>
             {/* <div className="lg:col-span-4"> */}
 
-            <MapLocations data={data.card} /> 
+            <MapLocations data={data.card} />
             {/* </div> */}
           </div>
         </div>

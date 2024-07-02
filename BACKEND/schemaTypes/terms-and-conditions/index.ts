@@ -1,4 +1,4 @@
-import { defineType } from 'sanity';
+import {defineType} from 'sanity'
 
 export const TermsAndConditions = defineType({
   title: 'Terms And Conditions',
@@ -20,19 +20,15 @@ export const TermsAndConditions = defineType({
           type: 'object',
           fields: [
             {name: 'boxtitle', title: 'Title', type: 'string'},
-            {name: 'reference', title: 'reference', type: 'reference', to: [{type: 'singleTermsOfService'}]}
+            {
+              name: 'reference',
+              title: 'reference',
+              type: 'reference',
+              to: [{type: 'singleTermsOfService'}],
+            },
           ],
         },
-
-        // { type: 'reference', to: [{ type: 'singleTermsOfService' }], },
       ],
     },
-   
-    {
-      name: 'banner',
-      title: 'Banner',
-      type: 'reference',
-      to: [{ type: 'climteaction' }],
-    },
   ],
-});
+})

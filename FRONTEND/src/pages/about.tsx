@@ -3,14 +3,13 @@ import About_banner from "@/components/About_page/About_banner";
 import Escape from "@/components/About_page/Escape";
 import Our_values from "@/components/About_page/Our_values";
 import Zest_for_life from "@/components/About_page/Zest_for_life";
-import React, { useEffect } from "react";
+import React from "react";
 import { getAboutData } from "../../lib/sanity.query";
 import { AboutType } from "../../lib/interface";
-import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
- 
+
   return (
     <div className="Body_padding">
       <About_banner data={aboutdata} />
@@ -21,19 +20,17 @@ const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
     </div>
   );
 };
-
 export default About_page;
 
-export async function getStaticProps () {
-  try{
-
+export async function getStaticProps() {
+  try {
     const aboutdata = await getAboutData();
     return {
       props: {
         aboutdata,
       },
     };
-  }catch (error) {
+  } catch (error) {
     console.error("Error fetching About_page data:", error);
     return {
       props: {

@@ -3,19 +3,12 @@ import classes from "./Services_Address.module.css";
 import { GoArrowRight } from "react-icons/go";
 import { FaPhoneAlt } from "react-icons/fa";
 import { AgencyAddress } from "../../../../lib/interface";
-
-// import { Map, Marker } from "pigeon-maps";
 import { PortableText } from "next-sanity";
 import Link from "next/link";
 import GoogleMapComponent from "@/components/GoogleMapComponent";
 
 const Services_Address: React.FC<AgencyAddress> = (props) => {
-// console.log(props)
-
   const { heading_add, slotDescription_add, buttonName_add, buttonName_link } = props;
-
-  // console.log(props.cardLoc);
-  
 
   const contactInfoArray = Array.isArray(props.address) ? props.address : [];
   return (
@@ -25,7 +18,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
         <div className="main_container">
           <div
             // className={`${classes.bg_image} bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px xl:py-[160px] lg:py-[130px] md:py-[100px] sm:py-[70px] py-[50px] xl:px-[77px] lg:px-[60px] md:px-[45px] sm:px-[35px] px-[25px]  grid md:grid-cols-2 max-tb:grid-cols-1 md:gap-y-0 max-tb:gap-y-[60px] max-tb:gap-x-0 md:gap-x-10 min-tb:max-tb:pt-[80px] min-tb:max-tb:pb-[61px]`}
-            className={`${classes.bg_image} bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px grid md:grid-cols-2 max-tb:grid-cols-1 md:gap-y-0 max-tb:gap-y-[60px] max-tb:gap-x-0 md:gap-x-10`} 
+            className={`${classes.bg_image} bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px grid md:grid-cols-2 max-tb:grid-cols-1 md:gap-y-0 max-tb:gap-y-[60px] max-tb:gap-x-0 md:gap-x-10`}
             data-aos="fade-up" >
             <div className="col-span-1 md:max-w-[558px] min-tb:max-tb:max-w-[420px] sm:max-w-[300px] max-w-[250px]  mx-auto">
               {/* <h2 className="font-mono xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] min-tb:max-tb:leading-[45px] sm:text-30px text-[22px] font-semibold text-color-9 text-center "> */}
@@ -38,14 +31,14 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
               </h2>
               <div className={`${classes.book_btn} bokk_now_btn`} data-aos="fade-up">
                 <Link href={buttonName_link}>
-                {/* <button className="font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[12px] md:text-base py-[2px] sm:py-[3px] md:py-[3px] md:ps-5 sm:ps-[15px] ps-[10px] flex md:gap-2 sm:gap-[6px] gap-[4px] items-center group border border-white hover:bg-color-1 hover:text-white"> */}
-                <button className={` font-mono font-normal mx-auto text-color-1 rounded-full bg-white  flex md:gap-2 sm:gap-[6px] gap-[4px] items-center group border border-white hover:bg-color-1 hover:text-white`}>
-                  {buttonName_add}
-                  {/* <span className="p-1 text-white rounded-full bg-color-1 group-hover:bg-white group-hover:text-color-1 md:me-1 sm:me-[3px] me-[2px] text-[15px] sm:text-[17px] md:text-lg"> */}
-                  <span className=" text-white rounded-full bg-color-1 group-hover:bg-white group-hover:text-color-1">
-                    <GoArrowRight />
-                  </span>
-                </button>
+                  {/* <button className="font-mono font-normal mx-auto text-color-1 rounded-full bg-white text-[12px] md:text-base py-[2px] sm:py-[3px] md:py-[3px] md:ps-5 sm:ps-[15px] ps-[10px] flex md:gap-2 sm:gap-[6px] gap-[4px] items-center group border border-white hover:bg-color-1 hover:text-white"> */}
+                  <button className={` font-mono font-normal mx-auto text-color-1 rounded-full bg-white  flex md:gap-2 sm:gap-[6px] gap-[4px] items-center group border border-white hover:bg-color-1 hover:text-white`}>
+                    {buttonName_add}
+                    {/* <span className="p-1 text-white rounded-full bg-color-1 group-hover:bg-white group-hover:text-color-1 md:me-1 sm:me-[3px] me-[2px] text-[15px] sm:text-[17px] md:text-lg"> */}
+                    <span className=" text-white rounded-full bg-color-1 group-hover:bg-white group-hover:text-color-1">
+                      <GoArrowRight />
+                    </span>
+                  </button>
                 </Link>
               </div>
 
@@ -65,11 +58,11 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
                       <p className="text-[15px] md:text-base lg:text-lg font-lato text-white max-w-[161px] mx-auto">
                         {dayandtiming_add}
                       </p> */}
-                      <div className={`${classes.address} text-white`} data-aos="fade-up">
-                  {contactInfoArray.map((contactInfo: any, innerIndex: any) => (
-                    
-                    <PortableText  value={contactInfo} key={innerIndex} />
-                  ))}
+                  <div className={`${classes.address} text-white`} data-aos="fade-up">
+                    {contactInfoArray.map((contactInfo: any, innerIndex: any) => (
+
+                      <PortableText value={contactInfo} key={innerIndex} />
+                    ))}
                   </div>
                 </div>
               </div>
@@ -79,10 +72,10 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
               {props.cardLoc?.map(
                 ({ location: { latitude, longitude }, contactno }, index) => {
                   const location = {
-                    latitude:latitude,
-                    longitude:longitude
+                    latitude: latitude,
+                    longitude: longitude
                   }
-                 return <div className="max-w-[738px] min-tb:max-tb:max-w-[448px] max-tb:mx-auto w-full" key={index}>
+                  return <div className="max-w-[738px] min-tb:max-tb:max-w-[448px] max-tb:mx-auto w-full" key={index}>
                     <div className={`${classes.map_div} `} data-aos="fade-up">
                       {/* <Map
                         height={738}
@@ -92,7 +85,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
                         <Marker width={50} anchor={[latitude, longitude]} />
                       </Map> */}
 
-                      <GoogleMapComponent  loc={location} mark={[location]} zoom={15}/>
+                      <GoogleMapComponent loc={location} mark={[location]} zoom={15} />
                     </div>
 
                     <div className=" flex items-center justify-end text-color-9 mt-[10px] md:mt-[25px] min-tb:max-tb:mt-[23px] gap-[2px]">
@@ -100,8 +93,8 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
                       {contactno}
                     </div>
                   </div>
-                   }
-                
+                }
+
               )}
             </div>
           </div>

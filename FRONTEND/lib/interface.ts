@@ -30,21 +30,23 @@ export interface HomepageProps {
       slice?: (arg0: number) => any;
       heading?: string;
       switcher?: string[];
-      horizontalbars?: HorizontalBarsType[]
+      horizontalbars?: HorizontalBarsType[];
     };
   }[];
 }
 
-export interface HorizontalBarsType{ 
-  SingleCaseStudyCard:{
-  slug:string,
-  upperTitle:string,
-  card:{
-    heading:string,
-    belowHeading:string,
-    homepageCardDesc:string
-  }
-}}[];
+export interface HorizontalBarsType {
+  SingleCaseStudyCard: {
+    slug: string;
+    upperTitle: string;
+    card: {
+      heading: string;
+      belowHeading: string;
+      homepageCardDesc: string;
+    };
+  };
+}
+[];
 
 export interface HomepageHeroSec {
   HeroSecData: {
@@ -66,7 +68,7 @@ export interface HomepageGrowthCard {
 
     heading?: string;
     switcher?: string[];
-    horizontalbars?: HorizontalBarsType[]
+    horizontalbars?: HorizontalBarsType[];
   };
 }
 export interface LogoMoving {
@@ -82,11 +84,10 @@ export interface GrowthEngineProps {
     buttonName: string;
     buttonLink: string;
     image: any;
-    allFilesUrl?:string                   //we need these two fields just on resources page 
-    
-    };
+    allFilesUrl?: string; //we need these two fields just on resources page
+  };
   has_image: boolean;
-  selectedFile?:any      //  holds the address of the selected file 
+  selectedFile?: any; //  holds the address of the selected file
   shadow_right: boolean;
 }
 export interface HomePageServices {
@@ -96,9 +97,11 @@ export interface HomePageServices {
     image2: any;
     image3: any;
     // services: { slug: string; title: string }[];
-    services:{
-      reference: any; servicetitle:string; slug: string
-}[]
+    services: {
+      reference: any;
+      servicetitle: string;
+      slug: string;
+    }[];
   };
 }
 
@@ -223,7 +226,7 @@ export interface TermsAndConditionsType {
     reference: any;
     slug: string;
     title: string;
-    boxtitle:string;
+    boxtitle: string;
     smallDescription: string;
     buttonName: string;
     buttonLink: string;
@@ -399,15 +402,15 @@ export interface ourServiceCard {
   description_2_CR: string;
   buttonName_CR: string;
 
-  sigleCaseStudyCard:{
-    slug:string,
-    card:{
-      heading:string,
-      belowHeading:string,
-      description:string,
-      descriptionBelow:string
-    }
-  }
+  sigleCaseStudyCard: {
+    slug: string;
+    card: {
+      heading: string;
+      belowHeading: string;
+      description: string;
+      descriptionBelow: string;
+    };
+  };
 }
 export interface AccordianType {
   heading_acc: string;
@@ -509,23 +512,21 @@ export interface CaseStudyIntroType {
   image: any;
 }
 export interface Gross_profitType {
-
-    belowLine: string;
+  belowLine: string;
+  heading: string;
+  image: any;
+  imageDesc: string;
+  collection: {
+    buttonname: string;
+    count: string;
+    description: string;
     heading: string;
-    image: any;
-    imageDesc: string;
-    collection: {
-      buttonname: string;
-      count: string;
-      description: string;
-      heading: string;
-      icon: any;
-      title: string;
-      _key: string;
-      slug: Slug;
-      card:any;
-    }[];
-  
+    icon: any;
+    title: string;
+    _key: string;
+    slug: Slug;
+    card: any;
+  }[];
 }
 export interface SingleCasestudyType {
   // singleCasestudy:{}
