@@ -8,7 +8,6 @@ import { LogoMoving } from "../../../lib/interface";
 const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
 
   return (
-
     <div
       className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10`}
     >

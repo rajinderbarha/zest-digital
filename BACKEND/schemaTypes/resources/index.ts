@@ -74,24 +74,18 @@ export const Resources = defineType({
               type: 'file',
               title: 'File Upload',
               options: {
-                storeOriginalFilename: true
-              }
-            }
+                storeOriginalFilename: true,
+              },
+            },
           ],
         },
       ],
     },
     {
-        name:'brandList',
-        title:"Brand List",
-        type:"array",
-        of:[{type:'reference',to:[{type:"brandList"}]}]
-    },
-    {
-      name: 'banner',
-      title: 'Banner',
-      type: 'reference',
-      to: [{type: 'climteaction'}],
+      name: 'brandList',
+      title: 'Brand List',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'brandList'}]}],
     },
   ],
 })

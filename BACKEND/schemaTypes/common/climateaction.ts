@@ -1,5 +1,3 @@
-
-
 import { defineType } from 'sanity'
 
 export const ClimteAction = defineType({

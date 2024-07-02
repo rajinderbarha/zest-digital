@@ -1,5 +1,4 @@
 import {defineType} from 'sanity'
-import { ClimteAction } from '../common/climateaction'
 
 export const Footer = defineType({
   title: 'Footer',
@@ -10,17 +9,17 @@ export const Footer = defineType({
     {name: 'climate_actionImg', title: 'Climate_actionImg', type: 'image'},
     {name: 'earth_img', title: 'Earth_img', type: 'image'},
     {
-      name: "smallDescription",           // name is just like id of the field 
-      type: "string",
-      title: "Small Description"
-  },
-   
+      name: 'smallDescription', // name is just like id of the field
+      type: 'string',
+      title: 'Small Description',
+    },
+
     {name: 'logo', title: 'Logo', type: 'image'},
     {
       name: 'footerItem',
       title: 'Footer Item',
       type: 'array',
-      of: [ 
+      of: [
         {
           type: 'object',
           fields: [
@@ -33,11 +32,7 @@ export const Footer = defineType({
                 {
                   type: 'object',
                   fields: [
-                    // {name: 'name', title: 'Name', type: 'string'},
-                    // {name: 'link', title: 'Link', type: 'string'},
-                    // {name: 'icon', title: 'Icon', type: 'image'},
-                    
-                    { name: 'address', type: 'array', title: 'Address', of: [{ type: 'block' }] },
+                    {name: 'address', type: 'array', title: 'Address', of: [{type: 'block'}]},
                     {name: 'contact', title: 'Contact no.', type: 'string'},
                   ],
                 },
@@ -72,6 +67,6 @@ export const Footer = defineType({
         },
       ],
     },
-    { name: 'copyRightText', type: 'array', title: 'Copy Right Text', of: [{ type: 'block' }] },
+    {name: 'copyRightText', type: 'array', title: 'Copy Right Text', of: [{type: 'block'}]},
   ],
 })

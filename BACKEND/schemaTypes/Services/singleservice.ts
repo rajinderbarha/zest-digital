@@ -20,7 +20,7 @@ export const SingleService = defineType({
       type: 'string',
       title: 'Title of blog article ', //title of the field
     },
-   
+
     {
       name: 'smallDescription', // this smallDescription and below button name will show on terms-and-condition page in a card with above title also
       type: 'string',
@@ -80,7 +80,6 @@ export const SingleService = defineType({
           name: 'services',
           type: 'object',
           fields: [
-            // {name: 'heading', type: 'string', title: 'Heading'},
             {
               name: 'serviceheading',
               title: 'Heading',
@@ -93,8 +92,7 @@ export const SingleService = defineType({
               type: 'array',
               of: [{type: 'block'}],
             },
-            // { name: 'description_1', type: 'string', title: 'Description_1' },
-            // { name: 'description_2', type: 'string', title: 'Description_2' },
+
             {name: 'image', type: 'image', title: 'Image'},
           ],
         },
@@ -151,8 +149,6 @@ export const SingleService = defineType({
             {
               type: 'object',
               fields: [
-                // {name: 'percentage_CR', type: 'string', title: 'Percentage'},
-                // {name: 'mapped_title', type: 'string', title: 'Title'},
                 {name: 'description_1_CR', type: 'string', title: 'Description_1'},
                 {name: 'description_2_CR', type: 'string', title: 'Description_2'},
                 {name: 'buttonName_CR', type: 'string', title: 'Button Name'},
@@ -202,13 +198,6 @@ export const SingleService = defineType({
       title: 'Agency Address',
       type: 'reference',
       to: [{type: 'serviceAgencyAddress'}],
-    },
-
-    {
-      name: 'banner',
-      title: 'Banner',
-      type: 'reference',
-      to: [{type: 'climteaction'}],
     },
   ],
 })

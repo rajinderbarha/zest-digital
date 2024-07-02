@@ -3,8 +3,6 @@ import classes from "./Career.module.css";
 import Image from "next/image";
 import { CareerProps } from "../../../lib/interface";
 import { urlFor } from "../../../lib/sanity.client";
-import image_bg_left from '../../assets/images/Career_left.png'
-import image_bg_right from '../../assets/images/Career_right.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
@@ -15,6 +13,7 @@ const Career: React.FC<CareerProps> = ({ data }) => {
       once: true,
     });
   }, []);
+
   return (
     // <div className={`Career xl:mb-[160px] lg:mb-[140px] md:mb-[120px] min-tb:max-tb:mb-[80px] sm:mb-[90px] mb-[60px]`}>
     <div className={`${classes.Career} `}>

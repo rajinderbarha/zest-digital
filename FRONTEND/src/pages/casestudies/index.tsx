@@ -1,18 +1,11 @@
 import Casestudyintro from "@/components/caseStudy/CaseStudyIntro";
 import Gross_profit from "@/components/caseStudy/gross_profit";
-// import Conversions from "@/components/caseStudy/instrumental/conversions";
 import Instrumental from "@/components/caseStudy/instrumental/instrumental_main";
-// import Interests from "@/components/caseStudy/instrumental/interests";
-// import Partnership from "@/components/caseStudy/instrumental/partnership";
-// import Timeline from "@/components/caseStudy/instrumental/timeline";
-// import Visibility from "@/components/caseStudy/instrumental/visibility";
 import React from "react";
 import { getCasestudyData } from "../../../lib/sanity.query";
 import { CasestudyType } from "../../../lib/interface";
 
-function Casestudy({ Casestudy }: {Casestudy:CasestudyType[]}) {
-  // console.log("lib", Casestudy);
-
+function Casestudy({ Casestudy }: { Casestudy: CasestudyType[] }) {
   const caseStudy = Casestudy[0]?.section
 
   return (
@@ -24,7 +17,7 @@ function Casestudy({ Casestudy }: {Casestudy:CasestudyType[]}) {
 
         if (index === 2 || index === 3) {
           dynamicClass = "special-instrumental";
-        } 
+        }
         else if (index === 4) {
           dynamicClass = "conversations";
         }
@@ -39,22 +32,9 @@ function Casestudy({ Casestudy }: {Casestudy:CasestudyType[]}) {
           </div>
         );
       })}
-     
-
-      {/* <Gross_profit />
-      <Visibility />
-      <Gross_profit />
-      <Interests />
-      <Gross_profit />
-      <Partnership />
-      <Gross_profit />
-      <Conversions />
-      <Gross_profit />
-      <Timeline /> */}
     </div>
   );
 }
-
 export default Casestudy;
 
 export async function getStaticProps() {
@@ -64,4 +44,3 @@ export async function getStaticProps() {
     props: { Casestudy },
   };
 }
- 

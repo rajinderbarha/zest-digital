@@ -46,17 +46,18 @@ export function getFooter() {
     `
   );
 }
-export function getClimateActionData() {
-  return client.fetch(
-    groq`
-   *[_type == "climteaction"]{
-  "climateActionImgUrl": climate_actionImg.asset->url,
-  "earthImgUrl": earth_img.asset->url,
-  smallDescription
-}
-    `
-  );
-}
+
+// export function getClimateActionData() {
+//   return client.fetch(
+//     groq`
+//    *[_type == "climteaction"]{
+//   "climateActionImgUrl": climate_actionImg.asset->url,
+//   "earthImgUrl": earth_img.asset->url,
+//   smallDescription
+// }
+//     `
+//   );
+// }
 
 
 
@@ -117,11 +118,6 @@ export async function getSingleCasestudyData(slug: string) {
   const query = `
 
 *[_type == "singleCaseStudy" && slug.current == "${slug}"]{
-      "banner": banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      },
       team{
           heading,
           profile[]{
@@ -167,13 +163,7 @@ export async function getSingleCasestudyData(slug: string) {
 export async function getCasestudyData() {
   const query = `
 
-*[_type == "caseStudy"]{
-      "banner": banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      },
-      
+*[_type == "caseStudy"]{    
       hero{
         heading,
         image,
@@ -207,13 +197,7 @@ export async function getCasestudyData() {
 export async function getSolutionData() {
   const query = `
 
-*[_type == "solution"]{
-      "banner": banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      },
-      
+*[_type == "solution"]{      
       hero{
         heading,
         image,
@@ -265,18 +249,8 @@ export async function getInsightsData() {
   const query = `
 
 *[_type == "insights"]{
-      "banner": banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      },
       heading,
       linkSectionIcon,
-
-      linkSection{
-        linkName,
-        linkUrl
-      },
       collection[]->{
         slug,
        hero{
@@ -317,11 +291,6 @@ export async function getSingleInsightsData(slug: string) {
   const query = `
 
 *[_type == "singleInsights" && slug.current == "${slug}"]{
-      "banner": banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      },
       slug,
     hero{
       heading,
@@ -344,11 +313,6 @@ export async function getSingleInsightsData(slug: string) {
 export async function getResourcesData() {
   const query = `
 *[_type == "resources"]{
-      "banner": banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      },
     heading,
     hero{
       title,
@@ -380,11 +344,6 @@ export async function getSchedule_a_callData() {
   const query = `
 
 *[_type == "Schedule_a_call"]{
-      "banner": banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      },
     heading,
    description,
    image,
@@ -416,11 +375,6 @@ export async function getTermsndConditionsData() {
         smallDescription
       }}
     },
-    'banner': banner-> {
-      climate_actionImg,
-      earth_img,
-      smallDescription
-    }
   }
 
   `;
@@ -437,11 +391,6 @@ export function getSingleTerms(slug: string) {
       smallDescription,
       buttonName,
       content,
-      'banner': banner-> {
-        climate_actionImg,
-        earth_img,
-        smallDescription
-      }
     }
     `
   );
@@ -552,12 +501,6 @@ export async function getSingleOurServicesData(slug: string) {
     },
 
   },
-  
-  "banner": banner-> {
-    "climate_actionImg": climate_actionImg.asset->url,
-    "earth_img": earth_img.asset->url,
-    "smallDescription": smallDescription
-  }
 }
 
   `;
@@ -575,11 +518,6 @@ export async function getCareersData() {
       title,
       description
     },
-    "banner": banner-> {
-      climate_actionImg,
-      earth_img,
-      smallDescription
-    }
   }
   
   `;
@@ -656,11 +594,6 @@ export async function getGrowthData(slug: string) {
             "belowbtnLink_acc": belowbtnLink_acc
           }
         },
-        "banner": banner-> {
-            climate_actionImg,
-            earth_img,
-            smallDescription
-        }
     }
     
   `;
@@ -723,11 +656,6 @@ export async function getHomepageData() {
         brandList[]-> {
             "icon": icon.asset->url,
         },
-         "banner": banner-> {
-            climate_actionImg,
-            earth_img,
-            smallDescription
-        }
     },
 }
 

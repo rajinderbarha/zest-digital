@@ -7,7 +7,7 @@ import { CaseStudyIntroType } from "../../../../lib/interface";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
-function Casestudyintro({ data }: {data:CaseStudyIntroType}) {
+function Casestudyintro({ data }: { data: CaseStudyIntroType }) {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -16,7 +16,7 @@ function Casestudyintro({ data }: {data:CaseStudyIntroType}) {
   }, []);
   return (
     <>
-    {/* xl:mt-[120px] lg:mt-[100px] md:mt-[50px] sm:mt-[50px] mt-[30px] */}
+      {/* xl:mt-[120px] lg:mt-[100px] md:mt-[50px] sm:mt-[50px] mt-[30px] */}
       <div className={`${classes.Casestudyintro} main_padding `}  >
         <div className=" md:px-[20px] sm:px-[15px] px-[8px] max-tb:px-0 max-w-[1520px] mx-auto w-full relative" data-aos="fade-up" >
           <div className="">

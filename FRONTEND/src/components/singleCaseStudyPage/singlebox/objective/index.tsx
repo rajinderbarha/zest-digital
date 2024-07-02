@@ -5,7 +5,6 @@ import BlockContent from "@sanity/block-content-to-react";
 import { urlFor } from "../../../../../lib/sanity.client";
 import { Card } from "../../../../../lib/interface";
 function objective({ sectionCard }: {sectionCard:Card[]}) {
-  // console.log("sectionCard", sectionCard)
   return (
     <>
       {sectionCard.map((item: any, index: number) => {

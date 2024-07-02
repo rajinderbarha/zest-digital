@@ -6,9 +6,6 @@ import { Gross_profitType } from "../../../../../lib/interface";
 
 function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicClass?: string }) {
 
-  // console.log("gggggggg", dynamicClass);
-
-
   return (
     // xl:mt-[112px] lg:mt-[90px] md:mt-[60px] sm:mt-[40px] mt-[30px] xl:mb-[271px] lg:mb-[220px] md:mb-[170px] sm:mb-[120px] mb-[70px]
     <div className={`${classes.Instrumental} main_padding overflow-x-hidden`}>

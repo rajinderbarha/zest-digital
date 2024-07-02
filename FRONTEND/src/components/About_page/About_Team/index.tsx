@@ -5,8 +5,7 @@ import { AboutType } from "../../../../lib/interface";
 import { urlFor } from "../../../../lib/sanity.client";
 
 function About_team({ data }: { data: AboutType[] }) {
-  // console.log("aboutTeam",data)
-  
+
   return (
     // <div className={`${classes.About_team} main_padding xl:mt-[141px] lg:mt-[120px] md:mt-[80px]  min-tb:max-tb:mt-[70px] sm:mt-[62px] mt-[62px]`}>
     <div className={`${classes.About_team} main_padding `}>

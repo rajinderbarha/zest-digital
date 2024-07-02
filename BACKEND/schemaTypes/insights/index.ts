@@ -20,38 +20,8 @@ export const Insights = defineType({
     {
       name: 'linkSectionIcon',
       title: 'Link Section Icon',
-      type: 'image'
+      type: 'image',
     },
 
-    {
-      name: 'linkSection',
-      title: 'Link section',
-      type: 'object',
-      fields: [
-        // {
-        //   name: 'icon',
-        //   title: 'Icon',
-        //   type: 'image',
-        // },
-        {
-          name: 'linkName',
-          title: 'Link Name',
-          type: 'string',
-        },
-        {
-          name: 'linkUrl',
-          title: 'Link Url',
-          type: 'string',
-        },
-      ],
-    },
-
-
-    {
-      name: 'banner',
-      title: 'Banner',
-      type: 'reference',
-      to: [{type: 'climteaction'}],
-    },
   ],
 })

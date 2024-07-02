@@ -26,14 +26,12 @@ export const SingleSolution = defineType({
       title: 'Card',
       type: 'object',
       fields: [
-
         {name: 'heading', title: 'Heading', type: 'string'},
         {name: 'description', title: 'Description', type: 'string'},
         {name: 'buttonName', title: 'Button Name', type: 'string'},
         {name: 'image', title: 'Image', type: 'image'},
       ],
     },
-
 
     {
       name: 'growthSection',
@@ -78,14 +76,5 @@ export const SingleSolution = defineType({
       type: 'reference',
       to: [{type: 'faq'}],
     },
-
-    {
-      name: 'banner',
-      title: 'Banner',
-      type: 'reference',
-      to: [{type: 'climteaction'}],
-    },
-   
-    
   ],
 })

@@ -12,7 +12,7 @@ interface BoxesProps {
 }
 
 const Boxes: React.FC<BoxesProps> = (props) => {
-    const { title, smallDescription, buttonName, buttonLink } = props; // Destructure props directly
+    const { title, smallDescription, buttonName, buttonLink } = props; 
 
     return (
         // <div className={`${classes.growth_engine} ${props.shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right`} w-full mx-auto xl:ps-14 xl:pe-7 xl:py-[70px] lg:ps-12 lg:pe-5 lg:py-[50px] lg:rounded-30px md:rounded-[20px] rounded-[15px] border border-black  bg-white text-color-1`}>
