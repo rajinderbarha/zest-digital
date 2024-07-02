@@ -55,23 +55,9 @@ const Header = ({ data }: { data: HeaderType[] }) => {
               </div>
               <div
                 id="nav-menus"
-                // className={`${navMenu.menu.simple} + ${navMenu.menu.responsive1} + ${navMenu.menu.responsive2}`}
                 className={`flex gap-[40px] text-base font-mono border-black ${classes.navMenuClass}`} data-aos="fade-right"
               >
 
-                {/* {item.navItem.map((navItem, index) => (
-                    <Link href={navItem.buttonLink} key={`navItem_${index}`} passHref>
-                    <Link
-                      className={`${
-                        router.pathname === navItem.buttonLink
-                          ? 'font-bold' // This is a Tailwind CSS class for bold text
-                          : ''
-                      } ${navMenu.linkclass} hover:underline ${classes.nav_links_hover}`}
-                    >
-                      {navItem.buttonName}
-                    </Link>
-                  </Link>
-                  ))} */}
                 {item.navItem.map((navItem, index) => (
                   <Link
                     href={navItem.buttonLink}
@@ -142,12 +128,6 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                 ))}
 
                 <div className="">
-                  {/* <Link
-                    href={item.button.navLink}
-                    className="screen-1-max:hidden w-max font-mono text-base px-21px py-[5px] bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1"
-                  >
-                    {item.button.navName}
-                  </Link> */}
                   <Image src={Sub_Logo} className="md:w-[200px] sm:w-[150px] w-[130px] md:ml-[42px] sm:ml-[15px] ml-[0px] mt-[150px]" alt="Logo_img" />
                 </div>
               </div>

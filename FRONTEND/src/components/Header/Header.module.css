@@ -1,16 +1,7 @@
 .navbar {
-  /* background-color: #333; */
   color: #fff;
 }
 
-.nav_links_hover {
-  /* border-bottom: 1px solid transparent; */
-}
-
-.nav_links_hover:hover {
-  /* border-bottom: 1px solid #191615; */
-  /* text-decoration: underline; */
-}
 
 .BG_manu {
   background-image: url(../../assets//images//Gradient_v3.png);
@@ -63,9 +54,6 @@
   right: 0 !important;
 }
 
-.custom_menu_items_class {
-  /* @apply text-white font-mono text-[26px] md:text-[22px] px-4 py-[3px] md:py-[8px] mb-[10px] hover:bg-color-1 hover:text-white rounded-[6px]  active:bg-color-1 active:text-white */
-}
 
 .custom_menu_items_class span:hover {
   border-bottom: 2px solid #e43fa8;
@@ -73,14 +61,6 @@
 }
 
 
-/* simple: "flex gap-[40px] text-base font-mono border-black",
-      responsive1:
-        "   ",
-      responsive2:
-        " ",
-    },
-    linkclass:
-      " "*/
 
 .custom_menu_items_class {
   padding: 8px 16px;
@@ -120,8 +100,6 @@
   .navlinkclass {
     border-bottom: 1px;
     border-color: #373737;
-    /* padding-inline-start: 8px;
-padding-inline-end: 80px; */
     padding: 12px 80px 12px 8px;
     color: #191615;
   }

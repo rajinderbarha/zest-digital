@@ -1,35 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); */
-
-:root {
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0; */
-  }
-}
-
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-}
-
-/* popups style */
 
                                  /* new popup style */
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1p6wq07-MuiPaper-root-MuiDialog-paper {
@@ -48,6 +20,24 @@ body {
 }
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm{
 max-width: 1510px;
+}
+
+@font-face {
+  font-family: 'Lato_font';
+  src: url('../assets/lato/Lato-Black.ttf') ;
+  font-weight:900;
+}
+
+@font-face {
+  font-family: 'Lato_font';
+  src: url('../assets/lato/Lato-Bold.ttf') ;
+  font-weight:700;
+}
+
+@font-face {
+  font-family: 'Lato_font';
+  src: url('../assets/lato/Lato-Regular.ttf') ;
+  font-weight:400;
 }
 
 @font-face {
@@ -88,31 +78,6 @@ max-width: 1510px;
   }
 }
 
-/* .MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-
-  overflow-y: scroll !important;
-  border: 2px solid black;
-
-  align-items: baseline;
-  justify-content: center;
-}
-.css-1p6wq07-MuiPaper-root-MuiDialog-paper{
-max-width: 1510px;
-} 
-@media only screen and (max-width:767px) {
-  .css-1p6wq07-MuiPaper-root-MuiDialog-paper {
-    margin: 20px !important;
-
-  }
-}
-@media only screen and (max-width:639px) {
-  .css-1p6wq07-MuiPaper-root-MuiDialog-paper {
-    margin: 10px !important;
-
-  }
-} */
 
                         /* new popup style */
 
@@ -182,12 +147,7 @@ select::-ms-expand {
     padding-right:60px !important;
   }
 }
-/* @media only screen and (min-width: 300px) and (max-width: 540px){
-  .main_padding {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-  }
-} */
+
 @media only screen and (max-width: 640px) {
 .Body_padding{
   padding: 0 10px;
@@ -195,18 +155,7 @@ select::-ms-expand {
 
 }
 
-/* @media only screen and (max-width: 1420px) {
-  .main_padding {
-    padding-left: 55px !important;
-    padding-right: 55px !important;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .main_padding {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-} */
+
 
 
 .main_container_x {
@@ -249,7 +198,6 @@ select::-ms-expand {
 }
 
 button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIconButton-root.MuiIconButton-sizeMedium.css-1xethvs-MuiButtonBase-root-MuiIconButton-root {
-  /* border: 1px solid black; */
   border-radius: 0;
   right: 0 !important;
   justify-self: flex-end;

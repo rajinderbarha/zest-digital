@@ -422,11 +422,13 @@ background-position: top left;
     right: 0;
 } */
 
-
+.grow_img{
+    z-index: 1;
+}
 @media only screen and (max-width:900px){
-    .SingleIntro{
+    /* .SingleIntro{
         overflow-x: clip;
-    }
+    } */
     .SingleIntro::before {
         content: '';
         position: absolute;

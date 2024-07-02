@@ -76,6 +76,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
                     longitude: longitude
                   }
                   return <div className="max-w-[738px] min-tb:max-tb:max-w-[448px] max-tb:mx-auto w-full" key={index}>
+                    
                     <div className={`${classes.map_div} `} data-aos="fade-up">
                       {/* <Map
                         height={738}
@@ -87,8 +88,8 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
 
                       <GoogleMapComponent loc={location} mark={[location]} zoom={15} />
                     </div>
-
-                    <div className=" flex items-center justify-end text-color-9 mt-[10px] md:mt-[25px] min-tb:max-tb:mt-[23px] gap-[2px]">
+ 
+                    <div className={`${classes.teleNo} flex items-center justify-end text-color-9 mt-[10px] md:mt-[25px] min-tb:max-tb:mt-[23px] gap-[2px] `}>
                       <FaPhoneAlt className="text-white" />
                       {contactno}
                     </div>

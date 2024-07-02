@@ -1,47 +1,6 @@
-.growth_grid {}
-
 .growth_grid>div:not(:first-child) {
     @apply xl:mt-[65px] lg:mt-[45px] md:mt-[25px] sm:mt-[35px] mt-[20px]
 }
-
-@media only screen and (max-width:860px) {
-
-    /* .animationFullText{
-        
-        @apply   max-w-[655px] text-center border
-    } */
-}
-
-/* @media only screen and (min-width:1366px){
-    .growth_container{
-
-        padding: 0 100px;
-    }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1365px){
-    .growth_container{
-
-        padding: 0 50px;
-    }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1023px){
-    .growth_container{
-
-        padding: 0 40px;
-    }
-  }
-  @media only screen and (min-width: 640px) and (max-width: 767px){
-    .growth_container{
-
-        padding: 0 35px;
-    }
-  }
-@media only screen and (max-width:639px){
-    .growth_container{
-
-        padding: 0 15px;
-    }
-} */
 
 
 @keyframes textIn {
@@ -171,8 +130,6 @@
 
 
 
-/*  font-mono   mx-auto grid md:gap-[45px] sm:gap-[45px] gap-[20px]  */
-
 
 .growth_result {
     padding-bottom: 384px;
@@ -205,11 +162,12 @@
     font-size: 16px;
     line-height: 20px;
 }
-.growth_container > div{
-max-width: 1345px;
-margin-top: -256px;
-padding-left: 50px;
-padding-right: 50px;
+
+.growth_container>div {
+    max-width: 1345px;
+    margin-top: -256px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 @media only screen and (min-width: 1350px) {
@@ -234,11 +192,13 @@ padding-right: 50px;
     .animationFullText h2 {
         font-size: 45px;
     }
-    .animatedText{
+
+    .animatedText {
         width: 200px;
-        
+
     }
-    .card_text{
+
+    .card_text {
         max-width: 484px;
     }
 }
@@ -255,10 +215,12 @@ padding-right: 50px;
     .animationFullText h2 {
         font-size: 40px;
     }
-    .animatedText{
+
+    .animatedText {
         width: 174px;
-        
+
     }
+
     .upper_title {
         font-size: 28px;
     }
@@ -266,7 +228,8 @@ padding-right: 50px;
     .card_desc {
         font-size: 15px;
     }
-    .card_text{
+
+    .card_text {
         max-width: 385px;
     }
 }
@@ -283,9 +246,10 @@ padding-right: 50px;
     .animationFullText h2 {
         font-size: 35px;
     }
-    .animatedText{
+
+    .animatedText {
         width: 152px;
-        
+
     }
 
     .box_size {
@@ -303,12 +267,14 @@ padding-right: 50px;
     .card_desc {
         font-size: 13px;
     }
-    .growth_container > div{
-margin-top: -200px;
-padding-left: 30px;
-padding-right: 30px;
+
+    .growth_container>div {
+        margin-top: -200px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    .card_text{
+
+    .card_text {
         max-width: 315px;
     }
 }
@@ -349,8 +315,9 @@ padding-right: 30px;
         font-size: 12px;
         line-height: 15px;
     }
-    .growth_container > div{
-margin-top: -150px;
+
+    .growth_container>div {
+        margin-top: -150px;
     }
 }
 
@@ -359,11 +326,13 @@ margin-top: -150px;
     .card_heading {
         padding-left: 20px;
     }
-    .growth_container > div{
-padding-left: 20px;
-padding-right: 20px;
+
+    .growth_container>div {
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    .card_text{
+
+    .card_text {
         max-width: 550px;
     }
 
@@ -373,23 +342,25 @@ padding-right: 20px;
     .card_heading {
         padding-left: 0px;
     }
-    .growth_container > div{
-padding-left: 0;
-padding-right: 0;
+
+    .growth_container>div {
+        padding-left: 0;
+        padding-right: 0;
     }
- 
+
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {
     .growth_result {
         padding-top: 85px;
     }
-    
+
     .animationFullText h2 {
         font-size: 25px;
     }
-    .animatedText{
-        
+
+    .animatedText {
+
         width: 112px;
     }
 
@@ -409,22 +380,24 @@ padding-right: 0;
         font-size: 12px;
         line-height: 15px;
     }
-    .growth_container > div{
-padding-left: 0;
-padding-right: 0;
-margin-left: -15px;
-margin-right: -15px;
+
+    .growth_container>div {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: -15px;
+        margin-right: -15px;
     }
 }
 
 
-@media only screen and (max-width:710px){
-    .animatedText{
+@media only screen and (max-width:710px) {
+    .animatedText {
         width: fit-content;
     }
 }
-        @media only screen and (min-width: 768px) and (max-width: 830px) {
-            .card_text{
-                max-width: 256px;
-            }
-        }
+
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+    .card_text {
+        max-width: 256px;
+    }
+}

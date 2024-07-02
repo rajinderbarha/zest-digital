@@ -1,55 +1,59 @@
 .shadow_custom {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -2px;
-    right: -2px;
-    background-image: linear-gradient(90deg, #fff, transparent 27%, transparent, #fff);
-    z-index: 6;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -2px;
+  right: -2px;
+  background-image: linear-gradient(90deg, #fff, transparent 27%, transparent, #fff);
+  z-index: 6;
 
 }
-@media only screen and (max-width:767px){
+
+@media only screen and (max-width:767px) {
   .shadow_custom {
-    background-image: linear-gradient(90deg, #fff , transparent 12%, transparent 88%, #fff );
+    background-image: linear-gradient(90deg, #fff, transparent 12%, transparent 88%, #fff);
+  }
 }
+
+.gradient_border {
+  position: relative;
+  background-color: transparent;
 }
-.gradient_border{
-    position: relative;
-    background-color: transparent; /* Adjust based on your background color */
-}
+
 .gradient_border::before,
 .gradient_border::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
-  height: 2px; /* Thickness of the glowing line */
-  background: linear-gradient(to left, transparent , #E43FA8, transparent); /* The color of the glow */
+  height: 2px;
+  background: linear-gradient(to left, transparent, #E43FA8, transparent);
 }
-@media only screen and (max-width:767px){
+
+@media only screen and (max-width:767px) {
+
   .gradient_border::before,
-.gradient_border::after {
-  height: 1px; /* Thickness of the glowing line */
-}
+  .gradient_border::after {
+    height: 1px;
+  }
 }
 
 .gradient_border::before {
-  top: 0; /* Aligns the line with the top of the text */
+  top: 0;
 }
 
 .gradient_border::after {
-  bottom: 0; /* Aligns the line with the bottom of the text */
+  bottom: 0;
 }
 
 .margin_top {
-    padding-left: 25px;
-    padding-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @media only screen and (max-width:1280px) {
-    .margin_top {
-        /* margin-top: 22vw; */
-        margin-bottom: 0;
-    }
+  .margin_top {
+    margin-bottom: 0;
+  }
 
 }

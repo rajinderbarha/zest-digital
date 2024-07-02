@@ -34,9 +34,22 @@ const Career: React.FC<CareerProps> = ({ data }) => {
                 </div>
               </div>
             </div>
-            <div className="thanks_for_interest lg:mt-0 min-tb:max-tb:mt-[0] sm:mt-[0] mt-[00px]">
+            <div className="thanks_for_interest lg:mt-0 min-tb:max-tb:mt-[0] sm:mt-[0] mt-[00px] relative">
+            <div
+                    className={`${classes.grow_img}  absolute  w-full`}
+                  >
+                    <div className="max-w-[1335px] mx-auto w-full">
+                    <Image
+                      src={urlFor(image).url()}
+                      alt=""
+                      width={294}
+                      height={294}
+                      className="ms-auto"
+                      />
+                      </div>
+                  </div>
               <div
-                className={`${classes.SingleIntro}  main_container lg:rounded-[30px] md:rounded-[20px] rounded-[15px] relative`} data-aos="fade-up"
+                className={`${classes.SingleIntro}  main_container lg:rounded-[30px] md:rounded-[20px] rounded-[15px] relative overflow-hidden`} data-aos="fade-up"
               >
                 {/* <div className={`${classes.bg_left}`}>
                   <Image src={image_bg_left} alt=""/>
@@ -48,7 +61,7 @@ const Career: React.FC<CareerProps> = ({ data }) => {
                 <div
                   className={`${classes.single_container} main_padding max-w-[1335px] mx-auto relative`}
                 >
-                  <div
+                  {/* <div
                     className={`${classes.grow_img}  absolute  `}
                   >
                     <Image
@@ -58,7 +71,7 @@ const Career: React.FC<CareerProps> = ({ data }) => {
                       height={294}
                       className=""
                     />
-                  </div>
+                  </div> */}
                   <div className={`${classes.career_content} text-white font-mono text-center  mx-auto  `}>
                     {/* <h2 className="xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] sm:text-30px text-[22px] font-semibold  lg:mb-[60px] md:mb-[40px] mb-[20px]"> */}
                     <h2 className={`${classes.career_title}  font-semibold `} data-aos="fade-up">

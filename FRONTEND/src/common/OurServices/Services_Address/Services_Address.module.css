@@ -1,294 +1,319 @@
 .bg_image {
-    background-image: url('../../../assets/images/Gradient_map.png');
-    /* background-position: center; */
-    background-position: 10%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: black; */
+  background-image: url('../../../assets/images/Gradient_map.png');
+  /* background-position: center; */
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: black; */
 }
 
-@media only screen and (max-width:767px){
-    .bg_image {
-        background-image: url('../../../assets/images/Services_map_gradient_mobile.png');
-    }
+@media only screen and (max-width:767px) {
+  .bg_image {
+    background-image: url('../../../assets/images/Services_map_gradient_mobile.png');
+  }
 }
+
 .map_div {
-border: 1px solid black;
-    max-width: -webkit-fill-available!important;
-    width: 100%;
-    overflow: hidden;
-    /* max-height: -webkit-fill-available; */
-    aspect-ratio: 1 / 1;
-    @apply  rounded-[15px] sm:rounded-[20px] md:rounded-[30px]  shadow-dark-pink-right  
+  border: 1px solid black;
+  max-width: -webkit-fill-available !important;
+  width: 100%;
+  overflow: hidden;
+  /* max-height: -webkit-fill-available; */
+  aspect-ratio: 1 / 1;
+  @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right
 }
-.map_div > div{
-    /* border: 1px solid black; */
-    /* border-radius: 30px; */
-    /* width: 100%!important; */
-    height:-webkit-fill-available!important;
-    /* max-height: 700px!important; */
-    /* height: 100%!important; */
-    @apply  rounded-[15px] sm:rounded-[20px] md:rounded-[30px]  shadow-dark-pink-right 
+
+.map_div>div {
+  /* border: 1px solid black; */
+  /* border-radius: 30px; */
+  /* width: 100%!important; */
+  height: -webkit-fill-available !important;
+  /* max-height: 700px!important; */
+  /* height: 100%!important; */
+  @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right
 }
-.address h4:first-child{
-    /* @apply font-mono lg:text-30px md:text-25px min-tb:max-tb:text-[16px] text-[14px] font-normal text-white  lg:mb-[20px] md:mb-[15px] min-tb:max-tb:mb-[12px] sm:mb-[10px] mb-[7px] */
-    @apply font-mono font-normal text-white
+
+.address h4:first-child {
+  /* @apply font-mono lg:text-30px md:text-25px min-tb:max-tb:text-[16px] text-[14px] font-normal text-white  lg:mb-[20px] md:mb-[15px] min-tb:max-tb:mb-[12px] sm:mb-[10px] mb-[7px] */
+  @apply font-mono font-normal text-white
 }
-.address h4:not(:first-child){
-    /* @apply font-mono lg:text-30px md:text-25px min-tb:max-tb:text-[16px] text-[20px] font-normal lg:mb-[20px] md:mb-[15px] min-tb:max-tb:mb-[12px] sm:mb-[10px] mb-[7px] text-white xl:mt-[40px] lg:mt-[35px] md:mt-[30px] sm:mt-[25px] mt-[20px] */
-    @apply font-mono font-normal  text-white
+
+.address h4:not(:first-child) {
+  /* @apply font-mono lg:text-30px md:text-25px min-tb:max-tb:text-[16px] text-[20px] font-normal lg:mb-[20px] md:mb-[15px] min-tb:max-tb:mb-[12px] sm:mb-[10px] mb-[7px] text-white xl:mt-[40px] lg:mt-[35px] md:mt-[30px] sm:mt-[25px] mt-[20px] */
+  @apply font-mono font-normal text-white
 }
-.address p{
-    /* @apply text-[12px] md:text-base min-tb:max-tb:text-[12px] min-tb:max-tb:leading-[18px] lg:text-lg font-lato text-white font-light */
-    @apply font-lato text-white font-light
+
+.address p {
+  /* @apply text-[12px] md:text-base min-tb:max-tb:text-[12px] min-tb:max-tb:leading-[18px] lg:text-lg font-lato text-white font-light */
+  @apply font-lato text-white font-light
 }
 
 
 
 .GrowthMarketingServices_Address {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
+}
+
+.bg_image {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.address_heading {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.address_desc {
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.book_btn button {
+  font-size: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+}
+
+.book_btn span {
+  padding: 4px;
+  margin-right: 2px;
+  font-size: 15px;
+}
+
+.address h4:first-child {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.address h4:not(:first-child) {
+  font-size: 14px;
+  margin-bottom: 7px;
+  margin-top: 20px;
+}
+
+.address p {
+  font-size: 12px;
+}
+
+/* Small screens, specifically for min-width: 640px */
+@media (min-width: 640px) {
+  .GrowthMarketingServices_Address {
+    margin-bottom: 100px;
   }
-  
+
   .bg_image {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
-  
+
   .address_heading {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 45px;
   }
-  
+
   .address_desc {
-    font-size: 18px;
-    line-height: 23px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .book_btn button {
-    font-size: 12px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-  }
-  
-  .book_btn span {
-    padding: 4px;
-    margin-right: 2px;
-    font-size: 15px;
-  }
-  
-  .address h4:first-child{
-   font-size: 14px; 
-   margin-bottom: 7px;
-  }
-  .address h4:not(:first-child){
-    font-size: 14px;
-    margin-bottom: 7px;
-    margin-top: 20px;
-  }
-  .address p{
-font-size: 12px;
-  }
-  
-  /* Small screens, specifically for min-width: 640px */
-  @media (min-width: 640px) {
-    .GrowthMarketingServices_Address {
-      margin-bottom: 100px;
-    }
-  
-    .bg_image {
-      padding-top: 70px;
-      padding-bottom: 70px;
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-  
-    .address_heading {
-      font-size: 30px;
-      line-height: 45px;
-    }
-  
-    .address_desc {
-      font-size: 22px;
-      line-height: 29px;
-      margin-top: 25px;
-      margin-bottom: 15px;
-    }
-  
-    .book_btn button {
-      padding-top: 3px;
-      padding-bottom: 3px;
-      padding-left: 15px;
-    }
-  
-    .book_btn span {
-      margin-right: 3px;
-      font-size: 17px;
-    }
-    .address h4:first-child{
-     margin-bottom: 10px;   
-    }
-    .address h4:not(:first-child){
-    margin-bottom: 10px;
-    }
-    .address h4:not(:first-child){
+    font-size: 22px;
+    line-height: 29px;
     margin-top: 25px;
-    }
+    margin-bottom: 15px;
   }
-  
-  /* Medium screens */
-  @media (min-width: 768px) {
-    .GrowthMarketingServices_Address {
-      margin-bottom: 120px;
-    }
-  
-    .bg_image {
-      padding-top: 100px;
-      padding-bottom: 100px;
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-  
-    .address_heading {
-      font-size: 40px;
-      line-height: 58px;
-    }
-  
-    .address_desc {
-      font-size: 33px;
-      line-height: 41px;
-      margin-top: 35px;
-      margin-bottom: 20px;
-    }
-  
-    .book_btn button {
-      font-size: 16px;
-      padding-top: 3px;
-      padding-bottom: 3px;
-      padding-left: 20px;
-    }
-  
-    .book_btn span {
-      margin-right: 4px;
-      font-size: 18px;
-    }
-    
-    .address h4:first-child{
-     font-size: 25px;  
-     margin-bottom: 15px; 
-    }
-    .address h4:not(:first-child){
+
+  .book_btn button {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+  }
+
+  .book_btn span {
+    margin-right: 3px;
+    font-size: 17px;
+  }
+
+  .address h4:first-child {
+    margin-bottom: 10px;
+  }
+
+  .address h4:not(:first-child) {
+    margin-bottom: 10px;
+  }
+
+  .address h4:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) {
+  .GrowthMarketingServices_Address {
+    margin-bottom: 120px;
+  }
+
+  .bg_image {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .address_heading {
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .address_desc {
+    font-size: 33px;
+    line-height: 41px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .book_btn button {
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+  }
+
+  .book_btn span {
+    margin-right: 4px;
+    font-size: 18px;
+  }
+
+  .address h4:first-child {
     font-size: 25px;
     margin-bottom: 15px;
-    }
-    .address h4:not(:first-child){
-    margin-top: 30px;
-    }
-    .address p{
-font-size: 16px;
-    }
   }
-  
-  /* Between 540px and 830px */
-  @media (min-width: 540px) and (max-width: 830px) {
-    .address_heading {
-      font-size: 30px;
-      line-height: 45px;
-    }
-  .bg_image{
+
+  .address h4:not(:first-child) {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .address h4:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .address p {
+    font-size: 16px;
+  }
+}
+
+/* Between 540px and 830px */
+@media (min-width: 540px) and (max-width: 830px) {
+  .address_heading {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .bg_image {
     padding-top: 80px;
     padding-bottom: 61px;
   }
-    .address_desc {
-      font-size: 20px;
-      margin-top: 42px;
-      margin-bottom: 20px;
-      line-height: 27px;
-    }
-    
-    .address h4:first-child{
-     font-size: 16px;  
-     margin-bottom: 12px; 
-    }
-    .address h4:not(:first-child){
+
+  .address_desc {
+    font-size: 20px;
+    margin-top: 42px;
+    margin-bottom: 20px;
+    line-height: 27px;
+  }
+
+  .address h4:first-child {
     font-size: 16px;
     margin-bottom: 12px;
-    }
-    .address p{
-font-size: 12px;
-line-height: 18px;
-
-    }
   }
-  
-  
-  /* Large screens */
-  @media (min-width: 1024px) {
-    .GrowthMarketingServices_Address {
-      margin-bottom: 160px;
-    }
-  
-    .bg_image {
-      padding-top: 130px;
-      padding-bottom: 130px;
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-  
-    .address_heading {
-      font-size: 50px;
-      line-height: 72px;
-    }
-  
-    .address_desc {
-      font-size: 35px;
-      line-height: 46px;
-      margin-top: 45px;
-      margin-bottom: 26px;
-    }
-    .address h4:first-child{
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-    .address h4:not(:first-child){
+
+  .address h4:not(:first-child) {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .address p {
+    font-size: 12px;
+    line-height: 18px;
+
+  }
+}
+
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .GrowthMarketingServices_Address {
+    margin-bottom: 160px;
+  }
+
+  .bg_image {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .address_heading {
+    font-size: 50px;
+    line-height: 72px;
+  }
+
+  .address_desc {
+    font-size: 35px;
+    line-height: 46px;
+    margin-top: 45px;
+    margin-bottom: 26px;
+  }
+
+  .address h4:first-child {
     font-size: 30px;
     margin-bottom: 20px;
-    }
-    .address h4:not(:first-child){
+  }
+
+  .address h4:not(:first-child) {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .address h4:not(:first-child) {
     margin-top: 35px;
-    }
-    .address p{
-        font-size: 18px;
-    }
   }
-  
-  /* Extra large screens */
-  @media (min-width: 1280px) {
-    .GrowthMarketingServices_Address {
-      margin-bottom: 200px;
-    }
-  
-    .bg_image {
-      padding-top: 160px;
-      padding-bottom: 160px;
-      padding-left: 77px;
-      padding-right: 77px;
-    }
-  
-    .address_heading {
-      font-size: 55px;
-      line-height: 75px;
-    }
-  
-    .address_desc {
-      margin-top: 60px;
-    }
-    .address h4:not(:first-child){
+
+  .address p {
+    font-size: 18px;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1280px) {
+  .GrowthMarketingServices_Address {
+    margin-bottom: 200px;
+  }
+
+  .bg_image {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    padding-left: 77px;
+    padding-right: 77px;
+  }
+
+  .address_heading {
+    font-size: 55px;
+    line-height: 75px;
+  }
+
+  .address_desc {
+    margin-top: 60px;
+  }
+
+  .address h4:not(:first-child) {
     margin-top: 40px;
-    }
   }
-  
+}
+
+.teleNo a {
+  text-decoration: none !important;
+}

@@ -3,9 +3,6 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    /* background-color: black; */
-    /* margin-top: 200px; */
-
     border: 1px solid transparent;
 }
 
@@ -18,11 +15,7 @@
     filter: drop-shadow(0px 6px 10px #FFFFFF29);
 }
 
-@media only screen and (min-width:768px) and (max-width:1023px) {
-    /* .SingleBox{
-        margin-top: 180px;
-    } */
-}
+
 
 @media only screen and (max-width:767px) {
     .singleBox_container {
@@ -63,10 +56,7 @@
     background: #1d2671;
     border-radius: 100%;
     left: 2.38%;
-    /* bottom: 0.7%; */
 }
-
-
 
 
 .Singalcasebanner {
@@ -78,7 +68,6 @@
     .top_image {
         max-width: 250px;
         max-height: 250px;
-        /* margin-bottom: 40px; */
     }
 
     .top_image~p {
@@ -94,8 +83,6 @@
     .top_image {
         max-width: 230px;
         max-height: 230px;
-        /* height: 100%; */
-        /* margin-bottom: 35px; */
     }
 
     .top_image~p {
@@ -111,7 +98,6 @@
     .top_image {
         max-width: 210px;
         max-height: 210px;
-        /* margin-bottom: 30px; */
     }
 
     .singleBox_container {
@@ -135,7 +121,6 @@
     .top_image {
         max-width: 190px;
         max-height: 190px;
-        /* margin-bottom: 27px; */
     }
 
     .singleBox_container {
@@ -159,7 +144,6 @@
     .top_image {
         max-width: 170px;
         max-height: 170px;
-        /* margin-bottom: 22px; */
     }
 
     .singleBox_container {
@@ -183,12 +167,10 @@
     .top_image {
         max-width: 150px;
         max-height: 150px;
-        /* margin-bottom: 22px; */
     }
 
     .Singalcasebanner {
         margin-top: 40px;
-        /* margin-bottom: 18px; */
     }
 
     .singleBox_container {
@@ -245,15 +227,6 @@
     padding-right: 15px;
 }
 
-/* .values_bg {
-    background-image: url(../..//assets/images/Gradient_values.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #191615;
-    padding: 85px 16px 260px 16px;
-    border-radius: 30px;
-} */
 
 .Our_values_main_p {
     max-width: 724px;
@@ -267,16 +240,7 @@
     padding: 150px 16px;
 }
 
-/* .Escape {
-    background-image: url(../../assets/images/Escape.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #191615;
-    padding: 129px 16px 140px 16px;
-    border-radius: 30px;
 
-} */
 
 
 .Escape_p {
@@ -296,17 +260,14 @@
     right: 0;
     height: 2px;
     background: linear-gradient(transparent 40%, #BD378B 82%, transparent 40%);
-    /* The glow effect */
 }
 
 .Marquee_border::before {
     top: 0;
-    /* Aligns the line with the top of the text */
 }
 
 .Marquee_border::after {
     bottom: 0;
-    /* Aligns the line with the bottom of the text */
 }
 
 .gri {
@@ -412,8 +373,6 @@
 
 
 
-
-/*  */
 
 .box_text {
     max-width: 1360px;

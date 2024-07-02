@@ -8,6 +8,7 @@ import { LogoMoving } from "../../../lib/interface";
 const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
 
   return (
+
     <div
       className={`${classes.margin_top} text-white mx-auto max-w-[1720px] w-full  my-10`}
     >
@@ -17,7 +18,6 @@ const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
         <Marquee className={`xl:gap-[100px] lg:gap-[80px] md:gap-[60px] sm:gap-[40px] gap-[35px] `}>
           <div className="flex  max-w-auto xl:gap-[100px] lg:gap-[80px] md:gap-[60px] sm:gap-[40px] gap-[35px] ">
             {LogoMovdata?.map((item: any, index: number) => {
-              // console.log("solution", item.icon);
               return (
                 <Image
                   src={urlFor(item.icon).url()}
@@ -31,7 +31,6 @@ const Logo_moving = ({ LogoMovdata }: LogoMoving) => {
             })}
 
             {LogoMovdata?.map((item: any, index: number) => {
-              // console.log("solution", item.icon);
               return (
                 <Image
                   src={urlFor(item.icon).url()}
