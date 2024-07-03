@@ -17,7 +17,6 @@ function Resourcesbanner({ data }: { data: Resources }) {
             <div className=" ">
                 <div className="">
 
-                    {/* <h1 className='font-mono font-semibold xl:text-55px min-tb:max-tb:text-30px min-tb:max-tb:max-w-[516px]   lg:text-50px md:text-[42px] sm:text-30px text-[22px] mb-[20px] '>{data.heading}</h1> */}
                     <h1 className={`${classes.banner_text} font-mono font-semibold min-tb:max-tb:max-w-[516px]  mb-[20px] `}>{data.heading}</h1>
                 </div>
 

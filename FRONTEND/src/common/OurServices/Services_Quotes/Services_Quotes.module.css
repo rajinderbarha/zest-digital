@@ -1,55 +1,32 @@
-.Instrumental {
-    /* padding: 112px 16px; */
-}
-
-.Instrumental h2 {
-    /* max-width: 909px; */
-}
-
-.Instrumental p {
+.services_quotes p {
     max-width: 750px;
 }
 
-.Instrumental h3 {
+.services_quotes h3 {
     max-width: 373px;
 }
 
 
-.Interests_h2 {
-    /* max-width: 1260px !important; */
-}
-
-@media screen and (max-width:768px) {
-    .Instrumental {
-        /* padding: 80px 16px 50px 16px; */
-    }
-    
-}
-
 @media screen and (min-width:540px) and (max-width:830px) {
-    .objective_left_description{
+    .quote_left{
 padding-right: 40px;
     }
-    .objective_right_description{
+    .quote_right{
 padding-left: 40px;
 margin-top: 77px;
     }
-    .Interests_h2{
+    .quote_heading{
         max-width: 627px;
     }
 }
 
 
-
-/* objective_right_description   xl:mt-[120px] lg:mt-[90px] md:mt-[60px] sm:mt-[30px] mt-[70px] */
-
-
-.Instrumental {
+.services_quotes {
     margin-top: 80px;
     margin-bottom: 100px;
   }
   
-  .Interests_h2 {
+  .quote_heading {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 8px;
@@ -59,18 +36,18 @@ margin-top: 77px;
     padding-top: 3px;
     font-size: 12px;
   }
-  .objective_right_description
+  .quote_right
   {
     margin-top: 70px;
   }
   
   @media (min-width: 640px) {
-    .Instrumental {
+    .services_quotes {
       margin-top: 120px;
       margin-bottom: 150px;
     }
   
-    .Interests_h2 {
+    .quote_heading {
       font-size: 28px;
       line-height: 35.5px;
       margin-bottom: 10px;
@@ -80,19 +57,19 @@ margin-top: 77px;
       padding-top: 5px;
       font-size: 20px;
     }
-    .objective_right_description{
+    .quote_right{
         margin-top: 30px;
     }
   }
 
   
   @media (min-width: 768px) {
-    .Instrumental {
+    .services_quotes {
       margin-top: 170px;
       margin-bottom: 200px;
     }
   
-    .Interests_h2 {
+    .quote_heading {
       font-size: 35px;
       line-height: 42px;
       margin-bottom: 15px;
@@ -102,19 +79,19 @@ margin-top: 77px;
       padding-top: 8px;
       font-size: 25px;
     }
-    .objective_right_description{
+    .quote_right{
         margin-top: 60px;
     }
   }
 
     
   @media (min-width: 540px) and (max-width: 830px) {
-    .Instrumental {
+    .services_quotes {
       margin-top: 129px;
       margin-bottom: 140px;
     }
   
-    .Interests_h2 {
+    .quote_heading {
       font-size: 26px;
       line-height: 34px;
     }
@@ -123,19 +100,19 @@ margin-top: 77px;
       font-size: 18px;
       line-height: 23px;
     }
-    .objective_right_description{
+    .quote_right{
         padding-left: 40px;
         margin-top: 77px;
             }
   }
   
   @media (min-width: 1024px) {
-    .Instrumental {
+    .services_quotes {
       margin-top: 200px;
       margin-bottom: 250px;
     }
   
-    .Interests_h2 {
+    .quote_heading {
       font-size: 40px;
       line-height: 50px;
       margin-bottom: 20px;
@@ -144,22 +121,22 @@ margin-top: 77px;
     .below_line {
       font-size: 30px;
     }
-    .objective_right_description{
+    .quote_right{
         margin-top: 90px;
     }
   }
   
   @media (min-width: 1280px) {
-    .Instrumental {
+    .services_quotes {
       margin-top: 225px;
       margin-bottom: 290px;
     }
   
-    .Interests_h2 {
+    .quote_heading {
       font-size: 45px;
       line-height: 58px;
     }
-    .objective_right_description{
+    .quote_right{
         margin-top: 120px;
     }
   }

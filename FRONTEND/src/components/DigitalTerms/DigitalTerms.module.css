@@ -1,44 +1,32 @@
 .list_title {
-  /* @apply lg:text-45px md:text-40px text-30px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[40px] */
   @apply font-mono font-semibold
 }
 
 .list_sub_title {
-  /* @apply md:text-35px text-30px font-mono font-semibold mt-[50px] md:mt-[95px] mb-[40px] */
   @apply font-mono font-semibold
 }
 
 .list_sub_items {
-  /* @apply flex flex-col gap-6 font-lato text-lg ml-[60px] */
   @apply font-lato
 }
 
 
-.Portable_text {
-  /* @apply xl:ps-[120px] lg:ps-[85px] md:ps-[30px] ps-[20px] */
-}
 
 .Portable_text h2 {
-  /* @apply lg:text-45px md:text-40px sm:text-30px text-[18px] min-tb:max-tb:text-[26px] font-mono font-semibold xl:mt-[120px] lg:mt-[100px] md:mt-[70px] mt-[40px]  md:mb-[40px] max-tb:mt-[40px] max-tb:mb-[20px] sm:mb-[30px] mb-[15px] */
   @apply font-mono font-semibold
 }
 
 .Portable_text p {
-  /* @apply flex flex-col gap-6 font-lato lg:text-[18px] md:text-[15px] max-tb:text-[12px] min-tb:max-tb:leading-[20px] text-[14px]  lg:mb-[24px] md:mb-[20px] sm:mb-[16px] mb-[10px] min-tb:max-tb:mb-[15px] */
   @apply font-lato
 }
 
 .Portable_text h3 {
-  /* @apply lg:text-35px md:text-[30px] min-tb:max-tb:text-[26px]  text-[18px] font-mono font-semibold mt-[30px] sm:mt-[50px] md:mt-[95px] min-tb:max-tb:mt-[40px] min-tb:max-tb:mb-[20px]  sm:mb-[40px] mb-[20px]  */
   @apply font-mono font-semibold
 }
 
-.Portable_text h3~p {
-  /* @apply md:ml-[60px] min-tb:max-tb:ml-[20px] ml-[8px] */
-}
+
 
 .Portable_text ul {
-  /* @apply list-disc list-inside md:ml-[100px] ml-[15px] md:text-[18px] sm:text-[16px] text-[14px] max-tb:text-[12px] min-tb:max-tb:leading-[20px] md:mb-[36px] sm:mb-[24px] mb-[17px] */
   @apply font-lato
 }
 
@@ -67,7 +55,6 @@
 
 .Portable_text h2:not(:first-child)+p+ul+p,
 .Portable_text h2:not(:first-child)+p+ul+p+p {
-  /* border: 10px solid black; */
   @apply ml-[0]
 }
 
@@ -76,27 +63,7 @@
 
 
 
-.tableContainer table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 40px 0;
-  
-}
 
-.tableContainer th,
-.tableContainer td {
-  /* border: 1px solid #ddd; */
-  /* padding: 8px; */
-}
-
-.tableContainer th {
-  /* background-color: #f2f2f2; */
-  text-align: center;
-}
-
-.tableContainer td {
-  vertical-align: top;
-}
 
 .category, .left_heading {
   background-color: #191615;
@@ -109,47 +76,14 @@
   @apply font-mono 
 }
 
-.tableContainer table tr:not(:first-child){
-  /* border: 10px solid yellow; */
-  /* position: relative;
-  top: -1px ; */
-}
 
-.tableContainer table tr:nth-child(2) td:first-child{
-border-radius:  20px 20px 0 0;
-   /*  box-shadow: -3px 0 6px  #62ff00, 3px 0 6px  #62ff00; */
-  position: relative;
-}
-.tableContainer table tr:last-child td:first-child{
-  border-radius: 0 0 20px 20px;
-   /*box-shadow: 0 0 15px 0px #01ff38;
-  clip-path: inset(0px -15px 0px -15px); */
-  position: relative;
-}
-
-/* .tableContainer table tr:nth-child(2) td:first-child:before, .tableContainer table tr:nth-child(2) td:first-child:after {
-  content: " ";
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 50px;
-}
-.tableContainer table tr:nth-child(2) td:first-child:before {
-  box-shadow: -3px 0 6px -6px #62ff00 inset;
-  left: -50px;
-}
-.tableContainer table tr:nth-child(2) td:first-child:after {
-  box-shadow: 3px 0 6px -6px #62ff00 inset;
-  right: -15px;
-} */
-
-.tableContainer table tr td ul, .table_div ul{
+ .table_div ul{
   margin: 0!important;
   padding: 0!important;
   margin-left: 10px!important;
 }
 
-.tableContainer table th, .columns_heading h5{
+ .columns_heading h5{
   font-size: 16px;
   line-height: 30px;
   padding-bottom: 15px;
@@ -157,32 +91,17 @@ border-radius:  20px 20px 0 0;
   @apply font-mono font-semibold
 }
 
-.tableContainer table tr:not(:first-child) td, .rows > div div{
+ .rows > div div{
   padding-top: 60px;
 }
 
-.tableContainer table tr td:not(:first-child), .rows > div div:not(:first-child), .tableContainer table tr td ul, .table_div ul{
+ .rows > div div:not(:first-child),  .table_div ul{
   font-size: 12px!important;
   line-height: 18px!important;
   padding-left: 12px;
   padding-right: 20px;
   @apply font-lato 
 }
-
-/* .tableContainer table tr{
-  position: relative;
-}
-
-.tableContainer table tr:nth-child(3){
-top: -1px;
-}
-.tableContainer table tr:nth-child(4){
-top: -2px;
-}
-.tableContainer table tr:nth-child(5){
-top: -3px;
-} */
-
 
 
 .tableContainer{
@@ -204,10 +123,6 @@ top: -3px;
 .row_4 > div div{
 padding-bottom: 91px;
 }
-.rows> div div{
-  /* box-shadow: 0px 3px 6px #00000029; */
-}
-
 
 
 .rows> div div{
@@ -220,15 +135,15 @@ padding-bottom: 91px;
   height: 100%;
   position: absolute;
   top: 0;
-  width: 50px;
+  width: 15px;
 }
 .rows> div div:before {
   box-shadow: -15px 0 6px -15px #00000029 inset;
-  left: -50px;
+  left: -15px;
 }
 .rows> div div:after {
   box-shadow: 15px 0 6px -15px #00000029 inset;
-  right: -50px;
+  right: -15px;
 }
 
 .row_1>div div::after{
@@ -266,7 +181,6 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
 
 .list_title {
   font-size: 30px;
-  /*font-family: monospace;*/
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -287,7 +201,6 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
 
 .list_sub_title {
   font-size: 30px;
-  /*font-family: monospace;*/
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -304,9 +217,7 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /*font-family: Lato, sans-serif;*/
   font-size: 18px;
-  /* 18px */
   margin-left: 60px;
 }
 
@@ -334,7 +245,6 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
 
 .Portable_text h2 {
   font-size: 18px;
-  /*font-family: monospace;*/
   font-weight: 600;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -359,13 +269,13 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
     margin-bottom: 85px;
   }
   
-  .tableContainer table tr td:not(:first-child), .rows > div div:not(:first-child), .tableContainer table tr td ul, .table_div ul{
+.rows > div div:not(:first-child),  .table_div ul{
     font-size: 13px!important;
     line-height: 20px!important;
     padding-left: 18px;
   padding-right: 22px;
   }
-  .tableContainer table th, .columns_heading h5{
+ .columns_heading h5{
     font-size: 18px;
     line-height: 25px;
     padding-bottom: 19px;
@@ -395,13 +305,13 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
   margin-bottom: 95px;
 }
 
-  .tableContainer table tr td:not(:first-child), .rows > div div:not(:first-child), .tableContainer table tr td ul, .table_div ul{
+ .rows > div div:not(:first-child),  .table_div ul{
     font-size: 14px!important;
     line-height: 22px!important;
     padding-left: 21px;
   padding-right: 23px;
   }
-  .tableContainer table th, .columns_heading h5{
+ .columns_heading h5{
     font-size: 18px;
     line-height: 26px;
     padding-bottom: 22px;
@@ -430,13 +340,13 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
   margin-bottom: 115px;
 }
 
-  .tableContainer table tr td:not(:first-child), .rows > div div:not(:first-child), .tableContainer table tr td ul, .table_div ul{
+ .rows > div div:not(:first-child), .table_div ul{
     font-size: 16px!important;
     line-height: 26px!important;
     padding-left: 26px;
   padding-right: 28px;
   }
-  .tableContainer table th, .columns_heading h5{
+ .columns_heading h5{
     font-size: 22px;
     line-height: 30px;
     padding-bottom: 25px;
@@ -463,13 +373,13 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
     margin-bottom: 75px;
   }
   
-  .tableContainer table tr td:not(:first-child), .rows > div div:not(:first-child), .tableContainer table tr td ul, .table_div ul{
+   .rows > div div:not(:first-child),  .table_div ul{
     font-size: 12px!important;
     line-height: 18px!important;
     padding-left: 15px;
   padding-right: 22px;
   }
-  .tableContainer table th, .columns_heading h5{
+ .columns_heading h5{
     font-size: 16px;
     line-height: 26px;
     padding-bottom: 18px;
@@ -488,7 +398,6 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /*font-family: Lato, sans-serif;*/
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 10px;
@@ -528,7 +437,6 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
 
 .Portable_text h3 {
   font-size: 18px;
-  /*font-family: monospace;*/
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -601,8 +509,6 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
 .Portable_text ul {
   list-style-type: disc;
   list-style-position: outside;
-  /* list-style-position: inside; */
-  /* margin-left: 15px; */
   margin-left: 24px;
   font-size: 12px;
   margin-bottom: 6px;
@@ -690,7 +596,7 @@ box-shadow:   0px -2px 1px white, 0px 3px 6px #00000029  ;
   
 }
 @media only screen and (max-width:639px){
-  .tableContainer table tr:not(:first-child) td, .rows > div div{
+   .rows > div div{
     padding-top: 48px;
   }
   .row_4 > div div{
@@ -717,10 +623,5 @@ margin-top: 70px;
    .divide_columns div:last-child{
     @apply col-span-8
    }
-  /*.left_heading{
-    max-width: 109px;
-  }
-  .row div div:not(:first-child){
-    max-width: 207px;
-  } */
+
 }

@@ -1,15 +1,11 @@
-/* @media only screen and (max-width:){
 
-} */
 .location_div {
     max-width: -webkit-fill-available!important;
     width: 100%;
-    /* max-height: -webkit-fill-available; */
     aspect-ratio: 1 / 1;
     @apply  rounded-[15px] md:rounded-[20px] lg:rounded-[30px] md:rounded-30px  
 }
 .location_div > div > div{
-    /* border: 5px solid blue; */
     height:-webkit-fill-available!important;
     @apply rounded-[15px] md:rounded-[20px] lg:rounded-[30px] shadow-dark-pink-right  border border-color-1
 }
@@ -36,14 +32,7 @@
     }
 }
 
-/* @media only screen and (min-width:1560px) and  (min-width:1580px){
-    .contact_detail{
-        font-size: 14px!important;
-    }
-    .phone_icon{
-        text-align: 20px;
-    }
-} */
+
 @media only screen and (min-width:1505px) and (max-width:1580px){
     .contact_detail{
         font-size: 14px;
@@ -117,96 +106,3 @@
         font-size: 12px;
     }
 }
-/* @media only screen and (min-width:1390px) and (max-width:1483px){
-    .contact_detail{
-        font-size: 14.5px;
-    }
-    .phone_icon{
-        font-size: 17px;
-    }
-}
-@media only screen and (min-width:1300px) and (max-width:1390px){
-    .contact_detail{
-        font-size: 14px;
-    }
-    .phone_icon{
-        font-size: 16px;
-    }
-}
-@media only screen and (min-width:1195px) and (max-width:1300px){
-    .contact_detail{
-        font-size: 13px;
-    }
-    .phone_icon{
-        font-size: 16px;
-    }
-} */
-/* @media only screen and (min-width:1105px) and (max-width:1195px){
-    .contact_detail{
-        font-size: 12px;
-    }
-    .phone_icon{
-        font-size: 15px;
-    }
-}
-@media only screen and (min-width:1035px) and (max-width:1105px){
-    .contact_detail{
-        font-size: 11px;
-    }
-    .phone_icon{
-        font-size: 14px;
-    }
-}
-@media only screen and (min-width:1024px) and (max-width:1035px){
-    .contact_detail{
-        font-size: 10px;
-    }
-    .phone_icon{
-        font-size: 14px;
-    }
-} */
-
-
-
-.MapLocations{
-    /* border: 1px solid black; */
-}
-
-
-/* @media only screen and (max-width:1600px) {
-    .location_div {
-        max-width: 30vw;
-        width: 30vw;
-        max-height: 30vw;
-        height: 30vw;
-    }
-}
-
-@media only screen and (max-width:1100px) {
-    .location_div {
-        max-width: 42vw;
-        width: 42vw;
-        max-height: 42vw;
-        height: 42vw;
-    }
-
-}
-
-@media only screen and (max-width:760px) {
-    .location_div {
-        max-width: 320px;
-        width: 320px;
-        max-height: 320px;
-        height: 320px;
-    }
-
-
-}
-@media only screen and (max-width:345px) {
-    .location_div {
-        max-width: 290px;
-        width: 290px;
-        max-height: 290px;
-        height: 290px;
-    }
-} */

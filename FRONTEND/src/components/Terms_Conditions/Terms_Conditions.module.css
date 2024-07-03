@@ -1,30 +1,17 @@
-.Careerbanner {
-    /* padding: 96px 16px 0 16px; */
-}
-
 .box_bg_image {
     background-image: url('../../assets/images/Gradient_v6.png');
     background-color: #191615;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 660px; */
 }
 
-@media only screen and (max-width:767px) {
-    .Careerbanner {
-        /* padding: 60px 16px 0 16px; */
-    }
-}
 @media only screen and (max-width:540px) and (min-width:830px) {
     .t_and_c_cards > div{
         margin-left: -10px;
         margin-right: -10px;
     }
 }
-
-
-
 
 .term_condition {
     margin-bottom: 80px;
@@ -40,7 +27,6 @@
     margin-top: -626px;
   }
   
-  /* Small screens, specifically for min-width: 640px */
   @media (min-width: 640px) {
     .term_condition {
       margin-bottom: 90px;
@@ -51,9 +37,6 @@
     }
   }
 
-
-    
-  /* Medium screens */
   @media (min-width: 768px) {
     .term_condition {
       margin-bottom: 110px;
@@ -70,14 +53,12 @@
   }
 
     
-  /* Between 540px and 830px */
   @media (min-width: 540px) and (max-width: 830px) {
     .terms_heading {
       font-size: 30px;
     }
   }
   
-  /* Large screens */
   @media (min-width: 1024px) {
     .term_condition {
       margin-bottom: 160px;
@@ -93,7 +74,6 @@
     }
   }
   
-  /* Extra large screens */
   @media (min-width: 1280px) {
     .term_condition {
       margin-bottom: 216px;

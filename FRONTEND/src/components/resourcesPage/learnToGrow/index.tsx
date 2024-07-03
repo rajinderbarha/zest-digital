@@ -30,11 +30,9 @@ function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelecte
               />
             </div>
             <div className="text-white font-mono text-center max-w-[1172px] mx-auto min-tb:max-tb:px-[50px] p-6 md:p-10 " data-aos="fade-up" >
-              {/* <h2 className="xl:text-45px  lg:text-40px min-tb:max-tb:text-30px md:text-35px sm:text-30px text-[22px] font-semibold"> */}
               <h2 className={`${classes.learnToGrow_title}  font-semibold`}>
                 {data.hero.title}
               </h2> 
-              {/* <p className="lg:text-30px md:text-25px text-[12px] min-tb:max-tb:text-[16px] min-tb:max-tb:pb-[0px] text-md min-tb:max-tb:pt-[31px] pt-[19px] md:pb-[40px] pb-[15px]"> */}
               <p className={`${classes.learnToGrow_desc} `} >
                 {data.hero.description}
               </p>
@@ -62,11 +60,9 @@ function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelecte
         </div>
         <div className="main_padding">
           <div className=" relative max-w-[1335px] mx-auto -mt-[250px] md:-mt-[279px] " id="tools">
-            {/* <h2 className="font-mono font-semibold xl:text-45px lg:text-40px min-tb:max-tb:text-[30px] text-[20px] text-white mx-auto text-center"> */}
             <h2 className={`${classes.tools_title} font-mono font-semibold  text-white mx-auto text-center`} data-aos="fade">
               Tools
             </h2>
-            {/* <div className="grid grid-cols-1 min-tb:max-tb:px-[50px] min-tb:max-tb:grid-cols-1  md:grid-cols-2 md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1355px] lg:px-[50px] md:px-[30px] sm:px-[20px] px-[0px] font-mono mx-auto mt-[40px] min-tb:max-tb:mt-[47px] md:mt-[80px]"> */}
             <div className={`${classes.cards_div} grid grid-cols-1  min-tb:max-tb:grid-cols-1  md:grid-cols-2  font-mono mx-auto `}>
               {data.tool.map((item: any, index: number) => {
                 const data = {
@@ -87,8 +83,7 @@ function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelecte
           </div>
         </div>
       </div>
-      {/* <div className="xl:mt-[200px] lg:mt-[170px] md:mt-[120px] sm:mt-[80px] mt-[50px] xl:mb-[190px] lg:mb-[160px] md:mb-[110px] sm:mb-[80px] mb-[50px]"> */}
-      <div className={`${classes.resources_logo} xl:mt-[200px] lg:mt-[170px] md:mt-[120px] sm:mt-[80px] mt-[50px] xl:mb-[190px] lg:mb-[160px] md:mb-[110px] sm:mb-[80px] mb-[50px]`}>
+      <div className={`${classes.resources_logo} `}>
         <Logo_moving LogoMovdata={data.brandList.map((a: any) => a)} />
       </div>
     </>

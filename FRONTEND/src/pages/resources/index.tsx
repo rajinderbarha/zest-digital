@@ -115,9 +115,7 @@ function resources({ resources }: any) {
       <div className="Body_padding">
         <Resourcesbanner data={resources[0]} />
         <LearnToGrow data={resources[0]} setSelectedFileUrl={setSelectedFileUrl} />
-        {/* <div className={` xl:mt-[200px] lg:mt-[170px] md:mt-[120px] sm:mt-[80px] mt-[50px] xl:mb-[190px] lg:mb-[160px] md:mb-[110px] sm:mb-[80px] mb-[50px]`}>
-        <Logo_moving LogoMovdata={resources[0].brandList.map((a: any) => a)} />
-      </div> */}
+
       </div>
 
     </>

@@ -51,7 +51,6 @@
     font-size: 14px;
   }
   
-  /* Small screens, specifically for min-width: 640px */
   @media (min-width: 640px) {
     .Sign_up {
       padding-top: 50px;
@@ -92,7 +91,6 @@
     }
   }
   
-  /* Medium screens */
   @media (min-width: 768px) {
     .form_heading {
       font-size: 35px;
@@ -137,7 +135,6 @@
   }
   
 
-  /* Between 540px and 830px */
   @media (min-width: 540px) and (max-width: 830px) {
     .form_heading {
       font-size: 30px;
@@ -171,7 +168,6 @@
   
 
 
-  /* Large screens */
   @media (min-width: 1024px) {
     .form_heading {
       font-size: 40px;
@@ -202,7 +198,6 @@
 
     .form_inputs div {
         max-width: 100%;
-        /* margin-bottom: 30px; */
     }
 }
 .Sign_up{

@@ -1,15 +1,5 @@
-/* .input_fields{
- @apply   w-full border font-lato border-color-9 md:rounded-[10px] rounded-[5px] md:px-[25px]  md:py-[11px] py-[8px] px-[12px] text-[15px] md:text-lg md:h-[50px]
-}
-.select_field{
-    @apply  w-full font-lato border border-color-9 md:rounded-[10px] rounded-[5px] md:px-[25px]  md:py-[11px] py-[8px] px-[12px] text-[15px] md:text-lg text-color-1 mt-[11px]
-}
-.text_area_field{
-    @apply w-full border font-lato border-color-9 rounded-[10px] md:px-[25px] px-[12px] md:py-[14px] py-[10px] text-[15px] md:text-lg h-[100px] md:h-[172px]
-} */
 
 .map_div > div:not(:last-child){
-    /* border:5px solid yellow; */
     @apply xl:mb-[114px] lg:mb-[80px] md:mb-[60px] sm:mb-[40px] mb-[30px]
 }
 .names_div{
@@ -34,8 +24,8 @@
         column-gap: 55px !important;
       }
 }
-@media only screen and 
-(max-width:774px) {
+
+@media only screen and (max-width:774px) {
     .names_div {
         flex-direction: column;
         gap: 36px;
@@ -70,8 +60,6 @@
 }
 
 
-
-
 @media only screen and (min-width:1690px) {
     .map_div {
         column-gap: 105px;
@@ -104,18 +92,6 @@
       column-gap: 40px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .contact_container {
   margin-top: 30px; 
@@ -262,9 +238,6 @@
   .contact_heading {
     font-size: 25px; 
     line-height: 34px; 
-  }
-
-  .form_div {
   }
 
   .input_labels {
