@@ -1,13 +1,8 @@
-.objective_inner {
-  /* padding: 70px 52px; */
-}
-
 .objective_select:not(:first-child) {
   @apply xl:mt-[350px] lg:mt-[280px] md:mt-[200px] min-tb:max-tb:mt-[75px] sm:mt-[90px] mt-[85px]
 }
 
 .objective_description p:not(:first-child) {
-  /* border: 1px solid black; */
   padding-top: 45px;
 }
 
@@ -24,9 +19,6 @@
 }
 
 @media only screen and (max-width:767px) {
-  .objective_inner {
-    /* padding: 30px 35px; */
-  }
 
   .objective_description p:not(:first-child) {
     padding-top: 30px;
@@ -40,16 +32,11 @@
 }
 
 @media only screen and (max-width:639px) {
-  .objective {
-    /* padding-left: 35px;
- -       padding-right: 35px; */
-  }
 
   .objective_description p:not(:first-child) {
     padding-top: 10px;
   }
 }
-
 
 
 @media only screen and (min-width:1516px) and (max-width:1800px) {
@@ -87,12 +74,6 @@
 }
 
 
-
-
-
-
-
-
 .objective_title {
   font-size: 22px;
 }
@@ -121,7 +102,6 @@
   height: 150px;
 }
 
-/* Small screens, specifically for min-width: 640px */
 @media (min-width: 640px) {
   .objective_title {
     font-size: 30px;
@@ -152,7 +132,6 @@
   }
 }
 
-/* Medium screens */
 @media (min-width: 768px) {
   .objective_title {
     font-size: 35px;
@@ -183,7 +162,6 @@
   }
 }
 
-/* Between 540px and 830px */
 @media (min-width: 540px) and (max-width: 830px) {
   .objective_title {
     font-size: 30px;
@@ -214,7 +192,6 @@
   }
 }
 
-/* Large screens */
 @media (min-width: 1024px) {
   .objective_title {
     font-size: 40px;
@@ -245,7 +222,6 @@
   }
 }
 
-/* Extra large screens */
 @media (min-width: 1280px) {
   .objective_title {
     font-size: 45px;

@@ -185,65 +185,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
     return (
       <div className={classes.tableContainer}>
 
-
-        {/* <table>
-          <tr>
-            <th></th>
-            <th>Length of Time Held</th>
-            <th>How Data is Held</th>
-            <th>Type of Data Held</th>
-          </tr>
-          <tr>
-            <td className={`${classes.category}`}>CLIENTS</td>
-            <td className={`tdclass`}>
-              <ul>
-                <li>Name and contact information.</li>
-                <li>Information and documents relating to the services we are providing, including communications with you.</li>
-                <li>Billing and payment information.</li>
-              </ul>
-            </td>
-            <td>We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</td>
-            <td>We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</td>
-          </tr>
-          < tr>
-            <td className={`${classes.category}`}>PROSPECTIVE CLIENTS</td>
-            <td>
-              <ul>
-                <li>Name and contact information.</li>
-                <li>Information and documents relating to the services we are providing, including communications with you.</li>
-              </ul>
-            </td>
-            <td>We will retain information about you for the duration of the enquiry, then one year.</td>
-            <td>We store this information electronically in our lead generation system, which is hosted on US-based servers.</td>
-          </tr>
-          <tr>
-            <td className={`${classes.category}`}>JOB APPLICANTS</td>
-            <td>
-              <ul>
-                <li>Name and contact information.</li>
-                <li>CV and application form.</li>
-                <li>Interview notes (for those short-listed).</li>
-              </ul>
-            </td>
-            <td>We will retain information about you for the duration of the recruitment campaign, then one year.</td>
-            <td>We store this information electronically on servers within the EEA.</td>
-          </tr>
-          <tr>
-            <td className={`${classes.category}`}>OUR CURRENT AND FORMER EMPLOYEES</td>
-            <td>
-              <ul>
-                <li>Name and contact information.</li>
-                <li>CV and application form.</li>
-                <li>Interview notes.</li>
-                <li>Bank Details.</li>
-                <li>National Insurance Number.</li>
-                <li>Gender.</li>
-              </ul>
-            </td>
-            <td>We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</td>
-            <td>We store this information electronically on servers within the EEA.</td>
-          </tr>
-        </table> */}
+        {/* desktop--table--start */}
 
         <div className={`${classes.table_div} ${classes.desktop_table}`}>
           {/* <div className=""> */}
@@ -324,6 +266,9 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
         </div>
 
 
+         {/* desktop--table--end */}
+
+         {/* tablet--table--start */}
 
         <div className={`${classes.table_div} ${classes.tablet_table}`}>
           {/* <div className=""> */}
@@ -435,6 +380,10 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
           </div>
           {/* </div> */}
         </div>
+
+         {/* tablet--table--end */}
+
+          {/* mobile--table--start */}
 
         <div className={` ${classes.mobile_table}`}>
           {/* <div className=""> */}
@@ -578,6 +527,8 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
           </div>
           {/* </div> */}
         </div>
+
+         {/* mobile--table--end */}
 
       </div>
     );

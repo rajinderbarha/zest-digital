@@ -1,6 +1,5 @@
 .Careerbanner h1 {
     @apply xl:mt-[95px] lg:mt-[70px] md:mt-[48px] mt-[33px]
-    /* padding: 96px 16px 0 16px; */
 }
 
 
@@ -26,7 +25,6 @@
     line-height: 15px;
   }
   
-  /* Small screens, specifically for min-width: 640px */
   @media (min-width: 640px) {
     .Career {
       margin-bottom: 90px;
@@ -43,7 +41,6 @@
   }
   
 
-  /* Medium screens */
   @media (min-width: 768px) {
     .Career {
       margin-bottom: 120px;
@@ -66,8 +63,7 @@
     }
   }
 
-
-    /* Between 540px and 830px */
+  
     @media (min-width: 540px) and (max-width: 830px) {
         .Career {
           margin-bottom: 80px;
@@ -90,7 +86,6 @@
       }
       
   
-  /* Large screens */
   @media (min-width: 1024px) {
     .Career {
       margin-bottom: 140px;
@@ -113,7 +108,6 @@
     }
   }
   
-  /* Extra large screens */
   @media (min-width: 1280px) {
     .Career {
       margin-bottom: 160px;
@@ -132,54 +126,13 @@
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:767px) {
-    .Careerbanner {
-        /* padding: 30px 16px 0 16px; */
-    }
-}
-
-.SingleIntro {
-    /* background-image: url('../../assets/images/Gradient_calendar_new_transparent_right.png'), url('../../assets/images/Gradient_calendar_new_transparent_left.png'); */
-    /* background-image: url('../../assets/images/Gradient_calendar_new.png'); */
-    background-repeat: no-repeat;
-    /* background-position: top left, bottom right; */
-    background-position: top left;
-    background-size: cover;
-    /* background-size: ; */
+.career_box {
     background-color: #191615;
     margin-top:105px;
     position: relative;
-
 }
 
-.single_container {
-    /* margin-top: -100px; */
-}
-
-.single_container{
+.career_container{
     padding: 175px 0 191px 0;
 }
 
@@ -188,28 +141,22 @@
 }
 
 @media only screen and (min-width: 1775px) {
-
-    .grow_img {
+    .career_img {
         top: -163px;
         right: 50px;
     }
-
-    .grow_img img {
+    .career_img img {
         width: 294px;
         height: 294px;
     }
-
-    
 }
 
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
-
-    .grow_img {
+    .career_img {
         top: -150px;
         right: 90px;
     }
-
-    .grow_img img {
+    .career_img img {
         width: 270px;
         height: 270px
     }
@@ -219,54 +166,46 @@
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
-
-    .grow_img {
+    .career_img {
         top: -127px;
         right: 135px;
     }
-
-    .grow_img img {
+    .career_img img {
         width: 230px;
         height: 230px;
     }
-    .single_container{
+    .career_container{
         padding: 165px 0 181px 0;
     }
     .career_content p{
         max-width: 900px;
     }
-    
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1365px) {
-
-    .grow_img {
+    .career_img {
         top: -114px;
         right: 80px;
     }
-
-    .grow_img img {
+    .career_img img {
         width: 200px;
         height: 200px;
     }
-    .single_container{
+    .career_container{
         padding: 150px 0 160px 0;
     }
 
     .career_content p{
         max-width: 600px;
     }
-    
-
 }
 
 @media only screen and (min-width: 1124px) and (max-width: 1365px) {
-    .grow_img {
+    .career_img {
         top: -123px;
         right: 60px;
     }
-
-    .grow_img img {
+    .career_img img {
         width: 220px;
         height: 220px;
     }
@@ -276,36 +215,32 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-    .grow_img {
+    .career_img {
         top: -100px;
         right: 50px;
     }
-
-    .grow_img img {
+    .career_img img {
         width: 200px;
         height: 200px;
     }
-    .single_container{
+    .career_container{
         padding: 131px 0 131px 0;
     }
     .career_content p{
         max-width: 600px;
     }
-    
 }
 
 @media only screen and (min-width: 640px) and (max-width: 767px) {
-    .grow_img {
+    .career_img {
         top: -88px;
         right: 50px;
     }
-
-    .grow_img img {
+    .career_img img {
         width: 160px;
         height: 160px;
     }
-    .single_container{
+    .career_container{
         padding: 100px 0 90px 0;
     }
     .career_content p{
@@ -314,20 +249,18 @@
 }
 
 @media only screen and (max-width: 639px) {
-    .grow_img {
+    .career_img {
         top: -65px;
         right: 20px;
     }
-
-    .grow_img img {
+    .career_img img {
         width: 130px;
         height: 130px;
     }
-
-    .SingleIntro {
+    .career_box {
         margin-top: 55px;
     }
-    .single_container{
+    .career_container{
         padding: 95px 0 77px 0;
     }
     .career_content p{
@@ -352,115 +285,61 @@
 }
 
 @media only screen and (min-width: 639px) and (max-width: 830px) {
-    /* .grow_img img {
-        width: 200px;
-        height: 200px;
-    } */
-    .SingleIntro{
+    .career_box{
         margin-top: 45px;
     }
-    .single_container{
+    .career_container{
         padding-bottom: 130px;
     }
-    .single_container p{
-        /* max-width: 500px; */
+    .career_container p{
         margin: auto;
     }
 }
 
 
-    /* background-image: url('../../assets/images/Gradient_calendar_new_transparent_right.png'), url('../../assets/images/Gradient_calendar_new_transparent_left.png'); */
-
-.SingleIntro::before{
+.career_box::before, .career_box::after{
     content: '';
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.career_box::before{
     top: 0;
     left: 0;
     background-image: url('../../assets/images/Gradient_calendar_new_transparent_right.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-background-position: top left;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    background-position: top left;
 }
-.SingleIntro::after{
-    content: '';
-    position: absolute;
+.career_box::after{
     bottom: 0;
     right: 0;
     background-image: url('../../assets/images/Gradient_calendar_new_transparent_left.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     background-position: right bottom;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 }
 
-
-/* .bg_left{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-.bg_right{
-    position: absolute;
-   
-    width: 50%;
-    height: 100%;
-    bottom: 0;
-    right: 0;
-}
-
-.bg_right img
-{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-} */
-
-.grow_img{
+.career_img{
     z-index: 1;
 }
 @media only screen and (max-width:900px){
-    /* .SingleIntro{
-        overflow-x: clip;
-    } */
-    .SingleIntro::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url(/_next/static/media/Gradient_calendar_new_transparent_right.884a148e.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: top left;
+    .career_box::before {
         width: 117%;
         height: 100%;
-        z-index: -1;
     }
-    .SingleIntro::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
+    .career_box::after {
         right: -62px;
-        background-image: url(/_next/static/media/Gradient_calendar_new_transparent_left.b80e9bf8.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right bottom;
         width: 130%;
         height: 100%;
         z-index: -1;
     }
 }
 @media only screen and (max-width:650px){
-    .SingleIntro::after {
+    .career_box::after {
         background-image: none;
     }
-    .SingleIntro::before {
+    .career_box::before {
         width: 170%;
     }
 }

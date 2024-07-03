@@ -7,21 +7,8 @@
   @apply rounded-[15px] lg:rounded-[30px] md:rounded-[20px]
 }
 
-.title_text_class {
-  /* @apply font-mono lg:text-[30px] md:text-[28px] min-tb:max-tb:text-[20px] sm:text-[25px] text-[12px] */
-}
-.desc_text_class {
-  /* @apply font-mono lg:text-30px md:text-[28px] min-tb:max-tb:text-[16px] sm:text-[25px] text-[12px] */
-}
-
-/* .title_desc_padding_class {
-  @apply lg:px-[55px] md:px-[45px] min-tb:max-tb:px-[40px] sm:px-[30px] px-[20px]
-} */
-
-
 .accordion_item {
   border: 1px solid #000;
-  /* border-radius: 30px; */
 }
 
 .content_inner p a {
@@ -42,9 +29,6 @@
 
 .content_inner p a strong::after {
   content: '';
-  /* position: absolute;
-  bottom: 3px;
-  right: -30px; */
   background-image: url('../../assets/images/Right_arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -53,7 +37,6 @@ right:-3px;
   width: 28px;
   height: 28px;
   padding:0 12px ;
-  /* border: 1px solid red; */
 }
 
 .accordion_title {
@@ -113,11 +96,8 @@ right:-3px;
 }
 
 .content_inner p:not(:first-child) {
-  /* border: 1px solid black; */
   padding-top: 40px;
 }
-
-
 
 .arrow_img {
   width: 60px;
@@ -127,39 +107,29 @@ right:-3px;
   .content_inner blockquote:not(:first-child) {
     padding-top: 35px;
   }
-
   .content_inner p:not(:first-child) {
     padding-top: 25px;
   }
-
 }
 
 @media only screen and (max-width: 950px) {
-
   .arrow_img {
-    /* border: 1px solid white; */
     width: 50px;
   }
-
 }
 @media only screen and (max-width: 830px) {
-
   .arrow_img {
-    /* border: 1px solid white; */
     width: 55px;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
   .arrow_img {
     width: 42px;
   }
-
   .content_inner blockquote:not(:first-child) {
     padding-top: 30px;
   }
-
   .content_inner p:not(:first-child) {
     padding-top: 20px;
   }
@@ -169,23 +139,13 @@ right:-3px;
   .arrow_img {
     width: 37px;
   }
-
   .content_inner blockquote:not(:first-child) {
     padding-top: 10px;
   }
-
   .content_inner p:not(:first-child) {
     padding-top: 10px;
   }
 }
-
-
-
-
-
-
-
-
 
 .accordion_heading {
   font-size: 22px;

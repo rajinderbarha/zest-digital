@@ -2,37 +2,20 @@
     background-image: url(../../../assets/images/\ gross\ profit.png);
     background-size: cover;
     background-repeat: no-repeat;
-    /* padding: 100px 16px; */
     background-position: center;
-    /* background-color: #000; */
-    
-    /* @apply rounded-[15px] md:rounded-[20px] lg:rounded-30px xl:pt-[100px] lg:pt-[80px] md:pt-[60px] sm:pt-[40px] pt-[25px]  xl:pb-[132px] lg:pb-[110px] md:pb-[80px] sm:pb-[65px] pb-[30px] */
     @apply rounded-[15px] md:rounded-[20px] lg:rounded-30px 
-    /* xl:px-[110px] lg:px-[90px] md:px-[65px] sm:px-[40px] px-[25px] */
 }
 
-.Client_Result_title {
-    /* @apply xl:mb-[146px] lg:mb-[130px] md:mb-[100px] sm:mb-[70px] mb-[50px] */
-    /* margin-bottom: 145px; */
-}
-
-.view_more_btn {
-    /* margin-top: 137px; */
-}
 .button_div{
     display: flex;
-    /* height: -webkit-fill-available; */
     align-items: end;
 }
 
 @media screen and (max-width:768px) {
     .Client_Result {
         padding:50px 40px 80px 40px !important;
-
     }
-
 }
-
 
 .profit_box h3{
   margin-bottom: 11px;
@@ -58,8 +41,7 @@
     .profit_box {
       padding: 75px 75px;
     }
-  
-  }
+}
   
   @media only screen and (min-width: 1450px) and (max-width: 1774px) {
     .profit_box {
@@ -102,7 +84,6 @@
     .Gross_profit {
       padding-top: 100px;
       padding-bottom: 100px;
-  
     }
   
     .profit_box_desc {
@@ -192,7 +173,6 @@
     .profit_box_desc {
       font-size: 10px;
       margin-bottom: 13px;
-      /* max-width: 300px; */
       max-width: 124px;
       margin-left: auto;
       margin-right: auto;
@@ -223,9 +203,6 @@
 }
   }
   
-
-  
-  
   @media only screen and (min-width: 768px) and (max-width: 970px) {
     .profit_box h2{
       font-size: 37px;
@@ -237,11 +214,9 @@
       .profit_box h3{
         font-size: 22px;
       }
-      /* .profit_box_desc{
-        font-size: 16px;
-      } */
+
       .profit_box button{
-  padding: 1px 0 1px 14px;
+        padding: 1px 0 1px 14px;
       }
       .profit_box button span{
         margin-right: 1px;
@@ -253,7 +228,6 @@
       padding: 32px 45px;
       padding-bottom: 40px;
     }
-  
   }
 
   @media screen and (max-width:375px) {
@@ -345,13 +319,6 @@
 
 }
 
-
-
-
-
-
-
-
 .Client_Result_container {
   margin-top: 78px;
   margin-bottom: 80px;
@@ -400,7 +367,6 @@
   padding-right: 28px;
 }
 
-/* Small screens, specifically for min-width: 640px */
 @media (min-width: 640px) {
   .Client_Result_title{
     margin-bottom: 70px;
@@ -448,7 +414,6 @@
   }
 }
 
-/* Medium screens */
 @media (min-width: 768px) {
   .Client_Result_container {
     margin-top: 135px;
@@ -491,8 +456,6 @@
 }
 
 
-
-/* Between 540px and 830px */
 @media (min-width: 540px) and (max-width: 830px) {
   .Client_Result_container {
     margin-top: 80px;
@@ -518,7 +481,6 @@
 }
 
 
-/* Large screens */
 @media (min-width: 1024px) {
   .Client_Result_container {
     margin-top: 160px;
@@ -544,7 +506,6 @@
   }
 }
 
-/* Extra large screens */
 @media (min-width: 1280px) {
   .Client_Result_title{
     margin-bottom: 130px;
@@ -564,8 +525,6 @@
   .Client_Result_title h2 {
     font-size: 45px;
   }
-
-
   .view_more_btn {
     margin-top: 137px;
   }

@@ -21,12 +21,10 @@ function MapLocations({ data }: any) {
           >
             <GoogleMapComponent mark={uniqueLocations} loc={{ longitude: longitude, latitude: latitude }} zoom={9} />
 
-            {/* <Image src={london_map} alt="" className='w-full h-full rounded-[20px] md:rounded-30px shadow-dark-pink-right border border-black' /> */}
           </div>
           <div className="contact grid lg:grid-cols-12 gap-2  mt-[20px]">
             <div className="address lg:col-span-6 lg:order-1 order-2">
               <address className={`${classes.contact_detail}  font-mono text-color-1 not-italic`}>
-                {/* {leftDescriptionList} */}
                 <PortableText value={contactInfo} key={index} />
 
               </address >

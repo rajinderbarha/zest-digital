@@ -32,16 +32,12 @@ function Growths({ data, otherSolHeading }: any) {
     <>
       {data.length > 0 && (
         <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] min-tb:max-tb:mt-[106px] overflow-hidden">
-          {/* <div className="xl:mb-[311px] lg:mb-[210px] mb:mb-[175px] md:mb-[170px] sm:max-tb:mb-[252px] sm:mb-[140px] mb-[50px]"> */}
           <div className={`${classes.growths_container} `}>
-            {/* <h2 className="text-[22px] md:text-45px min-tb:max-tb:text-[30px] sm:text-35px font-mono font-semibold mx-auto text-center"> */}
             <h2 className={`${classes.growth_heading}  font-mono font-semibold mx-auto text-center`} data-aos="fade">
               {otherSolHeading}
             </h2>
-            {/* <div className="font-mono mx-auto grid md:gap-10 sm:gap-[30px] gap-[20px] mt-10 md:mt-28 min-tb:max-tb:mt-[70px] lg:px-[50px] md:px-[30px]   sm:max-tb:px-[90px] px-[25px]"> */}
             <div className={`${classes.growth_card_div} font-mono mx-auto grid `}>
 
-              {/* <div className="grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto "> */}
               <div className={`${classes.card_divider} grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  max-w-[1345px] mx-auto `}>
                 {firstTwoItems?.map((item: any, index: number) => {
                   return (

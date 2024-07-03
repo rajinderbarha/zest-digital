@@ -52,14 +52,14 @@
 
 
 
-/* Base styles */
+
 .banner_title {
-    font-size: 22px; /* default font size */
-    padding: 4px 0; /* uniform padding for all sizes */
+    font-size: 22px; 
+    padding: 4px 0; 
     line-height: 29px;
   }
   .banner_desc {
-    font-size: 22px; /* default font size */
+    font-size: 22px; 
     margin-bottom: 20px;
     line-height: 30px;
     margin-top: 15px;
@@ -69,7 +69,6 @@
   }
 
 
-  /* Small screens, specifically for min-width: 640px */
   @media (min-width: 640px) {
     .banner_title {
       font-size: 27px;
@@ -84,7 +83,6 @@
     }
   }
   
-  /* Medium screens */
   @media (min-width: 768px) {
     .banner_title {
       font-size: 35px;
@@ -100,12 +98,11 @@
     }
   }
   
-  /* Between 540px and 830px */
   @media (min-width: 540px) and (max-width: 830px) {
     .banner_title {
       font-size: 26px;
       line-height: 36px;
-      padding-left: 8px; /* setting horizontal padding */
+      padding-left: 8px; 
       padding-right: 8px;
     }
     .banner_desc {
@@ -119,7 +116,6 @@
     }
   }
   
-  /* Large screens */
   @media (min-width: 1024px) {
     .banner_title {
       font-size: 40px;
@@ -134,7 +130,6 @@
     }
   }
   
-  /* Extra large screens */
   @media (min-width: 1280px) {
     .banner_title {
       font-size: 45px;

@@ -4,14 +4,11 @@ import Link from "next/link";
 function Sign_up() {
 
   return  <div className="main_padding">
-        {/* <div className={`${classes.Sign_up} max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right  lg:pt-[55px] px-[16px]  sm:pt-[50px] pt-[34px] md:pb-[70px] min-tb:max-tb:text-[60px] min-tb:max-tb:pb-[44px] sm:pb-[50px] pb-[34px] rounded-[15px] md:rounded-[20px] lg:rounded-30px xl:mb-[206px] lg:mb-[190px] md:mb-[150px] min-tb:max-tb:mb-[132px] sm:mb-[130px] mb-[100px]`}> */}
         <div className={`${classes.Sign_up} max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right   rounded-[15px] md:rounded-[20px] lg:rounded-30px `} data-aos="fade-up">
           <div className="detail text-center">
-            {/* <h2 className="xl:text-45px lg:text-40px md:text-35px min-tb:max-tb:text-[30px] text-[22px] font-mono font-semibold md:mb-[16px]  sm:mb-[8px] mb-[8px]"> */}
             <h2 className={`${classes.form_heading} font-mono font-semibold `}>
               Sign up for early access
             </h2>
-            {/* <p className=" font-lato md:text-lg min-tb:max-tb:text-[14px] sm:text-[16px] text-[14px]"> */}
             <p className={`${classes.form_desc} font-lato `}>
               Sign up with your email address to be notified on the release of
               our Beta version.
@@ -23,7 +20,6 @@ function Sign_up() {
             <div className="first_name flex flex-col w-full max-w-[300px] lg:col-span-4  sm:col-span-6 col-span-12">
               <label
                 htmlFor="fname"
-                // className="text-color-9 sm:text-base min-tb:max-tb:text-[16px] text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[2px]"
                 className={`${classes.input_label} text-color-9 font-semibold font-mono   `}
               >
                 First name
@@ -32,7 +28,6 @@ function Sign_up() {
                 type="text"
                 name="fname"
                 id=""
-                // className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
                 className={`${classes.input_field} border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] `}
                 placeholder="John"
               />
@@ -40,7 +35,6 @@ function Sign_up() {
             <div className="last_name flex flex-col w-full max-w-[300px] lg:col-span-4 sm:col-span-6 col-span-12">
               <label
                 htmlFor="lname"
-                // className="text-color-9 sm:text-base min-tb:max-tb:text-[16px] text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[2px]"
                 className={`${classes.input_label} text-color-9 font-semibold font-mono   `}
               >
                 Last name
@@ -49,7 +43,6 @@ function Sign_up() {
                 type="text"
                 name="lname"
                 id=""
-                // className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
                 className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
 
                 placeholder="Doe"
@@ -58,7 +51,6 @@ function Sign_up() {
             <div className="email flex flex-col w-full max-w-[300px] lg:col-span-4 col-span-12">
               <label
                 htmlFor="email"
-                // className="text-color-9 sm:text-base min-tb:max-tb:text-[16px] text-[15px] font-semibold font-mono md:mb-[11px] sm:mb-[9px] mb-[2px]"
                 className={`${classes.input_label} text-color-9 font-semibold font-mono   `}
               >
                 E-mail
@@ -67,18 +59,15 @@ function Sign_up() {
                 type="email"
                 name="email"
                 id=""
-                // className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
                 className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
 
                 placeholder="johndoe@gmail.com"
               />
             </div>
           </div>
-          {/* <div className="button md:my-[44px] min-tb:max-tb:mb-[81px] sm:my-[35px] mt-[31px] mb-[50px]  text-center"> */}
           <div className={`${classes.btn_div} button  text-center`}>
             <Link
               href="#">
-                {/* <button className="bg-color-1 hover:bg-white hover:text-color-1 border border-color-1 font-mono sm:text-base text-[15px] md:px-[20px] px-[14px] sm:py-[10px] py-[7px] text-white rounded-full"> */}
                 <button className="bg-color-1 hover:bg-white hover:text-color-1 border border-color-1 font-mono text-white rounded-full">
             
               Notify me
@@ -86,7 +75,6 @@ function Sign_up() {
             </Link>
           </div>
           <div className="term_condition max-w-[857px]  mx-auto">
-            {/* <p className="font-lato sm:text-base min-tb:max-tb:text-[12px] text-[14px] text-color-1 text-center"> */}
             <p className={`${classes.form_note} font-lato  text-color-1 text-center`}>
               We respect your privacy, and you’ll only be contacted about Growth
               Tracker.

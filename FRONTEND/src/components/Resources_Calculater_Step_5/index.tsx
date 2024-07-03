@@ -11,38 +11,6 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
         setUserEmail(e.target.value);
     }
 
-    // const handleNextClick = () => {
-    //     if (userEmail === "") {
-    //         return;
-    //     } else {
-    //         setFormData((prevFormData: any) => ({
-    //             ...prevFormData,
-    //             userEmail: userEmail
-    //         }));
-    //         sendDataToGoogleSheets();
-
-    //         // Save form submission state to sessionStorage and cookies
-    //         sessionStorage.setItem('formSubmitted', 'true');
-    //         document.cookie = "formSubmitted=true; path=/";
-
-    //         const downloadUrl = downloadUrls[0];
-    //         if (downloadUrl) {
-    //             const link = document.createElement('a');
-    //             link.href = downloadUrl;
-    //             document.body.appendChild(link);
-    //             link.click();
-    //             document.body.removeChild(link);
-
-    //             setTimeout(() => {
-    //                 router.replace("/thanks_you");
-    //             }, 1000);
-    //         } else {
-    //             router.replace("/thanks_you");
-
-    //         }
-    //     }
-    // }
-
     const handleNextClick = () => {
         if (userEmail === "") {
             return;
