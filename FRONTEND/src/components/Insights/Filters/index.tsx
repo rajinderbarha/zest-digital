@@ -1,7 +1,8 @@
 import  { useEffect, useState } from "react";
 import Image from "next/image";
 import classes from "./Filters.module.css";
-import Filters_Desktop_image from "../../../assets/images/Insights_bg_gradient.png";
+// import Filters_Desktop_image from "../../../assets/images/Insights_bg_gradient.png";
+import Filters_Desktop_image from "../../../assets/images/compress/Insights_bg_gradient_compress.avif";
 import Filters_Mobile_image from "../../../assets/images/Insights_bg_gradient_mobile.png";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";

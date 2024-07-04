@@ -1,5 +1,6 @@
 .bg_image {
-  background-image: url("../../../assets/images/Gradient_map.png");
+  /* background-image: url("../../../assets/images/Gradient_map.png"); */
+  background-image: url("../../../assets/images/compress/Gradient_map_compress.avif");
   background-position: 10%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,7 +8,8 @@
 
 @media only screen and (max-width: 767px) {
   .bg_image {
-    background-image: url("../../../assets/images/Services_map_gradient_mobile.png");
+    /* background-image: url("../../../assets/images/Services_map_gradient_mobile.png"); */
+    background-image: url("../../../assets/images/compress/Services_map_gradient_mobile_compress.avif");
   }
 }
 
@@ -21,7 +23,7 @@
 }
 
 .map_div > div {
-  height: -webkit-fill-available !important;
+  /* height: -webkit-fill-available !important; */
   @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right;
 }
 

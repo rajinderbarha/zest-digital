@@ -1,5 +1,6 @@
 .SingleIntro {
-  background-image: url("../../../assets/images/Escape.png");
+  /* background-image: url("../../../assets/images/Escape.png"); */
+  background-image: url("../../../assets/images/compress/Escape_compress.avif");
 
   background-repeat: no-repeat;
   background-position: top center;

@@ -1,5 +1,6 @@
 .SingleIntro {
-  background-image: url("../../../assets/images/Services_bg_gradient.png");
+  /* background-image: url("../../../assets/images/Services_bg_gradient.png"); */
+  background-image: url("../../../assets/images/compress/Services_bg_gradient_compress.avif");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -24,7 +25,8 @@
     margin-top: -62px;
   }
   .SingleIntro {
-    background-image: url("../../../assets/images/Services_bg_gradient_mobile.png");
+    /* background-image: url("../../../assets/images/Services_bg_gradient_mobile.png"); */
+    background-image: url("../../../assets/images/compress/Services_bg_gradient_mobile_compress.avif");
   }
 }
 
