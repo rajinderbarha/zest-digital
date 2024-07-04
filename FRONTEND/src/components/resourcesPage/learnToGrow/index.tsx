@@ -83,8 +83,9 @@ function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelecte
         </div>
       </div>
       <div className={`${classes.resources_logo} `}>
-        <Logo_moving LogoMovdata={data.brandList.map((a: any) => a)} />
+        <Logo_moving LogoMovdata={data.brandList} />
       </div>
+      
     </>
   );
 }
