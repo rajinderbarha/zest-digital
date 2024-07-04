@@ -1,5 +1,6 @@
 .box_bg_image {
-  background-image: url("../../assets/images/Gradient_v6.png");
+  /* background-image: url("../../assets/images/Gradient_v6.png"); */
+  background-image: url("../../assets/images/compress/Gradient_v6_compress.avif");
   background-color: #191615;
   background-position: center;
   background-size: cover;

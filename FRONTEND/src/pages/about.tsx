@@ -7,16 +7,26 @@ import React from "react";
 import { getAboutData } from "../../lib/sanity.query";
 import { AboutType } from "../../lib/interface";
 import 'aos/dist/aos.css';
+import Head from "next/head";
 
 const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
 
-  return <div className="Body_padding">
-    <About_banner data={aboutdata} />
-    <About_team data={aboutdata} />
-    <Our_values data={aboutdata} />
-    <Zest_for_life data={aboutdata} />
-    <Escape data={aboutdata} />
-  </div>
+  return <>
+    <Head>
+      <title>About — Zest Digital</title>
+      <meta name="title" property="" content="About — Zest Digital" />
+      <meta name="url" property="og:url" content="https://www.zestdigital.com/about" />
+      <meta name="keywords" property="og:keywords" content="careers, Thanks, interest, hiring, zest, digital" />
+      <meta name="description" property="og:description" content="Founded in 2010, Zest Digital is an award-winning growth marketing agency focused on creating sustainable growth for their clients, people, and the planet." />
+    </Head>
+    <div className="Body_padding">
+      <About_banner data={aboutdata} />
+      <About_team data={aboutdata} />
+      <Our_values data={aboutdata} />
+      <Zest_for_life data={aboutdata} />
+      <Escape data={aboutdata} />
+    </div>
+  </>
 };
 export default About_page;
 
