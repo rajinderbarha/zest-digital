@@ -3,7 +3,8 @@
 }
 
 .BG_manu {
-  background-image: url(../../assets//images//Gradient_v3.png);
+  /* background-image: url(../../assets//images//Gradient_v3.png); */
+  background-image: url(../../assets//images/compress/Gradient_v3_compress.avif);
   background-color: #191615;
   background-position: bottom;
   height: 93vh;
