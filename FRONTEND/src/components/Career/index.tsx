@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import classes from "./Career.module.css";
 import Image from "next/image";
 import { CareerProps } from "../../../lib/interface";
@@ -14,8 +14,7 @@ const Career: React.FC<CareerProps> = ({ data }) => {
     });
   }, []);
 
-  return (
-    <div className={`${classes.Career} `}>
+  return <div className={`${classes.Career} `}>
       {data?.map((careerData, index) => {
         const { title, description, image } = careerData.card;
 
@@ -63,7 +62,6 @@ const Career: React.FC<CareerProps> = ({ data }) => {
         );
       })}
     </div>
-  );
 };
 
 export default Career;

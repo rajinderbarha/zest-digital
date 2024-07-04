@@ -1,403 +1,382 @@
-.growth_grid>div:not(:first-child) {
-    @apply xl:mt-[65px] lg:mt-[45px] md:mt-[25px] sm:mt-[35px] mt-[20px]
+.growth_grid > div:not(:first-child) {
+  @apply xl:mt-[65px] lg:mt-[45px] md:mt-[25px] sm:mt-[35px] mt-[20px];
 }
 
-
 @keyframes textIn {
-    0% {
-        transform: translateY(100%);
-    }
+  0% {
+    transform: translateY(100%);
+  }
 
-    100% {
-        transform: translateY(0%);
-    }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @keyframes textOut {
-    0% {
-        transform: translateY(0%);
-    }
+  0% {
+    transform: translateY(0%);
+  }
 
-    100% {
-        transform: translateY(-100%);
-
-    }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 .animationDiv .animationFullText span span {
-    display: none;
-    text-align: left;
+  display: none;
+  text-align: left;
 }
 
 .animationDiv .animationFullText span {
-    margin: 0;
-    overflow: hidden;
+  margin: 0;
+  overflow: hidden;
 }
 
 .animationDiv .animationFullText span span.textIn {
-    display: block;
-    animation: textIn .5s ease;
-
+  display: block;
+  animation: textIn 0.5s ease;
 }
 
 .animationDiv .animationFullText span span.textOut {
-
-    animation: textOut .5s ease !important;
+  animation: textOut 0.5s ease !important;
 }
 
 .animatedText {
-    margin: 0 auto !important;
+  margin: 0 auto !important;
 }
 
-@media only screen and (min-width:1239px) and (max-width:1425px) {
-    .card_heading {
-        font-size: 32px;
-    }
+@media only screen and (min-width: 1239px) and (max-width: 1425px) {
+  .card_heading {
+    font-size: 32px;
+  }
 }
 
-@media only screen and (min-width:1024px) and (max-width:1055px) {
-
-    .card_heading {
-        font-size: 22px;
-    }
+@media only screen and (min-width: 1024px) and (max-width: 1055px) {
+  .card_heading {
+    font-size: 22px;
+  }
 }
 
-
-
-@media only screen and (min-width:1575px) and (max-width:1625px) {
-    .box_size>div {
-        padding-inline-start: 45px;
-    }
+@media only screen and (min-width: 1575px) and (max-width: 1625px) {
+  .box_size > div {
+    padding-inline-start: 45px;
+  }
 }
 
-@media only screen and (min-width:1560px) and (max-width:1575px) {
-    .box_size>div {
-        padding-inline-start: 38px;
-    }
+@media only screen and (min-width: 1560px) and (max-width: 1575px) {
+  .box_size > div {
+    padding-inline-start: 38px;
+  }
 }
 
-@media only screen and (min-width:768px) and (max-width:1560px) {
-    .box_size>div {
-        padding-inline-start: 0px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1560px) {
+  .box_size > div {
+    padding-inline-start: 0px;
+  }
 }
 
-@media only screen and (max-width:906px) {
-    .box_size {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
+@media only screen and (max-width: 906px) {
+  .box_size {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
-@media only screen and (min-width:768px) {
-    .box_size {
-        width: 100%;
-    }
+@media only screen and (min-width: 768px) {
+  .box_size {
+    width: 100%;
+  }
 }
 
-@media only screen and (min-width:768px) and (max-width:640px) {
-    .box_size {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 640px) {
+  .box_size {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
-@media only screen and (max-width:639px) {
-    .box_size {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
+@media only screen and (max-width: 639px) {
+  .box_size {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
-@media only screen and (max-width:767px) {
-    .growth_results {
-        padding-bottom: 150px;
-    }
+@media only screen and (max-width: 767px) {
+  .growth_results {
+    padding-bottom: 150px;
+  }
 
-    .growth_engine_box {
-        margin-top: -180px;
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 20px;
-    }
+  .growth_engine_box {
+    margin-top: -180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+  }
 
-    .box_size {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+  .box_size {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
-
-
-
 
 .growth_result {
-    padding-bottom: 384px;
+  padding-bottom: 384px;
 }
 
 .animationFullText {
-    margin-bottom: 0;
-    width: fit-content;
+  margin-bottom: 0;
+  width: fit-content;
 }
 
 .animationFullText h2 {
-    padding-left: 23px;
-    padding-right: 23px;
+  padding-left: 23px;
+  padding-right: 23px;
 }
 
 .box_size {
-    padding: 35px;
+  padding: 35px;
 }
 
 .card_heading {
-    padding-left: 64px;
-    font-size: 25px;
+  padding-left: 64px;
+  font-size: 25px;
 }
 
 .upper_title {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .card_desc {
-    font-size: 16px;
-    line-height: 20px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.growth_container>div {
-    max-width: 1345px;
-    margin-top: -256px;
-    padding-left: 50px;
-    padding-right: 50px;
+.growth_container > div {
+  max-width: 1345px;
+  margin-top: -256px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 @media only screen and (min-width: 1350px) {
-    .box_size {
-        padding: 48px;
-    }
+  .box_size {
+    padding: 48px;
+  }
 
-    .card_heading {
-        font-size: 35px;
-    }
+  .card_heading {
+    font-size: 35px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    .growth_result {
-        padding-top: 131px;
-    }
+  .growth_result {
+    padding-top: 131px;
+  }
 
-    .animationFullText {
-        padding-bottom: 160px;
-    }
+  .animationFullText {
+    padding-bottom: 160px;
+  }
 
-    .animationFullText h2 {
-        font-size: 45px;
-    }
+  .animationFullText h2 {
+    font-size: 45px;
+  }
 
-    .animatedText {
-        width: 200px;
+  .animatedText {
+    width: 200px;
+  }
 
-    }
-
-    .card_text {
-        max-width: 484px;
-    }
+  .card_text {
+    max-width: 484px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .growth_result {
-        padding-top: 110px;
-    }
+  .growth_result {
+    padding-top: 110px;
+  }
 
-    .animationFullText {
-        padding-bottom: 120px;
-    }
+  .animationFullText {
+    padding-bottom: 120px;
+  }
 
-    .animationFullText h2 {
-        font-size: 40px;
-    }
+  .animationFullText h2 {
+    font-size: 40px;
+  }
 
-    .animatedText {
-        width: 174px;
+  .animatedText {
+    width: 174px;
+  }
 
-    }
+  .upper_title {
+    font-size: 28px;
+  }
 
-    .upper_title {
-        font-size: 28px;
-    }
+  .card_desc {
+    font-size: 15px;
+  }
 
-    .card_desc {
-        font-size: 15px;
-    }
-
-    .card_text {
-        max-width: 385px;
-    }
+  .card_text {
+    max-width: 385px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .growth_result {
-        padding-top: 85px;
-    }
+  .growth_result {
+    padding-top: 85px;
+  }
 
-    .animationFullText {
-        padding-bottom: 80px;
-    }
+  .animationFullText {
+    padding-bottom: 80px;
+  }
 
-    .animationFullText h2 {
-        font-size: 35px;
-    }
+  .animationFullText h2 {
+    font-size: 35px;
+  }
 
-    .animatedText {
-        width: 152px;
+  .animatedText {
+    width: 152px;
+  }
 
-    }
+  .box_size {
+    padding: 30px;
+  }
 
-    .box_size {
-        padding: 30px;
-    }
+  .card_heading {
+    font-size: 22px;
+  }
 
-    .card_heading {
-        font-size: 22px;
-    }
+  .upper_title {
+    font-size: 24px;
+  }
 
-    .upper_title {
-        font-size: 24px;
-    }
+  .card_desc {
+    font-size: 13px;
+  }
 
-    .card_desc {
-        font-size: 13px;
-    }
+  .growth_container > div {
+    margin-top: -200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-    .growth_container>div {
-        margin-top: -200px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .card_text {
-        max-width: 315px;
-    }
+  .card_text {
+    max-width: 315px;
+  }
 }
-
-
 
 @media only screen and (max-width: 767px) {
-    .growth_result {
-        padding-top: 30px;
-        padding-bottom: 250px;
-    }
+  .growth_result {
+    padding-top: 30px;
+    padding-bottom: 250px;
+  }
 
-    .animationFullText {
-        width: 100%;
-        max-width: 500px;
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-bottom: 50px;
-    }
+  .animationFullText {
+    width: 100%;
+    max-width: 500px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 50px;
+  }
 
-    .animationFullText h2 {
-        font-size: 18px;
-    }
+  .animationFullText h2 {
+    font-size: 18px;
+  }
 
-    .box_size {
-        padding: 10px;
-    }
+  .box_size {
+    padding: 10px;
+  }
 
-    .card_heading {
-        font-size: 16px;
-    }
+  .card_heading {
+    font-size: 16px;
+  }
 
-    .upper_title {
-        font-size: 16px;
-    }
+  .upper_title {
+    font-size: 16px;
+  }
 
-    .card_desc {
-        font-size: 12px;
-        line-height: 15px;
-    }
+  .card_desc {
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-    .growth_container>div {
-        margin-top: -150px;
-    }
+  .growth_container > div {
+    margin-top: -150px;
+  }
 }
 
-@media only screen and (min-width:640px) and (max-width:767px) {
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  .card_heading {
+    padding-left: 20px;
+  }
 
-    .card_heading {
-        padding-left: 20px;
-    }
+  .growth_container > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .growth_container>div {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .card_text {
-        max-width: 550px;
-    }
-
+  .card_text {
+    max-width: 550px;
+  }
 }
 
-@media only screen and (max-width:639px) {
-    .card_heading {
-        padding-left: 0px;
-    }
+@media only screen and (max-width: 639px) {
+  .card_heading {
+    padding-left: 0px;
+  }
 
-    .growth_container>div {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
+  .growth_container > div {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {
-    .growth_result {
-        padding-top: 85px;
-    }
+  .growth_result {
+    padding-top: 85px;
+  }
 
-    .animationFullText h2 {
-        font-size: 25px;
-    }
+  .animationFullText h2 {
+    font-size: 25px;
+  }
 
-    .animatedText {
+  .animatedText {
+    width: 112px;
+  }
 
-        width: 112px;
-    }
+  .box_size {
+    padding-left: 15px;
+  }
 
-    .box_size {
-        padding-left: 15px;
-    }
+  .card_heading {
+    font-size: 22px;
+  }
 
-    .card_heading {
-        font-size: 22px;
-    }
+  .upper_title {
+    font-size: 20px;
+  }
 
-    .upper_title {
-        font-size: 20px;
-    }
+  .card_desc {
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-    .card_desc {
-        font-size: 12px;
-        line-height: 15px;
-    }
-
-    .growth_container>div {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: -15px;
-        margin-right: -15px;
-    }
+  .growth_container > div {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
-
-@media only screen and (max-width:710px) {
-    .animatedText {
-        width: fit-content;
-    }
+@media only screen and (max-width: 710px) {
+  .animatedText {
+    width: fit-content;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 830px) {
-    .card_text {
-        max-width: 256px;
-    }
+  .card_text {
+    max-width: 256px;
+  }
 }

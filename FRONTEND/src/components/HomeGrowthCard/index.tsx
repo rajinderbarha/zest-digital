@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import arrow from "../../assets/images/arrow.svg";
 import hover_arrow from "../../assets/images/hover_arrow.svg";

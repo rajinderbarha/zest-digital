@@ -1,241 +1,242 @@
 .banner {
-    background-image: url('../../assets/images/Gradient_v3.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-color: #191615;
-    position: relative;
+  background-image: url("../../assets/images/Gradient_v3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-color: #191615;
+  position: relative;
 }
 
 .custom_border {
-    position: relative;
+  position: relative;
 }
 
 .video_class {
-    position: relative;
-    z-index: 11;
+  position: relative;
+  z-index: 11;
 }
 
 .custom_border:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: -2px;
-    background: linear-gradient(115deg, #A2FF8F 0%, transparent 64%, transparent 54%, transparent -256%);
-    z-index: 0;
-    @apply xl:rounded-30px md:rounded-[20px] rounded-[10px]
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -2px;
+  background: linear-gradient(
+    115deg,
+    #a2ff8f 0%,
+    transparent 64%,
+    transparent 54%,
+    transparent -256%
+  );
+  z-index: 0;
+  @apply xl:rounded-30px md:rounded-[20px] rounded-[10px];
 }
 
 .custom_border:after {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: -2px;
-    background: linear-gradient(-78deg, #000000 0%, transparent 28%, transparent 148%, transparent -387%);
-    z-index: 0;
-    @apply xl:rounded-30px md:rounded-[20px] rounded-[10px]
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -2px;
+  background: linear-gradient(
+    -78deg,
+    #000000 0%,
+    transparent 28%,
+    transparent 148%,
+    transparent -387%
+  );
+  z-index: 0;
+  @apply xl:rounded-30px md:rounded-[20px] rounded-[10px];
 }
 
-@media only screen and (max-width:1410px) {
-    .marketing_agency_logo_1 {
-        position: relative;
-        top: 50px;
-    }
+@media only screen and (max-width: 1410px) {
+  .marketing_agency_logo_1 {
+    position: relative;
+    top: 50px;
+  }
 }
 
+@media only screen and (min-width: 768px) {
+  .marketing_agency_logo_1 {
+    display: block;
+  }
 
-@media only screen and (min-width:768px) {
-    .marketing_agency_logo_1 {
-        display: block;
-    }
+  .marketing_agency_logo_2 {
+    display: none;
+  }
 
-    .marketing_agency_logo_2 {
-        display: none;
-    }
-
-    .mux-player {
-        width: 100%;
-        max-width: 800px;
-        margin: 40px auto;
-    }
+  .mux-player {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+  }
 }
 
-@media only screen and (max-width:639px) {
-    .marketing_agency_logo_2 {
-        top: -18vw;
-        right: -8px;
-        display: flex;
-        justify-content: end;
+@media only screen and (max-width: 639px) {
+  .marketing_agency_logo_2 {
+    top: -18vw;
+    right: -8px;
+    display: flex;
+    justify-content: end;
+  }
 
-    }
+  .marketing_agency_logo_2 img {
+    width: 36vw;
+  }
 
-    .marketing_agency_logo_2 img {
-        width: 36vw;
-
-    }
-
-    .custom_border:before,
-    .custom_border:after {
-        margin: -1.5px;
-    }
-
+  .custom_border:before,
+  .custom_border:after {
+    margin: -1.5px;
+  }
 }
-
-
 
 .banner_btn button {
-    font-size: 16px;
-    width: max-content;
-    padding-left: 25px;
-    padding-right: 25px;
-    height: 40px;
+  font-size: 16px;
+  width: max-content;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 40px;
 }
-
-
 
 @media only screen and (min-width: 1280px) {
-    .banner {
-        padding-top: 130px;
-        padding-bottom: 110px;
-    }
+  .banner {
+    padding-top: 130px;
+    padding-bottom: 110px;
+  }
 
-    .banner_text {
-        font-size: 55px;
-        line-height: 75px;
-    }
+  .banner_text {
+    font-size: 55px;
+    line-height: 75px;
+  }
 }
 
-
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .banner {
-        padding-top: 90px;
-        padding-bottom: 86px;
-    }
+  .banner {
+    padding-top: 90px;
+    padding-bottom: 86px;
+  }
 
-    .banner_text {
-        font-size: 45px;
-        line-height: 70px;
-    }
+  .banner_text {
+    font-size: 45px;
+    line-height: 70px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .banner {
-        padding-top: 90px;
-        padding-bottom: 150px;
-    }
+  .banner {
+    padding-top: 90px;
+    padding-bottom: 150px;
+  }
 
-    .banner_text {
-        font-size: 40px;
-        line-height: 65px;
-    }
+  .banner_text {
+    font-size: 40px;
+    line-height: 65px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1050px) {
-    .banner_text {
-        font-size: 37px;
-        line-height: 48px;
-    }
+  .banner_text {
+    font-size: 37px;
+    line-height: 48px;
+  }
 }
 
 @media only screen and (min-width: 830px) and (max-width: 991px) {
-    .banner_text {
-        font-size: 35px;
-        line-height: 50px;
-    }
+  .banner_text {
+    font-size: 35px;
+    line-height: 50px;
+  }
 }
 
-
 @media only screen and (max-width: 767px) {
-    .banner {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-size: contain;
-    }
+  .banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-size: contain;
+  }
 
-    .banner_text {
-        font-size: 22px;
-        line-height: 30px;
-    }
+  .banner_text {
+    font-size: 22px;
+    line-height: 30px;
+  }
 
-    .banner_btn button {
-        font-size: 12px;
-        height: 36px;
-    }
+  .banner_btn button {
+    font-size: 12px;
+    height: 36px;
+  }
 
-    .marketing_agency_logo_1 {
-        display: block;
-        max-width: 110px;
-        margin-left: auto;
-        top: 0;
-    }
+  .marketing_agency_logo_1 {
+    display: block;
+    max-width: 110px;
+    margin-left: auto;
+    top: 0;
+  }
 
-    .marketing_agency_logo_2 {
-        width: 200px;
-        display: block;
-        position: absolute;
-        top: -93px;
-        right: -31px;
-        z-index: 26;
-    }
+  .marketing_agency_logo_2 {
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: -93px;
+    right: -31px;
+    z-index: 26;
+  }
 
-    .banner {
-        overflow: hidden;
-    }
+  .banner {
+    overflow: hidden;
+  }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {
-    .banner {
-        padding-bottom: 43px;
-    }
+  .banner {
+    padding-bottom: 43px;
+  }
 
-    .banner_text {
-        max-width: 554px;
-        font-size: 30px;
-        line-height: 45px;
-    }
+  .banner_text {
+    max-width: 554px;
+    font-size: 30px;
+    line-height: 45px;
+  }
 
-    .marketing_agency_logo_1 {
-        display: block;
-        max-width: 150px;
-        margin-left: auto;
-        top: 10px;
-    }
+  .marketing_agency_logo_1 {
+    display: block;
+    max-width: 150px;
+    margin-left: auto;
+    top: 10px;
+  }
 }
 
-@media only screen and (min-width:830px) and (max-width:1023px) {
-    .marketing_agency_logo_1 img {
-        max-width: 130px;
-    }
+@media only screen and (min-width: 830px) and (max-width: 1023px) {
+  .marketing_agency_logo_1 img {
+    max-width: 130px;
+  }
 }
-
 
 @media only screen and (min-width: 1366px) {
-    .banner {
-        height: calc(100vh - 115px - 15px);
-    }
+  .banner {
+    height: calc(100vh - 115px - 15px);
+  }
 }
 
-@media only screen and (min-width:1280px) and (max-width:1615px) {
-    .banner {
-        padding-top: 111px;
-        padding-bottom: 110px;
-    }
+@media only screen and (min-width: 1280px) and (max-width: 1615px) {
+  .banner {
+    padding-top: 111px;
+    padding-bottom: 110px;
+  }
 
-    .banner h1 {
-        font-size: 50px;
-        line-height: 70px;
-    }
+  .banner h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
 }
 
-@media only screen and (min-width:1366px) and (max-width:1439px) {
-    .banner {
-        padding-top: 80px;
-        padding-bottom: 110px;
-    }
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+  .banner {
+    padding-top: 80px;
+    padding-bottom: 110px;
+  }
 }

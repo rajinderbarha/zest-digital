@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "@/components/HeroSection";
 import HomeGrowthCard from "@/components/HomeGrowthCard";
 import Logo_moving from "@/common/Logo_moving";

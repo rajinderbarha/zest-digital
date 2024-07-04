@@ -1,788 +1,764 @@
 .About_banner {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .Team_img_box {
-    max-width: 421px;
-    width: 100%;
-    bottom: 5px;
+  max-width: 421px;
+  width: 100%;
+  bottom: 5px;
 }
 
 .Our_values_img {
-    filter: drop-shadow(0px 6px 10px #FFFFFF29);
+  filter: drop-shadow(0px 6px 10px #ffffff29);
 }
 
 .About_team {
-    padding: 0px 15px 141px 15px;
+  padding: 0px 15px 141px 15px;
 }
 
 .Team_img {
-    max-width: 463px;
-    width: 100%;
-
+  max-width: 463px;
+  width: 100%;
 }
 
 .Our_values {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .values_bg {
-    background-image: url(../..//assets/images/Gradient_values.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #191615;
-    padding: 85px 0px 260px 0px;
+  background-image: url(../..//assets/images/Gradient_values.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #191615;
+  padding: 85px 0px 260px 0px;
 }
 
-
-.zest_for_life_facility img{
-@apply shadow-blue-right border border-black lg:rounded-[30px] rounded-[20px]  mx-auto
+.zest_for_life_facility img {
+  @apply shadow-blue-right border border-black lg:rounded-[30px] rounded-[20px]  mx-auto;
 }
 
-@media only screen and (max-width:830px) {
-    .Our_values_main_p {
-        max-width: 387px;
-    }
+@media only screen and (max-width: 830px) {
+  .Our_values_main_p {
+    max-width: 387px;
+  }
 
-    .Zest_for_life>div {
-        padding: 0 !important;
-    }
+  .Zest_for_life > div {
+    padding: 0 !important;
+  }
 }
 
 .Our_values_main_2 {
-    margin: -140px 0;
+  margin: -140px 0;
 }
 
-
 .Escape {
-    background-image: url(../../assets/images/Escape.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #191615;
-
+  background-image: url(../../assets/images/Escape.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #191615;
 }
 
 .Team_img_circle {
-    width: 95.2%;
-    height: 85%;
-    background: #1d2671;
-    border-radius: 100%;
-    left: 2.38%;
+  width: 95.2%;
+  height: 85%;
+  background: #1d2671;
+  border-radius: 100%;
+  left: 2.38%;
 }
 
-
-
 .Marquee_border {
-    position: relative;
-    background-color: transparent;
+  position: relative;
+  background-color: transparent;
 }
 
 .Marquee_border::before,
 .Marquee_border::after {
-    content: '';
-    position: absolute;
-    left: -1px;
-    right: -1px;
-    height: 2px;
-    background: linear-gradient(transparent 40%, #BD378B 82%, transparent 40%);
+  content: "";
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 2px;
+  background: linear-gradient(transparent 40%, #bd378b 82%, transparent 40%);
 }
 
 .Marquee_border::before {
-    top: 0;
+  top: 0;
 }
 
 .Marquee_border::after {
-    bottom: 0;
+  bottom: 0;
 }
 
 .custom_shadow {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 6;
-    background-image: linear-gradient(90deg, #191516, transparent 27%, transparent, #191516);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  background-image: linear-gradient(
+    90deg,
+    #191516,
+    transparent 27%,
+    transparent,
+    #191516
+  );
 }
 
-
-@media only screen and (min-width:1500px) {
-    .Founded_img {
-        right: 60px;
-    }
+@media only screen and (min-width: 1500px) {
+  .Founded_img {
+    right: 60px;
+  }
 }
 
-@media only screen and (min-width:1600px) {
-    .Founded_img {
-        right: 65px;
-    }
+@media only screen and (min-width: 1600px) {
+  .Founded_img {
+    right: 65px;
+  }
 }
 
-@media only screen and (min-width:1700px) {
-    .Founded_img {
-        right: 75px;
-    }
+@media only screen and (min-width: 1700px) {
+  .Founded_img {
+    right: 75px;
+  }
 }
 
-@media only screen and (min-width:1800px) {
-    .Founded_img {
-        right: 85px;
-    }
+@media only screen and (min-width: 1800px) {
+  .Founded_img {
+    right: 85px;
+  }
 }
 
-@media only screen and (max-width:1220px) {
-    .Founded_img {
-        display: block;
-        position: relative;
-        max-width: 200px;
-        margin-left: auto;
-        margin-top: 17px;
-    }
+@media only screen and (max-width: 1220px) {
+  .Founded_img {
+    display: block;
+    position: relative;
+    max-width: 200px;
+    margin-left: auto;
+    margin-top: 17px;
+  }
 }
 
-
-@media screen and (max-width:1175px) {
-
-    .Our_values_main_2 {
-        margin: 0px 0 ;
-    }
+@media screen and (max-width: 1175px) {
+  .Our_values_main_2 {
+    margin: 0px 0;
+  }
 }
-@media screen and (max-width:1040px) {
-
-    .values_bg {
-        padding-top: 55px;
-    }
+@media screen and (max-width: 1040px) {
+  .values_bg {
+    padding-top: 55px;
+  }
 }
 
-@media screen and (max-width:830px) {
-    .Founded_img {
-        max-width: 150px;
-        margin-top: 16px;
-    }
+@media screen and (max-width: 830px) {
+  .Founded_img {
+    max-width: 150px;
+    margin-top: 16px;
+  }
 }
 
-@media screen and (max-width:540px) {
-    .Founded_img {
-        display: block;
-        position: relative;
-        max-width: 110px;
-        margin-left: auto;
-    }
+@media screen and (max-width: 540px) {
+  .Founded_img {
+    display: block;
+    position: relative;
+    max-width: 110px;
+    margin-left: auto;
+  }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
+  .values_bg {
+    padding: 30px 16px 50px 16px;
+  }
 
-    .values_bg {
-        padding: 30px 16px 50px 16px;
-    }
+  .About_team {
+    padding: 0px 16px 50px 16px;
+  }
 
-    .About_team {
-        padding: 0px 16px 50px 16px;
-    }
+  .Our_values_main_2 {
+    margin: 20px 0;
+  }
 
-
-    .Our_values_main_2 {
-        margin: 20px 0;
-    }
-
-    .About_team_box {
-        max-width: 214px;
-        margin: auto;
-    }
+  .About_team_box {
+    max-width: 214px;
+    margin: auto;
+  }
 }
 
+@media only screen and (min-width: 830px) {
+  .zest_for_life_facility {
+    grid-column: span 4 / span 4;
+  }
 
-
-
-
-
-
-@media only screen and (min-width:830px) {
-    .zest_for_life_facility {
-        grid-column: span 4 / span 4;
-    }
-
-    .zest_for_life_facility_container {
-        column-gap: 56px;
-    }
+  .zest_for_life_facility_container {
+    column-gap: 56px;
+  }
 }
 
-@media only screen and (max-width:830px) {
-    .zest_for_life_facility {
-        grid-column: span 6 / span 6;
-        margin-top: 0;
-        max-width: 265px;
-    }
+@media only screen and (max-width: 830px) {
+  .zest_for_life_facility {
+    grid-column: span 6 / span 6;
+    margin-top: 0;
+    max-width: 265px;
+  }
 }
 
-@media only screen and (max-width:539px) {
-    .zest_for_life_facility p {
-        font-size: 12px;
-        line-height: 15px;
-    }
-}
-
-
-@media only screen and (min-width:540px) and (max-width:830px) {
-
-    .zest_for_life_facility_container> :nth-child(3) {
-        grid-column-start: 4;
-    }
-
-    .zest_for_life_facility_container {
-        row-gap: 27px;
-        column-gap: 48px;
-    }
-
-    .values_bg {
-        padding-top: 70px;
-        padding-bottom: 73px;
-    }
-
-    .Escape_p {
-        max-width: 554px;
-    }
-
-    .our_values_box,
-    .Escape_box {
-        margin-left: -10px;
-        margin-right: -10px;
-        width: calc(100% + 20px)
-    }
-}
-
-@media only screen and (max-width:645px) {
-    .zest_for_life_facility {
-        grid-column: span 12/ span 6;
-    }
-
-    .zest_for_life_facility_container {
-        column-gap: 0px;
-        row-gap: 27px;
-    }
-}
-
-
-.about_title {
-    font-size: 22px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-
-.about_heading {
-
-    font-size: 22px;
-    line-height: 30px;
-    margin-top: 5px;
-}
-
-.About_team_profiles {
-    gap: 80px 80px;
-}
-
-.ourValue_heading {
-    font-size: 55px;
-    margin-bottom: 80px;
-}
-
-.Our_values_img {
-    width: 100%;
-
-}
-
-@media only screen and (min-width: 1280px) {
-    .Founded_heading{
-        max-width: 992px;
-    }
-    .about_title {
-        font-size: 45px;
-    }
-
-    .about_heading {
-        font-size: 55px;
-        line-height: 75px;
-        margin-top: 35px;
-    }
-
-    .team_title {
-        font-size: 35px;
-        line-height: 46px;
-    }
-
-    .team_desc {
-        font-size: 18px;
-    }
-
-    .About_team_profiles {
-        gap: 80px 80px;
-    }
-
-    .About_team {
-        margin-top: 144px;
-    }
-
-    .Our_values_img {
-        max-width: 250px;
-        height: 250px;
-    }
-
-    .text_title {
-        font-size: 45px;
-    }
-    
-    .Our_values_main_p {
-        font-size: 30px;
-        line-height: 39px;
-        max-width: 747px;
-    }
-
-
-    .zest_for_life_title {
-        font-size: 55px;
-        margin-bottom: 50px;
-    }
-
-    .zest_for_life_desc {
-        font-size: 35px;
-        line-height: 46px;
-    }
-
-    .image_heading {
-        font-size: 45px;
-        margin-bottom: 70px;
-    }
-
-    .escape_heading {
-        font-size: 55px;
-    }
-    .Escape_p {
-        font-size: 35px;
-        line-height: 46px;
-        margin-bottom: 114px;
-        max-width:1200px;
-    }
-.maving_box{
-    max-width: 400px;
-}
-    .marque_title {
-        font-size: 40px;
-    }
-    .marque_desc{
-        font-size: 18px;
-        line-height: 26px;
-    }
-    .zest_for_life_facility p {
-        font-size: 16px;
-        line-height: 20px;
-    }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .Founded_heading{
-        max-width: 858px;
-    }
-    .about_title {
-        font-size: 40px;
-    }
-
-    .about_heading {
-        font-size: 50px;
-        line-height: 68px;
-        margin-top: 27px;
-    }
-
-    .team_title {
-        font-size: 25px;
-    }
-
-    .team_desc {
-        font-size: 16px;
-    }
-
-    .About_team_profiles {
-        gap: 80px 70px;
-    }
-
-    .About_team {
-        margin-top: 120px;
-    }
-
-    .Our_values_img {
-        max-width: 210px;
-        height: 210px;
-    }
-
-    .text_title {
-        font-size: 40px;
-    }
-    
-    .Our_values_main_p {
-        font-size: 28px;
-        line-height: 36.5px;
-        max-width: 720px;
-    }
-
-    .zest_for_life_title {
-        font-size: 50px;
-        margin-bottom: 40px;
-    }
-
-    .zest_for_life_desc {
-        font-size: 35px;
-    }
-
-    .image_heading {
-        font-size: 36px;
-        margin-bottom: 45px;
-    }
-
-    .escape_heading {
-        font-size: 50px;
-    }
-
-    .Escape_p {
-        font-size: 30px;
-        line-height: 43px;
-        margin-bottom: 95px;
-        max-width: 1100px;
-    }
-    .maving_box{
-        max-width: 350px;
-    }
-    .marque_title {
-        font-size: 35px;
-    }
-    .marque_desc{
-        font-size: 16px;
-        line-height: 23px;
-    }
-    .zest_for_life_facility p {
-        font-size: 14px;
-        line-height: 18px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .Founded_heading{
-        max-width: 751px;
-    }
-    .about_title {
-        font-size: 35px;
-    }
-
-    .about_heading {
-        font-size: 42px;
-        line-height: 58px;
-        margin-top: 15px;
-    }
-
-    .team_title {
-        font-size: 21px;
-    }
-
-    .team_desc {
-        font-size: 14px;
-    }
-
-    .About_team_profiles {
-        gap: 75px 65px;
-    }
-    .About_team{
-        margin-top: 90px;
-    }
-
-    .Our_values_img {
-        max-width: 170px;
-        height: 170px;
-    }
-
-    .text_title {
-        font-size: 35px;
-    }
-
-    .Our_values_main_p {
-        font-size: 25px;
-        line-height: 34px;
-        max-width: 625px;
-    }
-
-    .zest_for_life_title {
-        font-size: 40px;
-        margin-bottom: 30px;
-    }
-
-    .zest_for_life_desc {
-        font-size: 30px;
-    }
-
-    .image_heading {
-        font-size: 28px;
-        margin-bottom: 28px;
-    }
-
-    .escape_heading {
-        font-size: 40px;
-    }
-
-    .Escape_p {
-        font-size: 25px;
-        line-height: 32px;
-        margin-bottom: 80px;
-        max-width: 844px;
-    }
-    .maving_box{
-        max-width: 300px;
-    }
-    .marque_title {
-        font-size: 30px;
-    }
-    .marque_desc{
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .zest_for_life_facility p {
-        font-size: 13px;
-        line-height: 16px;
-    }
-}
-
-@media only screen and (min-width: 640px) and (max-width: 767px) {
-    .about_title {
-        font-size: 27px;
-    }
-
-    .about_heading {
-        font-size: 30px;
-        line-height: 45px;
-    }
-
-    .About_team_profiles {
-        gap: 60px 30px;
-    }
-
-    .About_team {
-        margin-top: 80px;
-    }
-
-    .zest_for_life_title {
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-
-    .zest_for_life_desc {
-        font-size: 20px;
-    }
-
-    .image_heading {
-        font-size: 25px;
-    }
-
-    .Escape_p {
-        font-size: 20px;
-        line-height: 29px;
-        margin-bottom: 70px;
-    }
-
-    .marque_title {
-        font-size: 25px;
-    }
-}
-
-@media only screen and (max-width: 639px) {
-    .Founded_heading{
-        max-width: 390px;
-    }
-    .about_title {
-        font-size: 22px;
-    }
-
-    .about_heading {
-        font-size: 22px;
-        line-height: 30px;
-        margin-top: 5px;
-    }
-
-    .About_team_profiles {
-        gap: 40px 20px;
-    }
-
-    .About_team {
-        margin-top: 62px;
-    }
-
-    .ourValue_heading {
-        font-size: 22px;
-    }
-
-    .Our_values_img {
-        max-width: 90px;
-        height: 90px;
-    }
-
-    .text_title {
-        font-size: 16px;
-    }
-
-    .Our_values_main_p {
-        font-size: 12px;
-        line-height: 15px;
-        max-width: 274px;
-    }
-
-    .zest_for_life_title {
-        font-size: 22px;
-        margin-bottom: 5px;
-    }
-
-    .zest_for_life_desc {
-        font-size: 14px;
-    }
-
-    .image_heading {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    .escape_heading {
-        font-size: 22px;
-    }
-
-    .Escape_p {
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 60px;
-    }
-    .maving_box{
-        max-width: 260px;
-    }
-    .marque_desc{
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .marque_title {
-        font-size: 16px;
-    }
+@media only screen and (max-width: 539px) {
+  .zest_for_life_facility p {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {
-    .Founded_heading{
-        max-width: 553px;
-    }
-    .about_heading {
-        font-size: 30px;
-        line-height: 45px;
-    }
+  .zest_for_life_facility_container > :nth-child(3) {
+    grid-column-start: 4;
+  }
 
-    .team_title {
-        font-size: 20px;
-        line-height: 27px;
-    }
+  .zest_for_life_facility_container {
+    row-gap: 27px;
+    column-gap: 48px;
+  }
 
-    .team_desc {
-        font-size: 12px;
-    }
+  .values_bg {
+    padding-top: 70px;
+    padding-bottom: 73px;
+  }
 
-    .About_team {
-        margin-top: 70px;
-    }
+  .Escape_p {
+    max-width: 554px;
+  }
 
-    .ourValue_heading {
-        font-size: 30px;
-    }
+  .our_values_box,
+  .Escape_box {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
+}
 
-    .Our_values_img {
-        max-width: 130px;
-        height: 130px;
-    }
+@media only screen and (max-width: 645px) {
+  .zest_for_life_facility {
+    grid-column: span 12 / span 6;
+  }
 
-    .text_title {
-        font-size: 20px;
-    }
+  .zest_for_life_facility_container {
+    column-gap: 0px;
+    row-gap: 27px;
+  }
+}
 
-    .Our_values_main_p {
-        font-size: 16px;
-        line-height: 20px;
-        max-width: 415px;
-    }
+.about_title {
+  font-size: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
 
-    .zest_for_life_title {
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
+.about_heading {
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 5px;
+}
 
-    .zest_for_life_desc {
-        font-size: 20px;
-    }
+.About_team_profiles {
+  gap: 80px 80px;
+}
 
-    .image_heading {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
+.ourValue_heading {
+  font-size: 55px;
+  margin-bottom: 80px;
+}
 
-    .escape_heading {
-        font-size: 30px;
-    }
+.Our_values_img {
+  width: 100%;
+}
 
-    .Escape_p {
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 65px;
-    }
-    .maving_box{
-        max-width: 276px;
-    }
-    .marque_title {
-        font-size: 20px;
-        line-height: 27px;
-    }
-    .marque_desc{
-        font-size: 12px;
-        line-height: 18px;
-    }
-    .zest_for_life_facility p {
-        font-size: 12px;
-        line-height: 15px;
-    }
-    
+@media only screen and (min-width: 1280px) {
+  .Founded_heading {
+    max-width: 992px;
+  }
+  .about_title {
+    font-size: 45px;
+  }
+
+  .about_heading {
+    font-size: 55px;
+    line-height: 75px;
+    margin-top: 35px;
+  }
+
+  .team_title {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .team_desc {
+    font-size: 18px;
+  }
+
+  .About_team_profiles {
+    gap: 80px 80px;
+  }
+
+  .About_team {
+    margin-top: 144px;
+  }
+
+  .Our_values_img {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .text_title {
+    font-size: 45px;
+  }
+
+  .Our_values_main_p {
+    font-size: 30px;
+    line-height: 39px;
+    max-width: 747px;
+  }
+
+  .zest_for_life_title {
+    font-size: 55px;
+    margin-bottom: 50px;
+  }
+
+  .zest_for_life_desc {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .image_heading {
+    font-size: 45px;
+    margin-bottom: 70px;
+  }
+
+  .escape_heading {
+    font-size: 55px;
+  }
+  .Escape_p {
+    font-size: 35px;
+    line-height: 46px;
+    margin-bottom: 114px;
+    max-width: 1200px;
+  }
+  .maving_box {
+    max-width: 400px;
+  }
+  .marque_title {
+    font-size: 40px;
+  }
+  .marque_desc {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .zest_for_life_facility p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .Founded_heading {
+    max-width: 858px;
+  }
+  .about_title {
+    font-size: 40px;
+  }
+
+  .about_heading {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 27px;
+  }
+
+  .team_title {
+    font-size: 25px;
+  }
+
+  .team_desc {
+    font-size: 16px;
+  }
+
+  .About_team_profiles {
+    gap: 80px 70px;
+  }
+
+  .About_team {
+    margin-top: 120px;
+  }
+
+  .Our_values_img {
+    max-width: 210px;
+    height: 210px;
+  }
+
+  .text_title {
+    font-size: 40px;
+  }
+
+  .Our_values_main_p {
+    font-size: 28px;
+    line-height: 36.5px;
+    max-width: 720px;
+  }
+
+  .zest_for_life_title {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  .zest_for_life_desc {
+    font-size: 35px;
+  }
+
+  .image_heading {
+    font-size: 36px;
+    margin-bottom: 45px;
+  }
+
+  .escape_heading {
+    font-size: 50px;
+  }
+
+  .Escape_p {
+    font-size: 30px;
+    line-height: 43px;
+    margin-bottom: 95px;
+    max-width: 1100px;
+  }
+  .maving_box {
+    max-width: 350px;
+  }
+  .marque_title {
+    font-size: 35px;
+  }
+  .marque_desc {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .zest_for_life_facility p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .Founded_heading {
+    max-width: 751px;
+  }
+  .about_title {
+    font-size: 35px;
+  }
+
+  .about_heading {
+    font-size: 42px;
+    line-height: 58px;
+    margin-top: 15px;
+  }
+
+  .team_title {
+    font-size: 21px;
+  }
+
+  .team_desc {
+    font-size: 14px;
+  }
+
+  .About_team_profiles {
+    gap: 75px 65px;
+  }
+  .About_team {
+    margin-top: 90px;
+  }
+
+  .Our_values_img {
+    max-width: 170px;
+    height: 170px;
+  }
+
+  .text_title {
+    font-size: 35px;
+  }
+
+  .Our_values_main_p {
+    font-size: 25px;
+    line-height: 34px;
+    max-width: 625px;
+  }
+
+  .zest_for_life_title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .zest_for_life_desc {
+    font-size: 30px;
+  }
+
+  .image_heading {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  .escape_heading {
+    font-size: 40px;
+  }
+
+  .Escape_p {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 80px;
+    max-width: 844px;
+  }
+  .maving_box {
+    max-width: 300px;
+  }
+  .marque_title {
+    font-size: 30px;
+  }
+  .marque_desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .zest_for_life_facility p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  .about_title {
+    font-size: 27px;
+  }
+
+  .about_heading {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .About_team_profiles {
+    gap: 60px 30px;
+  }
+
+  .About_team {
+    margin-top: 80px;
+  }
+
+  .zest_for_life_title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .zest_for_life_desc {
+    font-size: 20px;
+  }
+
+  .image_heading {
+    font-size: 25px;
+  }
+
+  .Escape_p {
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom: 70px;
+  }
+
+  .marque_title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .Founded_heading {
+    max-width: 390px;
+  }
+  .about_title {
+    font-size: 22px;
+  }
+
+  .about_heading {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 5px;
+  }
+
+  .About_team_profiles {
+    gap: 40px 20px;
+  }
+
+  .About_team {
+    margin-top: 62px;
+  }
+
+  .ourValue_heading {
+    font-size: 22px;
+  }
+
+  .Our_values_img {
+    max-width: 90px;
+    height: 90px;
+  }
+
+  .text_title {
+    font-size: 16px;
+  }
+
+  .Our_values_main_p {
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 274px;
+  }
+
+  .zest_for_life_title {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .zest_for_life_desc {
+    font-size: 14px;
+  }
+
+  .image_heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .escape_heading {
+    font-size: 22px;
+  }
+
+  .Escape_p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 60px;
+  }
+  .maving_box {
+    max-width: 260px;
+  }
+  .marque_desc {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .marque_title {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+  .Founded_heading {
+    max-width: 553px;
+  }
+  .about_heading {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .team_title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .team_desc {
+    font-size: 12px;
+  }
+
+  .About_team {
+    margin-top: 70px;
+  }
+
+  .ourValue_heading {
+    font-size: 30px;
+  }
+
+  .Our_values_img {
+    max-width: 130px;
+    height: 130px;
+  }
+
+  .text_title {
+    font-size: 20px;
+  }
+
+  .Our_values_main_p {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 415px;
+  }
+
+  .zest_for_life_title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .zest_for_life_desc {
+    font-size: 20px;
+  }
+
+  .image_heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .escape_heading {
+    font-size: 30px;
+  }
+
+  .Escape_p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 65px;
+  }
+  .maving_box {
+    max-width: 276px;
+  }
+  .marque_title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .marque_desc {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .zest_for_life_facility p {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    .about_title {
-        font-size: 22px;
-    }
+  .about_title {
+    font-size: 22px;
+  }
 
-    .team_title {
-        font-size: 20px;
-        line-height: 27px;
+  .team_title {
+    font-size: 20px;
+    line-height: 27px;
+  }
 
-    }
+  .team_desc {
+    font-size: 12px;
+  }
 
-    .team_desc {
-        font-size: 12px;
-    }
+  .About_team_profiles {
+    gap: 40px 60px;
+  }
 
-    .About_team_profiles {
-        gap: 40px 60px;
-    }
-
-    .ourValue_heading {
-        margin-bottom: 32px;
-    }
-
+  .ourValue_heading {
+    margin-bottom: 32px;
+  }
 }
 
-
-
 .Our_values > div::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .Our_values > div {
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
-  }
+  display: none;
+}
+
+.Our_values > div {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

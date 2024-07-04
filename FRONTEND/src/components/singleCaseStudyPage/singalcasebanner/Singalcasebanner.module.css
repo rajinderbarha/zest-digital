@@ -1,146 +1,134 @@
-
-
 .Singalcasebanner {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 @media only screen and (min-width: 1775px) {
-    .Singalcasebanner {
-        margin-top: 119px;
-
-    }
+  .Singalcasebanner {
+    margin-top: 119px;
+  }
 }
 
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
-    .Singalcasebanner {
-        margin-top: 100px;
-    }
+  .Singalcasebanner {
+    margin-top: 100px;
+  }
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
-    .Singalcasebanner {
-        margin-top: 80px;
-    }
+  .Singalcasebanner {
+    margin-top: 80px;
+  }
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
-    .Singalcasebanner {
-        margin-top: 70px;
-    }
+  .Singalcasebanner {
+    margin-top: 70px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .Singalcasebanner {
-        margin-top: 60px;
-    }
-
+  .Singalcasebanner {
+    margin-top: 60px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .Singalcasebanner {
-        margin-top: 40px;
-    }
+  .Singalcasebanner {
+    margin-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 639px) {
-    .Singalcasebanner {
-        margin-top: 40px;
-    }
-
+  .Singalcasebanner {
+    margin-top: 40px;
+  }
 }
-
 
 .banner_text {
-    padding-inline-start: 10px;
+  padding-inline-start: 10px;
 }
 
-.banner_text h2{
-padding-left: 8px;
-padding-right: 8px;
-width: max-content;
+.banner_text h2 {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: max-content;
 }
 
-.banner_text h1{
-    margin-top: 20px;
-    }
+.banner_text h1 {
+  margin-top: 20px;
+}
 @media only screen and (min-width: 1280px) {
-    .banner_text {
-        max-width: 971px;
-    }
-    .banner_text h2{
-font-size: 45px;
-    }
-    .banner_text h1{
-font-size: 55px;
-line-height: 75px;
-    }
-    
+  .banner_text {
+    max-width: 971px;
+  }
+  .banner_text h2 {
+    font-size: 45px;
+  }
+  .banner_text h1 {
+    font-size: 55px;
+    line-height: 75px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .banner_text {
-        max-width: 865px;
-    }
-    .banner_text h2{
-font-size: 40px;
-    }
-    .banner_text h1{
-        font-size: 50px;
-        line-height: 70px;
-    }
-    
+  .banner_text {
+    max-width: 865px;
+  }
+  .banner_text h2 {
+    font-size: 40px;
+  }
+  .banner_text h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .banner_text {
-        max-width: 700px;
-    }
-    .banner_text h2{
-font-size: 35px;
-    }
-    .banner_text h1{
-     font-size: 40px; 
-     line-height: 60px;  
-     margin-top: 15px;
-    }
-    
+  .banner_text {
+    max-width: 700px;
+  }
+  .banner_text h2 {
+    font-size: 35px;
+  }
+  .banner_text h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 15px;
+  }
 }
-
 
 @media only screen and (max-width: 767px) {
-    .banner_text {
-        max-width: 500px;
-        padding-inline-start: 0;
-    }
-    .banner_text h2{
-font-size: 22px;
-    }
-    .banner_text h1{
-        font-size: 22px;
-        line-height: 30px;
-        margin-top: 10px;
-    }
-    
+  .banner_text {
+    max-width: 500px;
+    padding-inline-start: 0;
+  }
+  .banner_text h2 {
+    font-size: 22px;
+  }
+  .banner_text h1 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
 }
 
-@media only screen and (max-width:639px) {
-    .banner_text {
-        max-width: 380px;
-    }
+@media only screen and (max-width: 639px) {
+  .banner_text {
+    max-width: 380px;
+  }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {
-    .banner_text {
-        max-width: 533px;
-        padding-inline-start: 0;
-    }
-    .banner_text h2{
-font-size: 26px;
-    }
-    .banner_text h1{
-       font-size: 30px; 
-       line-height: 45px;
-       margin-top: 20px;
-    }
-    
+  .banner_text {
+    max-width: 533px;
+    padding-inline-start: 0;
+  }
+  .banner_text h2 {
+    font-size: 26px;
+  }
+  .banner_text h1 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 20px;
+  }
 }

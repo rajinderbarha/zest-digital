@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "../Services_details.module.css";
 import { HappyCustomer } from "../../../../../lib/interface";
 import { urlFor } from "../../../../../lib/sanity.client";

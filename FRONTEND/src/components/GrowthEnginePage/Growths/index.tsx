@@ -1,6 +1,6 @@
 import Growth_engine from "@/common/Growth_engine";
 import classes from './Growths.module.css'
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 function Growths({ data, otherSolHeading }: any) {
@@ -28,8 +28,7 @@ function Growths({ data, otherSolHeading }: any) {
     setFirstTwoItems(firstTwo);
   }, [router.isReady, router.query.slug, data]);
 
-  return (
-    <>
+  return  <>
       {data.length > 0 && (
         <div className="Growths max-w-[1365px] mx-auto px-5 mt-[70px] min-tb:max-tb:mt-[106px] overflow-hidden">
           <div className={`${classes.growths_container} `}>
@@ -80,7 +79,6 @@ function Growths({ data, otherSolHeading }: any) {
         </div>
       )}
     </>
-  );
 }
 
 export default Growths;

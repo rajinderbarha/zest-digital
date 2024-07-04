@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import classes from './Singalcasebanner.module.css'
 import { SingalcasebannerProps } from '../../../../lib/interface'
 import AOS from 'aos'

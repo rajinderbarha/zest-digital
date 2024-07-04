@@ -2,7 +2,6 @@
   color: #fff;
 }
 
-
 .BG_manu {
   background-image: url(../../assets//images//Gradient_v3.png);
   background-color: #191615;
@@ -54,13 +53,10 @@
   right: 0 !important;
 }
 
-
 .custom_menu_items_class span:hover {
   border-bottom: 2px solid #e43fa8;
   color: #e43fa8;
 }
-
-
 
 .custom_menu_items_class {
   padding: 8px 16px;
@@ -76,9 +72,7 @@
   }
 }
 
-
-@media only screen and (max-width:1080px) {
-
+@media only screen and (max-width: 1080px) {
   .navMenuClass {
     display: none;
     flex-direction: column;
@@ -103,7 +97,6 @@
     padding: 12px 80px 12px 8px;
     color: #191615;
   }
-
 }
 
 @media only screen and (max-width: 609px) {
@@ -113,10 +106,10 @@
 }
 
 @media only screen and (max-width: 1110px) {
-  .desktop_nav{
-gap: 40px;
+  .desktop_nav {
+    gap: 40px;
   }
-  .desktop_nav div:last-child{
+  .desktop_nav div:last-child {
     gap: 30px;
   }
 }

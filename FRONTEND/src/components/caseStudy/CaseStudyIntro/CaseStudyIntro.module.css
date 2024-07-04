@@ -1,180 +1,164 @@
-  
-
-
-@media only screen and (max-width:1220px) {
-    .image_div {
-        display: block;
-        max-width: 0200px;
-        position: relative;
-        margin-left: auto;
-        margin-top: -60px;
-    }
+@media only screen and (max-width: 1220px) {
+  .image_div {
+    display: block;
+    max-width: 0200px;
+    position: relative;
+    margin-left: auto;
+    margin-top: -60px;
+  }
 }
 .Casestudyintro {
-    margin-top: 30px;
-    margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 1775px) {
-    .Casestudyintro {
-        margin-top: 119px;
-        margin-bottom: 95px;
-
-    }
+  .Casestudyintro {
+    margin-top: 119px;
+    margin-bottom: 95px;
+  }
 }
 
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
-    .Casestudyintro {
-        margin-top: 100px;
-        margin-bottom: 85px;
-    }
+  .Casestudyintro {
+    margin-top: 100px;
+    margin-bottom: 85px;
+  }
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
-    .Casestudyintro {
-        margin-top: 80px;
-        margin-bottom: 75px;
-    }
+  .Casestudyintro {
+    margin-top: 80px;
+    margin-bottom: 75px;
+  }
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
-    .Casestudyintro {
-        margin-top: 70px;
-        margin-bottom: 65px;
-    }
+  .Casestudyintro {
+    margin-top: 70px;
+    margin-bottom: 65px;
+  }
 }
 
-
-
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .Casestudyintro {
-        margin-top: 60px;
-        margin-bottom: 55px;
-    }
-
+  .Casestudyintro {
+    margin-top: 60px;
+    margin-bottom: 55px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .Casestudyintro {
-        margin-top: 40px;
-        margin-bottom: 45px;
-    }
+  .Casestudyintro {
+    margin-top: 40px;
+    margin-bottom: 45px;
+  }
 }
 
-@media screen and (min-width:540px) and (max-width:830px) {
-    .Casestudyintro {
-        margin-top: 55px;
-    }
+@media screen and (min-width: 540px) and (max-width: 830px) {
+  .Casestudyintro {
+    margin-top: 55px;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .image_div {
-        max-width: 0110px;
-        margin-top: 0px;
-    }
-
+@media screen and (max-width: 768px) {
+  .image_div {
+    max-width: 0110px;
+    margin-top: 0px;
+  }
 }
-
-
-
 
 .heading {
-    font-size: 22px;
-    line-height: 30px;
-    margin-bottom: 20px;
-  }
-  .banner_text{
-    max-width: 400px;
-  }
-  
-  .image_div img{
-    max-width: 110px;
-  }
-  
-  @media (min-width: 640px) {
-    .heading {
-      font-size: 30px;
-      line-height: 44px;
-    }
-    .image_div img{
-      max-width: 130px;
-    }
-  }
-  
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.banner_text {
+  max-width: 400px;
+}
 
-  
-  @media (min-width: 768px) {
-    .heading {
-      font-size: 42px;
-      line-height: 55px;
-    }
-    .banner_text{
-      max-width: 800px;
-    }
-    .image_div img{
-      max-width: 180px;
-    }
+.image_div img {
+  max-width: 110px;
+}
+
+@media (min-width: 640px) {
+  .heading {
+    font-size: 30px;
+    line-height: 44px;
   }
-  @media (min-width:540px) and (max-width: 830px) {
-    .heading {
-      font-size: 30px;
-      line-height: 45px;
-    }
-    .banner_text{
-      max-width: 533px;
-    }
-    .image_div img{
-      max-width: 150px;
-    }
+  .image_div img {
+    max-width: 130px;
   }
-  
- 
-  @media (min-width: 1024px) {
-    .heading {
-      font-size: 50px;
-      line-height: 70px;
-    }
-    .banner_text{
-      max-width: 884px;
-    }
-    .image_div img{
-      max-width: 200px;
-    }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 42px;
+    line-height: 55px;
   }
-  
-  @media (min-width: 1280px) {
-    .image_div img{
-      max-width: 245px;
-    }
+  .banner_text {
+    max-width: 800px;
   }
-  @media (min-width: 1350px) {
-    
-    .heading {
-      font-size: 55px;
-      line-height: 75px;
-    }
-    .banner_text{
-      max-width: 971px;
-    }
+  .image_div img {
+    max-width: 180px;
   }
-  
+}
+@media (min-width: 540px) and (max-width: 830px) {
+  .heading {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .banner_text {
+    max-width: 533px;
+  }
+  .image_div img {
+    max-width: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .banner_text {
+    max-width: 884px;
+  }
+  .image_div img {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .image_div img {
+    max-width: 245px;
+  }
+}
+@media (min-width: 1350px) {
+  .heading {
+    font-size: 55px;
+    line-height: 75px;
+  }
+  .banner_text {
+    max-width: 971px;
+  }
+}
+
+.btn {
+  font-size: 12px;
+  padding-left: 21px;
+  padding-right: 21px;
+  height: 35px;
+}
+
+@media (min-width: 640px) {
   .btn {
-    font-size: 12px;
-    padding-left: 21px;
-    padding-right: 21px;
+    font-size: 16px;
     height: 35px;
   }
-  
-  @media (min-width: 640px) {
-    .btn {
-      font-size: 16px;
-      height: 35px;
-    }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    height: 40px;
   }
-  
-  @media (min-width: 768px) {
-    .btn {
-      height: 40px;
-    }
-  }
-  
+}

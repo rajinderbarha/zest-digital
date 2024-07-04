@@ -1,9 +1,8 @@
-import React from 'react'
 import { GoArrowLeft } from "react-icons/go";
 import classes from './CallTimeAndDurationPage.module.css'
 
 function CallTimeAndDurationPage() {
-  
+
   return <div className="ScheduleCall_CallTimeAndDurationPage main_padding xl:mb-[132px] lg:mb-[110px] md:mb-[80px] sm:mb-[60px] mb-[50px]">
     <div className="main_container">
       <h2 className="font-mono xl:text-55px lg:text-50px md:text-40px text-35px font-semibold mt-[32px]">

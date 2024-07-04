@@ -1,27 +1,26 @@
 .bg_image {
-    background-image: url('../../assets/images/Gradient_calendar.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: bottom; */
-    background-color: #191615;
+  background-image: url("../../assets/images/Gradient_calendar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #191615;
 }
-@media only screen and (max-width:1070px) {
-    .Call_form_inputs {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 1070px) {
+  .Call_form_inputs {
+    flex-direction: column;
+  }
 
-    .Call_form_inputs div {
-        max-width: 100%;
-        margin-bottom: 50px;
-    }
+  .Call_form_inputs div {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
 }
-@media only screen and (max-width:767px) {
-      .Call_form_inputs div {
-        margin-bottom: 25px;
-    }
+@media only screen and (max-width: 767px) {
+  .Call_form_inputs div {
+    margin-bottom: 25px;
+  }
 }
-@media only screen and (max-width:639px) {
-      .Call_form_inputs div {
-        margin-bottom: 20px;
-    }
+@media only screen and (max-width: 639px) {
+  .Call_form_inputs div {
+    margin-bottom: 20px;
+  }
 }

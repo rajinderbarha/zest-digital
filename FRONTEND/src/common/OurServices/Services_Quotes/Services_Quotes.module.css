@@ -1,143 +1,137 @@
 .services_quotes p {
-    max-width: 750px;
+  max-width: 750px;
 }
 
 .services_quotes h3 {
-    max-width: 373px;
+  max-width: 373px;
 }
 
-
-@media screen and (min-width:540px) and (max-width:830px) {
-    .quote_left{
-padding-right: 40px;
-    }
-    .quote_right{
-padding-left: 40px;
-margin-top: 77px;
-    }
-    .quote_heading{
-        max-width: 627px;
-    }
+@media screen and (min-width: 540px) and (max-width: 830px) {
+  .quote_left {
+    padding-right: 40px;
+  }
+  .quote_right {
+    padding-left: 40px;
+    margin-top: 77px;
+  }
+  .quote_heading {
+    max-width: 627px;
+  }
 }
-
 
 .services_quotes {
-    margin-top: 80px;
-    margin-bottom: 100px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.quote_heading {
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+
+.below_line {
+  padding-top: 3px;
+  font-size: 12px;
+}
+.quote_right {
+  margin-top: 70px;
+}
+
+@media (min-width: 640px) {
+  .services_quotes {
+    margin-top: 120px;
+    margin-bottom: 150px;
   }
-  
+
   .quote_heading {
+    font-size: 28px;
+    line-height: 35.5px;
+    margin-bottom: 10px;
+  }
+
+  .below_line {
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  .quote_right {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .services_quotes {
+    margin-top: 170px;
+    margin-bottom: 200px;
+  }
+
+  .quote_heading {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 15px;
+  }
+
+  .below_line {
+    padding-top: 8px;
+    font-size: 25px;
+  }
+  .quote_right {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 830px) {
+  .services_quotes {
+    margin-top: 129px;
+    margin-bottom: 140px;
+  }
+
+  .quote_heading {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .below_line {
     font-size: 18px;
     line-height: 23px;
-    margin-bottom: 8px;
   }
-  
+  .quote_right {
+    padding-left: 40px;
+    margin-top: 77px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services_quotes {
+    margin-top: 200px;
+    margin-bottom: 250px;
+  }
+
+  .quote_heading {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
   .below_line {
-    padding-top: 3px;
-    font-size: 12px;
+    font-size: 30px;
   }
-  .quote_right
-  {
-    margin-top: 70px;
+  .quote_right {
+    margin-top: 90px;
   }
-  
-  @media (min-width: 640px) {
-    .services_quotes {
-      margin-top: 120px;
-      margin-bottom: 150px;
-    }
-  
-    .quote_heading {
-      font-size: 28px;
-      line-height: 35.5px;
-      margin-bottom: 10px;
-    }
-  
-    .below_line {
-      padding-top: 5px;
-      font-size: 20px;
-    }
-    .quote_right{
-        margin-top: 30px;
-    }
+}
+
+@media (min-width: 1280px) {
+  .services_quotes {
+    margin-top: 225px;
+    margin-bottom: 290px;
   }
 
-  
-  @media (min-width: 768px) {
-    .services_quotes {
-      margin-top: 170px;
-      margin-bottom: 200px;
-    }
-  
-    .quote_heading {
-      font-size: 35px;
-      line-height: 42px;
-      margin-bottom: 15px;
-    }
-  
-    .below_line {
-      padding-top: 8px;
-      font-size: 25px;
-    }
-    .quote_right{
-        margin-top: 60px;
-    }
+  .quote_heading {
+    font-size: 45px;
+    line-height: 58px;
   }
-
-    
-  @media (min-width: 540px) and (max-width: 830px) {
-    .services_quotes {
-      margin-top: 129px;
-      margin-bottom: 140px;
-    }
-  
-    .quote_heading {
-      font-size: 26px;
-      line-height: 34px;
-    }
-  
-    .below_line {
-      font-size: 18px;
-      line-height: 23px;
-    }
-    .quote_right{
-        padding-left: 40px;
-        margin-top: 77px;
-            }
+  .quote_right {
+    margin-top: 120px;
   }
-  
-  @media (min-width: 1024px) {
-    .services_quotes {
-      margin-top: 200px;
-      margin-bottom: 250px;
-    }
-  
-    .quote_heading {
-      font-size: 40px;
-      line-height: 50px;
-      margin-bottom: 20px;
-    }
-  
-    .below_line {
-      font-size: 30px;
-    }
-    .quote_right{
-        margin-top: 90px;
-    }
-  }
-  
-  @media (min-width: 1280px) {
-    .services_quotes {
-      margin-top: 225px;
-      margin-bottom: 290px;
-    }
-  
-    .quote_heading {
-      font-size: 45px;
-      line-height: 58px;
-    }
-    .quote_right{
-        margin-top: 120px;
-    }
-  }
-  
+}

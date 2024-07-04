@@ -1,274 +1,272 @@
-
-.map_div > div:not(:last-child){
-    @apply xl:mb-[114px] lg:mb-[80px] md:mb-[60px] sm:mb-[40px] mb-[30px]
+.map_div > div:not(:last-child) {
+  @apply xl:mb-[114px] lg:mb-[80px] md:mb-[60px] sm:mb-[40px] mb-[30px];
 }
-.names_div{
-    gap: 10px;
-}
-
-@media only screen and (max-width:767px) {
-    .select_field{
-        background-position: right 5px center;
-    }
+.names_div {
+  gap: 10px;
 }
 
-@media only screen and (min-width:540px) and (max-width:840px) {
-    .names_div {
-        flex-direction: column;
-        gap: 26px;
-    }
-    .names_div div{
-        max-width: 100%;
-    }
-    .map_div {
-        column-gap: 55px !important;
-      }
+@media only screen and (max-width: 767px) {
+  .select_field {
+    background-position: right 5px center;
+  }
 }
 
-@media only screen and (max-width:774px) {
-    .names_div {
-        flex-direction: column;
-        gap: 36px;
-    }
-
-    .names_div div {
-        max-width: 100%;
-    }
-}
-@media only screen and (min-width:500px) and (max-width:767px) {
-    .names_div {
-        flex-direction: row;
-        gap: 26px;
-    }
+@media only screen and (min-width: 540px) and (max-width: 840px) {
+  .names_div {
+    flex-direction: column;
+    gap: 26px;
+  }
+  .names_div div {
+    max-width: 100%;
+  }
+  .map_div {
+    column-gap: 55px !important;
+  }
 }
 
-@media only screen and (max-width:639px) {
-    .names_div {
-        gap: 20px;
-    }
+@media only screen and (max-width: 774px) {
+  .names_div {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .names_div div {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .names_div {
+    flex-direction: row;
+    gap: 26px;
+  }
 }
 
-@media only screen and (max-width:1023px) {
-    .text_div {
-        max-width: 636px;
-    }
-}
-@media only screen and (max-width:704px) {
-    .map_div{
-        justify-content: center;
-    }
+@media only screen and (max-width: 639px) {
+  .names_div {
+    gap: 20px;
+  }
 }
 
-
-@media only screen and (min-width:1690px) {
-    .map_div {
-        column-gap: 105px;
-      }
+@media only screen and (max-width: 1023px) {
+  .text_div {
+    max-width: 636px;
+  }
+}
+@media only screen and (max-width: 704px) {
+  .map_div {
+    justify-content: center;
+  }
 }
 
-@media only screen and (min-width:1441px) and (max-width:1689px) {
-    .map_div {
-      column-gap: 85px;
-    }
-}
-@media only screen and (min-width:1260px) and (max-width:1440px) {
-    .map_div {
-      column-gap: 50px;
-    }
+@media only screen and (min-width: 1690px) {
+  .map_div {
+    column-gap: 105px;
+  }
 }
 
-@media only screen and (min-width:1024px) and (max-width:1259px) {
-    .map_div {
-      column-gap: 45px;
-    }
+@media only screen and (min-width: 1441px) and (max-width: 1689px) {
+  .map_div {
+    column-gap: 85px;
+  }
 }
-@media only screen and (min-width:768px) and (max-width:1023px) {
-    .map_div {
-      column-gap: 40px;
-    }
+@media only screen and (min-width: 1260px) and (max-width: 1440px) {
+  .map_div {
+    column-gap: 50px;
+  }
 }
-@media only screen and (min-width:640px) and (max-width:767px) {
-    .map_div {
-      column-gap: 40px;
-    }
+
+@media only screen and (min-width: 1024px) and (max-width: 1259px) {
+  .map_div {
+    column-gap: 45px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .map_div {
+    column-gap: 40px;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  .map_div {
+    column-gap: 40px;
+  }
 }
 
 .contact_container {
-  margin-top: 30px; 
-  margin-bottom: 80px; 
-  padding-left: 0; 
-  padding-right: 0; 
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .contact_heading {
-  font-size: 22px; 
-  padding-right: 40px; 
-  line-height: 30px; 
+  font-size: 22px;
+  padding-right: 40px;
+  line-height: 30px;
 }
 
 .socal_image {
-  width: 45px; 
+  width: 45px;
 }
 
 .form_div {
-  margin-top: 80px; 
+  margin-top: 80px;
 }
 
 .input_labels {
-  font-size: 12px; 
-  margin-bottom: 5px; 
+  font-size: 12px;
+  margin-bottom: 5px;
   display: block;
 }
 
 .form_input_field {
-  width: 100%; 
-  font-size: 14px; 
-  border-radius: 5px; 
-  padding-left: 10px; 
-  padding-right: 10px; 
-  padding-top: 6px; 
-  padding-bottom: 6px; 
+  width: 100%;
+  font-size: 14px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .submit_btn {
-  font-size: 16px; 
-  padding-left: 26px; 
-  padding-right: 26px; 
-  padding-top: 10px; 
-  padding-bottom: 10px; 
+  font-size: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .map_container {
-  margin-top: 100px; 
+  margin-top: 100px;
 }
 
 @media (min-width: 640px) {
   .contact_container {
-    margin-top: 50px; 
-    margin-bottom: 90px; 
-    padding-left: 20px; 
-    padding-right: 20px; 
+    margin-top: 50px;
+    margin-bottom: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .contact_heading {
-    font-size: 25px; 
-    line-height: 34px; 
+    font-size: 25px;
+    line-height: 34px;
   }
 
   .socal_image {
-    width: 38px; 
+    width: 38px;
   }
 
   .form_div {
-    margin-top: 150px; 
+    margin-top: 150px;
   }
 
   .input_labels {
-    font-size: 16px; 
-    margin-bottom: 9px; 
+    font-size: 16px;
+    margin-bottom: 9px;
   }
 
   .form_input_field {
-    padding-left: 15px; 
-    padding-right: 15px; 
-    padding-top: 9px; 
-    padding-bottom: 9px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 
   .submit_btn {
-    font-size: 16px; 
-    padding-top: 5px; 
-    padding-bottom: 5px; 
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .map_container {
-    margin-top: 120px; 
+    margin-top: 120px;
   }
 }
 
 @media (min-width: 768px) {
   .contact_container {
-    margin-top: 70px; 
-    margin-bottom: 140px; 
+    margin-top: 70px;
+    margin-bottom: 140px;
   }
 
   .contact_heading {
-    font-size: 28px; 
+    font-size: 28px;
     line-height: 38px;
   }
 
   .socal_image {
-    width: 45px; 
+    width: 45px;
   }
 
   .form_div {
-    margin-top: 0px; 
+    margin-top: 0px;
   }
 
   .input_labels {
-    margin-bottom: 11px; 
+    margin-bottom: 11px;
   }
 
   .form_input_field {
-    border-radius: 10px; 
-    padding-left: 26px; 
-    padding-right: 26px; 
-    padding-top: 11px; 
-    padding-bottom: 11px; 
-    font-size: 18px; 
+    border-radius: 10px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 18px;
   }
 
   .submit_btn {
-    padding-left: 20px; 
-    padding-right: 20px; 
-    padding-top: 8px; 
-    padding-bottom: 8px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .map_container {
-    margin-top: 150px; 
+    margin-top: 150px;
   }
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
   .contact_container {
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
   }
 
   .contact_heading {
-    font-size: 25px; 
-    line-height: 34px; 
+    font-size: 25px;
+    line-height: 34px;
   }
 
   .input_labels {
-    font-size: 12px; 
+    font-size: 12px;
   }
 
   .form_input_field {
-    font-size: 12px; 
-    padding-left: 13px; 
-    padding-right: 13px; 
+    font-size: 12px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
   .submit_btn {
-    font-size: 12px; 
+    font-size: 12px;
   }
 
   .map_container {
-    margin-top: 88px; 
+    margin-top: 88px;
   }
 }
 
 @media (min-width: 1024px) {
   .contact_container {
-    margin-top: 120px; 
-    margin-bottom: 200px; 
+    margin-top: 120px;
+    margin-bottom: 200px;
   }
 
   .map_container {
-    margin-top: 180px; 
+    margin-top: 180px;
   }
-  .contact_heading{
+  .contact_heading {
     font-size: 32px;
     line-height: 42px;
   }
@@ -276,14 +274,14 @@
 
 @media (min-width: 1280px) {
   .contact_container {
-    margin-top: 140px; 
-    margin-bottom: 268px; 
+    margin-top: 140px;
+    margin-bottom: 268px;
   }
 
   .map_container {
-    margin-top: 200px; 
+    margin-top: 200px;
   }
-  .contact_heading{
+  .contact_heading {
     font-size: 35px;
     line-height: 46px;
   }

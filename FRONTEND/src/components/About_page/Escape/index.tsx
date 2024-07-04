@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "../About_banner.module.css";
 import Marquee from "react-fast-marquee";
 import { AboutType } from "../../../../lib/interface";

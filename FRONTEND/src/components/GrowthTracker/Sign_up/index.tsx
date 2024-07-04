@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Sign_up.module.css";
 import Link from "next/link";
 function Sign_up() {

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import classes from "./MapLocations.module.css";
 import { PortableText } from "next-sanity";

@@ -1,5 +1,4 @@
 import Filters from "@/components/Insights/Filters";
-import React from "react";
 import { getInsightsData } from "../../../lib/sanity.query";
 import { FiltersType } from "../../../lib/interface";
 

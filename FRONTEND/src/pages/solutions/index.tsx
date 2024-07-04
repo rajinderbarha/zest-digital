@@ -1,4 +1,3 @@
-import React from "react";
 import Logo_moving from "@/common/Logo_moving";
 import Section_Main from "@/components/SolutionsPage/Section_Main";
 import Solution_Banner from "@/components/SolutionsPage/Solution_Banner";

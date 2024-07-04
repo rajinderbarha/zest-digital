@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './Resource_Access_popup.module.css'
 import popup_close_icon from '../../assets/images/popup_close_icon.png'
 import Image from 'next/image'

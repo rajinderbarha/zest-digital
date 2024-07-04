@@ -1,11 +1,10 @@
 'use client';
-
 import GoogleMap from 'google-maps-react-markers';
 import { useRef } from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 
 
-const CustomMarker = ({ lat, lng, icon, onClick }: any) => (
+const CustomMarker = ({ icon, onClick }: any) => (
   <div
     style={{ position: 'absolute', transform: 'translate(-50%, -50%)', cursor: 'pointer' }}
     onClick={onClick}
@@ -14,7 +13,7 @@ const CustomMarker = ({ lat, lng, icon, onClick }: any) => (
   </div>
 );
 
-export default function GoogleMapComponent({ loc, mark, zoom }: any) {
+export default function GoogleMapComponent({ loc, zoom }: any) {
   const mapRef: any = useRef(null);
   const { longitude, latitude } = loc
 
@@ -24,7 +23,7 @@ export default function GoogleMapComponent({ loc, mark, zoom }: any) {
     icon: <FaLocationDot style={{ color: 'red', height: '50px', width: '50px' }} />
   }
 
-  const onGoogleApiLoaded = ({ map, maps }: any) => {
+  const onGoogleApiLoaded = ({ map }: any) => {
     mapRef.current = map;
   };
 

@@ -1,243 +1,230 @@
 .bg_image {
-    background-image: url('../../assets/images/Footer.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("../../assets/images/Footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .horizontal_line {
-    position: relative;
-    padding: 1px 0px;
-    background-color: transparent;
+  position: relative;
+  padding: 1px 0px;
+  background-color: transparent;
 }
 
 .horizontal_line::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(to right, #A2FF8F, transparent);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, #a2ff8f, transparent);
 }
 
 .horizontal_line::after {
-    bottom: 0;
+  bottom: 0;
 }
 
 .address:last-child a {
-    color: #A2FF8F;
+  color: #a2ff8f;
 }
 
+@media only screen and (max-width: 640px) {
+  .certificate_icon {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-@media only screen and (max-width:640px) {
-    .certificate_icon {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .certificate_icon img {
-        max-width: 200px;
-    }
+  .certificate_icon img {
+    max-width: 200px;
+  }
 }
 
-@media only screen and (min-width:1024px) and (max-width:1260px) {
-    .detail_cont {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        gap: 20px;
-    }
+@media only screen and (min-width: 1024px) and (max-width: 1260px) {
+  .detail_cont {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 20px;
+  }
 }
 
 .footer_details {
-    @apply sm:col-span-2 text-white text-center font-lato;
+  @apply sm:col-span-2 text-white text-center font-lato;
 }
 
 .footer_details_telephone {
-    @apply text-[#a2ff8f] flex items-center justify-center gap-2;
-}
-
-
-
-/* {<Climate_action/>} */
-
-@media only screen and (min-width:768px) and (max-width:1024px) {
-
-    .growth_engine_desc {
-        font-size: 23px;
-        line-height: 30px;
-    }
-}
-
-@media only screen and (max-width:767px) {
-
-    .growth_engine_desc {
-        font-size: 26px;
-        line-height: 28px;
-    }
-
-}
-
-@media only screen and (max-width:640px) {
-
-    .growth_engine_desc {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .footer_linkheading {
-        margin-bottom: 6px;
-    }
-
-
+  @apply text-[#a2ff8f] flex items-center justify-center gap-2;
 }
 
 /* {<Climate_action/>} */
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .growth_engine_desc {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .growth_engine_desc {
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .growth_engine_desc {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .footer_linkheading {
+    margin-bottom: 6px;
+  }
+}
+
+/* {<Climate_action/>} */
 
 .footer_linkheading {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .socialimages img {
-    width: 50px;
+  width: 50px;
 }
 
 .footer_belowtext {
-    padding-left: 36px;
-    padding-right: 36px;
-    font-size: 16px;
+  padding-left: 36px;
+  padding-right: 36px;
+  font-size: 16px;
 }
 
-
-
 @media only screen and (min-width: 1280px) {
-    .footer_linkheading {
-        font-size: 24px;
-    }
+  .footer_linkheading {
+    font-size: 24px;
+  }
 
-    .address address {
-        font-size: 18px;
-    }
+  .address address {
+    font-size: 18px;
+  }
 
-    .telephone {
-        margin-top: 13px;
-    }
+  .telephone {
+    margin-top: 13px;
+  }
 
-    .telephone svg {
-        font-size: 20px;
-    }
+  .telephone svg {
+    font-size: 20px;
+  }
 
-    .telephone span {
-        font-size: 18px;
-    }
+  .telephone span {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .footer_linkheading {
-        font-size: 22px;
-    }
+  .footer_linkheading {
+    font-size: 22px;
+  }
 
-    .address address {
-        font-size: 16px;
-    }
+  .address address {
+    font-size: 16px;
+  }
 
-    .telephone {
-        margin-top: 10px;
-    }
+  .telephone {
+    margin-top: 10px;
+  }
 
-    .telephone svg {
-        font-size: 18px;
-    }
+  .telephone svg {
+    font-size: 18px;
+  }
 
-    .telephone span {
-        font-size: 16px;
-    }
+  .telephone span {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .footer_linkheading {
-        font-size: 20px;
-        margin-bottom: 9px;
-    }
+  .footer_linkheading {
+    font-size: 20px;
+    margin-bottom: 9px;
+  }
 
-    .address address {
-        font-size: 15px;
-    }
+  .address address {
+    font-size: 15px;
+  }
 
-    .telephone {
-        margin-top: 8px;
-    }
+  .telephone {
+    margin-top: 8px;
+  }
 
-    .telephone svg {
-        font-size: 16px;
-    }
+  .telephone svg {
+    font-size: 16px;
+  }
 
-    .telephone span {
-        font-size: 15px;
-    }
+  .telephone span {
+    font-size: 15px;
+  }
 
-    .socialimages img {
-        width: 45px;
-    }
+  .socialimages img {
+    width: 45px;
+  }
 
-    .footer_belowtext {
-        font-size: 16px;
-    }
+  .footer_belowtext {
+    font-size: 16px;
+  }
 }
 
-
 @media only screen and (max-width: 767px) {
-    .footer_linkheading {
-        font-size: 16px;
-    }
+  .footer_linkheading {
+    font-size: 16px;
+  }
 
-    .address address {
-        font-size: 10px;
-    }
+  .address address {
+    font-size: 10px;
+  }
 
-    .telephone {
-        margin-top: 5px;
-    }
+  .telephone {
+    margin-top: 5px;
+  }
 
-    .telephone svg {
-        font-size: 11px;
-    }
+  .telephone svg {
+    font-size: 11px;
+  }
 
-    .telephone span {
-        font-size: 10px;
-    }
+  .telephone span {
+    font-size: 10px;
+  }
 
-    .socialimages img {
-        width: 35px;
-    }
+  .socialimages img {
+    width: 35px;
+  }
 
-    .footer_belowtext {
-        font-size: 10px;
-    }
+  .footer_belowtext {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {
-    .footer_linkheading {
-        font-size: 18px;
-        margin-bottom: 4px
-    }
+  .footer_linkheading {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
 
-    .address address {
-        font-size: 12px;
-    }
+  .address address {
+    font-size: 12px;
+  }
 
-    .telephone svg {
-        font-size: 15px;
-    }
+  .telephone svg {
+    font-size: 15px;
+  }
 
-    .telephone span {
-        font-size: 12px;
-    }
+  .telephone span {
+    font-size: 12px;
+  }
 
-    .socialimages img {
-        width: 45px;
-    }
+  .socialimages img {
+    width: 45px;
+  }
 
-    .footer_belowtext {
-        font-size: 12px;
-    }
+  .footer_belowtext {
+    font-size: 12px;
+  }
 }

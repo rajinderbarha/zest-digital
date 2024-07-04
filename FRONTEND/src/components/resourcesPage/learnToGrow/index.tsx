@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./learnToGrow.module.css";
 import Image from "next/image";
 import Logo_moving from "@/common/Logo_moving";

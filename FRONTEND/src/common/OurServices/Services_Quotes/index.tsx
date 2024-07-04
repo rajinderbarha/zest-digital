@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Services_Quotes.module.css";
 import { ServiceQuote } from "../../../../lib/interface";
 
@@ -7,9 +6,7 @@ interface Services_Quotes {
 }
 
 const Services_Quotes: React.FC<Services_Quotes> = ({ Services_Quotes }) => {
-  return (
-    <>
-      <div className={`${classes.services_quotes} main_padding  overflow-x-hidden`}>
+  return <div className={`${classes.services_quotes} main_padding  overflow-x-hidden`}>
         <div className='main_container'>
           {Services_Quotes && Services_Quotes.map(({ desc_quote, name_quote }, index) => (
             <div className="" key={index}>
@@ -28,8 +25,7 @@ const Services_Quotes: React.FC<Services_Quotes> = ({ Services_Quotes }) => {
           ))}
         </div>
       </div>
-    </>
-  );
+
 };
 
 export default Services_Quotes;

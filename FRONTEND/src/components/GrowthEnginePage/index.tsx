@@ -1,4 +1,3 @@
-import React from "react";
 import { useRouter } from "next/router";
 import GrowthEnginePage_Banner from "./GrowthEnginePage_Banner";
 import GrowthEnginePage_Box from "./GrowthEnginePage_Box";

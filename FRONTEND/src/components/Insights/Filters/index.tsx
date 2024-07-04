@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import Image from "next/image";
 import classes from "./Filters.module.css";
 import Filters_Desktop_image from "../../../assets/images/Insights_bg_gradient.png";

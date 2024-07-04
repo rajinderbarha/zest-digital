@@ -1,191 +1,183 @@
 .growth_engine {
-    width: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
-
-@media only screen and (max-width:1175px) {
-    .grow_image {
-        width: 450px;
-        bottom: -100px;
-        right: -50px;
-    }
-
+@media only screen and (max-width: 1175px) {
+  .grow_image {
+    width: 450px;
+    bottom: -100px;
+    right: -50px;
+  }
 }
 
-@media only screen and (min-width:768px) and (max-width:1024px) {
-    .growth_engine_title {
-        font-size: 35px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .growth_engine_title {
+    font-size: 35px;
+  }
 
-    .growth_engine_desc {
-        font-size: 25px;
-        line-height: 32px;
-        margin-top: 25px;
-        margin-bottom: 30px;
-    }
+  .growth_engine_desc {
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
 
-    .growth_engine {
-        padding: 50px 40px 50px 40px;
-    }
+  .growth_engine {
+    padding: 50px 40px 50px 40px;
+  }
 
-    .grow_image {
-        width: 400px;
-    }
+  .grow_image {
+    width: 400px;
+  }
 }
 
-@media only screen and (min-width:768px) and (max-width:865px) {
-    .grow_image {
-        width: 350px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 865px) {
+  .grow_image {
+    width: 350px;
+  }
 }
 
+@media only screen and (max-width: 767px) {
+  .growth_engine_title {
+    font-size: 25px;
+  }
 
-@media only screen and (max-width:767px) {
-    .growth_engine_title {
-        font-size: 25px;
-    }
+  .growth_engine_desc {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 12px auto;
+  }
 
-    .growth_engine_desc {
-        font-size: 18px;
-        line-height: 23px;
-        margin: 12px auto;
-    }
+  .growth_engine {
+    padding: 30px 23px 30px 23px;
+  }
 
-    .growth_engine {
-        padding: 30px 23px 30px 23px;
-    }
+  .growth_engine button {
+    font-size: 14px;
+  }
 
-    .growth_engine button {
-        font-size: 14px;
-    }
+  .growth_engine button img {
+    padding: 6px 4px 6px 4px;
+    width: 25px;
+  }
 
-    .growth_engine button img {
-        padding: 6px 4px 6px 4px;
-        width: 25px;
-    }
-
-    .grow_image {
-        width: 300px;
-    }
-
+  .grow_image {
+    width: 300px;
+  }
 }
 
-@media only screen and (max-width:500px) {
-    .growth_engine_title {
-        font-size: 18px;
-    }
+@media only screen and (max-width: 500px) {
+  .growth_engine_title {
+    font-size: 18px;
+  }
 
-    .growth_engine_desc {
-        font-size: 12px;
-        line-height: 15px;
-    }
+  .growth_engine_desc {
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-    .growth_engine button {
-        font-size: 11px;
-    }
+  .growth_engine button {
+    font-size: 11px;
+  }
 
-    .growth_engine button span {
-        font-size: 15px;
-    }
+  .growth_engine button span {
+    font-size: 15px;
+  }
 }
 
-@media only screen and (max-width:530px) {
-    .grow_image {
-        width: 250px;
-    }
+@media only screen and (max-width: 530px) {
+  .grow_image {
+    width: 250px;
+  }
 }
 
-@media only screen and (max-width:320px) {
-    .growth_engine {
-        padding: 20px 15px 20px 15px;
-    }
+@media only screen and (max-width: 320px) {
+  .growth_engine {
+    padding: 20px 15px 20px 15px;
+  }
 }
 
-@media only screen and (max-width:380px) {
-    .growth_engine button {
-        font-size: 10px;
-        padding: 3px 3px 3px 6px;
-    }
+@media only screen and (max-width: 380px) {
+  .growth_engine button {
+    font-size: 10px;
+    padding: 3px 3px 3px 6px;
+  }
 }
 
-@media only screen and (max-width:351px) {
-    .growth_engine button {
-        font-size: 9px;
-    }
+@media only screen and (max-width: 351px) {
+  .growth_engine button {
+    font-size: 9px;
+  }
 
-    .growth_engine button span {
-        font-size: 12px;
-    }
+  .growth_engine button span {
+    font-size: 12px;
+  }
 }
 
-@media only screen and (max-width:315px) {
-    .growth_engine button {
-        font-size: 8px;
-    }
+@media only screen and (max-width: 315px) {
+  .growth_engine button {
+    font-size: 8px;
+  }
 }
 
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+  .growth_engine_title {
+    font-size: 26px;
+  }
 
+  .growth_engine_desc {
+    font-size: 18px;
+    line-height: 23px;
+  }
 
-@media only screen and (min-width:540px) and (max-width:830px) {
-    .growth_engine_title {
-        font-size: 26px;
-    }
-
-    .growth_engine_desc {
-        font-size: 18px;
-        line-height: 23px;
-    }
-
-    .grow_image {
-        width: 262px;
-        bottom: -143px;
-    }
+  .grow_image {
+    width: 262px;
+    bottom: -143px;
+  }
 }
 
-@media only screen and (max-width:815px) {
-    .grow_image {
-        width: 220px;
-    }
+@media only screen and (max-width: 815px) {
+  .grow_image {
+    width: 220px;
+  }
 }
 
-@media only screen and (max-width:715px) {
-    .grow_image {
-        width: 200px;
-    }
+@media only screen and (max-width: 715px) {
+  .grow_image {
+    width: 200px;
+  }
 }
-
 
 .growth_engine {
-    max-width: 1345px;
-    border: 1px solid black;
-    background-color: white;
+  max-width: 1345px;
+  border: 1px solid black;
+  background-color: white;
 }
 
 @media only screen and (min-width: 1280px) {
-    .growth_engine {
-        padding: 70px 28px 70px 56px;
-    }
+  .growth_engine {
+    padding: 70px 28px 70px 56px;
+  }
 
-    .growth_engine_desc {
-        font-size: 30px;
-        line-height: 39px;
-    }
+  .growth_engine_desc {
+    font-size: 30px;
+    line-height: 39px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .growth_engine {
-        padding: 50px 20px 50px 48px;
-    }
+  .growth_engine {
+    padding: 50px 20px 50px 48px;
+  }
 
-    .growth_engine_desc {
-        font-size: 30px;
-        line-height: 39px;
-    }
+  .growth_engine_desc {
+    font-size: 30px;
+    line-height: 39px;
+  }
 }
 
-
-@media only screen and (max-width:550px) {
-    .growth_engine {
-        padding: 30px 15px 30px 15px;
-    }
+@media only screen and (max-width: 550px) {
+  .growth_engine {
+    padding: 30px 15px 30px 15px;
+  }
 }

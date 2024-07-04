@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './CallYourInformationPage.module.css'
 import Link from 'next/link'
 import { GoArrowLeft } from "react-icons/go";

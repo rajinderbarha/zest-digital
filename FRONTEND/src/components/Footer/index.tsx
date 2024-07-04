@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import classes from "./footer.module.css";
 import Image from "next/image";
 import { urlFor } from "../../../lib/sanity.client";
@@ -87,7 +87,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                 <div className={`${classes.socialimages} flex md:justify-start justify-center md:gap-5 sm:gap-[15px] gap-[10px]`} data-aos="fade-up">
 
                   <div className="group">
-                    {/* <Link href="https://www.facebook.com/ZestDigital/"> */}
+
                     <Link href={item.social[0].socialLink}>
                       <Image
                         src={facebook_white}

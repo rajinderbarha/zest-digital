@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AccordianType } from "../../../lib/interface";
@@ -21,15 +21,7 @@ const Global_Accordion = ({
     );
   };
 
-  const handleContentRef = (el: HTMLDivElement | null, index: number) => {
-    if (el) {
-      contentRefs.current[index] = el;
-    }
-  };
-
-  return (
-  
-   <div className="">
+  return <div className="">
     <div className={`${classes.accordion} max-w-[1520px] mx-auto `}>
       <div className={`${classes.accordion_heading} font-mono font-semibold max-w-[300px] sm:max-w-full mx-auto text-center text-color-1 `} data-aos="fade">
       {heading_acc}
@@ -72,8 +64,6 @@ const Global_Accordion = ({
         </Link>
       </div>
     </div>
-  
-  );
 };
 
 export default Global_Accordion;
