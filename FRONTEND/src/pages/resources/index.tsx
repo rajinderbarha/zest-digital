@@ -1,6 +1,6 @@
 import LearnToGrow from "@/components/resourcesPage/learnToGrow";
 import Resourcesbanner from "@/components/resourcesPage/resourcesbanner/resourcesbanner";
-import React, { useState } from "react";
+import { useState } from "react";
 import { getResourcesData } from "../../../lib/sanity.query";
 import { useSearchParams } from "next/navigation";
 import Resources_Calculater_Step_1 from "@/components/Resources_Calculater_Step_1";
@@ -11,6 +11,7 @@ import Resources_Calculater_Step_4 from "@/components/Resources_Calculater_Step_
 import Resources_Calculater_Step_5 from "@/components/Resources_Calculater_Step_5";
 import StepPopup from "@/common/PopupWrapper/stepPopup";
 import { useForm } from "react-hook-form";
+import Head from "next/head";
 
 function resources({ resources }: any) {
   const searchParams = useSearchParams();
@@ -111,11 +112,21 @@ function resources({ resources }: any) {
 
         </>
       </StepPopup>
-      <div className="Body_padding">
-        <Resourcesbanner data={resources[0]} />
-        <LearnToGrow data={resources[0]} setSelectedFileUrl={setSelectedFileUrl} />
 
-      </div>
+      <>
+        <Head>
+          <title>General  2 — Zest Digital</title>
+          <meta name="title" property="" content="General  2 — Zest Digital" />
+          <meta name="url" property="og:url" content="https://www.zestdigital.com/resources" />
+          <meta name="keywords" property="og:keywords" content="zest, calculator, workbook , ideas" />
+          <meta name="description" property="og:description" content="" />
+        </Head>
+        <div className="Body_padding">
+          <Resourcesbanner data={resources[0]} />
+          <LearnToGrow data={resources[0]} setSelectedFileUrl={setSelectedFileUrl} />
+
+        </div>
+      </>
 
     </>
   );
