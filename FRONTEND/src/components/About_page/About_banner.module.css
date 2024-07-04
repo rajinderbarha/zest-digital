@@ -27,7 +27,6 @@
 }
 
 .values_bg {
-  /* background-image: url(../..//assets/images/Gradient_values.png); */
   background-image: url(../..//assets/images/compress/Gradient_values_compress.avif);
   background-position: center;
   background-size: cover;
@@ -55,7 +54,6 @@
 }
 
 .Escape {
-  /* background-image: url(../../assets/images/Escape.png); */
   background-image: url(../../assets/images/compress/Escape_compress.avif);
   background-position: center;
   background-size: cover;

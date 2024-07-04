@@ -303,14 +303,12 @@
 .career_box::before {
   top: 0;
   left: 0;
-  /* background-image: url("../../assets/images/Gradient_calendar_new_transparent_right.png"); */
   background-image: url("../../assets/images/compress/Gradient_calendar_new_transparent_right_compress.avif");
   background-position: top left;
 }
 .career_box::after {
   bottom: 0;
   right: 0;
-  /* background-image: url("../../assets/images/Gradient_calendar_new_transparent_left.png"); */
   background-image: url("../../assets/images/compress/Gradient_calendar_new_transparent_left_compress.avif");
   background-position: right bottom;
 }

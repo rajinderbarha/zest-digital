@@ -4,8 +4,7 @@
     background-color: #afadac;
     border-radius: 10px; 
     overflow: hidden;
-    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);  */
-    /* height: 20px; */
+   
     @apply md:h-[20px] sm:h-[16px] h-[12px] md:shadow-[inset_0_0_5px_rgba(0,0,0,0.2)] shadow-[inset_0_0_3px_rgba(0,0,0,0.2)]
   }
   
