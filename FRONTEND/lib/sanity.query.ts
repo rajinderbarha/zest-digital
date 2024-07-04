@@ -87,11 +87,7 @@ export async function getAboutData() {
         description
       }
     },
-    banner {
-      image1,
-      image2,
-      description
-    }
+  
   }
   
   `;
