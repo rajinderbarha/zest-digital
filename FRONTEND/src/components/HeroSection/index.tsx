@@ -59,7 +59,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
           <div className={`${classes.marketing_agency_logo_2}`}></div>
           <div className={classes.custom_border} data-aos="zoom-in" data-aos-duration="1500">
 
-            <video width="680" height="480" controls className={`${classes.video_class} xl:rounded-30px md:rounded-[20px] rounded-[10px]`} preload="auto">
+            <video width="680" height="480" controls className={`${classes.video_class} xl:rounded-30px md:rounded-[20px] rounded-[10px]`} preload="metadata">
               <source src={videosrc} type="video/mp4" />
 
               Your browser does not support the video tag.
