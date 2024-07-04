@@ -67,9 +67,9 @@
   .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm {
     margin: 20px !important;
   }
-  .MuiDialog-container.MuiDialog-scrollPaper {
+  /* .MuiDialog-container.MuiDialog-scrollPaper {
     align-items: center;
-  }
+  } */
 }
 @media only screen and (max-width: 639px) {
   .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm {

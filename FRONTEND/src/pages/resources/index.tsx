@@ -11,7 +11,9 @@ import Resources_Calculater_Step_4 from "@/components/Resources_Calculater_Step_
 import Resources_Calculater_Step_5 from "@/components/Resources_Calculater_Step_5";
 import StepPopup from "@/common/PopupWrapper/stepPopup";
 import { useForm } from "react-hook-form";
+
 import Head from "next/head";
+
 
 function resources({ resources }: any) {
   const searchParams = useSearchParams();
@@ -113,6 +115,7 @@ function resources({ resources }: any) {
         </>
       </StepPopup>
 
+
       <>
         <Head>
           <title>General  2 — Zest Digital</title>
@@ -127,6 +130,7 @@ function resources({ resources }: any) {
 
         </div>
       </>
+
 
     </>
   );

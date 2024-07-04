@@ -3,6 +3,7 @@ import { useState } from 'react'
 import ecommerce_icon from '../../assets/images/ecommerce_icon_svg.svg'
 import letter_icon from '../../assets/images/letter_icon_svg.svg'
 import classes from './Resources_Calculater_Step_2.module.css'
+import style from '../Resources_Calculater_Step_1/Resources_Calculater.module.css'
 import { GoArrowLeft } from "react-icons/go";
 import ProgressBar from '@/common/ProgressBar';
 
@@ -31,6 +32,7 @@ function Resources_Calculater_Step_2({ setStep, setFormData }: any) {
         }
     };
 
+    
     return <div className="Resources_Calculater_Step_2">
         <div className="pe-[6px] pb-[6px]">
             <div className="Resources_Calculater_Step_2 popup_conatiner  md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
@@ -42,13 +44,13 @@ function Resources_Calculater_Step_2({ setStep, setFormData }: any) {
                     <p className="font-mono text-[15px] md:text-base font-normal text-center ">Select an option below:</p>
                 </div>
                 <div className="grid md:grid-cols-2 sm:gap-10 gap-[20px] xl:mb-[70px] lg:mb-[50px] md:mb-[30px]  mb-[55px]">
-                    <div className={`col-span-1 max-w-[493px] mx-auto text-center p-[10px]  rounded-[30px] border border-transparent ${selectedBusinessType === 'ecommerce' ? classes.select_element : ''}`} onClick={handleEcommerceClick}>
+                    <div className={`${style.step_2_text} col-span-1 max-w-[520px] mx-auto text-center p-[10px]  border border-[transparent] ${selectedBusinessType === 'ecommerce' ? classes.select_element : ''}`} onClick={handleEcommerceClick}>
                         <div className="text-center mx-auto">
                             <Image src={ecommerce_icon} alt='' className='mx-auto lg:max-w-[195px] lg:max-h-[195px] md:max-w-[140px] md:max-h-[140px] sm:max-w-[100px] sm:max-h-[100px] max-w-[90px] max-h-[90px] ' />
                         </div>
                         <p className="font-mono lg:text-30px md:text-25px sm:text-[20px] text-[18px] font-normal mt-[10px]">We’re an ecommerce business and take payments directly through our website.</p>
                     </div>
-                    <div className={`col-span-1 max-w-[493px]  mx-auto text-center p-[10px] rounded-[30px] border border-transparent ${selectedBusinessType === 'lead generation' ? classes.select_element : ''} `} onClick={handleLeadGenerationClick}>
+                    <div className={`${style.step_2_text} col-span-1 max-w-[520px]  mx-auto text-center p-[10px] border border-transparent ${selectedBusinessType === 'lead generation' ? classes.select_element : ''} `} onClick={handleLeadGenerationClick}>
                         <div className=" text-center mx-auto">
                             <Image src={letter_icon} alt='' className='mx-auto lg:max-w-[195px] lg:max-h-[195px] md:max-w-[140px] md:max-h-[140px] sm:max-w-[100px] sm:max-h-[100px] max-w-[90px] max-h-[90px]' />
                         </div>

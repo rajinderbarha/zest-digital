@@ -1,0 +1,59 @@
+
+.step_1_text p, .step_2_text p{
+    line-height: 24px;
+}
+.step_2_text{
+    padding-bottom: 15px;
+    @apply rounded-[15px] md:rounded-[20px] lg:rounded-[30px]
+}
+.step_3_heading{
+    line-height: 28px;
+} 
+
+@media (min-width:639px){
+ 
+    .step_1_text p, .step_2_text p{
+    line-height: 26px;
+}  
+.step_2_text{
+
+    padding-bottom: 20px;
+}
+.step_3_heading{
+    line-height: 32px;
+}  
+}
+@media (min-width:768px){
+    
+.step_1_text p, .step_2_text p {
+    line-height: 32px;
+}
+.step_2_text{
+
+    padding-bottom: 25px;
+}
+.step_3_heading{
+    line-height: 42px;
+} 
+}
+@media (min-width:1024px){
+    .step_1_text p, .step_2_text p{
+        line-height: 39px;
+    } 
+    .step_2_text{
+
+        padding-bottom: 27px;
+    }
+    .step_3_heading{
+        line-height: 54px;
+    }  
+}
+@media (min-width:1280px){
+    .step_2_text{
+        padding-bottom: 30px;
+
+    }
+    .step_3_heading{
+        line-height: 58px;
+    }  
+}

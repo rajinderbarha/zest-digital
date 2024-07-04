@@ -1,6 +1,7 @@
 import ProgressBar from '@/common/ProgressBar';
 import  { useState } from 'react';
 import { GoArrowLeft } from "react-icons/go";
+import classes from '../Resources_Calculater_Step_1/Resources_Calculater.module.css'
 
 function Resources_Calculator_Step_3({ setStep, setFormData }: any) {
     const [selectedIndustry, setSelectedIndustry] = useState("");
@@ -28,7 +29,7 @@ function Resources_Calculator_Step_3({ setStep, setFormData }: any) {
                     <ProgressBar value={60} />
                 </div>
                 <div className="xl:max-w-[670px] lg:max-w-[570px] md:max-w-[510px] sm:max-w-[440px] max-w-[365px] mx-auto mb-[35px] md:mb-[53px] px-[5px]">
-                    <h2 className="font-mono mx-auto max-w-[400px] sm:max-w-[500px] lg:max-w-[670px] xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[20px] font-semibold text-center xl:mb-[40px] lg:mb-[30px] md:mb-[20px] mb-[15px]">What industry does your business operate in?</h2>
+                    <h2 className={`${classes.step_3_heading} font-mono mx-auto max-w-[400px] sm:max-w-[500px] lg:max-w-[670px] xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[20px] font-semibold text-center xl:mb-[40px] lg:mb-[30px] md:mb-[20px] mb-[15px]`}>What industry does your business operate in?</h2>
 
                     <div className="industry">
                         <label htmlFor="industry" className="text-color-1 font-normal font-mono w-full sm:text-base text-[13px]">Select your industry from the list</label>
