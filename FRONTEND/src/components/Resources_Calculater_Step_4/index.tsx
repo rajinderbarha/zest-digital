@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import classes from "./Resources_Calculater_Step_4.module.css"
 import popup_person from '../../assets/images/popup_person.svg'
 import popup_percentage from '../../assets/images/percent.svg'

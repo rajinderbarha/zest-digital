@@ -1,5 +1,4 @@
 import { usePopup } from "@/context";
-import React from "react";
 
 const PopupWrapper = ({ children }: any) => {
   const { isOpen, openPopup, closePopup } = usePopup() as any;

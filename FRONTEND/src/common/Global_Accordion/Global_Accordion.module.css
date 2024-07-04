@@ -4,7 +4,7 @@
 
 .accordion_item,
 .accordion_content {
-  @apply rounded-[15px] lg:rounded-[30px] md:rounded-[20px]
+  @apply rounded-[15px] lg:rounded-[30px] md:rounded-[20px];
 }
 
 .accordion_item {
@@ -13,7 +13,6 @@
 
 .content_inner p a {
   @apply underline text-color-9;
-
 }
 
 .content_inner p a:has(strong) {
@@ -23,20 +22,20 @@
 .content_inner p a strong {
   font-weight: 400;
 }
-.content_inner p a:has(strong):hover{
-@apply border-transparent
+.content_inner p a:has(strong):hover {
+  @apply border-transparent;
 }
 
 .content_inner p a strong::after {
-  content: '';
-  background-image: url('../../assets/images/Right_arrow.svg');
+  content: "";
+  background-image: url("../../assets/images/Right_arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-position: relative;
-right:-3px;
+  position: relative;
+  right: -3px;
   width: 28px;
   height: 28px;
-  padding:0 12px ;
+  padding: 0 12px;
 }
 
 .accordion_title {
@@ -49,7 +48,7 @@ right:-3px;
   transition: background-color 0.3s ease;
   width: 100%;
   border: none;
-  @apply lg:rounded-[28px] md:rounded-[18px] rounded-[13px]
+  @apply lg:rounded-[28px] md:rounded-[18px] rounded-[13px];
 }
 
 .accordion_item:not(:last-child) {
@@ -60,7 +59,6 @@ right:-3px;
 .accordion_title.open {
   background-color: #191615;
 }
-
 
 .accordion_icon {
   transition: transform 0.3s ease;
@@ -150,32 +148,32 @@ right:-3px;
 .accordion_heading {
   font-size: 22px;
   line-height: 30px;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
-.title_text_class{
+.title_text_class {
   font-size: 12px;
   line-height: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.content_inner{
+.content_inner {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 .speak_button {
-  font-size: 12px; 
-  padding-left: 20px; 
+  font-size: 12px;
+  padding-left: 20px;
   padding-right: 20px;
   padding-top: 7px;
   padding-bottom: 7px;
-  margin-top: 36px; 
+  margin-top: 36px;
 }
 .desc_text_class {
   font-size: 12px;
   line-height: 15px;
 }
 .title_desc_padding_class {
-  padding-left: 20px; 
+  padding-left: 20px;
   padding-right: 20px;
 }
 
@@ -183,68 +181,68 @@ right:-3px;
   .accordion_heading {
     font-size: 30px;
     line-height: 39px;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
   }
-  .title_text_class{
-    font-size: 25px; 
+  .title_text_class {
+    font-size: 25px;
     line-height: 35px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .desc_text_class {
-    font-size: 25px; 
+    font-size: 25px;
     line-height: 35px;
   }
   .title_desc_padding_class {
-    padding-left: 30px; 
+    padding-left: 30px;
     padding-right: 30px;
   }
 }
 
 @media (min-width: 768px) {
   .accordion_heading {
-    font-size: 45px; 
+    font-size: 45px;
     line-height: 58px;
-    margin-bottom: 80px; 
+    margin-bottom: 80px;
   }
-  .content_inner{
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-.speak_button {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 10px; 
-  padding-bottom: 10px;
-  margin-top: 60px; 
-}
-.title_text_class {
-  font-size: 28px;
-  line-height: 36px; 
-}
-.desc_text_class {
-  font-size: 28px; 
-  line-height: 36px;
-}
-.title_desc_padding_class {
-  padding-left: 45px; 
-  padding-right: 45px;
-}
+  .content_inner {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .speak_button {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 60px;
+  }
+  .title_text_class {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .desc_text_class {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .title_desc_padding_class {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
   .accordion_heading {
-    font-size: 30px; 
+    font-size: 30px;
     line-height: 39px;
-    margin-bottom: 65px; 
+    margin-bottom: 65px;
   }
-  .title_text_class{
+  .title_text_class {
     font-size: 20px;
     line-height: 27px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
-  .content_inner{
+  .content_inner {
     padding-top: 46px;
     padding-bottom: 46px;
   }
@@ -252,7 +250,7 @@ right:-3px;
     margin-top: 50px;
   }
   .desc_text_class {
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 20px;
   }
   .title_desc_padding_class {
@@ -263,33 +261,33 @@ right:-3px;
 
 @media (min-width: 1024px) {
   .accordion_heading {
-    font-size: 45px; 
+    font-size: 45px;
     line-height: 58px;
-    margin-bottom: 100px; 
+    margin-bottom: 100px;
   }
-  .content_inner{
+  .content_inner {
     padding-top: 50px;
     padding-bottom: 50px;
   }
   .title_text_class {
-    font-size: 30px; 
+    font-size: 30px;
     line-height: 39px;
   }
   .desc_text_class {
-    font-size: 30px; 
+    font-size: 30px;
     line-height: 39px;
   }
   .title_desc_padding_class {
-    padding-left: 55px; 
+    padding-left: 55px;
     padding-right: 55px;
   }
 }
 
 @media (min-width: 1280px) {
   .accordion_heading {
-    margin-bottom: 115px; 
+    margin-bottom: 115px;
   }
-  .content_inner{
+  .content_inner {
     padding-top: 80px;
     padding-bottom: 80px;
   }

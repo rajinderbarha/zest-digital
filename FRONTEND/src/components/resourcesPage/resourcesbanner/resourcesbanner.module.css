@@ -1,48 +1,45 @@
-
 .banner_text {
-    font-size: 22px; 
-    line-height: 30px;
-    margin-bottom: 20px;
-    max-width: 442px;
-  }
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  max-width: 442px;
+}
 
-  @media only screen and  (min-width: 640px) {
-    .banner_text {
-      font-size: 30px;
-      line-height: 45px;
-    }
+@media only screen and (min-width: 640px) {
+  .banner_text {
+    font-size: 30px;
+    line-height: 45px;
   }
-  
+}
 
-  @media only screen and  (min-width: 768px) {
-    .banner_text {
-      font-size: 42px;
-      line-height: 55px;
-      max-width: 773px;
-    }
+@media only screen and (min-width: 768px) {
+  .banner_text {
+    font-size: 42px;
+    line-height: 55px;
+    max-width: 773px;
   }
-  
-  @media only screen and  (min-width: 1024px) {
-    .banner_text {
-      font-size: 50px;
-      line-height: 70px;
-      max-width: 952px;
-    }
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner_text {
+    font-size: 50px;
+    line-height: 70px;
+    max-width: 952px;
   }
-  
-  @media only screen and  (min-width: 540px) and (max-width: 830px) {
-    .banner_text {
-      font-size: 30px;
-      line-height: 45px;
-      max-width: 516px;
-    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+  .banner_text {
+    font-size: 30px;
+    line-height: 45px;
+    max-width: 516px;
   }
-  
-  @media only screen and  (min-width: 1280px) {
-    .banner_text {
-      font-size: 55px;
-      line-height: 75px;
-      max-width: 1050px;
-    }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner_text {
+    font-size: 55px;
+    line-height: 75px;
+    max-width: 1050px;
   }
-  
+}

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import classes from "./ScheduleCall.module.css";
 import Image from "next/image";
 import { urlFor } from "../../../lib/sanity.client";

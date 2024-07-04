@@ -11,13 +11,11 @@ function MyApp({
   headerdata,
   footerdata,
 }: AppProps & { headerdata: HeaderType[]; footerdata: FooterType[] }) {
-  return (
-    <PopupProvider>
-      <Layout headerdata={headerdata} footerdata={footerdata}>
-        <Component {...pageProps} />
-      </Layout>
-    </PopupProvider>
-  );
+  return <PopupProvider>
+    <Layout headerdata={headerdata} footerdata={footerdata}>
+      <Component {...pageProps} />
+    </Layout>
+  </PopupProvider>
 }
 
 MyApp.getInitialProps = async () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Services_book_call.module.css";
 import { Services_book_cal } from "../../../../lib/interface";
 import Link from "next/link";

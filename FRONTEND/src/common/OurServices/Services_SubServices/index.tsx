@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import classes from "./Services_SubServices.module.css";
 import { urlFor } from "../../../../lib/sanity.client";
 import { SubServices } from "../../../../lib/interface";

@@ -10,15 +10,13 @@ import 'aos/dist/aos.css';
 
 const About_page = ({ aboutdata }: { aboutdata: AboutType[] }) => {
 
-  return (
-    <div className="Body_padding">
-      <About_banner data={aboutdata} />
-      <About_team data={aboutdata} />
-      <Our_values data={aboutdata} />
-      <Zest_for_life data={aboutdata} />
-      <Escape data={aboutdata} />
-    </div>
-  );
+  return <div className="Body_padding">
+    <About_banner data={aboutdata} />
+    <About_team data={aboutdata} />
+    <Our_values data={aboutdata} />
+    <Zest_for_life data={aboutdata} />
+    <Escape data={aboutdata} />
+  </div>
 };
 export default About_page;
 

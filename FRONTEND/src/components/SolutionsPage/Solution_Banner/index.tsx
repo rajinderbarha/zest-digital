@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import classes from './Solution_Banner.module.css'
 import { urlFor } from '../../../../lib/sanity.client'

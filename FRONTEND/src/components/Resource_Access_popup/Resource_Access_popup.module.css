@@ -1,20 +1,20 @@
-@media only screen and (max-width:1130px) {
-    .form_inputs {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 1130px) {
+  .form_inputs {
+    flex-direction: column;
+  }
 
-    .form_inputs div {
-        max-width: 100%;
-        margin-bottom: 30px;
-    }
+  .form_inputs div {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
 }
-@media only screen and (max-width:768px) {
-    .form_inputs div {
-        margin-bottom: 22px;
-    }
+@media only screen and (max-width: 768px) {
+  .form_inputs div {
+    margin-bottom: 22px;
+  }
 }
-@media only screen and (max-width:640px) {
-    .form_inputs div {
-        margin-bottom: 15px;
-    }
+@media only screen and (max-width: 640px) {
+  .form_inputs div {
+    margin-bottom: 15px;
+  }
 }

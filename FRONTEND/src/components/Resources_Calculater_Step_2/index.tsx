@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ecommerce_icon from '../../assets/images/ecommerce_icon_svg.svg'
 import letter_icon from '../../assets/images/letter_icon_svg.svg'
 import classes from './Resources_Calculater_Step_2.module.css'

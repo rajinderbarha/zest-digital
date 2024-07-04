@@ -1,5 +1,4 @@
 import GrowthEnginePage from "@/components/GrowthEnginePage";
-import React from "react";
 import { getGrowthData, getSolutionData } from "../../../lib/sanity.query";
 import { GetStaticPaths, GetStaticPropsContext } from "next";
 import Custom404 from "../404";
@@ -8,13 +7,11 @@ function growthengine({ errorCode, growth, card }: any) {
   if (errorCode) {
     return <Custom404 />;
   }
-  return (
-    <GrowthEnginePage
-      data={growth[0]}
-      card={card}
-      otherSolHeading={growth[0].Solheading}
-    />
-  );
+  return <GrowthEnginePage
+    data={growth[0]}
+    card={card}
+    otherSolHeading={growth[0].Solheading}
+  />
 }
 export default growthengine;
 

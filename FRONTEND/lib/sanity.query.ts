@@ -47,21 +47,6 @@ export function getFooter() {
   );
 }
 
-// export function getClimateActionData() {
-//   return client.fetch(
-//     groq`
-//    *[_type == "climteaction"]{
-//   "climateActionImgUrl": climate_actionImg.asset->url,
-//   "earthImgUrl": earth_img.asset->url,
-//   smallDescription
-// }
-//     `
-//   );
-// }
-
-
-
-
 export async function getAboutData() {
   const query = `
   *[_type == 'about'] {

@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './SingleIntro.module.css'
 import Objective from '../singlebox/objective'
 import Image from 'next/image';

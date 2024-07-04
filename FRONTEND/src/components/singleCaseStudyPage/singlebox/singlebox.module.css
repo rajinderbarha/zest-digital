@@ -1,247 +1,242 @@
 .objective_inner {
-    padding: 70px 52px;
-    @apply rounded-[15px] md:rounded-[20px] lg:rounded-30px bg-white border border-color-1
+  padding: 70px 52px;
+  @apply rounded-[15px] md:rounded-[20px] lg:rounded-30px bg-white border border-color-1;
 }
 
 .box_tittle {
-    @apply text-color-1 font-semibold font-mono
+  @apply text-color-1 font-semibold font-mono;
 }
 
 .box_detail {
-    @apply font-lato
+  @apply font-lato;
 }
 
 .box_detail div ol {
-    @apply list-decimal
+  @apply list-decimal;
 }
 
 .box_detail div ul {
-    @apply list-disc
+  @apply list-disc;
 }
 
-
 .box_detail div a {
-    @apply text-color-9 underline
+  @apply text-color-9 underline;
 }
 
 .box_detail div h4 {
-    @apply font-mono
+  @apply font-mono;
 }
 
-
 .box_detail div li ul {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 
 .box_detail div h4:first-child {
-    padding-top: 0;
+  padding-top: 0;
 }
 
-
-@media only screen and (min-width:1023px) and (max-width:1280px) {
-    .objective_inner {
-        padding: 60px 48px;
-    }
+@media only screen and (min-width: 1023px) and (max-width: 1280px) {
+  .objective_inner {
+    padding: 60px 48px;
+  }
 }
 
-@media only screen and (min-width:768px) and (max-width:1024px) {
-    .objective_inner {
-        padding: 45px 40px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .objective_inner {
+    padding: 45px 40px;
+  }
 }
 
-@media only screen and (max-width:767px) {
-    .objective_inner {
-        padding: 30px 35px;
-    }
+@media only screen and (max-width: 767px) {
+  .objective_inner {
+    padding: 30px 35px;
+  }
 }
 
-@media only screen and (max-width:639px) {
-    .objective_inner {
-        padding: 30px 20px 60px 20px;
-    }
-
+@media only screen and (max-width: 639px) {
+  .objective_inner {
+    padding: 30px 20px 60px 20px;
+  }
 }
 
-@media only screen and (min-width:640px) and (max-width:830px) {
-    .objective_inner {
-        padding: 40px 50px;
-    }
+@media only screen and (min-width: 640px) and (max-width: 830px) {
+  .objective_inner {
+    padding: 40px 50px;
+  }
 }
-
 
 .objective_inner {
-    background-color: white;
-    border-radius: 15px;
-    gap: 35px;
+  background-color: white;
+  border-radius: 15px;
+  gap: 35px;
 }
 
 .box_tittle {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .box_detail {
-    font-size: 12px;
-    line-height: 20px;
-    margin-top: 15px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 15px;
 }
 
 .box_detail div p:not(:first-child) {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .box_detail div ul,
 .box_detail div ol {
-    padding-top: 10px;
-    padding-left: 25px;
-    list-style-position: outside;
+  padding-top: 10px;
+  padding-left: 25px;
+  list-style-position: outside;
 }
 
 .right_text div ul,
 .right_text div ol {
-    list-style-position: inside !important;
+  list-style-position: inside !important;
 }
 
 .box_detail div h4 {
-    font-size: 20px;
-    line-height: 20px;
-    padding-top: 18px;
-    padding-bottom: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 18px;
+  padding-bottom: 4px;
 }
 
-.box_detail div ul+p,
-.box_detail div ol+p {
-    margin-top: 5px;
+.box_detail div ul + p,
+.box_detail div ol + p {
+  margin-top: 5px;
 }
 
 .box_detail div ul li:not(:last-child),
 .box_detail div ol li:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 640px) {
-    .box_tittle {
-        font-size: 30px;
-    }
+  .box_tittle {
+    font-size: 30px;
+  }
 
-    .box_detail {
-        font-size: 14px;
-        line-height: 21px;
-        margin-top: 20px;
-    }
+  .box_detail {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 20px;
+  }
 
-    .box_detail div ul,
-    .box_detail div ol {
-        padding-left: 20px;
-    }
+  .box_detail div ul,
+  .box_detail div ol {
+    padding-left: 20px;
+  }
 
-    .box_detail div h4 {
-        font-size: 22px;
-        line-height: 28px;
-        padding-top: 22px;
-    }
+  .box_detail div h4 {
+    font-size: 22px;
+    line-height: 28px;
+    padding-top: 22px;
+  }
 }
 
 @media (min-width: 768px) {
-    .objective_inner {
-        border-radius: 20px;
-        gap: 40px;
-    }
+  .objective_inner {
+    border-radius: 20px;
+    gap: 40px;
+  }
 
-    .box_tittle {
-        font-size: 35px;
-    }
+  .box_tittle {
+    font-size: 35px;
+  }
 
-    .box_detail {
-        margin-top: 25px;
-    }
+  .box_detail {
+    margin-top: 25px;
+  }
 
-    .box_detail div p:not(:first-child) {
-        margin-top: 12px;
-    }
+  .box_detail div p:not(:first-child) {
+    margin-top: 12px;
+  }
 
-    .box_detail div ul,
-    .box_detail div ol {
-        padding-top: 20px;
-        padding-left: 10px;
-        list-style-position: inside;
-    }
+  .box_detail div ul,
+  .box_detail div ol {
+    padding-top: 20px;
+    padding-left: 10px;
+    list-style-position: inside;
+  }
 
-    .box_detail div h4 {
-        font-size: 25px;
-        line-height: 30px;
-        padding-top: 28px;
-        padding-bottom: 3px;
-    }
+  .box_detail div h4 {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 28px;
+    padding-bottom: 3px;
+  }
 
-    .box_detail div ul li:not(:last-child),
-    .box_detail div ol li:not(:last-child) {
-        margin-bottom: 17px;
-    }
+  .box_detail div ul li:not(:last-child),
+  .box_detail div ol li:not(:last-child) {
+    margin-bottom: 17px;
+  }
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
-    .box_tittle {
-        font-size: 26px;
-    }
+  .box_tittle {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 830px) {
-    .objective_inner {
-        gap: 35px;
-    }
+  .objective_inner {
+    gap: 35px;
+  }
 
-    .box_detail {
-        font-size: 12px;
-        line-height: 20px;
-        margin-top: 15px;
-    }
+  .box_detail {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .objective_inner {
-        border-radius: 30px;
-    }
+  .objective_inner {
+    border-radius: 30px;
+  }
 
-    .box_tittle {
-        font-size: 40px;
-    }
+  .box_tittle {
+    font-size: 40px;
+  }
 
-    .box_detail {
-        font-size: 16px;
-        line-height: 23px;
-        margin-top: 30px;
-    }
+  .box_detail {
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 30px;
+  }
 
-    .box_detail div p:not(:first-child) {
-        margin-top: 20px;
-    }
+  .box_detail div p:not(:first-child) {
+    margin-top: 20px;
+  }
 
-    .box_detail div ul,
-    .box_detail div ol {
-        padding-top: 25px;
-    }
+  .box_detail div ul,
+  .box_detail div ol {
+    padding-top: 25px;
+  }
 
-    .box_detail div ul+p,
-    .box_detail div ol+p {
-        margin-top: 10px;
-    }
+  .box_detail div ul + p,
+  .box_detail div ol + p {
+    margin-top: 10px;
+  }
 
-    .box_detail div ul li:not(:last-child),
-    .box_detail div ol li:not(:last-child) {
-        margin-bottom: 20px;
-    }
+  .box_detail div ul li:not(:last-child),
+  .box_detail div ol li:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1280px) {
-    .box_tittle {
-        font-size: 45px;
-    }
+  .box_tittle {
+    font-size: 45px;
+  }
 
-    .box_detail {
-        font-size: 18px;
-        line-height: 26px;
-        margin-top: 48px;
-    }
+  .box_detail {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 48px;
+  }
 }

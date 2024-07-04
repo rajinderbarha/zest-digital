@@ -1,87 +1,85 @@
 .box_bg_image {
-    background-image: url('../../assets/images/Gradient_v6.png');
-    background-color: #191615;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../../assets/images/Gradient_v6.png");
+  background-color: #191615;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@media only screen and (max-width:540px) and (min-width:830px) {
-    .t_and_c_cards > div{
-        margin-left: -10px;
-        margin-right: -10px;
-    }
+@media only screen and (max-width: 540px) and (min-width: 830px) {
+  .t_and_c_cards > div {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 
 .term_condition {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
+}
+
+.terms_heading {
+  font-size: 22px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.box_div {
+  margin-top: -626px;
+}
+
+@media (min-width: 640px) {
+  .term_condition {
+    margin-bottom: 90px;
   }
-  
+
   .terms_heading {
-    font-size: 22px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    font-size: 35px;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .term_condition {
+    margin-bottom: 110px;
+  }
+
+  .terms_heading {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
   .box_div {
-    margin-top: -626px;
+    margin-top: -870px;
   }
-  
-  @media (min-width: 640px) {
-    .term_condition {
-      margin-bottom: 90px;
-    }
-  
-    .terms_heading {
-      font-size: 35px;
-    }
+}
+
+@media (min-width: 540px) and (max-width: 830px) {
+  .terms_heading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .term_condition {
+    margin-bottom: 160px;
   }
 
-  @media (min-width: 768px) {
-    .term_condition {
-      margin-bottom: 110px;
-    }
-  
-    .terms_heading {
-      font-size: 40px;
-      margin-top: 50px;
-    }
-  
-    .box_div {
-      margin-top: -870px;
-    }
+  .terms_heading {
+    font-size: 50px;
+    margin-top: 70px;
   }
 
-    
-  @media (min-width: 540px) and (max-width: 830px) {
-    .terms_heading {
-      font-size: 30px;
-    }
+  .box_div {
+    margin-top: -600px;
   }
-  
-  @media (min-width: 1024px) {
-    .term_condition {
-      margin-bottom: 160px;
-    }
-  
-    .terms_heading {
-      font-size: 50px;
-      margin-top: 70px;
-    }
-  
-    .box_div {
-      margin-top: -600px;
-    }
+}
+
+@media (min-width: 1280px) {
+  .term_condition {
+    margin-bottom: 216px;
   }
-  
-  @media (min-width: 1280px) {
-    .term_condition {
-      margin-bottom: 216px;
-    }
-  
-    .terms_heading {
-      font-size: 55px;
-      margin-top: 95px;
-    }
+
+  .terms_heading {
+    font-size: 55px;
+    margin-top: 95px;
   }
-  
+}

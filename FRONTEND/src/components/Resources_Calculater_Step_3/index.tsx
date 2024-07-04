@@ -1,5 +1,5 @@
 import ProgressBar from '@/common/ProgressBar';
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { GoArrowLeft } from "react-icons/go";
 
 function Resources_Calculator_Step_3({ setStep, setFormData }: any) {

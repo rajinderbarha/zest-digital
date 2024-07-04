@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Client_Result.module.css";
 import { GoArrowRight } from "react-icons/go";
 import { clientResults } from "../../../../lib/interface";
@@ -7,9 +6,7 @@ import Link from "next/link";
 const Client_Result: React.FC<clientResults> = (props) => {
   const { belowbuttonName_CR, belowbuttonLink_CR, title_CR, heading_CR, card } = props;
 
-  return (
-    <>
-      <div className={`${classes.Client_Result_container}  Client_Result main_padding `} >
+  return <div className={`${classes.Client_Result_container}  Client_Result main_padding `} >
         <div className='main_container'>
           <div className={`${classes.Client_Result}  main_padding bg-color-1`} data-aos="fade-up">
             <div className={`${classes.Client_Result_title} `}>
@@ -49,8 +46,6 @@ const Client_Result: React.FC<clientResults> = (props) => {
           </div>
         </div>
       </div>
-    </>
-  );
 };
 
 export default Client_Result;

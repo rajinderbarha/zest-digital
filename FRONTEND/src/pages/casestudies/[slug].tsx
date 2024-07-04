@@ -1,4 +1,3 @@
-import React from "react";
 import SingleIntro from "@/components/singleCaseStudyPage/SingleIntro";
 import Singalcasebanner from "@/components/singleCaseStudyPage/singalcasebanner";
 import { getSingleCasestudyData } from "../../../lib/sanity.query";

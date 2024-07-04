@@ -1,4 +1,3 @@
-import React from 'react';
 import classes from './Boxes.module.css';
 import { GoArrowRight } from 'react-icons/go';
 import Link from 'next/link';

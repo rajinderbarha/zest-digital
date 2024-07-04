@@ -1,329 +1,319 @@
 .Client_Result {
-    background-image: url(../../../assets/images/\ gross\ profit.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    @apply rounded-[15px] md:rounded-[20px] lg:rounded-30px 
+  background-image: url(../../../assets/images/\ gross\ profit.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @apply rounded-[15px] md:rounded-[20px] lg:rounded-30px;
 }
 
-.button_div{
-    display: flex;
-    align-items: end;
+.button_div {
+  display: flex;
+  align-items: end;
 }
 
-@media screen and (max-width:768px) {
-    .Client_Result {
-        padding:50px 40px 80px 40px !important;
-    }
+@media screen and (max-width: 768px) {
+  .Client_Result {
+    padding: 50px 40px 80px 40px !important;
+  }
 }
 
-.profit_box h3{
+.profit_box h3 {
   margin-bottom: 11px;
 }
 
 @media only screen and (min-width: 1280px) {
-  .profit_box h2{
+  .profit_box h2 {
     font-size: 55px;
   }
-  .profit_box_heading{
+  .profit_box_heading {
     font-size: 30px;
     margin-bottom: 35px;
   }
-   .profit_box h3{
+  .profit_box h3 {
     font-size: 30px;
   }
-  .profit_box_desc{
+  .profit_box_desc {
     font-size: 18px;
     margin-bottom: 25px;
   }
 }
 @media only screen and (min-width: 1775px) {
-    .profit_box {
-      padding: 75px 75px;
-    }
+  .profit_box {
+    padding: 75px 75px;
+  }
 }
-  
-  @media only screen and (min-width: 1450px) and (max-width: 1774px) {
-    .profit_box {
-      padding: 45px 45px;
-      padding-bottom: 60px;
-    }
-  
 
-    .Gross_profit_grid_div {
-      gap: 35px;
-      }
+@media only screen and (min-width: 1450px) and (max-width: 1774px) {
+  .profit_box {
+    padding: 45px 45px;
+    padding-bottom: 60px;
   }
-  
-  @media only screen and (min-width: 1366px) and (max-width: 1449px) {
-    .profit_box {
-      padding: 40px 40px;
-      padding-bottom: 60px;
-    }
-    .Gross_profit_grid_div {
-      gap: 30px;
-      }
+
+  .Gross_profit_grid_div {
+    gap: 35px;
   }
-  
-  @media only screen and (min-width: 1280px) and (max-width: 1365px) {
-    .profit_box {
-      padding: 35px 35px;
-      padding-bottom: 60px;
-    }
-    .Gross_profit_grid_div {
-      gap: 30px;
-      }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1449px) {
+  .profit_box {
+    padding: 40px 40px;
+    padding-bottom: 60px;
   }
-  
-  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    .profit_box {
-      padding: 25px 25px;
-      padding-bottom: 60px;
-    }
-  
-    .Gross_profit {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-  
-    .profit_box_desc {
-      font-size: 16px;
-      max-width: 232px;
-      margin-bottom: 25px;
-    }
-    .profit_box h2{
+  .Gross_profit_grid_div {
+    gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+  .profit_box {
+    padding: 35px 35px;
+    padding-bottom: 60px;
+  }
+  .Gross_profit_grid_div {
+    gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .profit_box {
+    padding: 25px 25px;
+    padding-bottom: 60px;
+  }
+
+  .Gross_profit {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .profit_box_desc {
+    font-size: 16px;
+    max-width: 232px;
+    margin-bottom: 25px;
+  }
+  .profit_box h2 {
     font-size: 45px;
   }
-    .profit_box_heading{
-      font-size: 28px;
-      margin-bottom: 32px;
-    }
-    .profit_box h3{
-      font-size: 28px;
-    }
-    .Gross_profit_grid_div {
+  .profit_box_heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  .profit_box h3 {
+    font-size: 28px;
+  }
+  .Gross_profit_grid_div {
     gap: 20px;
-    }
   }
-
-  @media only screen and (min-width: 1024px) and (max-width: 1150px) {
-    .profit_box h2{
-        font-size: 40px;
-      }
-        .profit_box_heading{
-          font-size: 25px;
-        }
-        .profit_box h3{
-          font-size: 25px;
-        }
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .profit_box {
-      padding: 45px 10px;
-      padding-bottom: 60px;
-    }
-  
-    .Gross_profit {
-      padding-top: 100px;
-      padding-bottom: 100px;
-  
-    }
-    .profit_box h2{
-      font-size: 40px;
-    }
-  
-    .profit_box_desc {
-      font-size: 14px;
-      max-width: 199px;
-      margin-bottom: 27px;
-    }
-    .Gross_profit_grid_div {
-      gap: 15px;
-      }
-      .profit_box_heading{
-        font-size: 25px;
-        margin-bottom: 27px;
-      }
-      .profit_box h3{
-        font-size: 25px;
-      }
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 856px) {
-    .profit_box {
-      padding: 20px 8px;
-      padding-bottom: 40px;
-    }
-  }
-
-  
-  
-  @media screen and (max-width:767px) {
-    .profit_box {
-      padding: 25px 25px;
-      padding-bottom: 50px;
-    }
-    .Gross_profit {
-      padding-top: 60px;
-      padding-bottom: 60px;
-  
-    }
-  
-    .profit_box_desc {
-      font-size: 10px;
-      margin-bottom: 13px;
-      max-width: 124px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .Gross_profit_grid_div {
-      gap: 15px;
-      }
-      .Gross_profit_grid_div {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-      }
-      .Gross_profit {
-        justify-content: stretch;
-      }
-      .Gross_profit_grid_div{
-        width: 100%;
-      }
-  
-.profit_box h2{
-  font-size: 26px;
 }
-.profit_box_heading{
-  font-size: 16px;
-  margin-bottom: 26px;
+
+@media only screen and (min-width: 1024px) and (max-width: 1150px) {
+  .profit_box h2 {
+    font-size: 40px;
+  }
+  .profit_box_heading {
+    font-size: 25px;
+  }
+  .profit_box h3 {
+    font-size: 25px;
+  }
 }
-.profit_box h3{
-  font-size: 16px;
-  margin-bottom: 13px;
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .profit_box {
+    padding: 45px 10px;
+    padding-bottom: 60px;
+  }
+
+  .Gross_profit {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .profit_box h2 {
+    font-size: 40px;
+  }
+
+  .profit_box_desc {
+    font-size: 14px;
+    max-width: 199px;
+    margin-bottom: 27px;
+  }
+  .Gross_profit_grid_div {
+    gap: 15px;
+  }
+  .profit_box_heading {
+    font-size: 25px;
+    margin-bottom: 27px;
+  }
+  .profit_box h3 {
+    font-size: 25px;
+  }
 }
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 970px) {
-    .profit_box h2{
-      font-size: 37px;
-    }
-      .profit_box_heading{
-        font-size: 22px;
-      }
 
-      .profit_box h3{
-        font-size: 22px;
-      }
-
-      .profit_box button{
-        padding: 1px 0 1px 14px;
-      }
-      .profit_box button span{
-        margin-right: 1px;
-      }
+@media only screen and (min-width: 768px) and (max-width: 856px) {
+  .profit_box {
+    padding: 20px 8px;
+    padding-bottom: 40px;
   }
-  
-  @media screen and (max-width:700px) {
-    .profit_box {
-      padding: 32px 45px;
-      padding-bottom: 40px;
-    }
+}
+
+@media screen and (max-width: 767px) {
+  .profit_box {
+    padding: 25px 25px;
+    padding-bottom: 50px;
+  }
+  .Gross_profit {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
-  @media screen and (max-width:375px) {
-    .profit_box {
-      padding: 32px 25px;
-      padding-bottom: 40px;
-    }
-  
+  .profit_box_desc {
+    font-size: 10px;
+    margin-bottom: 13px;
+    max-width: 124px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  @media screen and (max-width:334px) {
-    .profit_box {
-      padding: 32px 15px;
-      padding-bottom: 40px;
-    }
-    .profit_box button{
-      font-size: 10px;
-    }
-    .profit_box button span{
-      font-size: 12px;
-    }
-  
+  .Gross_profit_grid_div {
+    gap: 15px;
+  }
+  .Gross_profit_grid_div {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .Gross_profit {
+    justify-content: stretch;
+  }
+  .Gross_profit_grid_div {
+    width: 100%;
   }
 
-  @media only screen and (min-width: 540px) and (max-width: 830px) {
-    .profit_box h2{
-      font-size: 30px;
-    }
-      .profit_box_heading{
-        font-size: 20px;
-        line-height: 27px;
-        margin-bottom: 30px;
-      }
-      .profit_box h3{
-        font-size: 20px;
-        margin-bottom: 13px;
-      }
-      .profit_box_desc{
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 27px;
-      }
-  .profit_box{
+  .profit_box h2 {
+    font-size: 26px;
+  }
+  .profit_box_heading {
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+  .profit_box h3 {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 970px) {
+  .profit_box h2 {
+    font-size: 37px;
+  }
+  .profit_box_heading {
+    font-size: 22px;
+  }
+
+  .profit_box h3 {
+    font-size: 22px;
+  }
+
+  .profit_box button {
+    padding: 1px 0 1px 14px;
+  }
+  .profit_box button span {
+    margin-right: 1px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .profit_box {
+    padding: 32px 45px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .profit_box {
+    padding: 32px 25px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 334px) {
+  .profit_box {
+    padding: 32px 15px;
+    padding-bottom: 40px;
+  }
+  .profit_box button {
+    font-size: 10px;
+  }
+  .profit_box button span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 830px) {
+  .profit_box h2 {
+    font-size: 30px;
+  }
+  .profit_box_heading {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+  .profit_box h3 {
+    font-size: 20px;
+    margin-bottom: 13px;
+  }
+  .profit_box_desc {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 27px;
+  }
+  .profit_box {
     padding-top: 42px;
     padding-bottom: 42px;
   }
-  .profit_box_desc0{
-    max-width: 100px; 
+  .profit_box_desc0 {
+    max-width: 100px;
   }
-  .profit_box_desc1{
-    max-width: 150px; 
+  .profit_box_desc1 {
+    max-width: 150px;
   }
-  .profit_box_desc2{
-    max-width: 181px; 
+  .profit_box_desc2 {
+    max-width: 181px;
   }
-  }
+}
 
-  
-@media only screen and (min-width:830px){
-  .profit_box{
+@media only screen and (min-width: 830px) {
+  .profit_box {
     grid-column: span 4 / span 4;
   }
-
 }
-@media only screen and (max-width:830px){
-.profit_box{
-  grid-column: span 6 / span 6;
-}
-}
-@media only screen and (max-width:540px){
-  .profit_box{
-    grid-column: span 12/ span 6;
+@media only screen and (max-width: 830px) {
+  .profit_box {
+    grid-column: span 6 / span 6;
   }
+}
+@media only screen and (max-width: 540px) {
+  .profit_box {
+    grid-column: span 12 / span 6;
   }
-@media only screen and (min-width:768px) and (max-width:830px){
- 
-    .Gross_profit_grid_div > :nth-child(3) {
-      grid-column-start: 4;
-    }
-    .Gross_profit_grid_div{
-      row-gap: 27px;
-      column-gap: 48px;
-    }
-    .profit_box h2{
-      font-size: 30px;
-    }
-    .profit_box_heading,   .profit_box h3 {
-      font-size: 20px;
-    }
-
+}
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+  .Gross_profit_grid_div > :nth-child(3) {
+    grid-column-start: 4;
+  }
+  .Gross_profit_grid_div {
+    row-gap: 27px;
+    column-gap: 48px;
+  }
+  .profit_box h2 {
+    font-size: 30px;
+  }
+  .profit_box_heading,
+  .profit_box h3 {
+    font-size: 20px;
+  }
 }
 
 .Client_Result_container {
   margin-top: 78px;
   margin-bottom: 80px;
 }
-.Client_Result_title{
+.Client_Result_title {
   margin-bottom: 50px;
 }
 
@@ -340,7 +330,6 @@
   font-size: 12px;
   margin-top: 5px;
 }
-
 
 .button_div button {
   font-size: 12px;
@@ -368,7 +357,7 @@
 }
 
 @media (min-width: 640px) {
-  .Client_Result_title{
+  .Client_Result_title {
     margin-bottom: 70px;
   }
   .Client_Result_container {
@@ -389,7 +378,6 @@
     font-size: 20px;
     margin-top: 10px;
   }
-
 
   .button_div button {
     font-size: 16px;
@@ -419,9 +407,9 @@
     margin-top: 135px;
     margin-bottom: 160px;
   }
-.Client_Result_title{
-  margin-bottom: 100px;
-}
+  .Client_Result_title {
+    margin-bottom: 100px;
+  }
   .Client_Result {
     padding-top: 60px;
     padding-bottom: 80px;
@@ -435,7 +423,6 @@
     font-size: 25px;
     margin-top: 24px;
   }
-
 
   .button_div button {
     padding-left: 16px;
@@ -454,7 +441,6 @@
     padding-bottom: 10px;
   }
 }
-
 
 @media (min-width: 540px) and (max-width: 830px) {
   .Client_Result_container {
@@ -480,7 +466,6 @@
   }
 }
 
-
 @media (min-width: 1024px) {
   .Client_Result_container {
     margin-top: 160px;
@@ -500,14 +485,13 @@
     font-size: 30px;
   }
 
-
   .view_more_btn {
     margin-top: 115px;
   }
 }
 
 @media (min-width: 1280px) {
-  .Client_Result_title{
+  .Client_Result_title {
     margin-bottom: 130px;
   }
   .Client_Result_container {
@@ -519,9 +503,9 @@
     padding-top: 100px;
     padding-bottom: 132px;
   }
-.Client_Result_title{
-  margin-bottom: 146px;
-}
+  .Client_Result_title {
+    margin-bottom: 146px;
+  }
   .Client_Result_title h2 {
     font-size: 45px;
   }

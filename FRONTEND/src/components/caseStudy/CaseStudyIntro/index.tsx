@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Image from "next/image";
 import classes from "./CaseStudyIntro.module.css";
 import Link from "next/link";
@@ -14,9 +14,7 @@ function Casestudyintro({ data }: { data: CaseStudyIntroType }) {
       once: true,
     });
   }, []);
-  return (
-    <>
-      <div className={`${classes.Casestudyintro} main_padding `}  >
+  return  <div className={`${classes.Casestudyintro} main_padding `}  >
         <div className=" md:px-[20px] sm:px-[15px] px-[8px] max-tb:px-0 max-w-[1520px] mx-auto w-full relative" data-aos="fade-up" >
           <div className="">
             <div className={`${classes.banner_text}`}>
@@ -42,8 +40,6 @@ function Casestudyintro({ data }: { data: CaseStudyIntroType }) {
           </div>
         </div>
       </div>
-    </>
-  );
 }
 
 export default Casestudyintro;

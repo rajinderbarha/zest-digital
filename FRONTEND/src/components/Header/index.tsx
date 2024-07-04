@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Image from "next/image";
 import { urlFor } from "../../../lib/sanity.client";
 import Link from "next/link";

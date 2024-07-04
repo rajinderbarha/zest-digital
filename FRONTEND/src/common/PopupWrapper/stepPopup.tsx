@@ -1,6 +1,6 @@
-import { Dialog, DialogTitle, Fab, useMediaQuery, useTheme } from "@mui/material";
-import { Box, SxProps } from "@mui/system";
-import React, { ReactNode, useEffect, useState } from "react";
+import { Dialog,} from "@mui/material";
+import { Box, } from "@mui/system";
+import  { ReactNode} from "react";
 interface IProps {
   children: ReactNode;
   onClose: () => void;

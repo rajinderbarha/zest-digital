@@ -1,4 +1,3 @@
-import React from "react";
 import { getSingleOurServicesData } from "../../../lib/sanity.query";
 import { SingleOurService } from "../../../lib/interface";
 import Services from "@/components/Services";

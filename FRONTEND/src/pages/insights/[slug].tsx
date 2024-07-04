@@ -1,5 +1,4 @@
 import SingleInsightPage from "@/components/SingleInsightPage";
-import React from "react";
 import { getSingleInsightsData, getSlugOfInsightsCards } from "../../../lib/sanity.query";
 import { SingleInsightsType } from "../../../lib/interface";
 import { GetStaticPaths, GetStaticPropsContext } from "next";

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import classes from './Services_Banner.module.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -33,9 +33,7 @@ const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
 
   const max_width_string = `max-w-[${max_width}] `;
 
-  return (
-    <>
-       <div className={`${classes.GrowthMarketingServices_Banner} GrowthMarketingServices_Banner  main_padding`}>
+  return  <div className={`${classes.GrowthMarketingServices_Banner} GrowthMarketingServices_Banner  main_padding`}>
                 <div className='main_container'>
                     <div className={`${max_width_string} `} data-aos="fade-up">
                         <div className="md:pe-20 ">
@@ -49,8 +47,6 @@ const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
                     </div>
                 </div>
             </div>
-    </>
-  );
 };
 
 export default Services_Banner;

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import Traffic_conversion_icon from '../../assets/images/Traffic_conversion_icon_svg.svg'
 import { GoArrowLeft } from "react-icons/go";
 import ProgressBar from '@/common/ProgressBar';

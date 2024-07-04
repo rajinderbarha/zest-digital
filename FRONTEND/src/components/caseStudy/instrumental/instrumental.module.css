@@ -1,269 +1,256 @@
-
 .Instrumental p {
-    max-width: 750px;
-    margin-right: 50px;
+  max-width: 750px;
+  margin-right: 50px;
 }
 
 .Interests_img {
-    max-width: 860px;
+  max-width: 860px;
 }
 
 .Interests_h2 {
-    max-width: 1260px !important;
+  max-width: 1260px !important;
 }
 
-@media screen and (max-width:768px) {
-
-    .instrumental_img img{
-        margin: auto;
-    }
-
+@media screen and (max-width: 768px) {
+  .instrumental_img img {
+    margin: auto;
+  }
 }
-
-
 
 .Instrumental {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 1775px) {
-    .Instrumental {
-        margin-top: 120px;
-        margin-bottom: 120px;
-    }
+  .Instrumental {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
 }
 
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
-    .Instrumental {
-        margin-top: 115px;
-        margin-bottom:115px;
-    }
+  .Instrumental {
+    margin-top: 115px;
+    margin-bottom: 115px;
+  }
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
-    .Instrumental {
-        margin-top: 90px;
-        margin-bottom: 90px;
-    }
+  .Instrumental {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
-    .Instrumental {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
+  .Instrumental {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-    .Instrumental {
-        margin-top: 70px;
-        margin-bottom: 70px;
-    }
+  .Instrumental {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .Instrumental {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-}
-
-@media only screen and (max-width:830px){
-    .project_window, .conversations_img, .conversations_text{
-        @apply col-span-12
-    }
-    .project_window {
-        @apply ms-auto
-    }
-    .conversations_img{
-        @apply order-2
-    }
-    .conversations_text{
-        @apply order-1 
-    }
-    .conversations_img{
-        @apply me-auto
-    }
-}
-@media only screen and (min-width:768px) and (max-width:830px) {
-    .conversations_text{
-        @apply  ps-[100px]
-    }
-}
-
-
-
-
-
-
-
-
-   .image_desc {
-    font-size: 14px;
-    line-height: 18px;
-    max-width: 221px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  .Instrumental {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
+}
 
-  .text_heading {
+@media only screen and (max-width: 830px) {
+  .project_window,
+  .conversations_img,
+  .conversations_text {
+    @apply col-span-12;
+  }
+  .project_window {
+    @apply ms-auto;
+  }
+  .conversations_img {
+    @apply order-2;
+  }
+  .conversations_text {
+    @apply order-1;
+  }
+  .conversations_img {
+    @apply me-auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+  .conversations_text {
+    @apply ps-[100px];
+  }
+}
+
+.image_desc {
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 221px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_heading {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.below_line {
+  padding-top: 8px;
+  font-size: 10px;
+}
+
+.special_instrumental_img {
+  margin-left: auto;
+}
+
+.project_window_img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.conversations_section_img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.left_img {
+  margin-left: auto;
+  margin-right: auto;
+  height: max-content;
+}
+
+@media (min-width: 640px) {
+  .image_desc {
     font-size: 18px;
     line-height: 25px;
-    margin-bottom: 10px;
+    margin-top: 12px;
   }
-  
-  
+  .text_heading {
+    font-size: 23px;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
   .below_line {
-    padding-top: 8px;
-    font-size: 10px;
+    font-size: 12px;
   }
-
   .special_instrumental_img {
-    margin-left: auto;
+    max-width: 525px;
+    height: 281px;
   }
+}
 
-  
-  
+@media (min-width: 768px) {
+  .image_desc {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 373px;
+    margin-top: 20px;
+  }
+  .text_heading {
+    font-size: 35px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  .below_line {
+    font-size: 15px;
+  }
+  .special_instrumental_img {
+    max-width: 560px;
+    height: 300px;
+  }
   .project_window_img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    max-width: 514px;
+    height: 404px;
   }
   .conversations_section_img {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .left_img {
-    margin-left: auto;
-    margin-right: auto;
-    height: max-content;
+    max-width: 400px;
+    height: 204px;
   }
 
-  @media (min-width: 640px) {
-    .image_desc {
-      font-size: 18px;
-      line-height: 25px;
-      margin-top: 12px;
-    }
-    .text_heading {
-      font-size: 23px;
-      line-height: normal;
-      margin-bottom: 15px;
-    }
-    
-    .below_line {
-      font-size: 12px;
-    }
-    .special_instrumental_img {
-      max-width: 525px;
-      height: 281px;
-    }
+  .left_img {
+    max-width: 200px;
   }
-  
-  @media (min-width: 768px) {
-    .image_desc {
-      font-size: 20px;
-      line-height: 26px;
-      max-width: 373px;
-      margin-top: 20px;
-    }
-    .text_heading {
-      font-size: 35px;
-      line-height: 48px;
-      margin-bottom: 20px;
-    }
-    .below_line {
-      font-size: 15px;
-    }
-    .special_instrumental_img {
-      max-width: 560px;
-      height: 300px;
-    }
-    .project_window_img {
-      max-width: 514px;
-      height: 404px;
-    }
-    .conversations_section_img {
-      max-width: 400px;
-      height: 204px;
-    }
-    
-    .left_img {
-      max-width: 200px;
-    }
+}
+
+@media (min-width: 1024px) {
+  .image_desc {
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 28px;
   }
-  
-  @media (min-width: 1024px) {
-    .image_desc {
-      font-size: 25px;
-      line-height: 32px;
-      margin-top: 28px;
-    }
-    .text_heading {
-      font-size: 40px;
-      line-height: 55px;
-    }
-    .special_instrumental_img {
-      max-width: 650px;
-      height: 347px;
-    }
-    .project_window_img {
-      max-width: 500px;
-      height: 394px;
-    }
-    .conversations_section_img {
-      max-width: 500px;
-      height: 255px;
-    }
-    .left_img {
-      max-width: 280px;
-    }
+  .text_heading {
+    font-size: 40px;
+    line-height: 55px;
   }
-  
-  @media (min-width: 1280px) {
-    .image_desc {
-      font-size: 30px;
-      line-height: 39px;
-      margin-top: 31px;
-    }
-    .text_heading {
-      font-size: 45px;
-      line-height: 58px;
-    }
-    .special_instrumental_img {
-      max-width: 860px;
-      height: 460px;
-    }
-    .project_window_img {
-      max-width: 685px;
-      height: 540px;
-    }
-    .conversations_section_img  {
-      max-width: 685px;
-      height: 350px;
-    }
-    .left_img {
-      max-width: 350px;
-    }
+  .special_instrumental_img {
+    max-width: 650px;
+    height: 347px;
   }
-  @media (max-width: 830px) {
-    .left_img {
-      max-width: 170px;
-    }
+  .project_window_img {
+    max-width: 500px;
+    height: 394px;
   }
-  
-  @media (min-width: 540px) and (max-width: 830px) {
-    .image_desc {
-      font-size: 16px;
-      line-height: 20px;
-    }
-    .text_heading {
-      font-size: 26px;
-      line-height: 34px;
-    }
-    .below_line {
-      font-size: 12px;
-    }
+  .conversations_section_img {
+    max-width: 500px;
+    height: 255px;
   }
+  .left_img {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .image_desc {
+    font-size: 30px;
+    line-height: 39px;
+    margin-top: 31px;
+  }
+  .text_heading {
+    font-size: 45px;
+    line-height: 58px;
+  }
+  .special_instrumental_img {
+    max-width: 860px;
+    height: 460px;
+  }
+  .project_window_img {
+    max-width: 685px;
+    height: 540px;
+  }
+  .conversations_section_img {
+    max-width: 685px;
+    height: 350px;
+  }
+  .left_img {
+    max-width: 350px;
+  }
+}
+@media (max-width: 830px) {
+  .left_img {
+    max-width: 170px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 830px) {
+  .image_desc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .text_heading {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .below_line {
+    font-size: 12px;
+  }
+}

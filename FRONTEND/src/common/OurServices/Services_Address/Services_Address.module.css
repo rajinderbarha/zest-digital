@@ -1,13 +1,13 @@
 .bg_image {
-  background-image: url('../../../assets/images/Gradient_map.png');
+  background-image: url("../../../assets/images/Gradient_map.png");
   background-position: 10%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   .bg_image {
-    background-image: url('../../../assets/images/Services_map_gradient_mobile.png');
+    background-image: url("../../../assets/images/Services_map_gradient_mobile.png");
   }
 }
 
@@ -17,24 +17,24 @@
   width: 100%;
   overflow: hidden;
   aspect-ratio: 1 / 1;
-  @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right
+  @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right;
 }
 
-.map_div>div {
+.map_div > div {
   height: -webkit-fill-available !important;
-  @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right
+  @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right;
 }
 
 .address h4:first-child {
-  @apply font-mono font-normal text-white
+  @apply font-mono font-normal text-white;
 }
 
 .address h4:not(:first-child) {
-  @apply font-mono font-normal text-white
+  @apply font-mono font-normal text-white;
 }
 
 .address p {
-  @apply font-lato text-white font-light
+  @apply font-lato text-white font-light;
 }
 
 .GrowthMarketingServices_Address {
@@ -222,10 +222,8 @@
   .address p {
     font-size: 12px;
     line-height: 18px;
-
   }
 }
-
 
 @media (min-width: 1024px) {
   .GrowthMarketingServices_Address {

@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Services.module.css";
 import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";

@@ -1,108 +1,106 @@
-
 .location_div {
-    max-width: -webkit-fill-available!important;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    @apply  rounded-[15px] md:rounded-[20px] lg:rounded-[30px] md:rounded-30px  
+  max-width: -webkit-fill-available !important;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  @apply rounded-[15px] md:rounded-[20px] lg:rounded-[30px] md:rounded-30px;
 }
-.location_div > div > div{
-    height:-webkit-fill-available!important;
-    @apply rounded-[15px] md:rounded-[20px] lg:rounded-[30px] shadow-dark-pink-right  border border-color-1
-}
-
-.contact_detail{
-    @apply text-[12px] md:text-[12px] 
+.location_div > div > div {
+  height: -webkit-fill-available !important;
+  @apply rounded-[15px] md:rounded-[20px] lg:rounded-[30px] shadow-dark-pink-right  border border-color-1;
 }
 
-@media only screen and (min-width:1635px){
-    .contact_detail{
-        font-size: 16px!important;
-    }
-    .phone_icon{
-        text-align: 20px;
-    }
+.contact_detail {
+  @apply text-[12px] md:text-[12px];
 }
 
-@media only screen and (min-width:1580px) and  (min-width:1635px){
-    .contact_detail{
-        font-size: 15px!important;
-    }
-    .phone_icon{
-        text-align: 20px;
-    }
+@media only screen and (min-width: 1635px) {
+  .contact_detail {
+    font-size: 16px !important;
+  }
+  .phone_icon {
+    text-align: 20px;
+  }
 }
 
-
-@media only screen and (min-width:1505px) and (max-width:1580px){
-    .contact_detail{
-        font-size: 14px;
-    }
-    .phone_icon{
-        font-size: 17px;
-    }
-}
-@media only screen and (min-width:1465px) and (max-width:1505px){
-    .contact_detail{
-        font-size: 13.5px;
-    }
-    .phone_icon{
-        font-size: 17px;
-    }
-}
-@media only screen and (min-width:1305px) and (max-width:1465px){
-    .contact_detail{
-        font-size: 13px;
-    }
-    .phone_icon{
-        font-size: 16.5px;
-    }
-}
-@media only screen and (min-width:1255px) and (max-width:1305px){
-    .contact_detail{
-        font-size: 12.5px;
-    }
-    .phone_icon{
-        font-size: 16px;
-    }
-}
-@media only screen and (min-width:1215px) and (max-width:1255px){
-    .contact_detail{
-        font-size: 12px;
-    }
-    .phone_icon{
-        font-size: 15px;
-    }
-}
-@media only screen and (min-width:1200px) and (max-width:1215px){
-    .contact_detail{
-        font-size: 11px;
-    }
-    .phone_icon{
-        font-size: 14px;
-    }
-}
-@media only screen and (min-width:1090px) and (max-width:1200px){
-    .contact_detail{
-        font-size: 10.5px;
-    }
-    .phone_icon{
-        font-size: 13px;
-    }
+@media only screen and (min-width: 1580px) and (min-width: 1635px) {
+  .contact_detail {
+    font-size: 15px !important;
+  }
+  .phone_icon {
+    text-align: 20px;
+  }
 }
 
-@media only screen and (min-width:1050px) and (max-width:1090px){
-    .contact_detail{
-        font-size: 10px;
-    }
-    .phone_icon{
-        font-size: 13px;
-    }
+@media only screen and (min-width: 1505px) and (max-width: 1580px) {
+  .contact_detail {
+    font-size: 14px;
+  }
+  .phone_icon {
+    font-size: 17px;
+  }
 }
-@media only screen and (min-width:1024px) and (max-width:1050px){
-    .contact_detail{
-        font-size: 9.6px;
-    }
-    .phone_icon{
-        font-size: 12px;
-    }
+@media only screen and (min-width: 1465px) and (max-width: 1505px) {
+  .contact_detail {
+    font-size: 13.5px;
+  }
+  .phone_icon {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1305px) and (max-width: 1465px) {
+  .contact_detail {
+    font-size: 13px;
+  }
+  .phone_icon {
+    font-size: 16.5px;
+  }
+}
+@media only screen and (min-width: 1255px) and (max-width: 1305px) {
+  .contact_detail {
+    font-size: 12.5px;
+  }
+  .phone_icon {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1215px) and (max-width: 1255px) {
+  .contact_detail {
+    font-size: 12px;
+  }
+  .phone_icon {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1215px) {
+  .contact_detail {
+    font-size: 11px;
+  }
+  .phone_icon {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1090px) and (max-width: 1200px) {
+  .contact_detail {
+    font-size: 10.5px;
+  }
+  .phone_icon {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1090px) {
+  .contact_detail {
+    font-size: 10px;
+  }
+  .phone_icon {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1050px) {
+  .contact_detail {
+    font-size: 9.6px;
+  }
+  .phone_icon {
+    font-size: 12px;
+  }
 }

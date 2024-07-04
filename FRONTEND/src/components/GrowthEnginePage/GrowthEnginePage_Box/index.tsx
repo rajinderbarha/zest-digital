@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./GrowthEnginePage_Box.module.css";
 import { GoArrowRight } from "react-icons/go";
 import Box_Title from "../Box_Title";

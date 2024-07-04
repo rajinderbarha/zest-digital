@@ -1,147 +1,141 @@
-.SingleIntro{
-    background-image: url('../../../assets/images/learn_how_to_grow_bg.png');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background-color: black;
-    margin-top: 70px;
-  
+.SingleIntro {
+  background-image: url("../../../assets/images/learn_how_to_grow_bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: black;
+  margin-top: 70px;
 }
 
-
-@media only screen and (min-width:768px) and (max-width:1024px){
-    .SingleIntro{
-        margin-top: 100px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .SingleIntro {
+    margin-top: 100px;
+  }
 }
 
 .margin_outer {
-    margin-left: 15px  ;
-    margin-right: 15px  ;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+@media only screen and (min-width: 1775px) {
+  .margin_outer {
+    margin-left: 100px;
+    margin-right: 100px;
   }
-  @media only screen and (min-width: 1775px) {
-    .margin_outer {
-      margin-left: 100px  ;
-      margin-right: 100px  ;
-    }
-    .grow_img{
-      right: 0;
-      top:-163px;
-      right: 50px;
+  .grow_img {
+    right: 0;
+    top: -163px;
+    right: 50px;
   }
-  .grow_img img{
+  .grow_img img {
     width: 300px;
-        height: 300px;
+    height: 300px;
   }
+}
+@media only screen and (min-width: 1450px) and (max-width: 1774px) {
+  .margin_outer {
+    margin-left: 75px;
+    margin-right: 75px;
   }
-  @media only screen and (min-width: 1450px) and (max-width: 1774px) {
-    .margin_outer {
-      margin-left: 75px  ;
-      margin-right: 75px  ;
-    }
-    .grow_img{
-      top:-144px;
-      right: 90px;
-    }
-    .grow_img img{
-      width: 270px;
-        height: 270px
-    }
+  .grow_img {
+    top: -144px;
+    right: 90px;
   }
-  @media only screen and (min-width: 1366px) and (max-width: 1449px) {
-    .margin_outer {
-      margin-left: 60px  ;
-      margin-right: 60px  ;
-    }
-    .grow_img{
-        top:-122px;
-      right: 135px;
-    }
-    .grow_img img{
-      width: 230px;
-        height: 230px;
-    }
+  .grow_img img {
+    width: 270px;
+    height: 270px;
   }
-  @media only screen and (min-width: 1024px) and (max-width: 1365px){
-    .margin_outer {
-      margin-left: 40px  ;
-      margin-right: 40px  ;
-    }
-    .grow_img{
-      top:-109px;
-      right: 105px;
-    }
-    .grow_img img{
-      width: 200px;
-      height: 200px;
-    }
-    
+}
+@media only screen and (min-width: 1366px) and (max-width: 1449px) {
+  .margin_outer {
+    margin-left: 60px;
+    margin-right: 60px;
   }
-  @media only screen and (min-width: 1124px) and (max-width: 1365px){
-    .grow_img{
-      top:-118px;
+  .grow_img {
+    top: -122px;
     right: 135px;
   }
-  .grow_img img{
+  .grow_img img {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+  .margin_outer {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .grow_img {
+    top: -109px;
+    right: 105px;
+  }
+  .grow_img img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 1124px) and (max-width: 1365px) {
+  .grow_img {
+    top: -118px;
+    right: 135px;
+  }
+  .grow_img img {
     width: 220px;
-      height: 220px;
+    height: 220px;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .margin_outer {
+    margin-left: 25px;
+    margin-right: 25px;
   }
-  @media only screen and (min-width: 768px) and (max-width: 1023px){
-    .margin_outer {
-      margin-left: 25px  ;
-      margin-right: 25px  ;
-    }
-    .grow_img{
-      top:-97px;
-      right: 95px;
-    }
-    .grow_img img{
-      width: 180px;
-      height: 180px;
-    }
+  .grow_img {
+    top: -97px;
+    right: 95px;
   }
-  @media only screen and (min-width: 640px) and (max-width: 767px){
-    .grow_img{
-      top: -86px;
-      right: 56px;
-    }
-    .grow_img img{
-      width: 160px;
-      height: 160px;
-    }
+  .grow_img img {
+    width: 180px;
+    height: 180px;
   }
-  @media only screen and (max-width: 639px) {
-    .grow_img{
-      top: -80px;
-      right: 37px;
-    }
-    .grow_img img{
-      width: 130px;
-      height: 130px;
-    }
-    .SingleIntro{
-      margin-top: 90px;
+}
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  .grow_img {
+    top: -86px;
+    right: 56px;
   }
+  .grow_img img {
+    width: 160px;
+    height: 160px;
   }
+}
+@media only screen and (max-width: 639px) {
+  .grow_img {
+    top: -80px;
+    right: 37px;
+  }
+  .grow_img img {
+    width: 130px;
+    height: 130px;
+  }
+  .SingleIntro {
+    margin-top: 90px;
+  }
+}
 
-
-
-
-
-.learnToGrow_title, .tools_title {
-  font-size: 22px; 
+.learnToGrow_title,
+.tools_title {
+  font-size: 22px;
 }
 
 .learnToGrow_desc {
-  font-size: 12px; 
+  font-size: 12px;
   line-height: 15px;
   padding-top: 19px;
   padding-bottom: 15px;
 }
 
 .tools_title {
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 .cards_div {
@@ -157,13 +151,14 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .learnToGrow_title, .tools_title {
+  .learnToGrow_title,
+  .tools_title {
     font-size: 30px;
   }
   .learnToGrow_desc {
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 18px;
-    padding-top: 31px; 
+    padding-top: 31px;
   }
   .cards_div {
     padding-left: 20px;
@@ -186,8 +181,8 @@
   .learnToGrow_desc {
     font-size: 21px;
     line-height: 30px;
-    padding-top: 38px; 
-    padding-bottom: 40px; 
+    padding-top: 38px;
+    padding-bottom: 40px;
   }
   .cards_div {
     padding-left: 30px;
@@ -202,14 +197,15 @@
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {
-  .learnToGrow_title, .tools_title {
+  .learnToGrow_title,
+  .tools_title {
     font-size: 30px;
   }
   .learnToGrow_desc {
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 20px;
-    padding-bottom: 0; 
-    padding-top: 31px; 
+    padding-bottom: 0;
+    padding-top: 31px;
   }
   .cards_div {
     padding-left: 50px;
@@ -233,7 +229,7 @@
     font-size: 40px;
   }
   .learnToGrow_desc {
-    font-size: 25px; 
+    font-size: 25px;
     line-height: 35px;
   }
   .cards_div {
@@ -247,11 +243,12 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .learnToGrow_title, .tools_title {
+  .learnToGrow_title,
+  .tools_title {
     font-size: 45px;
   }
   .learnToGrow_desc {
-    font-size: 30px; 
+    font-size: 30px;
     line-height: 39px;
   }
   .resources_logo {

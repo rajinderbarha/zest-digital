@@ -1,10 +1,9 @@
-import React from "react";
 import classes from "../singlebox.module.css";
 import Image from "next/image"; //@ts-ignore
 import BlockContent from "@sanity/block-content-to-react";
 import { urlFor } from "../../../../../lib/sanity.client";
 import { Card } from "../../../../../lib/interface";
-function objective({ sectionCard }: {sectionCard:Card[]}) {
+function objective({ sectionCard }: { sectionCard: Card[] }) {
   return (
     <>
       {sectionCard.map((item: any, index: number) => {

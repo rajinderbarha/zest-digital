@@ -9,20 +9,19 @@
   justify-content: center;
 }
 
-
 .profit_box {
   padding-left: 15px;
   padding-right: 15px;
 }
 .profit_box_heading {
   font-size: 16px;
-margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-.profit_box_des{
+.profit_box_des {
   font-size: 16px;
   margin-bottom: 3px;
 }
-.profit_box_desc_below{
+.profit_box_desc_below {
   font-size: 10px;
   line-height: 18px;
   margin-bottom: 15px;
@@ -36,7 +35,7 @@ margin-bottom: 15px;
   padding-bottom: 2px;
   padding-left: 13px;
 }
-.box_btn span{
+.box_btn span {
   margin-right: 2px;
   padding: 4px;
   font-size: 15px;
@@ -48,11 +47,11 @@ margin-bottom: 15px;
     padding-bottom: 3px;
     padding-left: 15px;
   }
-  .box_btn span{
+  .box_btn span {
     margin-right: 3px;
     font-size: 18px;
   }
-  .profit_box_des{
+  .profit_box_des {
     margin-bottom: 7px;
   }
 }
@@ -63,7 +62,7 @@ margin-bottom: 15px;
     padding-bottom: 3px;
     padding-left: 16px;
   }
-  .box_btn span{
+  .box_btn span {
     margin-right: 4px;
   }
 }
@@ -79,11 +78,11 @@ margin-bottom: 15px;
     font-size: 30px;
     margin-bottom: 35px;
   }
-  .profit_box_des{
+  .profit_box_des {
     font-size: 30px;
     margin-bottom: 11px;
   }
-  .profit_box_desc_below{
+  .profit_box_desc_below {
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 26px;
@@ -99,7 +98,6 @@ margin-bottom: 15px;
 
   .Gross_profit {
     height: 905px;
-
   }
 }
 
@@ -111,7 +109,6 @@ margin-bottom: 15px;
 
   .Gross_profit {
     height: 895px;
-
   }
 
   .Gross_profit_grid_div {
@@ -127,7 +124,6 @@ margin-bottom: 15px;
 
   .Gross_profit {
     height: 880px;
-
   }
 
   .Gross_profit_grid_div {
@@ -143,13 +139,11 @@ margin-bottom: 15px;
 
   .Gross_profit {
     height: 875px;
-
   }
 
   .Gross_profit_grid_div {
     gap: 30px;
   }
-  
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -161,22 +155,20 @@ margin-bottom: 15px;
   .Gross_profit {
     padding-top: 100px;
     padding-bottom: 100px;
-
   }
 
   .profit_box_desc_below {
     max-width: 300px;
   }
-  .profit_box_des{
+  .profit_box_des {
     font-size: 30px;
     margin-bottom: 11px;
   }
-  .profit_box_desc_below{
+  .profit_box_desc_below {
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 25px;
   }
-  
 
   .profit_box h2 {
     font-size: 45px;
@@ -206,7 +198,6 @@ margin-bottom: 15px;
   .Gross_profit {
     padding-top: 100px;
     padding-bottom: 100px;
-
   }
 
   .profit_box_desc_below {
@@ -222,16 +213,14 @@ margin-bottom: 15px;
   .profit_box h2 {
     font-size: 40px;
   }
-  
 
   .profit_box_heading {
     font-size: 25px;
     margin-bottom: 20px;
   }
-  .profit_box_des{
+  .profit_box_des {
     font-size: 25px;
   }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 856px) {
@@ -241,7 +230,7 @@ margin-bottom: 15px;
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .profit_box {
     padding: 25px 25px;
     padding-bottom: 50px;
@@ -250,7 +239,6 @@ margin-bottom: 15px;
   .Gross_profit {
     padding-top: 40px;
     padding-bottom: 40px;
-
   }
 
   .profit_box_desc_below {
@@ -274,22 +262,18 @@ margin-bottom: 15px;
   .Gross_profit_grid_div {
     width: 100%;
   }
-
-  
-
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .profit_box {
     padding: 25px 25px;
     padding-bottom: 40px;
   }
-.Gross_profit{
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  .Gross_profit {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
 }
-}
-
 
 @media only screen and (min-width: 768px) and (max-width: 970px) {
   .profit_box h2 {
@@ -318,67 +302,64 @@ margin-bottom: 15px;
   }
 }
 
-@media only screen and (min-width:830px){
-  .profit_box{
+@media only screen and (min-width: 830px) {
+  .profit_box {
     grid-column: span 4 / span 4;
   }
 }
-@media only screen and (max-width:830px){
-.profit_box{
-  grid-column: span 6 / span 6;
-}
-}
-@media only screen and (max-width:540px){
-  .profit_box{
-    grid-column: span 12/ span 6;
+@media only screen and (max-width: 830px) {
+  .profit_box {
+    grid-column: span 6 / span 6;
   }
-  }
-@media only screen and (min-width:768px) and (max-width:830px){
- 
-    .Gross_profit_grid_div > :nth-child(3) {
-      grid-column-start: 4;
-    }
-    .Gross_profit_grid_div{
-      row-gap: 27px;
-      column-gap: 48px;
-    }
-    .profit_box h2{
-      font-size: 30px;
-    }
-    .profit_box_heading,   .profit_box h3 {
-      font-size: 20px;
-    }
-    .profit_box_desc_below{
-      max-width: 230px;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 12px;
-      line-height: 18px;
-    }
-    .box_btn span{
-      font-size: 22px;
-    }
 }
-@media only screen and (min-width:639px) and (max-width:767px) {
-  .profit_box_heading{
+@media only screen and (max-width: 540px) {
+  .profit_box {
+    grid-column: span 12 / span 6;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+  .Gross_profit_grid_div > :nth-child(3) {
+    grid-column-start: 4;
+  }
+  .Gross_profit_grid_div {
+    row-gap: 27px;
+    column-gap: 48px;
+  }
+  .profit_box h2 {
+    font-size: 30px;
+  }
+  .profit_box_heading,
+  .profit_box h3 {
+    font-size: 20px;
+  }
+  .profit_box_desc_below {
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .box_btn span {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 639px) and (max-width: 767px) {
+  .profit_box_heading {
     margin-bottom: 20px;
   }
-  .profit_box_des{
+  .profit_box_des {
     font-size: 16px;
   }
-  .profit_box_desc_below{
+  .profit_box_desc_below {
     font-size: 12px;
     line-height: 18px;
   }
   .profit_box h2 {
     font-size: 35px;
   }
-
 }
 
-
-
-@media only screen and (max-width:639px){
+@media only screen and (max-width: 639px) {
   .profit_box_desc_below {
     max-width: 163px;
   }

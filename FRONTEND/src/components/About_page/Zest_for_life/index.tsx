@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import classes from '../About_banner.module.css'
 import { AboutType } from '../../../../lib/interface'
