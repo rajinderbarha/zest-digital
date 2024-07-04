@@ -253,16 +253,10 @@ export async function getInsightsData() {
 export async function getSlugOfInsightsCards() {      //for blogpage of insights  <-- prev    next -->  
   const query = `
 *[_type == "insights"]{
-      // linkSection{
-      //   linkName,
-      //   linkUrl
-      // },
       collection[]->{
         "slug":slug.current,
        hero{
         heading,
-        // keywords[],
-        // icon
        }
       }
     }
@@ -427,8 +421,6 @@ export async function getSingleOurServicesData(slug: string) {
       "title_CR": title_CR,
       "heading_CR": heading_CR,
       "card": card[] {
-       // "percentage_CR": percentage_CR,
-       // "mapped_title": mapped_title,
         "description_1_CR": description_1_CR,
         "description_2_CR": description_2_CR,
         "percentage_CR": percentage_CR,

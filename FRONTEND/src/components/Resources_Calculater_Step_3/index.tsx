@@ -8,7 +8,7 @@ function Resources_Calculator_Step_3({ setStep, setFormData }: any) {
     const [nextClicked, setNextClicked] = useState(false);
 
     const handleNextButtonClick = () => {
-        setNextClicked(true); // Set nextClicked to true when "Next" is clicked
+        setNextClicked(true); 
         if (selectedIndustry !== "") {
             setIndustryInFormData(selectedIndustry);
             setStep(4);
