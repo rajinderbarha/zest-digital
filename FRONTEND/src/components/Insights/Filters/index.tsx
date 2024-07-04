@@ -63,10 +63,12 @@ function Filters({ data }: { data: FiltersType }) {
 
   const handleNextPage = () => {
     setCurrentPage((prevPage) => prevPage + 1);
+    window.scrollTo(0, 0);
   };
 
   const handlePreviousPage = () => {
     setCurrentPage((prevPage) => prevPage - 1);
+    window.scrollTo(0, 0);
   };
 
   return <div className="main_padding">
