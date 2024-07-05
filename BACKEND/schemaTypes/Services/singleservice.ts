@@ -12,19 +12,18 @@ export const SingleService = defineType({
       type: 'slug',
       options: {
         source: 'title',
-        // maxLength: 15
       },
     },
     {
       name: 'title', // name refers to just thelike the id of the field
       type: 'string',
-      title: 'Title of blog article ', //title of the field
+      title: 'Title of blog article ', 
     },
 
     {
       name: 'smallDescription', // this smallDescription and below button name will show on terms-and-condition page in a card with above title also
       type: 'string',
-      title: 'Small Description', //title of the field
+      title: 'Small Description', 
     },
     {
       name: 'button',
@@ -182,7 +181,6 @@ export const SingleService = defineType({
 
       of: [
         {
-          // name: "quote",
           title: 'Quote',
           type: 'object',
           fields: [

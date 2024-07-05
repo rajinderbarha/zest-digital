@@ -4,7 +4,11 @@ export const CaseStudy = defineType({
   title: 'Case Study',
   name: 'caseStudy',
   type: 'document',
-
+  preview: {
+    select: {
+      title: 'hero.heading',
+    },
+  },
   fields: [
     {
       name: 'hero',

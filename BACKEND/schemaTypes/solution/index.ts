@@ -5,6 +5,11 @@ export const Solution = defineType({
   name: 'solution',
   type: 'document',
 
+  preview: {
+    select: {
+      title: 'hero.upperTitle',
+    },
+  },
   fields: [
     {
       name: 'hero',

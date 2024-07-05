@@ -5,6 +5,11 @@ export const HomePage = defineType({
   name: 'homepage',
   type: 'document',
 
+  preview: {
+    select: {
+      title: 'growRevenue.heading',
+    },
+  },
   fields: [
     {
       name: 'growRevenue',

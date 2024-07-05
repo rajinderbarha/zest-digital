@@ -78,6 +78,5 @@ export const SingleInsights = defineType({
     select: {
       title: 'hero.heading',
     },
-    // component: SingleInsightsPreview,
   },
 })
