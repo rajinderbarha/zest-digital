@@ -12,6 +12,46 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
         setUserEmail(e.target.value);
     }
 
+    // const handleNextClick = () => {
+    //     if (userEmail === "") {
+    //         return;
+    //     } else {
+    //         setFormData((prevFormData: any) => ({
+    //             ...prevFormData,
+    //             userEmail: userEmail
+    //         }));
+    //         sendDataToGoogleSheets();
+
+    //         // Save form submission state to sessionStorage and cookies
+    //         sessionStorage.setItem('formSubmitted', 'true');
+    //         document.cookie = "formSubmitted=true; path=/";
+
+    //         const downloadUrl = downloadUrls[0];
+    //         if (downloadUrl) {
+    //             fetch(downloadUrl)
+    //                 .then(response => response.blob())
+    //                 .then(blob => {
+    //                     const link = document.createElement('a');
+    //                     const url = URL.createObjectURL(blob);
+    //                     link.href = url;
+    //                     link.setAttribute('download', 'filename.ext'); 
+    //                     document.body.appendChild(link);
+    //                     link.click();
+    //                     document.body.removeChild(link);
+    //                     URL.revokeObjectURL(url);
+
+    //                     setTimeout(() => {
+    //                         router.replace("/thanks_you");
+    //                     }, 100);
+    //                 })
+    //                 .catch(error => console.error('Error downloading file:', error));
+    //         } else {
+    //             router.replace("/thanks_you");
+    //         }
+    //     }
+    // }
+
+
     const handleNextClick = () => {
         if (userEmail === "") {
             return;
@@ -21,35 +61,60 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
                 userEmail: userEmail
             }));
             sendDataToGoogleSheets();
-
+    
             // Save form submission state to sessionStorage and cookies
             sessionStorage.setItem('formSubmitted', 'true');
             document.cookie = "formSubmitted=true; path=/";
-
+    
             const downloadUrl = downloadUrls[0];
+            console.log(downloadUrl);
+            
             if (downloadUrl) {
-                fetch(downloadUrl)
-                    .then(response => response.blob())
-                    .then(blob => {
-                        const link = document.createElement('a');
-                        const url = URL.createObjectURL(blob);
-                        link.href = url;
-                        link.setAttribute('download', 'filename.ext'); // You can dynamically set the filename if needed
-                        document.body.appendChild(link);
-                        link.click();
-                        document.body.removeChild(link);
-                        URL.revokeObjectURL(url);
-
-                        setTimeout(() => {
-                            router.replace("/thanks_you");
-                        }, 100);
-                    })
-                    .catch(error => console.error('Error downloading file:', error));
+                // Extract the original file name from the URL
+                const fileName = downloadUrl.split('/').pop();
+    
+                // Check if the browser is on a mobile device
+                const isMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    
+                if (isMobile) {
+                    // Mobile specific download handling
+                    fetch(downloadUrl)
+                        .then(response => response.blob())
+                        .then(blob => {
+                            const link = document.createElement('a');
+                            const url = URL.createObjectURL(blob);
+                            link.href = url;
+                            link.setAttribute('download', fileName); 
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                            URL.revokeObjectURL(url);
+    
+                            setTimeout(() => {
+                                router.replace("/thanks_you");
+                            }, 100);
+                        })
+                        .catch(error => console.error('Error downloading file:', error));
+                } else {
+                    // Desktop specific download handling
+                    const link = document.createElement('a');
+                    link.href = downloadUrl;
+                    link.setAttribute('download', fileName);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+    
+                    setTimeout(() => {
+                        router.replace("/thanks_you");
+                    }, 800);
+                }
             } else {
                 router.replace("/thanks_you");
             }
         }
     }
+    
+    
 
 
 
