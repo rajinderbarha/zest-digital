@@ -67,7 +67,6 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
             document.cookie = "formSubmitted=true; path=/";
     
             const downloadUrl = downloadUrls[0];
-            console.log(downloadUrl);
             
             if (downloadUrl) {
                 // Extract the original file name from the URL
@@ -92,7 +91,7 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
     
                             setTimeout(() => {
                                 router.replace("/thanks_you");
-                            }, 100);
+                            }, 800);
                         })
                         .catch(error => console.error('Error downloading file:', error));
                 } else {
@@ -100,6 +99,7 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
                     const link = document.createElement('a');
                     link.href = downloadUrl;
                     link.setAttribute('download', fileName);
+                    
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
@@ -140,7 +140,7 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
                     </div>
                 </div>
                 <div className="button text-center mb-[27px]">
-                    <button className='bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] border border-color-1 text-white rounded-full hover:bg-white hover:text-color-1' onClick={handleNextClick}>Reveal my report</button>
+                    <button className={`${classes.calculator_btn} bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] border border-color-1 text-white rounded-full active:bg-white active:text-color-1`} onClick={handleNextClick}>Reveal my report</button>
                 </div>
                 <div className="max-w-max mx-auto w-max">
                     <button className="border-b border-color-6 font-light w-max text-md lg:text-lg flex items-center gap-1" type='button' onClick={() => setStep(4)}><GoArrowLeft /> Back </button>

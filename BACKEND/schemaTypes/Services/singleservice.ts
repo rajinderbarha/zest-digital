@@ -15,13 +15,13 @@ export const SingleService = defineType({
       },
     },
     {
-      name: 'title', // name refers to just thelike the id of the field
+      name: 'title', 
       type: 'string',
       title: 'Title of blog article ', 
     },
 
     {
-      name: 'smallDescription', // this smallDescription and below button name will show on terms-and-condition page in a card with above title also
+      name: 'smallDescription', 
       type: 'string',
       title: 'Small Description', 
     },

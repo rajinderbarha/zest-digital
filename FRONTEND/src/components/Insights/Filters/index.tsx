@@ -44,7 +44,7 @@ function Filters({ data }: { data: FiltersType }) {
       const updatedCategories = prevCategories.includes(category)
         ? prevCategories.filter((prevCategory) => prevCategory !== category)
         : [...prevCategories, category];
-      setCurrentPage(1); // Reset to first page on category change
+      setCurrentPage(1); 
       return updatedCategories;
     });
   };

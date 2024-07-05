@@ -64,7 +64,7 @@ function Resources_Calculator_Step_3({ setStep, setFormData }: any) {
                 </div>
                 {nextClicked && selectedIndustry === "" && <p className="font-mono text-20px font-bold text-red-900 mx-auto  mb-[40px] md:mb-[57px] text-center">Please select an industry to proceed!</p>}
                 <div className="button text-center mb-[27px]">
-                    <button className='bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] border border-color-1 text-white rounded-full hover:bg-white hover:text-color-1' type="button" onClick={handleNextButtonClick}>Next</button>
+                    <button className={`${classes.calculator_btn} bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] border border-color-1 text-white rounded-full active:bg-white active:text-color-1`} type="button" onClick={handleNextButtonClick}>Next</button>
                 </div>
                 <div className="max-w-max mx-auto w-max">
                     <button className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1" type='button' onClick={() => setStep(2)}><GoArrowLeft /> Back </button>

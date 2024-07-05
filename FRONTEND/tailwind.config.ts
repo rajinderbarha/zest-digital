@@ -5,8 +5,6 @@ module.exports = {
     extend: {
       fontFamily: {
         mono: ['IBMPlexMono', 'monospace'],
-        // mono: [ 'monospace'], 
-
         lato: ['Lato_font'],
       },
       colors: {
@@ -34,9 +32,6 @@ module.exports = {
         '25px': '25px',
       },
       boxShadow: {
-        'msg': '0 3px 6px  #00000029',
-        'compo': '6px 6px #1d2671',
-        'compo1': '-6px 6px #e43fa8',
         'blue-left': '-6px 6px #1d2671',
         'dark-pink-left': '-6px 6px #e43fa8',
         'blue-right': '6px 6px #1d2671',
@@ -56,42 +51,6 @@ module.exports = {
         'sm-max': [
           { 'max': '609px' },
         ],
-        'max-1810px': [
-          { 'max': '1810px' },
-        ],
-        'max-1700px': [
-          { 'max': '1700px' },
-        ],
-        'max-1570': [
-          { 'max': '1570px' },
-        ],
-        'max-1350': [
-          { 'max': '1350px' },
-        ],
-        'min-1350': [
-          { 'min': '1351px' },
-        ],
-        'max-1024': [
-          { 'max': '1024px' },
-        ],
-        'max-768': [
-          { 'max': '768px' },
-        ],
-        'min-768': [
-          { 'min': '768px' },
-        ],
-        'max-970': [
-          { 'max': '970px' },
-        ],
-        'max-800': [
-          { 'max': '800px' },
-        ],
-        'min-769': [
-          { 'min': '769px' },
-        ],
-        'max-1066': [
-          { 'max': '1066px' },
-        ],
         'max-tb':[
           {'max': '830px' }
         ],
@@ -101,35 +60,12 @@ module.exports = {
 
       },
       spacing: {
-        '680px': '680px',
-        '670px': '670px',
-        '450px': '450px',
-        '440px': '420px',
-        '660px': '660px',
-        '430px': '410px',
-        '650px': '650px',
-        '400px': '380px',
-        '630px': '600px',
-        '380px': '330px',
-        '331px': '331px',
-        '188px': '188px',
-        '186px': '186px',
-        '185px': '185px',
-        '166px': '166px',
-        '130px': '100px',
-        '100px': '100px',
-        '90px': '90px',
-        '71px': '71px',
-        '68px': '68px',
-        '63px': '63px',
         '55px': '55px',
         '47px': '47px',
         '26px': '26px',
         '25px': '25px',
         '23px': '23px',
         '21px': '21px',
-        '16.29px': '16.29px',
-        '14.33px': '14.33px',
 
       }
 

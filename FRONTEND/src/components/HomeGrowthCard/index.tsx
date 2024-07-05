@@ -78,8 +78,8 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                       <Link href={`/casestudies/${slug}`}>
                         <div className="xl:w-[60px] md:w-[55px]  w-[40px] group min-tb:max-tb:w-[55px]" >
 
-                          <Image src={arrow} alt="" className="group-hover:hidden" />
-                          <Image src={hover_arrow} alt="" className="text-[10px] group-hover:block hidden" />
+                          <Image src={arrow} alt="" className="group-hover:hidden" loading="eager"/>
+                          <Image src={hover_arrow} alt="" className="text-[10px] group-hover:block hidden" loading="eager"/>
                         </div>
                       </Link>
                     </div>

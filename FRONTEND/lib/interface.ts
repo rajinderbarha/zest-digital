@@ -60,7 +60,6 @@ export interface HomepageHeroSec {
   };
 }
 export interface HomepageGrowthCard {
-  // switcher: any;
   card: {
     growthcard?: any;
     length?: number;
@@ -79,15 +78,14 @@ export interface LogoMoving {
 export interface GrowthEngineProps {
   props: {
     title: string;
-    // heading: string;
     description: string;
     buttonName: string;
     buttonLink: string;
     image: any;
-    allFilesUrl?: string; //we need these two fields just on resources page
+    allFilesUrl?: string;
   };
   has_image: boolean;
-  selectedFile?: any; //  holds the address of the selected file
+  selectedFile?: any; 
   shadow_right: boolean;
 }
 export interface HomePageServices {
@@ -96,7 +94,6 @@ export interface HomePageServices {
     image1: any;
     image2: any;
     image3: any;
-    // services: { slug: string; title: string }[];
     services: {
       reference: any;
       servicetitle: string;
@@ -129,7 +126,6 @@ export interface ContactType {
   }[];
   card: {
     contactInfo: any;
-    // leftDescriptionList: string;
     rightDescriptionList: string;
     latitude: number;
     longitude: number;
@@ -364,11 +360,8 @@ export interface ServiceContentBox {
 export interface HappyCustomer {
   [x: string]: any;
   Services_details: {
-    // heading: string;
     serviceheading: any;
     content: any;
-    // description_1: string;
-    // description_2: string;
     image: string;
   }[];
 }
@@ -392,12 +385,8 @@ export interface clientResults {
   belowbuttonName_CR: string;
   belowbuttonLink_CR: string;
   card: ourServiceCard[];
-  //   clientResult: {
-  // }
 }
 export interface ourServiceCard {
-  // percentage_CR: string;
-  // mapped_title: string;
   description_1_CR: string;
   description_2_CR: string;
   buttonName_CR: string;
@@ -529,11 +518,9 @@ export interface Gross_profitType {
   }[];
 }
 export interface SingleCasestudyType {
-  // singleCasestudy:{}
   Title: string;
   sectionCard: Card[];
   hero: Hero;
-  // slug: Slug;
   team: Team;
   upperTitle: string;
 }

@@ -1,5 +1,6 @@
 .hover_box {
-  @apply bg-white border border-color-1 rounded-[10px] p-[10px] md:p-[20px] w-[190px] md:w-[227px] absolute top-[-33px]  shadow-msg z-[1];
+  /* box-shadow: 0 3px 6px  #00000029; */
+  @apply bg-white border border-color-1 rounded-[10px] p-[10px] md:p-[20px] w-[190px] md:w-[227px] absolute top-[-33px]  z-[1];
 }
 .hover_box ul {
   @apply list-decimal list-inside text-color-1 font-lato text-[10px] sm:text-[12px] md:text-[14px] grid gap-y-[5px] sm:gap-y-[14px] md:gap-y-[18px];

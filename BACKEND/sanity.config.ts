@@ -12,7 +12,7 @@ export default defineConfig({
 
   plugins: [
     structureTool(),
-    visionTool(), // Add the table plugin here
+    visionTool(), 
       // Include the table plugin
       table(),
   ],

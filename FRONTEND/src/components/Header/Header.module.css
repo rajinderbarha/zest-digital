@@ -15,6 +15,12 @@
   background-repeat: no-repeat;
 }
 
+@media(hover: hover) and (pointer: fine) {
+  .call_btn {
+    @apply hover:bg-white hover:text-color-1
+  }
+}
+
 .menuIcon {
   max-width: max-content;
   width: 100%;
@@ -111,5 +117,39 @@
   }
   .desktop_nav div:last-child {
     gap: 30px;
+  }
+}
+
+@media (min-width:1024px) and (max-width: 1080px),(min-width:641px) and (max-width: 830px)  {
+  
+  .menu{
+    margin-left: -34px;
+    margin-right: -34px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (min-width:831px) and (max-width: 1023px) {
+  .menu{
+    margin-left: -4px;
+    margin-right: -4px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width:540px) and (max-width: 640px) {
+  .menu{
+    margin-left: -44px;
+    margin-right: -44px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media  (max-width: 539px) {
+  .menu{
+    margin-left: -14px;
+    margin-right: -14px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
