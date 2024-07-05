@@ -10,7 +10,7 @@
   
   .progress {
     height: 100%; 
-    background-color:  #F7C9E7; 
+    background-color:  #E43FA8; 
     border-radius: 10px; 
     transition: width 0.5s ease-in-out; 
   }

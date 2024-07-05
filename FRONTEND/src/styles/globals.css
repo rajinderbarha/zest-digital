@@ -17,6 +17,7 @@
   align-items: baseline;
   justify-content: center;
 }
+
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm {
   max-width: 1510px;
 }
@@ -67,10 +68,12 @@
   .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm {
     margin: 20px !important;
   }
+
   /* .MuiDialog-container.MuiDialog-scrollPaper {
     align-items: center;
   } */
 }
+
 @media only screen and (max-width: 639px) {
   .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm {
     margin: 10px !important;
@@ -108,35 +111,41 @@ select::-ms-expand {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
+
 @media only screen and (min-width: 1775px) {
   .main_padding {
     padding-left: 100px !important;
     padding-right: 100px !important;
   }
 }
+
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
   .main_padding {
     padding-left: 75px !important;
     padding-right: 75px !important;
   }
 }
+
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
   .main_padding {
     padding-left: 60px !important;
     padding-right: 60px !important;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1365px) {
   .main_padding {
     padding-left: 50px !important;
     padding-right: 50px !important;
   }
 }
+
 @media only screen and (min-width: 540px) and (max-width: 830px) {
   .main_padding {
     padding-left: 50px !important;
     padding-right: 50px !important;
   }
+
   .main_padding.tablet_padding {
     padding-left: 60px !important;
     padding-right: 60px !important;
@@ -218,11 +227,32 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
 .rotate {
   animation: loading 15s linear infinite;
 }
+
 @keyframes loading {
   0% {
     transform: rotate(0);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
+/* .marquee_div {
+  width: max-content;
+}
+
+.marquee_images {
+  width: max-content;
+  animation: marquee_main 15s linear infinite;
+}
+
+@keyframes marquee_main {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+} */

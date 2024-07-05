@@ -29,7 +29,7 @@ const Career: React.FC<CareerProps> = ({ data }) => {
                 </div>
               </div>
             </div>
-            <div className="thanks_for_interest lg:mt-0 min-tb:max-tb:mt-[0] sm:mt-[0] mt-[00px] relative">
+            <div className="thanks_for_interest lg:mt-0 min-tb:max-tb:mt-[0] sm:mt-[0] mt-[00px] relative"  data-aos="fade-up">
             <div className={`${classes.career_img}  absolute  w-full`}>
                     <div className="max-w-[1335px] mx-auto w-full">
                     <Image
@@ -42,7 +42,7 @@ const Career: React.FC<CareerProps> = ({ data }) => {
                       </div>
                   </div>
               <div
-                className={`${classes.career_box}  main_container lg:rounded-[30px] md:rounded-[20px] rounded-[15px] relative overflow-hidden`} data-aos="fade-up"
+                className={`${classes.career_box}  main_container lg:rounded-[30px] md:rounded-[20px] rounded-[15px] relative overflow-hidden`} 
               >
                 <div
                   className={`${classes.career_container} main_padding max-w-[1335px] mx-auto relative`}
