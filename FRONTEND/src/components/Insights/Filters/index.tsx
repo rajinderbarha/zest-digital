@@ -16,7 +16,7 @@ function Filters({ data }: { data: FiltersType }) {
       duration: 1000,
       once: true,
     });
-  }, []);
+  }, [])
 
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -69,7 +69,7 @@ function Filters({ data }: { data: FiltersType }) {
   const handlePreviousPage = () => {
     setCurrentPage((prevPage) => prevPage - 1);
     window.scrollTo(0, 0);
-  };
+  }
 
   return <div className="main_padding">
     <div className="main_container">
