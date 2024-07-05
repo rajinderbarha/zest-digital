@@ -61,7 +61,6 @@ export const Footer = defineType({
         {
           type: 'object',
           fields: [
-            // {name: 'socialImage', type: 'image', title: 'Social Image'},
             {name: 'socialLink', type: 'string', title: 'Social Link'},
           ],
         },

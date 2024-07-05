@@ -4,7 +4,11 @@ export const About = defineType({
   title: 'About',
   name: 'about',
   type: 'document',
-
+  preview: {
+    select: {
+      title: 'hero.heading',
+    },
+  },
   fields: [
     {
       name: 'hero',
@@ -106,15 +110,5 @@ export const About = defineType({
       ],
     },
 
-    {
-      name: 'banner',
-      title: 'Banner',
-      type: 'object',
-      fields: [
-        {name: 'image1', type: 'image', title: 'Image One'},
-        {name: 'image2', type: 'image', title: 'Image Two'},
-        {name: 'description', type: 'string', title: 'Description'},
-      ],
-    },
   ],
 })
