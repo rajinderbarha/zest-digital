@@ -10,6 +10,10 @@
     line-height: 28px;
 } 
 
+.Resources_Calculater_Step_5 input[type="radio"]{
+    accent-color: #E43FA8;
+}
+
 @media (min-width:639px){
  
     .step_1_text p, .step_2_text p{
