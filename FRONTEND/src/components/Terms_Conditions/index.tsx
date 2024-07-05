@@ -38,7 +38,7 @@ function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
               key={cardIndex}
               title={card?.boxtitle || ""}
               smallDescription={card.reference?.smallDescription || ""}
-              shadow_right={cardIndex % 2 === 0} // Shadow alternating sides
+              shadow_right={cardIndex % 2 === 0}
               buttonName={card.reference?.buttonName || ""}
               buttonLink={card.reference?.slug.current}
             />

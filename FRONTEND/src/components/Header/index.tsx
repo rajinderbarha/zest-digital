@@ -41,7 +41,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
             key={`header_${item.logo._id}`}
             className="screen-1-max:hidden  flex justify-between items-center pt-25px pb-21px main_container relative"
           >
-            <div className={`${classes.desktop_nav} flex items-center gap-68px `} >
+            <div className={`${classes.desktop_nav} flex items-center gap-[68px] `} >
               <div className="screen-1-max:w-24 lg:w-28 xl:w-auto ">
                 <Link href={"/"}>
                   <Image
@@ -73,7 +73,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
             <div className="" data-aos="fade-left">
               <Link
                 href={item.button.navLink}
-                className="screen-1-max:hidden font-mono text-base px-21px py-[5px] bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1 border border-color-1"
+                className={`${classes.call_btn} screen-1-max:hidden font-mono text-base px-21px py-[5px] bg-color-1 text-white rounded-full  active:bg-white active:text-color-1 border border-color-1`}
               >
                 {item.button.navName}
               </Link>
@@ -102,7 +102,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
             <div className="flex items-center gap-[15px]">
               <Link onClick={closeMenu}
                 href={item.button.navLink}
-                className=" font-mono text-[12px] px-21px py-[7px] bg-color-1 text-white rounded-full  hover:bg-white hover:text-color-1  border border-color-1"
+                className={`${classes.call_btn} font-mono text-[12px] px-21px py-[7px] bg-color-1 text-white rounded-full  active:bg-white active:text-color-1  border border-color-1`}
               >
                 {item.button.navName}
               </Link>

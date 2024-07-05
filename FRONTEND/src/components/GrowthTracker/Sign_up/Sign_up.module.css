@@ -173,7 +173,7 @@
   }
 }
 
-/* Extra large screens */
+
 @media (min-width: 1280px) {
   .form_heading {
     font-size: 45px;

@@ -9,7 +9,7 @@ export const Footer = defineType({
     {name: 'climate_actionImg', title: 'Climate_actionImg', type: 'image'},
     {name: 'earth_img', title: 'Earth_img', type: 'image'},
     {
-      name: 'smallDescription', // name is just like id of the field
+      name: 'smallDescription',
       type: 'string',
       title: 'Small Description',
     },

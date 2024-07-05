@@ -9,12 +9,12 @@ export const LocationObj = defineType({
     {
       name: 'latitude',
       title: 'Latitude',
-      type: 'number', // Latitude will be stored as a number
+      type: 'number', 
     },
     {
       name: 'longitude',
       title: 'Longitude',
-      type: 'number', // Longitude will be stored as a number
+      type: 'number', 
     },
   ],
 });

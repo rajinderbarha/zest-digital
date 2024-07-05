@@ -1,4 +1,5 @@
 import classes from './Resource_Access_popup.module.css'
+import style from '../Resources_Calculater_Step_1/Resources_Calculater.module.css'
 import popup_close_icon from '../../assets/images/popup_close_icon.png'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -18,7 +19,7 @@ function Resource_Access_popup({ setStep, register, handleSubmit, setFormData, f
                 <div className="Resource_Access_popup popup_conatiner lg:pt-[88px] md:pt-[60px] sm:pt-[50px] pt-[40px]  relative bg-white" >
                     <div className="absolute lg:right-[25px] lg:top-[40px]  md:right-[28px] md:top-[28px] sm:right-[20px] sm:top-[20px] top-[20px] right-[20px] md:max-w-max max-w-[20px]">
                         <Link href='/resources'>
-                            <Image src={popup_close_icon} alt='' className='lg:max-w-[20px] md:max-w-[15px] sm:max-w-[17px] max-w-[10px] ' />
+                            <Image src={popup_close_icon} alt='' className='lg:max-w-[20px] md:max-w-[15px] sm:max-w-[17px] max-w-[10px] '  loading="eager"/>
                         </Link>
 
                     </div>
@@ -40,7 +41,7 @@ function Resource_Access_popup({ setStep, register, handleSubmit, setFormData, f
                         </div>
                     </div>
                     <div className="button lg:mt-[40px] md:mt-[30px] sm:mt-[20px] mt-[10px] text-center lg:mb-[108px] mb:mb-[80px] sm:mb-[50px] mb-[30px]">
-                        <button className='bg-color-1 hover:bg-white hover:text-color-1 border border-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] text-white rounded-full' type='submit'>Get access</button>
+                        <button className={`${style.calculator_btn} bg-color-1 active:bg-white active:text-color-1 border border-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] text-white rounded-full`} type='submit'>Get access</button>
                     </div>
                     <div className="term_condition max-w-[857px] mt-[40px] mx-auto mb-[30px]">
                         <p className='font-lato text-base text-color-1 text-center'>*required fields</p>

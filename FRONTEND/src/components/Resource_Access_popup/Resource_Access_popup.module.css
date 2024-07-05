@@ -3,18 +3,18 @@
     flex-direction: column;
   }
 
-  .form_inputs div {
+  .form_inputs > div {
     max-width: 100%;
     margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .form_inputs div {
+  .form_inputs > div {
     margin-bottom: 22px;
   }
 }
 @media only screen and (max-width: 640px) {
-  .form_inputs div {
+  .form_inputs > div {
     margin-bottom: 15px;
   }
 }
