@@ -28,7 +28,7 @@ function MyApp({
         <Component {...pageProps} />
       </Layout>
     </PopupProvider>
-  );
+  )
 }
 
 MyApp.getInitialProps = async (appContext: AppContext) => {
@@ -37,7 +37,7 @@ MyApp.getInitialProps = async (appContext: AppContext) => {
 
   // Get initial props from App
   const appProps = await App.getInitialProps(appContext);
-  return { ...appProps, headerdata, footerdata };
+  return { ...appProps, headerdata, footerdata }
 };
 
 export default MyApp;
