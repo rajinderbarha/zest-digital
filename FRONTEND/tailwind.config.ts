@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         // mono: ['IBMPlexMono', 'monospace'],
-        mono: ['"IBMPlexMono"', 'monospace'],
+        mono: ['var(--font-ibm-plex-mono)', 'monospace'],
         lato: ['Lato_font'],
       },
       colors: {
