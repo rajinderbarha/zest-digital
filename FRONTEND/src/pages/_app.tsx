@@ -29,7 +29,24 @@ const ibmPlexMono = localFont({
   display: 'swap',
   variable: '--font-ibm-plex-mono',
 });
-
+const latoFont = localFont({
+  src: [
+    {
+      path: '../assets/lato/Lato-Black.ttf',
+      weight: '900',
+    },
+    {
+      path: '../assets/lato/Lato-Bold.ttf',
+      weight: '700',
+    },
+    {
+      path: '../assets/lato/Lato-Regular.ttf',
+      weight: '400',
+    }, 
+  ],
+  display: 'swap',
+  variable: '--font-lato-font',
+});
 function MyApp({
   Component,
   pageProps,
@@ -38,7 +55,7 @@ function MyApp({
 }: AppProps & { headerdata: HeaderType[]; footerdata: FooterType[] }) {
   return (
     <PopupProvider>
-       <div className={`${ibmPlexMono.variable}`}>
+       <div className={`${ibmPlexMono.variable} ${latoFont.variable}`}>
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
       </Layout>
