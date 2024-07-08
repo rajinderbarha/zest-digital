@@ -10,8 +10,8 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .bg_image {
-    background-image: url("../../assets/images/OurServices_gradient_mobile.png");
+  .bg_image { 
+    background-image: url("../../assets/images/compress/OurServices_gradient_mobile_compress.avif");
   }
 
   .Services_List li:last-child {
