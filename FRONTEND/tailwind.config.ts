@@ -4,9 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // mono: ['IBMPlexMono', 'monospace'],
         mono: ['var(--font-ibm-plex-mono)', 'monospace'],
-        lato: ['Lato_font'],
+        lato: ['var(--font-lato-font)'],
       },
       colors: {
         'color-1': '#191615',
