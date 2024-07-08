@@ -1,6 +1,5 @@
 .banner {
-  /* background-image: url("../../assets/images/compress/Gradient_v3_compress.avif"); */
-  background-image: url("/Gradient_v3_compress.avif");
+  background-image: url("../../assets/images/compress/Gradient_v3_compress.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
