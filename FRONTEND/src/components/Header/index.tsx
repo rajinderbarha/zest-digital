@@ -49,7 +49,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                     alt="Site Logo"
                     width={149}
                     height={69}
-                    className=" h-[69px]"
+                    className=" h-[69px]" priority
                   />
                 </Link>
               </div>
@@ -95,7 +95,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   alt="Site Logo"
                   width={112}
                   height={51}
-                  onClick={closeMenu}
+                  onClick={closeMenu} priority
                 />
               </Link>
             </div>
