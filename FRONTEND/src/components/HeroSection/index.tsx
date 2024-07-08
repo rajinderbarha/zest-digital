@@ -28,12 +28,12 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
 
   return <div className="main_padding" data-aos="fade-up">
     <div className="text-white main_container">
-      <div className={`${classes.banner} hero_banner tablet_padding grid max-tb:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-10 lg:rounded-30px md:rounded-[20px] rounded-[15px] main_padding`}>
+      <div className={`${classes.banner} tablet_padding grid max-tb:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-10 lg:rounded-30px md:rounded-[20px] rounded-[15px] main_padding`}>
         <div className="font-mono text-55px border-white flex flex-col">
-          <h1 data-aos="fade-out" data-aos-delay="200" className={`${classes.banner_text} hero_banner_text font-semibold text-white`}>
+          <h1 data-aos="fade-out" data-aos-delay="200" className={`${classes.banner_text} font-semibold text-white`}>
             {heading}
           </h1>
-          <div className={`${classes.banner_btn} hero_banner_btn flex gap-5 md:flex-row lg:flex-row mt-9 flex-col sm:flex-row`}>
+          <div className={`${classes.banner_btn} flex gap-5 md:flex-row lg:flex-row mt-9 flex-col sm:flex-row`}>
             <Link href={viewSolBtnLink} className="flex">
               <button className="bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white hover:border-color-1">
                 {viewSolBtnName}
@@ -44,7 +44,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
                 {SeeOurResBtnName}
               </button>
             </Link>
-            <div className={`${classes.marketing_agency_logo_1} hero_marketing_agency_logo_1`}>
+            <div className={`${classes.marketing_agency_logo_1}`}>
               <Image
                 src={urlFor(image).url()}
                 width={236}
@@ -56,10 +56,10 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
           </div>
         </div>
         <div className={`${classes.banner_video} flex justify-end items-start relative`}>
-          <div className={`${classes.marketing_agency_logo_2} hero_marketing_agency_logo_2`}></div>
-          <div className={`${classes.custom_border} hero_custom_border`} data-aos="zoom-in" data-aos-duration="1500">
+          <div className={`${classes.marketing_agency_logo_2}`}></div>
+          <div className={classes.custom_border} data-aos="zoom-in" data-aos-duration="1500">
 
-            <video width="680" height="480" controls className={`${classes.video_class} hero_video_class xl:rounded-30px md:rounded-[20px] rounded-[10px]`} preload="auto">
+            <video width="680" height="480" controls className={`${classes.video_class} xl:rounded-30px md:rounded-[20px] rounded-[10px]`} preload="auto">
               <source src={videosrc} type="video/mp4" />
 
               Your browser does not support the video tag.
