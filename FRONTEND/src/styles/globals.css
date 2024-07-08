@@ -40,7 +40,7 @@
   font-weight: 400;
 }
 
-@font-face {
+/* @font-face {
   font-family: "IBMPlexMono";
   src: url("../assets/IBMPlexMono/IBMPlexMono-SemiBold.ttf");
   font-weight: 600;
@@ -62,7 +62,7 @@
   font-family: "IBMPlexMono";
   src: url("../assets/IBMPlexMono/IBMPlexMono-Regular.ttf");
   font-weight: 400;
-}
+} */
 
 @media only screen and (max-width: 767px) {
   .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm {

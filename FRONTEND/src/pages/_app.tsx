@@ -4,6 +4,29 @@ import Layout from "../layout/index";
 import { getFooter, getHeader } from "../../lib/sanity.query";
 import { PopupProvider } from "@/context";
 import { FooterType, HeaderType } from "../../lib/interface";
+import localFont from 'next/font/local';
+
+const ibmPlexMono = localFont({
+  src: [
+    {
+      path: '../assets/IBMPlexMono/IBMPlexMono-SemiBold.ttf',
+      weight: '600',
+    },
+    {
+      path: '../assets/IBMPlexMono/IBMPlexMono-Bold.ttf',
+      weight: '700',
+    },
+    {
+      path: '../assets/IBMPlexMono/IBMPlexMono-Medium.ttf',
+      weight: '500',
+    },
+    {
+      path: '../assets/IBMPlexMono/IBMPlexMono-Regular.ttf',
+      weight: '400',
+    },
+  ],
+  display: 'swap',
+});
 
 function MyApp({
   Component,
