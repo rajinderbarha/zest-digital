@@ -11,6 +11,7 @@ const ibmPlexMono = localFont({
     {
       path: '../assets/IBMPlexMono/IBMPlexMono-SemiBold.ttf',
       weight: '600',
+      
     },
     {
       path: '../assets/IBMPlexMono/IBMPlexMono-Bold.ttf',
@@ -26,6 +27,7 @@ const ibmPlexMono = localFont({
     },
   ],
   display: 'swap',
+  variable: '--font-ibm-plex-mono',
 });
 
 function MyApp({
@@ -36,9 +38,11 @@ function MyApp({
 }: AppProps & { headerdata: HeaderType[]; footerdata: FooterType[] }) {
   return (
     <PopupProvider>
+       <div className={`${ibmPlexMono.variable}`}>
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
       </Layout>
+      </div>
     </PopupProvider>
   )
 }
