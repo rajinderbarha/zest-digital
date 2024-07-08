@@ -4,49 +4,7 @@ import Layout from "../layout/index";
 import { getFooter, getHeader } from "../../lib/sanity.query";
 import { PopupProvider } from "@/context";
 import { FooterType, HeaderType } from "../../lib/interface";
-import localFont from 'next/font/local';
 
-const ibmPlexMono = localFont({
-  src: [
-    {
-      path: '../assets/IBMPlexMono/IBMPlexMono-SemiBold.ttf',
-      weight: '600',
-      
-    },
-    {
-      path: '../assets/IBMPlexMono/IBMPlexMono-Bold.ttf',
-      weight: '700',
-    },
-    {
-      path: '../assets/IBMPlexMono/IBMPlexMono-Medium.ttf',
-      weight: '500',
-    },
-    {
-      path: '../assets/IBMPlexMono/IBMPlexMono-Regular.ttf',
-      weight: '400',
-    },
-  ],
-  display: 'swap',
-  variable: '--font-ibm-plex-mono',
-});
-const latoFont = localFont({
-  src: [
-    {
-      path: '../assets/lato/Lato-Black.ttf',
-      weight: '900',
-    },
-    {
-      path: '../assets/lato/Lato-Bold.ttf',
-      weight: '700',
-    },
-    {
-      path: '../assets/lato/Lato-Regular.ttf',
-      weight: '400',
-    }, 
-  ],
-  display: 'swap',
-  variable: '--font-lato-font',
-});
 function MyApp({
   Component,
   pageProps,
@@ -55,11 +13,9 @@ function MyApp({
 }: AppProps & { headerdata: HeaderType[]; footerdata: FooterType[] }) {
   return (
     <PopupProvider>
-       <div className={`${ibmPlexMono.variable} ${latoFont.variable}`}>
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
       </Layout>
-      </div>
     </PopupProvider>
   )
 }
