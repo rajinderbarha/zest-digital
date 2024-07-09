@@ -34,8 +34,8 @@ function MapLocations({ data }: any) {
                   <FaPhoneAlt className={`${classes.phone_icon} text-black w-max text-[15px] md:text-[15px] `} />
                 </div>
                 <p className={`${classes.contact_detail} `}>
-                  {" "}
-                  {rightDescriptionList}
+                  {" "} <a href={`tel:${rightDescriptionList}`}>
+                  {rightDescriptionList}</a>
                 </p>
               </div>
             </div>
