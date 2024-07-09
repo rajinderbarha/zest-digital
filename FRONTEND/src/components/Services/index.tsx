@@ -27,7 +27,6 @@ function Services({ data }: { data: SingleOurService }) {
     Services_Quotes: serviceQuotes,
   } = data;
 
-
   const agencyAddress = agencyAddressData.flatMap((item: any) => item.contactInfo);
 
   return <div className="Body_padding">
@@ -37,7 +36,7 @@ function Services({ data }: { data: SingleOurService }) {
       smallDescription={smallDescription}
       button={{ callButtonName, callButtonLink, resultsButtonName, resultsButtonLink }}
     />
-    <Services_Box Services_Box={{ contentBox: { heading, description, belowdesc, coloredText }, imageBox }} />
+    <Services_Box Services_Box={{ contentBox: { heading, description, belowdesc, coloredText }, imageBox } } Slug={data.slug} />
     <div className="xl:mt-[175px] lg:mt-[150px] md:mt-[125px] min-tb:max-tb:mt-[124px] sm:mt-[80px] mt-[68px]"></div>
 
     <Services_details_happy_customer Services_details={Services_details} Slug={data.slug} />

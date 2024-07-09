@@ -21,6 +21,8 @@ function resources({ resources }: any) {
   const [step, setStep] = useState<number>(0);
   const [formData, setFormData] = useState({});
   const [selectedFileUrl, setSelectedFileUrl] = useState("");
+  const [progressValue, setProgressValue] = useState<number>(20);
+  const [priviousProgressValue, setPriviousProgressValue] = useState<number>(0);
 
   const {
     register,
@@ -49,7 +51,26 @@ function resources({ resources }: any) {
     title = "Access workbook"
   }
 
+  const handleNextStep = (nextStep: number) => {
+    // forword step
+    if(nextStep>step){
+      setProgressValue(progressValues[nextStep]);
+      setPriviousProgressValue(progressValues[nextStep-1]);
+    }
+      // back step
+    else{
+      setProgressValue(progressValues[nextStep]);
+      setPriviousProgressValue(progressValues[nextStep+1]);
+    }
+    // set initail values
+    if(nextStep===0){
+      setProgressValue(20);
+      setPriviousProgressValue(0);
+    }
+    setStep(nextStep);
+  };
 
+  const progressValues = [0, 20, 35, 55, 75, 90];
   return (
     <>
       <StepPopup
@@ -68,45 +89,56 @@ function resources({ resources }: any) {
           )}
           {step === 1 && (
             <Resources_Calculater_Step_1
-              setStep={setStep}
+              setStep={handleNextStep}
               register={register}
               handleSubmit={handleSubmit}
               setFormData={setFormData}
+              progressValue={progressValue}
+              priviousProgressValue={priviousProgressValue}
             />
           )}
           {step === 2 && (
             <Resources_Calculater_Step_2
-              setStep={setStep}
+              setStep={handleNextStep}
               register={register}
               handleSubmit={handleSubmit}
               setFormData={setFormData}
+             progressValue={progressValue}
+             priviousProgressValue={priviousProgressValue}
             />
           )}
           {step === 3 && (
             <Resources_Calculater_Step_3
-              setStep={setStep}
+              setStep={handleNextStep}
               register={register}
               handleSubmit={handleSubmit}
               setFormData={setFormData}
+             progressValue={progressValue}
+             priviousProgressValue={priviousProgressValue}
             />
           )}
           {step === 4 && (
             <Resources_Calculater_Step_4
-              setStep={setStep}
+              setStep={handleNextStep}
               register={register}
               handleSubmit={handleSubmit}
               setFormData={setFormData}
               formData={formData}
+             progressValue={progressValue}
+             priviousProgressValue={priviousProgressValue}
             />
           )}
           {step === 5 && (
             <Resources_Calculater_Step_5
-              setStep={setStep}
+              // setStep={setStep}
+              setStep={handleNextStep}
               register={register}
               handleSubmit={handleSubmit}
               setFormData={setFormData}
               sendDataToGoogleSheets={sendDataToGoogleSheets}
               downloadUrls={[selectedFileUrl]}
+             progressValue={progressValue}
+             priviousProgressValue={priviousProgressValue}
             />
           )}
 
