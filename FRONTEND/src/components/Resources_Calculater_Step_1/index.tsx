@@ -4,16 +4,14 @@ import classes from './Resources_Calculater.module.css'
 import { GoArrowLeft } from "react-icons/go";
 import ProgressBar from '@/common/ProgressBar';
 
-function Resources_Calculater_Step_1({ setStep }: any) {
+function Resources_Calculater_Step_1({ setStep, progressValue, priviousProgressValue }: any) {
     
 
     return <div className="Resources_Calculater_Step_1 mt-[0px]">
         <div className="pe-[6px] pb-[6px]">
             <div className="Resources_Calculater_Step_1 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                 <div className="progrees_bar xl:mb-[80px] lg:mb-[60px] md:mb-[40px] mb-[30px] ">
-        
-                    <ProgressBar value={20} /> 
-                   
+                    <ProgressBar value={progressValue} from={priviousProgressValue}/>                  
                 </div>
                 <div className="trafic_image ">
                     <Image src={Traffic_conversion_icon} alt='' className='mx-auto md:max-w-[206px] md:max-h-[207px] sm:max-w-[150px] sm:max-h-[150px] max-w-[100px] max-h-[100px]'  />
@@ -26,7 +24,7 @@ function Resources_Calculater_Step_1({ setStep }: any) {
                     <button className={`${classes.calculator_btn} bg-color-1 font-mono text-base md:px-[40px] sm:px-[30px] px-[25px] md:py-[10px] py-[5px] border border-color-1 text-white rounded-full active:bg-white active:text-color-1`} type="button" onClick={() => setStep(2)}>Start</button>
                 </div>
                 <div className=" max-w-max mx-auto w-max ">
-                    <button className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1" type="button" onClick={() => setStep(0)}><GoArrowLeft /> Back to zestdigital.com</button>
+                    <button className="border-b border-color-6  font-light w-max text-md lg:text-lg flex items-center gap-1" type="button" onClick={() => window.location.href = "/"}><GoArrowLeft /> Back to zestdigital.com</button>
                 </div>
             </div>
         </div>

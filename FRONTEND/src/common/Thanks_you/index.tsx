@@ -18,8 +18,8 @@ const Thanks_you = () => {
   return <div className={`Career xl:mb-[170px] lg:mb-[150px] md:mb-[125px] sm:mb-[80px] mb-[50px]`}>
     <div className="main_padding">
       <div className="thanks_for_interest lg:mt-[51px] md:mt-[35px] sm:mt-[30px] mt-[25px]" data-aos="fade-up">
-        <div className={`${classes.SingleIntro} main_container md:rounded-30px rounded-[20px]`}>
-          <div className={`${classes.single_container} max-w-[1335px] mx-auto lg:pt-[78px] md:pt-[60px] sm:pt-[50px] pt-[35px] lg:pb-[113px] mb:pb-[80px] sm:pb-[60px] pb-[50px] relative`} data-aos="fade-up">
+        <div className={`${classes.thank_you_container} main_container lg:rounded-30px md:rounded-[20px] rounded-[15px]`}>
+          <div className={` max-w-[1335px] mx-auto lg:pt-[78px] md:pt-[60px] sm:pt-[50px] pt-[35px] lg:pb-[113px] mb:pb-[80px] sm:pb-[60px] pb-[50px] relative`} data-aos="fade-up">
             <div className="lg:mb-[35px] md:mb-[30px] sm:mb-[25px] mb-[20px]" >
               <Image src={thankyou} alt='' className={`${classes.thanksyou_image} mx-auto xl:max-w-[225px] lg:max-w-[200px] md:max-w-[170px] sm:max-w-[140px] max-w-[95px] w-full`} />
             </div>

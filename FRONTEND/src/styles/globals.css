@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 /* new popup style */
-.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1p6wq07-MuiPaper-root-MuiDialog-paper {
-  /* padding: 15px 0; */
-}
+
 
 .MuiDialog-container.MuiDialog-scrollPaper {
   -webkit-backdrop-filter: blur(10px);
@@ -242,21 +240,18 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
   }
 }
 
-/* .marquee_div {
-  width: max-content;
+
+.pag404 > div {
+  height: calc(100vh - 115px ) 
 }
-
-.marquee_images {
-  width: max-content;
-  animation: marquee_main 15s linear infinite;
+@media only screen and (max-width:1080px){
+.pag404 > div {
+  height: calc(100vh - 80px ) 
 }
+}  
+@media only screen and (max-width:676px){
+.pag404 > div {
+  height: calc(100vh - 54px ) 
+}
+}  
 
-@keyframes marquee_main {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(-50%, 0);
-  }
-} */

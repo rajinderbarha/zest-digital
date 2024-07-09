@@ -48,7 +48,7 @@ const Growth_engine = ({
             </Link>
           </div>
           <div
-            className={`${classes.grow_image} absolute -bottom-40 -right-[23px] sm:block hidden`}
+            className={`${classes.grow_image} absolute -bottom-40 -right-[23px] `}
           >
             {image && (
               <Image

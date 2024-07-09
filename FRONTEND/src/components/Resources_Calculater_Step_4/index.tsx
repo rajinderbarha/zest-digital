@@ -9,7 +9,7 @@ import popup_question_mark from '../../assets/images/popup_question_mark.svg'
 import { GoArrowLeft } from "react-icons/go";
 import ProgressBar from '@/common/ProgressBar'
 
-function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
+function Resources_Calculater_Step_4({ setStep, formData, setFormData, progressValue, priviousProgressValue }: any) {
     const [inputValues, setInputValues] = useState({
         average_monthly_sessions: '',
         average_conversion_rate: '',
@@ -51,7 +51,7 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
         <div className="pe-[6px] pb-[6px]">
             <div className="Resources_Calculater_Step_4 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                 <div className="progrees_bar xl:mb-[140px] lg:mb-[110px] md:mb-[80px] sm:mb-[70px] mb-[60px] ">
-                    <ProgressBar value={80} />
+                    <ProgressBar value={progressValue} from={priviousProgressValue}/>
                 </div>
                 <h2 className="text-center font-mono xl:text-45px lg:text-40px md:text-[35px] sm:text-[25px] text-[20px] font-semibold md:mb-[30px] sm:mb-[30px] mb-[10px]">Input your data (use the ‘?’ for help)</h2>
                 <div className="form_details max-w-[750px] mx-auto md:justify-end justify-center grid gap-5 md:pb-[97px] sm:pb-[60px] pb-[30px] relative w-fit">
