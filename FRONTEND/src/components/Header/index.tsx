@@ -127,7 +127,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   </Link>
                 ))}
 
-                <div className="">
+                <div className={`${classes.navbar_sublogo}`}>
                   <Image src={Sub_Logo} className="md:w-[200px] sm:w-[150px] w-[130px] md:ml-[42px] sm:ml-[15px] ml-[0px] mt-[150px]" alt="Logo_img" />
                 </div>
               </div>

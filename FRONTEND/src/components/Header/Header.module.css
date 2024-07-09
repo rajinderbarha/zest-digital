@@ -6,13 +6,19 @@
   background-image: url(../../assets//images/compress/Gradient_v3_compress.avif);
   background-color: #191615;
   background-position: bottom;
-  height: 93vh;
+  /* height: 93vh; */
+  height: calc(100vh - 80px - 10px);
   background-size: contain;
   border-radius: 15px;
   text-align: end;
   padding: 65px 36px;
   color: #fff;
   background-repeat: no-repeat;
+  position: relative;
+}
+.navbar_sublogo{
+position: absolute;
+bottom: 31%;
 }
 
 @media(hover: hover) and (pointer: fine) {
@@ -70,11 +76,18 @@
   font-size: 22px;
 }
 
-@media only screen and(max-width:767px) {
-  .custom_menu_items_class {
+@media only screen and (max-width:767px) {
+  /* .custom_menu_items_class {
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: 26px;
+  } */
+  .BG_manu{
+    height: calc(100vh - 54px - 10px);
+    padding: 58px 28px;
+  }
+  .navbar_sublogo{
+    bottom: 25%;
   }
 }
 
@@ -144,6 +157,12 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+  .BG_manu{
+    padding: 53px 25px;
+  }
+  .navbar_sublogo{
+    bottom: 15%;
+  }
 }
 @media  (max-width: 539px) {
   .menu{
@@ -151,5 +170,22 @@
     margin-right: -14px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .BG_manu{
+    padding: 45px 20px;
+  }
+  .navbar_sublogo{
+    bottom: 12%;
+  }
+}
+@media  (max-width: 380px) {
+  .navbar_sublogo{
+    bottom: 5%;
+  }
+  .custom_menu_items_class {
+    padding: 3px 8px;
+  }
+  .navbar_sublogo img{
+    width: 110px;
   }
 }

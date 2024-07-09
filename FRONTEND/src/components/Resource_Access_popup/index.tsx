@@ -19,9 +19,9 @@ function Resource_Access_popup({ setStep, register, handleSubmit, setFormData, f
                 <div className="Resource_Access_popup popup_conatiner lg:pt-[88px] md:pt-[60px] sm:pt-[50px] pt-[40px]  relative bg-white" >
                     <div className="absolute lg:right-[25px] lg:top-[40px]  md:right-[28px] md:top-[28px] sm:right-[20px] sm:top-[20px] top-[20px] right-[20px] md:max-w-max max-w-[20px]">
                         <Link href='/resources'>
-                            <Image src={popup_close_icon} alt='' className='lg:max-w-[20px] md:max-w-[15px] sm:max-w-[17px] max-w-[10px] '  loading="eager"/>
+                            <Image src={popup_close_icon} alt='' className='lg:max-w-[20px] md:max-w-[15px] sm:max-w-[17px] max-w-[10px] ' />
                         </Link>
-
+ 
                     </div>
                     <div className="detail text-center">
                         <h2 className='xl:text-45px lg:text-40px md:text-[35px] sm:text-[25px] text-[20px] font-mono font-semibold mb-[10px]'>{formTitle}</h2>

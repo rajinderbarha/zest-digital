@@ -63,10 +63,10 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
                                 <input onChange={handleChange} value={inputValues.average_monthly_sessions} type="number" name="average_monthly_sessions" id="monthly_sessions" placeholder='1000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                 <div className="">
-                                    <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  loading="eager"/>
+                                    <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  />
                                 </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max hover:cursor-pointer" onMouseEnter={() => setMonthlySessionsIsHovered(true)} onMouseLeave={() => setMonthlySessionsIsHovered(false)}>
-                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%] '  loading="eager"/>
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%] '  />
                                 </div>
                             </div>
 
@@ -91,10 +91,10 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
                                 <input onChange={handleChange} value={inputValues.average_conversion_rate} type="number" name="average_conversion_rate" id="average_conversion_rate" placeholder='3' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                 <div className="">
-                                    <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  loading="eager"/>
+                                    <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  />
                                 </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  hover:cursor-pointer" onMouseEnter={() => setConversionRateIsHovered(true)} onMouseLeave={() => setConversionRateIsHovered(false)}>
-                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]'  loading="eager"/>
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]'  />
                                 </div>
                             </div>
                         </div>
@@ -119,10 +119,10 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
                                 <input onChange={handleChange} value={inputValues.average_order_value} type="number" name="average_order_value" id="average_order_value" placeholder='5000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                 <div className="">
-                                    <Image src={popup_pound} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  loading="eager"/>
+                                    <Image src={popup_pound} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  />
                                 </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max hover:cursor-pointer" onMouseEnter={() => setOrderValueIsHovered(true)} onMouseLeave={() => setOrderValueIsHovered(false)} >
-                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]'  loading="eager"/>
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]'  />
                                 </div>
                             </div>
                         </div>
@@ -148,10 +148,10 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData }: any) {
                                         <input onChange={handleChange} value={inputValues.conversion_rate} type="number" name="conversion_rate" id="conversion_rate" placeholder='40' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                         <div className="">
-                                            <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' loading="eager" />
+                                            <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  />
                                         </div>
                                         <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  hover:cursor-pointer" onMouseEnter={() => setLeadToSaleIsHovered(true)} onMouseLeave={() => setLeadToSaleIsHovered(false)}  >
-                                            <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]'  loading="eager"/>
+                                            <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]'  />
                                         </div>
                                     </div>
                                 </div>
