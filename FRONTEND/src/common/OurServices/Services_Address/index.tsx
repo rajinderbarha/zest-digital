@@ -57,7 +57,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
                 </div>
                 <div className={`${classes.teleNo} flex items-center justify-end text-color-9 mt-[10px] md:mt-[25px] min-tb:max-tb:mt-[23px] gap-[2px] `}>
                   <FaPhoneAlt className="text-white" />
-                  {contactno}
+                  <a href={`tel:${contactno}`}>{contactno}</a>
                 </div>
               </div>
             }

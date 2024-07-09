@@ -63,7 +63,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                           <address className="font-lato not-italic ">
                             <PortableText value={list.address} />
                           </address>
-                          <p className={`${classes.telephone} flex font-lato items-center justify-center gap-1  text-left`}><FaPhoneAlt className='text-white ' /><span className="text-color-7 "> {list.contact}</span></p>
+                          <p className={`${classes.telephone} flex font-lato items-center justify-center gap-1  text-left`}><FaPhoneAlt className='text-white ' /><span className="text-color-7 "> <a href={`tel:${list.contact}`}>{list.contact} </a> </span></p>
                         </div>
                       ))}
                     </div>
