@@ -26,42 +26,49 @@
   font-family: "Lato_font";
   src: url("../assets/lato/Lato-Black.ttf");
   font-weight: 900;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Lato_font";
   src: url("../assets/lato/Lato-Bold.ttf");
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Lato_font";
   src: url("../assets/lato/Lato-Regular.ttf");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "IBMPlexMono";
   src: url("../assets/IBMPlexMono/IBMPlexMono-SemiBold.ttf");
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "IBMPlexMono";
   src: url("../assets/IBMPlexMono/IBMPlexMono-Bold.ttf");
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "IBMPlexMono";
   src: url("../assets/IBMPlexMono/IBMPlexMono-Medium.ttf");
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "IBMPlexMono";
   src: url("../assets/IBMPlexMono/IBMPlexMono-Regular.ttf");
   font-weight: 400;
+  font-display: swap;
 }
 
 @media only screen and (max-width: 767px) {

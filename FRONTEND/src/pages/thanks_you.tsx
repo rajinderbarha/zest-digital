@@ -19,7 +19,7 @@ const ThanksYouPage = () => {
   if (!isFormSubmitted) {
     return
   } else {
-    return <Thanks_you />;
+    return <div className="Body_padding"><Thanks_you /></div>  
   }
 };
 
