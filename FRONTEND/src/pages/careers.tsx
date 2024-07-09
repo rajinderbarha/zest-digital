@@ -13,8 +13,9 @@ function careers({ careerData }: { careerData: CareersType[] }) {
       <meta name="keywords" property="og:keywords" content="careers, Thanks, interest, hiring, zest, digital" />
       <meta name="description" property="og:description" content="" />
     </Head>
-
-    <Career data={careerData} />;
+    <div className="Body_padding">
+    <Career data={careerData} />
+    </div>
   </>
 }
 export default careers;
