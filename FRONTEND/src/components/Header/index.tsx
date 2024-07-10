@@ -111,9 +111,10 @@ const Header = ({ data }: { data: HeaderType[] }) => {
               </div>
             </div>
             <div
-              className={`${classes.menu} px-[16px] ${isMenuOpen ? classes.menuOpen : classes.menuOpen
+              className={`${classes.menu} px-[16px] ${isMenuOpen ? `${classes.menuOpen} ` : classes.menuOpen
                 }`}
-              style={{ height: isMenuOpen ? "100vh" : 0 }}
+              style={{ height: isMenuOpen ? "100vh" : 0 }
+            }
             >
               <div className={`${classes.BG_manu}`}>
                 {item.navItem.map((navItem, index) => (
@@ -127,7 +128,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   </Link>
                 ))}
 
-                <div className={`${classes.navbar_sublogo} ${isMenuOpen ? `absolute block` : 'hidden'}`}>
+                <div className={`${classes.navbar_sublogo} ${isMenuOpen ? `z-[1]` : 'z-[-1000]'}`}>  
                   <Image src={Sub_Logo} className="md:w-[200px] sm:w-[150px] w-[130px] md:ml-[42px] sm:ml-[15px] ml-[0px] mt-[150px]" alt="Logo_img" />
                 </div>
               </div>

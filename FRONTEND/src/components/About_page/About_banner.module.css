@@ -55,11 +55,18 @@
 
 .Escape {
   background-image: url(../../assets/images/compress/Escape_compress.avif);
-  background-position: center;
+  background-position: 24% center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #191615;
 }
+@media only screen and (max-width: 445px) {
+  .Escape {
+    background-image: url("../../assets/images/compress/Services_bg_gradient_mobile_compress.avif");
+    background-position: left 13% ;
+  }
+}
+
 
 .Team_img_circle {
   width: 95.2%;
@@ -704,7 +711,9 @@
     font-size: 20px;
     margin-bottom: 15px;
   }
-
+.Escape{
+  background-position: 29% -41px;
+}
   .escape_heading {
     font-size: 30px;
   }
@@ -712,7 +721,7 @@
   .Escape_p {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 65px;
+    margin-bottom: 80px;
   }
   .maving_box {
     max-width: 276px;

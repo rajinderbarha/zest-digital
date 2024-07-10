@@ -1,5 +1,5 @@
 .SingleBox {
-  background-image: url("../../../assets/images/Gradient_v4.png");
+  background-image: url("../../../assets/images/compress/Escape_compress.avif");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -341,7 +341,7 @@
   .top_image ~ p {
     font-size: 16px;
     line-height: 20px;
-    max-width: 150px;
+    max-width: 180px;
   }
 
   .SingleBox {

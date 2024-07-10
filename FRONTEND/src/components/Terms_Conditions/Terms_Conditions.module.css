@@ -5,6 +5,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 767px) {
+  .box_bg_image {
+    background-image: url("../../assets/images/compress/gross_profit_mobile.avif");
+  }
+}
 
 @media only screen and (max-width: 540px) and (min-width: 830px) {
   .t_and_c_cards > div {

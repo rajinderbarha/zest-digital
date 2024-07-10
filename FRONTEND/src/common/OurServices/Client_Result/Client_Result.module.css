@@ -5,6 +5,11 @@
   background-position: center;
   @apply rounded-[15px] md:rounded-[20px] lg:rounded-30px;
 }
+@media only screen and (max-width: 767px) {
+  .Client_Result {
+    background-image: url("../../../assets/images/compress/gross_profit_mobile.avif");
+  }
+}
 
 .button_div {
   display: flex;

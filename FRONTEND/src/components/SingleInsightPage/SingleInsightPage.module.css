@@ -1,9 +1,19 @@
 .bg_image {
   background-image: url("../../assets/images/compress/Gradient_v6_compress.avif");
-
   background-repeat: no-repeat;
   background-position: center;
   background-color: #191615;
+}
+@media only screen and (max-width: 767px) {
+  .bg_image {
+    background-image: url("../../assets/images/compress/single_insight_mobile_bg.avif");
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 50px) {
+  .bg_image {
+    background-position: center 99%;
+  }
 }
 
 @media only screen and (min-width:900px){
