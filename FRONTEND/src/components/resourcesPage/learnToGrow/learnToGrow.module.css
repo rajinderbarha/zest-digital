@@ -1,10 +1,16 @@
 .SingleIntro {
-  background-image: url("../../../assets/images/compress/learn_how_to_grow_bg_compress.avif");
+  background-image: url("../../../assets/images/compress/Escape_compress.avif");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-color: black;
+  background-color: #191615;
   margin-top: 70px;
+}
+@media only screen and (max-width: 767px) {
+  .SingleIntro {
+    background-image: url("../../../assets/images/compress/Services_bg_gradient_mobile_compress.avif");
+    background-position: left top ;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

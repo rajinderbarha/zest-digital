@@ -9,13 +9,13 @@ function Escape({ data }: { data: AboutType[] }) {
       <div className="main_container" key={`${index}_Escape`} >
 
         <Link href={Escapedata.escape.careerPagelink}>
-          <div className={`${classes.Escape} main_padding rounded-[15px] md:rounded-[20px] lg:rounded-[30px] xl:py-[130px] lg:my-[100px] md:py-[80px] min-tb:max-tb:pt-[70px] min-tb:max-tb:pb-[106px] sm:py-[60px] py-[40px]`}>
+          <div className={`${classes.Escape} main_padding rounded-[20px] lg:rounded-[30px] xl:py-[130px] lg:my-[100px] md:py-[80px] min-tb:max-tb:pt-[70px] min-tb:max-tb:pb-[106px] sm:py-[60px] py-[40px]`}>
             <div className={`${classes.Escape_box}`}>
               <h2 className={`${classes.escape_heading} md:mb-12 mb-[24px] min-tb:max-tb:mb-[40px]  font-mono text-center  font-semibold text-white`} data-aos="fade-up" >
                 {Escapedata.escape.heading}
               </h2>
               <p
-                className={`${classes.Escape_p} mx-auto  font-mono text-white text-center  font-semibold`} data-aos="fade-up"
+                className={`${classes.Escape_p} mx-auto  font-mono text-white text-center font-medium md:font-semibold`} data-aos="fade-up"
               >
                 {Escapedata.escape.description}
               </p>

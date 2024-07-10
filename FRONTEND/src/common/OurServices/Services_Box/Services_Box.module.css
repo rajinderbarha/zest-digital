@@ -134,6 +134,9 @@
     padding: 0 30px;
     margin-top: 10px;
   }
+  .top_images_div > div:last-child{
+    margin-bottom: 78px;
+   }
 }
 @media only screen and (max-width: 639px) {
   .top_image {
@@ -212,6 +215,11 @@
 }
 
 @media (min-width: 768px) {
+  .top_images_div{
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
   .SingleIntro {
     margin-top: 150px;
   }
@@ -244,6 +252,10 @@
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
+  .top_images_div{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .SingleIntro {
     margin-top: 160px;
   }
@@ -334,3 +346,4 @@
     margin-top: 120px;
   }
 }
+

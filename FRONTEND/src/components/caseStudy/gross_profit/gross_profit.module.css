@@ -8,6 +8,11 @@
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 767px) {
+  .Gross_profit {
+    background-image: url("../../../assets/images/compress/gross_profit_mobile.avif");
+  }
+}
 
 .profit_box {
   padding-left: 15px;
@@ -318,6 +323,9 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 830px) {
+    .Gross_profit {
+      background-position: center -67px;
+    }
   .Gross_profit_grid_div > :nth-child(3) {
     grid-column-start: 4;
   }

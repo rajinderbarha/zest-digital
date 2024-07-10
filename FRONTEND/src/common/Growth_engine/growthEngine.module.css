@@ -181,16 +181,9 @@
 
 @media only screen and (max-width:639px){
   .grow_image{
-    bottom:-65% ;
+    bottom:-158px ;
     width: 180px;
     right:-22px;
-  }
-}
-
-@media only screen and (max-width:500px){
-  .grow_image{
-    bottom:-83% ;
-
   }
 }
 

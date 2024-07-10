@@ -255,3 +255,10 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
 }
 }  
 
+#label-email-77c50a0c-3073-4b4d-b8cd-4d19a73691ca span{
+color: white!important;
+border: 1px solid white!important;
+ }
+ .hs_email{
+  background-color: antiquewhite!important;
+ }
