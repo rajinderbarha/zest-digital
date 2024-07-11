@@ -2,6 +2,7 @@ import classes from "../Services_details.module.css";
 import { HappyCustomer } from "../../../../../lib/interface";
 import { urlFor } from "../../../../../lib/sanity.client";
 import { PortableText } from "next-sanity";
+import Image from "next/image";
 
 const Services_details_happy_customer = ({ Services_details, Slug }: { Services_details: HappyCustomer[], Slug: string }) => {
   const isGrowthPage = Slug === "growth-marketing-services";
@@ -26,9 +27,11 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
               </div>
             </div>
             <div className="flex  min-tb:max-tb:ms-auto  ms-auto sm:mt-[15px] mt-[25px]" data-aos="fade-left">
-              <img
+              <Image
                 src={urlFor(item.image).url()}
                 alt=""
+                height={350}
+                width={350}
                 className={`${classes.objective_image_right}`}
               />
             </div>
@@ -40,17 +43,21 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
             >
               {isGrowthPage ? (
                 <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[14px]" data-aos="fade-right">
-                  <img
+                  <Image
                     src={urlFor(item.image).url()}
                     alt=""
+                    width={618}
+                    height={950}
                     className={`${classes.growth_service_image} `}
                   />
                 </div>
               ) : (
                 <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[25px]" data-aos="fade-right">
-                  <img
+                  <Image
                     src={urlFor(item.image).url()}
                     alt=""
+                    width={400}
+                    height={400}
                     className={`${classes.object_image_left}`}
                   />
                 </div>
