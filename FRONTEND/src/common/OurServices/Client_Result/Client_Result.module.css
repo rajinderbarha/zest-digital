@@ -518,3 +518,13 @@
     margin-top: 137px;
   }
 }
+
+@media only screen and (max-width:346px){
+  .button_div button{
+font-size: 11px;
+  }
+  .button_div button span{
+    font-size: 13px;
+  }
+
+}

@@ -372,3 +372,13 @@
     max-width: 163px;
   }
 }
+
+@media only screen and (max-width:346px){
+  .box_btn{
+font-size: 11px;
+  }
+  .box_btn span{
+    font-size: 13px;
+  }
+
+}

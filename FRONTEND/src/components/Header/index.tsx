@@ -99,7 +99,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                 />
               </Link>
             </div>
-            <div className="flex items-center gap-[15px]">
+            <div className={`${classes.mobile_nav_left} flex items-center gap-[15px]`}>
               <Link onClick={closeMenu}
                 href={item.button.navLink}
                 className={`${classes.call_btn} font-mono text-[12px] px-21px py-[7px] bg-color-1 text-white rounded-full  active:bg-white active:text-color-1  border border-color-1`}

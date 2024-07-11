@@ -1,8 +1,6 @@
 import  { useEffect, useState } from "react";
 import Image from "next/image";
 import classes from "./Filters.module.css";
-import Filters_Desktop_image from "../../../assets/images/compress/Insights_bg_gradient_compress.avif";
-import Filters_Mobile_image from "../../../assets/images/Insights_bg_gradient_mobile.png";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import { urlFor } from "../../../../lib/sanity.client";
@@ -80,16 +78,9 @@ function Filters({ data }: { data: FiltersType }) {
 
     <div className="main_container">
       <div className={`${classes.Filters} relative`} data-aos="fade-up">
-        <Image
-          src={Filters_Desktop_image}
-          alt=""
-          className={`${classes.Filters_img} bg-color-1  min-tb:max-tb:h-[455px] rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full md:block hidden h-[590px]`}
-        />
-        <Image
-          src={Filters_Mobile_image}
-          alt=""
-          className={`${classes.Filters_img} bg-color-1 sm:h-auto h-[450px] rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full block md:hidden`}
-        />
+<div className={`${classes.Filters_img} bg-color-1 h-[450px] sm:h-[455px] min-tb:max-tb:h-[455px] md:h-[590px]  rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full `}
+        ></div>
+
         <div className={`${classes.Filters_box} relative z-10 grid lg:grid-cols-12`}>
           <div className="lg:col-span-8 min-tb:max-tb:mt-[30px] md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
             {currentPosts.map((item, index: number) => (
