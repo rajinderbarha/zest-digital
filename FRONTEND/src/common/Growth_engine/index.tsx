@@ -36,7 +36,7 @@ const Growth_engine = ({
             </p>
             <Link href={buttonLink} className="inline-block">
               <button
-                className="bg-color-1 group hover:bg-white max-sm:leading-normal hover:text-color-1 border border-color-1 rounded-full text-white text-base  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center"
+                className="bg-color-1 group hover:bg-white max-sm:leading-normal hover:text-color-1 border border-color-1 rounded-full text-white text-[16px]  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center"
                 
                 onClick={() => handlefileUrl(allFilesUrl)}
               >

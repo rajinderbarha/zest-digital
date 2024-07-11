@@ -25,7 +25,7 @@
 
 .Block_Content ul,
 .Block_Content ol,
-.Block_Content p {
+.Block_Content p, .Block_Content blockquote {
   @apply font-lato;
 }
 .Block_Content h2 {
@@ -171,7 +171,7 @@
   line-height: 21px;
   margin-bottom: 16px;
 }
-.Block_Content p {
+.Block_Content p, .Block_Content blockquote  {
   margin-bottom: 19px;
 }
 
@@ -263,7 +263,7 @@
     line-height: 40px;
     margin-bottom: 30px;
   }
-  .Block_Content p {
+  .Block_Content p, .Block_Content blockquote  {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 19px;
@@ -307,7 +307,7 @@
     font-size: 12px;
     line-height: 18px;
   }
-  .Block_Content p {
+  .Block_Content p, .Block_Content blockquote  {
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 19px;
@@ -360,7 +360,7 @@
     margin-bottom: 35px;
   }
 
-  .Block_Content p {
+  .Block_Content p, .Block_Content blockquote  {
     margin-bottom: 24px;
   }
   .Block_Content h3:not(:first-child) ~ p {
@@ -376,7 +376,7 @@
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .Block_Content p {
+  .Block_Content p, .Block_Content blockquote  {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 21px;
@@ -407,7 +407,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .Block_Content p {
+  .Block_Content p, .Block_Content blockquote  {
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 21px;

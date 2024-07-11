@@ -5,9 +5,9 @@ import { urlFor } from "../../../../lib/sanity.client";
 
 function Our_values({ data }: { data: AboutType[] }) {
 
-  return <div className={`${classes.Our_values} main_padding `}>
-    <div className="main_container overflow-x-hidden">
-      <div className={`${classes.values_bg} rounded-[15px] md:rounded-[20px] lg:rounded-[30px] main_padding `} data-aos="fade-up">
+  return <div className={`${classes.Our_values} main_padding `}  data-aos="fade-up">
+    <div className="main_container overflow-x-hidden" >
+      <div className={`${classes.values_bg} rounded-[15px] md:rounded-[20px] lg:rounded-[30px] main_padding `}>
         {data?.map((ourvalue, index) => (
           <div
             className={`${classes.our_values_box} main_container_x `}
