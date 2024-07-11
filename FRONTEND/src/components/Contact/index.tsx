@@ -28,8 +28,10 @@ const Contact = ({ data }: { data: ContactType }) => {
     script.charset = "utf-8";
     script.type = "text/javascript";
     script.onload = () => {
-      if (window.hbspt) {
-        window.hbspt.forms.create({
+      // Type assertion for window.hbspt
+      const hbspt = (window as any).hbspt;
+      if (hbspt) {
+        hbspt.forms.create({
           region: "eu1",
           portalId: "26290409",
           formId: "77c50a0c-3073-4b4d-b8cd-4d19a73691ca",
