@@ -73,12 +73,13 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                   className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end md:my-10 sm:my-[25px] my-[20px]`}
                 >
                   {item.brands.map((brandsimg, index) => (
-                    <div key={`${index}_brandsimg`} className="foter_logos" data-aos="fade-up">
+                    <div key={`${index}_brandsimg`} className={`foter_logos ${classes.images} ${classes[`image${index}`]}`} data-aos="fade-up">
                       <Image
                         src={urlFor(brandsimg.brandImage).url()}
                         width={400}
                         height={400}
-                        className="w-auto"
+                        // className="w-auto"
+                        className={`w-auto `}
                         alt=""
                       />
                     </div>
