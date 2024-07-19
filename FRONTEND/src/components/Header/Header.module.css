@@ -15,9 +15,10 @@
   background-repeat: no-repeat;
   position: relative;
 }
-.navbar_sublogo{
-position: absolute;
-bottom: 31%;
+
+.navbar_sublogo {
+  position: absolute;
+  bottom: 31%;
 }
 
 
@@ -25,6 +26,20 @@ bottom: 31%;
   .call_btn {
     @apply hover:bg-white hover:text-color-1
   }
+}
+
+@media only screen and (orientation: landscape) {
+  .BG_manu {
+    background-size: 100% 100%;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .BG_manu::-webkit-scrollbar {
+    display: none;
+  }
+
 }
 
 .menuIcon {
@@ -77,16 +92,17 @@ bottom: 31%;
 }
 
 @media only screen and (max-width:767px) {
-  .BG_manu{
+  .BG_manu {
     height: calc(100vh - 54px - 74px);
     padding: 58px 28px;
   }
 
-  .navbar_sublogo{
+  .navbar_sublogo {
     position: static;
   }
-  .navbar_sublogo img{
-margin-top: 110px;
+
+  .navbar_sublogo img {
+    margin-top: 110px;
   }
 }
 
@@ -127,74 +143,85 @@ margin-top: 110px;
   .desktop_nav {
     gap: 40px;
   }
+
   .desktop_nav div:last-child {
     gap: 30px;
   }
 }
 
-@media (min-width:1024px) and (max-width: 1080px),(min-width:641px) and (max-width: 830px)  {
-  
-  .menu{
+@media (min-width:1024px) and (max-width: 1080px),
+(min-width:641px) and (max-width: 830px) {
+
+  .menu {
     margin-left: -34px;
     margin-right: -34px;
     padding-left: 50px;
     padding-right: 50px;
   }
 }
+
 @media (min-width:831px) and (max-width: 1023px) {
-  .menu{
+  .menu {
     margin-left: -4px;
     margin-right: -4px;
     padding-left: 20px;
     padding-right: 20px;
   }
 }
+
 @media (min-width:540px) and (max-width: 640px) {
-  .menu{
+  .menu {
     margin-left: -44px;
     margin-right: -44px;
     padding-left: 60px;
     padding-right: 60px;
   }
-  .BG_manu{
+
+  .BG_manu {
     padding: 53px 25px;
   }
-  .navbar_sublogo{
+
+  .navbar_sublogo {
     bottom: 15%;
   }
 }
-@media  (max-width: 539px) {
-  .menu{
+
+@media (max-width: 539px) {
+  .menu {
     margin-left: -14px;
     margin-right: -14px;
     padding-left: 30px;
     padding-right: 30px;
   }
-  .BG_manu{
+
+  .BG_manu {
     padding: 45px 20px;
   }
 
 }
-@media  (max-width: 380px) {
+
+@media (max-width: 380px) {
 
   .custom_menu_items_class {
     padding: 3px 8px;
   }
-  .navbar_sublogo img{
+
+  .navbar_sublogo img {
     width: 110px;
     margin-top: 90px;
   }
 }
 
-@media only screen and (max-width:355px){
-  .mobile_nav_left{
+@media only screen and (max-width:355px) {
+  .mobile_nav_left {
     gap: 10px;
   }
-  .call_btn{
+
+  .call_btn {
     padding: 7px 15px;
   }
-  
-.custom_menu_items_class {
-  font-size: 20px;
-}
+
+  .custom_menu_items_class {
+    font-size: 20px;
+  }
 }

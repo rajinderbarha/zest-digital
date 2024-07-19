@@ -227,4 +227,164 @@
   .footer_belowtext {
     font-size: 12px;
   }
+
+  .socialimages {
+    justify-content: center;
+  }
+}
+
+
+
+.certificate_icon div img {
+  width: 100%;
+}
+
+.certificate_icon div:nth-child(1) img {
+  max-width: 407px;
+}
+
+.certificate_icon div:nth-child(2) img {
+  max-width: 235px;
+}
+
+.certificate_icon div:nth-child(3) img {
+  max-width: 250px;
+}
+
+.certificate_icon div:nth-child(4) img {
+  max-width: 230px;
+}
+
+.certificate_icon div:nth-child(5) img {
+  max-width: 131px;
+}
+
+
+.image0 {
+  grid-area: image1;
+}
+
+.image1 {
+  grid-area: image2;
+}
+
+.image2 {
+  grid-area: image3;
+}
+
+.image3 {
+  grid-area: image4;
+}
+
+.image4 {
+  grid-area: image5;
+}
+
+
+.certificate_icon {
+  display: grid;
+  grid-template-areas:
+    'image1 image2 image3 image4 image5 ';
+}
+
+@media only screen and (min-width:639px) and (max-width:830px) {
+  .certificate_icon {
+    grid-template-areas:
+      'image4 image1 image5 '
+      'image3 image2 image5 ';
+    margin: 84px 0 90px 0;
+  }
+
+  .images {
+    align-self: center;
+  }
+
+  .images img {
+    margin: auto;
+  }
+
+  .certificate_icon div:nth-child(1) img {
+    max-width: 306px;
+  }
+
+  .certificate_icon div:nth-child(2) img {
+    max-width: 198px;
+  }
+
+  .certificate_icon div:nth-child(3) img,
+  .certificate_icon div:nth-child(4) img {
+    max-width: 163px;
+  }
+
+
+  .certificate_icon div:nth-child(5) img {
+    max-width: 115px;
+  }
+
+  .socialimages {
+    margin-bottom: 5px;
+  }
+
+}
+
+@media only screen and (max-width:639px) {
+  .certificate_icon {
+    grid-template-areas:
+      'image1 image1 '
+      'image2 image2 '
+      'image4 image5 '
+      'image3 image5 ';
+    gap: 10px;
+    margin: 70px 0 66px 0;
+  }
+
+  .images {
+    align-self: center;
+  }
+
+  .images img {
+    margin: auto;
+  }
+
+  .image4 {
+    height: 100%;
+  }
+
+  .image4 img {
+    height: 100%;
+  }
+
+  .certificate_icon div:nth-child(1) img {
+    width: 293px;
+  }
+
+  .certificate_icon div:nth-child(2) img {
+    width: 150px;
+  }
+
+  .certificate_icon div:nth-child(3) img,
+  .certificate_icon div:nth-child(4) img {
+    width: 121px;
+  }
+
+
+
+  .certificate_icon div:nth-child(5) img {
+    width: 101px;
+  }
+
+  .socialimages {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .images img {
+    width: 100% !important;
+  }
+
+  .certificate_icon {
+    margin: 30px 0 40px 0;
+  }
+
 }

@@ -16,7 +16,7 @@ function Climate_action({ climate_actionImg, earth_img, smallDescription }: Clim
               width={250}
               height={105}
               alt=""
-
+              loading='eager'
               className="md:max-w-full min-tb:max-tb:max-w-[148px] sm:max-w-[180px] max-w-[129px]"
             />
           </div>
@@ -26,7 +26,7 @@ function Climate_action({ climate_actionImg, earth_img, smallDescription }: Clim
               width={197}
               height={198}
               alt=""
-
+              loading='eager'
               className="md:max-w-full  sm:max-w-[100px] min-tb:max-tb:max-w-[85px] max-w-[80px]"
             />
           </div>
