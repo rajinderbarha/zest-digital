@@ -4,40 +4,45 @@
   background-position: center;
   background-color: #191615;
 }
+
 @media only screen and (max-width: 767px) {
   .bg_image {
     background-image: url("../../assets/images/compress/single_insight_mobile_bg.avif");
     background-size: cover;
   }
 }
+
 @media only screen and (max-width: 50px) {
   .bg_image {
     background-position: center 99%;
   }
 }
 
-@media only screen and (min-width:900px){
+@media only screen and (min-width:900px) {
   .bg_image {
     background-size: cover;
-    background-position:center 40px;
+    background-position: center 40px;
   }
 }
 
 .Block_Content ul,
 .Block_Content ol,
-.Block_Content p, .Block_Content blockquote {
+.Block_Content p,
+.Block_Content blockquote {
   @apply font-lato;
 }
+
 .Block_Content h2 {
   @apply font-semibold font-mono bg-light-green-1;
 }
 
 .Block_Content h3,
+.Block_Content h4,
 .sub_title {
   @apply font-semibold font-mono;
 }
 
-.Block_Content .wrappedH2:not(:first-child) + h3 {
+.Block_Content .wrappedH2:not(:first-child)+h3 {
   @apply border-yellow-500 mt-0;
 }
 
@@ -113,12 +118,15 @@
 }
 
 @media only screen and (max-width: 767px) {
+
   .next_text_right a::after,
   .next_text_left a::before {
     padding: 0 10px;
   }
 }
+
 @media only screen and (max-width: 639px) {
+
   .next_text_right a::after,
   .next_text_left a::before {
     padding: 0 8px;
@@ -128,6 +136,7 @@
 .Block_Content li a {
   font-weight: 700;
 }
+
 .Block_Content {
   padding-left: 20px;
   padding-right: 20px;
@@ -150,14 +159,16 @@
   list-style-type: decimal;
 }
 
-.Block_Content h3:not(:first-child) ~ ul,
-.Block_Content h3:not(:first-child) ~ ol {
+.Block_Content h3:not(:first-child)~ul,
+.Block_Content h3:not(:first-child)~ol {
   margin-left: 10px;
 }
-.Block_Content ul + p,
-.Block_Content ol + p {
+
+.Block_Content ul+p,
+.Block_Content ol+p {
   margin-top: 9px;
 }
+
 .Block_Content h2 {
   font-weight: 600;
   padding-top: 1px;
@@ -165,13 +176,22 @@
   display: inline;
   font-size: 22px;
 }
+
 .Block_Content h3 {
   font-weight: 600;
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 16px;
 }
-.Block_Content p, .Block_Content blockquote  {
+
+.Block_Content h4 {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.Block_Content p,
+.Block_Content blockquote {
   margin-bottom: 19px;
 }
 
@@ -182,11 +202,12 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.Block_Content .wrappedH2:not(:first-child) ~ h3 {
+
+.Block_Content .wrappedH2:not(:first-child)~h3 {
   margin-top: 45px;
 }
 
-.Block_Content .wrappedH2:not(:first-child) + h3 {
+.Block_Content .wrappedH2:not(:first-child)+h3 {
   margin-top: 0;
 }
 
@@ -212,6 +233,7 @@
   font-size: 18px;
   margin-left: 10px;
 }
+
 .youtube_video {
   max-width: 725px;
   width: 100%;
@@ -225,19 +247,29 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .Block_Content h2 {
     font-size: 30px;
   }
+
   .Block_Content h3 {
     font-size: 30px;
     line-height: 40px;
   }
+
+  .Block_Content h4 {
+    font-size: 18px;
+    line-height: 25px;
+    /* margin-bottom: 5px; */
+  }
+
   .Block_Content figure {
     max-width: 450px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .Block_Content .wrappedH2:not(:first-child) ~ h3 {
+
+  .Block_Content .wrappedH2:not(:first-child)~h3 {
     margin-top: 50px;
   }
 }
@@ -247,48 +279,66 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-  .Block_Content h3:not(:first-child) ~ ul,
-  .Block_Content h3:not(:first-child) ~ ol {
+
+  .Block_Content h3:not(:first-child)~ul,
+  .Block_Content h3:not(:first-child)~ol {
     margin-left: 20px;
   }
-  .Block_Content ul + p,
-  .Block_Content ol + p {
+
+  .Block_Content ul+p,
+  .Block_Content ol+p {
     margin-top: 11px;
   }
+
   .Block_Content h2 {
     font-size: 35px;
   }
+
   .Block_Content h3 {
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 30px;
   }
-  .Block_Content p, .Block_Content blockquote  {
+
+  .Block_Content h4 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 7px;
+  }
+
+  .Block_Content p,
+  .Block_Content blockquote {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 19px;
   }
+
   .Block_Content ol,
   .Block_Content ul {
     margin-bottom: 9px;
     font-size: 14px;
     line-height: 19px;
   }
-  .Block_Content h3:not(:first-child) ~ p {
+
+  .Block_Content h3:not(:first-child)~p {
     margin-left: 20px;
   }
+
   .Block_Content figure {
     max-width: 559px;
     margin-top: 66px;
     margin-bottom: 66px;
   }
-  .Block_Content .wrappedH2:not(:first-child) ~ h3 {
+
+  .Block_Content .wrappedH2:not(:first-child)~h3 {
     margin-top: 50px;
   }
+
   .wrappedH2 {
     padding-top: 60px;
     padding-bottom: 33px;
   }
+
   .sub_title {
     font-size: 35px;
   }
@@ -296,40 +346,57 @@
   .list_sub_items {
     margin-left: 40px;
   }
+
   .youtube_video {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
+
 @media (max-width: 830px) {
+
   .Block_Content ol,
   .Block_Content ul {
     font-size: 12px;
     line-height: 18px;
   }
-  .Block_Content p, .Block_Content blockquote  {
+
+  .Block_Content p,
+  .Block_Content blockquote {
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 19px;
   }
 }
+
 @media (min-width: 540px) and (max-width: 830px) {
-  .Block_Content ul + p,
-  .Block_Content ol + p {
+
+  .Block_Content ul+p,
+  .Block_Content ol+p {
     margin-top: 9px;
   }
+
   .Block_Content h2 {
     font-size: 30px;
     line-height: 45px;
   }
+
   .Block_Content h3 {
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 20px;
   }
-  .Block_Content .wrappedH2:not(:first-child) ~ h3 {
+
+  .Block_Content h4 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+
+  .Block_Content .wrappedH2:not(:first-child)~h3 {
     margin-top: 40px;
   }
+
   .wrappedH2 {
     padding-top: 52px;
     padding-bottom: 30px;
@@ -342,45 +409,61 @@
     padding-right: 70px;
   }
 
-  .Block_Content h3:not(:first-child) ~ ul,
-  .Block_Content h3:not(:first-child) ~ ol {
+  .Block_Content h3:not(:first-child)~ul,
+  .Block_Content h3:not(:first-child)~ol {
     margin-left: 40px;
   }
-  .Block_Content ul + p,
-  .Block_Content ol + p {
+
+  .Block_Content ul+p,
+  .Block_Content ol+p {
     margin-top: 14px;
   }
 
   .Block_Content h2 {
     font-size: 40px;
   }
+
   .Block_Content h3 {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 35px;
   }
 
-  .Block_Content p, .Block_Content blockquote  {
+  .Block_Content h4 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 7px;
+  }
+
+  .Block_Content p,
+  .Block_Content blockquote {
     margin-bottom: 24px;
   }
-  .Block_Content h3:not(:first-child) ~ p {
+
+  .Block_Content h3:not(:first-child)~p {
     margin-left: 40px;
   }
-  .Block_Content .wrappedH2:not(:first-child) ~ h3 {
+
+  .Block_Content .wrappedH2:not(:first-child)~h3 {
     margin-top: 80px;
   }
+
   .wrappedH2 {
     padding-top: 90px;
   }
+
   .youtube_video {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .Block_Content p, .Block_Content blockquote  {
+
+  .Block_Content p,
+  .Block_Content blockquote {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 21px;
   }
+
   .Block_Content ol,
   .Block_Content ul {
     margin-bottom: 9px;
@@ -394,37 +477,52 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+
   .Block_Content figure {
     max-width: max-content;
   }
-  .Block_Content .wrappedH2:not(:first-child) ~ h3 {
+
+  .Block_Content .wrappedH2:not(:first-child)~h3 {
     margin-top: 100px;
   }
+
   .wrappedH2 {
     padding-top: 120px;
   }
+
   .youtube_video {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .Block_Content p, .Block_Content blockquote  {
+
+  .Block_Content p,
+  .Block_Content blockquote {
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 21px;
   }
+
   .Block_Content ol,
   .Block_Content ul {
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 26px;
   }
+
   .Block_Content h2 {
     font-size: 45px;
   }
+
   .Block_Content h3 {
     font-size: 35px;
     line-height: 45px;
     margin-bottom: 38px;
+  }
+
+  .Block_Content h4 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 8px;
   }
 }
 
@@ -434,6 +532,7 @@
     padding-right: 0;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .Block_Content figure {
     margin-top: 64px;
