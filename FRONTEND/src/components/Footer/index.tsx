@@ -70,10 +70,9 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                   ))}
                 </div>
                 <div
-                  className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end md:my-10 sm:my-[25px] my-[20px]`}
-                >
+                  className={`${classes.certificate_icon} max-w-[1379px] mx-auto flex items-end md:my-10 sm:my-[25px] my-[20px]`} data-aos="fade-up" >
                   {item.brands.map((brandsimg, index) => (
-                    <div key={`${index}_brandsimg`} className={`foter_logos ${classes.images} ${classes[`image${index}`]}`} data-aos="fade-up">
+                    <div key={`${index}_brandsimg`} className={`foter_logos ${classes.images} ${classes[`image${index}`]}`} >
                       <Image
                         src={urlFor(brandsimg.brandImage).url()}
                         width={400}
@@ -85,7 +84,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
                     </div>
                   ))}
                 </div>
-                <div className={`${classes.socialimages} flex md:justify-start justify-center md:gap-5 sm:gap-[15px] gap-[10px]`} data-aos="fade-up">
+                <div className={`${classes.socialimages} flex md:justify-start justify-center md:gap-5 sm:gap-[15px] gap-[10px]`} >
 
                   <div className="group">
 
