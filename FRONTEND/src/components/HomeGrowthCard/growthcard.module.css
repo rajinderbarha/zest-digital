@@ -1,4 +1,4 @@
-.growth_grid > div:not(:first-child) {
+.growth_grid>div:not(:first-child) {
   @apply xl:mt-[65px] lg:mt-[45px] md:mt-[25px] sm:mt-[35px] mt-[20px];
 }
 
@@ -58,19 +58,19 @@
 }
 
 @media only screen and (min-width: 1575px) and (max-width: 1625px) {
-  .box_size > div {
+  .box_size>div {
     padding-inline-start: 45px;
   }
 }
 
 @media only screen and (min-width: 1560px) and (max-width: 1575px) {
-  .box_size > div {
+  .box_size>div {
     padding-inline-start: 38px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1560px) {
-  .box_size > div {
+  .box_size>div {
     padding-inline-start: 0px;
   }
 }
@@ -152,7 +152,7 @@
   line-height: 20px;
 }
 
-.growth_container > div {
+.growth_container>div {
   max-width: 1345px;
   margin-top: -256px;
   padding-left: 50px;
@@ -254,7 +254,7 @@
     font-size: 13px;
   }
 
-  .growth_container > div {
+  .growth_container>div {
     margin-top: -200px;
     padding-left: 30px;
     padding-right: 30px;
@@ -300,7 +300,7 @@
     line-height: 15px;
   }
 
-  .growth_container > div {
+  .growth_container>div {
     margin-top: -150px;
   }
 }
@@ -310,7 +310,7 @@
     padding-left: 20px;
   }
 
-  .growth_container > div {
+  .growth_container>div {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -325,7 +325,7 @@
     padding-left: 0px;
   }
 
-  .growth_container > div {
+  .growth_container>div {
     padding-left: 0;
     padding-right: 0;
   }
@@ -361,13 +361,20 @@
     line-height: 15px;
   }
 
-  .growth_container > div {
+  .growth_container>div {
     padding-left: 0;
     padding-right: 0;
     margin-left: -15px;
     margin-right: -15px;
   }
 }
+
+@media only screen and (max-width: 783px) {
+  .animatedText span {
+    text-align: center !important;
+  }
+}
+
 
 @media only screen and (max-width: 710px) {
   .animatedText {
