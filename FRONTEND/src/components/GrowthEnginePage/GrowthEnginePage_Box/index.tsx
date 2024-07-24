@@ -36,13 +36,13 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                       {item.buttonLink !== null &&
                         item.buttonName !== null && (
                           <Link
-                            href={item.buttonLink}
-                            className={`${classes.box_btn} font-mono font-normal group hover:bg-color-1 border border-white hover:text-white text-color-1 rounded-full bg-white flex gap-[8px] items-center  w-max`}
-                          >
-                            {item.buttonName}{" "}
-                            <span className="p-1 text-white rounded-full bg-black me-1 text-lg group-hover:bg-white group-hover:text-color-1">
-                              <GoArrowRight />
-                            </span>
+                            href={item.buttonLink}><button
+                              className={`${classes.box_btn} arrowbtn_hover font-mono font-normal group hover:bg-color-1 border border-white hover:text-white text-color-1 rounded-full bg-white flex gap-[8px] items-center  w-max`}
+                            >
+                              {item.buttonName}{" "}
+                              <span className="p-1 text-white rounded-full bg-black me-1 text-lg group-hover:bg-white group-hover:text-color-1">
+                                <GoArrowRight />
+                              </span></button>
                           </Link>
                         )}
                     </div>
@@ -63,13 +63,13 @@ const GrowthEnginePage_Box = ({ data }: any) => {
                       {item.buttonLink !== null &&
                         item.buttonName !== null && (
                           <Link
-                            href={item.buttonLink}
-                            className={`${classes.box_btn}  font-mono font-normal group ms-auto hover:bg-color-1 border border-white hover:text-white text-color-1 rounded-full bg-white  flex gap-[8px] items-center  w-max`}
-                          >
-                            {item.buttonName}{" "}
-                            <span className="p-1 text-white rounded-full bg-color-1 me-1 text-lg group-hover:bg-white group-hover:text-color-1">
-                              <GoArrowRight />
-                            </span>
+                            href={item.buttonLink}><button
+                              className={`${classes.box_btn} arrowbtn_hover font-mono font-normal group ms-auto hover:bg-color-1 border border-white hover:text-white text-color-1 rounded-full bg-white  flex gap-[8px] items-center  w-max`}
+                            >
+                              {item.buttonName}{" "}
+                              <span className="p-1 text-white rounded-full bg-color-1 me-1 text-lg group-hover:bg-white group-hover:text-color-1">
+                                <GoArrowRight />
+                              </span></button>
                           </Link>
                         )}
                     </div>

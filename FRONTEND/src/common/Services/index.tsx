@@ -24,7 +24,7 @@ const Services = ({ data }: HomePageServices) => {
                   {" "}
                   <Link
                     href={`/services/${item.reference.slug}`}
-                    className={`${classes.service_links} border-b border-white hover:border-[transparent] flex items-center gap-1`}
+                    className={`${classes.service_links}   border-b border-white hover:border-[transparent] flex items-center gap-1`}
                   >
                     {item.servicetitle}
                     <GoArrowRight />

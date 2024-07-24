@@ -21,7 +21,7 @@ function Gross_profit({ data }: { data: Gross_profitType }) {
                   {item.card.descriptionBelow}
                 </p>
                 <Link href={`/casestudies/${item.slug.current}`}>
-                  <button className={`${classes.box_btn} font-mono group hover:bg-color-1 hover:text-white border border-white font-normal mx-auto text-color-1 rounded-full bg-white flex sm:gap-2 gap-[6px] items-center`}>
+                  <button className={`${classes.box_btn} arrowbtn_hover font-mono group hover:bg-color-1 hover:text-white border border-white font-normal mx-auto text-color-1 rounded-full bg-white flex sm:gap-2 gap-[6px] items-center`}>
                     View case study
                     <span className=" text-white rounded-full bg-color-1  group-hover:bg-white group-hover:text-color-1">
                       <GoArrowRight />

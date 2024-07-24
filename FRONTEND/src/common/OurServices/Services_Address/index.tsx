@@ -24,7 +24,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
           </h2>
           <div className={`${classes.book_btn} bokk_now_btn`} data-aos="fade-up">
             <Link href={buttonName_link}>
-              <button className={` font-mono font-normal mx-auto text-color-1 rounded-full bg-white  flex md:gap-2 sm:gap-[6px] gap-[4px] items-center group border border-white hover:bg-color-1 hover:text-white`}>
+              <button className={`arrowbtn_hover font-mono font-normal mx-auto text-color-1 rounded-full bg-white  flex md:gap-2 sm:gap-[6px] gap-[4px] items-center group border border-white hover:bg-color-1 hover:text-white`}>
                 {buttonName_add}
                 <span className=" text-white rounded-full bg-color-1 group-hover:bg-white group-hover:text-color-1">
                   <GoArrowRight />

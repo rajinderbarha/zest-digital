@@ -3,6 +3,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #191615;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
 }
 
 @media only screen and (max-width: 767px) {
@@ -37,6 +39,7 @@
 }
 
 .Block_Content h3,
+.Block_Content h5,
 .Block_Content h4,
 .sub_title {
   @apply font-semibold font-mono;
@@ -151,6 +154,10 @@
   line-height: 18px;
 }
 
+.Block_Content ol li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .Block_Content ul {
   list-style-type: disc;
 }
@@ -159,9 +166,13 @@
   list-style-type: decimal;
 }
 
-.Block_Content h3:not(:first-child)~ul,
-.Block_Content h3:not(:first-child)~ol {
-  margin-left: 10px;
+.Block_Content div:has(h3):not(:first-child)~ul,
+.Block_Content div:has(h3):not(:first-child)~ol,
+.Block_Content h5~ul,
+.Block_Content h5~ol,
+.Block_Content h4~ul,
+.Block_Content h4~ol {
+  margin-left: 17px;
 }
 
 .Block_Content ul+p,
@@ -177,11 +188,16 @@
   font-size: 22px;
 }
 
-.Block_Content h3 {
+.Block_Content h3,
+.Block_Content h5 {
   font-weight: 600;
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 16px;
+}
+
+.Block_Content h5 {
+  margin-bottom: 11px;
 }
 
 .Block_Content h4 {
@@ -203,11 +219,31 @@
   margin-bottom: 30px;
 }
 
-.Block_Content .wrappedH2:not(:first-child)~h3 {
-  margin-top: 45px;
+.Block_Content p+div:has(h3),
+.Block_Content blockquote+div:has(h3) {
+  margin-top: 6px;
 }
 
-.Block_Content .wrappedH2:not(:first-child)+h3 {
+.Block_Content p+h5,
+.Block_Content blockquote+h5 {
+  margin-top: 6px;
+}
+
+.Block_Content ul+h5,
+.Block_Content ol+h5 {
+  margin-top: 25px;
+}
+
+.Block_Content ul+div:has(h3),
+.Block_Content ol+div:has(h3) {
+  margin-top: 17px;
+}
+
+.Block_Content .wrappedH2:not(:first-child)+div:has(h3) {
+  margin-top: 0;
+}
+
+.Block_Content .wrappedH2:not(:first-child)+h5 {
   margin-top: 0;
 }
 
@@ -261,7 +297,8 @@
     font-size: 30px;
   }
 
-  .Block_Content h3 {
+  .Block_Content h3,
+  .Block_Content h5 {
     font-size: 30px;
     line-height: 40px;
   }
@@ -269,7 +306,7 @@
   .Block_Content h4 {
     font-size: 18px;
     line-height: 25px;
-    /* margin-bottom: 5px; */
+    /* margin-bottom: 5px;  */
   }
 
   .Block_Content figure {
@@ -278,8 +315,24 @@
     margin-bottom: 40px;
   }
 
-  .Block_Content .wrappedH2:not(:first-child)~h3 {
-    margin-top: 50px;
+  .Block_Content p+div:has(h3),
+  .Block_Content blockquote+div:has(h3) {
+    margin-top: 30px;
+  }
+
+  .Block_Content p+h5,
+  .Block_Content blockquote+h5 {
+    margin-top: 20px;
+  }
+
+  .Block_Content ul+h5,
+  .Block_Content ol+h5 {
+    margin-top: 39px;
+  }
+
+  .Block_Content ul+div:has(h3),
+  .Block_Content ol+div:has(h3) {
+    margin-top: 40px;
   }
 
   .Block_Content p+h4 {
@@ -292,15 +345,19 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .Block_Content {
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .Block_Content h3:not(:first-child)~ul,
-  .Block_Content h3:not(:first-child)~ol {
-    margin-left: 20px;
+  .Block_Content div:has(h3):not(:first-child)~ul,
+  .Block_Content div:has(h3):not(:first-child)~ol,
+  .Block_Content h5~ul,
+  .Block_Content h5~ol,
+  .Block_Content h4~ul,
+  .Block_Content h4~ol {
+    margin-left: 37px;
   }
 
   .Block_Content ul+p,
@@ -312,10 +369,15 @@
     font-size: 35px;
   }
 
-  .Block_Content h3 {
+  .Block_Content h3,
+  .Block_Content h5 {
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 30px;
+  }
+
+  .Block_Content h5 {
+    margin-bottom: 25px;
   }
 
   .Block_Content h4 {
@@ -338,7 +400,13 @@
     line-height: 19px;
   }
 
-  .Block_Content h3:not(:first-child)~p {
+  .Block_Content ol li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .Block_Content div:has(h3):not(:first-child)~p,
+  .Block_Content h5:not(:first-child)~p,
+  .Block_Content h4:not(:first-child)~p {
     margin-left: 20px;
   }
 
@@ -348,8 +416,24 @@
     margin-bottom: 66px;
   }
 
-  .Block_Content .wrappedH2:not(:first-child)~h3 {
-    margin-top: 50px;
+  .Block_Content p+div:has(h3),
+  .Block_Content blockquote+div:has(h3) {
+    margin-top: 30px;
+  }
+
+  .Block_Content p+h5,
+  .Block_Content blockquote+h5 {
+    margin-top: 20px;
+  }
+
+  .Block_Content ul+h5,
+  .Block_Content ol+h5 {
+    margin-top: 39px;
+  }
+
+  .Block_Content ul+div:has(h3),
+  .Block_Content ol+div:has(h3) {
+    margin-top: 40px;
   }
 
   .wrappedH2 {
@@ -408,10 +492,15 @@
     line-height: 45px;
   }
 
-  .Block_Content h3 {
+  .Block_Content h3,
+  .Block_Content h5 {
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 20px;
+  }
+
+  .Block_Content h5 {
+    margin-bottom: 15px;
   }
 
   .Block_Content h4 {
@@ -420,8 +509,24 @@
     margin-bottom: 5px;
   }
 
-  .Block_Content .wrappedH2:not(:first-child)~h3 {
-    margin-top: 40px;
+  .Block_Content p+div:has(h3),
+  .Block_Content blockquote+div:has(h3) {
+    margin-top: 20px;
+  }
+
+  .Block_Content p+h5,
+  .Block_Content blockquote+h5 {
+    margin-top: 10px;
+  }
+
+  .Block_Content ul+h5,
+  .Block_Content ol+h5 {
+    margin-top: 29px;
+  }
+
+  .Block_Content ul+div:has(h3),
+  .Block_Content ol+div:has(h3) {
+    margin-top: 30px;
   }
 
   .wrappedH2 {
@@ -445,9 +550,13 @@
     padding-right: 70px;
   }
 
-  .Block_Content h3:not(:first-child)~ul,
-  .Block_Content h3:not(:first-child)~ol {
-    margin-left: 40px;
+  .Block_Content div:has(h3):not(:first-child)~ul,
+  .Block_Content div:has(h3):not(:first-child)~ol,
+  .Block_Content h5~ul,
+  .Block_Content h5~ol,
+  .Block_Content h4~ul,
+  .Block_Content h4~ol {
+    margin-left: 60px;
   }
 
   .Block_Content ul+p,
@@ -459,10 +568,15 @@
     font-size: 40px;
   }
 
-  .Block_Content h3 {
+  .Block_Content h3,
+  .Block_Content h5 {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 35px;
+  }
+
+  .Block_Content h5 {
+    margin-bottom: 30px;
   }
 
   .Block_Content h4 {
@@ -476,12 +590,30 @@
     margin-bottom: 24px;
   }
 
-  .Block_Content h3:not(:first-child)~p {
+  .Block_Content div:has(h3):not(:first-child)~p,
+  .Block_Content h5:not(:first-child)~p,
+  .Block_Content h4:not(:first-child)~p {
     margin-left: 40px;
   }
 
-  .Block_Content .wrappedH2:not(:first-child)~h3 {
-    margin-top: 80px;
+  .Block_Content p+div:has(h3),
+  .Block_Content blockquote+div:has(h3) {
+    margin-top: 60px;
+  }
+
+  .Block_Content p+h5,
+  .Block_Content blockquote+h5 {
+    margin-top: 50px;
+  }
+
+  .Block_Content ul+h5,
+  .Block_Content ol+h5 {
+    margin-top: 81px;
+  }
+
+  .Block_Content ul+div:has(h3),
+  .Block_Content ol+div:has(h3) {
+    margin-top: 72px;
   }
 
   .wrappedH2 {
@@ -507,6 +639,10 @@
     line-height: 24px;
   }
 
+  .Block_Content ol li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
   .Block_Content p+h4 {
     margin-top: 20px;
   }
@@ -527,8 +663,24 @@
     max-width: max-content;
   }
 
-  .Block_Content .wrappedH2:not(:first-child)~h3 {
-    margin-top: 100px;
+  .Block_Content p+div:has(h3),
+  .Block_Content blockquote+div:has(h3) {
+    margin-top: 80px;
+  }
+
+  .Block_Content p+h5,
+  .Block_Content blockquote+h5 {
+    margin-top: 70px;
+  }
+
+  .Block_Content ul+h5,
+  .Block_Content ol+h5 {
+    margin-top: 91px;
+  }
+
+  .Block_Content ul+div:has(h3),
+  .Block_Content ol+div:has(h3) {
+    margin-top: 91px;
   }
 
   .wrappedH2 {
@@ -554,14 +706,23 @@
     line-height: 26px;
   }
 
+  .Block_Content ol li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
   .Block_Content h2 {
     font-size: 45px;
   }
 
-  .Block_Content h3 {
+  .Block_Content h3,
+  .Block_Content h5 {
     font-size: 35px;
     line-height: 45px;
     margin-bottom: 38px;
+  }
+
+  .Block_Content h5 {
+    margin-bottom: 33px;
   }
 
   .Block_Content h4 {
@@ -587,7 +748,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 767px) and (max-width: 991px) {
   .Block_Content figure {
     margin-top: 64px;
     margin-bottom: 73px;

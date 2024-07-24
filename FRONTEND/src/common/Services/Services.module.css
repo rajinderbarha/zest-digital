@@ -10,7 +10,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .bg_image { 
+  .bg_image {
     background-image: url("../../assets/images/compress/OurServices_gradient_mobile_compress.avif");
   }
 
@@ -101,5 +101,20 @@
 
   .service_links {
     font-size: 14px;
+  }
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+
+  .service_links svg,
+  .service_links {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  .service_links:hover svg {
+    transform: translateX(5px);
+    transition: all 0.2s ease;
   }
 }

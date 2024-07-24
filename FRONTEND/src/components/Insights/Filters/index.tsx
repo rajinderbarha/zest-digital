@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import classes from "./Filters.module.css";
 import { GoArrowRight } from "react-icons/go";
@@ -42,7 +42,7 @@ function Filters({ data }: { data: FiltersType }) {
       const updatedCategories = prevCategories.includes(category)
         ? prevCategories.filter((prevCategory) => prevCategory !== category)
         : [...prevCategories, category];
-      setCurrentPage(1); 
+      setCurrentPage(1);
       return updatedCategories;
     });
   };
@@ -78,7 +78,7 @@ function Filters({ data }: { data: FiltersType }) {
 
     <div className="main_container">
       <div className={`${classes.Filters} relative`} data-aos="fade-up">
-<div className={`${classes.Filters_img} bg-color-1 h-[450px] sm:h-[455px] min-tb:max-tb:h-[455px] md:h-[590px]  rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full `}
+        <div className={`${classes.Filters_img} bg-color-1 h-[450px] sm:h-[455px] min-tb:max-tb:h-[455px] md:h-[590px]  rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full `}
         ></div>
 
         <div className={`${classes.Filters_box} relative z-10 grid lg:grid-cols-12`}>
@@ -108,7 +108,7 @@ function Filters({ data }: { data: FiltersType }) {
                       {item.hero.heading}
                     </h2>
                     <Link href={`/insights/${item.slug.current}`}>
-                      <button className="bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white sm:text-base text-[12px] md:py-[4px] md:ps-5 py-[4px] ps-[13px] pe-[4px] md:pe-0 flex gap-2 items-center">
+                      <button className="arrowbtn_hover bg-color-1 group hover:bg-white hover:text-color-1 border border-color-1 rounded-full text-white sm:text-base text-[12px] md:py-[4px] md:ps-5 py-[4px] ps-[13px] pe-[4px] md:pe-0 flex gap-2 items-center">
                         Read more{" "}
                         <span className="md:p-1 p-[2px] group-hover:bg-color-1 group-hover:text-white bg-white rounded-full text-black me-0 md:me-[4px] text-[18px] md:text-[19px]">
                           <GoArrowRight />
@@ -139,7 +139,7 @@ function Filters({ data }: { data: FiltersType }) {
               {uniqueArray?.map((uniqueEl: any, index: any) => (
                 <h6
                   key={index}
-                  className={`${classes.Filters_btn} ${index === 0 && selectedCategories.length === 0
+                  className={`${classes.Filters_btn} nomalbtn_hover ${index === 0 && selectedCategories.length === 0
                     ? "bg_color_green"
                     : selectedCategories.includes(uniqueEl)
                       ? "bg_color_green"
@@ -157,7 +157,7 @@ function Filters({ data }: { data: FiltersType }) {
 
       <div className={`${classes.navigate_box} bg-black rounded-[15px] md:rounded-[20px] lg:rounded-30px relative grid grid-cols-3`} data-aos="fade-up">
 
-        <div className={`${classes.next_text_left} relative  mb-[2px] self-center z-10`} data-aos="fade-left">
+        <div className={`${classes.next_text_left} relative  mb-[2px] self-center z-10`} >
           {currentPage > 1 && (
             <button onClick={handlePreviousPage} className={`${classes.navigate_links} inline border-b border-color-6 font-light text-white`}>
               {"Newer Posts"}
@@ -165,7 +165,7 @@ function Filters({ data }: { data: FiltersType }) {
           )}
         </div>
 
-        <div className="w-full self-center mx-auto" data-aos="fade" data-aos-delay="250">
+        <div className="w-full self-center mx-auto" data-aos-delay="250">
           <Image
             src={urlFor(data.linkSectionIcon).url()}
             alt="icon"
@@ -174,9 +174,9 @@ function Filters({ data }: { data: FiltersType }) {
             height={50}
           />
         </div>
-        <div className={`${classes.next_text_right} relative ms-auto mb-[2px] self-center z-10`} data-aos="fade-right">
+        <div className={`${classes.next_text_right}  relative ms-auto mb-[2px] self-center z-10`} >
           {indexOfLastPost < filteredProducts.length && (
-            <button onClick={handleNextPage} className={`${classes.navigate_links} inline border-b border-color-6 font-light text-white`}>
+            <button onClick={handleNextPage} className={`${classes.navigate_links}  inline border-b border-color-6 font-light text-white`}>
               {"Older Posts"}
             </button>
           )}

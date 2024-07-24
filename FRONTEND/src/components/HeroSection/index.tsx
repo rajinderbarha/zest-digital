@@ -35,12 +35,12 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
           </h1>
           <div className={`${classes.banner_btn} flex gap-5 md:flex-row lg:flex-row mt-9 flex-col sm:flex-row`}>
             <Link href={viewSolBtnLink} className="flex">
-              <button className="bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white hover:border-color-1">
+              <button className="nomalbtn_hover bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white hover:border-color-1">
                 {viewSolBtnName}
               </button>
             </Link>
             <Link href={SeeOurResBtnLink} className="flex">
-              <button className="bg-transparent text-white rounded-full hover:text-color-1 hover:bg-white border border-white">
+              <button className=" nomalbtn_hover bg-transparent text-white rounded-full hover:text-color-1 hover:bg-white border border-white">
                 {SeeOurResBtnName}
               </button>
             </Link>
@@ -63,7 +63,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
               <source src={videosrc} type="video/mp4" />
 
               Your browser does not support the video tag.
-            </video> 
+            </video>
           </div>
         </div>
         <Image src={arrow_image} alt="" className="max-tb:block md:hidden w-[40px] mx-auto rotate-90" />

@@ -25,7 +25,7 @@ const GrowthEnginePage_Banner = ({ data }: any) => {
           </h1>
           <Link
             href={data.buttonLink}><button
-              className="font-mono sm:text-[16px] min-tb:max-tb:text-[16px]  text-[12px]  px-21px py-[10px] text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white border border-color-1 "
+              className="nomalbtn_hover font-mono sm:text-[16px] min-tb:max-tb:text-[16px]  text-[12px]  px-21px py-[10px] text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white border border-color-1 "
             >
               {data.buttonName}
             </button>

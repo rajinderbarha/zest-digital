@@ -7,16 +7,18 @@
   left: 0;
   right: 0;
 }
-.Filters_img{
+
+.Filters_img {
   background-image: url('../../../assets/images/compress/Insights_bg_gradient_compress.avif');
   background-repeat: no-repeat;
   background-position: 91% center;
   background-size: 100% 100%;
 }
+
 @media screen and (max-width: 830px) {
-  .Filters_img{
-  background-image: url('../../../assets/images/Insights_bg_gradient_mobile.png');
-  background-position: center -28px;
+  .Filters_img {
+    background-image: url('../../../assets/images/Insights_bg_gradient_mobile.png');
+    background-position: center -28px;
   }
 }
 
@@ -29,7 +31,7 @@
 
 .Filters_btn {
   cursor: pointer;
-  @apply  active:bg-color-7 active:text-color-1 text-color-7 border-color-7 border rounded-full font-mono;
+  @apply active:bg-color-7 active:text-color-1 text-color-7 border-color-7 border rounded-full font-mono;
 }
 
 @media(hover: hover) and (pointer: fine) {
@@ -42,6 +44,7 @@
   .Filters {
     padding: 20px 40px 0px 40px;
   }
+
   .Filters_btn,
   .Insight_tag {
     padding: 7px 15px;
@@ -49,13 +52,15 @@
 }
 
 @media screen and (max-width: 767px) {
-  .Filters_img{
+  .Filters_img {
     background-image: url('../../../assets/images/Insights_bg_gradient_mobile.png');
     background-position: center;
   }
+
   .Filters {
     padding: 0px 0px 0px 0px;
   }
+
   .Filters_btn,
   .Insight_tag {
     padding: 5px 10px;
@@ -89,14 +94,17 @@
     margin: 0 auto;
   }
 }
+
 @media only screen and (max-width: 385px) {
   .Footer_Link {
     font-size: 12px;
     margin-left: auto;
   }
+
   .Footer_Img {
     padding: 20px 10px;
   }
+
   .Zest_symbol_white {
     width: 40px;
   }
@@ -117,42 +125,49 @@
     padding-bottom: 60px;
   }
 }
+
 @media only screen and (min-width: 1366px) and (max-width: 1662px) {
   .insight_box h2 {
     font-size: 34px !important;
     line-height: 45.5px !important;
   }
 }
+
 @media only screen and (min-width: 1280px) and (max-width: 1662px) {
   .insight_box {
     padding: 50px 40px;
     padding-bottom: 75px;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .insight_box {
     padding: 40px 35px;
     padding-bottom: 70px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .insight_box {
     padding: 40px 35px;
     padding-bottom: 65px;
   }
 }
+
 @media only screen and (min-width: 640px) and (max-width: 767px) {
   .insight_box {
     padding: 35px 30px;
     padding-bottom: 55px;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1662px) {
-  .Filters_box > div:last-child {
+  .Filters_box>div:last-child {
     grid-column: span 3 / span 3;
     padding-left: 20px;
   }
 }
+
 @media only screen and (min-width: 540px) and (max-width: 830px) {
   .insight_box {
     padding: 37px 37px;
@@ -161,10 +176,11 @@
 }
 
 @media only screen and (max-width: 1662px) {
-  .Filters_box > div:nth-child(2) {
+  .Filters_box>div:nth-child(2) {
     display: none;
   }
-  .Filters_box > div:first-child {
+
+  .Filters_box>div:first-child {
     grid-column: span 9 / span 9;
   }
 
@@ -173,20 +189,25 @@
     height: 120px;
   }
 }
+
 @media only screen and (max-width: 1023px) {
-  .Filters_box > div:last-child,
-  .Filters_box > div:first-child {
+
+  .Filters_box>div:last-child,
+  .Filters_box>div:first-child {
     grid-column: span 12 / span 12;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .insight_box img {
     height: 110px;
   }
+
   .insight_box h2 {
     margin-top: 20px;
     margin-bottom: 15px;
   }
+
   .insight_box img {
     position: relative;
     top: 0px;
@@ -207,6 +228,7 @@
   padding: 0 12px;
 }
 
+
 .next_text_right button::after {
   background-image: url("../../../assets/images/Right_arrow_white.svg");
 }
@@ -216,12 +238,15 @@
 }
 
 @media only screen and (max-width: 767px) {
+
   .next_text_right button::after,
   .next_text_left button::before {
     padding: 0 10px;
   }
 }
+
 @media only screen and (max-width: 639px) {
+
   .next_text_right button::after,
   .next_text_left button::before {
     padding: 0 8px;
@@ -234,28 +259,34 @@
     margin-bottom: 38px;
     font-size: 22px;
   }
+
   .insight_box {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .filter_text {
     font-size: 16px;
     margin-bottom: 8px;
   }
+
   .navigate_box {
     margin-top: 45px;
     margin-bottom: 120px;
     padding: 18px 22px;
   }
+
   .navigate_links {
     font-size: 10px;
   }
+
   .next_text_left,
   .next_text_right {
     line-height: 13px;
   }
+
   .insight_box h2 {
     font-size: 20px;
     line-height: 30px;
@@ -266,20 +297,25 @@
   .filter_heading {
     font-size: 35px;
   }
+
   .filter_text {
     font-size: 30px;
   }
+
   .navigate_box {
     margin-top: 50px;
     padding: 20px 30px;
   }
+
   .navigate_links {
     font-size: 12px;
   }
+
   .next_text_left,
   .next_text_right {
     line-height: 15px;
   }
+
   .insight_box h2 {
     font-size: 20px;
     line-height: 30px;
@@ -296,18 +332,22 @@
   .filter_text {
     margin-bottom: 10px;
   }
+
   .navigate_box {
     margin-top: 100px;
     margin-bottom: 65px;
     padding: 22px 38px;
   }
+
   .navigate_links {
     font-size: 16px;
   }
+
   .next_text_left,
   .next_text_right {
     line-height: 20px;
   }
+
   .insight_box h2 {
     font-size: 30px;
     line-height: 41px;
@@ -320,15 +360,18 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
+
   .insight_box h2 {
     font-size: 26px;
     line-height: 34px;
     margin-top: 35px;
   }
+
   .filter_text {
     font-size: 20px;
     margin-bottom: 14px;
   }
+
   .navigate_box {
     margin-top: 23px;
     margin-bottom: 100px;
@@ -345,10 +388,12 @@
   .filter_text {
     margin-bottom: 20px;
   }
+
   .navigate_box {
     margin-bottom: 100px;
     padding: 27px 45px;
   }
+
   .navigate_links {
     font-size: 16px;
   }
@@ -357,6 +402,7 @@
   .next_text_right {
     line-height: 21px;
   }
+
   .insight_box h2 {
     font-size: 34px;
     line-height: 45.5px;
@@ -373,16 +419,20 @@
   .filter_text {
     margin-bottom: 40px;
   }
+
   .navigate_box {
     margin-bottom: 100px;
   }
+
   .navigate_links {
     font-size: 18px;
   }
+
   .next_text_left,
   .next_text_right {
     line-height: 22px;
   }
+
   .insight_box h2 {
     font-size: 35px;
     line-height: 46px;

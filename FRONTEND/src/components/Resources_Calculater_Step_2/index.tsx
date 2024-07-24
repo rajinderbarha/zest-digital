@@ -32,12 +32,12 @@ function Resources_Calculater_Step_2({ setStep, setFormData, progressValue, priv
         }
     };
 
-    
+
     return <div className="Resources_Calculater_Step_2">
         <div className="pe-[6px] pb-[6px]">
             <div className="Resources_Calculater_Step_2 popup_conatiner  md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                 <div className="progrees_bar xl:mb-[80px] lg:mb-[60px] md:mb-[40px] sm:mb-[30px] mb-[20px] ">
-                    <ProgressBar value={progressValue} from={priviousProgressValue}/>
+                    <ProgressBar value={progressValue} from={priviousProgressValue} />
                 </div>
                 <div className="heading text-center lg:mb-[40px] md:mb-[20px] mb-[45px]">
                     <h2 className="font-mono xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[22px] font-semibold md:mb-[10px] sm:mb-[5px] mb-[1px]">Choose your business type</h2>
@@ -46,13 +46,13 @@ function Resources_Calculater_Step_2({ setStep, setFormData, progressValue, priv
                 <div className="grid md:grid-cols-2 sm:gap-10 gap-[20px] xl:mb-[70px] lg:mb-[50px] md:mb-[30px]  mb-[55px]">
                     <div className={`${style.step_2_text} col-span-1 max-w-[520px] mx-auto text-center p-[10px]  border border-[transparent] ${selectedBusinessType === 'ecommerce' ? classes.select_element : ''}`} onClick={handleEcommerceClick}>
                         <div className="text-center mx-auto">
-                            <Image src={ecommerce_icon} alt='' className='mx-auto lg:max-w-[195px] lg:max-h-[195px] md:max-w-[140px] md:max-h-[140px] sm:max-w-[100px] sm:max-h-[100px] max-w-[90px] max-h-[90px] '  />
+                            <Image src={ecommerce_icon} alt='' className='mx-auto lg:max-w-[195px] lg:max-h-[195px] md:max-w-[140px] md:max-h-[140px] sm:max-w-[100px] sm:max-h-[100px] max-w-[90px] max-h-[90px] ' />
                         </div>
                         <p className="font-mono lg:text-30px md:text-25px sm:text-[20px] text-[18px] font-normal mt-[10px]">We’re an ecommerce business and take payments directly through our website.</p>
                     </div>
                     <div className={`${style.step_2_text} col-span-1 max-w-[520px]  mx-auto text-center p-[10px] border border-transparent ${selectedBusinessType === 'lead generation' ? classes.select_element : ''} `} onClick={handleLeadGenerationClick}>
                         <div className=" text-center mx-auto">
-                            <Image src={letter_icon} alt='' className='mx-auto lg:max-w-[195px] lg:max-h-[195px] md:max-w-[140px] md:max-h-[140px] sm:max-w-[100px] sm:max-h-[100px] max-w-[90px] max-h-[90px]'  />
+                            <Image src={letter_icon} alt='' className='mx-auto lg:max-w-[195px] lg:max-h-[195px] md:max-w-[140px] md:max-h-[140px] sm:max-w-[100px] sm:max-h-[100px] max-w-[90px] max-h-[90px]' />
                         </div>
                         <p className="font-mono lg:text-30px md:text-25px sm:text-[20px] text-[18px] font-normal mt-[10px]">We generate leads through our website and follow-up with a proposal.</p>
                     </div>
