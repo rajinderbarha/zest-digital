@@ -301,7 +301,7 @@ export async function getResourcesData() {
       description,
       buttonName,
       buttonLink,
-     "uploadFileUrl": uploadFile.asset->url
+     uploadFileUrl
     },
     brandList[]->{
       icon

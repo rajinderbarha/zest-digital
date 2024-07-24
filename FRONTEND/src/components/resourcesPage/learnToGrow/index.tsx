@@ -6,6 +6,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 import { Resources } from "../../../../lib/interface";
 function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelectedFileUrl: (url: string) => void }) {
 
+// console.log(data);
 
   return (
     <>
@@ -76,6 +77,7 @@ function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelecte
                   has_image={false}
                   shadow_right={index % 2 === 0}
                   selectedFile={(fileUrl: string) => setSelectedFileUrl(fileUrl)}
+                  // selectedFile={(fileUrl: string) => setSelectedFileUrl("https://docs.google.com/presentation/d/1odVHXhcJ_HWmpAiTdWyFO96dvxS9Vh6fkhIjyBWpalE/edit?usp=sharing")}
                 />
               })}
             </div>
