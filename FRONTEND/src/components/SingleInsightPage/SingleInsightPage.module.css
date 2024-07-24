@@ -242,6 +242,15 @@
   height: auto;
 }
 
+.Block_Content p+h4 {
+  margin-top: 10px;
+}
+
+.Block_Content ul+h4,
+.Block_Content ol+h4 {
+  margin-top: 29px;
+}
+
 @media (min-width: 640px) {
   .Block_Content {
     padding-left: 30px;
@@ -271,6 +280,15 @@
 
   .Block_Content .wrappedH2:not(:first-child)~h3 {
     margin-top: 50px;
+  }
+
+  .Block_Content p+h4 {
+    margin-top: 13px;
+  }
+
+  .Block_Content ul+h4,
+  .Block_Content ol+h4 {
+    margin-top: 32px;
   }
 }
 
@@ -351,6 +369,15 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+  .Block_Content p+h4 {
+    margin-top: 17px;
+  }
+
+  .Block_Content ul+h4,
+  .Block_Content ol+h4 {
+    margin-top: 36px;
+  }
 }
 
 @media (max-width: 830px) {
@@ -400,6 +427,15 @@
   .wrappedH2 {
     padding-top: 52px;
     padding-bottom: 30px;
+  }
+
+  .Block_Content p+h4 {
+    margin-top: 10px;
+  }
+
+  .Block_Content ul+h4,
+  .Block_Content ol+h4 {
+    margin-top: 29px;
   }
 }
 
@@ -470,6 +506,15 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  .Block_Content p+h4 {
+    margin-top: 20px;
+  }
+
+  .Block_Content ul+h4,
+  .Block_Content ol+h4 {
+    margin-top: 39px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -523,6 +568,15 @@
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 8px;
+  }
+
+  .Block_Content p+h4 {
+    margin-top: 20px;
+  }
+
+  .Block_Content ul+h4,
+  .Block_Content ol+h4 {
+    margin-top: 41px;
   }
 }
 
