@@ -24,9 +24,9 @@ const Global_Accordion = ({
   return <div className="">
     <div className={`${classes.accordion} max-w-[1520px] mx-auto `}>
       <div className={`${classes.accordion_heading} font-mono font-semibold max-w-[300px] sm:max-w-full mx-auto text-center text-color-1 `} data-aos="fade">
-      {heading_acc}
+        {heading_acc}
       </div>
-      {card_acc.map((item,index) => (
+      {card_acc.map((item, index) => (
         <div key={index} className={classes.accordion_item} data-aos="fade-up">
           <button
             onClick={() => toggleItem(index)}
@@ -38,32 +38,32 @@ const Global_Accordion = ({
             </span>
           </button>
           <div
-           ref={(el) => {
-            if (el) {
-              contentRefs.current[index] = el;
-            }
-          }}
-          
+            ref={(el) => {
+              if (el) {
+                contentRefs.current[index] = el;
+              }
+            }}
+
             className={`font-mono ${classes.accordion_content}  ${classes.desc_text_class} `}
             style={{
-              maxHeight: openItemId === index? contentRefs.current[index]?.scrollHeight + 'px' : '0',
+              maxHeight: openItemId === index ? contentRefs.current[index]?.scrollHeight + 'px' : '0',
             }}
           >
             <div className={`${classes.content_inner}  ${classes.title_desc_padding_class}  max-w-[1221px]`}>
               <PortableText value={item.content} />
             </div>
           </div>
-          </div>
-        ))}
-      </div>
-      <div className="text-center" data-aos="fade-up">
-        <Link href={belowbtnLink_acc}>
-          <button className={`${classes.speak_button} font-mono bg-color-1 border border-color-1 text-white hover:text-color-1 hover:bg-white  rounded-full`}>
-          {belowbtnName_acc}
-          </button>
-        </Link>
-      </div>
+        </div>
+      ))}
     </div>
+    <div className="text-center" data-aos="fade-up">
+      <Link href={belowbtnLink_acc}>
+        <button className={`${classes.speak_button} nomalbtn_hover font-mono bg-color-1 border border-color-1 text-white hover:text-color-1 hover:bg-white  rounded-full`}>
+          {belowbtnName_acc}
+        </button>
+      </Link>
+    </div>
+  </div>
 };
 
 export default Global_Accordion;

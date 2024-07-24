@@ -241,24 +241,59 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
 }
 
 
-.pag404 > div {
-  height: calc(100vh - 115px ) 
+.pag404>div {
+  height: calc(100vh - 115px)
 }
-@media only screen and (max-width:1080px){
-.pag404 > div {
-  height: calc(100vh - 80px ) 
-}
-}  
-@media only screen and (max-width:676px){
-.pag404 > div {
-  height: calc(100vh - 54px ) 
-}
-}  
 
-#label-email-77c50a0c-3073-4b4d-b8cd-4d19a73691ca span{
-color: white!important;
-border: 1px solid white!important;
- }
- .hs_email{
-  background-color: antiquewhite!important;
- }
+@media only screen and (max-width:1080px) {
+  .pag404>div {
+    height: calc(100vh - 80px)
+  }
+}
+
+@media only screen and (max-width:676px) {
+  .pag404>div {
+    height: calc(100vh - 54px)
+  }
+}
+
+#label-email-77c50a0c-3073-4b4d-b8cd-4d19a73691ca span {
+  color: white !important;
+  border: 1px solid white !important;
+}
+
+.hs_email {
+  background-color: antiquewhite !important;
+}
+
+
+/*Arrow button hover start*/
+.arrowbtn_hover:hover span {
+  transform: rotate(-45deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .nomalbtn_hover,
+  .arrowbtn_hover,
+  .arrowbtn_hover span {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  .nomalbtn_hover:hover,
+  .arrowbtn_hover:hover {
+    transform: translateX(0px) scale(1.05) translateY(-5px);
+    transition: all 0.2s ease;
+  }
+
+  .arrowbtn_hover:hover span {
+    transform: rotate(-45deg);
+    transition: all 0.2s ease;
+  }
+
+
+
+}
+
+/*Arrow button hover end*/

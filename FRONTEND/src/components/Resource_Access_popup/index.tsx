@@ -98,14 +98,14 @@ function Resource_Access_popup({ setStep, register, handleSubmit, setFormData, f
     const router = useRouter();
     const { popup } = router.query;
     const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
-  
+
     const handleFormSubmit = async (data: any) => {
         if (!data.firstName || !data.lastName || !data.email || hasSubmitted) {
             return;
         }
-    
+
         setFormData(data);
-    
+
         if (popup === "/growthcalculator") {
             setStep(1);
         } else {
@@ -114,15 +114,15 @@ function Resource_Access_popup({ setStep, register, handleSubmit, setFormData, f
                 sessionStorage.setItem('formSubmitted', 'true');
                 document.cookie = "formSubmitted=true; path=/";
                 setHasSubmitted(true);
-    
+
                 const downloadUrl = downloadUrls[0];
                 console.log(downloadUrl);
-                
-                
+
+
                 if (downloadUrl) {
                     // window.open(downloadUrl, '_self'); // Opens the file in the same tab
                     window.location.href = downloadUrl;
-    
+
                     // Redirect to thank you page after a short delay
                     setTimeout(() => {
                         router.replace("/thanks_you");
@@ -133,7 +133,7 @@ function Resource_Access_popup({ setStep, register, handleSubmit, setFormData, f
             }
         }
     };
-    
+
 
     return (
         <form onSubmit={handleSubmit(handleFormSubmit)}>

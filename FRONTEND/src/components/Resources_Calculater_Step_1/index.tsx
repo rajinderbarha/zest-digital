@@ -5,16 +5,16 @@ import { GoArrowLeft } from "react-icons/go";
 import ProgressBar from '@/common/ProgressBar';
 
 function Resources_Calculater_Step_1({ setStep, progressValue, priviousProgressValue }: any) {
-    
+
 
     return <div className="Resources_Calculater_Step_1 mt-[0px]">
         <div className="pe-[6px] pb-[6px]">
             <div className="Resources_Calculater_Step_1 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                 <div className="progrees_bar xl:mb-[80px] lg:mb-[60px] md:mb-[40px] mb-[30px] ">
-                    <ProgressBar value={progressValue} from={priviousProgressValue}/>                  
+                    <ProgressBar value={progressValue} from={priviousProgressValue} />
                 </div>
                 <div className="trafic_image ">
-                    <Image src={Traffic_conversion_icon} alt='' className='mx-auto md:max-w-[206px] md:max-h-[207px] sm:max-w-[150px] sm:max-h-[150px] max-w-[100px] max-h-[100px]'  />
+                    <Image src={Traffic_conversion_icon} alt='' className='mx-auto md:max-w-[206px] md:max-h-[207px] sm:max-w-[150px] sm:max-h-[150px] max-w-[100px] max-h-[100px]' />
                 </div>
                 <div className={`${classes.step_1_text} text-center xl:mt-[38px] lg:mt-[28px] md:mt-[18px] sm:mt-[15px] mt-[15px] max-w-[1280px] mx-auto`}>
                     <h2 className='font-mono xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[20px] font-semibold'>Set Your Traffic & Conversion Goals</h2>

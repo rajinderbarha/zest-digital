@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { urlFor } from "../../../lib/sanity.client";
 import Link from "next/link";
@@ -49,7 +49,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                     alt="Site Logo"
                     width={149}
                     height={69}
-                    className=" h-[69px]" 
+                    className=" h-[69px]"
                   />
                 </Link>
               </div>
@@ -72,10 +72,11 @@ const Header = ({ data }: { data: HeaderType[] }) => {
             </div>
             <div className="" data-aos="fade-left">
               <Link
-                href={item.button.navLink}
-                className={`${classes.call_btn} screen-1-max:hidden font-mono text-base px-21px py-[5px] bg-color-1 text-white rounded-full  active:bg-white active:text-color-1 border border-color-1`}
-              >
-                {item.button.navName}
+                href={item.button.navLink}>
+                <button className={`${classes.call_btn} nomalbtn_hover screen-1-max:hidden font-mono text-base px-21px py-[5px] bg-color-1 text-white rounded-full  active:bg-white active:text-color-1 border border-color-1`}
+                >
+                  {item.button.navName}
+                </button>
               </Link>
             </div>
           </div>
@@ -95,16 +96,17 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   alt="Site Logo"
                   width={112}
                   height={51}
-                  onClick={closeMenu} 
+                  onClick={closeMenu}
                 />
               </Link>
             </div>
             <div className={`${classes.mobile_nav_left} flex items-center gap-[15px]`}>
               <Link onClick={closeMenu}
-                href={item.button.navLink}
-                className={`${classes.call_btn} font-mono text-[12px] px-21px py-[7px] bg-color-1 text-white rounded-full  active:bg-white active:text-color-1  border border-color-1`}
-              >
-                {item.button.navName}
+                href={item.button.navLink}>
+                <button className={`${classes.call_btn} nomalbtn_hover font-mono text-[12px] px-21px py-[7px] bg-color-1 text-white rounded-full  active:bg-white active:text-color-1  border border-color-1`}
+                >
+                  {item.button.navName}
+                </button>
               </Link>
               <div className={classes.menuIcon} onClick={toggleMenu}>
                 <Image src={iconSrc} alt="Logo" />
@@ -114,7 +116,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
               className={`${classes.menu} px-[16px] ${isMenuOpen ? `${classes.menuOpen} ` : classes.menuOpen
                 }`}
               style={{ height: isMenuOpen ? "100vh" : 0 }
-            }
+              }
             >
               <div className={`${classes.BG_manu}`}>
                 {item.navItem.map((navItem, index) => (
@@ -128,7 +130,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   </Link>
                 ))}
 
-                <div className={`${classes.navbar_sublogo} ${isMenuOpen ? `z-[1]` : 'z-[-1000]'}`}>  
+                <div className={`${classes.navbar_sublogo} ${isMenuOpen ? `z-[1]` : 'z-[-1000]'}`}>
                   <Image src={Sub_Logo} className="md:w-[200px] sm:w-[150px] w-[130px] md:ml-[42px] sm:ml-[15px] ml-[0px] mt-[150px]" alt="Logo_img" />
                 </div>
               </div>

@@ -23,7 +23,7 @@ const Growth_engine = ({
       {has_image ? (
         <div
           data-aos="fade-up"
-          className={`${classes.growth_engine} ${shadow_right ? `shadow-dark-pink-left ` : `shadow-dark-pink-left` } grid sm:grid-cols-5  mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]  text-color-1 relative`}
+          className={`${classes.growth_engine} ${shadow_right ? `shadow-dark-pink-left ` : `shadow-dark-pink-left`} grid sm:grid-cols-5  mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]  text-color-1 relative`}
         >
           <div className="col-span-3 min-tb:max-tb:col-span-9">
             <h2
@@ -36,8 +36,8 @@ const Growth_engine = ({
             </p>
             <Link href={buttonLink} className="inline-block">
               <button
-                className="bg-color-1 group hover:bg-white max-sm:leading-normal hover:text-color-1 border border-color-1 rounded-full text-white text-[16px]  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center"
-                
+                className="arrowbtn_hover bg-color-1 group hover:bg-white max-sm:leading-normal hover:text-color-1 border border-color-1 rounded-full text-white text-[16px]  md:py-[5px] md:ps-4 py-[3px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center"
+
                 onClick={() => handlefileUrl(allFilesUrl)}
               >
                 {buttonName}{" "}
@@ -63,7 +63,7 @@ const Growth_engine = ({
       ) : (
         <div
           data-aos="fade-up"
-          className={`${classes.growth_engine} ${shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right` }   mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]   text-color-1`}
+          className={`${classes.growth_engine} ${shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right`}   mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]   text-color-1`}
         >
           <h2 className={`${classes.growth_engine_title} text-40px font-semibold`}>
             {title}
@@ -74,7 +74,7 @@ const Growth_engine = ({
           <Link href={buttonLink} className="inline-block">
             <button
               onClick={() => handlefileUrl(allFilesUrl)}
-              className={` bg-color-1 group hover:bg-white  max-sm:leading-normal hover:text-color-1 border border-color-1 rounded-full text-white text-[16px] md:py-[5px] md:ps-4  py-[4px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center`}
+              className={`arrowbtn_hover bg-color-1 group hover:bg-white  max-sm:leading-normal hover:text-color-1 border border-color-1 rounded-full text-white text-[16px] md:py-[5px] md:ps-4  py-[4px] ps-[13px] pe-[4px] md:pe-0 w-fit flex gap-2 items-center`}
               type="button"
             >
               {buttonName}{" "}
