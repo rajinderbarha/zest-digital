@@ -69,13 +69,18 @@ export const Resources = defineType({
               title: 'Button Link',
               type: 'string',
             },
+            // {
+            //   name: 'uploadFile',
+            //   type: 'file',
+            //   title: 'File Upload',
+            //   options: {
+            //     storeOriginalFilename: true,
+            //   },
+            // },
             {
-              name: 'uploadFile',
-              type: 'file',
-              title: 'File Upload',
-              options: {
-                storeOriginalFilename: true,
-              },
+              name: 'uploadFileUrl',
+              type: 'string',
+              title: "Upload File's URL",
             },
           ],
         },
