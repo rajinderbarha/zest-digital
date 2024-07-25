@@ -58,7 +58,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
     </div>
     <div className="main_padding">
       <div
-        className={`${classes.box_div} max-w-[1345px] font-mono  mx-auto grid `}
+        className={`${classes.box_div} ${classes.card_div} max-w-[1345px] font-mono  mx-auto grid `}
       >
         <Growth_engine
           has_image={false}
@@ -72,7 +72,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
           }}
         />
 
-        <div className="grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
+        <div className={` ${classes.grid_card_div} ${classes.card_div}  grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto `}>
           <Growth_engine
             has_image={false}
             shadow_right={true}

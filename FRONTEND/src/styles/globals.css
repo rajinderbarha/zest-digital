@@ -276,7 +276,9 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
 
   .nomalbtn_hover,
   .arrowbtn_hover,
-  .arrowbtn_hover span {
+  .arrowbtn_hover span,
+  .right_arrow_hover::after,
+  .left_arrow_hover::before {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
@@ -292,8 +294,15 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
     transition: all 0.2s ease;
   }
 
+  .right_arrow_hover:hover::after {
+    right: -5px;
+    transition: all 0.2s ease;
+  }
 
-
+  .left_arrow_hover:hover::before {
+    right: 5px;
+    transition: all 0.2s ease;
+  }
 }
 
 /*Arrow button hover end*/

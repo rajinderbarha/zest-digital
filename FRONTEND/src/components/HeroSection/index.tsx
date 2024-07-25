@@ -29,7 +29,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
   return <div className="main_padding" data-aos="fade-up">
     <div className="text-white main_container">
       <div className={`${classes.banner} tablet_padding grid max-tb:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-10 lg:rounded-30px md:rounded-[20px] rounded-[15px] main_padding`}>
-        <div className="font-mono text-55px border-white flex flex-col">
+        <div className={`${classes.banner_txt_btn} font-mono text-55px border-white flex flex-col`}>
           <h1 data-aos="fade-out" data-aos-delay="200" className={`${classes.banner_text} font-semibold text-white`}>
             {heading}
           </h1>

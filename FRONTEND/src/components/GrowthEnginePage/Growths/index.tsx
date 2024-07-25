@@ -35,9 +35,9 @@ function Growths({ data, otherSolHeading }: any) {
           <h2 className={`${classes.growth_heading}  font-mono font-semibold mx-auto text-center`} data-aos="fade">
             {otherSolHeading}
           </h2>
-          <div className={`${classes.growth_card_div} font-mono mx-auto grid `}>
+          <div className={`${classes.growth_card_div} ${classes.card_div} font-mono mx-auto grid `}>
 
-            <div className={`${classes.card_divider} grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  max-w-[1345px] mx-auto `}>
+            <div className={`${classes.card_divider} ${classes.card_div}  grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  max-w-[1345px] mx-auto `}>
               {firstTwoItems?.map((item: any, index: number) => {
                 return (
                   <div key={index} className="grid">

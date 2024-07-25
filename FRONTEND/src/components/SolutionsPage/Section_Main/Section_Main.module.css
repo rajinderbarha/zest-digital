@@ -367,3 +367,18 @@
     width: fit-content;
   }
 }
+
+
+
+@media only screen and (max-width:460px) {
+
+  .card_div>div:first-child,
+  .card_div>div:last-child {
+    width: 100%;
+    min-height: 252px;
+  }
+
+  .grid_card_div {
+    width: 100%;
+  }
+}

@@ -6,10 +6,11 @@
   background-color: #191615;
   margin-top: 70px;
 }
+
 @media only screen and (max-width: 767px) {
   .SingleIntro {
     background-image: url("../../../assets/images/compress/Services_bg_gradient_mobile_compress.avif");
-    background-position: left top ;
+    background-position: left top;
   }
 }
 
@@ -23,106 +24,128 @@
   margin-left: 15px;
   margin-right: 15px;
 }
+
 @media only screen and (min-width: 1775px) {
   .margin_outer {
     margin-left: 100px;
     margin-right: 100px;
   }
+
   .grow_img {
     right: 0;
     top: -163px;
     right: 50px;
   }
+
   .grow_img img {
     width: 300px;
     height: 300px;
   }
 }
+
 @media only screen and (min-width: 1450px) and (max-width: 1774px) {
   .margin_outer {
     margin-left: 75px;
     margin-right: 75px;
   }
+
   .grow_img {
     top: -144px;
     right: 90px;
   }
+
   .grow_img img {
     width: 270px;
     height: 270px;
   }
 }
+
 @media only screen and (min-width: 1366px) and (max-width: 1449px) {
   .margin_outer {
     margin-left: 60px;
     margin-right: 60px;
   }
+
   .grow_img {
     top: -122px;
     right: 135px;
   }
+
   .grow_img img {
     width: 230px;
     height: 230px;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1365px) {
   .margin_outer {
     margin-left: 40px;
     margin-right: 40px;
   }
+
   .grow_img {
     top: -109px;
     right: 105px;
   }
+
   .grow_img img {
     width: 200px;
     height: 200px;
   }
 }
+
 @media only screen and (min-width: 1124px) and (max-width: 1365px) {
   .grow_img {
     top: -118px;
     right: 135px;
   }
+
   .grow_img img {
     width: 220px;
     height: 220px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .margin_outer {
     margin-left: 25px;
     margin-right: 25px;
   }
+
   .grow_img {
     top: -97px;
     right: 95px;
   }
+
   .grow_img img {
     width: 180px;
     height: 180px;
   }
 }
+
 @media only screen and (min-width: 640px) and (max-width: 767px) {
   .grow_img {
     top: -86px;
     right: 56px;
   }
+
   .grow_img img {
     width: 160px;
     height: 160px;
   }
 }
+
 @media only screen and (max-width: 639px) {
   .grow_img {
     top: -80px;
     right: 37px;
   }
+
   .grow_img img {
     width: 130px;
     height: 130px;
   }
+
   .SingleIntro {
     margin-top: 90px;
   }
@@ -151,26 +174,31 @@
   padding-right: 0px;
   gap: 20px;
 }
+
 .resources_logo {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 640px) {
+
   .learnToGrow_title,
   .tools_title {
     font-size: 30px;
   }
+
   .learnToGrow_desc {
     font-size: 16px;
     line-height: 18px;
     padding-top: 31px;
   }
+
   .cards_div {
     padding-left: 20px;
     padding-right: 20px;
     gap: 30px;
   }
+
   .resources_logo {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -181,21 +209,25 @@
   .learnToGrow_title {
     font-size: 35px;
   }
+
   .tools_title {
     font-size: 30px;
   }
+
   .learnToGrow_desc {
     font-size: 21px;
     line-height: 30px;
     padding-top: 38px;
     padding-bottom: 40px;
   }
+
   .cards_div {
     padding-left: 30px;
     padding-right: 30px;
     gap: 40px;
     margin-top: 80px;
   }
+
   .resources_logo {
     margin-top: 120px;
     margin-bottom: 110px;
@@ -203,16 +235,19 @@
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {
+
   .learnToGrow_title,
   .tools_title {
     font-size: 30px;
   }
+
   .learnToGrow_desc {
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 0;
     padding-top: 31px;
   }
+
   .cards_div {
     padding-left: 50px;
     padding-right: 50px;
@@ -231,17 +266,21 @@
   .learnToGrow_title {
     font-size: 40px;
   }
+
   .tools_title {
     font-size: 40px;
   }
+
   .learnToGrow_desc {
     font-size: 25px;
     line-height: 35px;
   }
+
   .cards_div {
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .resources_logo {
     margin-top: 170px;
     margin-bottom: 160px;
@@ -249,16 +288,28 @@
 }
 
 @media only screen and (min-width: 1280px) {
+
   .learnToGrow_title,
   .tools_title {
     font-size: 45px;
   }
+
   .learnToGrow_desc {
     font-size: 30px;
     line-height: 39px;
   }
+
   .resources_logo {
     margin-top: 200px;
     margin-bottom: 190px;
+  }
+}
+
+
+@media only screen and (max-width:460px) {
+
+  .cards_div>div {
+    width: 100%;
+    min-height: 217px;
   }
 }

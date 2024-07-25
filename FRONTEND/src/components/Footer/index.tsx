@@ -150,7 +150,7 @@ const Footer = ({ data }: { data: FooterType[] }) => {
           </div>
           <div className={`${classes.footer_belowsection} bg-color-1 lg:h-[90px] md:h-[80px] sm:h-[60px] sm:py-0 py-[10px] flex items-center `} >
             <div className={`${classes.footer_belowtext} text-white max-w-[1720px] text-center mx-auto `}>
-              <PortableText value={item.copyRightText} />
+              <h6>Copyright {new Date().getFullYear()} &copy; <PortableText value={item.copyRightText} /></h6>
             </div>
           </div>
         </div>

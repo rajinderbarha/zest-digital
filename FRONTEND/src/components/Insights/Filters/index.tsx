@@ -159,7 +159,7 @@ function Filters({ data }: { data: FiltersType }) {
 
         <div className={`${classes.next_text_left} relative  mb-[2px] self-center z-10`} >
           {currentPage > 1 && (
-            <button onClick={handlePreviousPage} className={`${classes.navigate_links} inline border-b border-color-6 font-light text-white`}>
+            <button onClick={handlePreviousPage} className={`${classes.navigate_links} left_arrow_hover inline border-b border-color-6 font-light text-white`}>
               {"Newer Posts"}
             </button>
           )}
@@ -176,7 +176,7 @@ function Filters({ data }: { data: FiltersType }) {
         </div>
         <div className={`${classes.next_text_right}  relative ms-auto mb-[2px] self-center z-10`} >
           {indexOfLastPost < filteredProducts.length && (
-            <button onClick={handleNextPage} className={`${classes.navigate_links}  inline border-b border-color-6 font-light text-white`}>
+            <button onClick={handleNextPage} className={`${classes.navigate_links} right_arrow_hover inline border-b border-color-6 font-light text-white`}>
               {"Older Posts"}
             </button>
           )}
