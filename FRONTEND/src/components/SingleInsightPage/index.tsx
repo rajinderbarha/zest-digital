@@ -120,9 +120,9 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
         </div>
 
         <div className={`bg-black rounded-[20px] md:rounded-30px xl:mb-[245px] lg:mb-[170px] md:mb-[80px] sm:mb-[75px] mb-[70px] py-[18px] sm:py-[20px] md:py-[22px] lg:py-[27px] px-[22px] sm:px-[30px] md:px-[38px] lg:px-[45px] xl:px-[55px] xl:mt-[120px] lg:mt-[95px] md:mt-[60px] sm:mt-[60px] mt-[50px] relative grid grid-cols-3`}>
-          <div className={`${classes.next_text_left} relative self-center md:leading-[25px] leading-[17px] z-10`}>
+          <div className={`${classes.next_text_left}  relative self-center md:leading-[25px] leading-[17px] z-10`}>
             {prevPost ?
-              <Link href={prevPost.slug} className={`inline border-b border-color-6 font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px] text-white`}>
+              <Link href={prevPost.slug} className={`left_arrow_hover inline border-b border-color-6 font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px] text-white`}>
                 {prevPost?.hero?.heading}
               </Link>
               : ""
@@ -137,9 +137,9 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
               height={50}
             />
           </div>
-          <div className={`${classes.next_text_right} relative ms-auto self-center md:leading-[25px] leading-[17px] z-10 text-end`}>
+          <div className={`${classes.next_text_right}  relative ms-auto self-center md:leading-[25px] leading-[17px] z-10 text-end`}>
             {nextPost ?
-              <Link href={nextPost?.slug} className={`inline border-b border-color-6 font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px] text-white`}>
+              <Link href={nextPost?.slug} className={` right_arrow_hover inline border-b border-color-6 font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[10px] text-white`}>
                 {nextPost.hero?.heading}
               </Link>
               : ""

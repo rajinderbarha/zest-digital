@@ -23,7 +23,7 @@ const Growth_engine = ({
       {has_image ? (
         <div
           data-aos="fade-up"
-          className={`${classes.growth_engine} ${shadow_right ? `shadow-dark-pink-left ` : `shadow-dark-pink-left`} grid sm:grid-cols-5  mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]  text-color-1 relative`}
+          className={`${classes.growth_engine} ${shadow_right ? `shadow-dark-pink-left ` : `shadow-dark-pink-left`} growth_card grid sm:grid-cols-5  mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]  text-color-1 relative`}
         >
           <div className="col-span-3 min-tb:max-tb:col-span-9">
             <h2
@@ -63,7 +63,7 @@ const Growth_engine = ({
       ) : (
         <div
           data-aos="fade-up"
-          className={`${classes.growth_engine} ${shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right`}   mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]   text-color-1`}
+          className={`${classes.growth_engine} ${shadow_right ? ` shadow-dark-pink-left ` : `shadow-blue-right`}  growth_card mx-auto  lg:rounded-30px md:rounded-[20px] rounded-[15px]   text-color-1`}
         >
           <h2 className={`${classes.growth_engine_title} text-40px font-semibold`}>
             {title}

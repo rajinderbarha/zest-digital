@@ -261,9 +261,9 @@
   }
 
   .insight_box {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 25px;
     padding-bottom: 30px;
   }
 
@@ -290,6 +290,7 @@
   .insight_box h2 {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -436,5 +437,19 @@
   .insight_box h2 {
     font-size: 35px;
     line-height: 46px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1449px) {
+  .insight_box h2 {
+    font-size: 27px !important;
+    line-height: 38.5px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+  .insight_box h2 {
+    font-size: 26px;
+    line-height: 35px;
   }
 }

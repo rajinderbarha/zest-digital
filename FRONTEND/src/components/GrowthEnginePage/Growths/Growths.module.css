@@ -128,3 +128,16 @@
     margin-bottom: 311px;
   }
 }
+
+@media only screen and (max-width:460px) {
+
+  .card_div~div:last-child,
+  .card_divider>div {
+    width: 100%;
+    min-height: 252px;
+  }
+
+  .card_divider {
+    width: 100%;
+  }
+}

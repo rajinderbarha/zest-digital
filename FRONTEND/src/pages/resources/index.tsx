@@ -205,14 +205,15 @@ function Resources({ resources }: any) {
   // const router = useRouter();
 
   console.log(selectedFileUrl);
-  
+
 
   const { register, handleSubmit } = useForm();
 
   async function sendDataToGoogleSheets(data: any) {
     let dynamicSheetData;
     {
-      search === "/growthcalculator"
+      // search === "/growthcalculator"
+      search === "/calculator"
         ? (dynamicSheetData = formData)
         : (dynamicSheetData = data);
     }
@@ -238,7 +239,7 @@ function Resources({ resources }: any) {
   }
 
   let title;
-  if (search === "/growthcalculator" || search === "/serpcalculator") {
+  if (search === "/calculator" || search === "/serpcalculator") {
     title = "Access calculator";
   } else if (search === "/workbook") {
     title = "Access workbook";
@@ -266,7 +267,8 @@ function Resources({ resources }: any) {
       <StepPopup
         onClose={() => setStep(0)}
         open={
-          search === "/growthcalculator" ||
+          // search === "/growthcalculator" ||
+          search === "/calculator" ||
           search === "/serpcalculator" ||
           search === "/workbook"
         }

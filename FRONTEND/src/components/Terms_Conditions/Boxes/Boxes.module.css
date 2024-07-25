@@ -14,6 +14,7 @@
   .box_title {
     font-size: 35px;
   }
+
   .box_desc {
     font-size: 25px;
     line-height: 35px;
@@ -21,9 +22,11 @@
     margin-bottom: 12px;
     margin-bottom: 30px;
   }
+
   .boxes {
     padding: 50px 23px 50px 40px;
   }
+
   .grow_image {
     width: 400px;
   }
@@ -39,24 +42,29 @@
   .box_title {
     font-size: 30px;
   }
+
   .box_desc {
     font-size: 20px;
     line-height: 29px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin-bottom: 20px; */
     line-height: 28px;
   }
+
   .boxes {
     padding: 30px 15px 30px 30px;
   }
+
   .boxes button {
     font-size: 14px;
   }
+
   .boxes button img {
     padding: 6px 4px 6px 4px;
     width: 25px;
   }
+
   .grow_image {
     width: 300px;
   }
@@ -66,19 +74,23 @@
   .box_title {
     font-size: 25px;
   }
+
   .box_desc {
     font-size: 18px;
     line-height: 23px;
   }
+
   .boxes button {
     font-size: 12px;
   }
 }
+
 @media only screen and (max-width: 530px) {
   .grow_image {
     width: 250px;
   }
 }
+
 @media only screen and (max-width: 320px) {
   .boxes {
     padding: 20px 15px 20px 20px;
@@ -89,13 +101,16 @@
   .box_title {
     font-size: 30px;
   }
+
   .box_desc {
     font-size: 18px;
     line-height: 23px;
   }
+
   .boxes {
     padding: 38px 38px 54px 38px;
   }
+
   .box_desc {
     max-width: 400px;
   }
@@ -105,13 +120,16 @@
   .box_title {
     font-size: 18px;
   }
+
   .box_desc {
     font-size: 12px;
     line-height: 15px;
   }
+
   .boxes {
-    padding: 26px 20px 43px 20px;
+    padding: 26px 20px 44px 20px;
   }
+
   .box_desc {
     max-width: 206px;
   }
@@ -121,6 +139,7 @@
   .boxes {
     padding: 50px 20px 50px 48px;
   }
+
   .box_desc {
     font-size: 26px;
     line-height: 34px;
@@ -131,6 +150,7 @@
   .boxes {
     padding: 70px 28px 70px 56px;
   }
+
   .box_desc {
     font-size: 30px;
     line-height: 39px;

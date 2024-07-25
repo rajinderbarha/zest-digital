@@ -106,7 +106,8 @@ function Resource_Access_popup({ setStep, register, handleSubmit, setFormData, f
 
         setFormData(data);
 
-        if (popup === "/growthcalculator") {
+        // if (popup === "/growthcalculator") {
+        if (popup === "/calculator") {
             setStep(1);
         } else {
             try {

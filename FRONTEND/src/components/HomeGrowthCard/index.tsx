@@ -78,8 +78,8 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                       <Link href={`/casestudies/${slug}`}>
                         <div className="xl:w-[60px] md:w-[55px]  w-[40px] group min-tb:max-tb:w-[55px]" >
 
-                          <Image src={arrow} alt="" className="group-hover:hidden" loading="eager"/>
-                          <Image src={hover_arrow} alt="" className="text-[10px] group-hover:block hidden" loading="eager"/>
+                          <Image src={arrow} alt="" className="group-hover:hidden" loading="eager" />
+                          <Image src={hover_arrow} alt="" className="text-[10px] group-hover:block hidden" loading="eager" />
                         </div>
                       </Link>
                     </div>
@@ -102,94 +102,96 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
       </div>
 
       <div className={`${classes.growth_container} main_padding`}>
-        <div
-          className={` grid md:gap-[45px] sm:gap-[45px] gap-[20px] font-mono mx-auto`}
-        >
-          <Growth_engine
-            has_image={false}
-            shadow_right={false}
-            props={{
-              title: card.growthcard[0].card.heading,
-              description: card.growthcard[0].card.description,
-              buttonName: card.growthcard[0].card.buttonName,
-              buttonLink: `/solutions/${card.growthcard[0].slug}`,
-              image: card.growthcard[0].card.image
-                ? urlFor(card.growthcard[0].card.image).url()
-                : "",
-
-            }} />
-
-          <div className="grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto ">
-            <Growth_engine
-              has_image={false}
-              shadow_right={true}
-              props={{
-                title: card.growthcard[1].card.heading,
-                description: card.growthcard[1].card.description,
-                buttonName: card.growthcard[1].card.buttonName,
-                buttonLink: `/solutions/${card.growthcard[1].slug}`,
-                image: card.growthcard[1].card.image
-                  ? urlFor(card.growthcard[1].card.image).url()
-                  : "",
-
-              }}
-
-            />
-
+        <div className={`${classes.growth_container_card_div}`}>
+          <div
+            className={`${classes.card_div} grid md:gap-[45px] sm:gap-[45px] gap-[20px] font-mono mx-auto`}
+          >
             <Growth_engine
               has_image={false}
               shadow_right={false}
               props={{
-                title: card?.growthcard[2].card.heading,
-                description: card?.growthcard[2].card.description,
-                buttonName: card?.growthcard[2].card.buttonName,
-                buttonLink: `/solutions/${card.growthcard[2].slug}`,
-                image: card?.growthcard[2].card.image
-                  ? urlFor(card?.growthcard[2].card.image).url()
+                title: card.growthcard[0].card.heading,
+                description: card.growthcard[0].card.description,
+                buttonName: card.growthcard[0].card.buttonName,
+                buttonLink: `/solutions/${card.growthcard[0].slug}`,
+                image: card.growthcard[0].card.image
+                  ? urlFor(card.growthcard[0].card.image).url()
+                  : "",
+
+              }} />
+
+            <div className={`${classes.card_div} ${classes.grid_card_div} grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto `}>
+              <Growth_engine
+                has_image={false}
+                shadow_right={true}
+                props={{
+                  title: card.growthcard[1].card.heading,
+                  description: card.growthcard[1].card.description,
+                  buttonName: card.growthcard[1].card.buttonName,
+                  buttonLink: `/solutions/${card.growthcard[1].slug}`,
+                  image: card.growthcard[1].card.image
+                    ? urlFor(card.growthcard[1].card.image).url()
+                    : "",
+
+                }}
+
+              />
+
+              <Growth_engine
+                has_image={false}
+                shadow_right={false}
+                props={{
+                  title: card?.growthcard[2].card.heading,
+                  description: card?.growthcard[2].card.description,
+                  buttonName: card?.growthcard[2].card.buttonName,
+                  buttonLink: `/solutions/${card.growthcard[2].slug}`,
+                  image: card?.growthcard[2].card.image
+                    ? urlFor(card?.growthcard[2].card.image).url()
+                    : "",
+
+                }}
+
+              />
+            </div>
+
+            <Growth_engine
+              has_image={true}
+              shadow_right={false}
+              props={{
+                title: card?.growthcard[3].card.heading,
+                description: card?.growthcard[3].card.description,
+                buttonName: card?.growthcard[3].card.buttonName,
+                buttonLink: `/solutions/${card.growthcard[3].slug}`,
+                image: card?.growthcard[3].card.image
+                  ? urlFor(card?.growthcard[3].card.image).url()
                   : "",
 
               }}
 
             />
+            {card?.length && card?.length > 4 &&
+              card.slice && card?.slice(3).map((item: any, index: number) => {
+                return (
+                  <div key={index}>
+                    <Growth_engine
+                      has_image={true}
+                      shadow_right={false}
+                      props={{
+                        title: item.card?.heading,
+                        description: item.card?.description,
+                        buttonName: item.card?.buttonName,
+                        buttonLink: `/solutions/${item.slug.current}`,
+                        image: item.card?.image
+                          ? urlFor(item.card?.image).url()
+                          : "",
+
+                      }}
+
+                    />
+                  </div>
+                );
+              })}
           </div>
-
-          <Growth_engine
-            has_image={true}
-            shadow_right={false}
-            props={{
-              title: card?.growthcard[3].card.heading,
-              description: card?.growthcard[3].card.description,
-              buttonName: card?.growthcard[3].card.buttonName,
-              buttonLink: `/solutions/${card.growthcard[3].slug}`,
-              image: card?.growthcard[3].card.image
-                ? urlFor(card?.growthcard[3].card.image).url()
-                : "",
-
-            }}
-
-          />
-          {card?.length && card?.length > 4 &&
-            card.slice && card?.slice(3).map((item: any, index: number) => {
-              return (
-                <div key={index}>
-                  <Growth_engine
-                    has_image={true}
-                    shadow_right={false}
-                    props={{
-                      title: item.card?.heading,
-                      description: item.card?.description,
-                      buttonName: item.card?.buttonName,
-                      buttonLink: `/solutions/${item.slug.current}`,
-                      image: item.card?.image
-                        ? urlFor(item.card?.image).url()
-                        : "",
-
-                    }}
-
-                  />
-                </div>
-              );
-            })}
         </div>
       </div>
     </div>

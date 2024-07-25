@@ -46,7 +46,7 @@
   .growth_engine_desc {
     font-size: 18px;
     line-height: 23px;
-    margin: 12px auto;
+    margin: 18px auto;
   }
 
   .growth_engine {
@@ -157,7 +157,7 @@
 
 @media only screen and (min-width: 1280px) {
   .growth_engine {
-    padding: 70px 28px 70px 56px;
+    padding: 70px 28px 70px 55px;
   }
 
   .growth_engine_desc {
@@ -171,25 +171,57 @@
     padding: 50px 20px 50px 48px;
   }
 
+  .growth_engine_title {
+    font-size: 35.6px;
+  }
+
   .growth_engine_desc {
-    font-size: 30px;
-    line-height: 39px;
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 31px;
   }
 }
 
 
 
-@media only screen and (max-width:639px){
-  .grow_image{
-    bottom:-158px ;
+@media only screen and (max-width:639px) {
+  .grow_image {
+    bottom: -158px;
     width: 180px;
-    right:-22px;
+    right: -22px;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .growth_engine {
-    padding: 30px 15px 30px 15px;
+    padding: 30px 8px 30px 22px;
   }
 
+}
+
+@media only screen and (max-width:460px) {
+  .growth_engine_desc {
+    max-width: 233px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 351px) {
+  .growth_engine {
+    padding: 30px 10px 30px 17px;
+  }
+
+}
+
+@media only screen and (min-width:1280px) and (max-width: 1449px) {
+  .growth_engine_title {
+    font-size: 36.6px;
+  }
+
+  .growth_engine_desc {
+    font-size: 26px;
+    line-height: 35px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
 }

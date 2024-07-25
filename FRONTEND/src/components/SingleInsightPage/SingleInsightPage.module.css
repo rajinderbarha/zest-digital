@@ -41,6 +41,7 @@
 .Block_Content h3,
 .Block_Content h5,
 .Block_Content h4,
+.Block_Content h6,
 .sub_title {
   @apply font-semibold font-mono;
 }
@@ -206,6 +207,12 @@
   margin-bottom: 5px;
 }
 
+.Block_Content h6 {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 3px;
+}
+
 .Block_Content p,
 .Block_Content blockquote {
   margin-bottom: 19px;
@@ -278,12 +285,15 @@
   height: auto;
 }
 
-.Block_Content p+h4 {
+.Block_Content p+h4,
+.Block_Content p+h6 {
   margin-top: 10px;
 }
 
 .Block_Content ul+h4,
-.Block_Content ol+h4 {
+.Block_Content ol+h4,
+.Block_Content ul+h6,
+.Block_Content ol+h6 {
   margin-top: 29px;
 }
 
@@ -306,6 +316,12 @@
   .Block_Content h4 {
     font-size: 18px;
     line-height: 25px;
+    /* margin-bottom: 5px;  */
+  }
+
+  .Block_Content h6 {
+    font-size: 16px;
+    line-height: 22px;
     /* margin-bottom: 5px;  */
   }
 
@@ -335,12 +351,15 @@
     margin-top: 40px;
   }
 
-  .Block_Content p+h4 {
+  .Block_Content p+h4,
+  .Block_Content p+h6 {
     margin-top: 13px;
   }
 
   .Block_Content ul+h4,
-  .Block_Content ol+h4 {
+  .Block_Content ol+h4,
+  .Block_Content ul+h6,
+  .Block_Content ol+h6 {
     margin-top: 32px;
   }
 }
@@ -386,6 +405,12 @@
     margin-bottom: 7px;
   }
 
+  .Block_Content h6 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+
   .Block_Content p,
   .Block_Content blockquote {
     font-size: 14px;
@@ -406,7 +431,12 @@
 
   .Block_Content div:has(h3):not(:first-child)~p,
   .Block_Content h5:not(:first-child)~p,
-  .Block_Content h4:not(:first-child)~p {
+  .Block_Content h4:not(:first-child)~p,
+  .Block_Content div:has(h3):not(:first-child)~blockquote,
+  .Block_Content h5:not(:first-child)~blockquote,
+  .Block_Content h4:not(:first-child)~blockquote,
+  .Block_Content div:has(h3):not(:first-child)~h6,
+  .Block_Content h2:not(:first-child)~h6 {
     margin-left: 20px;
   }
 
@@ -454,12 +484,15 @@
     margin-bottom: 30px;
   }
 
-  .Block_Content p+h4 {
+  .Block_Content p+h4,
+  .Block_Content p+h6 {
     margin-top: 17px;
   }
 
   .Block_Content ul+h4,
-  .Block_Content ol+h4 {
+  .Block_Content ol+h4,
+  .Block_Content ul+h6,
+  .Block_Content ol+h6 {
     margin-top: 36px;
   }
 }
@@ -509,6 +542,12 @@
     margin-bottom: 5px;
   }
 
+  .Block_Content h6 {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 4px;
+  }
+
   .Block_Content p+div:has(h3),
   .Block_Content blockquote+div:has(h3) {
     margin-top: 20px;
@@ -534,12 +573,15 @@
     padding-bottom: 30px;
   }
 
-  .Block_Content p+h4 {
+  .Block_Content p+h4,
+  .Block_Content p+h6 {
     margin-top: 10px;
   }
 
   .Block_Content ul+h4,
-  .Block_Content ol+h4 {
+  .Block_Content ol+h4,
+  .Block_Content ul+h6,
+  .Block_Content ol+h6 {
     margin-top: 29px;
   }
 }
@@ -585,6 +627,12 @@
     margin-bottom: 7px;
   }
 
+  .Block_Content h6 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 7px;
+  }
+
   .Block_Content p,
   .Block_Content blockquote {
     margin-bottom: 24px;
@@ -592,7 +640,12 @@
 
   .Block_Content div:has(h3):not(:first-child)~p,
   .Block_Content h5:not(:first-child)~p,
-  .Block_Content h4:not(:first-child)~p {
+  .Block_Content h4:not(:first-child)~p,
+  .Block_Content div:has(h3):not(:first-child)~blockquote,
+  .Block_Content h5:not(:first-child)~blockquote,
+  .Block_Content h4:not(:first-child)~blockquote,
+  .Block_Content div:has(h3):not(:first-child)~h6,
+  .Block_Content h2:not(:first-child)~h6 {
     margin-left: 40px;
   }
 
@@ -643,12 +696,15 @@
     margin-bottom: 9px;
   }
 
-  .Block_Content p+h4 {
+  .Block_Content p+h4,
+  .Block_Content p+h6 {
     margin-top: 20px;
   }
 
   .Block_Content ul+h4,
-  .Block_Content ol+h4 {
+  .Block_Content ol+h4,
+  .Block_Content ul+h6,
+  .Block_Content ol+h6 {
     margin-top: 39px;
   }
 }
@@ -731,12 +787,21 @@
     margin-bottom: 8px;
   }
 
-  .Block_Content p+h4 {
+  .Block_Content h6 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+
+  .Block_Content p+h4,
+  .Block_Content p+h6 {
     margin-top: 20px;
   }
 
   .Block_Content ul+h4,
-  .Block_Content ol+h4 {
+  .Block_Content ol+h4,
+  .Block_Content ul+h6,
+  .Block_Content ol+h6 {
     margin-top: 41px;
   }
 }
