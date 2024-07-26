@@ -20,7 +20,7 @@
   @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right;
 }
 
-.map_div > div {
+.map_div>div {
   @apply rounded-[15px] sm:rounded-[20px] md:rounded-[30px] shadow-dark-pink-right;
 }
 
@@ -55,7 +55,7 @@
 .address_desc {
   font-size: 18px;
   line-height: 23px;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 17px;
 }
 
@@ -295,4 +295,23 @@
 
 .teleNo a {
   text-decoration: none !important;
+}
+
+@media only screen and (max-width:460px) {
+  .address_desc {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .bg_image {
+    row-gap: 36px;
+  }
+
+  .teleNo {
+    margin-top: 18px;
+  }
+
+  .teleNo a {
+    font-size: 12px;
+  }
 }

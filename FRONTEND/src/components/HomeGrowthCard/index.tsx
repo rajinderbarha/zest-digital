@@ -104,7 +104,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
       <div className={`${classes.growth_container} main_padding`}>
         <div className={`${classes.growth_container_card_div}`}>
           <div
-            className={`${classes.card_div} grid md:gap-[45px] sm:gap-[45px] gap-[20px] font-mono mx-auto`}
+            className={`${classes.card_div} grid md:gap-[45px] sm:gap-[45px] gap-[26px] font-mono mx-auto`}
           >
             <Growth_engine
               has_image={false}
@@ -120,7 +120,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
 
               }} />
 
-            <div className={`${classes.card_div} ${classes.grid_card_div} grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto `}>
+            <div className={`${classes.card_div} ${classes.grid_card_div} grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[26px] max-w-[1345px] mx-auto `}>
               <Growth_engine
                 has_image={false}
                 shadow_right={true}

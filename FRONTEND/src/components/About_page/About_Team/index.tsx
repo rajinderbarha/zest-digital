@@ -16,7 +16,7 @@ function About_team({ data }: { data: AboutType[] }) {
             >
               {aboutdata.team.map((teamData, index) => (
                 <div key={`${index}_About_team_2`} className={`${classes.About_team_box}`} data-aos="fade-up">
-                  <div className="classes.About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] min-tb:max-tb:mb-[15px] mb-[5px] max-w-[463px]">
+                  <div className={`${classes.About_img_box} relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] min-tb:max-tb:mb-[15px] mb-[5px] max-w-[463px]`}>
                     <div
                       className={`${classes.Team_img_circle} absolute  bottom-0`}
                     ></div>
@@ -29,7 +29,7 @@ function About_team({ data }: { data: AboutType[] }) {
                     />
                   </div>
 
-                  <h3 className={`${classes.team_title}  font-semibold font-mono text-color-1`}>
+                  <h3 className={`${classes.team_title}  sm:font-semibold font-bold font-mono text-color-1`}>
                     {teamData.title}{" "}
                   </h3>
                   <p className={`${classes.team_desc}  font-normal font-mono text-color-1`}>

@@ -135,7 +135,7 @@
 
 .solution_box {
   padding-top: 50px;
-  padding-bottom: 240px;
+  padding-bottom: 210px;
 }
 
 .solution_heading {
@@ -143,7 +143,7 @@
   line-height: 25px;
   padding-left: 16px;
   padding-right: 16px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
 }
 
 .solution_description {
@@ -152,15 +152,23 @@
   padding-top: 12px;
 }
 
-.box_div {
-  gap: 20px;
-  margin-top: -165px;
+.growth_card_div {
+  margin-top: -137px;
   padding-left: 0px;
   padding-right: 0px;
 }
 
+.box_div {
+  gap: 26px;
+
+}
+
 .solution_box_text {
   max-width: 400px;
+}
+
+.solution_box_text {
+  margin-top: 65px;
 }
 
 @media (min-width: 640px) {
@@ -175,14 +183,22 @@
     padding-right: 40px;
   }
 
-  .box_div {
-    gap: 30px;
+  .growth_card_div {
     padding-left: 20px;
     padding-right: 20px;
   }
 
+  .box_div {
+    gap: 30px;
+
+  }
+
   .solution_box_text {
     max-width: 500px;
+  }
+
+  .solution_box_text {
+    margin-top: 80px;
   }
 }
 
@@ -207,11 +223,18 @@
     line-height: 20px;
   }
 
-  .box_div {
-    gap: 40px;
+  .growth_card_div {
     margin-top: -200px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .box_div {
+    gap: 40px;
+  }
+
+  .solution_box_text {
+    margin-top: 120px;
   }
 }
 
@@ -235,6 +258,10 @@
   .solution_box_text {
     max-width: 667px;
   }
+
+  .solution_box_text {
+    margin-top: 95px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -251,11 +278,16 @@
     max-width: 905px;
   }
 
-  .box_div {
+  .growth_card_div {
     margin-top: -256px;
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  .solution_box_text {
+    margin-top: 150px;
+  }
+
 }
 
 @media (min-width: 1280px) {
@@ -272,6 +304,7 @@
   .solution_box_text {
     max-width: 1027px;
   }
+
 }
 
 .growth_grid {}
@@ -292,7 +325,7 @@
 
 @media only screen and (min-width: 1280px) {
   .animationFullText {
-    padding-bottom: 160px;
+    padding-bottom: 0px;
   }
 
   .animationFullText h2 {
@@ -302,11 +335,15 @@
   .animatedText {
     width: 200px;
   }
+
+  .solution_box_text {
+    margin-top: 215px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .animationFullText {
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
   }
 
   .animationFullText h2 {
@@ -320,7 +357,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .animationFullText {
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
   }
 
   .animationFullText h2 {
@@ -338,7 +375,7 @@
     max-width: 500px;
     padding-left: 22px;
     padding-right: 22px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
   }
 
   .animationFullText h2 {
@@ -353,6 +390,23 @@
 
   .animatedText {
     width: 112px;
+  }
+
+  .growth_card_div {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .card_div>div:first-child,
+  .card_div>div:last-child {
+    width: 100%;
+    min-height: 355px;
+  }
+
+  .grid_card_div {
+    width: 100%;
   }
 }
 
@@ -376,6 +430,7 @@
   .card_div>div:last-child {
     width: 100%;
     min-height: 252px;
+    padding-left: 17px;
   }
 
   .grid_card_div {

@@ -114,14 +114,14 @@ const Contact = ({ data }: { data: ContactType }) => {
                 width={270}
                 height={214}
                 alt=""
-                className="min-tb:max-tb:max-w-[158px] md:me-[48px] lg:me-0 xl:max-w-[270px] lg:max-w-[210px] md:max-w-[175px] max-w-[150px] ms-auto"
+                className={`${classes.hand_img} min-tb:max-tb:max-w-[158px] md:me-[48px] lg:me-0 xl:max-w-[270px] lg:max-w-[210px] md:max-w-[175px] sm:max-w-[150px] max-w-[130px] ms-auto`}
               />
             </div>
           </div>
           <div className={`${classes.form_div} md:col-span-7 min-tb:max-tb:col-span-6`}>
             <div className="max-w-[956px] min-tb:max-tb:px-[30px] ms-auto bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px px-5 sm:px-10 " data-aos="fade-up">
               <div className="max-w-[670px] mx-auto min-tb:max-tb:gap-[26px] sm:py-[88px] min-tb:max-tb:py-[40px] pt-[38px] pb-[41px] grid gap-6 sm:gap-9">
-              <div id="hubspotForm" className={`${classes.hubspot_form} w-full`}></div>
+                <div id="hubspotForm" className={`${classes.hubspot_form} w-full`}></div>
               </div>
             </div>
           </div>

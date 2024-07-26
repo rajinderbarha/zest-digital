@@ -78,13 +78,13 @@ function Filters({ data }: { data: FiltersType }) {
 
     <div className="main_container">
       <div className={`${classes.Filters} relative`} data-aos="fade-up">
-        <div className={`${classes.Filters_img} bg-color-1 h-[450px] sm:h-[455px] min-tb:max-tb:h-[455px] md:h-[590px]  rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full `}
+        <div className={`${classes.Filters_img} bg-color-1 min-h-[450px] sm:min-h-[455px] min-tb:max-tb:min-h-[455px] md:min-h-[590px]  rounded-[15px] md:rounded-[20px] lg:rounded-30px absolute top-0 w-full `}
         ></div>
 
         <div className={`${classes.Filters_box} relative z-10 grid lg:grid-cols-12`}>
           <div className="lg:col-span-8 min-tb:max-tb:mt-[30px] md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
             {currentPosts.map((item, index: number) => (
-              <div className="my-10" key={index} data-aos="fade-up">
+              <div className={`${classes.insights_cards}`} key={index} data-aos="fade-up">
                 <div
                   className={` ${classes.insight_box} grid sm:grid-cols-12 items-end ${index % 2 === 0
                     ? "shadow-dark-pink-left"
@@ -132,7 +132,7 @@ function Filters({ data }: { data: FiltersType }) {
 
           <div className="lg:col-span-1 lg:order-2"></div>
           <div className="lg:col-span-3 md:px-0 pt-6 md:pt-0 px-[20px] lg:order-3 order-1 lg:text-right">
-            <h2 className={`${classes.filter_text} text-white font-mono font-semibold`} data-aos="fade">
+            <h2 className={`${classes.filter_text} text-white font-mono font-medium sm:font-semibold`} data-aos="fade">
               Filters
             </h2>
             <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3" data-aos="fade-up">

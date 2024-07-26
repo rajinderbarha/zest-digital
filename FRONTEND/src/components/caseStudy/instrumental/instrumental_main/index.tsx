@@ -110,7 +110,7 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
 
 
 
-          <h3 className={`${classes.image_desc} font-mono text-color-1 font-semibold  text-center mx-auto `} >
+          <h3 className={`${classes.image_desc} font-mono text-color-1 sm:font-semibold font-bold text-center mx-auto `} >
             {data.imageDesc ? data.imageDesc : ""}
           </h3>
         </div>

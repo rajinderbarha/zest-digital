@@ -46,7 +46,7 @@ function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
           {heading}
         </h2>
         <div className="">
-          <div className="About_team_box text-center grid grid-cols-1 sm:grid-cols-3  md:gap-x-20 md:gap-y-20 min-tb:max-tb:gap-x-[40px] sm:gap-x-[60px] sm:gap-y-[30px] gap-x-[40px] gap-y-[20px]">
+          <div className="About_team_box text-center grid grid-cols-1 sm:grid-cols-3  md:gap-x-20 md:gap-y-20 min-tb:max-tb:gap-x-[40px] sm:gap-x-[60px] sm:gap-y-[30px] gap-x-[40px] gap-y-[30px]">
             {profile?.map((data, index: any) => (
               <div key={`${index}_About_team_2`} className={`${classes.About_team_box_inner}`} data-aos="fade-up">
                 <div className="About_img_box relative mx-auto xl:mb-[45px] lg:mb-[20px] md:mb-[10px] mb-[15px] max-w-[463px]">
@@ -62,10 +62,10 @@ function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
                   />
                 </div>
 
-                <h3 className={`${classes.team_person_title}  font-semibold font-mono text-color-1 `}>
+                <h3 className={`${classes.team_person_title} font-bold sm:font-semibold font-mono text-color-1 `}>
                   {data.name}{" "}
                 </h3>
-                <p className={`${classes.team_person_detail} lg:text-lg md:text-[16px] max-tb:text-[12px] max-tb:leading-[20px] sm:text-[14px]  font-normal font-mono text-color-1`}>
+                <p className={`${classes.team_person_detail} lg:text-lg md:text-[16px] max-tb:text-[12px] max-tb:leading-[20px] sm:text-[14px]  font-normal font-mono text-color-1 mt-[3px]`}>
                   {data.description}
                 </p>
               </div>

@@ -5,6 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 @media only screen and (max-width: 767px) {
   .box_bg_image {
     background-image: url("../../assets/images/compress/gross_profit_mobile.avif");
@@ -12,7 +13,7 @@
 }
 
 @media only screen and (max-width: 540px) and (min-width: 830px) {
-  .t_and_c_cards > div {
+  .t_and_c_cards>div {
     margin-left: -10px;
     margin-right: -10px;
   }
@@ -61,6 +62,10 @@
   .terms_heading {
     font-size: 30px;
   }
+
+  .t_and_c_cards {
+    gap: 24px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -87,4 +92,25 @@
     font-size: 55px;
     margin-top: 95px;
   }
+}
+
+@media only screen and (max-width:830px) {
+
+  .t_and_c_cards>div {
+    width: 100%;
+    min-height: 255px;
+  }
+
+  .t_and_c_cards {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:460px) {
+
+  .t_and_c_cards>div {
+    min-height: 182px;
+  }
+
+
 }
