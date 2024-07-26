@@ -39,7 +39,7 @@ const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
         <div className="md:pe-20 ">
           <h2 className={`${classes.banner_title}  font-semibold font-mono `}>{title}</h2>
           <p className={`${classes.banner_description} font-mono text-color-1`}>{smallDescription}</p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-[8px] sm:gap-4 sm:flex-row flex-col">
             <Link href={callButtonLink}><button className={`${classes.banner_button} nomalbtn_hover font-mono  text-white bg-color-1 rounded-full  hover:text-color-1 hover:bg-white  border border-color-1 `}>{callButtonName}</button></Link>
             <Link href={resultsButtonLink}> <button className={`${classes.banner_button} nomalbtn_hover font-mono  bg-white text-color-1 rounded-full  hover:bg-color-1 hover:text-white hover:border-black border border-color-1 `}>{resultsButtonName}</button></Link>
           </div>

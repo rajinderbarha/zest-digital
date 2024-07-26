@@ -33,17 +33,20 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
           <h1 data-aos="fade-out" data-aos-delay="200" className={`${classes.banner_text} font-semibold text-white`}>
             {heading}
           </h1>
-          <div className={`${classes.banner_btn} flex gap-5 md:flex-row lg:flex-row mt-9 flex-col sm:flex-row`}>
-            <Link href={viewSolBtnLink} className="flex">
-              <button className="nomalbtn_hover bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white hover:border-color-1">
-                {viewSolBtnName}
-              </button>
-            </Link>
-            <Link href={SeeOurResBtnLink} className="flex">
-              <button className=" nomalbtn_hover bg-transparent text-white rounded-full hover:text-color-1 hover:bg-white border border-white">
-                {SeeOurResBtnName}
-              </button>
-            </Link>
+          <div className={`${classes.banner_btn} flex gap-[20px] md:flex-row lg:flex-row mt-9 flex-col sm:flex-row`}>
+            <div className="flex gap-[20px] md:flex-row lg:flex-row mt-0 flex-col sm:flex-row">
+
+              <Link href={viewSolBtnLink} className="flex">
+                <button className="nomalbtn_hover bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white hover:border-color-1">
+                  {viewSolBtnName}
+                </button>
+              </Link>
+              <Link href={SeeOurResBtnLink} className="flex">
+                <button className=" nomalbtn_hover bg-transparent text-white rounded-full hover:text-color-1 hover:bg-white border border-white">
+                  {SeeOurResBtnName}
+                </button>
+              </Link>
+            </div>
             <div className={`${classes.marketing_agency_logo_1}`}>
               <Image
                 src={urlFor(image).url()}

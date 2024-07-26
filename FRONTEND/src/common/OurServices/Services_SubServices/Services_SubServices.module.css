@@ -50,7 +50,8 @@
     max-width: 150px;
     height: 150px;
   }
-  .top_image ~ p {
+
+  .top_image~p {
     font-size: 22px;
   }
 }
@@ -60,14 +61,17 @@
     max-width: 150px;
     height: 150px;
   }
+
   .desc_sub0,
   .desc_sub3,
   .desc_sub4 {
     max-width: 234px;
   }
+
   .desc_sub5 {
     max-width: 249px;
   }
+
   .desc_sub1,
   .desc_sub2 {
     max-width: 195px;
@@ -75,7 +79,7 @@
 }
 
 @media only screen and (max-width: 830px) {
-  .GrowthMarketingServices_services > div {
+  .GrowthMarketingServices_services>div {
     padding: 0 !important;
   }
 }
@@ -85,14 +89,17 @@
     max-width: 180px;
     height: 180px;
   }
+
   .desc_sub0,
   .desc_sub3,
   .desc_sub4 {
     max-width: 234px;
   }
+
   .desc_sub5 {
     max-width: 249px;
   }
+
   .desc_sub1,
   .desc_sub2 {
     max-width: 175px;
@@ -111,7 +118,7 @@
 }
 
 .services {
-  margin-top: 40px;
+  margin-top: 31px;
 }
 
 .sub_heading {
@@ -190,6 +197,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
   }
+
   .sub_desc {
     font-size: 12px;
   }
@@ -213,6 +221,7 @@
     font-size: 35px;
     margin-bottom: 25px;
   }
+
   .sub_desc {
     font-size: 16px;
   }
@@ -235,6 +244,7 @@
   .sub_heading {
     margin-bottom: 28px;
   }
+
   .sub_desc {
     font-size: 18px;
   }

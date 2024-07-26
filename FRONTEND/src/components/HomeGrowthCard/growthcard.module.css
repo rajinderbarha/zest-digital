@@ -321,6 +321,22 @@
 }
 
 @media only screen and (max-width: 639px) {
+  .box_size {
+    padding-left: 0;
+  }
+
+  .growth_result {
+    padding-bottom: 193px;
+  }
+
+  .growth_container_card_div {
+    margin-top: -125px;
+  }
+
+  .card_desc {
+    margin-top: 5px;
+  }
+
   .card_heading {
     padding-left: 0px;
   }
@@ -404,4 +420,31 @@
 
 .growth_container_card_div>div {
   max-width: 1345px;
+}
+
+@media (min-width: 1280px) and (max-width:1460px) {
+  .animationFullText h2 {
+    font-size: 38px;
+  }
+
+  .card_heading {
+    font-size: 32px;
+  }
+
+  .upper_title {
+    font-size: 28px;
+  }
+
+  .card_desc {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .box_size {
+    padding: 43px;
+  }
+
+  .animatedText {
+    width: 170px;
+  }
 }

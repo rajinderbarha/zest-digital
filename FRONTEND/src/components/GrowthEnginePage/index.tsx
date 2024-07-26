@@ -47,7 +47,9 @@ function GrowthEnginePage({ data, card, otherSolHeading }: any) {
         card_acc={card_Accordian}
       />
     </div>
-    <Growths data={card} otherSolHeading={otherSolHeading} />
+    <div className="px-5">
+      <Growths data={card} otherSolHeading={otherSolHeading} />
+    </div>
   </div>
 
 }

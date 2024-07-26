@@ -2,7 +2,7 @@ import classes from "./Sign_up.module.css";
 import Link from "next/link";
 function Sign_up() {
 
-  return <div className="main_padding">
+  return <div className="main_padding sm:mt-0 mt-[18px]">
     <div className={`${classes.Sign_up} max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right   rounded-[15px] md:rounded-[20px] lg:rounded-30px `} data-aos="fade-up">
       <div className="detail text-center">
         <h2 className={`${classes.form_heading} font-mono font-semibold `}>
@@ -42,7 +42,7 @@ function Sign_up() {
             type="text"
             name="lname"
             id=""
-            className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
+            className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[14px] min-tb:max-tb:text-[18px]"
 
             placeholder="Doe"
           />
@@ -58,7 +58,7 @@ function Sign_up() {
             type="email"
             name="email"
             id=""
-            className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[16px] min-tb:max-tb:text-[18px]"
+            className="border border-color-9 sm:rounded-[10px] rounded-[5px] md:rounded-[10px] md:px-[26px] sm:px-[15px] px-[10px]  md:py-[11px] sm:py-[9px] py-[6px] md:text-[18px] text-[14px] min-tb:max-tb:text-[18px]"
 
             placeholder="johndoe@gmail.com"
           />

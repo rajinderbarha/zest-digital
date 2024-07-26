@@ -6,7 +6,7 @@ import { SubServices } from "../../../../lib/interface";
 const Services_SubServices: React.FC<SubServices> = (props) => {
   const { heading_sub } = props;
 
-  return <div className={`${classes.GrowthMarketingServices_services} main_padding xl:mt-[170px] lg:mt-[150px] md:mt-[125px]  min-tb:max-tb:mt-[76px] sm:mt-[80px] mt-[68px]`}>
+  return <div className={`${classes.GrowthMarketingServices_services} main_padding xl:mt-[170px] lg:mt-[150px] md:mt-[125px]  min-tb:max-tb:mt-[76px] sm:mt-[80px] mt-[50px]`}>
     <div className="main_padding">
       <div className={`${classes.service_box} max-w-[1510px] w-full mx-auto border border-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px shadow-blue-right`} data-aos="fade-up">
         <h2 className={`${classes.service_heading} font-mono font-semibold max-w-[783px] mx-auto text-center text-color-1`}>{heading_sub}</h2>

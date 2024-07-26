@@ -5,7 +5,7 @@ import Link from "next/link";
 const Services_book_call: React.FC<Services_book_cal> = (props) => {
   const { heading, buttonName, buttonLink } = props;
 
-  return <div className="GrowthMarketingServices_book_call xl:mt-[170px] lg:mt-[150px] md:mt-[125px] min-tb:max-tb:mt-[143px] sm:mt-[80px] mt-[68px] main_padding" data-aos="fade-up">
+  return <div className="GrowthMarketingServices_book_call xl:mt-[170px] lg:mt-[150px] md:mt-[125px] min-tb:max-tb:mt-[143px] sm:mt-[80px] mt-[77px] main_padding" data-aos="fade-up">
 
     <div className={`${classes.container_bg} main_container rounded-[15px] md:rounded-[20px] lg:rounded-30px bg-color-1`}>
       <div className={`${classes.bookcall_box} max-w-[1584px] mx-auto  `}>

@@ -31,8 +31,8 @@ function Terms_Conditions({ data }: { data: TermsAndConditionsType }) {
       <div
         className={`${classes.box_bg_image} rounded-[15px] md:rounded-[20px] lg:rounded-30px h-[680px] md:h-[936px] lg:h-[680px] `}
       ></div>
-      <div className={`${classes.box_div} max-w-[1355px] mx-auto main_padding`}>
-        <div className={`${classes.t_and_c_cards} grid  grid-cols-2 max-tb:grid-cols-1 md:gap-10 sm:gap-[30px] gap-[20px]  font-mono mx-auto `}>
+      <div className={`${classes.box_div}  mx-auto main_padding`}>
+        <div className={`${classes.t_and_c_cards} grid  grid-cols-2 max-tb:grid-cols-1 md:gap-x-[42px] md:gap-y-[47px] sm:gap-[30px] gap-[37px]  font-mono mx-auto max-w-[1355px] `}>
           {data.cards.map((card: any, cardIndex: number) => (
             <Boxes
               key={cardIndex}

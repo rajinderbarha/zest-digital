@@ -43,7 +43,7 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
               </h2>
             </div>
           </div>
-          <div className={`${classes.solution_box_text} mx-auto min-tb:max-tb:mt-0 min-tb:max-tb:px-[67px] max-w-[1027px] xl:mt-[215px] lg:mt-[100px] md:mt-[90px] mt-[60px]`} data-aos="fade-up" data-aos-delay="280">
+          <div className={`${classes.solution_box_text} mx-auto min-tb:max-tb:mt-0 min-tb:max-tb:px-[67px] max-w-[1027px] xl:mt-[215px] lg:mt-[100px] md:mt-[90px] mt-[65px]`} data-aos="fade-up" data-aos-delay="280">
             <h2 className={`${classes.solution_heading} font-mono italic font-semibold   text-white mx-auto text-center`}>
               {data.heading}
             </h2>
@@ -57,75 +57,77 @@ function Section_Main({ data, card }: { data: SolSection_Main, card: SolSection_
       </div>
     </div>
     <div className="main_padding">
-      <div
-        className={`${classes.box_div} ${classes.card_div} max-w-[1345px] font-mono  mx-auto grid `}
-      >
-        <Growth_engine
-          has_image={false}
-          shadow_right={false}
-          props={{
-            title: card[0].card.heading,
-            description: card[0].card.description,
-            buttonName: card[0].card.buttonName,
-            buttonLink: `/solutions/${card[0].slug.current}`,
-            image: card[0].card?.image ? urlFor(card[0].card.image).url() : "",
-          }}
-        />
-
-        <div className={` ${classes.grid_card_div} ${classes.card_div}  grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-10 sm:gap-[30px] gap-[20px] max-w-[1345px] mx-auto `}>
-          <Growth_engine
-            has_image={false}
-            shadow_right={true}
-            props={{
-              title: card[1].card.heading,
-              description: card[1].card.description,
-              buttonName: card[1].card.buttonName,
-              buttonLink: `/solutions/${card[1].slug.current}`,
-              image: card[1].card?.image ? urlFor(card[1].card.image).url() : "",
-            }}
-          />
-
+      <div className={`${classes.growth_card_div}`}>
+        <div
+          className={`${classes.box_div} ${classes.card_div} max-w-[1345px] font-mono  mx-auto grid `}
+        >
           <Growth_engine
             has_image={false}
             shadow_right={false}
             props={{
-              title: card[2].card.heading,
-              description: card[2].card.description,
-              buttonName: card[2].card.buttonName,
-              buttonLink: `/solutions/${card[2].slug.current}`,
-              image: card[2].card?.image ? urlFor(card[2].card.image).url() : "",
+              title: card[0].card.heading,
+              description: card[0].card.description,
+              buttonName: card[0].card.buttonName,
+              buttonLink: `/solutions/${card[0].slug.current}`,
+              image: card[0].card?.image ? urlFor(card[0].card.image).url() : "",
             }}
           />
-        </div>
 
-        <Growth_engine
-          has_image={true}
-          shadow_right={false}
-          props={{
-            title: card[3].card.heading,
-            description: card[3].card.description,
-            buttonName: card[3].card.buttonName,
-            buttonLink: `/solutions/${card[3].slug.current}`,
-            image: urlFor(card[3].card.image).url(),
-          }}
-        />
-        {card.length > 4 && card.slice(3).map((item: any, index: number) => {
-          return (
-            <div key={index}>
-              <Growth_engine
-                has_image={true}
-                shadow_right={false}
-                props={{
-                  title: item.card.heading,
-                  description: item.card.description,
-                  buttonName: item.card.buttonName,
-                  buttonLink: `/solutions/${item.slug.current}`,
-                  image: item.card?.image ? urlFor(item.card.image).url() : "",
-                }}
-              />
-            </div>
-          );
-        })}
+          <div className={` ${classes.grid_card_div} ${classes.card_div}  grid grid-cols-1 min-tb:max-tb:grid-cols-1 md:grid-cols-2  md:gap-[42px] sm:gap-[30px] gap-[26px] max-w-[1345px] mx-auto `}>
+            <Growth_engine
+              has_image={false}
+              shadow_right={true}
+              props={{
+                title: card[1].card.heading,
+                description: card[1].card.description,
+                buttonName: card[1].card.buttonName,
+                buttonLink: `/solutions/${card[1].slug.current}`,
+                image: card[1].card?.image ? urlFor(card[1].card.image).url() : "",
+              }}
+            />
+
+            <Growth_engine
+              has_image={false}
+              shadow_right={false}
+              props={{
+                title: card[2].card.heading,
+                description: card[2].card.description,
+                buttonName: card[2].card.buttonName,
+                buttonLink: `/solutions/${card[2].slug.current}`,
+                image: card[2].card?.image ? urlFor(card[2].card.image).url() : "",
+              }}
+            />
+          </div>
+
+          <Growth_engine
+            has_image={true}
+            shadow_right={false}
+            props={{
+              title: card[3].card.heading,
+              description: card[3].card.description,
+              buttonName: card[3].card.buttonName,
+              buttonLink: `/solutions/${card[3].slug.current}`,
+              image: urlFor(card[3].card.image).url(),
+            }}
+          />
+          {card.length > 4 && card.slice(3).map((item: any, index: number) => {
+            return (
+              <div key={index}>
+                <Growth_engine
+                  has_image={true}
+                  shadow_right={false}
+                  props={{
+                    title: item.card.heading,
+                    description: item.card.description,
+                    buttonName: item.card.buttonName,
+                    buttonLink: `/solutions/${item.slug.current}`,
+                    image: item.card?.image ? urlFor(item.card.image).url() : "",
+                  }}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   </div>

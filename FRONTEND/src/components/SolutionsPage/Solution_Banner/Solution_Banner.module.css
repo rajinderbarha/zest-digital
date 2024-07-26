@@ -9,6 +9,7 @@
     padding: 0;
   }
 }
+
 @media screen and (min-width: 830px) {
   .image_div {
     overflow: hidden;
@@ -20,26 +21,31 @@
     padding: 90px 16px 141px 16px;
   }
 }
+
 @media screen and (min-width: 540px) and (max-width: 830px) {
   .banner_image {
     max-width: 150px;
     margin-left: auto;
     margin-top: -40px;
   }
+
   .Solution_Banner {
     padding: 55px 16px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .Solution_Banner {
     padding: 60px 16px 50px 16px;
   }
+
   .banner_image {
     max-width: 110px;
     margin-top: 10px;
     margin-left: auto;
   }
 }
+
 @media screen and (max-width: 639px) {
   .Solution_Banner {
     padding: 40px 16px 50px 16px;
@@ -51,12 +57,14 @@
   padding: 4px 0;
   line-height: 29px;
 }
+
 .banner_desc {
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 30px;
-  margin-top: 15px;
+  margin-top: 21px;
 }
+
 .image_div img {
   max-width: 110px;
 }
@@ -66,10 +74,12 @@
     font-size: 27px;
     line-height: 35px;
   }
+
   .banner_desc {
     font-size: 30px;
     margin-top: 21px;
   }
+
   .image_div img {
     max-width: 130px;
   }
@@ -80,11 +90,13 @@
     font-size: 35px;
     line-height: 47px;
   }
+
   .banner_desc {
     font-size: 38px;
     line-height: 55px;
     margin-top: 36px;
   }
+
   .image_div img {
     max-width: 180px;
   }
@@ -97,12 +109,14 @@
     padding-left: 8px;
     padding-right: 8px;
   }
+
   .banner_desc {
     font-size: 30px;
     line-height: 45px;
     max-width: 533px;
     margin-top: 20px;
   }
+
   .image_div img {
     max-width: 150px;
   }
@@ -113,10 +127,12 @@
     font-size: 40px;
     line-height: 56px;
   }
+
   .banner_desc {
     font-size: 47px;
     line-height: 65px;
   }
+
   .image_div img {
     max-width: 200px;
   }
@@ -127,11 +143,19 @@
     font-size: 45px;
     line-height: 58px;
   }
+
   .banner_desc {
     font-size: 55px;
     line-height: 75px;
   }
+
   .image_div img {
     max-width: 245px;
+  }
+}
+
+@media only screen and (max-width:460px) {
+  .banner_desc {
+    max-width: 315px;
   }
 }

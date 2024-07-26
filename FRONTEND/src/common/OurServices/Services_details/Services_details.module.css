@@ -1,5 +1,5 @@
 .objective_select:not(:first-child) {
-  @apply xl:mt-[350px] lg:mt-[280px] md:mt-[200px] min-tb:max-tb:mt-[75px] sm:mt-[90px] mt-[85px];
+  @apply xl:mt-[350px] lg:mt-[280px] md:mt-[200px] min-tb:max-tb:mt-[75px] sm:mt-[90px] mt-[80px];
 }
 
 .objective_description p:not(:first-child) {

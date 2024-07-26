@@ -1,16 +1,36 @@
 .SingleIntro {
-  background-image: url("../../../assets/images/compress/Escape_compress.avif");
+  background-image: url("../../../assets/images/compress/resources_bg.avif");
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-position: 20% top;
+  /* background-size: cover; */
   background-color: #191615;
   margin-top: 70px;
+}
+
+.grow_img img {
+
+  filter: drop-shadow(0 6px 10px #ffffff29);
+}
+
+@media only screen and (max-width:1460px) {
+  .SingleIntro {
+    background-position: -27px 44px;
+    background-size: 120% 54vw;
+  }
+}
+
+@media only screen and (max-width:1440px) {
+  .SingleIntro {
+    background-position: -27px 44px;
+    background-size: 120% 58%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .SingleIntro {
     background-image: url("../../../assets/images/compress/Services_bg_gradient_mobile_compress.avif");
-    background-position: left top;
+    background-position: left 14px;
+    background-size: cover;
   }
 }
 
@@ -160,7 +180,7 @@
   font-size: 12px;
   line-height: 15px;
   padding-top: 19px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .tools_title {
@@ -169,10 +189,14 @@
 
 .cards_div {
   max-width: 1355px;
-  margin-top: 40px;
+  margin-top: 30px;
+  gap: 35px;
+}
+
+.growth_card_div {
+
   padding-left: 0px;
   padding-right: 0px;
-  gap: 20px;
 }
 
 .resources_logo {
@@ -194,9 +218,13 @@
   }
 
   .cards_div {
+    gap: 30px;
+  }
+
+  .growth_card_div {
     padding-left: 20px;
     padding-right: 20px;
-    gap: 30px;
+
   }
 
   .resources_logo {
@@ -222,10 +250,15 @@
   }
 
   .cards_div {
+    column-gap: 42px;
+    row-gap: 56px;
+    margin-top: 80px;
+  }
+
+  .growth_card_div {
     padding-left: 30px;
     padding-right: 30px;
-    gap: 40px;
-    margin-top: 80px;
+
   }
 
   .resources_logo {
@@ -244,21 +277,29 @@
   .learnToGrow_desc {
     font-size: 16px;
     line-height: 20px;
-    padding-bottom: 0;
+    padding-bottom: 31px;
     padding-top: 31px;
   }
 
   .cards_div {
-    padding-left: 50px;
-    padding-right: 50px;
+    gap: 48px;
     margin-top: 47px;
+  }
+
+  .growth_card_div {
+    padding-left: 55px;
+    padding-right: 55px;
+
   }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 639px) {
-  .cards_div {
+  .cards_div {}
+
+  .growth_card_div {
     padding-left: 15px;
     padding-right: 15px;
+
   }
 }
 
@@ -276,9 +317,12 @@
     line-height: 35px;
   }
 
-  .cards_div {
+  .cards_div {}
+
+  .growth_card_div {
     padding-left: 50px;
     padding-right: 50px;
+
   }
 
   .resources_logo {
@@ -311,5 +355,13 @@
   .cards_div>div {
     width: 100%;
     min-height: 217px;
+  }
+}
+
+.growth_card_div {}
+
+@media only screen and (max-width:539px) {
+  .growth_card {
+    margin-top: -142px;
   }
 }

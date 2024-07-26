@@ -12,7 +12,7 @@
 }
 
 .form_desc {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .form_inputs {
@@ -20,7 +20,7 @@
 }
 
 .input_label {
-  font-size: 15px;
+  font-size: 12px;
   margin-bottom: 2px;
 }
 
@@ -29,7 +29,7 @@
   padding-right: 10px;
   padding-top: 6px;
   padding-bottom: 6px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .btn_div {
@@ -46,7 +46,7 @@
 }
 
 .form_note {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 @media (min-width: 640px) {
@@ -193,6 +193,7 @@
     max-width: 100%;
   }
 }
+
 .Sign_up {
   padding-left: 50px;
   padding-right: 50px;
@@ -204,12 +205,14 @@
     padding-right: 40px;
   }
 }
+
 @media only screen and (max-width: 540px) {
   .Sign_up {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .Sign_up h2 + p {
+
+  .Sign_up h2+p {
     margin-left: -8px;
     margin-right: -8px;
   }
