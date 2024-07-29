@@ -34,6 +34,8 @@
   font-display: swap;
 }
 
+
+
 @font-face {
   font-family: "Lato_font";
   src: url("../assets/lato/Lato-Regular.ttf");
@@ -46,13 +48,30 @@
   src: url("../assets/IBMPlexMono/IBMPlexMono-SemiBold.ttf");
   font-weight: 600;
   font-display: swap;
+  font-style: normal;
 }
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../assets//IBMPlexMono/IBMPlexMono-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+
 
 @font-face {
   font-family: "IBMPlexMono";
   src: url("../assets/IBMPlexMono/IBMPlexMono-Bold.ttf");
   font-weight: 700;
   font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../assets/IBMPlexMono/IBMPlexMono-BoldItalic.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
 }
 
 @font-face {
@@ -60,6 +79,14 @@
   src: url("../assets/IBMPlexMono/IBMPlexMono-Medium.ttf");
   font-weight: 500;
   font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../assets/IBMPlexMono/IBMPlexMono-MediumItalic.ttf");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
 }
 
 @font-face {
