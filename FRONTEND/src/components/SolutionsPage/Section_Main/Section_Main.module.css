@@ -437,3 +437,33 @@
     width: 100%;
   }
 }
+
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .animationFullText h2 {
+    font-size: 38px;
+  }
+
+  .animatedText {
+    width: 170px;
+  }
+
+  .solution_box_text {
+    max-width: 930px;
+  }
+
+  .solution_heading {
+    font-size: 38px;
+    line-height: 54px;
+  }
+
+  .solution_description {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .solution_box_text div {
+    padding-left: 100px;
+    padding-right: 103px;
+  }
+}

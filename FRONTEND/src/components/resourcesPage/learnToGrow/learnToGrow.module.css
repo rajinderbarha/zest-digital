@@ -365,3 +365,20 @@
     margin-top: -142px;
   }
 }
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+
+  .learnToGrow_title,
+  .tools_title {
+    font-size: 42px;
+  }
+
+  .learnToGrow_desc {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  .SingleIntro>div div:nth-child(2) {
+    max-width: 1030px;
+  }
+}

@@ -159,3 +159,19 @@
     max-width: 315px;
   }
 }
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .banner_title {
+    font-size: 43px;
+    line-height: 55px;
+  }
+
+  .banner_desc {
+    font-size: 46px;
+    line-height: 69px;
+  }
+
+  .image_div img {
+    max-width: 220px;
+  }
+}

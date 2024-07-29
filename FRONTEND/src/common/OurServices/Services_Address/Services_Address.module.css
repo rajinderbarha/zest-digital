@@ -315,3 +315,17 @@
     font-size: 12px;
   }
 }
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .address_heading {
+    font-size: 45px;
+    line-height: 63px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1460px) {
+  .address_desc {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}

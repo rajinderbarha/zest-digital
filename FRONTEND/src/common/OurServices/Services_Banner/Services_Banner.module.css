@@ -115,3 +115,16 @@
     margin-bottom: 28px;
   }
 }
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .banner_title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .banner_description {
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 26px;
+  }
+}

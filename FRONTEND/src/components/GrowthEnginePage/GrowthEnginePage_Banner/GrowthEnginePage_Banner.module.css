@@ -14,6 +14,7 @@
   line-height: 30px;
   margin-bottom: 20px;
 }
+
 .banner_container {
   max-width: 400px;
 }
@@ -22,14 +23,17 @@
   .GrowthEnginePage_Banner {
     padding-top: 50px;
   }
+
   .banner_heading {
     font-size: 28px;
     margin-bottom: 10px;
   }
+
   .banner_description {
     font-size: 30px;
     line-height: 45px;
   }
+
   .banner_container {
     max-width: 500px;
   }
@@ -39,14 +43,17 @@
   .GrowthEnginePage_Banner {
     padding-top: 80px;
   }
+
   .banner_heading {
     font-size: 35px;
     margin-bottom: 20px;
   }
+
   .banner_description {
     font-size: 40px;
     line-height: 55px;
   }
+
   .banner_container {
     max-width: 700px;
   }
@@ -56,15 +63,18 @@
   .GrowthEnginePage_Banner {
     padding-top: 55px;
   }
+
   .banner_heading {
     font-size: 26px;
     margin-bottom: 20px;
   }
+
   .banner_description {
     font-size: 30px;
     line-height: 45px;
     margin-bottom: 25px;
   }
+
   .banner_container {
     max-width: 500px;
   }
@@ -74,14 +84,17 @@
   .GrowthEnginePage_Banner {
     padding-top: 110px;
   }
+
   .banner_heading {
     font-size: 40px;
     margin-bottom: 36px;
   }
+
   .banner_description {
     font-size: 50px;
     line-height: 71px;
   }
+
   .banner_container {
     max-width: 992px;
   }
@@ -91,11 +104,25 @@
   .GrowthEnginePage_Banner {
     padding-top: 143px;
   }
+
   .banner_heading {
     font-size: 45px;
   }
+
   .banner_description {
     font-size: 55px;
     line-height: 75px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .banner_heading {
+    font-size: 42px;
+    margin-bottom: 29px;
+  }
+
+  .banner_description {
+    font-size: 47px;
+    line-height: 67px;
   }
 }

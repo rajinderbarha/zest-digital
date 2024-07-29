@@ -421,3 +421,30 @@
   }
 
 }
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .Gross_profit {
+    height: 800px;
+  }
+
+  .profit_box h2 {
+    font-size: 47px;
+    line-height: 63px;
+  }
+
+  .profit_box_heading {
+    font-size: 28px;
+    margin-bottom: 31px;
+  }
+
+  .profit_box_des {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .profit_box_desc_below {
+    margin-bottom: 28px;
+    font-size: 17px;
+    line-height: 25px;
+  }
+}

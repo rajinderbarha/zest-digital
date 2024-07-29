@@ -326,3 +326,32 @@
     padding-bottom: 80px;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1460px) {
+  .accordion_heading {
+    font-size: 43px;
+  }
+
+  .desc_text_class,
+  .title_text_class {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .title_text_class {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+  .title_desc_padding_class {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .content_inner {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
