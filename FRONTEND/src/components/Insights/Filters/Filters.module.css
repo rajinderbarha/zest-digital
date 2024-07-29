@@ -474,3 +474,9 @@
     font-size: 50px;
   }
 }
+
+@media (max-width:830px) {
+  .insights_cards:nth-child(even)>div {
+    @apply shadow-blue-right
+  }
+}
