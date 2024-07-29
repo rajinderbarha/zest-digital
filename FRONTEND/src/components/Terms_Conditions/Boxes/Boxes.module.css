@@ -185,3 +185,20 @@
     margin-right: 6px;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1460px) {
+  .box_desc {
+    font-size: 26px;
+    line-height: 35px;
+    margin-top: 20px;
+    margin-bottom: 41px;
+  }
+
+  .box_title {
+    font-size: 36.6px;
+  }
+
+  .boxes>div div {
+    max-width: max-content;
+  }
+}

@@ -55,3 +55,26 @@
     line-height: 58px;
   }
 }
+
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .upper_heading {
+    font-size: 36px;
+    line-height: 50px;
+    padding-bottom: 10px;
+  }
+
+  .text_div {
+    max-width: 848px;
+  }
+
+  .below_line {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .below_line p {
+    padding-top: 8px;
+    font-size: 15px;
+  }
+}

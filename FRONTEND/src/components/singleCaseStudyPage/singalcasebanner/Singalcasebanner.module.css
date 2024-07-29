@@ -149,3 +149,18 @@
     max-width: 313px;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1460px) {
+  .banner_text {
+    max-width: 850px;
+  }
+
+  .banner_text h2 {
+    font-size: 42px;
+  }
+
+  .banner_text h1 {
+    font-size: 48px;
+    line-height: 63px;
+  }
+}

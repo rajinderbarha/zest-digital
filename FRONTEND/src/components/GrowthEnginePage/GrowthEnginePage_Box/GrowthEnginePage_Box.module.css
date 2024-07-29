@@ -285,3 +285,39 @@
     font-size: 40px;
   }
 }
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .growth_box_heading {
+    font-size: 34px;
+  }
+
+  .below_box_heading {
+    margin-bottom: 250px;
+  }
+
+  .growth_box_image {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1460px) {
+  .blew_line {
+    margin-top: 14px;
+    font-size: 15px;
+  }
+
+  .growth_box_heading {
+    margin-bottom: 19px;
+  }
+
+  .Our_values_main_p {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .growth_box_text_content_right {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

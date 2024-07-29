@@ -7,6 +7,7 @@
     margin-top: -60px;
   }
 }
+
 .Casestudyintro {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -72,6 +73,7 @@
   line-height: 30px;
   margin-bottom: 20px;
 }
+
 .banner_text {
   max-width: 400px;
 }
@@ -85,6 +87,7 @@
     font-size: 30px;
     line-height: 44px;
   }
+
   .image_div img {
     max-width: 130px;
   }
@@ -95,21 +98,26 @@
     font-size: 42px;
     line-height: 55px;
   }
+
   .banner_text {
     max-width: 800px;
   }
+
   .image_div img {
     max-width: 180px;
   }
 }
+
 @media (min-width: 540px) and (max-width: 830px) {
   .heading {
     font-size: 30px;
     line-height: 45px;
   }
+
   .banner_text {
     max-width: 533px;
   }
+
   .image_div img {
     max-width: 150px;
   }
@@ -120,9 +128,11 @@
     font-size: 50px;
     line-height: 70px;
   }
+
   .banner_text {
     max-width: 884px;
   }
+
   .image_div img {
     max-width: 200px;
   }
@@ -133,11 +143,13 @@
     max-width: 245px;
   }
 }
+
 @media (min-width: 1350px) {
   .heading {
     font-size: 55px;
     line-height: 75px;
   }
+
   .banner_text {
     max-width: 971px;
   }
@@ -160,5 +172,33 @@
 @media (min-width: 768px) {
   .btn {
     height: 40px;
+  }
+}
+
+
+@media (min-width: 1350px) and (max-width: 1460px) {
+  .heading {
+    font-size: 47px;
+    line-height: 63px;
+  }
+
+  .banner_text {
+    max-width: 835px;
+  }
+
+  .image_div img {
+    max-width: 205px;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1350px) {
+  .banner_text {
+    max-width: 791px;
+  }
+
+  .heading {
+    font-size: 40px;
+    line-height: 53px;
   }
 }

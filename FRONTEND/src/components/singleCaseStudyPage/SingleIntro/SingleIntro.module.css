@@ -555,3 +555,37 @@
     line-height: 15px;
   }
 }
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .image_title {
+    font-size: 42px;
+    margin-top: 7px;
+  }
+
+  .top_image~p {
+    max-width: 279px;
+  }
+
+  .image_desc {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1460px) {
+  .box_text {
+    max-width: 1266px;
+    margin-bottom: 198px;
+  }
+
+  .heading {
+    font-size: 38px;
+  }
+
+  .belowline {
+    padding-top: 5px;
+    max-width: 806px;
+    font-size: 15px;
+  }
+}

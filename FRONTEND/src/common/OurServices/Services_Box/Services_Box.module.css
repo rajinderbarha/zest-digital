@@ -374,3 +374,35 @@
     margin-top: 72px;
   }
 }
+
+
+@media (min-width: 1366px) and (max-width: 1460px) {
+  .top_image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .image_title {
+    font-size: 39px;
+  }
+
+  .text_div {
+    max-width: 1113px;
+    margin-top: 280px;
+  }
+
+  .box_heading {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1460px) {
+  .below_text_div {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 145px;
+  }
+}
