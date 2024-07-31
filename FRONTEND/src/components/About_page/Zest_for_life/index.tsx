@@ -22,7 +22,7 @@ function Zest_for_life({ data }: { data: AboutType[] }) {
 
 
 
-                        <div className={`${classes.zest_for_life_facility_container} grid grid-cols-12  lg:mt-[90px] md:mt-[80px] min-tb:max-tb:mb-[58px] sm:mt-[70px] mt-[50px]`}>
+                        <div className={`${classes.zest_for_life_facility_container} grid grid-cols-12  lg:mt-[90px] md:mt-[80px] min-tb:max-tb:mb-[58px] min-tb:max-tb:mt-[58px] sm:mt-[70px] mt-[50px]`}>
                             {item.card.map((cardItem, path) => {
                                 if (path == 0) {
                                     return (

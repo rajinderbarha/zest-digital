@@ -1,10 +1,25 @@
 .SingleBox {
-  background-image: url("../../../assets/images/compress/Escape_compress.avif");
+  background-image: url("../../../assets/images/compress/resources_bg.avif");
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-position: 20% top;
+  background-size: 100% 76%;
   border: 1px solid transparent;
 }
+
+@media (max-width:830px) {
+  .SingleBox {
+    background-position: 20%;
+  }
+}
+
+@media (max-width:639px) {
+  .SingleBox {
+    background-position: 39% -63%;
+    background-size: auto;
+
+  }
+}
+
 
 .singleBox_container {
   margin-top: -100px;
@@ -299,7 +314,7 @@
 @media only screen and (min-width: 540px) and (max-width: 830px) {
   .top_image~p {
     font-size: 18px;
-    max-width: 150px;
+    max-width: 170px;
   }
 
   .top_image {
@@ -538,8 +553,8 @@
   }
 
   .box_text {
-    margin-top: 120px;
-    max-width: 680px;
+    margin-top: 100px;
+    max-width: 700px;
     margin-bottom: 200px;
   }
 

@@ -82,7 +82,7 @@ function Filters({ data }: { data: FiltersType }) {
         ></div>
 
         <div className={`${classes.Filters_box} relative z-10 grid lg:grid-cols-12`}>
-          <div className="lg:col-span-8 min-tb:max-tb:mt-[30px] md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
+          <div className="lg:col-span-8 min-tb:max-tb:mt-[53px] md:px-0 mt-[22px] sm:mt-0 px-[20px] lg:order-1 order-2">
             {currentPosts.map((item, index: number) => (
               <div className={`${classes.insights_cards}`} key={index} data-aos="fade-up">
                 <div
@@ -135,7 +135,7 @@ function Filters({ data }: { data: FiltersType }) {
             <h2 className={`${classes.filter_text} text-white font-mono font-medium sm:font-semibold`} data-aos="fade">
               Filters
             </h2>
-            <div className="Filters_main_btn flex lg:justify-end flex-wrap gap-3" data-aos="fade-up">
+            <div className={`${classes.Filters_main_btn} flex lg:justify-end flex-wrap gap-3`} data-aos="fade-up">
               {uniqueArray?.map((uniqueEl: any, index: any) => (
                 <h6
                   key={index}

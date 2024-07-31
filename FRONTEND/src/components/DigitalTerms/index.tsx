@@ -132,9 +132,9 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
         </div>
 
 
-         {/* desktop--table--end */}
+        {/* desktop--table--end */}
 
-         {/* tablet--table--start */}
+        {/* tablet--table--start */}
 
         <div className={`${classes.table_div} ${classes.tablet_table}`}>
           {/* <div className=""> */}
@@ -157,7 +157,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                 </ul>
               </div>
               <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</div>
-</div>
+            </div>
           </div>
           <div className={`${classes.row_2} ${classes.rows}`}>
 
@@ -208,8 +208,8 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
           </div>
           {/* </div> */}
 
-           {/* <div className=""> */}
-           <div className={`${classes.columns_heading} ${classes.table_div2}`}>
+          {/* <div className=""> */}
+          <div className={`${classes.columns_heading} ${classes.table_div2}`}>
             <div className={`${classes.divide_columns} `}>
               <div className=""></div>
               <div className=""><h5>Type of Data Held</h5></div>
@@ -219,7 +219,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
-           <div className="">We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</div>
+              <div className="">We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</div>
             </div>
           </div>
           <div className={`${classes.row_2} ${classes.rows}`}>
@@ -247,9 +247,9 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
           {/* </div> */}
         </div>
 
-         {/* tablet--table--end */}
+        {/* tablet--table--end */}
 
-          {/* mobile--table--start */}
+        {/* mobile--table--start */}
 
         <div className={` ${classes.mobile_table}`}>
           {/* <div className=""> */}
@@ -270,7 +270,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                   <li>Billing and payment information.</li>
                 </ul>
               </div>
-              </div>
+            </div>
           </div>
           <div className={`${classes.row_2} ${classes.rows}`}>
 
@@ -317,8 +317,8 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
             </div>
           </div>
           {/* </div> */}
-           {/* <div className=""> */}
-           <div className={`${classes.columns_heading} ${classes.mobile_table1}`}>
+          {/* <div className=""> */}
+          <div className={`${classes.columns_heading} ${classes.mobile_table1}`}>
             <div className={`${classes.divide_columns} `}>
               <div className=""></div>
               <div className=""><h5>How Data is Held</h5></div>
@@ -329,7 +329,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
               <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</div>
-             </div>
+            </div>
           </div>
           <div className={`${classes.row_2} ${classes.rows}`}>
 
@@ -349,14 +349,14 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
           <div className={`${classes.row_4} ${classes.rows}`}>
 
             <div className={`${classes.divide_columns} `}>
-               <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
+              <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
               <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</div>
             </div>
           </div>
           {/* </div> */}
 
-           {/* <div className=""> */}
-           <div className={`${classes.columns_heading} ${classes.mobile_table2}`}>
+          {/* <div className=""> */}
+          <div className={`${classes.columns_heading} ${classes.mobile_table2}`}>
             <div className={`${classes.divide_columns} `}>
               <div className=""></div>
               <div className=""><h5>Type of Data Held</h5></div>
@@ -372,7 +372,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
           <div className={`${classes.row_2} ${classes.rows}`}>
 
             <div className={`${classes.divide_columns} `}>
-            <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
+              <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
               <div className="">We store this information electronically in our lead generation system, which is hosted on US-based servers.</div>
             </div>
           </div>
@@ -394,7 +394,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
           {/* </div> */}
         </div>
 
-         {/* mobile--table--end */}
+        {/* mobile--table--end */}
 
       </div>
     );
@@ -403,7 +403,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
   return (
     <div className="DigitalTerms main_padding xl:mb-[200px] lg:mb-[150px] md:mb-[100px] sm:mb-[70px] mb-[80px]">
       <div className="main_container">
-        <h2 className="xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] text-[22px] font-mono font-semibold xl:mt-[95px] lg:mt-[75px] mb:mt-[50px] min-tb:max-tb:mt-[52px] mt-[46px]">
+        <h2 className={`${classes.DigitalTerms_title} xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] text-[22px] font-mono font-semibold xl:mt-[95px] lg:mt-[75px] mb:mt-[50px] min-tb:max-tb:mt-[52px] mt-[46px]`}>
           {data[0].title}
         </h2>
         {data?.map((item, index) => (

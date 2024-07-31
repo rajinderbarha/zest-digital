@@ -281,8 +281,26 @@
   .below_line {
     font-size: 12px;
   }
+
 }
 
+@media (min-width: 768px) and (max-width: 830px) {
+  .special_instrumental_img {
+    max-width: 525px;
+    height: 281px;
+  }
+
+  .conversations_section_img {
+    max-width: 436px;
+    height: 223px;
+  }
+
+  .project_window_img {
+    /* max-width: 514px; */
+    width: 514px;
+    height: 404px;
+  }
+}
 
 
 @media (min-width: 1280px) and (max-width: 1460px) {

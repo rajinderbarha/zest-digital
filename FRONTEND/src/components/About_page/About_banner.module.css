@@ -231,7 +231,7 @@
   }
 
   .values_bg {
-    padding-top: 70px;
+    padding-top: 41px;
     padding-bottom: 73px;
   }
 
@@ -381,13 +381,14 @@
   }
 
   .about_title {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .about_heading {
-    font-size: 50px;
-    line-height: 68px;
+    font-size: 44px;
+    line-height: 61px;
     margin-top: 27px;
+    max-width: 807px;
   }
 
   .team_title {
@@ -478,6 +479,7 @@
     font-size: 42px;
     line-height: 58px;
     margin-top: 15px;
+
   }
 
   .team_title {
@@ -557,7 +559,7 @@
 
 @media only screen and (min-width: 640px) and (max-width: 767px) {
   .about_title {
-    font-size: 27px;
+    font-size: 25px;
   }
 
   .about_heading {
@@ -678,6 +680,10 @@
 }
 
 @media only screen and (min-width: 540px) and (max-width: 830px) {
+  .about_title {
+    font-size: 26px;
+  }
+
   .Founded_heading {
     max-width: 553px;
   }
@@ -711,6 +717,8 @@
 
   .text_title {
     font-size: 20px;
+    padding-bottom: 3px;
+    margin-bottom: 9px;
   }
 
   .Our_values_main_p {
@@ -742,8 +750,8 @@
   }
 
   .Escape_p {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 17px;
+    line-height: 22px;
     margin-bottom: 80px;
   }
 
@@ -816,13 +824,19 @@
 
 @media (min-width: 1280px) and (max-width:1460px) {
   .about_heading {
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 46px;
+    line-height: 63px;
+    margin-top: 30px;
     max-width: 841px;
   }
 
+  .about_title {
+    font-size: 40px;
+  }
+
+
   .Founded_img {
-    max-width: 218px;
+    max-width: 205px;
   }
 
   .About_img_box {
@@ -899,5 +913,22 @@
   .Marquee_border {
     padding-top: 55px;
     padding-bottom: 55px;
+  }
+}
+
+@media (min-width: 760px) and (max-width:830px) {
+  .Founded_img {
+    margin-top: -49px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:830px) {
+  .About_team_profiles {
+    gap: 56px 45px;
+  }
+
+  .Our_values_main_2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }

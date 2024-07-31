@@ -26,8 +26,7 @@
   @apply font-lato;
 }
 
-.Portable_text p:first-child {
-}
+.Portable_text p:first-child {}
 
 .Portable_text p:has(strong) {
   @apply block;
@@ -37,7 +36,7 @@
   word-wrap: break-word;
 }
 
-.Portable_text h2:not(:first-child) + p {
+.Portable_text h2:not(:first-child)+p {
   @apply ml-[0];
 }
 
@@ -45,13 +44,17 @@
   display: inline-block;
 }
 
+.Portable_text div[id="changelog"]+p {
+  margin-left: 0;
+}
+
 .Portable_text a {
   color: #e43fa8;
   text-decoration: underline;
 }
 
-.Portable_text h2:not(:first-child) + p + ul + p,
-.Portable_text h2:not(:first-child) + p + ul + p + p {
+.Portable_text h2:not(:first-child)+p+ul+p,
+.Portable_text h2:not(:first-child)+p+ul+p+p {
   @apply ml-[0];
 }
 
@@ -81,11 +84,11 @@
   @apply font-mono font-semibold;
 }
 
-.rows > div div {
+.rows>div div {
   padding-top: 60px;
 }
 
-.rows > div div:not(:first-child),
+.rows>div div:not(:first-child),
 .table_div ul {
   font-size: 12px !important;
   line-height: 18px !important;
@@ -102,59 +105,70 @@
 .divide_columns {
   @apply grid grid-cols-4 gap-[30px];
 }
-.row_1 > div div {
+
+.row_1>div div {
   border-radius: 20px 20px 0 0;
 }
-.row_4 > div div {
+
+.row_4>div div {
   border-radius: 0 0 20px 20px;
 }
-.row_4 > div div {
+
+.row_4>div div {
   padding-bottom: 91px;
 }
 
-.rows > div div {
+.rows>div div {
   position: relative;
 }
 
-.rows > div div:before,
-.rows > div div:after {
+.rows>div div:before,
+.rows>div div:after {
   content: " ";
   height: 100%;
   position: absolute;
   top: 0;
   width: 15px;
 }
-.rows > div div:before {
+
+.rows>div div:before {
   box-shadow: -15px 0 6px -15px #00000029 inset;
   left: -15px;
 }
-.rows > div div:after {
+
+.rows>div div:after {
   box-shadow: 15px 0 6px -15px #00000029 inset;
   right: -15px;
 }
 
-.row_1 > div div::after {
+.row_1>div div::after {
   box-shadow: none !important;
 }
-.row_1 > div div::before {
+
+.row_1>div div::before {
   box-shadow: none !important;
 }
-.row_1 > div div {
+
+.row_1>div div {
   box-shadow: 0px 27px 1px white, 0px 3px 6px #00000029;
 }
+
 .left_heading {
   box-shadow: 0px -5px 1px #191615;
 }
 
-.row_4 > div div::after {
+.row_4>div div::after {
   box-shadow: none !important;
 }
-.row_4 > div div::before {
+
+.row_4>div div::before {
   box-shadow: none !important;
 }
-.row_4 > div div {
+
+.row_4>div div {
   box-shadow: 0px -2px 1px white, 0px 3px 6px #00000029;
 }
+
 .row_4 .left_heading {
   box-shadow: 0px -2px 1px #191615, 0px 3px 6px #00000029;
 }
@@ -249,29 +263,33 @@
     margin-bottom: 85px;
   }
 
-  .rows > div div:not(:first-child),
+  .rows>div div:not(:first-child),
   .table_div ul {
     font-size: 13px !important;
     line-height: 20px !important;
     padding-left: 18px;
     padding-right: 22px;
   }
+
   .columns_heading h5 {
     font-size: 18px;
     line-height: 25px;
     padding-bottom: 19px;
     text-align: center;
   }
+
   .category,
   .left_heading {
     font-size: 15px;
     line-height: 26px;
   }
+
   .category,
   .left_heading {
     padding-left: 16px;
     padding-right: 19px;
   }
+
   .tableContainer {
     margin-left: 30px;
   }
@@ -282,33 +300,38 @@
     font-size: 45px;
     margin-top: 100px;
   }
+
   .tableContainer {
     margin-top: 95px;
     margin-bottom: 95px;
   }
 
-  .rows > div div:not(:first-child),
+  .rows>div div:not(:first-child),
   .table_div ul {
     font-size: 14px !important;
     line-height: 22px !important;
     padding-left: 21px;
     padding-right: 23px;
   }
+
   .columns_heading h5 {
     font-size: 18px;
     line-height: 26px;
     padding-bottom: 22px;
   }
+
   .category,
   .left_heading {
     font-size: 17px;
     line-height: 26px;
   }
+
   .category,
   .left_heading {
     padding-left: 23px;
     padding-right: 23px;
   }
+
   .tableContainer {
     margin-left: 60px;
   }
@@ -324,23 +347,26 @@
     margin-bottom: 115px;
   }
 
-  .rows > div div:not(:first-child),
+  .rows>div div:not(:first-child),
   .table_div ul {
     font-size: 16px !important;
     line-height: 26px !important;
     padding-left: 26px;
     padding-right: 28px;
   }
+
   .columns_heading h5 {
     font-size: 22px;
     line-height: 30px;
     padding-bottom: 25px;
   }
+
   .category,
   .left_heading {
     font-size: 20px;
     line-height: 30px;
   }
+
   .category,
   .left_heading {
     padding-left: 28px;
@@ -352,7 +378,11 @@
   .Portable_text h2 {
     font-size: 26px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .DigitalTerms_title {
+    margin-bottom: 45px;
   }
 
   .tableContainer {
@@ -360,23 +390,26 @@
     margin-bottom: 75px;
   }
 
-  .rows > div div:not(:first-child),
+  .rows>div div:not(:first-child),
   .table_div ul {
     font-size: 12px !important;
     line-height: 18px !important;
     padding-left: 15px;
     padding-right: 22px;
   }
+
   .columns_heading h5 {
     font-size: 16px;
     line-height: 26px;
     padding-bottom: 18px;
   }
+
   .category,
   .left_heading {
     font-size: 14px;
     line-height: 22px;
   }
+
   .category,
   .left_heading {
     padding-left: 12px;
@@ -432,6 +465,11 @@
   margin-bottom: 20px;
 }
 
+.Portable_text h3:first-of-type {
+  margin-top: 55px;
+
+}
+
 .Portable_text p:first-child {
   margin-top: 30px;
 }
@@ -439,8 +477,13 @@
 @media (min-width: 640px) {
   .Portable_text h3 {
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  .Portable_text h3:first-of-type {
+    margin-top: 50px;
+
   }
 
   .Portable_text p:first-child {
@@ -451,7 +494,12 @@
 @media (min-width: 768px) {
   .Portable_text h3 {
     font-size: 30px;
-    margin-top: 95px;
+    margin-top: 70px;
+  }
+
+  .Portable_text h3:first-of-type {
+    margin-top: 80px;
+
   }
 
   .Portable_text p:first-child {
@@ -462,6 +510,12 @@
 @media (min-width: 1024px) {
   .Portable_text h3 {
     font-size: 35px;
+    margin-top: 81px;
+  }
+
+  .Portable_text h3:first-of-type {
+    margin-top: 95px;
+
   }
 }
 
@@ -472,23 +526,27 @@
     margin-bottom: 20px;
   }
 
+  .Portable_text h3:first-of-type {
+    margin-top: 50px;
+  }
+
   .Portable_text p:first-child {
     margin-top: 40px;
   }
 }
 
-.Portable_text h3 ~ p {
+.Portable_text h3~p {
   margin-left: 8px;
 }
 
 @media (min-width: 768px) {
-  .Portable_text h3 ~ p {
+  .Portable_text h3~p {
     margin-left: 60px;
   }
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
-  .Portable_text h3 ~ p {
+  .Portable_text h3~p {
     margin-left: 20px;
   }
 }
@@ -496,12 +554,12 @@
 .Portable_text ul {
   list-style-type: disc;
   list-style-position: outside;
-  margin-left: 24px;
+  margin-left: 35px;
   font-size: 12px;
   margin-bottom: 6px;
 }
 
-.Portable_text ul + p {
+.Portable_text ul+p {
   margin-top: 12px;
 }
 
@@ -512,7 +570,7 @@
     margin-bottom: 13px;
   }
 
-  .Portable_text ul + p {
+  .Portable_text ul+p {
     margin-top: 26px;
   }
 }
@@ -524,7 +582,7 @@
     margin-bottom: 12px;
   }
 
-  .Portable_text ul + p {
+  .Portable_text ul+p {
     margin-top: 24px;
   }
 }
@@ -542,7 +600,7 @@
     margin-bottom: 14px;
   }
 
-  .Portable_text ul + p {
+  .Portable_text ul+p {
     margin-top: 28px;
   }
 }
@@ -555,7 +613,7 @@
     margin-left: 45px;
   }
 
-  .Portable_text ul + p {
+  .Portable_text ul+p {
     margin-top: 12px;
   }
 }
@@ -564,50 +622,134 @@
 .mobile_table {
   display: none;
 }
+
 @media only screen and (max-width: 850px) {
   .desktop_table {
     display: none;
   }
+
   .tablet_table {
     display: block;
   }
+
   .divide_columns {
     @apply grid-cols-3 gap-[20px];
   }
+
   .tableContainer {
     margin-left: -20px;
   }
+
   .table_div2 {
     margin-top: 80px;
   }
 }
+
 @media only screen and (max-width: 639px) {
-  .rows > div div {
+  .rows>div div {
     padding-top: 48px;
   }
-  .row_4 > div div {
+
+  .row_4>div div {
     padding-bottom: 75px;
   }
+
   .tablet_table {
     display: none !important;
   }
+
   .mobile_table2,
   .mobile_table1 {
     margin-top: 70px;
   }
+
   .mobile_table {
     display: block;
   }
+
   .tablet_table {
     display: block;
   }
+
   .divide_columns {
     @apply grid-cols-12 gap-[17px];
   }
+
   .divide_columns div:first-child {
     @apply col-span-4;
   }
+
   .divide_columns div:last-child {
     @apply col-span-8;
+  }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .Portable_text {
+    padding-left: 100px;
+  }
+
+  .Portable_text h2 {
+    margin-top: 100px;
+  }
+
+  .tableContainer {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1460px) {
+  .DigitalTerms_title {
+    font-size: 48px;
+    margin-top: 65px;
+  }
+
+  .Portable_text p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 19px;
+  }
+
+  .Portable_text ul {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .Portable_text h3 {
+    font-size: 32px;
+    margin-top: 70px;
+  }
+
+  .Portable_text h3:first-of-type {
+    margin-top: 80px;
+  }
+
+  .Portable_text h2 {
+    font-size: 39px;
+  }
+
+  .tableContainer {
+    margin-left: 47px;
+  }
+}
+
+@media (min-width: 831px) and (max-width: 1460px) {
+  .Portable_text p:first-child {
+    margin-top: 80px;
+  }
+
+  .Portable_text h3~p {
+    margin-left: 47px;
+  }
+
+  .Portable_text ul {
+    margin-left: 90px;
+  }
+
+  .Portable_text h3 {
+    margin-bottom: 32px;
   }
 }

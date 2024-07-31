@@ -16,7 +16,7 @@ function Gross_profit({ data }: { data: Gross_profitType }) {
               >
                 <h2 className="font-semibold text-color-7">{item.card.heading} </h2>
                 <p className={` ${classes.profit_box_heading} text-color-7 font-semibold `}>{item.card.belowHeading}</p>
-                <h3 className={`${classes.profit_box_des} text-white sm:font-semibold font-bold `}>{item.card.description}</h3>
+                <h3 className={`${classes.profit_box_des} text-white font-semibold  max-tb:font-bold `}>{item.card.description}</h3>
                 <p className={`${classes.profit_box_desc_below} font-lato font-normal  text-white text-center`}>
                   {item.card.descriptionBelow}
                 </p>

@@ -255,6 +255,10 @@
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
+  .accordion_item:not(:last-child) {
+    margin-bottom: 3px;
+  }
+
   .accordion_heading {
     font-size: 30px;
     line-height: 39px;
@@ -269,8 +273,8 @@
   }
 
   .content_inner {
-    padding-top: 46px;
-    padding-bottom: 46px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .speak_button {

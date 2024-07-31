@@ -97,13 +97,13 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
   const nextPost = slugCard[currentPost + 1];
 
   return (
-    <div className="SingleInsightPage mt-[40px] md:mt-[100px] min-tb:max-tb:mt-[54px] main_padding">
+    <div className={`${classes.SingleInsightPage} SingleInsightPage mt-[40px] md:mt-[100px] min-tb:max-tb:mt-[54px] main_padding`}>
       <div className="main_container">
-        <div className={`${classes.bg_image} title-box xl:px-[100px] lg:px-[70px] md:px-[50px] min-tb:max-tb:px-[40px] px-[20px] xl:pb-[185px] lg:pb-[155px] md:pb-[130px] min-tb:max-tb:pb-[101px] pb-[116px] xl:pt-[65px] lg:pt-[55px] md:pt-[45px] min-tb:max-tb:pt-[46px] pt-[41px] rounded-[15px] md:rounded-[20px] lg:rounded-30px`}>
-          <p className="font-mono lg:text-35px md:text-30px min-tb:max-tb:text-[26px] sm:text-25px text-[20px] font-semibold text-color-7 ">
+        <div className={`${classes.bg_image} title-box xl:px-[100px] lg:px-[70px] md:px-[50px] min-tb:max-tb:px-[40px] px-[20px] xl:pb-[185px] lg:pb-[155px] md:pb-[130px] min-tb:max-tb:pb-[87px] pb-[103px] xl:pt-[65px]  lg:pt-[55px] md:pt-[45px] min-tb:max-tb:pt-[46px] pt-[41px] rounded-[15px] md:rounded-[20px] lg:rounded-30px`}>
+          <p className={`${classes.page_keyword} font-mono lg:text-35px md:text-30px min-tb:max-tb:text-[26px] sm:text-25px text-[20px] font-semibold text-color-7 `}>
             {data?.hero?.keywords ? data.hero.keywords[0] : ""}
           </p>
-          <h2 className="font-mono font-semibold xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] sm:text-30px text-[22px] text-white min-tb:max-tb:max-w-[500px] max-w-[798px] xl:mt-[45px] lg:mt-[30px] md:mt-[25px] min-tb:max-tb:mt-[34px] mt-[25px] mb-[20px]">
+          <h2 className={`${classes.page_heading} font-mono font-semibold xl:text-55px xl:leading-[75px] lg:text-50px md:text-40px min-tb:max-tb:text-[30px] sm:text-30px text-[22px] text-white min-tb:max-tb:max-w-[520px] max-w-[798px] xl:mt-[45px] lg:mt-[30px] md:mt-[25px] min-tb:max-tb:mt-[34px] mt-[25px] mb-[10px]`}>
             {data?.hero?.heading}
           </h2>
           <div className="lg:max-w-max md:max-w-[55px] sm:max-w-[45px] max-w-[40px]">
@@ -115,7 +115,7 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
             />
           </div>
         </div>
-        <div className={`${classes.Block_Content} lg:mt-[74px] md:mt-[60px] sm:mt-[50px] mt-[40px] max-w-[1420px] mx-auto grid px-[5px]`}>
+        <div className={`${classes.Block_Content} lg:mt-[74px] md:mt-[60px] min-tb:max-tb:mt-[50px] sm:mt-[50px] mt-[40px] max-w-[1420px] mx-auto grid px-[5px]`}>
           {renderCustomBlock(data?.content)}
         </div>
 

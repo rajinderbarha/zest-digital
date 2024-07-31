@@ -30,7 +30,7 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
   let outerSpan: string;
   let innerSpan: string;
 
-  return <div className="main_padding lg:my-[47px] md:my-[35px] sm:my-[25px] my-[15px] " data-aos="fade-up">
+  return <div className="main_padding lg:my-[47px] md:my-[35px] min-tb:max-tb:my-[42px] sm:my-[25px] my-[15px] " data-aos="fade-up">
     <div className="text-white main_container ">
       <div
         className={`${classes.growth_result} bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px font-mono `}

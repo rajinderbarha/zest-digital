@@ -16,7 +16,7 @@ function LearnToGrow({ data, setSelectedFileUrl }: { data: Resources, setSelecte
           className={`${classes.SingleIntro}  main_container  h-100 rounded-[15px] md:rounded-[20px] lg:rounded-30px`} data-aos="fade-up"
         >
           <div
-            className={`${classes.single_container}  max-w-[1335px] mx-auto  pt-[95px] min-tb:max-tb:pb-[360px] md:pb-[564px] pb-[202px] relative`}
+            className={`${classes.single_container}  max-w-[1335px] mx-auto  pt-[95px] min-tb:max-tb:pb-[360px] min-tb:max-tb:pt-[140px] md:pb-[564px] pb-[202px] relative`}
           >
             <div
               className={`${classes.grow_img}  absolute max-w-[200px] md:max-w-[250px] lg:max-w-[300px] lg:max-h-[300px]`}

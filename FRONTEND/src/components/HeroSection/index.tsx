@@ -69,7 +69,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
             </video>
           </div>
         </div>
-        <Image src={arrow_image} alt="" className="max-tb:block md:hidden w-[40px] mx-auto rotate-90" />
+        <Image src={arrow_image} alt="" className="max-tb:block md:hidden w-[40px] min-tb:max-tb:w-[55px] mx-auto rotate-90" />
       </div>
     </div>
   </div>

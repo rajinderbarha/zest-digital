@@ -7,7 +7,7 @@ import { HomePageServices } from "../../../lib/interface";
 
 const Services = ({ data }: HomePageServices) => {
 
-  return <div className="main_padding xl:mb-[74px] lg:mb-[68px] md:mb-[62px] sm:mb-[52px] mb-[45px]" data-aos="fade-up">
+  return <div className="main_padding xl:mb-[74px] lg:mb-[68px] md:mb-[62px] min-tb:max-tb:mb-[50px] sm:mb-[52px] mb-[45px]" data-aos="fade-up">
     <div className="main_container ">
       <div
         className={`${classes.bg_image}  bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px font-mono flex md:flex-row flex-col min-tb:max-tb:gap-[30px]`}
