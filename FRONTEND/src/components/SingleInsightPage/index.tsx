@@ -103,7 +103,7 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
           <p className={`${classes.page_keyword} font-mono lg:text-35px md:text-30px min-tb:max-tb:text-[26px] sm:text-25px text-[20px] font-semibold text-color-7 `}>
             {data?.hero?.keywords ? data.hero.keywords[0] : ""}
           </p>
-          <h2 className={`${classes.page_heading} font-mono font-semibold xl:text-55px xl:leading-[75px] lg:text-50px md:text-40px min-tb:max-tb:text-[30px] sm:text-30px text-[22px] text-white min-tb:max-tb:max-w-[520px] max-w-[798px] xl:mt-[45px] lg:mt-[30px] md:mt-[25px] min-tb:max-tb:mt-[34px] mt-[25px] mb-[10px]`}>
+          <h2 className={`${classes.page_heading} font-mono font-semibold xl:text-55px xl:leading-[75px] lg:text-50px md:text-40px min-tb:max-tb:text-[30px] sm:text-30px text-[22px] text-white min-tb:max-tb:max-w-[520px] max-w-[798px] xl:mt-[45px] lg:mt-[30px] md:mt-[25px] min-tb:max-tb:mt-[34px] mt-[25px] mb-[10px] lg:mb-[26px]`}>
             {data?.hero?.heading}
           </h2>
           <div className="lg:max-w-max md:max-w-[55px] sm:max-w-[45px] max-w-[40px]">
