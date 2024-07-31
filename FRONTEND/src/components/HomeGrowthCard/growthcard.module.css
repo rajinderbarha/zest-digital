@@ -121,7 +121,7 @@
 }
 
 .growth_result {
-  padding-bottom: 384px;
+  padding-bottom: 322px;
 }
 
 .animationFullText {
@@ -255,7 +255,7 @@
   }
 
   .growth_container_card_div {
-    margin-top: -200px;
+    margin-top: -186px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -362,6 +362,13 @@
 
   .box_size {
     padding-left: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 22px;
+  }
+
+  .growth_grid>div:not(:first-child) {
+    margin-top: 48px;
   }
 
   .card_heading {
@@ -404,16 +411,24 @@
   }
 }
 
-@media only screen and (max-width:460px) {
+@media only screen and (max-width:830px) {
 
   .card_div>div:first-child,
   .card_div>div:last-child {
     width: 100%;
-    min-height: 252px;
+    min-height: 359px;
   }
 
   .grid_card_div {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width:460px) {
+
+  .card_div>div:first-child,
+  .card_div>div:last-child {
+    min-height: 252px;
   }
 }
 

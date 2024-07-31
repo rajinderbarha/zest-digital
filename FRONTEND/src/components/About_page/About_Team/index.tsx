@@ -29,7 +29,7 @@ function About_team({ data }: { data: AboutType[] }) {
                     />
                   </div>
 
-                  <h3 className={`${classes.team_title}  sm:font-semibold font-bold font-mono text-color-1`}>
+                  <h3 className={`${classes.team_title}  font-semibold  max-tb:font-bold font-mono text-color-1`}>
                     {teamData.title}{" "}
                   </h3>
                   <p className={`${classes.team_desc}  font-normal font-lato text-color-1`}>

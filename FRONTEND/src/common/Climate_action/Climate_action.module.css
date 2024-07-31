@@ -61,4 +61,14 @@
     font-size: 27px;
     line-height: 37px;
   }
+
+}
+
+@media (min-width: 1024px) and (max-width:1460px) {
+  .climate_action_content {
+    padding-left: 50px;
+    padding-right: 19px;
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
 }

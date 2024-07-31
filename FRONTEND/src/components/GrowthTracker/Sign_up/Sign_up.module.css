@@ -161,6 +161,10 @@
   .form_note {
     font-size: 12px;
   }
+
+  .form_inputs {
+    margin-top: 44px;
+  }
 }
 
 @media (min-width: 1024px) {

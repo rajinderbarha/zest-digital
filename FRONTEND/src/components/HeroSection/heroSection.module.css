@@ -185,6 +185,13 @@
 @media only screen and (min-width: 540px) and (max-width: 830px) {
   .banner {
     padding-bottom: 43px;
+    gap: 55px;
+  }
+
+  .video_class,
+  .custom_border:before,
+  .custom_border:after {
+    border-radius: 30px;
   }
 
   .banner_text {

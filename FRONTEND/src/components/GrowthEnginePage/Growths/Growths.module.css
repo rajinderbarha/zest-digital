@@ -102,18 +102,18 @@
 
   .card_divider>div>div p,
   .card_div+div:last-child p {
-    max-width: 422px;
+    max-width: 489px;
   }
 
 }
 
 @media (min-width: 640px) and (max-width: 830px) {
   .growths_container {
-    margin-bottom: 252px;
+    margin-bottom: 260px;
   }
 
   .growth_card_div {
-    gap: 30px;
+    gap: 50px;
     margin-top: 70px;
   }
 
@@ -163,7 +163,7 @@
   .card_div+div:last-child,
   .card_divider>div>div {
     width: 100%;
-    min-height: 355px;
+    min-height: 359px;
   }
 
   .card_divider {
@@ -182,7 +182,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1460px) {
+@media (min-width: 831px) and (max-width: 1460px) {
   .growth_heading {
     font-size: 42px;
   }

@@ -25,7 +25,7 @@ export default function Home({ homepageData }: HomepageProps) {
     <div className="Body_padding">
       <HeroSection HeroSecData={growRevenue} />
       <HomeGrowthCard card={TransformResults} />
-      <div className="xl:mt-[274px] min-tb:max-tb:mt-[220px] lg:mt-[220px] md:mt-[170px] sm:mt-[150px] mt-[215px] xl:mb-[184px] lg:mb-[160px] md:mb-[130px] mb-[70px]">
+      <div className="xl:mt-[274px] min-tb:max-tb:mt-[204px] min-tb:max-tb:mb-[106px] lg:mt-[220px] md:mt-[170px] sm:mt-[150px] mt-[215px] xl:mb-[184px] lg:mb-[160px] md:mb-[130px] mb-[70px]">
         <Logo_moving LogoMovdata={TransformResults?.brandList} />
       </div>
       <Services data={TransformResults?.serviceSection} />

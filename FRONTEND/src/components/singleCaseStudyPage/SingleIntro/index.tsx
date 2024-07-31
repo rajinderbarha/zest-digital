@@ -62,7 +62,7 @@ function SingleIntro({ hero, sectionCard, team }: SingleCasestudyType) {
                   />
                 </div>
 
-                <h3 className={`${classes.team_person_title} font-bold sm:font-semibold font-mono text-color-1 `}>
+                <h3 className={`${classes.team_person_title} max-tb:font-bold font-semibold font-mono text-color-1 `}>
                   {data.name}{" "}
                 </h3>
                 <p className={`${classes.team_person_detail} lg:text-lg md:text-[16px] max-tb:text-[12px] max-tb:leading-[20px] sm:text-[14px]  font-normal font-mono text-color-1 mt-[3px]`}>

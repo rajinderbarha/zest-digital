@@ -227,7 +227,7 @@
     max-width: 300px;
     font-size: 18px;
     line-height: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .Gross_profit_grid_div {
@@ -240,17 +240,18 @@
 
   .profit_box_heading {
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 38px;
   }
 
   .profit_box_des {
     font-size: 25px;
+    margin-bottom: 13px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 856px) {
   .profit_box {
-    padding: 20px 8px;
+    padding: 42px 8px;
     padding-bottom: 40px;
   }
 }
@@ -446,5 +447,16 @@
     margin-bottom: 28px;
     font-size: 17px;
     line-height: 25px;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:790px) {
+  .Gross_profit_grid_div {
+    row-gap: 24px;
+    column-gap: 34px;
+  }
+
+  .profit_box_heading {
+    margin-bottom: 28px;
   }
 }
