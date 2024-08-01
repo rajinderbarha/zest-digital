@@ -200,8 +200,8 @@
 }
 
 .resources_logo {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 81px;
+  margin-bottom: 75px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -362,13 +362,6 @@
 }
 
 
-@media only screen and (max-width:460px) {
-
-  .cards_div>div {
-    width: 100%;
-    min-height: 217px;
-  }
-}
 
 .growth_card_div {}
 
@@ -402,8 +395,22 @@
     min-height: 364px;
   }
 
+}
+
+@media only screen and (max-width:460px) {
+
+  .cards_div>div {
+    width: 100%;
+    min-height: 217px;
+  }
+
+  .cards_div>div p {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
 
 }
+
 
 @media (min-width: 765px) and (max-width: 830px) {
   .cards_div div {
@@ -413,5 +420,11 @@
   .resources_logo {
     margin-top: 113px;
     margin-bottom: 103px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .cards_div>div {
+    padding: 30px 6px 30px 22px;
   }
 }

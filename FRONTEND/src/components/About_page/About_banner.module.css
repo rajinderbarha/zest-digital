@@ -254,7 +254,7 @@
 
   .zest_for_life_facility_container {
     column-gap: 0px;
-    row-gap: 27px;
+    row-gap: 38px;
   }
 }
 
@@ -627,8 +627,9 @@
   }
 
   .Our_values_img {
-    max-width: 90px;
-    height: 90px;
+    max-width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
   }
 
   .text_title {
@@ -776,6 +777,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .About_team {
+    padding-bottom: 104px;
+  }
+
+  .values_bg {
+    padding-top: 46px;
+  }
+
   .about_title {
     font-size: 22px;
   }
@@ -794,7 +803,7 @@
   }
 
   .ourValue_heading {
-    margin-bottom: 32px;
+    margin-bottom: 60px;
   }
 }
 

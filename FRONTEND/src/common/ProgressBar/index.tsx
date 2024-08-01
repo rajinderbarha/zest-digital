@@ -22,8 +22,8 @@ interface ProgressBarProps {
 }
 
 const ProgressBar: React.FC<ProgressBarProps> = ({ value, from }) => {
-  console.log("from = ", from + " value = ", value);
-  
+  // console.log("from = ", from + " value = ", value);
+
   const [width, setWidth] = useState(from);
 
   useEffect(() => {

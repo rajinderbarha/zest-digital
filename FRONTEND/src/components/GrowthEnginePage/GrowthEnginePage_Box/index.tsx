@@ -7,12 +7,12 @@ import { urlFor } from "../../../../lib/sanity.client";
 
 const GrowthEnginePage_Box = ({ data }: any) => {
 
-  return <div className={` mt-[66px] md:mb-36 sm:mb-[130px] mb-[100px] min-tb:max-tb:mb-[161px] main_padding`} >
+  return <div className={` mt-[66px] sm-max:mt-[58px] md:mb-36 sm:mb-[130px] mb-[100px] min-tb:max-tb:mb-[161px] main_padding`} >
     <div className="main_container overflow-x-clip">
       <div className={`${classes.growth_box} lg:rounded-30px md:rounded-[20px] rounded-[15px]   main_padding`} data-aos="fade-up">
         <div className={`${classes.growth_box_content} max-w-[1520px] mx-auto  relative`}>
           <div>
-            <div className="md:mb-[172px] mb-[105px] sm:mb-[87px] min-tb:max-tb:mb-[93px]">
+            <div className="md:mb-[172px] mb-[87px] sm:mb-[87px] min-tb:max-tb:mb-[93px]">
               <Box_Title
                 upper={data.upperHeading}
                 below={data.upperSmallLine}

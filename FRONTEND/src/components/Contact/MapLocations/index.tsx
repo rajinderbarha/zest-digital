@@ -21,7 +21,7 @@ function MapLocations({ data }: any) {
             <GoogleMapComponent mark={uniqueLocations} loc={{ longitude: longitude, latitude: latitude }} zoom={9} />
 
           </div>
-          <div className="contact grid lg:grid-cols-12 gap-2  mt-[20px]">
+          <div className="contact grid lg:grid-cols-12 gap-2 min-tb:max-tb:gap-[10px] min-tb:max-tb:mt-[15px] mt-[15px]">
             <div className="address lg:col-span-6 lg:order-1 order-2">
               <address className={`${classes.contact_detail}  font-mono text-color-1 not-italic`}>
                 <PortableText value={contactInfo} key={index} />
@@ -35,7 +35,7 @@ function MapLocations({ data }: any) {
                 </div>
                 <p className={`${classes.contact_detail} `}>
                   {" "} <a href={`tel:${rightDescriptionList}`}>
-                  {rightDescriptionList}</a>
+                    {rightDescriptionList}</a>
                 </p>
               </div>
             </div>

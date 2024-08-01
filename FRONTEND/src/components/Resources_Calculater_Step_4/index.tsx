@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import  { useState } from 'react'
+import { useState } from 'react'
 import classes from "./Resources_Calculater_Step_4.module.css"
 import style from '../Resources_Calculater_Step_1/Resources_Calculater.module.css'
 import popup_person from '../../assets/images/popup_person.svg'
@@ -51,7 +51,7 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData, progressV
         <div className="pe-[6px] pb-[6px]">
             <div className="Resources_Calculater_Step_4 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                 <div className="progrees_bar xl:mb-[140px] lg:mb-[110px] md:mb-[80px] sm:mb-[70px] mb-[60px] ">
-                    <ProgressBar value={progressValue} from={priviousProgressValue}/>
+                    <ProgressBar value={progressValue} from={priviousProgressValue} />
                 </div>
                 <h2 className="text-center font-mono xl:text-45px lg:text-40px md:text-[35px] sm:text-[25px] text-[20px] font-semibold md:mb-[30px] sm:mb-[30px] mb-[10px]">Input your data (use the ‘?’ for help)</h2>
                 <div className="form_details max-w-[750px] mx-auto md:justify-end justify-center grid gap-5 md:pb-[97px] sm:pb-[60px] pb-[30px] relative w-fit">
@@ -63,10 +63,10 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData, progressV
                                 <input onChange={handleChange} value={inputValues.average_monthly_sessions} type="number" name="average_monthly_sessions" id="monthly_sessions" placeholder='1000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                 <div className="">
-                                    <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  />
+                                    <Image src={popup_person} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                 </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max hover:cursor-pointer" onMouseEnter={() => setMonthlySessionsIsHovered(true)} onMouseLeave={() => setMonthlySessionsIsHovered(false)}>
-                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%] '  />
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%] ' />
                                 </div>
                             </div>
 
@@ -91,10 +91,10 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData, progressV
                                 <input onChange={handleChange} value={inputValues.average_conversion_rate} type="number" name="average_conversion_rate" id="average_conversion_rate" placeholder='3' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                 <div className="">
-                                    <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  />
+                                    <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                 </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  hover:cursor-pointer" onMouseEnter={() => setConversionRateIsHovered(true)} onMouseLeave={() => setConversionRateIsHovered(false)}>
-                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]'  />
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
                                 </div>
                             </div>
                         </div>
@@ -119,10 +119,10 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData, progressV
                                 <input onChange={handleChange} value={inputValues.average_order_value} type="number" name="average_order_value" id="average_order_value" placeholder='5000' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                 <div className="">
-                                    <Image src={popup_pound} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  />
+                                    <Image src={popup_pound} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                 </div>
                                 <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max hover:cursor-pointer" onMouseEnter={() => setOrderValueIsHovered(true)} onMouseLeave={() => setOrderValueIsHovered(false)} >
-                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]'  />
+                                    <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
                                 </div>
                             </div>
                         </div>
@@ -148,10 +148,10 @@ function Resources_Calculater_Step_4({ setStep, formData, setFormData, progressV
                                         <input onChange={handleChange} value={inputValues.conversion_rate} type="number" name="conversion_rate" id="conversion_rate" placeholder='40' className='lg:py-[14px] md:py-[8px] py-[5px] lg:px-[22px] md:px-[15px] text-base lg:text-lg px-[10px] rounded-[5px] lg:rounded-[10px] lg:w-[300px] md:w-[210px]  border border-color-9' />
 
                                         <div className="">
-                                            <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]'  />
+                                            <Image src={popup_percentage} alt='' className='lg:w-[39px] md:w-[30px] sm:w-[22px] w-[22px]' />
                                         </div>
                                         <div className="lg:ml-2 ml-[5px] relative lg:-top-[33px] lg:-left-[9px] md:-top-[24px] md:-left-[10px] -top-[20px] -left-[11px] w-max  hover:cursor-pointer" onMouseEnter={() => setLeadToSaleIsHovered(true)} onMouseLeave={() => setLeadToSaleIsHovered(false)}  >
-                                            <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]'  />
+                                            <Image src={popup_question_mark} alt='' className='lg:max-w-[30px] md:max-w-[22px] sm:max-w-[18px] max-w-[18px] w-full md:mt-0 mt-[100%]' />
                                         </div>
                                     </div>
                                 </div>

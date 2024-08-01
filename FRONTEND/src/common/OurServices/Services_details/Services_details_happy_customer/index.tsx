@@ -21,7 +21,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
               <h2 className={`${classes.objective_title}  text-color-1 font-semibold font-mono `}>
                 <PortableText value={item.serviceheading} />
               </h2>
-              <div className={`${classes.objective_description} min-tb:max-tb:max-w-[378px] font-mono  `}>
+              <div className={`${classes.objective_description} min-tb:max-tb:max-w-[412px] font-mono  `}>
                 <PortableText value={item.content} />
 
               </div>
@@ -52,7 +52,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
                   />
                 </div>
               ) : (
-                <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[25px]" data-aos="fade-right">
+                <div className=" image_class flex   me-auto md:mt-0 sm:mt-[15px] mt-[15px]" data-aos="fade-right">
                   <Image
                     src={urlFor(item.image).url()}
                     alt=""
@@ -62,7 +62,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
                   />
                 </div>
               )}
-              <div className={`ms-auto md:max-w-[1057px]  ${isGrowthPage ? `min-tb:max-tb:max-w-[412px]` : `xl:ps-[80px] lg:ps-[50px] md:ps-[20px] min-tb:max-tb:max-w-[433px]`} text-right`} data-aos="fade-left">
+              <div className={`ms-auto md:max-w-[1057px]  ${isGrowthPage ? `min-tb:max-tb:max-w-[450px]` : `xl:ps-[80px] lg:ps-[50px] md:ps-[20px] min-tb:max-tb:max-w-[433px]`} text-right`} data-aos="fade-left">
                 <h2 className={`${classes.objective_title}  md:max-w-[675px] ms-auto text-color-1 font-semibold font-mono `}>
                   <PortableText value={item.serviceheading} />
                 </h2>

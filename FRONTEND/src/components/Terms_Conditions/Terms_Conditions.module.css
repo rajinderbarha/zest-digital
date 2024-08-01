@@ -20,7 +20,7 @@
 }
 
 .term_condition {
-  margin-bottom: 80px;
+  margin-bottom: 76px;
 }
 
 .terms_heading {
@@ -59,6 +59,10 @@
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
+  .term_condition {
+    margin-bottom: 135px;
+  }
+
   .terms_heading {
     font-size: 30px;
   }

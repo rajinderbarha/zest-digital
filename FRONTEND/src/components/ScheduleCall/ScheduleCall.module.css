@@ -11,7 +11,7 @@
   padding-right: 40px;
   padding-top: 53px;
   padding-bottom: 114px;
-  margin-top: 44px;
+  margin-top: 31px;
 }
 
 @media (min-width: 640px) {
@@ -45,8 +45,7 @@
 }
 
 @media (max-width: 830px) {
-  .bg_image {
-  }
+  .bg_image {}
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
@@ -73,6 +72,7 @@
   background-image: url("../../assets/images/compress/Gradient_calendar_new_transparent_right_compress.avif");
   background-position: top left;
 }
+
 .bg_image::after {
   bottom: 0;
   right: 0;
@@ -85,6 +85,7 @@
     width: 117%;
     height: 100%;
   }
+
   .bg_image::after {
     right: -62px;
     width: 130%;
@@ -92,27 +93,33 @@
     z-index: 0;
   }
 }
+
 @media only screen and (max-width: 650px) {
   .bg_image::after {
     background-image: none;
   }
+
   .bg_image::before {
     width: 170%;
   }
 }
+
 @media only screen and (max-width: 575px) {
-  .bg_image::after,   .bg_image::before{
+
+  .bg_image::after,
+  .bg_image::before {
     content: none;
   }
-  .bg_image{
+
+  .bg_image {
     background-image: url("../../assets/images/compress/schedual_call_mobile_bg.avif");
     background-size: contain;
     background-position: left top;
   }
 }
 
-@media only screen and (min-width: 450px){
-.meeting_iframe{
-width: 100%;
-}
+@media only screen and (min-width: 450px) {
+  .meeting_iframe {
+    width: 100%;
+  }
 }

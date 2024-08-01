@@ -36,7 +36,7 @@ const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
   return <div className={`${classes.GrowthMarketingServices_Banner} GrowthMarketingServices_Banner  main_padding`}>
     <div className='main_container'>
       <div className={`${max_width_string} `} data-aos="fade-up">
-        <div className="md:pe-20 ">
+        <div className="min-tb:max-tb:pe-[103px] md:pe-20 ">
           <h2 className={`${classes.banner_title}  font-semibold font-mono `}>{title}</h2>
           <p className={`${classes.banner_description} font-mono text-color-1`}>{smallDescription}</p>
           <div className="flex flex-wrap gap-[8px] sm:gap-4 sm:flex-row flex-col">

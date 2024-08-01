@@ -41,10 +41,10 @@
 }
 
 .bg_image {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 
 .address_heading {
@@ -191,6 +191,10 @@
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
+  .GrowthMarketingServices_Address {
+    margin-bottom: 116px;
+  }
+
   .address_heading {
     font-size: 30px;
     line-height: 45px;

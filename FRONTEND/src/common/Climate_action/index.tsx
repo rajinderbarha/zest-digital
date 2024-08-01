@@ -3,7 +3,7 @@ import classes from './Climate_action.module.css'
 import { ClimateAction } from '../../../lib/interface'
 import { urlFor } from '../../../lib/sanity.client'
 function Climate_action({ climate_actionImg, earth_img, smallDescription }: ClimateAction) {
-  return <div className="main_padding  md:mb-[110px] mb-[50px]">
+  return <div className="main_padding  md:mb-[110px] min-tb:max-tb:mb-[55px] mb-[45px]">
 
     <div className="main_container " data-aos="fade-up">
       <div

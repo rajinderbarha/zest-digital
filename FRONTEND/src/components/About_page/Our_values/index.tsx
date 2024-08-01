@@ -5,7 +5,7 @@ import { urlFor } from "../../../../lib/sanity.client";
 
 function Our_values({ data }: { data: AboutType[] }) {
 
-  return <div className={`${classes.Our_values} main_padding `}  data-aos="fade-up">
+  return <div className={`${classes.Our_values} main_padding `} data-aos="fade-up">
     <div className="main_container overflow-x-hidden" >
       <div className={`${classes.values_bg} rounded-[15px] md:rounded-[20px] lg:rounded-[30px] main_padding `}>
         {data?.map((ourvalue, index) => (
@@ -32,7 +32,7 @@ function Our_values({ data }: { data: AboutType[] }) {
                       {valSection.title}
                     </h3>
                     <p
-                      className={`${classes.Our_values_main_p}  text-white font-medium  font-mono `}
+                      className={`${classes.Our_values_main_p}  text-white font-normal sm:font-medium  font-mono `}
                     >
                       {valSection.description}
                     </p>
@@ -50,7 +50,7 @@ function Our_values({ data }: { data: AboutType[] }) {
                       {valSection.title}
                     </h3>
                     <p
-                      className={`${classes.Our_values_main_p} ms-auto  text-white font-medium  font-mono `}
+                      className={`${classes.Our_values_main_p} ms-auto  text-white font-normal sm:font-medium  font-mono `}
                     >
                       {valSection.description}
                     </p>

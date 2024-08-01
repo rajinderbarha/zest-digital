@@ -123,7 +123,27 @@
   }
 
   .below_box_heading {
+    margin-top: 86px;
     margin-bottom: 123px;
+  }
+
+  .below_heading_without_button {
+    margin-top: 103px;
+  }
+
+  .growth_box_text_content_right {
+    margin-top: 66px;
+    margin-bottom: 66px;
+  }
+
+  .right_content_without_button {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .below_box_heading div div {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -159,7 +179,7 @@
   }
 
   .below_box_heading {
-    margin-top: 147px;
+    margin-top: 124px;
   }
 
   .below_heading_without_button {
@@ -191,12 +211,12 @@
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 20px;
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 .blew_line {
   font-size: 10px;
-  margin-top: 8px;
+  margin-top: 6px;
   color: #d3d3d3;
 }
 

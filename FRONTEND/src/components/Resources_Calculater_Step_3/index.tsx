@@ -1,5 +1,5 @@
 import ProgressBar from '@/common/ProgressBar';
-import  { useState } from 'react';
+import { useState } from 'react';
 import { GoArrowLeft } from "react-icons/go";
 import classes from '../Resources_Calculater_Step_1/Resources_Calculater.module.css'
 
@@ -8,7 +8,7 @@ function Resources_Calculator_Step_3({ setStep, setFormData, progressValue, priv
     const [nextClicked, setNextClicked] = useState(false);
 
     const handleNextButtonClick = () => {
-        setNextClicked(true); 
+        setNextClicked(true);
         if (selectedIndustry !== "") {
             setIndustryInFormData(selectedIndustry);
             setStep(4);
@@ -26,7 +26,7 @@ function Resources_Calculator_Step_3({ setStep, setFormData, progressValue, priv
         <div className="pe-[6px] pb-[6px]">
             <div className="Resources_Calculator_Step_3 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                 <div className="progrees_bar xl:mb-[190px] lg:mb-[160px] md:mb-[130px] sm:mb-[80px] mb-[40px] ">
-                    <ProgressBar value={progressValue} from={priviousProgressValue}/>
+                    <ProgressBar value={progressValue} from={priviousProgressValue} />
                 </div>
                 <div className="xl:max-w-[670px] lg:max-w-[570px] md:max-w-[510px] sm:max-w-[440px] max-w-[365px] mx-auto mb-[35px] md:mb-[53px] px-[5px]">
                     <h2 className={`${classes.step_3_heading} font-mono mx-auto max-w-[400px] sm:max-w-[500px] lg:max-w-[670px] xl:text-45px lg:text-40px md:text-35px sm:text-25px text-[20px] font-semibold text-center xl:mb-[40px] lg:mb-[30px] md:mb-[20px] mb-[15px]`}>What industry does your business operate in?</h2>
