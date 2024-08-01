@@ -17,7 +17,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
             key={`${item.heading}_${index}`}
             className={`${classes.content_left} flex items-center  flex-row  bg-white ${classes.objective_inner} ${classes.objective_select} lg:gap-10  `}
           >
-            <div className="me-auto md:max-w-[1057px] xl:pe-[100px] lg:pe-[70px] md:pe-[50px]" data-aos="fade-right">
+            <div className="me-auto md:max-w-[1130px] xl:pe-[100px] lg:pe-[70px] md:pe-[50px]" data-aos="fade-right">
               <h2 className={`${classes.objective_title}  text-color-1 font-semibold font-mono `}>
                 <PortableText value={item.serviceheading} />
               </h2>
@@ -37,7 +37,7 @@ const Services_details_happy_customer = ({ Services_details, Slug }: { Services_
             </div>
           </div>
         ) : (
-          <div className={`${classes.objective} ${classes.objective_select} main_container`} key={index} >
+          <div className={`${classes.objective} ${classes.objective_select} ${isGrowthPage && `${classes.growthPage_div}`} main_container`} key={index} >
             <div
               className={`${classes.content_right}  flex items-center flex-row  bg-white ${classes.objective_inner} lg:gap-10 `}
             >

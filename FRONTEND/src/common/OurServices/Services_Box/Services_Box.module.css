@@ -278,6 +278,10 @@
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
+  .notGrowthPage_div {
+    max-width: 656px;
+  }
+
   .single_container {
     margin-top: -100px;
   }
@@ -311,7 +315,7 @@
   }
 
   .below_text_div {
-    margin-bottom: 85px;
+    margin-bottom: 95px;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 16px;
@@ -321,6 +325,8 @@
   .below_text {
     margin-bottom: 20px;
   }
+
+
 }
 
 @media (min-width: 1024px) {
@@ -353,8 +359,13 @@
 }
 
 @media (min-width: 1280px) {
+
+  .single_container {
+    margin-top: -126px;
+  }
+
   .SingleIntro {
-    margin-top: 200px;
+    margin-top: 214px;
   }
 
   .image_title {
@@ -362,8 +373,8 @@
   }
 
   .text_div {
-    margin-top: 321px;
-    margin-bottom: 80px;
+    margin-top: 282px;
+    margin-bottom: 75px;
   }
 
   .box_heading {
@@ -397,7 +408,7 @@
 
   .text_div {
     max-width: 1113px;
-    margin-top: 280px;
+    margin-top: 255px;
   }
 
   .box_heading {
@@ -411,5 +422,19 @@
     font-size: 26px;
     line-height: 35px;
     margin-bottom: 145px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .single_container {
+    margin-top: -58px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 830px) {
+
+  .top_images_div>div:first-child,
+  .top_images_div>div:last-child {
+    max-width: max-content;
   }
 }

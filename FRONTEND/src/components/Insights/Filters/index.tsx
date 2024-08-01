@@ -135,7 +135,7 @@ function Filters({ data }: { data: FiltersType }) {
             <h2 className={`${classes.filter_text} text-white font-mono font-medium sm:font-semibold`} data-aos="fade">
               Filters
             </h2>
-            <div className={`${classes.Filters_main_btn} flex lg:justify-end flex-wrap gap-3`} data-aos="fade-up">
+            <div className={`${classes.Filters_main_btn} flex lg:justify-end flex-wrap gap-3 lg:gap-x-[15px] lg:gap-y-[18px]`} data-aos="fade-up">
               {uniqueArray?.map((uniqueEl: any, index: any) => (
                 <h6
                   key={index}

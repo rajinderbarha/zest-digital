@@ -440,6 +440,17 @@
   }
 }
 
+@media (min-width:1024px) {
+  .insights_cards:not(:last-child) {
+    margin-top: 105px;
+    margin-bottom: 105px;
+  }
+
+  .insights_cards:first-child {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .filter_heading {
     margin-top: 20px;
@@ -452,6 +463,7 @@
   }
 
   .navigate_box {
+    margin-top: 158px;
     margin-bottom: 100px;
   }
 

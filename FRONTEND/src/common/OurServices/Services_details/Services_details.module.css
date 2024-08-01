@@ -1,5 +1,9 @@
-.objective_select:not(:first-child) {
-  @apply xl:mt-[350px] lg:mt-[280px] md:mt-[200px] min-tb:max-tb:mt-[72px] sm:mt-[90px] mt-[80px];
+.objective_select:nth-last-child(even) {
+  @apply 2xl:my-[350px] xl:my-[280px] lg:my-[200px] md:my-[120px] min-tb:max-tb:my-[70px] sm:my-[90px] my-[80px];
+}
+
+.objective_select.growthPage_div {
+  @apply xl:mb-[210px] xl:mt-[160px] lg:mt-[160px] lg:mb-[180px] md:mt-[150px] md:mb-[150px] min-tb:max-tb:mt-[80px] min-tb:max-tb:mb-[66px] sm:my-[90px] my-[80px];
 }
 
 .objective_description p:not(:first-child) {
