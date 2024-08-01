@@ -234,7 +234,7 @@
   }
 
   .bg_image {
-    padding-top: 130px;
+    padding-top: 135px;
     padding-bottom: 130px;
     padding-left: 60px;
     padding-right: 60px;
@@ -277,7 +277,7 @@
   }
 
   .bg_image {
-    padding-top: 160px;
+    padding-top: 174px;
     padding-bottom: 160px;
     padding-left: 77px;
     padding-right: 77px;
@@ -289,7 +289,7 @@
   }
 
   .address_desc {
-    margin-top: 60px;
+    margin-top: 70px;
   }
 
   .address h4:not(:first-child) {
@@ -325,11 +325,63 @@
     font-size: 45px;
     line-height: 63px;
   }
+
+  .bg_image {
+    padding-top: 143px;
+    padding-bottom: 160px;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1460px) {
+
   .address_desc {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 29px;
+    line-height: 39px;
+    max-width: 500px;
+  }
+
+  .address_heading {
+    font-size: 42px;
+    line-height: 58px;
+  }
+
+  .address h4:first-child {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+
+  .address p {
+    font-size: 17px;
+  }
+
+  .address h4:not(:first-child) {
+    font-size: 28px;
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .address_desc {
+    margin-top: 60px;
+  }
+
+  .bg_image {
+    padding-top: 135px;
+    padding-bottom: 135px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .address_heading {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  .address_desc {
+    font-size: 27px;
+    line-height: 35px;
+    max-width: 473px;
   }
 }

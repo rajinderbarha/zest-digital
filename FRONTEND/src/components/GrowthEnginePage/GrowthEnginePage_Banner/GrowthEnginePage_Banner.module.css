@@ -55,7 +55,7 @@
   }
 
   .banner_container {
-    max-width: 700px;
+    max-width: 804px;
   }
 }
 
@@ -87,7 +87,7 @@
 
   .banner_heading {
     font-size: 40px;
-    margin-bottom: 36px;
+    margin-bottom: 25px;
   }
 
   .banner_description {
@@ -96,7 +96,7 @@
   }
 
   .banner_container {
-    max-width: 992px;
+    max-width: 1110px;
   }
 }
 
@@ -117,12 +117,12 @@
 
 @media (min-width: 1280px) and (max-width: 1460px) {
   .banner_heading {
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 29px;
   }
 
   .banner_description {
-    font-size: 47px;
-    line-height: 67px;
+    font-size: 45px;
+    line-height: 65px;
   }
 }

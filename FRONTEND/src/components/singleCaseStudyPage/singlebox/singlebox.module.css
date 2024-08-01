@@ -230,6 +230,10 @@
 }
 
 @media (min-width: 1280px) {
+  .objective_inner {
+    padding-top: 108px;
+  }
+
   .box_tittle {
     font-size: 45px;
   }

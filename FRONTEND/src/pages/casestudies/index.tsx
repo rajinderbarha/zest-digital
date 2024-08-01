@@ -17,7 +17,7 @@ function Casestudy({ Casestudy }: { Casestudy: CasestudyType[] }) {
       <meta name="description" property="og:description" content="350+ organisations served and over 10+ years of rock solid results. View our case studies here." />
     </Head>
 
-    <div className="Body_padding sm-max:mb-[104px]">
+    <div className="Body_padding sm-max:mb-[104px] 2xl:mb-[271px] xl:mb-[200px]">
       <Casestudyintro data={Casestudy[0].hero} />
       {caseStudy.map((item: any, index: number) => {
         let position = "";

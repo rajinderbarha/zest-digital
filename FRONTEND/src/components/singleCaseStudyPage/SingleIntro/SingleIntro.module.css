@@ -404,7 +404,8 @@
   }
 
   .team_heading {
-    font-size: 45px;
+    font-size: 55px;
+    margin-bottom: 102px;
   }
 
   .team_person_title {
@@ -417,6 +418,16 @@
 
   .box_text {
     margin-top: 262px;
+    margin-bottom: 277px;
+  }
+
+  .About_team {
+    margin-top: 132px;
+    padding-bottom: 352px;
+  }
+
+  .cards_div {
+    margin-top: -157px;
   }
 
   .box_heading {

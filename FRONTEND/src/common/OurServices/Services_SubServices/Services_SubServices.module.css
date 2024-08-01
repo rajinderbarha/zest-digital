@@ -183,6 +183,7 @@
     padding-top: 48px;
     padding-left: 38px;
     padding-right: 38px;
+    padding-bottom: 90px;
   }
 
   .service_heading {
@@ -207,7 +208,7 @@
 @media (min-width: 1024px) {
   .service_box {
     padding-top: 90px;
-    padding-bottom: 130px;
+    padding-bottom: 145px;
   }
 
   .service_heading {
@@ -231,7 +232,7 @@
 @media (min-width: 1280px) {
   .service_box {
     padding-top: 114px;
-    padding-bottom: 165px;
+    padding-bottom: 199px;
   }
 
   .service_heading {
