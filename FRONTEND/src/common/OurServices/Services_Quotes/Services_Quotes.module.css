@@ -17,13 +17,13 @@
   }
 
   .quote_heading {
-    max-width: 627px;
+    max-width: 681px;
   }
 }
 
 .services_quotes {
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .quote_heading {
@@ -33,7 +33,7 @@
 }
 
 .below_line {
-  padding-top: 3px;
+  padding-top: 5px;
   font-size: 12px;
 }
 

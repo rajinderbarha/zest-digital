@@ -173,7 +173,7 @@
   }
 
   .single_container {
-    margin-top: -42px;
+    margin-top: -58px;
   }
 }
 
@@ -188,7 +188,7 @@
 
 .text_div {
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .box_heading {
@@ -278,6 +278,10 @@
 }
 
 @media (min-width: 540px) and (max-width: 830px) {
+  .single_container {
+    margin-top: -100px;
+  }
+
   .top_images_div {
     padding-left: 40px;
     padding-right: 40px;
@@ -289,6 +293,7 @@
 
   .image_title {
     font-size: 20px;
+    margin-top: 16px;
   }
 
   .text_div {
@@ -297,8 +302,10 @@
   }
 
   .box_heading {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 38px;
+    padding-right: 38px;
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
     font-size: 26px;
     line-height: 34px;
   }

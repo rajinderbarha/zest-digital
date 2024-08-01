@@ -17,11 +17,12 @@ function Casestudy({ Casestudy }: { Casestudy: CasestudyType[] }) {
       <meta name="description" property="og:description" content="350+ organisations served and over 10+ years of rock solid results. View our case studies here." />
     </Head>
 
-    <div className="Body_padding">
+    <div className="Body_padding sm-max:mb-[104px]">
       <Casestudyintro data={Casestudy[0].hero} />
       {caseStudy.map((item: any, index: number) => {
         let position = "";
         let dynamicClass = "";
+        let singleClass = "";
 
         if (index === 2 || index === 3) {
           dynamicClass = "special-instrumental";
@@ -33,10 +34,17 @@ function Casestudy({ Casestudy }: { Casestudy: CasestudyType[] }) {
           dynamicClass = "project-window";
         }
 
+        if (index === 2) {
+          singleClass = "search-visits";
+        }
+        if (index === 3) {
+          singleClass = "coversion-section";
+        }
+
         return (
           <div key={index} className={position}>
             <Gross_profit data={item} />
-            <Instrumental data={item} dynamicClass={dynamicClass} />
+            <Instrumental data={item} dynamicClass={dynamicClass} singleClass={singleClass} />
           </div>
         );
       })}

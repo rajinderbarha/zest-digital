@@ -2,7 +2,7 @@ import classes from "./Sign_up.module.css";
 import Link from "next/link";
 function Sign_up() {
 
-  return <div className="main_padding sm:mt-0 mt-[18px]">
+  return <div className="main_padding sm:mt-0 mt-[118px]">
     <div className={`${classes.Sign_up} max-w-[1510px] mx-auto border border-color-1 shadow-dark-pink-right   rounded-[15px] md:rounded-[20px] lg:rounded-30px `} data-aos="fade-up">
       <div className="detail text-center">
         <h2 className={`${classes.form_heading} font-mono font-semibold `}>

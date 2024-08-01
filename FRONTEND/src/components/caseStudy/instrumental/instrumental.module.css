@@ -335,3 +335,13 @@
     height: 477px;
   }
 }
+
+.search_visits_text {
+  max-width: 1329px;
+  margin: auto;
+}
+
+.coversion_section {
+  max-width: 1409px;
+  margin-left: auto;
+}

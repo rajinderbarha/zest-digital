@@ -51,7 +51,7 @@ const Contact = ({ data }: { data: ContactType }) => {
               <h2 className={`${classes.contact_heading} font-mono font-semibold `}>
                 {data?.description}
               </h2>
-              <div className="icons flex md:mt-10 sm:mt-[30px] mt-[15px] gap-[18px]">
+              <div className="icons flex md:mt-10 min-tb:max-tb:mt-[24px] sm:mt-[30px] mt-[20px] gap-[18px]">
                 <div className="group">
                   <Link href={data.social[0]?.socialLink}>
                     <Image
@@ -108,13 +108,13 @@ const Contact = ({ data }: { data: ContactType }) => {
                 </div>
               </div>
             </div>
-            <div className="ms-auto  hand_img sm:absolute right-0 lg:-bottom-[60%] md:-bottom-[50%] -bottom-[20%] md:max-w-max " data-aos="fade-up">
+            <div className="ms-auto  hand_img sm:absolute right-0 lg:-bottom-[60%] md:-bottom-[50%] -bottom-[20%] md:max-w-max min-tb:max-tb:mt-[15px]" data-aos="fade-up">
               <Image
                 src={urlFor(data?.image).url()}
                 width={270}
                 height={214}
                 alt=""
-                className={`${classes.hand_img} min-tb:max-tb:max-w-[158px] md:me-[48px] lg:me-0 xl:max-w-[270px] lg:max-w-[210px] md:max-w-[175px] sm:max-w-[150px] max-w-[130px] ms-auto`}
+                className={`${classes.hand_img} min-tb:max-tb:max-w-[158px] min-tb:max-tb:me-[44px] md:me-[48px] lg:me-0 xl:max-w-[270px] lg:max-w-[210px] md:max-w-[175px] sm:max-w-[150px] max-w-[130px] ms-auto`}
               />
             </div>
           </div>

@@ -246,6 +246,7 @@ function Resources({ resources }: any) {
   }
 
   const handleNextStep = (nextStep: number) => {
+
     if (nextStep > step) {
       setProgressValue(progressValues[nextStep]);
       setPreviousProgressValue(progressValues[nextStep - 1]);
@@ -292,7 +293,7 @@ function Resources({ resources }: any) {
               handleSubmit={handleSubmit}
               setFormData={setFormData}
               progressValue={progressValue}
-              previousProgressValue={previousProgressValue}
+              priviousProgressValue={previousProgressValue}
             />
           )}
           {step === 2 && (
@@ -302,7 +303,7 @@ function Resources({ resources }: any) {
               handleSubmit={handleSubmit}
               setFormData={setFormData}
               progressValue={progressValue}
-              previousProgressValue={previousProgressValue}
+              priviousProgressValue={previousProgressValue}
             />
           )}
           {step === 3 && (
@@ -312,7 +313,7 @@ function Resources({ resources }: any) {
               handleSubmit={handleSubmit}
               setFormData={setFormData}
               progressValue={progressValue}
-              previousProgressValue={previousProgressValue}
+              priviousProgressValue={previousProgressValue}
             />
           )}
           {step === 4 && (
@@ -323,7 +324,7 @@ function Resources({ resources }: any) {
               setFormData={setFormData}
               formData={formData}
               progressValue={progressValue}
-              previousProgressValue={previousProgressValue}
+              priviousProgressValue={previousProgressValue}
             />
           )}
           {step === 5 && (
@@ -335,7 +336,7 @@ function Resources({ resources }: any) {
               sendDataToGoogleSheets={sendDataToGoogleSheets}
               downloadUrls={[selectedFileUrl]}
               progressValue={progressValue}
-              previousProgressValue={previousProgressValue}
+              priviousProgressValue={previousProgressValue}
             />
           )}
         </>

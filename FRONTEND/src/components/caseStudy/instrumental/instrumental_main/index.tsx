@@ -3,7 +3,7 @@ import Image from "next/image";
 import { urlFor } from "../../../../../lib/sanity.client";
 import { Gross_profitType } from "../../../../../lib/interface";
 
-function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicClass?: string }) {
+function Instrumental({ data, dynamicClass, singleClass }: { data: Gross_profitType, dynamicClass?: string, singleClass?: string }) {
 
   return <div className={`${classes.Instrumental} main_padding overflow-x-hidden`}>
     <div className="max-w-[1520px] mx-auto w-full">
@@ -114,7 +114,8 @@ function Instrumental({ data, dynamicClass }: { data: Gross_profitType, dynamicC
             {data.imageDesc ? data.imageDesc : ""}
           </h3>
         </div>
-        <div className={` ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `sm:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 sm:order-2`}  ${dynamicClass === "conversations" && `${classes.conversations_text} md:col-span-6 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 md:order-2`}  ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 ms-auto lg:pe-[50px] md:pe-[30px] max-w-[891px] order-1 md:order-1`} md:mt-0  `} data-aos={`${dynamicClass !== "project-window" && dynamicClass !== "special-instrumental" ? "fade-left" : "fade-right"}`}>
+        <div className={` ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && dynamicClass !== "project-window" && `sm:col-span-8 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 sm:order-2`}  ${dynamicClass === "conversations" && `${classes.conversations_text} md:col-span-6 ms-auto lg:ps-[50px] md:ps-[30px] max-w-[891px] order-1 md:order-2`}  ${dynamicClass === "project-window" && `${classes.project_window} md:col-span-6 ms-auto lg:pe-[50px] md:pe-[30px] max-w-[891px] order-1 md:order-1`} ${singleClass === "search-visits" && `${classes.search_visits_text}`} ${singleClass === "coversion-section" && `${classes.coversion_section}`} md:mt-0  `}
+          data-aos={`${dynamicClass !== "project-window" && dynamicClass !== "special-instrumental" ? "fade-left" : "fade-right"}`}>
           <h2 className={`${classes.text_heading} font-mono italic font-semibold text-color-1  ${dynamicClass !== "special-instrumental" && dynamicClass !== "conversations" && `w-max-[909px]`}   ${dynamicClass === "conversations" || dynamicClass === "project-window" && `w-max-[819px]`}`}>
             {data.heading}
           </h2>

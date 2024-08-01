@@ -24,12 +24,12 @@ function ScheduleCall({ data }: { data: Schedule_a_call }) {
   }, []);
 
   return (
-    <div className={`${classes.ScheduleCall} main_padding xl:mb-[132px] lg:mb-[110px] md:mb-[80px] sm:mb-[60px] mb-[50px]`}>
+    <div className={`${classes.ScheduleCall} main_padding xl:mb-[132px] lg:mb-[110px] md:mb-[80px] min-tb:max-tb:mb-[73px] sm:mb-[60px] mb-[60px]`}>
       <div className="main_container" data-aos="fade-up">
         <h2 className={`${classes.call_heading} font-mono xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] text-[22px] font-semibold mt-[32px]`}>
           {data.heading}
         </h2>
-        <p className={`${classes.call_desc} font-mono text-[12px] min-tb:max-tb:text-[12px] md:text-base font-normal md:mt-[14px] sm:mt-[10px] mt-[7px]`}>
+        <p className={`${classes.call_desc} font-mono text-[12px] min-tb:max-tb:text-[12px] min-tb:max-tb:mt-[8px] md:text-base font-normal md:mt-[14px] sm:mt-[10px] mt-[7px]`}>
           {data.description}
         </p>
         <div className={`${classes.bg_image} flex items-center max-tb:flex-col md:flex-row rounded-[15px] md:rounded-[20px] lg:rounded-30px px-[40px]`} data-aos="fade-up">
@@ -50,7 +50,7 @@ function ScheduleCall({ data }: { data: Schedule_a_call }) {
           <div className={`calender w-full max-h-[560px] max-w-[560px] bg-white max-tb:mt-[100px] md:mt-0 xl:ml-[179px] lg:ml-[145px] md:ml-[100px] max-tb:ml-0`}>
             <div className="w-full h-[560px]"></div>
           </div> */}
-     
+
           <div className={`meetings-iframe-container z-[111] ${classes.meeting_iframe} `} data-src="https://growth.zestdigital.com/meetings/louis-lobban?embed=true"></div>
 
         </div>

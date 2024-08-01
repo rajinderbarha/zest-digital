@@ -13,7 +13,7 @@
 //     }
 
 //         const [selected, setSelected] = useState<string | null>(null);
-    
+
 //         const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 //             const { id } = event.target;
 //             setSelected(selected === id ? null : id);
@@ -69,22 +69,22 @@
 //                 userEmail: userEmail
 //             }));
 //             sendDataToGoogleSheets();
-    
+
 //             // Save form submission state to sessionStorage and cookies
 //             sessionStorage.setItem('formSubmitted', 'true');
 //             document.cookie = "formSubmitted=true; path=/";
-    
+
 //             const downloadUrl = downloadUrls[0];
 //             console.log(downloadUrl);
-            
-            
+
+
 //             if (downloadUrl) {
 //                 // Extract the original file name from the URL
 //                 const fileName = downloadUrl.split('/').pop();
-    
+
 //                 // Check if the browser is on a mobile device
 //                 const isMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-    
+
 //                 if (isMobile) {
 //                     // Mobile specific download handling
 //                     fetch(downloadUrl)
@@ -98,7 +98,7 @@
 //                             link.click();
 //                             document.body.removeChild(link);
 //                             URL.revokeObjectURL(url);
-    
+
 //                             setTimeout(() => {
 //                                 router.replace("/thanks_you");
 //                             }, 800);
@@ -109,11 +109,11 @@
 //                     const link = document.createElement('a');
 //                     link.href = downloadUrl;
 //                     link.setAttribute('download', fileName);
-                    
+
 //                     document.body.appendChild(link);
 //                     link.click();
 //                     document.body.removeChild(link);
-    
+
 //                     setTimeout(() => {
 //                         router.replace("/thanks_you");
 //                     }, 800);
@@ -123,8 +123,8 @@
 //             }
 //         }
 //     }
-    
-    
+
+
 
 
 
@@ -184,12 +184,12 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
         setUserEmail(e.target.value);
     }
 
-        const [selected, setSelected] = useState<string | null>(null);
-    
-        const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-            const { id } = event.target;
-            setSelected(selected === id ? null : id);
-        };
+    const [selected, setSelected] = useState<string | null>(null);
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const { id } = event.target;
+        setSelected(selected === id ? null : id);
+    };
 
     const handleNextClick = () => {
         if (userEmail === "") {
@@ -200,18 +200,18 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
                 userEmail: userEmail
             }));
             sendDataToGoogleSheets();
-    
+
             // Save form submission state to sessionStorage and cookies
             sessionStorage.setItem('formSubmitted', 'true');
             document.cookie = "formSubmitted=true; path=/";
-    
+
             const downloadUrl = downloadUrls[0];
             console.log(downloadUrl);
-    
+
             if (downloadUrl) {
                 // Open the file in the same tab
                 window.location.href = downloadUrl;
-    
+
                 // Redirect to thank you page after a short delay
                 setTimeout(() => {
                     router.replace("/thanks_you");
@@ -226,7 +226,7 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
         <div className="pe-[6px] pb-[6px]">
             <div className="Resources_Calculater_Step_5 popup_conatiner md:pt-[29px] sm:pt-[20px] pt-[12px] lg:pb-[66px] md:pb-[55px] sm:pb-[40px] pb-[25px] xl:px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] px-[10px] relative bg-white">
                 <div className="progrees_bar xl:mb-[123px] lg:mb-[100px] md:mb-[80px] sm:mb-[70px] mb-[60px] ">
-                    <ProgressBar value={progressValue} from={priviousProgressValue}/>
+                    <ProgressBar value={progressValue} from={priviousProgressValue} />
                 </div>
                 <h2 className="font-mono font-semibold xl:text-45px lg:text-40px md:text-35px sm:text-[28px] text-[20px] text-center xl:mb-[33px] lg:mb-[28px] md:mb-[20px] sm:mb-[15px] mb-[10px]">Enter your e-mail address</h2>
                 <div className="email mx-auto w-full xl:max-w-[680px] lg:max-w-[623px] md:max-w-[563px] sm:max-w-[488px] max-w-[362px] sm:px-10">
@@ -234,7 +234,7 @@ function Resources_Calculater_Step_5({ setStep, setFormData, sendDataToGoogleShe
                     <div className="md:mb-[110px] sm:mb-[80px] mb-[60px]">
                         <p className="text-[15px] sm:text-base font-mono font-semibold md:mb-[10px] mb-[7px]">Communication preferences</p>
                         <div className="">
-                            <input type="checkbox" name="confirm" id="confirm1" checked={selected === 'confirm1'} onChange={handleChange}/>
+                            <input type="checkbox" name="confirm" id="confirm1" checked={selected === 'confirm1'} onChange={handleChange} />
                             <label htmlFor="confirm1" className='ml-[8px] font-lato sm:text-lg text-base font-normal'>Yes, please send me more tools and exclusive bonuses</label>
                         </div>
                         <div className="">
