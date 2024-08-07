@@ -320,3 +320,158 @@
     max-width: 230px;
   }
 }
+
+
+/* facebook icon start */
+
+.facebook_cls_1 {
+  fill: #191615;
+  transition: all 0.2s ease;
+}
+
+.facebook_cls_1,
+.facebook_cls_2 {
+  stroke: #191615;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  transition: all 0.2s ease;
+}
+
+.facebook_cls_3 {
+  stroke-width: 0px;
+  transition: all 0.2s ease;
+}
+
+.facebook_cls_3,
+.facebook_cls_2 {
+  fill: #fff;
+  transition: all 0.2s ease;
+}
+
+.social_icon_img_facebook:hover .facebook_cls_1 {
+  fill: #fff;
+  transition: all 0.2s ease;
+}
+
+
+.social_icon_img_facebook:hover .facebook_cls_3,
+.social_icon_img_facebook:hover .facebook_cls_2 {
+  fill: #191615;
+  transition: all 0.2s ease;
+}
+
+/* facebook icon end*/
+
+
+
+
+/* linkedin icon start */
+.linkedin_cls_1 {
+  stroke: #1a1716;
+  transition: all 0.2s ease;
+}
+
+.linkedin_cls_1,
+.linkedin_cls_2,
+.linkedin_cls_3 {
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  transition: all 0.2s ease;
+}
+
+.linkedin_cls_1,
+.linkedin_cls_4,
+.linkedin_cls_3 {
+  fill: #fff;
+  transition: all 0.2s ease;
+}
+
+
+
+.linkedin_cls_2 {
+  fill: #191615;
+  transition: all 0.2s ease;
+}
+
+.linkedin_cls_2,
+.linkedin_cls_3 {
+  stroke: #191615;
+  transition: all 0.2s ease;
+}
+
+.linkedin_cls_4 {
+  stroke-width: 0px;
+  transition: all 0.2s ease;
+}
+
+.social_icon_img_linkedin:hover .linkedin_cls_1,
+.social_icon_img_linkedin:hover .linkedin_cls_4,
+.social_icon_img_linkedin:hover .linkedin_cls_3 {
+  fill: #191615;
+  transition: all 0.2s ease;
+}
+
+.social_icon_img_linkedin:hover .linkedin_cls_2 {
+  fill: #fff;
+  transition: all 0.2s ease;
+}
+
+/* linkedin icon end */
+
+
+
+
+/* instagram icon start*/
+.insta_cls_1 {
+  fill: #191615;
+  transition: all 0.2s ease;
+}
+
+.insta_cls_1,
+.insta_cls_2,
+.insta_cls_3 {
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  transition: all 0.2s ease;
+}
+
+.insta_cls_1,
+.insta_cls_3 {
+  stroke: #191615;
+  transition: all 0.2s ease;
+}
+
+.insta_cls_2 {
+  fill: #fff;
+  stroke: #1a1716;
+  transition: all 0.2s ease;
+}
+
+.insta_cls_4 {
+  stroke-width: 0px;
+  transition: all 0.2s ease;
+}
+
+.insta_cls_4,
+.insta_cls_3 {
+  fill: #fff;
+  transition: all 0.2s ease;
+}
+
+.social_icon_img_insta:hover .insta_cls_1 {
+  fill: #fff;
+  transition: all 0.2s ease;
+}
+
+.social_icon_img_insta:hover .insta_cls_2 {
+  fill: #1a1716;
+  transition: all 0.2s ease;
+}
+
+.social_icon_img_insta:hover .insta_cls_4,
+.social_icon_img_insta:hover .insta_cls_3 {
+  fill: #191615;
+  transition: all 0.2s ease;
+}
+
+/* instagram icon end*/

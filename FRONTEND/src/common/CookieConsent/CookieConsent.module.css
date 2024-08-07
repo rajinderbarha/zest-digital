@@ -1,0 +1,103 @@
+/* CookieConsentStyles.module.css */
+/* .cookieConsent {
+    background: #2B373B;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.acceptButton {
+    color: #4e503b;
+    font-size: 13px;
+    background: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.acceptButton:hover {
+    background: #d4d4d4;
+}
+
+.declineButton {
+    color: #fff;
+    background: #6e757c;
+    font-size: 13px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.declineButton:hover {
+    background: #565d63;
+} */
+
+.cookieConsent {
+    max-width: 485px !important;
+    padding: 40px 42px 35px 42px !important;
+    flex-direction: column !important;
+    background-color: white !important;
+    box-shadow: 0px 3px 6px #00000029 !important;
+    border: 1px solid #191615 !important;
+
+    border-radius: 15px !important;
+    left: 7% !important;
+    bottom: 4% !important;
+
+}
+
+.cookieConsent div:first-child {
+    margin: 0 !important;
+    flex: 0 !important;
+    display: block !important;
+    color: #191615 !important;
+    font-size: 16px !important;
+    line-height: 25px !important;
+    font-family: Lato_font !important;
+}
+
+.acceptButton {
+    margin: 0 !important;
+    margin-top: 20px !important;
+    font-family: IBMPlexMono !important;
+    padding: 10px 24px !important;
+    border-radius: 50px !important;
+    background-color: #191615 !important;
+    color: white !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+}
+
+@media only screen and (max-width:600px) {
+    .cookieConsent {
+        left: 0 !important;
+        bottom: 5% !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        width: fit-content !important;
+        padding: 20px 22px 16px 22px !important;
+    }
+
+    .cookieConsent div:first-child {
+        font-size: 12px !important;
+        line-height: 15px !important;
+        max-width: 300px !important;
+    }
+
+    .acceptButton {
+        margin-top: 15px !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
+        padding: 8px 15px !important;
+    }
+
+}
