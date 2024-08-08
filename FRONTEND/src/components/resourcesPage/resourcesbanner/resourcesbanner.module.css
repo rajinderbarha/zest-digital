@@ -22,9 +22,9 @@
 
 @media only screen and (min-width: 1024px) {
   .banner_text {
-    font-size: 50px;
-    line-height: 70px;
-    max-width: 952px;
+    font-size: 44px;
+    line-height: 59px;
+    max-width: 795px;
   }
 }
 
@@ -41,5 +41,13 @@
     font-size: 55px;
     line-height: 75px;
     max-width: 1050px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .banner_text {
+    font-size: 46px;
+    line-height: 65px;
+    max-width: 845px;
   }
 }

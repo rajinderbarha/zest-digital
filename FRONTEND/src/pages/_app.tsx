@@ -4,6 +4,8 @@ import Layout from "../layout/index";
 import { getFooter, getHeader } from "../../lib/sanity.query";
 import { PopupProvider } from "@/context";
 import { FooterType, HeaderType } from "../../lib/interface";
+import CookieConsent from "@/common/CookieConsent";
+import CookieConsentComponent from "@/common/CookieConsent";
 
 function MyApp({
   Component,
@@ -15,6 +17,7 @@ function MyApp({
     <PopupProvider>
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
+        <CookieConsentComponent />
       </Layout>
     </PopupProvider>
   )
