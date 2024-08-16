@@ -6,9 +6,8 @@ import { PopupProvider } from "@/context";
 import { FooterType, HeaderType } from "../../lib/interface";
 import CookieConsent from "@/common/CookieConsent";
 import CookieConsentComponent from "@/common/CookieConsent";
+import { useEffect } from "react";
 // import ChatBox from "@/common/ChatBox";
-import dynamic from "next/dynamic";
-const ChatBox = dynamic(() => import('@/common/ChatBox'), { ssr: false });
 
 function MyApp({
   Component,
@@ -16,12 +15,41 @@ function MyApp({
   headerdata,
   footerdata,
 }: AppProps & { headerdata: HeaderType[]; footerdata: FooterType[] }) {
+  useEffect(() => {
+    // Remove the inlineEmbedSelector to allow the chat to appear as a floating icon
+    (window as any).hsConversationsSettings = {
+      loadImmediately: true,
+      enableWidgetCookieBanner: true,
+      disableAttachment: true,
+    };
+
+    // Load the HubSpot script on the client-side
+    const script = document.createElement("script");
+    script.src = "//js-eu1.hs-scripts.com/26290409.js"; // Replace XXXXXX with your HubSpot script ID
+    script.id = "hs-script-loader";
+    script.async = true;
+
+    // Check if the HubSpot script is already loaded
+    const existingScript = document.getElementById("hs-script-loader");
+    if (!existingScript) {
+      // Append the script to the body if it's not already there
+      document.body.appendChild(script);
+    }
+
+    // Clean up the script when the component unmounts
+    return () => {
+      const scriptElement = document.getElementById("hs-script-loader");
+      if (scriptElement) {
+        scriptElement.remove();
+      }
+    };
+  }, []);
   return (
     <PopupProvider>
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
         <CookieConsentComponent />
-        <ChatBox />
+        {/* <ChatBox /> */}
       </Layout>
     </PopupProvider>
   )
