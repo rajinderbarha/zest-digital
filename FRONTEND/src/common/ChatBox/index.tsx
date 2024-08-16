@@ -32,6 +32,21 @@ import { useEffect } from 'react';
 import Script from 'next/script';
 
 const ChatBox: React.FC = () => {
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            // Verify if the script exists or not, add if it's not present
+            if (!document.getElementById('hs-script-loader')) {
+                const script = document.createElement('script');
+                script.src = '//js-eu1.hs-scripts.com/26290409.js';
+                script.type = 'text/javascript';
+                script.id = 'hs-script-loader';
+                script.async = true;
+                script.defer = true;
+                document.body.appendChild(script);
+            }
+        }
+    }, []);
+
     return (
         <>
             <Script
@@ -44,3 +59,4 @@ const ChatBox: React.FC = () => {
 };
 
 export default ChatBox;
+
