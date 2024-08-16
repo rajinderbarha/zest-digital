@@ -6,7 +6,9 @@ import { PopupProvider } from "@/context";
 import { FooterType, HeaderType } from "../../lib/interface";
 import CookieConsent from "@/common/CookieConsent";
 import CookieConsentComponent from "@/common/CookieConsent";
-import ChatBox from "@/common/ChatBox";
+// import ChatBox from "@/common/ChatBox";
+import dynamic from "next/dynamic";
+const ChatBox = dynamic(() => import('@/common/ChatBox'), { ssr: false });
 
 function MyApp({
   Component,
@@ -19,7 +21,7 @@ function MyApp({
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
         <CookieConsentComponent />
-        {/* <ChatBox /> */}
+        <ChatBox />
       </Layout>
     </PopupProvider>
   )
