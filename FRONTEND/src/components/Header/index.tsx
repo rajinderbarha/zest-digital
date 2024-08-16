@@ -5,20 +5,20 @@ import Link from "next/link";
 import { HeaderType } from "../../../lib/interface";
 
 import classes from "./Header.module.css";
-import barsIcon from "../../assets/images/barsIcon.svg";
+
 import { useRouter } from 'next/router';
 import Sub_Logo from '../../assets/images/ManuLogo.svg'
-import closeIcon from '../../assets/images/closeIcon.svg'
+
 
 
 const Header = ({ data }: { data: HeaderType[] }) => {
   const router = useRouter();
-  const [iconSrc, setIconSrc] = useState(barsIcon);
+
 
   const closeMenu = () => {
     setIsMenuOpen(false);
     document.body.style.overflow = "";
-    setIconSrc(barsIcon);
+
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,10 +26,10 @@ const Header = ({ data }: { data: HeaderType[] }) => {
     setIsMenuOpen(!isMenuOpen);
     if (!isMenuOpen) {
       document.body.style.overflow = "hidden";
-      setIconSrc(closeIcon);
+
     } else {
       document.body.style.overflow = "";
-      setIconSrc(barsIcon);
+
     }
   };
 
@@ -109,8 +109,11 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                   {item.button.navName}
                 </button>
               </Link>
-              <div className={classes.menuIcon} onClick={toggleMenu}>
-                <Image src={iconSrc} alt="Logo" />
+
+              <div className={`${classes.navIcon} ${isMenuOpen ? classes.open : ''}`} onClick={toggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
             <div
@@ -132,7 +135,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
                 ))}
 
                 <div className={`${classes.navbar_sublogo} ${isMenuOpen ? `z-[1]` : 'z-[-1000]'}`}>
-                  <Image src={Sub_Logo} className="md:w-[200px] sm:w-[150px] w-[130px] md:ml-[42px] sm:ml-[15px] ml-[0px] mt-[150px]" alt="Logo_img" />
+                  <Image src={Sub_Logo} className="md:w-[200px] sm:w-[150px] w-[130px] md:ml-[42px] sm:ml-[15px] ml-[0px] mt-[150px] rotate" alt="Logo_img" />
                 </div>
               </div>
             </div>
