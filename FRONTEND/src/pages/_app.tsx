@@ -19,7 +19,7 @@ function MyApp({
       <Layout headerdata={headerdata} footerdata={footerdata}>
         <Component {...pageProps} />
         <CookieConsentComponent />
-        <ChatBox />
+        {/* <ChatBox /> */}
       </Layout>
     </PopupProvider>
   )
