@@ -11,7 +11,7 @@ const ChatBox: React.FC = () => {
         script.defer = true;
 
         // Append the script to the document head
-        document.head.appendChild(script);
+        document.body.appendChild(script);
 
         // Cleanup function to remove the script if the component unmounts
         // return () => {
