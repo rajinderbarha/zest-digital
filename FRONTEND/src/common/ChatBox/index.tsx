@@ -14,12 +14,12 @@ const ChatBox: React.FC = () => {
         document.head.appendChild(script);
 
         // Cleanup function to remove the script if the component unmounts
-        return () => {
-            const existingScript = document.getElementById('hs-script-loader');
-            if (existingScript) {
-                document.head.removeChild(existingScript);
-            }
-        };
+        // return () => {
+        //     const existingScript = document.getElementById('hs-script-loader');
+        //     if (existingScript) {
+        //         document.head.removeChild(existingScript);
+        //     }
+        // };
     }, []); // Empty dependency array ensures this effect runs once on mount and once on unmount
 
     return null; // This component doesn't render anything
