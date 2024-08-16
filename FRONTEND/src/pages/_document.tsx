@@ -5,12 +5,12 @@ export default function Document() {
     <Html lang="en">
       {/* <Head /> */}
       <Head>
-        <script
+        {/* <script
           id="hs-script-loader"
           async
           defer
           src="//js-eu1.hs-scripts.com/26290409.js"
-        ></script>
+        ></script> */}
       </Head>
 
       <body>
