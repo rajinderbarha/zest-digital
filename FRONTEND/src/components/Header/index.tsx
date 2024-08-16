@@ -9,7 +9,11 @@ import barsIcon from "../../assets/images/barsIcon.svg";
 import { useRouter } from 'next/router';
 import Sub_Logo from '../../assets/images/ManuLogo.svg'
 import closeIcon from '../../assets/images/closeIcon.svg'
+import dynamic from "next/dynamic";
+// import ChatBox from "@/common/ChatBox";
 
+
+const ChatBox = dynamic(() => import('@/common/ChatBox'), { ssr: false });
 const Header = ({ data }: { data: HeaderType[] }) => {
   const router = useRouter();
   const [iconSrc, setIconSrc] = useState(barsIcon);
@@ -140,6 +144,7 @@ const Header = ({ data }: { data: HeaderType[] }) => {
         </div>
       );
     })}
+    <ChatBox />
   </div>
 };
 

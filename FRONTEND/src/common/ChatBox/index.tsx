@@ -30,7 +30,7 @@
 
 import { useEffect } from 'react';
 
-const useHubSpotScript = () => {
+const ChatBox: React.FC = () => {
     useEffect(() => {
         if (typeof window !== 'undefined' && !document.getElementById('hs-script-loader')) {
             const script = document.createElement('script');
@@ -42,12 +42,9 @@ const useHubSpotScript = () => {
             document.body.appendChild(script);
         }
     }, []);
-};
 
-const ChatBox: React.FC = () => {
-    useHubSpotScript();
-
-    return null;
+    return null; // This component doesn't render anything
 };
 
 export default ChatBox;
+
