@@ -1,7 +1,4 @@
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import arrow from "../../assets/images/arrow.svg";
-import hover_arrow from "../../assets/images/hover_arrow.svg";
 import Growth_engine from "@/common/Growth_engine";
 import classes from "./growthcard.module.css";
 import { urlFor } from "../../../lib/sanity.client";
@@ -76,10 +73,16 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
                         {heading} {belowHeading}
                       </div>
                       <Link href={`/casestudies/${slug}`}>
-                        <div className="xl:w-[60px] md:w-[55px]  w-[40px] group min-tb:max-tb:w-[55px]" >
+                        <div className="xl:w-[60px] md:w-[55px]  w-[40px] group min-tb:max-tb:w-[55px] arrow_div" >
 
-                          <Image src={arrow} alt="" className="group-hover:hidden" loading="eager" />
-                          <Image src={hover_arrow} alt="" className="text-[10px] group-hover:block hidden" loading="eager" />
+                          <svg id="Component_11_1" data-name="Component 11 – 1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" className="xl:w-[60px] md:w-[55px]  w-[40px] min-tb:max-tb:w-[55px]">
+                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="30" cy="30" r="30" fill="#e43fa8" />
+                            <g id="Icon_feather-arrow-down-right" data-name="Icon feather-arrow-down-right" transform="translate(19 19)">
+                              <path id="Path_4" data-name="Path 4" d="M10.5,32.5l22-22" transform="translate(-10.5 -10.5)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" />
+                              <path id="Path_5" data-name="Path 5" d="M32.5,32.5v-22h-22" transform="translate(-10.5 -10.5)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" />
+                            </g>
+                          </svg>
+
                         </div>
                       </Link>
                     </div>

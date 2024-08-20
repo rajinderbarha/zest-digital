@@ -302,13 +302,39 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
   transform: rotate(-45deg);
 }
 
+.arrow_div svg circle,
+.arrow_div svg g path,
+.arrow_div svg {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.arrow_div:active svg {
+  transform: translateX(0px) scale(1.05) translateY(-5px) rotate(45deg);
+  transition: all 0.2s ease;
+}
+
+.arrow_div:active svg circle {
+  fill: #000;
+  transition: all 0.2s ease;
+}
+
+.arrow_div:active svg g path {
+  stroke: #fff;
+  transition: all 0.2s ease;
+
+}
+
 @media (hover: hover) and (pointer: fine) {
 
   .nomalbtn_hover,
   .arrowbtn_hover,
   .arrowbtn_hover span,
   .right_arrow_hover::after,
-  .left_arrow_hover::before {
+  .left_arrow_hover::before,
+  .arrow_div svg circle,
+  .arrow_div svg g path,
+  .arrow_div svg {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
@@ -332,6 +358,22 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
   .left_arrow_hover:hover::before {
     right: 5px;
     transition: all 0.2s ease;
+  }
+
+  .arrow_div:hover svg {
+    transform: translateX(0px) scale(1.05) translateY(-5px) rotate(45deg);
+    transition: all 0.2s ease;
+  }
+
+  .arrow_div:hover svg circle {
+    fill: #000;
+    transition: all 0.2s ease;
+  }
+
+  .arrow_div:hover svg g path {
+    stroke: #fff;
+    transition: all 0.2s ease;
+
   }
 }
 

@@ -17,7 +17,7 @@ const ChatBox: React.FC = () => {
             script.async = true;
 
             script.onload = () => {
-                // console.log("HubSpot script loaded successfully.");
+                console.log("HubSpot script loaded successfully.");
             };
 
             script.onerror = () => {
