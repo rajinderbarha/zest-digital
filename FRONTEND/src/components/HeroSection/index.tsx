@@ -37,7 +37,7 @@ const HeroSection = ({ HeroSecData }: HomepageHeroSec) => {
             <div className="flex gap-[20px] md:flex-row lg:flex-row mt-0 flex-col sm:flex-row">
 
               <Link href={viewSolBtnLink} className="flex">
-                <button className="nomalbtn_hover bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white hover:border-color-1">
+                <button className="nomalbtn_hover bg-white text-color-1 rounded-full hover:bg-color-1 hover:text-white border border-white">
                   {viewSolBtnName}
                 </button>
               </Link>
