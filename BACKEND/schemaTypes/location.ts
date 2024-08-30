@@ -7,10 +7,16 @@ export const LocationObj = defineType({
 
   fields: [
     {
+      name: 'title',
+      title: 'City Name',
+      type: 'string',
+    },
+    {
       name: 'latitude',
       title: 'Latitude',
       type: 'number', 
     },
+
     {
       name: 'longitude',
       title: 'Longitude',

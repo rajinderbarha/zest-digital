@@ -5,7 +5,9 @@ import { PortableText } from "next-sanity";
 import Image from "next/image";
 
 const Services_details_happy_customer = ({ Services_details, Slug }: { Services_details: HappyCustomer[], Slug: string }) => {
-  const isGrowthPage = Slug === "growth-marketing-services";
+  // const isGrowthPage = Slug === "growth-marketing-services";
+  const isGrowthPage = Slug.includes("growth-marketing-services");
+
 
   return <div className="main_padding overflow-x-hidden">
     <div className={`${classes.objective} main_container `}>
