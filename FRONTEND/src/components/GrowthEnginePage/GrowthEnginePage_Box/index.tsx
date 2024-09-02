@@ -4,15 +4,17 @@ import Box_Title from "../Box_Title";
 import Image from "next/image";
 import Link from "next/link";
 import { urlFor } from "../../../../lib/sanity.client";
+import { useRouter } from "next/router";
 
 const GrowthEnginePage_Box = ({ data }: any) => {
+  const router = useRouter()
 
   return <div className={` mt-[66px] sm-max:mt-[58px] md:mb-36 2xl:mb-[200px] sm:mb-[130px] mb-[100px] min-tb:max-tb:mb-[161px] main_padding`} >
     <div className="main_container overflow-x-clip">
       <div className={`${classes.growth_box} lg:rounded-30px md:rounded-[20px] rounded-[15px]   main_padding`} data-aos="fade-up">
         <div className={`${classes.growth_box_content} max-w-[1520px] mx-auto  relative`}>
           <div>
-            <div className="md:mb-[172px] mb-[87px] sm:mb-[87px] min-tb:max-tb:mb-[93px]">
+            <div className={`md:mb-[172px] mb-[87px] sm:mb-[87px] min-tb:max-tb:mb-[93px] ${router.asPath === "/solutions/growth-tracker" && classes.tracker_upper_box}`}>
               <Box_Title
                 upper={data.upperHeading}
                 below={data.upperSmallLine}

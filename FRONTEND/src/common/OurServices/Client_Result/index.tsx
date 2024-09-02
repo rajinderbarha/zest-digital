@@ -29,7 +29,7 @@ const Client_Result: React.FC<clientResults> = (props) => {
                   <h2 className='font-semibold text-color-7'>{heading}</h2>
                   <p className={` ${classes.profit_box_heading}  text-color-7  font-semibold`}>{belowHeading}</p>
                   <h3 className=' text-white font-medium max-tb:font-bold '>{description_1_CR}</h3>
-                  <p className={`${classes.profit_box_desc} ${classes[`profit_box_desc${index}`]} max-w-[246px] mx-auto font-lato  font-normal  text-white text-center`}>{description_2_CR}</p>
+                  <p className={`${classes.profit_box_desc} ${classes[`profit_box_desc${index}`]} max-w-[260px] mx-auto font-lato  font-normal  text-white text-center`}>{description_2_CR}</p>
 
                   <Link href={`/casestudies/${slug}`}>
                     <div className={classes.button_div}>

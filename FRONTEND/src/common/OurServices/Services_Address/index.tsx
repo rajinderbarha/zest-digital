@@ -5,8 +5,13 @@ import { AgencyAddress } from "../../../../lib/interface";
 import { PortableText } from "next-sanity";
 import Link from "next/link";
 import GoogleMapComponent from "@/components/GoogleMapComponent";
+import { useRouter } from "next/router";
 
 const Services_Address: React.FC<AgencyAddress> = (props) => {
+  const router = useRouter()
+  const isGrowthPage = router.asPath.includes("growth-marketing-services")
+  const isBirminghamPage = router.asPath.includes("birmingham")
+
   const { heading_add, slotDescription_add, buttonName_add, buttonName_link } = props;
   const contactInfoArray = Array.isArray(props.address) ? props.address : [];
 
@@ -16,7 +21,7 @@ const Services_Address: React.FC<AgencyAddress> = (props) => {
         className={`${classes.bg_image} bg-color-1 rounded-[15px] md:rounded-[20px] lg:rounded-30px grid md:grid-cols-2 max-tb:grid-cols-1 md:gap-y-0 max-tb:gap-y-[60px] max-tb:gap-x-0 md:gap-x-10`}
         data-aos="fade-up" >
         <div className="col-span-1 md:max-w-[772px] min-tb:max-tb:max-w-[420px] sm:max-w-[300px] max-w-[264px]  mx-auto">
-          <h2 className={`${classes.address_heading} font-mono font-semibold text-color-9 text-center `} data-aos="fade-up">
+          <h2 className={`${classes.address_heading} font-mono font-semibold text-color-9 text-center ${!isGrowthPage && !isBirminghamPage && 'xl:max-w-[659px]'} ${isBirminghamPage && 'xl:max-w-[665px]'} }`} data-aos="fade-up">
             {heading_add}
           </h2>
           <h2 className={`${classes.address_desc} font-mono  font-semibold text-white text-center   max-w-[566px] mx-auto`} data-aos="fade-up">

@@ -216,6 +216,10 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  .speak_button {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {

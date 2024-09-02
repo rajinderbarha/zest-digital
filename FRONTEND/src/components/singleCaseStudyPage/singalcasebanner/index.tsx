@@ -15,7 +15,7 @@ function Singalcasebanner({ data }: SingalcasebannerProps) {
     const { title, upperTitle } = data
     return <div className={`${classes.Singalcasebanner} main_padding `}>
         <div className='main_container'>
-            <div className="grid " data-aos="fade-up">
+            <div className="grid max-w-[1680px] ms-auto" data-aos="fade-up">
                 <div className={`${classes.banner_text} `}>
                     <h2 className='font-semibold font-mono bg-light-green-1' >{upperTitle}</h2>
                     <h1 className='font-mono font-semibold'>{title}</h1>

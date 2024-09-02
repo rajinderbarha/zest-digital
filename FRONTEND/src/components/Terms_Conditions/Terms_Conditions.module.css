@@ -95,7 +95,9 @@
   .terms_heading {
     font-size: 55px;
     margin-top: 95px;
+    margin-bottom: 55px;
   }
+
 }
 
 @media only screen and (max-width:830px) {

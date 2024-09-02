@@ -439,7 +439,7 @@
 
 @media only screen and (max-width: 639px) {
   .single_container {
-    margin-top: -58px;
+    margin-top: -46px;
   }
 }
 
@@ -448,5 +448,11 @@
   .top_images_div>div:first-child,
   .top_images_div>div:last-child {
     max-width: max-content;
+  }
+}
+
+@media (min-width:640px) and (max-width:768px) {
+  .single_container {
+    margin-top: -80px;
   }
 }

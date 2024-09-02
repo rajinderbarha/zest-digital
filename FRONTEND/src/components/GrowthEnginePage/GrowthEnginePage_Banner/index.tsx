@@ -1,10 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import classes from "./GrowthEnginePage_Banner.module.css";
 import Link from "next/link";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import { useRouter } from "next/router";
 
 const GrowthEnginePage_Banner = ({ data }: any) => {
+  const router = useRouter()
+  // const [width, setWidth] = useState(1118)
 
   useEffect(() => {
     AOS.init({
@@ -12,10 +15,20 @@ const GrowthEnginePage_Banner = ({ data }: any) => {
       once: true,
     });
   }, []);
+  // useEffect(() => {
+
+  //   // const width = '1118px';
+  //   if (router.asPath === "/solutions/growth-engine") {
+  //     setWidth(1118)
+  //   }
+  //   else if (router.asPath === "/solutions/growth-mapper") {
+  //     setWidth(1204)
+  //   }
+  // })
 
   return <div className={`${classes.GrowthEnginePage_Banner} main_padding  `} data-aos="fade-up">
     <div className="main_container">
-      <div className={`${classes.banner_container} grid  `}>
+      <div className={`${classes.banner_container} ${router.asPath === "/solutions/growth-curve" && classes.curve_div} grid  `}>
         <div className="">
           <h2 className={`${classes.banner_heading} font-semibold font-mono bg-light-green-1 w-max `}>
             {data.heading}

@@ -32,7 +32,7 @@ function About_team({ data }: { data: AboutType[] }) {
                   <h3 className={`${classes.team_title}  font-semibold  max-tb:font-bold font-mono text-color-1`}>
                     {teamData.title}{" "}
                   </h3>
-                  <p className={`${classes.team_desc}  font-normal font-lato text-color-1`}>
+                  <p className={`${classes.team_desc} lg:mt-[5px] font-normal font-lato text-color-1`}>
                     {teamData.description}
                   </p>
                 </div>

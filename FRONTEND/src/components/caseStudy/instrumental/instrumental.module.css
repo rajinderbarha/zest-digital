@@ -163,7 +163,8 @@
   .image_desc {
     font-size: 20px;
     line-height: 26px;
-    max-width: 373px;
+    /* max-width: 373px; */
+    max-width: 344px;
     margin-top: 20px;
   }
 
@@ -344,4 +345,25 @@
 .coversion_section {
   max-width: 1409px;
   margin-left: auto;
+}
+
+@media only screen and (min-width:1630px) {
+
+  .conversations_container,
+  .project_window_container {
+    grid-template-columns: repeat(14, minmax(0, 1fr));
+  }
+
+  .conversations_text {
+    grid-column: span 8 / span 8;
+    grid-column-start: 7;
+    max-width: 875px;
+    padding-inline-start: auto;
+    /* margin-left: 94px; */
+  }
+
+  .project_window_text {
+    grid-column: span 8 / span 8;
+
+  }
 }
