@@ -56,13 +56,15 @@ const Global_Accordion = ({
         </div>
       ))}
     </div>
-    <div className="text-center" data-aos="fade-up">
-      <Link href={belowbtnLink_acc}>
-        <button className={`${classes.speak_button} nomalbtn_hover font-mono bg-color-1 border border-color-1 text-white hover:text-color-1 hover:bg-white  rounded-full`}>
-          {belowbtnName_acc}
-        </button>
-      </Link>
-    </div>
+    {belowbtnName_acc && belowbtnLink_acc &&
+      <div className="text-center" data-aos="fade-up">
+        <Link href={belowbtnLink_acc || ""}>
+          <button className={`${classes.speak_button} nomalbtn_hover font-mono bg-color-1 border border-color-1 text-white hover:text-color-1 hover:bg-white  rounded-full`}>
+            {belowbtnName_acc}
+          </button>
+        </Link>
+      </div>
+    }
   </div>
 };
 

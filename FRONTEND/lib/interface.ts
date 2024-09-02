@@ -407,8 +407,8 @@ export interface AccordianType {
     question: string;
     content: any;
   }[];
-  belowbtnName_acc: string;
-  belowbtnLink_acc: string;
+  belowbtnName_acc?: string;
+  belowbtnLink_acc?: string;
 }
 export interface ServiceQuote {
   desc_quote: string;

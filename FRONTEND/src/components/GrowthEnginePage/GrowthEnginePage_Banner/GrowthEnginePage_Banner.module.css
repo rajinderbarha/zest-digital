@@ -98,6 +98,10 @@
   .banner_container {
     max-width: 1110px;
   }
+
+  .curve_div {
+    max-width: 1090px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -112,6 +116,10 @@
   .banner_description {
     font-size: 55px;
     line-height: 75px;
+  }
+
+  .curve_div {
+    max-width: 1301px;
   }
 }
 

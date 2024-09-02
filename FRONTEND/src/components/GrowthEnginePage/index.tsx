@@ -15,8 +15,8 @@ function GrowthEnginePage({ data, card, otherSolHeading }: any) {
       accordiongroup: {
         heading_acc,
         card_acc,
-        belowbtnName_acc,
-        belowbtnLink_acc,
+        // belowbtnName_acc,
+        // belowbtnLink_acc,
       },
     },
   } = data;
@@ -42,8 +42,8 @@ function GrowthEnginePage({ data, card, otherSolHeading }: any) {
     <div className="main_padding">
       <Global_Accordion
         heading_acc={heading_acc}
-        belowbtnLink_acc={belowbtnLink_acc}
-        belowbtnName_acc={belowbtnName_acc}
+        // belowbtnLink_acc={belowbtnLink_acc}
+        // belowbtnName_acc={belowbtnName_acc}
         card_acc={card_Accordian}
       />
     </div>

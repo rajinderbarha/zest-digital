@@ -12,7 +12,7 @@ const Services_SubServices: React.FC<SubServices> = (props) => {
         <h2 className={`${classes.service_heading} font-mono font-semibold max-w-[783px] mx-auto text-center text-color-1`}>{heading_sub}</h2>
         <div className={`${classes.services}  max-w-[1212px] mx-auto grid grid-cols-3 gap-10 gap-y-[50px] md:gap-y-[114px] min-tb:max-tb:gap-y-[80px] justify-items-center`}>
           {props.services.map((item, index) => (
-            <div key={index} className="max-w-[270px] " data-aos="fade-up">
+            <div key={index} className="max-w-[274px] " data-aos="fade-up">
               <div className={`${classes.top_image} h-full w-full mx-auto `}>
                 <Image src={urlFor(item.image).url()} alt='' width={250} height={250} className={` h-full w-full`} />
               </div>

@@ -378,3 +378,14 @@ button.MuiButtonBase-root.MuiIconButton-colorInherit.MuiIconButton-edgeEnd.MuiIc
 }
 
 /*Arrow button hover end*/
+
+
+@media only screen and (max-width:380px) {
+  .growth_grid_1 {
+    width: 85%;
+  }
+
+  .growth_grid_2 {
+    width: 94%;
+  }
+}

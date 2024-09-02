@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import classes from './Services_Banner.module.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import { useRouter } from "next/router";
 
 export interface Services_Banner_Props {
   title: string;
@@ -16,6 +17,9 @@ export interface Services_Banner_Props {
   };
 }
 const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
+  const router = useRouter()
+  const isPPCPage = router.asPath.includes("ppc-services")
+  const isSocialPage = router.asPath.includes("social-media-services")
 
   useEffect(() => {
     AOS.init({
@@ -35,7 +39,7 @@ const Services_Banner: React.FC<Services_Banner_Props> = (props) => {
 
   return <div className={`${classes.GrowthMarketingServices_Banner} GrowthMarketingServices_Banner  main_padding`}>
     <div className='main_container'>
-      <div className={`${classes.banner_content} ${max_width_string} `} data-aos="fade-up">
+      <div className={`${classes.banner_content} ${max_width_string} ${isPPCPage && classes.ppc_page_div} ${isSocialPage && classes.social_page_div}`} data-aos="fade-up">
         <div className={`  `}>
           <h2 className={`${classes.banner_title}  font-semibold font-mono `}>{title}</h2>
           <p className={`${classes.banner_description} font-mono text-color-1`}>{smallDescription}</p>

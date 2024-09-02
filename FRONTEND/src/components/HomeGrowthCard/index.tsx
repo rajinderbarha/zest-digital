@@ -54,18 +54,18 @@ const HomeGrowthCard = ({ card }: HomepageGrowthCard) => {
               const cleanedUpperTitle = upperTitle.replace(/[()]/g, '').trim();
 
               if (index == 0) {
-                outerSpan = "md:col-span-6 growth_grid_1";
+                outerSpan = "md:col-span-6 md:max-tb:col-span-7 growth_grid_1";
                 innerSpan = "md:col-span-6";
               } else if (index == 1) {
-                outerSpan = "md:col-span-7 growth_grid_2";
+                outerSpan = "md:col-span-7 md:max-tb:col-span-8 growth_grid_2";
                 innerSpan = "md:col-span-5";
               } else if (index == 2) {
-                outerSpan = "md:col-span-8 growth_grid_3";
+                outerSpan = "md:col-span-8 md:max-tb:col-span-9 growth_grid_3";
                 innerSpan = "md:col-span-4";
               }
               return (
                 <div key={index} className="grid gap-10 pe-5" data-aos="fade-right">
-                  <div className="grid md:grid-cols-12 md:gap-6 gap-[13px]">
+                  <div className={`grid md:grid-cols-12 md:gap-6 gap-[13px] ${classes.growth_box}`}>
                     <div
                       className={`${outerSpan} ${classes.box_size}  bg-white flex justify-between items-center text-color-1 lg:rounded-r-[30px] md:rounded-r-[20px] rounded-r-[10px] `}
                     >
