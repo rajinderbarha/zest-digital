@@ -24,9 +24,10 @@ const Client_Result: React.FC<clientResults> = (props) => {
                   sigleCaseStudyCard: { slug, card: { heading, belowHeading, description, descriptionBelow } }
                 },
                 index
-              ) => (
-                <div key={index} className={`  ${classes.profit_box} flex flex-col Gross_profit_box_start text-center border bg-color-1 rounded-[20px] lg:rounded-30px  font-mono border-color-8 `} data-aos="fade-up">
-                  <h2 className='font-semibold text-color-7'>{heading}</h2>
+              ) => {
+                const Heading = heading.replace(/\s+/g, "");
+                return <div key={index} className={`  ${classes.profit_box} flex flex-col Gross_profit_box_start text-center border bg-color-1 rounded-[20px] lg:rounded-30px  font-mono border-color-8 `} data-aos="fade-up">
+                  <h2 className='font-semibold text-color-7'>{Heading}</h2>
                   <p className={` ${classes.profit_box_heading}  text-color-7  font-semibold`}>{belowHeading}</p>
                   <h3 className=' text-white font-medium max-tb:font-bold '>{description_1_CR}</h3>
                   <p className={`${classes.profit_box_desc} ${classes[`profit_box_desc${index}`]} max-w-[260px] mx-auto font-lato  font-normal  text-white text-center`}>{description_2_CR}</p>
@@ -37,7 +38,8 @@ const Client_Result: React.FC<clientResults> = (props) => {
                     </div>
                   </Link>
                 </div>
-              )
+              }
+
             )}
         </div>
         <div className={`${classes.view_more_btn} text-center `} data-aos="fade-up">

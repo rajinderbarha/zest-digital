@@ -27,6 +27,10 @@
   @apply border-transparent;
 }
 
+.content_inner {
+  max-width: 1371px;
+}
+
 .content_inner p a strong::after {
   content: "";
   background-image: url("../../assets/images/Right_arrow.svg");
@@ -361,5 +365,9 @@
   .content_inner {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+
+  .content_inner {
+    max-width: 1241px;
   }
 }
