@@ -60,6 +60,11 @@ function SingleInsightPage({ data, slugCard }: { data: SingleInsightsType, slugC
         const id = generateId(text);
         return <div id={id} key={index}><h3 key={index}>{text}</h3></div>;
       }
+      if (block._type === 'block' && block.style === 'h5') {
+        let text = block.children[0].text;
+        const id = generateId(text);
+        return <div id={id} key={index}><h5 key={index}>{text}</h5></div>;
+      }
 
       if (block._type === 'video' && block.iframeUrl !== "") {
         return (

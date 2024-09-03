@@ -176,8 +176,8 @@
 
 .Block_Content div:has(h3):not(:first-child)~ul,
 .Block_Content div:has(h3):not(:first-child)~ol,
-.Block_Content h5~ul,
-.Block_Content h5~ol,
+.Block_Content div:has(h5)~ul,
+.Block_Content div:has(h5)~ol,
 .Block_Content h4~ul,
 .Block_Content h4~ol {
   margin-left: 17px;
@@ -240,13 +240,13 @@
   margin-top: 6px;
 }
 
-.Block_Content p+h5,
-.Block_Content blockquote+h5 {
+.Block_Content p+div:has(h5),
+.Block_Content blockquote+div:has(h5) {
   margin-top: 6px;
 }
 
-.Block_Content ul+h5,
-.Block_Content ol+h5 {
+.Block_Content ul+div:has(h5),
+.Block_Content ol+div:has(h5) {
   margin-top: 25px;
 }
 
@@ -259,7 +259,7 @@
   margin-top: 0;
 }
 
-.Block_Content .wrappedH2:not(:first-child)+h5 {
+.Block_Content .wrappedH2:not(:first-child)+div:has(h5) {
   margin-top: 0;
 }
 
@@ -345,13 +345,13 @@
     margin-top: 30px;
   }
 
-  .Block_Content p+h5,
-  .Block_Content blockquote+h5 {
+  .Block_Content p+div:has(h5),
+  .Block_Content blockquote+div:has(h5) {
     margin-top: 20px;
   }
 
-  .Block_Content ul+h5,
-  .Block_Content ol+h5 {
+  .Block_Content ul+div:has(h5),
+  .Block_Content ol+div:has(h5) {
     margin-top: 39px;
   }
 
@@ -381,10 +381,10 @@
 
   .Block_Content div:has(h3):not(:first-child)~ul,
   .Block_Content div:has(h3):not(:first-child)~ol,
-  .Block_Content h5~ul,
-  .Block_Content h5~ol,
-  .Block_Content h4~ul,
-  .Block_Content h4~ol {
+  .Block_Content div:has(h5)~ul,
+  .Block_Content div:has(h5)~ol,
+  .Block_Content div:has(h5)~ul,
+  .Block_Content div:has(h5)~ol {
     margin-left: 37px;
   }
 
@@ -439,13 +439,13 @@
   }
 
   .Block_Content div:has(h3):not(:first-child)~p,
-  .Block_Content h5:not(:first-child)~p,
+  .Block_Content div:has(h5):not(:first-child)~p,
   .Block_Content h4:not(:first-child)~p,
   .Block_Content div:has(h3):not(:first-child)~blockquote,
-  .Block_Content h5:not(:first-child)~blockquote,
+  .Block_Content div:has(h5):not(:first-child)~blockquote,
   .Block_Content h4:not(:first-child)~blockquote,
   .Block_Content div:has(h3):not(:first-child)~h6,
-  .Block_Content h5:not(:first-child)~h6,
+  .Block_Content div:has(h5):not(:first-child)~h6,
   .Block_Content h2:not(:first-child)~h6 {
     margin-left: 20px;
   }
@@ -461,13 +461,13 @@
     margin-top: 30px;
   }
 
-  .Block_Content p+h5,
-  .Block_Content blockquote+h5 {
+  .Block_Content p+div:has(h5),
+  .Block_Content blockquote+div:has(h5) {
     margin-top: 20px;
   }
 
-  .Block_Content ul+h5,
-  .Block_Content ol+h5 {
+  .Block_Content ul+div:has(h5),
+  .Block_Content ol+div:has(h5) {
     margin-top: 39px;
   }
 
@@ -563,13 +563,13 @@
     margin-top: 20px;
   }
 
-  .Block_Content p+h5,
-  .Block_Content blockquote+h5 {
+  .Block_Content p+div:has(h5),
+  .Block_Content blockquote+div:has(h5) {
     margin-top: 10px;
   }
 
-  .Block_Content ul+h5,
-  .Block_Content ol+h5 {
+  .Block_Content ul+div:has(h5),
+  .Block_Content ol+div:has(h5) {
     margin-top: 29px;
   }
 
@@ -608,8 +608,8 @@
 
   .Block_Content div:has(h3):not(:first-child)~ul,
   .Block_Content div:has(h3):not(:first-child)~ol,
-  .Block_Content h5~ul,
-  .Block_Content h5~ol,
+  .Block_Content div:has(h5)~ul,
+  .Block_Content div:has(h5)~ol,
   .Block_Content h4~ul,
   .Block_Content h4~ol {
     margin-left: 60px;
@@ -653,13 +653,13 @@
   }
 
   .Block_Content div:has(h3):not(:first-child)~p,
-  .Block_Content h5:not(:first-child)~p,
+  .Block_Content div:has(h5):not(:first-child)~p,
   .Block_Content h4:not(:first-child)~p,
   .Block_Content div:has(h3):not(:first-child)~blockquote,
-  .Block_Content h5:not(:first-child)~blockquote,
+  .Block_Content div:has(h5):not(:first-child)~blockquote,
   .Block_Content h4:not(:first-child)~blockquote,
   .Block_Content div:has(h3):not(:first-child)~h6,
-  .Block_Content h5:not(:first-child)~h6,
+  .Block_Content div:has(h5):not(:first-child)~h6,
   .Block_Content h2:not(:first-child)~h6 {
     margin-left: 40px;
   }
@@ -669,13 +669,13 @@
     margin-top: 60px;
   }
 
-  .Block_Content p+h5,
-  .Block_Content blockquote+h5 {
+  .Block_Content p+div:has(h5),
+  .Block_Content blockquote+div:has(h5) {
     margin-top: 50px;
   }
 
-  .Block_Content ul+h5,
-  .Block_Content ol+h5 {
+  .Block_Content ul+div:has(h5),
+  .Block_Content ol+div:has(h5) {
     margin-top: 81px;
   }
 
@@ -739,13 +739,13 @@
     margin-top: 80px;
   }
 
-  .Block_Content p+h5,
-  .Block_Content blockquote+h5 {
+  .Block_Content p+div:has(h5),
+  .Block_Content blockquote+div:has(h5) {
     margin-top: 70px;
   }
 
-  .Block_Content ul+h5,
-  .Block_Content ol+h5 {
+  .Block_Content ul+div:has(h5),
+  .Block_Content ol+div:has(h5) {
     margin-top: 91px;
   }
 
@@ -885,8 +885,8 @@
     margin-top: 65px;
   }
 
-  .Block_Content p+h5,
-  .Block_Content blockquote+h5 {
+  .Block_Content p+div:has(h5),
+  .Block_Content blockquote+div:has(h5) {
     margin-top: 50px;
   }
 
@@ -908,8 +908,8 @@
     max-width: 755px;
   }
 
-  .Block_Content ul+h5,
-  .Block_Content ol+h5 {
+  .Block_Content ul+div:has(h5),
+  .Block_Content ol+div:has(h5) {
     margin-top: 70px;
   }
 }
