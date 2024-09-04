@@ -3,6 +3,8 @@ import classes from "./DigitalTerms.module.css";
 import { PortableText } from "next-sanity";
 import { SingletermsAndConditionsType } from "../../../lib/interface";
 import { handleHashChange, generateId } from "@/common/ScrollByID";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 interface TableRow {
   _type: string;
@@ -17,6 +19,22 @@ interface TableChart {
 }
 
 const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
+
+
+  useEffect(() => {
+    const contentElements = document.querySelectorAll(".Portable_text *:not(ul):not(ol):not(h2):not(div:has(h6)):not(div:has(ul)):not(div:has(ol)):not(div:has(h4))");
+    contentElements.forEach((element) => {
+      element.setAttribute("data-aos", "fade-up");
+    });
+  })
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
+
   useEffect(() => {
     window.addEventListener("hashchange", handleHashChange);
     handleHashChange();
@@ -74,8 +92,8 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                   <li>Billing and payment information.</li>
                 </ul>
               </div>
-              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</div>
-              <div className="">We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</div>
+              <div className=""><h4>We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</h4></div>
+              <div className=""><h4>We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_2} ${classes.rows}`}>
@@ -89,8 +107,8 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                   <li>Information and documents relating to the services we are providing, including communications with you.</li>
                 </ul>
               </div>
-              <div className="">We will retain information about you for the duration of the enquiry, then one year.</div>
-              <div className="">We store this information electronically in our lead generation system, which is hosted on US-based servers.</div>
+              <div className=""><h4>We will retain information about you for the duration of the enquiry, then one year.</h4></div>
+              <div className=""><h4>We store this information electronically in our lead generation system, which is hosted on US-based servers.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_3} ${classes.rows}`}>
@@ -105,8 +123,8 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                   <li>Interview notes (for those short-listed).</li>
                 </ul>
               </div>
-              <div className="">We will retain information about you for the duration of the recruitment campaign, then one year.</div>
-              <div className="">We store this information electronically on servers within the EEA.</div>
+              <div className=""><h4>We will retain information about you for the duration of the recruitment campaign, then one year.</h4></div>
+              <div className=""><h4>We store this information electronically on servers within the EEA.</h4></div>
             </div>
           </div>
 
@@ -124,8 +142,8 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                   <li>Gender.</li>
                 </ul>
               </div>
-              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</div>
-              <div className="">We store this information electronically on servers within the EEA.</div>
+              <div className=""><h4>We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</h4></div>
+              <div className=""><h4>We store this information electronically on servers within the EEA.</h4></div>
             </div>
           </div>
           {/* </div> */}
@@ -156,7 +174,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                   <li>Billing and payment information.</li>
                 </ul>
               </div>
-              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</div>
+              <div className=""><h4>We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_2} ${classes.rows}`}>
@@ -170,7 +188,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                   <li>Information and documents relating to the services we are providing, including communications with you.</li>
                 </ul>
               </div>
-              <div className="">We will retain information about you for the duration of the enquiry, then one year.</div>
+              <div className=""><h4>We will retain information about you for the duration of the enquiry, then one year.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_3} ${classes.rows}`}>
@@ -185,7 +203,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                   <li>Interview notes (for those short-listed).</li>
                 </ul>
               </div>
-              <div className="">We will retain information about you for the duration of the recruitment campaign, then one year.</div>
+              <div className=""><h4>We will retain information about you for the duration of the recruitment campaign, then one year.</h4></div>
             </div>
           </div>
 
@@ -203,7 +221,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
                   <li>Gender.</li>
                 </ul>
               </div>
-              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</div>
+              <div className=""><h4>We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</h4></div>
             </div>
           </div>
           {/* </div> */}
@@ -219,21 +237,21 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
-              <div className="">We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</div>
+              <div className=""><h4>We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_2} ${classes.rows}`}>
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
-              <div className="">We store this information electronically in our lead generation system, which is hosted on US-based servers.</div>
+              <div className=""><h4>We store this information electronically in our lead generation system, which is hosted on US-based servers.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_3} ${classes.rows}`}>
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>JOB APPLICANTS</h6></div>
-              <div className="">We store this information electronically on servers within the EEA.</div>
+              <div className=""><h4>We store this information electronically on servers within the EEA.</h4></div>
             </div>
           </div>
 
@@ -241,7 +259,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
-              <div className="">We store this information electronically on servers within the EEA.</div>
+              <div className=""><h4>We store this information electronically on servers within the EEA.</h4></div>
             </div>
           </div>
           {/* </div> */}
@@ -328,21 +346,21 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
-              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</div>
+              <div className=""><h4>We will retain information about you for the duration of our contractual relationship with you, then for an additional 12 months. We retain financial records for 7 years, following the end of the current financial year.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_2} ${classes.rows}`}>
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
-              <div className="">We will retain information about you for the duration of the enquiry, then one year.</div>
+              <div className=""><h4>We will retain information about you for the duration of the enquiry, then one year.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_3} ${classes.rows}`}>
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>JOB APPLICANTS</h6></div>
-              <div className="">We will retain information about you for the duration of the recruitment campaign, then one year.</div>
+              <div className=""><h4>We will retain information about you for the duration of the recruitment campaign, then one year.</h4></div>
             </div>
           </div>
 
@@ -350,7 +368,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
-              <div className="">We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</div>
+              <div className=""><h4>We will retain information about you for the duration of our contractual relationship with you, then for an additional 6 years.</h4></div>
             </div>
           </div>
           {/* </div> */}
@@ -366,21 +384,21 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>CLIENTS</h6></div>
-              <div className="">We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</div>
+              <div className=""><h4>We store this information electronically on our CRM and project management systems, some of which are stored on servers in the US. We use a US-Based accounting package to process our financial transactions.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_2} ${classes.rows}`}>
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>PROSPECTIVE CLIENTS</h6></div>
-              <div className="">We store this information electronically in our lead generation system, which is hosted on US-based servers.</div>
+              <div className=""><h4>We store this information electronically in our lead generation system, which is hosted on US-based servers.</h4></div>
             </div>
           </div>
           <div className={`${classes.row_3} ${classes.rows}`}>
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>JOB APPLICANTS</h6></div>
-              <div className="">We store this information electronically on servers within the EEA.</div>
+              <div className=""><h4>We store this information electronically on servers within the EEA.</h4></div>
             </div>
           </div>
 
@@ -388,7 +406,7 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
 
             <div className={`${classes.divide_columns} `}>
               <div className={`${classes.left_heading}`}><h6>OUR CURRENT AND FORMER EMPLOYEES</h6></div>
-              <div className="">We store this information electronically on servers within the EEA.</div>
+              <div className=""><h4>We store this information electronically on servers within the EEA.</h4></div>
             </div>
           </div>
           {/* </div> */}
@@ -403,11 +421,11 @@ const DigitalTerms = ({ data }: { data: SingletermsAndConditionsType[] }) => {
   return (
     <div className="DigitalTerms main_padding xl:mb-[200px] lg:mb-[150px] md:mb-[100px] sm:mb-[70px] mb-[80px]">
       <div className="main_container">
-        <h2 className={`${classes.DigitalTerms_title} xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] text-[22px] font-mono font-semibold xl:mt-[95px] lg:mt-[75px] mb:mt-[50px] min-tb:max-tb:mt-[52px] mt-[46px]`}>
+        <h2 className={`${classes.DigitalTerms_title} xl:text-55px lg:text-50px md:text-40px min-tb:max-tb:text-[30px] text-[22px] font-mono font-semibold xl:mt-[95px] lg:mt-[75px] mb:mt-[50px] min-tb:max-tb:mt-[52px] mt-[46px]`} data-aos="fade-up">
           {data[0].title}
         </h2>
         {data?.map((item, index) => (
-          <div className={`${classes.Portable_text}`} key={index}>
+          <div className={`Portable_text ${classes.Portable_text}`} key={index}>
             {renderCustomBlock(item.content)}
           </div>
         ))}
