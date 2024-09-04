@@ -54,7 +54,18 @@ export const SingleInsights = defineType({
       type: 'array',
       of: [
         {type: 'block'},
-        {type: 'image'},
+        {type: 'image',
+          fields: [
+            {
+              name: 'caption',
+              title: 'Caption',
+              type: 'string',
+              options: {
+                isHighlighted: true,  // Makes the caption appear alongside the image in the editor
+              },
+            },
+          ],
+        },
         {type: 'video'}, // we created a object for this video type in common folder
       ],
     },
